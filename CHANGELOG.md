@@ -7,12 +7,13 @@ PyPI Developer Tools `dtools` namespace projects
 - decided on the unclaimed name fpythonic
   - for fp + pythonic
 - releases under this name
+  - fpythonic 1.1.0
   - fpythonic 1.0.0
   - fpythonic.circular-array v4.1.0
   - fpythonic.circular-array v4.0.0 (Yanked)
-    - yanked because v4.0.0 was published on PyPI too soon
+  - yanked because v4.0.0 was published on PyPI too soon
 - fpythonic is an empty module
-  - will permanently be at 1.0.0
+  - will permanently be <2.0
   - has a __init__.py file
     - DO NOT INSTALL IT!!!
     - if you do, fpythonic will no longer be a namespace module!
