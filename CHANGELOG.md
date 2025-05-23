@@ -7,6 +7,7 @@ PyPI Developer Tools `dtools` namespace projects
 - decided on the unclaimed name fpythonic
   - for fp + pythonic
 - releases under this name
+  - fpythonic 1.2.0
   - fpythonic 1.1.0
   - fpythonic 1.0.0
   - fpythonic.circular-array v4.1.0
