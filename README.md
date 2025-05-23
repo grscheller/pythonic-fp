@@ -10,7 +10,7 @@ These tools tend to prefer a functional programming approach yet
 still endeavor to remain Pythonic. The name `fpythonic` is a combination
 of `fp` for functional programming and the adjective Pythonic.
 
-The `grscheller/fpythonic` PyPI project is a stub which is intended to
+The `grscheller/fpythonic` PyPI project is a stub which is intended
 **NOT TO BE INSTALLED**. The main purpose of it's associated GitHub
 repo, `grscheller/fpthonic`, is to host the documentation and serve as
 a homepage for the fpythonic namespace projects.
@@ -24,9 +24,13 @@ a homepage for the fpythonic namespace projects.
 | fpythonic.queues | [fpythonic.queues][15] | [fpythonic-queues][25] |
 | fpythonic.splitends | [fpythonic.splitends][16] | [fpythonic-splitends][26] |
 
+**WARNING:** If installed or put on `PYTHONPATH`, then `fpythonic` 
+namespace projects will fail to load. 
+
 ### Detailed Documentation
 
-Detailed pdoc generated [documentation][1] for all [Developer Tools PyPI projects][2].
+Detailed pdoc generated [documentation][1] for 
+all [fpythonic PyPI Namespace Projects][2].
 
 ### License Information
 
@@ -35,8 +39,8 @@ are licensed under the Apache License Version 2.0, January 2004.
 
 See [CHANGELOG.md](./CHANGELOG.md) for ongoing changes.
 
-[1]: https://grscheller.github.io/fpythonic-namespace-projects/
-[2]: https://github.com/grscheller/fpythonic-namespace-projects/blob/main/README.md
+[1]: https://grscheller.github.io/fpythonic/
+[2]: https://github.com/grscheller/fpythonic/blob/main/README.md
 [11]: https://pypi.org/project/fpythonic.circular-array/
 [12]: https://pypi.org/project/fpythonic.containers/
 [13]: https://pypi.org/project/fpythonic.fp/

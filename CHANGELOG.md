@@ -2,14 +2,34 @@
 
 PyPI Developer Tools `dtools` namespace projects
 
+### 2025-05-23 - Decided to "bite-the-bullet" and drop dtools name
+
+- decided on the unclaimed name fpythonic
+  - for fp + pythonic
+- releases under this name
+  - fpythonic 1.0.0
+  - fpythonic.circular-array v4.1.0
+  - fpythonic.circular-array v4.0.0 (Yanked)
+    - yanked because v4.0.0 was published on PyPI too soon
+- fpythonic is an empty module
+  - will permanently be at 1.0.0
+  - has a __init__.py file
+    - DO NOT INSTALL IT!!!
+    - if you do, fpythonic will no longer be a namespace module!
+    - PyPI was happy to accept it
+      - thought it best to take the name
+  - its GitHub repo has 2 purposes other than implementing this "module"
+    - serves as a homepage for the fpythonic namespace modules
+    - hosts the generated documentation on gh-pages
+
 ### 2025-05-22 - Rebuilt docs for all projects for next PyPI releases
 
-- circular-array 3.15.0
-- containers 1.0.0
-- fp 2.0.0
-- iterables 2.0.0
-- queues 2.0.0
-- splitends 0.29.0
+- dtools.circular-array 3.15.0
+- dtools.containers 1.0.0
+- dtools.fp 2.0.0
+- dtools.iterables 2.0.0
+- dtools.queues 2.0.0
+- dtools.splitends 0.29.0
 
 ### 2025-05-20 - Broke out dtools.fp.iterables to its own repo
 
