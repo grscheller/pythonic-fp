@@ -2,6 +2,20 @@
 
 PyPI Developer Tools `dtools` namespace projects
 
+### 2025-05-24 - Decided to "bite-the-bullet" and drop dtools name
+
+- decided on the pythonic-fp namespace name instead of fpythonic 
+- brought over source code from all dtools namespace projects
+  - pythonic-fp.circulararray 5.0.0
+  - pythonic-fp.containers 2.0.0
+  - pythonic-fp.fptools 3.0.0
+  - pythonic-fp.iterables 3.0.0
+  - pythonic-fp.queues 3.0.0
+  - pythonic-fp.splitends 0.30.0
+  - pythonic-fp.credits (pythonic-fp itself) 2.0.0
+  - pythonic-fp (name_claim) 1.0.0 - DO NOT INSTALL
+
+
 ### 2025-05-23 - Decided to "bite-the-bullet" and drop dtools name
 
 - decided on the unclaimed name fpythonic
