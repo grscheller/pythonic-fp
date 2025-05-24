@@ -3,15 +3,14 @@ requires = ["flit_core>=3.4,<4"]
 build-backend = "flit_core.buildapi"
 
 [project]
-version = '1.4.0'
-name = "fpythonic"
+version = '1.0.0'
+name = "pythonic-fp"
 authors = [{ name = "Geoffrey R. Scheller", email = "geoffrey@scheller.com" }]
 license = { file = "LICENSE" }
 readme = "README.md"
 requires-python = ">=3.12"
 classifiers = [
     "Development Status :: 5 - Production/Stable",
-    "Framework :: Pytest",
     "Intended Audience :: Developers",
     "License :: OSI Approved :: Apache Software License",
     "Operating System :: OS Independent",
@@ -22,10 +21,9 @@ dynamic = ["description"]
 dependencies = []
 
 [project.urls]
-Homepage = "https://github.com/grscheller/fpythonic/blob/main/README.md"
-Source = "https://github.com/grscheller/fpythonic"
-Changelog = "https://github.com/grscheller/fpythonic/blob/main/CHANGELOG.md"
-Documentation = "https://grscheller.github.io/fpythonic"
+Homepage = "https://github.com/grscheller/pythonic-fp/blob/main/README.md"
+Source = "https://github.com/grscheller/pythonic-fp"
+Documentation = "https://grscheller.github.io/pythonic-fp"
 
 [tool.flit.sdist]
 exclude = ["dist", ".mypy_cache" ]

@@ -12,13 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Pythonic Functional Programming  -  PyPI `fpypthonic` Namespace packages
+"""PyPI pythonic-fp namespace stub project
 
 **WARNING: DO NOT INSTALL THIS PACKAGE**
 
-It is an empty module whose purpose is to claim the`fpythonic` name on PyPI.
+It is an empty module whose purpose is to claim the`pythonic-fp` name on PyPI.
 This name is used by a family of namespace PyPI packages to support a functional
-style of which still endeavors to remain Pythonic.
+style of programming which still endeavors to remain Pythonic.
 
 If this module is installed the rest of the namespace packages will no longer
 work.

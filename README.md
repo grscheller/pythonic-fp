@@ -1,34 +1,37 @@
-# PyPI fpythonic Namespace Projects
-
-**WARNING: Under Construction**
+# PyPI Pythonic FP Namespace Projects
 
 Collection of Python packages to aid in general software development.
 These Python developer libraries consist of Python PyPI namespace
-packages all under the **fpythonic.** "namespace."
+packages all under the **pythonic-fp** "namespace."
 
 These tools tend to prefer a functional programming approach yet
-still endeavor to remain Pythonic. The name `fpythonic` is a combination
-of `fp` for functional programming and the adjective Pythonic.
-
-The `grscheller/fpythonic` PyPI project is a stub which is intended
-**NOT TO BE INSTALLED**. The main purpose of it's associated GitHub
-repo, `grscheller/fpthonic`, is to host the documentation and serve as
-a homepage for the fpythonic namespace projects.
+still endeavor to remain Pythonic.
 
 | Python Package | Projects (PyPI) | Source Code (GitHub) |
 |:-------------- |:--------------- |:-------------------- |
-| fpythonic.credits | [fpythonic.credits][10] | [fpythonic][20] |
-| fpythonic.circular_array | [fpythonic.circular-array][11] | [fpythonic-circular-array][21] |
-| fpythonic.containers | [fpythonic.containers][12] | [fpythonic-containers][22] |
-| fpythonic.fp | [fpythonic.fp][13] | [fpythonic-fp][23] |
-| fpythonic.iterables | [fpythonic.iterables][14] | [fpythonic-iterables][24] |
-| fpythonic.queues | [fpythonic.queues][15] | [fpythonic-queues][25] |
-| fpythonic.splitends | [fpythonic.splitends][16] | [fpythonic-splitends][26] |
+| pythonic-fp.credits | [pythonic-fp.credits][10] | [pythonic-fp][20] |
+| pythonic-fp.circulararray | [pythonic-fp.circulararray][11] | [pythonic-fp-circulararray][21] |
+| pythonic-fp.containers | [pythonic-fp.containers][12] | [pythonic-fp-containers][22] |
+| pythonic-fp.fp | [pythonic-fp.fp][13] | [pythonic-fp-fp][23] |
+| pythonic-fp.iterables | [pythonic-fp.iterables][14] | [pythonic-fp-iterables][24] |
+| pythonic-fp.queues | [pythonic-fp.queues][15] | [pythonic-fp-queues][25] |
+| pythonic-fp.splitends | [pythonic-fp.splitends][16] | [pythonic-fp-splitends][26] |
+
+The main purpose of the `grscheele/pythonic-fp` GitHut repo is to host
+the documentation and serve as a homepage for all the Pythonic FP
+namespace projects. It also maintains pythonic-fp-credits namespace
+project.
+
+The PyPI `pythonic-fp` project, located under the `name_claim/`
+directory, is a stub PyPI project whose sole purpose is to reserve the
+`pythonic-fp` name on PyPI. It is **NOT TO BE INSTALLED**. It is there
+to prevent others claiming the name and causing confusion. Installing it
+will break the all of the namespace projects.
 
 ### Detailed Documentation
 
 Detailed pdoc generated [documentation][1] for 
-all [fpythonic PyPI Namespace Projects][2].
+all [PyPI pythonic-fp namespace nrojects][2].
 
 ### License Information
 
@@ -37,19 +40,19 @@ are licensed under the Apache License Version 2.0, January 2004.
 
 See [CHANGELOG.md](./CHANGELOG.md) for ongoing changes.
 
-[1]: https://grscheller.github.io/fpythonic/
-[2]: https://github.com/grscheller/fpythonic/blob/main/README.md
-[10]: https://pypi.org/project/fpythonic.credits/
-[11]: https://pypi.org/project/fpythonic.circular-array/
-[12]: https://pypi.org/project/fpythonic.containers/
-[13]: https://pypi.org/project/fpythonic.fp/
-[14]: https://pypi.org/project/fpythonic.iterables/
-[15]: https://pypi.org/project/fpythonic.queues/
-[16]: https://pypi.org/project/fpythonic.splitends/
-[20]: https://github.com/grscheller/fpythonic/
-[21]: https://github.com/grscheller/fpythonic-circular-array/
-[22]: https://github.com/grscheller/fpythonic-containers/
-[23]: https://github.com/grscheller/fpythonic-fp/
-[24]: https://github.com/grscheller/fpythonic-iterables/
-[25]: https://github.com/grscheller/fpythonic-queues/
-[26]: https://github.com/grscheller/fpythonic-splitends/
+[1]: https://grscheller.github.io/pythonic-fp/
+[2]: https://github.com/grscheller/pythonic-fp/blob/main/README.md
+[10]: https://pypi.org/project/pythonic-fp.credits/
+[11]: https://pypi.org/project/pythonic-fp.circulararray/
+[12]: https://pypi.org/project/pythonic-fp.containers/
+[13]: https://pypi.org/project/pythonic-fp.fp/
+[14]: https://pypi.org/project/pythonic-fp.iterables/
+[15]: https://pypi.org/project/pythonic-fp.queues/
+[16]: https://pypi.org/project/pythonic-fp.splitends/
+[20]: https://github.com/grscheller/pythonic-fp/
+[21]: https://github.com/grscheller/pythonic-fp-circulararray/
+[22]: https://github.com/grscheller/pythonic-fp-containers/
+[23]: https://github.com/grscheller/pythonic-fp-fp/
+[24]: https://github.com/grscheller/pythonic-fp-iterables/
+[25]: https://github.com/grscheller/pythonic-fp-queues/
+[26]: https://github.com/grscheller/pythonic-fp-splitends/

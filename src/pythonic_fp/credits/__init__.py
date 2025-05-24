@@ -12,12 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Functional Pythonic Programming  - Namespace package `fpypthonic`
-
-Tools to aid with Python development which tend to take a functional programming
-approach yet still endeavoring to remain Pythonic.
-
-"""
+"""Pythonic Functional Programming - Credits"""
 
 from __future__ import annotations
 
