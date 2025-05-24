@@ -12,15 +12,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Functional Pythonic Programming  - Namespace package `fpypthonic`
+"""Pythonic Functional Programming  -  PyPI `fpypthonic` Namespace packages
 
-Tools to aid with Python development which tend to take a functional programming
-approach yet still endeavoring to remain Pythonic.
+**WARNING: DO NOT INSTALL THIS PACKAGE**
 
-**WARNING: Not intended to be imported**
+It is an empty module whose purpose is to claim the`fpythonic` name on PyPI.
+This name is used by a family of namespace PyPI packages to support a functional
+style of which still endeavors to remain Pythonic.
 
+If this module is installed the rest of the namespace packages will no longer
+work.
 """
-
-__author__ = 'Geoffrey R. Scheller'
-__copyright__ = 'Copyright (c) 2025 Geoffrey R. Scheller'
-__license__ = 'Apache License 2.0'

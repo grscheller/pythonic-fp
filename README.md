@@ -17,15 +17,13 @@ a homepage for the fpythonic namespace projects.
 
 | Python Package | Projects (PyPI) | Source Code (GitHub) |
 |:-------------- |:--------------- |:-------------------- |
+| fpythonic.credits | [fpythonic.credits][10] | [fpythonic][20] |
 | fpythonic.circular_array | [fpythonic.circular-array][11] | [fpythonic-circular-array][21] |
 | fpythonic.containers | [fpythonic.containers][12] | [fpythonic-containers][22] |
 | fpythonic.fp | [fpythonic.fp][13] | [fpythonic-fp][23] |
 | fpythonic.iterables | [fpythonic.iterables][14] | [fpythonic-iterables][24] |
 | fpythonic.queues | [fpythonic.queues][15] | [fpythonic-queues][25] |
 | fpythonic.splitends | [fpythonic.splitends][16] | [fpythonic-splitends][26] |
-
-**WARNING:** If installed or put on `PYTHONPATH`, then `fpythonic` 
-namespace projects will fail to load. 
 
 ### Detailed Documentation
 
@@ -34,19 +32,21 @@ all [fpythonic PyPI Namespace Projects][2].
 
 ### License Information
 
-This repo itself, as well as all the Developer Tools namespace projects,
+This repo itself, as well as all other Pythonic FP namespace projects,
 are licensed under the Apache License Version 2.0, January 2004.
 
 See [CHANGELOG.md](./CHANGELOG.md) for ongoing changes.
 
 [1]: https://grscheller.github.io/fpythonic/
 [2]: https://github.com/grscheller/fpythonic/blob/main/README.md
+[10]: https://pypi.org/project/fpythonic.credits/
 [11]: https://pypi.org/project/fpythonic.circular-array/
 [12]: https://pypi.org/project/fpythonic.containers/
 [13]: https://pypi.org/project/fpythonic.fp/
 [14]: https://pypi.org/project/fpythonic.iterables/
 [15]: https://pypi.org/project/fpythonic.queues/
 [16]: https://pypi.org/project/fpythonic.splitends/
+[20]: https://github.com/grscheller/fpythonic/
 [21]: https://github.com/grscheller/fpythonic-circular-array/
 [22]: https://github.com/grscheller/fpythonic-containers/
 [23]: https://github.com/grscheller/fpythonic-fp/
