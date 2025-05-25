@@ -7,26 +7,26 @@ packages all under the **pythonic-fp** "namespace."
 These tools tend to prefer a functional programming approach yet
 still endeavor to remain Pythonic.
 
-| Python Package | Projects (PyPI) | Source Code (GitHub) |
+| Python Package | Project on PyPI | Source Code on GitHub |
 |:-------------- |:--------------- |:-------------------- |
-| pythonic-fp.credits | [pythonic-fp.credits][10] | [pythonic-fp][20] |
-| pythonic-fp.circulararray | [pythonic-fp.circulararray][11] | [pythonic-fp-circulararray][21] |
-| pythonic-fp.containers | [pythonic-fp.containers][12] | [pythonic-fp-containers][22] |
-| pythonic-fp.fp | [pythonic-fp.fp][13] | [pythonic-fp-fp][23] |
-| pythonic-fp.iterables | [pythonic-fp.iterables][14] | [pythonic-fp-iterables][24] |
-| pythonic-fp.queues | [pythonic-fp.queues][15] | [pythonic-fp-queues][25] |
-| pythonic-fp.splitends | [pythonic-fp.splitends][16] | [pythonic-fp-splitends][26] |
+| pythonic_fp.credits | [pythonic-fp.credits][10] | [pythonic-fp][20] |
+| pythonic_fp.circulararray | [pythonic-fp.circulararray][11] | [pythonic-fp-circulararray][21] |
+| pythonic_fp.containers | [pythonic-fp.containers][12] | [pythonic-fp-containers][22] |
+| pythonic_fp.fptools | [pythonic-fp.fptools][13] | [pythonic-fp-fptools][23] |
+| pythonic_fp.iterables | [pythonic-fp.iterables][14] | [pythonic-fp-iterables][24] |
+| pythonic_fp.queues | [pythonic-fp.queues][15] | [pythonic-fp-queues][25] |
+| pythonic_fp.splitends | [pythonic-fp.splitends][16] | [pythonic-fp-splitends][26] |
 
 The main purpose of the `grscheele/pythonic-fp` GitHut repo is to host
-the documentation and serve as a homepage for all the Pythonic FP
-namespace projects. It also maintains pythonic-fp-credits namespace
+the documentation and serve as a homepage for all `pythonic-fp`
+namespace projects. It also maintains the pythonic-fp-credits namespace
 project.
 
 The PyPI `pythonic-fp` project, located under the `name_claim/`
 directory, is a stub PyPI project whose sole purpose is to reserve the
 `pythonic-fp` name on PyPI. It is **NOT TO BE INSTALLED**. It is there
 to prevent others claiming the name and causing confusion. Installing it
-will break the all of the namespace projects.
+will break all `pythonic-fp` namespace projects.
 
 ### Detailed Documentation
 
