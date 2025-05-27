@@ -59,7 +59,7 @@ See `CHANGELOG.md <CHANGELOG.rst>`_
 for ongoing changes.
 
 .. _l1: https://grscheller.github.io/pythonic-fp/
-.. _README.md: https://github.com/grscheller/pythonic-fp/blob/main/
+.. _README.rst: https://github.com/grscheller/pythonic-fp/blob/main/
 .. _CHANGELOG.rst: https://github.com/grscheller/pythonic-fp/blob/main/
 .. _l10: https://pypi.org/project/pythonic-fp.credits/
 .. _l11: https://pypi.org/project/pythonic-fp.circulararray/
