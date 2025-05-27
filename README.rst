@@ -24,7 +24,7 @@ Pythonic FP Projects:
 +---------------------------+------------------------------------+------------------------------------+
 | pythonic_fp.iterables     | `pythonic-fp.iterables <l14>`_     | `pythonic-fp-iterables <l24>`_     |
 +---------------------------+------------------------------------+------------------------------------+
-| pythonic_fp.queues        | `pythonic-fp.queues <l15>`_        | `pythonic-fp-queues <l25>_`        |
+| pythonic_fp.queues        | `pythonic-fp.queues <l15>`_        | `pythonic-fp-queues <l25>`_        |
 +---------------------------+------------------------------------+------------------------------------+
 | pythonic_fp.splitends     | `pythonic-fp.splitends <l16>`_     | `pythonic-fp-splitends <l26>`_     |
 +---------------------------+------------------------------------+------------------------------------+
@@ -46,8 +46,8 @@ will break all ``pythonic-fp`` namespace projects.
 Detailed Documentation
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Detailed pdoc generated `documentation <l1>`_ for 
-all `PyPI pythonic-fp namespace nrojects <l2>`_.
+Detailed pdoc generated `documentation <ll>`_ for 
+all `PyPI pythonic-fp namespace nrojects <l2l>`_.
 
 License Information:
 --------------------
@@ -58,8 +58,8 @@ are licensed under the Apache License Version 2.0, January 2004.
 See `CHANGELOG.md <l3>`_
 for ongoing changes.
 
-.. _l1: https://grscheller.github.io/pythonic-fp/
-.. _l2: https://github.com/grscheller/pythonic-fp/blob/main/README.md
+.. _ll: https://grscheller.github.io/pythonic-fp/
+.. _l2l: https://github.com/grscheller/pythonic-fp/blob/main/README.md
 .. _l3: https://github.com/grscheller/pythonic-fp/blob/main/CHANGELOG.rst
 .. _l10: https://pypi.org/project/pythonic-fp.credits/
 .. _l11: https://pypi.org/project/pythonic-fp.circulararray/
