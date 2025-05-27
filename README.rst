@@ -46,8 +46,8 @@ will break all ``pythonic-fp`` namespace projects.
 Detailed Documentation
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Detailed pdoc generated `documentation <ll>`_ for 
-all `PyPI pythonic-fp namespace nrojects <l2l>`_.
+Detailed pdoc generated `documentation <l1>`_ for 
+all `PyPI pythonic-fp namespace nrojects <README.md>`_.
 
 License Information:
 --------------------
@@ -55,12 +55,12 @@ License Information:
 This repo itself, as well as all other Pythonic FP namespace projects,
 are licensed under the Apache License Version 2.0, January 2004.
 
-See `CHANGELOG.md <l3>`_
+See `CHANGELOG.md <CHANGELOG.rst>`_
 for ongoing changes.
 
-.. _ll: https://grscheller.github.io/pythonic-fp/
-.. _l2l: https://github.com/grscheller/pythonic-fp/blob/main/README.md
-.. _l3: https://github.com/grscheller/pythonic-fp/blob/main/CHANGELOG.rst
+.. _l1: https://grscheller.github.io/pythonic-fp/
+.. _README.md: https://github.com/grscheller/pythonic-fp/blob/main/
+.. _CHANGELOG.rst: https://github.com/grscheller/pythonic-fp/blob/main/
 .. _l10: https://pypi.org/project/pythonic-fp.credits/
 .. _l11: https://pypi.org/project/pythonic-fp.circulararray/
 .. _l12: https://pypi.org/project/pythonic-fp.containers/
