@@ -24,7 +24,7 @@ Pythonic FP Projects:
 +---------------------------+------------------------------------+------------------------------------+
 | pythonic_fp.iterables     | `pythonic-fp.iterables <l14>`_     | `pythonic-fp-iterables <l24>`_     |
 +---------------------------+------------------------------------+------------------------------------+
-| pythonic_fp.queues        | `pythonic-fp.queues <l15>`_        | `pythonic-fp-queues <l25>`_        |
+| pythonic_fp.queues        | `pythonic-fp.queues <l15>`_        | `pythonic-fp-queues <l25>_`        |
 +---------------------------+------------------------------------+------------------------------------+
 | pythonic_fp.splitends     | `pythonic-fp.splitends <l16>`_     | `pythonic-fp-splitends <l26>`_     |
 +---------------------------+------------------------------------+------------------------------------+
