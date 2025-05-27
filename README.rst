@@ -15,11 +15,17 @@ Pythonic FP Projects:
 | Python Package            | Project on PyPI                   | Source Code on GitHub             |
 +===========================+===================================+===================================+
 | pythonic_fp.credits       | `pythonic-fp.credits <10>`_       | `pythonic-fp <20>`_               |
++---------------------------+-----------------------------------+-----------------------------------+
 | pythonic_fp.circulararray | `pythonic-fp.circulararray <11>`_ | `pythonic-fp-circulararray <21>`_ |
++---------------------------+-----------------------------------+-----------------------------------+
 | pythonic_fp.containers    | `pythonic-fp.containers <12>`_    | `pythonic-fp-containers <22>`_    |
++---------------------------+-----------------------------------+-----------------------------------+
 | pythonic_fp.fptools       | `pythonic-fp.fptools <13>`_       | `pythonic-fp-fptools <23>`_       |
++---------------------------+-----------------------------------+-----------------------------------+
 | pythonic_fp.iterables     | `pythonic-fp.iterables <14>`_     | `pythonic-fp-iterables <24>`_     |
++---------------------------+-----------------------------------+-----------------------------------+
 | pythonic_fp.queues        | `pythonic-fp.queues <15>`_        | `pythonic-fp-queues <25>`_        |
++---------------------------+-----------------------------------+-----------------------------------+
 | pythonic_fp.splitends     | `pythonic-fp.splitends <16>`_     | `pythonic-fp-splitends <26>`_     |
 +---------------------------+-----------------------------------+-----------------------------------+
 
