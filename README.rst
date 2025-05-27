@@ -11,23 +11,23 @@ still endeavor to remain Pythonic.
 
 Pythonic FP Projects:
 ---------------------
-+---------------------------+------------------------------------+------------------------------------+
-| Python Package            | Project on PyPI                    | Source Code on GitHub              |
-+===========================+====================================+====================================+
-| pythonic_fp.credits       | `pythonic-fp.credits <l10>`_       | `pythonic-fp <l20>`_               |
-+---------------------------+------------------------------------+------------------------------------+
-| pythonic_fp.circulararray | `pythonic-fp.circulararray <l11>`_ | `pythonic-fp-circulararray <l21>`_ |
-+---------------------------+------------------------------------+------------------------------------+
-| pythonic_fp.containers    | `pythonic-fp.containers <l12>`_    | `pythonic-fp-containers <l22>`_    |
-+---------------------------+------------------------------------+------------------------------------+
-| pythonic_fp.fptools       | `pythonic-fp.fptools <l13>`_       | `pythonic-fp-fptools <l23>`_       |
-+---------------------------+------------------------------------+------------------------------------+
-| pythonic_fp.iterables     | `pythonic-fp.iterables <l14>`_     | `pythonic-fp-iterables <l24>`_     |
-+---------------------------+------------------------------------+------------------------------------+
-| pythonic_fp.queues        | `pythonic-fp.queues <l15>`_        | `pythonic-fp-queues <l25>`_        |
-+---------------------------+------------------------------------+------------------------------------+
-| pythonic_fp.splitends     | `pythonic-fp.splitends <l16>`_     | `pythonic-fp-splitends <l26>`_     |
-+---------------------------+------------------------------------+------------------------------------+
++---------------------------+------------------------------------+--------------------------------------+
+| Python Package            | Project on PyPI                    | Source Code on GitHub                |
++===========================+====================================+======================================+
+| pythonic_fp.credits       | `pythonic-fp.credits <credits>`_   | `pythonic-fp <ic-fp>`_               |
++---------------------------+------------------------------------+--------------------------------------+
+| pythonic_fp.circulararray | `pythonic-fp.circulararray <ray>`_ | `pythonic-fp-circulararray <array>`_ |
++---------------------------+------------------------------------+--------------------------------------+
+| pythonic_fp.containers    | `pythonic-fp.containers <ainers>`_ | `pythonic-fp-containers <ners>`_     |
++---------------------------+------------------------------------+--------------------------------------+
+| pythonic_fp.fptools       | `pythonic-fp.fptools <tools>`_     | `pythonic-fp-fptools <tools>`_       |
++---------------------------+------------------------------------+--------------------------------------+
+| pythonic_fp.iterables     | `pythonic-fp.iterables <ables>`_   | `pythonic-fp-iterables <les>`_       |
++---------------------------+------------------------------------+--------------------------------------+
+| pythonic_fp.queues        | `pythonic-fp.queues <eues>`_       | `pythonic-fp-queues <ues>`_          |
++---------------------------+------------------------------------+--------------------------------------+
+| pythonic_fp.splitends     | `pythonic-fp.splitends <ends>`_    | `pythonic-fp-splitends <tends>`_     |
++---------------------------+------------------------------------+--------------------------------------+
 
 Purpose
 ^^^^^^^
@@ -46,7 +46,7 @@ will break all ``pythonic-fp`` namespace projects.
 Detailed Documentation
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Detailed pdoc generated `documentation <l1>`_ for 
+Detailed pdoc generated `documentation <thonic-fp>`_ for 
 all `PyPI pythonic-fp namespace nrojects <README.rst>`_.
 
 License Information:
@@ -58,20 +58,23 @@ are licensed under the Apache License Version 2.0, January 2004.
 See `CHANGELOG.md <CHANGELOG.rst>`_
 for ongoing changes.
 
-.. _l1: https://grscheller.github.io/pythonic-fp/
+.. ReST links
+   GitHub is appending the link name to the  link address. Link names ugly hack.
+
+.. _thonic-fp: https://grscheller.github.io/py
 .. _README.rst: https://github.com/grscheller/pythonic-fp/blob/main/
 .. _CHANGELOG.rst: https://github.com/grscheller/pythonic-fp/blob/main/
-.. _l10: https://pypi.org/project/pythonic-fp.credits/
-.. _l11: https://pypi.org/project/pythonic-fp.circulararray/
-.. _l12: https://pypi.org/project/pythonic-fp.containers/
-.. _l13: https://pypi.org/project/pythonic-fp.fp/
-.. _l14: https://pypi.org/project/pythonic-fp.iterables/
-.. _l15: https://pypi.org/project/pythonic-fp.queues/
-.. _l16: https://pypi.org/project/pythonic-fp.splitends/
-.. _l20: https://github.com/grscheller/pythonic-fp/
-.. _l21: https://github.com/grscheller/pythonic-fp-circulararray/
-.. _l22: https://github.com/grscheller/pythonic-fp-containers/
-.. _l23: https://github.com/grscheller/pythonic-fp-fp/
-.. _l24: https://github.com/grscheller/pythonic-fp-iterables/
-.. _l25: https://github.com/grscheller/pythonic-fp-queues/
-.. _l26: https://github.com/grscheller/pythonic-fp-splitends/
+.. _credits: https://pypi.org/project/pythonic-fp.
+.. _ray: https://pypi.org/project/pythonic-fp.circularar
+.. _ainers: https://pypi.org/project/pythonic-fp.cont
+.. _tools: https://pypi.org/project/pythonic-fp.fp
+.. _ables: https://pypi.org/project/pythonic-fp.iter
+.. _eues: https://pypi.org/project/pythonic-fp.qu
+.. _ends: https://pypi.org/project/pythonic-fp.split
+.. _ic-fp: https://github.com/grscheller/python
+.. _array: https://github.com/grscheller/pythonic-fp-circular
+.. _ners: https://github.com/grscheller/pythonic-fp-contai
+.. _tools: https://github.com/grscheller/pythonic-fp-fp
+.. _les: https://github.com/grscheller/pythonic-fp-iterab
+.. _ues: https://github.com/grscheller/pythonic-fp-que
+.. _tends: https://github.com/grscheller/pythonic-fp-spli
