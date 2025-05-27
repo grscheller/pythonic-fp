@@ -47,7 +47,7 @@ Detailed Documentation
 ^^^^^^^^^^^^^^^^^^^^^^
 
 Detailed pdoc generated `documentation <l1>`_ for 
-all `PyPI pythonic-fp namespace nrojects <README.md>`_.
+all `PyPI pythonic-fp namespace nrojects <README.rst>`_.
 
 License Information:
 --------------------
