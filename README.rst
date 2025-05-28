@@ -45,11 +45,22 @@ will break all ``pythonic-fp`` namespace projects.
 Detailed Documentation
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Detailed pdoc generated `documentation <https://grscheller.github.io/pythonic-fp>`_ for 
-all `PyPI pythonic-fp namespace projects <https://github.com/grscheller/pythonic-fp/blob/main/README.rst>`_.
+Detailed pdoc generated
+`documentation <https://grscheller.github.io/pythonic-fp>`_
+for all
+`PyPI pythonic-fp namespace projects <https://github.com/grscheller/pythonic-fp/blob/main/README.rst>`_.
 
-License Information:
---------------------
+Credits
+^^^^^^^
+
++-------------+----------------------+-----------------------------------+--------------------+
+| Contributor | Name                 | Contact info                      | Role               |
++=============+======================+===================================+====================+
+| @grscheller | Geoffrey R. Scheller | <https://github.com/grscheller>`_ | author, maintainer |
++-------------+----------------------+-----------------------------------+--------------------+
+
+License Information
+^^^^^^^^^^^^^^^^^^^
 
 This repo itself, as well as all other Pythonic FP namespace projects,
 are licensed under the Apache License Version 2.0, January 2004.
