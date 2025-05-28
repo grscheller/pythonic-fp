@@ -32,9 +32,17 @@ Pythonic FP Projects:
 Purpose
 ^^^^^^^
 
-The main purpose of the ``grscheller/pythonic-fp`` GitHut repo is to host
-the documentation and serve as a homepage for all ``pythonic-fp`` namespace
+The main purpose of the ``grscheller/pythonic-fp`` GitHut repo is to host the
+documentation and serve as a homepage for all the PyPI ``pythonic-fp`` namespace
 projects. It also maintains the pythonic-fp-credits namespace project.
+
+Detailed Documentation
+^^^^^^^^^^^^^^^^^^^^^^
+
+Detailed Sphinx generated
+`documentation <https://grscheller.github.io/pythonic-fp>`_
+for all
+`PyPI pythonic-fp namespace projects <https://github.com/grscheller/pythonic-fp/blob/main/README.rst>`_.
 
 The PyPI ``pythonic-fp`` project, located under the ``name_claim/``
 directory, is a stub PyPI project whose sole purpose is to reserve the
@@ -42,16 +50,8 @@ directory, is a stub PyPI project whose sole purpose is to reserve the
 to prevent others claiming the name and causing confusion. Installing it
 will break all ``pythonic-fp`` namespace projects.
 
-Detailed Documentation
-^^^^^^^^^^^^^^^^^^^^^^
-
-Detailed pdoc generated
-`documentation <https://grscheller.github.io/pythonic-fp>`_
-for all
-`PyPI pythonic-fp namespace projects <https://github.com/grscheller/pythonic-fp/blob/main/README.rst>`_.
-
-Credits
-^^^^^^^
+Credits:
+--------
 
 +------------------------------------------------+----------------------+--------------------+
 | Contributor                                    | Name                 | Role               |
