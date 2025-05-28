@@ -65,5 +65,7 @@ License Information
 This repo itself, as well as all other Pythonic FP namespace projects,
 are licensed under the Apache License Version 2.0, January 2004.
 
-See `CHANGELOG.md <https://github.com/grscheller/pythonic-fp/blob/main/CHANGELOG.rst>`_
-for ongoing changes.
+- See the `LICENCE file <https://github.com/grscheller/pythonic-fp/blob/main/LICENSE>`_
+  for details.
+- See the `CHANGELOG <https://github.com/grscheller/pythonic-fp/blob/main/CHANGELOG.rst>`_
+  for ongoing changes.

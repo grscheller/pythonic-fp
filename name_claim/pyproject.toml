@@ -4,10 +4,10 @@ build-backend = "flit_core.buildapi"
 
 [project]
 version = '1.0.0'
-name = "pythonic-fp"
+name = "pythonic-fp.credits"
 authors = [{ name = "Geoffrey R. Scheller", email = "geoffrey@scheller.com" }]
 license = { file = "LICENSE" }
-readme = "README.md"
+readme = "README.rst"
 requires-python = ">=3.12"
 classifiers = [
     "Development Status :: 5 - Production/Stable",
@@ -21,7 +21,7 @@ dynamic = ["description"]
 dependencies = []
 
 [project.urls]
-Homepage = "https://github.com/grscheller/pythonic-fp/blob/main/README.md"
+Homepage = "https://github.com/grscheller/pythonic-fp/blob/main/README.rst"
 Source = "https://github.com/grscheller/pythonic-fp"
 Documentation = "https://grscheller.github.io/pythonic-fp"
 
