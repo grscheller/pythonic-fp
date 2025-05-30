@@ -16,19 +16,21 @@ Important Milestones
 
   - uninstall ``pdoc``, install ``python-sphinx-doc``
   - when I it I get these packages with "sphinx" in their names
-    |
-    | python-sphinx-doc             0.1
-    | Sphinx                        8.2.3
-    | sphinxcontrib-applehelp       2.0.0
-    | sphinxcontrib-devhelp         2.0.0
-    | sphinxcontrib-htmlhelp        2.1.0
-    | sphinxcontrib-jsmath          1.0.1
-    | sphinxcontrib-qthelp          2.0.0
-    | sphinxcontrib-serializinghtml 2.0.0
-    | sphinx_design                 0.6.1
 
-    - Only sphinx_design is ``python-sphinx-doc`` dependency
-      that is also not a ``Sphinx`` dependency.
+    ================================= =====
+    ``python-sphinx-doc``             0.1
+    ``Sphinx``                        8.2.3
+    ``sphinxcontrib-applehelp``       2.0.0
+    ``sphinxcontrib-devhelp``         2.0.0
+    ``sphinxcontrib-htmlhelp``        2.1.0
+    ``sphinxcontrib-jsmath``          1.0.1
+    ``sphinxcontrib-qthelp``          2.0.0
+    ``sphinxcontrib-serializinghtml`` 2.0.0
+    ``sphinx_design``                 0.6.1
+    ================================= =====
+
+  - Only sphinx_design is ``python-sphinx-doc`` dependency
+    that is also not a ``Sphinx`` dependency.
 
 2025-05-24 - More work "biting-the-bullet"
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
