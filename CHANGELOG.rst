@@ -29,8 +29,8 @@ Important Milestones
     ``sphinx_design``                 0.6.1
     ================================= =====
 
-  - Only sphinx_design is ``python-sphinx-doc`` dependency
-    that is also not a ``Sphinx`` dependency.
+  - Only ``sphinx_design`` is a ``python-sphinx-doc`` dependency
+    that is not also a ``Sphinx`` dependency.
 
 2025-05-24 - More work "biting-the-bullet"
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
