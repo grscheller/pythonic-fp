@@ -20,9 +20,7 @@ Important Milestones
   - pythonic-fp.iterables 3.0.0
   - pythonic-fp.queues 3.0.0
   - pythonic-fp.splitends 0.30.0
-  - pythonic-fp.credits (pythonic-fp itself) 2.0.0
   - pythonic-fp (name_claim) 1.0.0 - DO NOT INSTALL
-
 
 2025-05-23 - Decided to "bite-the-bullet" and drop dtools name
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

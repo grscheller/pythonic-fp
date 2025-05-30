@@ -14,8 +14,6 @@ Pythonic FP Projects:
 +---------------------------+-----------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+
 | Python Package            | Project on PyPI                                                                   | Source Code on GitHub                                                                  |
 +===========================+===================================================================================+========================================================================================+
-| pythonic_fp.credits       | `pythonic-fp.credits <https://pypi.org/project/pythonic-fp.credits>`_             | `pythonic-fp <https://github.com/grscheller/pythonic-fp>`_                             |
-+---------------------------+-----------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+
 | pythonic_fp.circulararray | `pythonic-fp.circulararray <https://pypi.org/project/pythonic-fp.circulararray>`_ | `pythonic-fp-circulararray <https://github.com/grscheller/pythonic-fp-circulararray>`_ |
 +---------------------------+-----------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+
 | pythonic_fp.containers    | `pythonic-fp.containers <https://pypi.org/project/pythonic-fp.containers>`_       | `pythonic-fp-containers <https://github.com/grscheller/pythonic-fp-containers>`_       |
@@ -54,7 +52,7 @@ Credits:
 --------
 
 +------------------------------------------------+----------------------+--------------------+
-| Contributor                                    | Name                 | Role               |
+| Contributors                                   | Name                 | Role               |
 +================================================+======================+====================+
 | `@grscheller <https://github.com/grscheller>`_ | Geoffrey R. Scheller | author, maintainer |
 +------------------------------------------------+----------------------+--------------------+
