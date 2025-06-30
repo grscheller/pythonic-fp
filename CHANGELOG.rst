@@ -8,6 +8,19 @@ remain Pythonic. For the PyPI ``pythonic-fp`` namespace projects.
 Important Milestones
 --------------------
 
+2025-06-29 - Switching from pdoc to Sphinx
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+- building pythonic-fp.circulararray docs with Sphinx
+
+  - ended up using the Sphinx autodoc extension
+  - using the `piccolo-theme <https://pypi.org/project/piccolo-theme>`_ as the html_theme
+
+- not yet "publishing" them on gh-pages, looking into ``sphinx.ext.githubpages``
+
+  - realized I will need to move docs over to pythonic-fp repo for PyPI releases
+  - the gh-pages for the namespace repos will host the current devel env docs
+
 2025-05-29 - Beginning transition pdoc -> Sphinx
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
