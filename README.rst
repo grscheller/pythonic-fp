@@ -12,13 +12,13 @@ The overall project's name is **Pythonic FP** and consists of Python packages pa
 projects all under the ``pythonic-fp`` namespace.
 
 +---------------------------+----------------------------------------------------------------------------+---------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+
-| Python Package            | PyPI Release Documentation                                                 | Development Documentation                                                       | Project on PyPI                                                                   | Source Code on GitHub                                                                  |
+| Python Package            | PyPI Release Docs                                                          | Current Dev Docs                                                                | PyPI Name                                                                         | GitHub Name                                                                            |
 +===========================+============================================================================+=================================================================================+===================================================================================+========================================================================================+
 | pythonic_fp.circulararray | `Circular Array <https://grscheller.github.io/pythonic-fp/circulararray>`_ | `Circular Array <https://grscheller.github.io/pythonic-fp-circulararray/html>`_ | `pythonic-fp.circulararray <https://pypi.org/project/pythonic-fp.circulararray>`_ | `pythonic-fp-circulararray <https://github.com/grscheller/pythonic-fp-circulararray>`_ |
 +---------------------------+----------------------------------------------------------------------------+---------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+
 | pythonic_fp.containers    | `Containers <https://grscheller.github.io/pythonic-fp/containers>`_        | `Containers <https://grscheller.github.io/pythonic-fp-containers/html>`_        | `pythonic-fp.containers <https://pypi.org/project/pythonic-fp.containers>`_       | `pythonic-fp-containers <https://github.com/grscheller/pythonic-fp-containers>`_       |
 +---------------------------+----------------------------------------------------------------------------+---------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+
-| pythonic_fp.fptools       | `FP Tooks <https://grscheller.github.io/pythonic-fp/fptools>`_             | `FP Tooks <https://grscheller.github.io/pythonic-fp-fptools/html>`_             | `pythonic-fp.fptools <https://pypi.org/project/pythonic-fp.fptools>`_             | `pythonic-fp-fptools <https://github.com/grscheller/pythonic-fp-fptools>`_             |
+| pythonic_fp.fptools       | `FP Tools <https://grscheller.github.io/pythonic-fp/fptools>`_             | `FP Tools <https://grscheller.github.io/pythonic-fp-fptools/html>`_             | `pythonic-fp.fptools <https://pypi.org/project/pythonic-fp.fptools>`_             | `pythonic-fp-fptools <https://github.com/grscheller/pythonic-fp-fptools>`_             |
 +---------------------------+----------------------------------------------------------------------------+---------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+
 | pythonic_fp.iterables     | `Iterables <https://grscheller.github.io/pythonic-fp/iterables>`_          | `Iterables <https://grscheller.github.io/pythonic-fp-iterables/html>`_          | `pythonic-fp.iterables <https://pypi.org/project/pythonic-fp.iterables>`_         | `pythonic-fp-iterables <https://github.com/grscheller/pythonic-fp-iterables>`_         |
 +---------------------------+----------------------------------------------------------------------------+---------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+
@@ -32,10 +32,8 @@ Pythonic FP is a hobby project, but the maintainer is serious about its quality.
 Stub project
 ------------
 
-PyPI ``pythonic-fp`` is a stub project whose sole purpose is to reserve the ``pythonic-fp``
-name. **DO NOT TO BE INSTALLED IT!** It is there to prevent others claiming the name and causing
-confusion. Installing it will **break all** ``pythonic-fp`` namespace projects. Its source code
-is located under the ``name_claim/`` directory.
+The sole purpose of stub project ``pythonic-fp`` is to claim the ``pythonic-fp`` name on PyPI.
+**DO NOT INSTALL IT!** otherwise all ``pythonic-fp`` namespace projects will be broken.
 
 Circular Array
 ==============
@@ -78,6 +76,8 @@ Modules aiding in Functional programming. TODO: break some out to separate repos
 Iterable Tools
 ==============
 
+Functions to work with iterables.
+
 - merging iterables
 - dropping and taking values from iterables
 - accumulating and reducing iterables
@@ -85,7 +85,8 @@ Iterable Tools
 Queues
 ======
 
-Data structures restricting developer to algorithmic use cases.
+Data structures providing the "bit twiddling" necessary to guarantee behaviors supporting certain
+algorithmic use cases.
 
 - FIFOQueue: First-In-First-Out Queue
 - LIFOQueue: Last-In-First-Out Queue
