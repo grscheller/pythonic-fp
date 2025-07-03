@@ -2,12 +2,14 @@
 PyPI Pythonic FP Namespace Projects
 ***********************************
 
-Collection of Functional Programming (FP) oriented Python libraries. This collection consists of
-Python packages packaged as PyPI projects all under the ``pythonic-fp`` namespace. While taking
-a functional programming approach, these packages endeavor to remain Pythonic.
+Collection of Functional Programming (FP) oriented Python libraries. While taking a functional
+programming approach, these packages endeavor to remain Pythonic.
 
-Pythonic FP Projects:
-=====================
+Pythonic FP
+===========
+
+The overall project's name is **Pythonic FP** and consists of Python packages packaged as PyPI
+projects all under the ``pythonic-fp`` namespace.
 
 +---------------------------+-----------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+
 | Python Package            | Project on PyPI                                                                   | Source Code on GitHub                                                                  |
@@ -25,11 +27,18 @@ Pythonic FP Projects:
 | pythonic_fp.splitends     | `pythonic-fp.splitends <https://pypi.org/project/pythonic-fp.splitends>`_         | `pythonic-fp-splitends <https://github.com/grscheller/pythonic-fp-splitends>`_         |
 +---------------------------+-----------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+
 
-Overview
-========
+Pythonic FP is a hobby project, but the maintainer is serious about its quality.
+
+Stub project
+------------
+
+There is a project on PyPI with the name ``pythonic-fp``. It is a stub project whose sole purpose is
+to reserve the ``pythonic-fp``. It is **NOT TO BE INSTALLED**. It is there to prevent others
+claiming the name and causing confusion. Installing it will break all ``pythonic-fp`` namespace
+projects. Its source code is located under the ``name_claim/`` directory.
 
 Circular Array
---------------
+==============
 
 Python module implementing a stateful circular array data structure.
 
@@ -40,7 +49,7 @@ Python module implementing a stateful circular array data structure.
 - Iterable, can safely mutate while iterators continue iterating over previous state
 
 Containers
-----------
+==========
 
 Python package implementing container-like classes.
 
@@ -51,7 +60,7 @@ Python package implementing container-like classes.
 - Either monad: left biased, represents a "left" or "right" value, never both
 
 FP Tools
---------
+========
 
 Modules aiding in Functional programming. TODO: break apart to separate repos
 
@@ -66,15 +75,15 @@ Modules aiding in Functional programming. TODO: break apart to separate repos
 
 - The State monad
 
-Tools for Iterables
--------------------
+Iterable Tools
+==============
 
 - merging iterables
 - dropping and taking values from iterables
 - accumulating and reducing iterables
 
 Queues
-------
+======
 
 Data structures restricting developer to algorithmic use cases.
 
@@ -83,39 +92,6 @@ Data structures restricting developer to algorithmic use cases.
 - DEQueue: Double-Ended Queue
 
 Splitends
----------
+=========
 
 A singularly linked data structures allowing data sharing between multiple instances.
-
-Pythonic FP
-===========
-
-The overall project's name is **Pythonic FP** and consists of Python packages packaged as PyPI
-projects all under the ``pythonic-fp`` namespace.
-
-There is a PyPI project with the name ``pythonic-fp``. It is a stub PyPI project whose sole purpose
-is to reserve the ``pythonic-fp`` name on PyPI. It is **NOT TO BE INSTALLED**. It is there to
-prevent others claiming the name and causing confusion. Installing it will break all ``pythonic-fp``
-namespace projects. Its source code is located under the ``name_claim/`` directory.
-
-Pythonic FP is a hobby project, but the maintainer is serious about its quality.
-
-Credits:
---------
-
-+-----------------------------------------------+----------------------+--------------------+
-| Contributors                                  | Name                 | Role               |
-+===============================================+======================+====================+
-| `grscheller <https://github.com/grscheller>`_ | Geoffrey R. Scheller | author, maintainer |
-+-----------------------------------------------+----------------------+--------------------+
-
-License Information
-===================
-
-This repo itself, as well as all other Pythonic FP namespace projects,
-are licensed under the Apache License Version 2.0, January 2004.
-
-- See the `LICENCE file <https://github.com/grscheller/pythonic-fp/blob/main/LICENSE>`_
-  for details.
-- See the `CHANGELOG <https://github.com/grscheller/pythonic-fp/blob/main/CHANGELOG.rst>`_
-  for ongoing changes.
