@@ -32,9 +32,10 @@ Pythonic FP is a hobby project, but the maintainer is serious about its quality.
 Stub project
 ------------
 
-The sole purpose of stub project ``pythonic-fp`` is to claim the ``pythonic-fp`` name on PyPI.
-**DO NOT INSTALL IT!** otherwise all ``pythonic-fp`` namespace projects will be broken. I don't want
-to cause anyone any confusion if they should choose the name because PyPI says it's available.
+Project ``pythonic-fp`` sole purpose is to claim the name on PyPI. **DO NOT INSTALL IT!** otherwise
+all ``pythonic-fp`` namespace projects will break. I don't want to cause anyone any confusion if
+they should choose the name because PyPI says it is available. Its source code is in the name_claim
+directory.
 
 Circular Array
 ==============
