@@ -8,8 +8,8 @@ programming approach, these packages endeavor to remain Pythonic.
 Pythonic FP
 ===========
 
-The overall project's name is **Pythonic FP** and consists of Python packages packaged as PyPI
-projects all under the ``pythonic-fp`` namespace.
+The overall project's name is **Pythonic FP** and consists of PyPI Python projects all under the
+``pythonic-fp`` namespace.
 
 +---------------------------+----------------------------------------------------------------------------+---------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+
 | Python Package            | PyPI Release Docs                                                          | Current Dev Docs                                                                | PyPI Name                                                                         | GitHub Name                                                                            |
@@ -33,7 +33,8 @@ Stub project
 ------------
 
 The sole purpose of stub project ``pythonic-fp`` is to claim the ``pythonic-fp`` name on PyPI.
-**DO NOT INSTALL IT!** otherwise all ``pythonic-fp`` namespace projects will be broken.
+**DO NOT INSTALL IT!** otherwise all ``pythonic-fp`` namespace projects will be broken. I don't want
+to cause anyone any confusion if they should choose the name because PyPI says it's available.
 
 Circular Array
 ==============
