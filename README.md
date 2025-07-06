@@ -10,14 +10,14 @@ is serious about its quality.
 The overall project's name is **Pythonic FP** and consists of PyPI Python projects all under the
 `pythonic-fp` namespace.
 
-| Name | Python Package | PyPI Release Docs | Current Dev Docs | PyPI Name | GitHub Name |
-|:---- |:--------------:|:-----------------:|:----------------:|:---------:|:-----------:|
-| Circular Array | pythonic_fp.circulararray | [GH-Pages][101] | [GH-Pages][201] | [PyPI][301] | [GitHub][401] |
-| Containers | pythonic_fp.containers | [GH-Pages][102] | [GH-Pages][202] | [PyPI][302] | [GitHub][402] |
-| FP Tools | pythonic_fp.fptools | [GH-Pages][103] | [GH-Pages][203] | [PyPI][303] | [GitHub][403] |
-| Iterables | pythonic_fp.iterables | [GH-Pages][104] | [GH-Pages][203] | [PyPI][304] | [GitHub][404] |
-| Queues | pythonic_fp.queues | [GH-Pages][105] | [GH-Pages][205] | [PyPI][305] | [GitHub][405] |
-| Splitends | pythonic_fp.splitends | [GH-Pages][106] | [GH-Pages][206] | [PyPI][306] | [GitHub][406] |
+| Name | Python Package | Docs | Dev Docs | PyPI | GitHub |
+|:---- |:-------------- |:----:|:--------:|:----:|:------:|
+| Circular Array | pythonic_fp.circulararray | [release][101] | [devel][201] | [pythonic-fp.circulararray][301] | [pythonic-fp-circulararray][401] |
+| Containers | pythonic_fp.containers | [release][102] | [devel][202] | [pythonic-fp.containers][302] | [pythonic-fp-containers][402] |
+| FP Tools | pythonic_fp.fptools | [release][103] | [devel][203] | [pythonic-fp.fptools][303] | [pythonic-fp-fptools][403] |
+| Iterables | pythonic_fp.iterables | [release][104] | [devel][203] | [pythonic-fp.iterables][304] | [pythonic-fp-iterables][404] |
+| Queues | pythonic_fp.queues | [release][105] | [devel][205] | [pythonic-fp.queues][305] | [pythonic-fp-queues][405] |
+| Splitends | pythonic_fp.splitends | [release][106] | [devel][206] | [pythonic-fp.splitends][306] | [pythonic-fp-splitends][406] |
 
 
 ### Stub project
