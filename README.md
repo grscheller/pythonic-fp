@@ -10,14 +10,14 @@ is serious about its quality.
 The overall project's name is **Pythonic FP** and consists of PyPI Python projects all under the
 `pythonic-fp` namespace.
 
-| Name | Python Package | Docs | PyPI | GitHub |
-|:---- |:-------------- |:----:|:----:|:------:|
-| Circular Array | pythonic_fp.circulararray | [docs][101] | [pythonic-fp.circulararray][201] | [pythonic-fp-circulararray][301] |
-| Containers | pythonic_fp.containers | [docs][102] | [pythonic-fp.containers][202] | [pythonic-fp-containers][302] |
-| FP Tools | pythonic_fp.fptools | [docs][103] | [pythonic-fp.fptools][203] | [pythonic-fp-fptools][303] |
-| Iterables | pythonic_fp.iterables | [docs][104] | [pythonic-fp.iterables][204] | [pythonic-fp-iterables][304] |
-| Queues | pythonic_fp.queues | [docs][105] | [pythonic-fp.queues][205] | [pythonic-fp-queues][305] |
-| Splitends | pythonic_fp.splitends | [docs][106] | [pythonic-fp.splitends][206] | [pythonic-fp-splitends][306] |
+| Name | Python Package | PyPI | GitHub | Docs |
+|:---- |:-------------- |:----:|:------:|:----:|
+| Circular Array | pythonic_fp.circulararray | [pythonic-fp.circulararray][101] | [pythonic-fp-circulararray][201] | [docs][301] |
+| Containers | pythonic_fp.containers | [pythonic-fp.containers][102] | [pythonic-fp-containers][202] | [docs][302] |
+| FP Tools | pythonic_fp.fptools | [pythonic-fp.fptools][103] | [pythonic-fp-fptools][203] | [docs][303] |
+| Iterables | pythonic_fp.iterables | [pythonic-fp.iterables][104] | [pythonic-fp-iterables][204] | [docs][304] |
+| Queues | pythonic_fp.queues | [pythonic-fp.queues][105] | [pythonic-fp-queues][205] | [docs][305] |
+| Splitends | pythonic_fp.splitends | [pythonic-fp.splitends][106] | [pythonic-fp-splitends][206] | [docs][306] |
 
 ## Namespace Projects
 
@@ -57,7 +57,7 @@ ______________________________________________________________________
 
 ### FP Tools: pythonic_fp.fptools
 
-Modules aiding in Functional programming. TODO: break some out to separate repos.
+Modules aiding in Functional programming.
 
 - Subclassable boolean
   - Python's builtin bool cannot be subclassed
@@ -85,8 +85,8 @@ ______________________________________________________________________
 
 ### Queues: pythonic_fp.queues
 
-Data structures providing the "bit twiddling" necessary to guarantee
-behaviors supporting certain algorithmic use cases.
+Queue based data structures which provide the "bit twiddling" necessary
+to guarantee behaviors supporting certain algorithmic use cases.
 
 - FIFOQueue: First-In-First-Out Queue
 - LIFOQueue: Last-In-First-Out Queue
@@ -97,7 +97,7 @@ ______________________________________________________________________
 ### Splitends: pythonic_fp.splitends
 
 A singularly linked data structures allowing data sharing between
-multiple instances.
+multiple instances. Very much Alpha level software.
 
 ______________________________________________________________________
 
@@ -105,31 +105,34 @@ ______________________________________________________________________
 
 **DO NOT INSTALL**
 
-There is a PyPI project associated with the `pythonic-fp` basename. Its
-sole purpose is to claim the name on PyPI. Do not install it, otherwise
-all `pythonic-fp` namespace projects will break. I don't want to cause
-anyone any confusion if they should choose the name because PyPI says it
-is available. Its source code is in the name_claim directory.
+The PyPI `pythonic-fp` project's sole purpose is to claim the name on
+PyPI. Do not install it, otherwise all `pythonic-fp` namespace projects
+will **break**.
+
+I don't want to cause anyone any confusion if they should choose the
+name because PyPI says it is available.
+
+Its source code is in the name_claim directory.
 
 ______________________________________________________________________
 
-[101]: https://grscheller.github.io/pythonic-fp-circulararray/html/api_pypi.html
-[102]: https://grscheller.github.io/pythonic-fp-containers/html/api_pypi.html
-[103]: https://grscheller.github.io/pythonic-fp-fptools/html/api_pypi.html
-[104]: https://grscheller.github.io/pythonic-fp-iterables/html/api_pypi.html
-[105]: https://grscheller.github.io/pythonic-fp-queues/html/api_pypi.html
-[106]: https://grscheller.github.io/pythonic-fp-splitends/html/api_pypi.html
+[101]: https://pypi.org/project/pythonic-fp.circulararray
+[102]: https://pypi.org/project/pythonic-fp.containers
+[103]: https://pypi.org/project/pythonic-fp.fptools
+[104]: https://pypi.org/project/pythonic-fp.iterables
+[105]: https://pypi.org/project/pythonic-fp.queues
+[106]: https://pypi.org/project/pythonic-fp.splitends
 
-[201]: https://pypi.org/project/pythonic-fp.circulararray
-[202]: https://pypi.org/project/pythonic-fp.containers
-[203]: https://pypi.org/project/pythonic-fp.fptools
-[204]: https://pypi.org/project/pythonic-fp.iterables
-[205]: https://pypi.org/project/pythonic-fp.queues
-[206]: https://pypi.org/project/pythonic-fp.splitends
+[201]: https://github.com/grscheller/pythonic-fp-circulararray
+[202]: https://github.com/grscheller/pythonic-fp-containers
+[203]: https://github.com/grscheller/pythonic-fp-fptools
+[204]: https://github.com/grscheller/pythonic-fp-iterables
+[205]: https://github.com/grscheller/pythonic-fp-queues
+[206]: https://github.com/grscheller/pythonic-fp-splitends
 
-[301]: https://github.com/grscheller/pythonic-fp-circulararray
-[302]: https://github.com/grscheller/pythonic-fp-containers
-[303]: https://github.com/grscheller/pythonic-fp-fptools
-[304]: https://github.com/grscheller/pythonic-fp-iterables
-[305]: https://github.com/grscheller/pythonic-fp-queues
-[306]: https://github.com/grscheller/pythonic-fp-splitends
+[301]: https://grscheller.github.io/pythonic-fp-circulararray/html/api_pypi.html
+[302]: https://grscheller.github.io/pythonic-fp-containers/html/api_pypi.html
+[303]: https://grscheller.github.io/pythonic-fp-fptools/html/api_pypi.html
+[304]: https://grscheller.github.io/pythonic-fp-iterables/html/api_pypi.html
+[305]: https://grscheller.github.io/pythonic-fp-queues/html/api_pypi.html
+[306]: https://grscheller.github.io/pythonic-fp-splitends/html/api_pypi.html
