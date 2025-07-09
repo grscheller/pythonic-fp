@@ -109,8 +109,8 @@ The PyPI `pythonic-fp` project's sole purpose is to claim the name on
 PyPI. Do not install it, otherwise all `pythonic-fp` namespace projects
 will **break**.
 
-I don't want to cause anyone any confusion if they should choose the
-name because PyPI says it is available.
+I don't want to cause anyone any confusion if someone chooses the name
+because PyPI said it was available.
 
 Its source code is in the name_claim directory.
 
