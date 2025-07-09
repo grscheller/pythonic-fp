@@ -102,7 +102,7 @@ ______________________________________________________________________
 [105]: https://grscheller.github.io/pythonic-fp/queues
 [106]: https://grscheller.github.io/pythonic-fp/splitends
 
-[201]: https://grscheller.github.io/pythonic-fp-circulararray/html
+[201]: https://grscheller.github.io/pythonic-fp-circulararray/html/api_pypi.html
 [202]: https://grscheller.github.io/pythonic-fp-containers/html
 [203]: https://grscheller.github.io/pythonic-fp-fptools/html
 [204]: https://grscheller.github.io/pythonic-fp-iterables/html
