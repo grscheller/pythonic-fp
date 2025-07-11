@@ -130,9 +130,9 @@ ______________________________________________________________________
 [205]: https://github.com/grscheller/pythonic-fp-queues
 [206]: https://github.com/grscheller/pythonic-fp-splitends
 
-[301]: https://grscheller.github.io/pythonic-fp-circulararray/html/api_pypi.html
-[302]: https://grscheller.github.io/pythonic-fp-containers/html/api_pypi.html
-[303]: https://grscheller.github.io/pythonic-fp-fptools/html/api_pypi.html
-[304]: https://grscheller.github.io/pythonic-fp-iterables/html/api_pypi.html
-[305]: https://grscheller.github.io/pythonic-fp-queues/html/api_pypi.html
-[306]: https://grscheller.github.io/pythonic-fp-splitends/html/api_pypi.html
+[301]: https://grscheller.github.io/pythonic-fp/circulararray/API/development/build/html
+[302]: https://grscheller.github.io/pythonic-fp/containers/API/development/build/html
+[303]: https://grscheller.github.io/pythonic-fp/fptools/API/development/build/html
+[304]: https://grscheller.github.io/pythonic-fp/iterables/API/development/build/html
+[305]: https://grscheller.github.io/pythonic-fp/queues/API/development/build/html
+[306]: https://grscheller.github.io/pythonic-fp/splitends/API/development/build/html
