@@ -27,14 +27,8 @@ Getting Started
 Documentation
 -------------
 
-:doc:`Current Development API <api/index>`
-    Development environment API documentation.
-
-Development
------------
-
-:doc:`CHANGELOG <changelog>`
-    For pathonic-fp.queues and predecessor projects.
+:doc:`Programming API for pythonic_fp.queues package <api/index>`
+    For |PROPOSED_RELEASE_STRING| PyPI pythonic-fp.queues |VERSION_RELEASED| release.
 
 .. toctree::
    :caption: Overview
@@ -57,10 +51,3 @@ Development
    :hidden:
 
    api/index
-
-.. toctree::
-   :caption: Development
-   :maxdepth: 1
-   :hidden:
-
-   changelog

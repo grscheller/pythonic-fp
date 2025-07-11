@@ -1,5 +1,5 @@
-PyPI release docs
-=================
+PyPI Releases
+=============
 
 Package pythonic_fp.queues
 --------------------------

@@ -5,11 +5,17 @@
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
+# 
+# Must match what is in pyproject.toml, also update proposed_release accordingly
+# when generating the docs for an actual, not proposed, release.
+#
 
 project = 'Pythonic FP - Queues'
 copyright = '2023-2025, Geoffrey R. Scheller'
 author = 'Geoffrey R. Scheller'
-release = '4.0.0'
+release = '4.0.0' 
+proposed_release_string = 'a proposed'
+# proposed_release_string = 'the'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -43,3 +49,9 @@ all_typevars = True
 
 html_theme = 'piccolo_theme'
 html_static_path = ['_static']
+
+rst_epilog = f"""
+.. |VERSION_RELEASED| replace:: v{release}
+
+.. |PROPOSED_RELEASE_STRING| replace:: {proposed_release_string}
+"""
