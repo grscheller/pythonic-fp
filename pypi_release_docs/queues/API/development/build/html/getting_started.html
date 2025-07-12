@@ -5,10 +5,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Getting Started &#8212; Pythonic FP - Queues 4.0.0 documentation</title>
+    <title>Getting Started &#8212; Pythonic FP - Queues 4.0.1 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="_static/basic_mod.css?v=9b2032db" />
-    <script src="_static/documentation_options.js?v=3304f9e4"></script>
+    <script src="_static/documentation_options.js?v=977c7dfd"></script>
     <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
@@ -30,7 +30,7 @@
         <p id="toggle_sidebar">
             <a href="#" title="Toggle sidebar">|||</a>
         </p>
-        <h1><a href="index.html" title="Go to homepage">Pythonic FP - Queues 4.0.0 documentation</a></h1>
+        <h1><a href="index.html" title="Go to homepage">Pythonic FP - Queues 4.0.1 documentation</a></h1>
 
         <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
     <template v-if="mode == 'light'">
@@ -129,7 +129,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="api/index.html">pythonic-fp.queues API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/index.html">Modules for pythonic-fp.queues</a></li>
 </ul>
 
         </div>
@@ -146,21 +146,23 @@
 <section id="how-to-installing-the-module">
 <h2>How to installing the module<a class="headerlink" href="#how-to-installing-the-module" title="Link to this heading">¶</a></h2>
 <p>Install the project into your Python environment:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pip<span class="w"> </span>install<span class="w"> </span>pythonic-fp.circulararray
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pip<span class="w"> </span>install<span class="w"> </span>pythonic-fp.queues
 </pre></div>
 </div>
 </section>
 <section id="importing-the-module">
 <h2>Importing the module<a class="headerlink" href="#importing-the-module" title="Link to this heading">¶</a></h2>
-<p>Import the <code class="docutils literal notranslate"><span class="pre">CA</span></code> class and <code class="docutils literal notranslate"><span class="pre">ca</span></code> “factory function” into your code.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">pythonic_fp.circulararray</span><span class="w"> </span><span class="kn">import</span> <span class="n">CA</span><span class="p">,</span> <span class="n">ca</span>
+<p>Importing the queue classes and “factory functions” into your code.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">pythonic_fp.queues.fifo</span><span class="w"> </span><span class="kn">import</span> <span class="n">FIFOQueue</span><span class="p">,</span> <span class="n">fifo_queue</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pythonic_fp.queues.lifo</span><span class="w"> </span><span class="kn">import</span> <span class="n">LIFOQueue</span><span class="p">,</span> <span class="n">lifo_queue</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pythonic_fp.queues.de</span><span class="w"> </span><span class="kn">import</span> <span class="n">DEQueue</span><span class="p">,</span> <span class="n">de_queue</span>
 </pre></div>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Like Python’s built-in list, <code class="docutils literal notranslate"><span class="pre">CA</span></code> takes up to one iterable. The <code class="docutils literal notranslate"><span class="pre">ca</span></code>
-function behaves like Python’s <code class="docutils literal notranslate"><span class="pre">[]</span></code> syntax where <code class="docutils literal notranslate"><span class="pre">ca</span></code> creates a <code class="docutils literal notranslate"><span class="pre">CA</span></code>
-object from the arguments passed to it.:qa</p>
+<p>Each type of Queue can be instantiated with either one iterable or no arguments.
+The factory functions behaves like Python’s <code class="docutils literal notranslate"><span class="pre">[]</span></code> syntax. Each creates its
+coresponding Queue object from the arguments given it.</p>
 </div>
 </section>
 </section>

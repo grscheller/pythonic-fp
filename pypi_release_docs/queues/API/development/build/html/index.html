@@ -5,10 +5,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Pythonic FP - Queues Overview &#8212; Pythonic FP - Queues 4.0.0 documentation</title>
+    <title>Pythonic FP - Queues Overview &#8212; Pythonic FP - Queues 4.0.1 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="_static/basic_mod.css?v=9b2032db" />
-    <script src="_static/documentation_options.js?v=3304f9e4"></script>
+    <script src="_static/documentation_options.js?v=977c7dfd"></script>
     <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
@@ -29,7 +29,7 @@
         <p id="toggle_sidebar">
             <a href="#" title="Toggle sidebar">|||</a>
         </p>
-        <h1><a href="#" title="Go to homepage">Pythonic FP - Queues 4.0.0 documentation</a></h1>
+        <h1><a href="#" title="Go to homepage">Pythonic FP - Queues 4.0.1 documentation</a></h1>
 
         <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
     <template v-if="mode == 'light'">
@@ -128,7 +128,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="api/index.html">pythonic-fp.queues API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/index.html">Modules for pythonic-fp.queues</a></li>
 </ul>
 
         </div>
@@ -142,12 +142,30 @@
             
   <section id="pythonic-fp-queues-overview">
 <h1>Pythonic FP - Queues Overview<a class="headerlink" href="#pythonic-fp-queues-overview" title="Link to this heading">¶</a></h1>
-<p>PyPI project <a class="reference external" href="https://pypi.org/project/pythonic-fp.queues/">pythonic-fp.queues</a>
-Implementing 3 types of queue data structures.</p>
+<p>PyPI project <a class="reference external" href="https://pypi.org/project/pythonic-fp.queues/">pythonic-fp.queues</a>.</p>
+<p id="module-pythonic_fp.queues">Data structures implementing queue-like behaviors.</p>
 <ul class="simple">
+<li><p>Three Queue-like data structures:</p>
+<ul>
 <li><p><em>class</em> <strong>FIFOQueue</strong> - First In First Out Queue</p></li>
 <li><p><em>class</em> <strong>LIFOQueue</strong> - Last In First Out Queue</p></li>
-<li><p><em>class</em> <strong>DEQueue</strong>   - Double Ended Queue</p></li>
+<li><p><em>class</em> <strong>DEQueue</strong> - Double Ended Queue</p></li>
+</ul>
+</li>
+<li><p>Each with capabilities:</p>
+<ul>
+<li><p>O(1) pushes and pops</p></li>
+<li><p>O(1) length determination</p></li>
+<li><p>in a Boolean context</p>
+<ul>
+<li><p>true if not empty</p></li>
+<li><p>false if empty</p></li>
+</ul>
+</li>
+<li><p>will resize themselves larger when needed</p></li>
+<li><p>not indexable or sliceable by design</p></li>
+</ul>
+</li>
 </ul>
 <p>Part of of the
 <a class="reference external" href="https://github.com/grscheller/pythonic-fp/blob/main/README.md">pythonic-fp namespace projects</a>.</p>
@@ -162,16 +180,25 @@ Implementing 3 types of queue data structures.</p>
 </section>
 <section id="documentation">
 <h2>Documentation<a class="headerlink" href="#documentation" title="Link to this heading">¶</a></h2>
+<section id="programming-api">
+<h3>Programming API:<a class="headerlink" href="#programming-api" title="Link to this heading">¶</a></h3>
 <dl class="simple">
-<dt><a class="reference internal" href="api/index.html"><span class="doc">Programming API for pythonic_fp.queues package</span></a></dt><dd><p>For a proposed PyPI pythonic-fp.queues v4.0.0 release.</p>
+<dt><a class="reference internal" href="api/index.html"><span class="doc">Package pythonic_fp.queues</span></a></dt><dd><p>For a proposed PyPI pythonic-fp.queues project v4.0.1 release.</p>
 </dd>
 </dl>
+</section>
+<section id="changelog">
+<h3>CHANGELOG:<a class="headerlink" href="#changelog" title="Link to this heading">¶</a></h3>
+<p>Change log for the
+<a class="reference external" href="https://github.com/grscheller/pythonic-fp-queues/blob/main/CHANGELOG.rst">pythonic-fp queues</a>
+PyPI project.</p>
 <div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">
 </div>
+</section>
 </section>
 </section>
 
@@ -192,6 +219,10 @@ Implementing 3 types of queue data structures.</p>
 <li><a class="reference internal" href="#">Pythonic FP - Queues Overview</a><ul>
 <li><a class="reference internal" href="#getting-started">Getting Started</a></li>
 <li><a class="reference internal" href="#documentation">Documentation</a><ul>
+<li><a class="reference internal" href="#programming-api">Programming API:</a></li>
+<li><a class="reference internal" href="#changelog">CHANGELOG:</a><ul>
+</ul>
+</li>
 </ul>
 </li>
 </ul>

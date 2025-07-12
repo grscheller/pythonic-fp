@@ -1,16 +1,13 @@
-pythonic-fp.queues API
-======================
-
-.. automodule:: pythonic_fp.queues
-   :members:
+Modules for pythonic-fp.queues
+==============================
 
 :doc:`Module pythonic_fp.fifo<fifo>`
     First In First Out Queue
 
-:doc:`Module LIFOQueue <lifo>`
+:doc:`Module LIFOQueue.lifo <lifo>`
     Last In First Out Queue
 
-:doc:`Module DEQueue <de>`
+:doc:`Module DEQueue.de <de>`
     Double Ended Queue
 
 .. toctree::
@@ -18,18 +15,18 @@ pythonic-fp.queues API
    :maxdepth: 1
    :hidden:
 
-    api/fifo
+   fifo
 
 .. toctree::
    :caption: LIFOQueue
    :maxdepth: 1
    :hidden:
 
-    api/lifo
+   lifo
 
 .. toctree::
    :caption: DEQueue
    :maxdepth: 1
    :hidden:
 
-    api/de
+   de

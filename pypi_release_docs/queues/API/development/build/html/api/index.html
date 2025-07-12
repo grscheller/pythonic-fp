@@ -5,16 +5,17 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>pythonic-fp.queues API &#8212; Pythonic FP - Queues 4.0.0 documentation</title>
+    <title>Modules for pythonic-fp.queues &#8212; Pythonic FP - Queues 4.0.1 documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/basic_mod.css?v=9b2032db" />
-    <script src="../_static/documentation_options.js?v=3304f9e4"></script>
+    <script src="../_static/documentation_options.js?v=977c7dfd"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <script src="../_static/js/petite-vue.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Module fifo" href="fifo.html" />
     <link rel="prev" title="PyPI Releases" href="../releases.html" /> 
   </head><body data-dark_mode_code_blocks="true">
 
@@ -29,7 +30,7 @@
         <p id="toggle_sidebar">
             <a href="#" title="Toggle sidebar">|||</a>
         </p>
-        <h1><a href="../index.html" title="Go to homepage">Pythonic FP - Queues 4.0.0 documentation</a></h1>
+        <h1><a href="../index.html" title="Go to homepage">Pythonic FP - Queues 4.0.1 documentation</a></h1>
 
         <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
     <template v-if="mode == 'light'">
@@ -128,7 +129,10 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">pythonic-fp.queues API</a><ul class="simple">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Modules for pythonic-fp.queues</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="fifo.html">Module fifo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lifo.html">Module lifo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="de.html">Module de</a></li>
 </ul>
 </li>
 </ul>
@@ -142,45 +146,14 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <section id="module-pythonic_fp.queues">
-<span id="pythonic-fp-queues-api"></span><h1>pythonic-fp.queues API<a class="headerlink" href="#module-pythonic_fp.queues" title="Link to this heading">¶</a></h1>
-<section id="queue-based-data-structures">
-<h2>Queue based data structures<a class="headerlink" href="#queue-based-data-structures" title="Link to this heading">¶</a></h2>
-<ul class="simple">
-<li><p>O(1) pushes and pops</p></li>
-<li><p>O(1) length determination</p></li>
-<li><p>in a Boolean context, true if not empty, false if empty</p></li>
-<li><p>will resize itself larger if needed</p></li>
-<li><p>is not indexable or sliceable by design</p></li>
-</ul>
-<p>Modeled after Python builtins.</p>
-<ul class="simple">
-<li><p>initializers take 0 or 1 iterables</p></li>
-<li><p>factory functions take an arbitrary number of arguments</p></li>
-</ul>
-<section id="queue-types">
-<h3>Queue Types<a class="headerlink" href="#queue-types" title="Link to this heading">¶</a></h3>
-<ul class="simple">
-<li><p><em>class</em> <strong>FIFOQueue</strong> (First In First Out Queue)</p></li>
-<li><p><em>class</em> <strong>LIFOQueue</strong> (Last In First Out Queue)</p></li>
-<li><p><em>class</em> <strong>DEQueue</strong> (Double Ended Queue)</p></li>
-</ul>
-</section>
-<section id="factory-functions">
-<h3>Factory Functions<a class="headerlink" href="#factory-functions" title="Link to this heading">¶</a></h3>
-<ul class="simple">
-<li><p><em>function</em> <strong>fifo_queue</strong></p></li>
-<li><p><em>function</em> <strong>lifo_queue</strong></p></li>
-<li><p><em>function</em> <strong>de_queue</strong></p></li>
-</ul>
-</section>
-</section>
+  <section id="modules-for-pythonic-fp-queues">
+<h1>Modules for pythonic-fp.queues<a class="headerlink" href="#modules-for-pythonic-fp-queues" title="Link to this heading">¶</a></h1>
 <dl class="simple">
 <dt><a class="reference internal" href="fifo.html"><span class="doc">Module pythonic_fp.fifo</span></a></dt><dd><p>First In First Out Queue</p>
 </dd>
-<dt><a class="reference internal" href="lifo.html"><span class="doc">Module LIFOQueue</span></a></dt><dd><p>Last In First Out Queue</p>
+<dt><a class="reference internal" href="lifo.html"><span class="doc">Module LIFOQueue.lifo</span></a></dt><dd><p>Last In First Out Queue</p>
 </dd>
-<dt><a class="reference internal" href="de.html"><span class="doc">Module DEQueue</span></a></dt><dd><p>Double Ended Queue</p>
+<dt><a class="reference internal" href="de.html"><span class="doc">Module DEQueue.de</span></a></dt><dd><p>Double Ended Queue</p>
 </dd>
 </dl>
 <div class="toctree-wrapper compound">
@@ -197,27 +170,6 @@
         </div>
       </div>
     
-        <div id="show_right_sidebar">
-            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&lt;</span><span>Page contents</span></a></p>
-        </div>
-
-        <div id="right_sidebar">
-            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&gt;</span><span>Page contents:</span></a></p>
-            <div class="page_toc">
-                <ul>
-<li><a class="reference internal" href="#">pythonic-fp.queues API</a><ul>
-<li><a class="reference internal" href="#queue-based-data-structures">Queue based data structures</a><ul>
-<li><a class="reference internal" href="#queue-types">Queue Types</a></li>
-<li><a class="reference internal" href="#factory-functions">Factory Functions</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-            </div>
-        </div>
-    
 
       <div class="clearer"></div>
     </div>
@@ -231,6 +183,8 @@
             </div>
 
             <div class="right">
+                
+                    <a href="fifo.html"><span>Module fifo</span><span class="icon">&gt;</span></a>
                 
             </div>
         </div>

@@ -5,12 +5,10 @@
 Pythonic FP - Queues Overview
 =============================
 
-PyPI project `pythonic-fp.queues <https://pypi.org/project/pythonic-fp.queues/>`_
-Implementing 3 types of queue data structures.
+PyPI project `pythonic-fp.queues <https://pypi.org/project/pythonic-fp.queues/>`_.
 
-- *class* **FIFOQueue** - First In First Out Queue
-- *class* **LIFOQueue** - Last In First Out Queue
-- *class* **DEQueue**   - Double Ended Queue
+.. automodule:: pythonic_fp.queues
+   :members:
 
 Part of of the
 `pythonic-fp namespace projects <https://github.com/grscheller/pythonic-fp/blob/main/README.md>`_.
@@ -27,8 +25,18 @@ Getting Started
 Documentation
 -------------
 
-:doc:`Programming API for pythonic_fp.queues package <api/index>`
-    For |PROPOSED_RELEASE_STRING| PyPI pythonic-fp.queues |VERSION_RELEASED| release.
+Programming API:
+~~~~~~~~~~~~~~~~
+
+:doc:`Package pythonic_fp.queues <api/index>`
+    For |PROPOSED_RELEASE_STRING| PyPI pythonic-fp.queues project |VERSION_RELEASED| release.
+
+CHANGELOG:
+~~~~~~~~~~
+
+Change log for the
+`pythonic-fp queues <https://github.com/grscheller/pythonic-fp-queues/blob/main/CHANGELOG.rst>`_
+PyPI project.
 
 .. toctree::
    :caption: Overview
@@ -47,7 +55,7 @@ Documentation
 
 .. toctree::
    :caption: Documentation
-   :maxdepth: 2
+   :maxdepth: 1
    :hidden:
 
    api/index
