@@ -14,11 +14,16 @@ Important Milestones
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Sphinx now used
+
   - looks much more professional
   - all documentation generation moved back to this repo
   - docstrings in code a bit rough, but now more terse
+
 - Updated docs for circulararray PyPI release v5.2.0
 - Updated docs for queues PyPI release v4.0.1
+- the docs links on the README.md pythonic-fp homepage updated
+
+  - now points to docs development's release page instead of docs development itself
 
 2025-07-04 - Beginning dtools deprecation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
