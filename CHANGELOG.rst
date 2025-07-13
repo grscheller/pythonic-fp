@@ -17,7 +17,8 @@ Important Milestones
   - looks much more professional
   - all documentation generation moved back to this repo
   - docstrings in code a bit rough, but now more terse
-- Updated docs for circulararray release v5.2.0
+- Updated docs for circulararray PyPI release v5.2.0
+- Updated docs for queues PyPI release v4.0.1
 
 2025-07-04 - Beginning dtools deprecation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

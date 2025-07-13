@@ -20,7 +20,7 @@ Getting Started
     Getting started with the PyPI pythonic-fp.queues project.
 
 :doc:`PyPI Releases <releases>`
-    Documentation for past pythonic-fp.queues PyPI releases.
+    Documentation for pythonic-fp.queues PyPI releases.
 
 Documentation
 -------------

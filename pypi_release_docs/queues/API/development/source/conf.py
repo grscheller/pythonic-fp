@@ -13,7 +13,7 @@
 project = 'Pythonic FP - Queues'
 copyright = '2023-2025, Geoffrey R. Scheller'
 author = 'Geoffrey R. Scheller'
-release = '4.0.1' 
+release = '4.0.2' 
 proposed_release_string = 'a proposed'
 # proposed_release_string = 'the'
 
