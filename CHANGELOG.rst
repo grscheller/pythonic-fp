@@ -1,25 +1,25 @@
-*********
 CHANGELOG
-*********
+=========
 
 Pythonic FP namespace projects
-==============================
+------------------------------
 
 Developer Tools supporting a functional style of programming yet endeavoring to
 remain Pythonic. All projects are under the ``pythonic-fp`` namespace on PyPI.
 
 Important Milestones
-====================
+--------------------
 
 2925-07-13 - All document generation brought back to this repo
---------------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Sphinx now used
   - looks much more professional
+  - all documentation generation moved back to this repo
   - docstrings in code a bit rough, but now more terse
 
 2025-07-04 - Beginning dtools deprecation
------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Published version 5.1.0 pythonic-fp.circulararray to PyPI
 - Updated pyproject.toml files for all pythonic-fp namespace repos
@@ -30,7 +30,7 @@ Important Milestones
   - all except this one
 
 2025-06-29 - Switching from pdoc to Sphinx
-------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Building pythonic-fp.circulararray docs with Sphinx
 
@@ -43,7 +43,7 @@ Important Milestones
   - the gh-pages for the namespace repos will host the current devel env docs
 
 2025-05-29 - Beginning transition pdoc -> Sphinx
-------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Stumble on PyPI project python-sphinx-doc
 - Supposedly will parse Python type annotations
@@ -67,7 +67,7 @@ Important Milestones
     that is not also a ``Sphinx`` dependency.
 
 2025-05-24 - More work "biting-the-bullet"
-------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Decided on the pythonic-fp namespace name instead of fpythonic 
 - Brought over source code from all dtools namespace projects
@@ -81,7 +81,7 @@ Important Milestones
   - pythonic-fp (name_claim) 1.0.0 - DO NOT INSTALL
 
 2025-05-23 - Decided to "bite-the-bullet" and drop dtools name
---------------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Decided on the unclaimed name fpythonic
 
@@ -113,7 +113,7 @@ Important Milestones
     - hosts the generated documentation on gh-pages
 
 2025-05-22 - Rebuilt docs for all projects for next PyPI releases
------------------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - dtools.circular-array 3.15.0
 - dtools.containers 1.0.0
@@ -123,19 +123,19 @@ Important Milestones
 - dtools.splitends 0.29.0
 
 2025-05-20 - Broke out dtools.fp.iterables to its own repo
-----------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - dtools.fp.iterables -> dtools.iterables
 - GitHub repo: https://github.com/grscheller/dtools-iterables/
 
 2025-05-12 - MayBe and Xor moved
---------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - From dtools.fp
 - To dtools.containers
 
 2025-05-10 - Changed GitHub name of this repo
----------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     
 - GitHub repo name change
 
@@ -143,7 +143,7 @@ Important Milestones
   - will double as a project homepage as well as the document repo
 
 2025-05-05 Added dtools.containers project
-------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Added dtools.containers project and deprecated dtools.tuples
 - dtools.tuples content moved to dtools.containers
@@ -154,35 +154,35 @@ Important Milestones
     - thought necessary since my Boring Math Library not updated yet
 
 2025-04-24: Decided to change name back to dtools-docs
-------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     
 - A PyPI project named dtools already exists
 - Unfortunately, I missed this back in January
 
 2025-04-24: Renamed repo from dtools-docs to just dtools
---------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     
 - Morphing README.md into a project-wide Homepage
 - Created CHANGELOG.md file
 - Removed README.md links to deprecated dtools.datastructures project
 
 2025-03-31: Updates for new dtools project Mar 31
--------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Adding infrastructure for dtools.tuples
 
 2025-03-28: updated docs for all dtools projects
-------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Ran linters and against all dtools namespace repos
 
 2025-02-06: Standardized dtools and bm docs
--------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Standardized Developer Tools and Boring Math project documentation
 
 2025-01-17: Created this repo - dtools-docs
--------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Created this repo for pdoc generated dtools project documentation
 
