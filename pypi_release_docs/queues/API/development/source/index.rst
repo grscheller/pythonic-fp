@@ -2,8 +2,8 @@
    Pythonic FP - Queues documentation master file. To regenerate the sphinx
    documentation do: "$ make html" from the "docs/" directory.
 
-Pythonic FP - Queues Overview
-=============================
+Pythonic FP - Queues
+====================
 
 PyPI project `pythonic-fp.queues <https://pypi.org/project/pythonic-fp.queues/>`_.
 
@@ -34,7 +34,7 @@ Programming API:
 CHANGELOG:
 ~~~~~~~~~~
 
-Change log for the
+Changelog for the
 `pythonic-fp queues <https://github.com/grscheller/pythonic-fp-queues/blob/main/CHANGELOG.rst>`_
 PyPI project.
 
