@@ -11,6 +11,13 @@ remain Pythonic. All projects are under the ``pythonic-fp`` namespace on PyPI.
 Important Milestones
 ====================
 
+2925-07-13 - All document generation brought back to this repo
+--------------------------------------------------------------
+
+- Sphinx now used
+  - looks much more professional
+  - docstrings in code a bit rough, but now more terse
+
 2025-07-04 - Beginning dtools deprecation
 -----------------------------------------
 
