@@ -13,7 +13,7 @@
 project = 'Pythonic FP - Circular Array'
 copyright = '2023-2025, Geoffrey R. Scheller'
 author = 'Geoffrey R. Scheller'
-release = '5.2.0' 
+release = '5.2.1' 
 proposed_release_string = 'a proposed'
 # proposed_release_string = 'the'
 

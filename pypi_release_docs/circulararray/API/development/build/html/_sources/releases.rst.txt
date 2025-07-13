@@ -10,6 +10,8 @@ Module pythonic_fp.circulararray
 +=====================================================================================================+==============+
 | `development <https://grscheller.github.io/pythonic-fp/circulararray/API/development/build/html/>`_ |     TBD      |
 +-----------------------------------------------------------------------------------------------------+--------------+
+| `v5.2.0 <https://grscheller.github.io/pythonic-fp/circulararray/API/v5.2.0/build/html/>`_           |  2025-07-13  |
++-----------------------------------------------------------------------------------------------------+--------------+
 | `v5.1.2 <https://grscheller.github.io/pythonic-fp/circulararray/API/v5.1.2/build/html/>`_           |  2025-07-06  |
 +-----------------------------------------------------------------------------------------------------+--------------+
 | `v5.1.1 <https://grscheller.github.io/pythonic-fp/circulararray/API/v5.1.1/build/html/>`_           |  2025-07-06  |

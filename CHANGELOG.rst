@@ -10,13 +10,14 @@ remain Pythonic. All projects are under the ``pythonic-fp`` namespace on PyPI.
 Important Milestones
 --------------------
 
-2925-07-13 - All document generation brought back to this repo
+2025-07-13 - All document generation brought back to this repo
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Sphinx now used
   - looks much more professional
   - all documentation generation moved back to this repo
   - docstrings in code a bit rough, but now more terse
+- Updated docs for circulararray release v5.2.0
 
 2025-07-04 - Beginning dtools deprecation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
