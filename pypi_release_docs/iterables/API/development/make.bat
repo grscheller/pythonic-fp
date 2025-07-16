@@ -3,6 +3,7 @@
 pushd %~dp0
 
 REM Command file for Sphinx documentation
+REM NEVER TESTED ON WINDOWS
 
 if "%SPHINXBUILD%" == "" (
 	set SPHINXBUILD=sphinx-build

@@ -6,59 +6,57 @@ Pythonic FP - Iterables
 =======================
 
 PyPI project `pythonic.iterables <https://pypi.org/project/pythonic-fp.iterables/>`_
-implementing a Python package of tools for iterables and iterators.
 
-- Concatenating and merging iterables
-- Dropping and taking values from iterables
-- Reducing and accumulating iterables
-- Assumptions
-
-  - iterables are not necessarily iterators
-  - at all times iterator protocol is assumed to be followed
-
-    - all iterators are assumed to be iterable
-    - for all iterators `my_iter` we assume `iter(my_iter) is my_iter`
+.. automodule:: pythonic_fp.iterables
+   :synopsis:
+   :no-index:
 
 Part of of the
 `pythonic-fp namespace projects <https://github.com/grscheller/pythonic-fp/blob/main/README.md>`_.
 
+Getting Started
+---------------
+
+:doc:`Getting Started <getting_started>`
+    Getting started with the PyPI pythonic-fp.circulararray project.
+
+:doc:`PyPI Releases <releases>`
+    Documentation for pythonic-fp.circulararray PyPI releases.
+
 Documentation
 -------------
 
-:doc:`Installation <installing>`
-    Installing and importing the module.
+Programming API:
+~~~~~~~~~~~~~~~~
 
-:doc:`API docs <api>`
-    Detailed API documentation.
+:doc:`Package pythonic_fp.circulararray <api/index>`
+    For |PROPOSED_RELEASE_STRING| PyPI pythonic-fp.circulararray project |VERSION_RELEASED| release.
 
-Development
------------
+CHANGELOG:
+~~~~~~~~~~
 
-:doc:`Current Development API <api>`
-    Development environment API documentation.
-
-:doc:`CHANGELOG <changelog>`
-    For the current and predecessor projects.
+Change log for the
+`pythonic-fp circulararray <https://github.com/grscheller/pythonic-fp-iterables/blob/main/CHANGELOG.rst>`_
+PyPI project.
 
 .. toctree::
-   :caption: Documentation
-   :maxdepth: 2
-   :hidden:
-
-   installing
-   api_pypi
-   api
-
-.. toctree::
-   :caption: Development
-   :maxdepth: 1
-   :hidden:
-
-   changelog
-
-.. toctree::
-   :caption: Back to start
+   :caption: Overview
    :maxdepth: 1
    :hidden:
 
    self
+
+.. toctree::
+   :caption: Getting Started
+   :maxdepth: 1
+   :hidden:
+
+   getting_started
+   releases
+
+.. toctree::
+   :caption: Documentation
+   :maxdepth: 1
+   :hidden:
+
+   api/index
