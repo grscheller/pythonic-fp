@@ -2,18 +2,14 @@
    Pythonic FP - Queues documentation master file. To regenerate the sphinx
    documentation do: "$ make html" from the "docs/" directory.
 
-Pythonic FP - Circular Array Overview
-=====================================
+Pythonic FP - Circular Array
+============================
 
 PyPI project `pythonic-fp.circulararray <https://pypi.org/project/pythonic-fp.circulararray/>`_.
 
-This project implements a full featured, generic, stateful circular array data structure.
-
-- O(1) amortized pushes and pops either end
-- O(1) indexing
-- Auto-resizing larger when necessary, can be manually compacted if desired
-- Iterable, can safely be mutated while iterators continue iterating over previous state
-- Fully supports slicing
+.. automodule:: pythonic_fp.circulararray
+   :synopsis:
+   :no-index:
 
 Part of of the
 `pythonic-fp namespace projects <https://github.com/grscheller/pythonic-fp/blob/main/README.md>`_.
