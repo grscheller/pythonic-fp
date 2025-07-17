@@ -8,7 +8,8 @@ Pythonic FP - Queues
 PyPI project `pythonic-fp.queues <https://pypi.org/project/pythonic-fp.queues/>`_.
 
 .. automodule:: pythonic_fp.queues
-   :members:
+   :synopsis:
+   :no-index:
 
 Part of of the
 `pythonic-fp namespace projects <https://github.com/grscheller/pythonic-fp/blob/main/README.md>`_.

@@ -1,7 +1,7 @@
 Package pythonic_fp.queues
 ==========================
 
-:doc:`Module pythonic_fp.fifo<fifo>`
+:doc:`Module pythonic_fp.fifo <fifo>`
     First In First Out Queue
 
 :doc:`Module LIFOQueue.lifo <lifo>`

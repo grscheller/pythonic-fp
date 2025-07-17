@@ -1,9 +1,5 @@
-:doc:`Module pythonic_fp.iterables <iterables>`
-    Iterable Library
+pythonic_fp.iterables
+=====================
 
-.. toctree::
-   :caption: pythonic_fp.iterables
-   :maxdepth: 1
-   :hidden:
-
-   iterables
+.. automodule:: pythonic_fp.iterables
+   :members:
