@@ -1,13 +1,13 @@
-Package pythonic_fp.queues
-==========================
+pythonic_fp.queues
+==================
 
-:doc:`Module pythonic_fp.fifo <fifo>`
+:doc:`pythonic_fp.queues.fifo <fifo>`
     First In First Out Queue
 
-:doc:`Module LIFOQueue.lifo <lifo>`
+:doc:`LIFOQueue.queues.lifo <lifo>`
     Last In First Out Queue
 
-:doc:`Module DEQueue.de <de>`
+:doc:`DEQueue.queues.de <de>`
     Double Ended Queue
 
 .. toctree::

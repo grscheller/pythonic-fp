@@ -18,10 +18,10 @@ Getting Started
 ---------------
 
 :doc:`Getting Started <getting_started>`
-    Getting started with the PyPI pythonic-fp.circulararray project.
+    Getting started with the PyPI pythonic-fp.iterables project.
 
 :doc:`PyPI Releases <releases>`
-    Documentation for pythonic-fp.circulararray PyPI releases.
+    Documentation for pythonic-fp.iterables PyPI releases.
 
 Documentation
 -------------
@@ -29,7 +29,7 @@ Documentation
 Programming API:
 ~~~~~~~~~~~~~~~~
 
-:doc:`Package pythonic_fp.circulararray <api/index>`
+:doc:`Package pythonic_fp.iterables <api/index>`
     For |PROPOSED_RELEASE_STRING| PyPI pythonic-fp.iterables project |VERSION_RELEASED| release.
 
 CHANGELOG:
