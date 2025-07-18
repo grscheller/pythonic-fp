@@ -1,5 +1,5 @@
-PyPI release docs
-=================
+PyPI releases
+=============
 
 Package pythonic_fp.splitends
 -----------------------------

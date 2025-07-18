@@ -41,9 +41,6 @@ typehints_document_rtype_none = True
 typehints_use_signatures = True
 typehints_use_signatures_return = True
 
-# -- Options for sphinx_toolbox.more_autodoc.typevars
-all_typevars = True
-
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
