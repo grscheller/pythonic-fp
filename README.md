@@ -2,7 +2,9 @@
 
 Collection of Functional Programming (FP) oriented Python libraries.
 While taking a functional programming approach, these packages endeavor
-to remain Pythonic. Pythonic FP is a hobby project, but the maintainer
+to remain Pythonic.
+:wq
+Pythonic FP is a hobby project, but the maintainer
 is serious about its quality.
 
 ## Pythonic FP
@@ -29,57 +31,51 @@ Python module implementing a stateful circular array data structure.
 - O(1) amortized pushes either end
 - O(1) indexing, fully supports slicing
 - Auto-resizing larger when necessary, manually compatible
-- Iterable, can safely mutate while iterators continue iterating over previous state
+- iterable, can safely mutate while iterators continue iterating over previous state
+- comparisons compare identity before equality, like builtins
+- in boolean context returns true when not empty, false when empty
 
 ______________________________________________________________________
 
 ### Containers: pythonic_fp.containers
 
-Python package implementing container-like classes.
+Python package of container like data structures.
 
-- Single item box
-  - holds at most one item of a given type
-  - invariant in its contents
-- Functional tuple
-  - subclassed tuple
-  - designed to be further inherited from
-  - has a more FP interface
-- Immutable list
-  - hashability enforced when instantiated
-  - mutable methods return new objects
-- Maybe monad
-  - data structure represents a possibly missing value
-- Either monad
-  - represents either a "left" or "right" value, never both
-  - left biased
+| Description | Module |
+|:-----------:|:------:|
+| Single item box | `pythonic_fp.containers.box` |
+| Functional tuple | `pythonic_fp.containers.functional_tuple` |
+| Immutable list | `pythonic_fp.containers.immutable_list` |
+| Maybe monad | `pythonic_fp.containers.maybe` |
+| Either monad | `pythonic_fp.containers.xor` |
 
 ______________________________________________________________________
 
 ### FP Tools: pythonic_fp.fptools
 
-Modules aiding in Functional programming.
+Tools to aid with functional programming in Python yet still endeavoring to
+remain Pythonic.
 
-- Subclassable boolean
-  - Python's builtin bool cannot be subclassed
-  - this one can
-- Functions as first class objects
-  - manipulate and partially apply functions
-- Lazy function evaluation: non-strict function evaluation
-- Singletons: three singleton classes representing
-  - a missing value (actually missing, not potentially missing)
-  - sentinel values
-  - failed calculations
-- The State monad
+- Subclassable Boolean datatype (pythonic_fp.fptools.bool)
+- Functions as first class objects (pythonic_fp.fptools.function)
+- Lazy (non-strict) function evaluation (pythonic_fp.fptools.lazy)
+- Singletons (pythonic_fp.fptools.singletons)
+  - 3 singleton classes representing
+    - a missing value (actually missing, not potentially missing)
+    - a sentinel values
+    - a failed calculation
+- State monad implementation (pythonic_fp.fptools.state)
+  - pure FP handling of state (the state monad)
+  - Classic FP implementation
+    - the monad encapsulates a state transformation, not a "state"
 
 ______________________________________________________________________
 
 ### Iterable Tools: pythonic_fp.iterables
 
-Functions to work with iterables.
-
-- merging iterables
-- dropping and taking values from iterables
-- accumulating and reducing iterables
+- Concatenating and merging iterables
+- Dropping and taking values from iterables
+- Reducing and accumulating iterables
 
 ______________________________________________________________________
 
@@ -96,8 +92,9 @@ ______________________________________________________________________
 
 ### Splitends: pythonic_fp.splitends
 
-A singularly linked data structures allowing data sharing between
-multiple instances. Very much Alpha level software.
+Python package Implementing a singularly linked LIFO queue called
+a ``SplitEnd``. These data structures can safely share data nodes
+between themselves.
 
 ______________________________________________________________________
 
@@ -122,14 +119,12 @@ ______________________________________________________________________
 [104]: https://pypi.org/project/pythonic-fp.iterables
 [105]: https://pypi.org/project/pythonic-fp.queues
 [106]: https://pypi.org/project/pythonic-fp.splitends
-
 [201]: https://github.com/grscheller/pythonic-fp-circulararray
 [202]: https://github.com/grscheller/pythonic-fp-containers
 [203]: https://github.com/grscheller/pythonic-fp-fptools
 [204]: https://github.com/grscheller/pythonic-fp-iterables
 [205]: https://github.com/grscheller/pythonic-fp-queues
 [206]: https://github.com/grscheller/pythonic-fp-splitends
-
 [301]: https://grscheller.github.io/pythonic-fp/circulararray/API/development/build/html/releases.html
 [302]: https://grscheller.github.io/pythonic-fp/containers/API/development/build/html/releases.html
 [303]: https://grscheller.github.io/pythonic-fp/fptools/API/development/build/html/releases.html
