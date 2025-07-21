@@ -10,6 +10,37 @@ remain Pythonic. All projects are under the ``pythonic-fp`` namespace on PyPI.
 Important Milestones
 --------------------
 
+2025-07-21 - Unified coordinated upgrade all pytonic-fp projects
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Updated all pyprojects.toml files and corresponding Sphinx documentation for
+an upcoming coordinated release of all packages. From flowchart of library
+dependencies a better organization became apparent to the maintainer. Will be
+removing all "from future import annotations" from the code. All this does is
+replace module names with strings. It was a hack to support a future feature
+that will never happen. This future import will be deprecated in Python 3.14.
+
+TODO:
+
+- move maybe and xor modules back to fptools
+
+  - rename xor to either (will reuse xor name for something else)
+
+- breakout module singletons to its own repo
+- breakout fptools.bool to its own repo called fptools-subclassable-booleans
+
+  - figure out better names than Bool and bool
+
+- finish pdoc -> Sphinx migration
+
+  - all informational content will come from docstrings
+  - replace the Markdown Pythonic FP "homepage" with Sphinx based one
+
+    - grscheller/pythonic-fp/README.md will point to the new docs
+    - rename GH-Page mount point from pypi-release-docs to just docs
+
+- next PyPI release will happen when "everything is ready"
+
 2025-07-13 - All document generation brought back to this repo
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
