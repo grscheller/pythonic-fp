@@ -20,6 +20,8 @@ removing all "from future import annotations" from the code. All this does is
 replace module names with strings. It was a hack to support a future feature
 that will never happen. This future import will be deprecated in Python 3.14.
 
+Rename GH-Pages mount point from pypi-release-docs/ to just docs/.
+
 TODO:
 
 - move maybe and xor modules back to fptools
@@ -37,7 +39,6 @@ TODO:
   - replace the Markdown Pythonic FP "homepage" with Sphinx based one
 
     - grscheller/pythonic-fp/README.md will point to the new docs
-    - rename GH-Page mount point from pypi-release-docs to just docs
 
 - next PyPI release will happen when "everything is ready"
 
