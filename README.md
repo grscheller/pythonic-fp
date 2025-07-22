@@ -129,5 +129,5 @@ ______________________________________________________________________
 [302]: https://grscheller.github.io/pythonic-fp/containers/API/development/build/html/releases.html
 [303]: https://grscheller.github.io/pythonic-fp/fptools/API/development/build/html/releases.html
 [304]: https://grscheller.github.io/pythonic-fp/iterables/API/development/build/html/releases.html
-[305]: https://grscheller.github.io/pythonic-fp/queues/API/development/build/html/releases.html
+[305]: https://grscheller.github.io/pythonic-fp/deprecated/queues/v5.0.0/build/html/releases.html
 [306]: https://grscheller.github.io/pythonic-fp/splitends/API/development/build/html/releases.html
