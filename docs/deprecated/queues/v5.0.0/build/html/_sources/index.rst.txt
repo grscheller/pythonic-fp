@@ -2,8 +2,8 @@
    Pythonic FP - Queues documentation master file. To regenerate the sphinx
    documentation do: "$ make html" from the "docs/" directory.
 
-Pythonic FP - Queues
-====================
+Pythonic FP - Queues (DEPRECATED)
+=================================
 
 PyPI project `pythonic-fp.queues <https://pypi.org/project/pythonic-fp.queues/>`_.
 
