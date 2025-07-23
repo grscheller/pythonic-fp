@@ -20,18 +20,13 @@ removing all "from future import annotations" from the code. All this does is
 replace module names with strings. It was a hack to support a future feature
 that will never happen. This future import will be deprecated in Python 3.14.
 
-Rename GH-Pages mount point from pypi-release-docs/ to just docs/.
+- rename GH-Pages mount point from pypi-release-docs/ to just docs/
+- removed ``/API/`` from ``docs/*/API/*``
+- move maybe and (xor -> either) modules back to fptools
+- broke out module fptools/singletons to its own repo
+- moved fptools.bool -> singletons.sbool
 
 TODO:
-
-- move maybe and xor modules back to fptools
-
-  - rename xor to either (will reuse xor name for something else)
-
-- breakout module singletons to its own repo
-- breakout fptools.bool to its own repo called fptools-subclassable-booleans
-
-  - figure out better names than Bool and bool
 
 - finish pdoc -> Sphinx migration
 
