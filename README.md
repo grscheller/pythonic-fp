@@ -41,33 +41,12 @@ ______________________________________________________________________
 
 Python package of container like data structures.
 
-| Description | Module |
-|:-----------:|:------:|
-| Single item box | `pythonic_fp.containers.box` |
-| Functional tuple | `pythonic_fp.containers.functional_tuple` |
-| Immutable list | `pythonic_fp.containers.immutable_list` |
-| Maybe monad | `pythonic_fp.containers.maybe` |
-| Either monad | `pythonic_fp.containers.xor` |
-
 ______________________________________________________________________
 
 ### FP Tools: pythonic_fp.fptools
 
-Tools to aid with functional programming in Python yet still endeavoring to
-remain Pythonic.
-
-- Subclassable Boolean datatype (pythonic_fp.fptools.bool)
-- Functions as first class objects (pythonic_fp.fptools.function)
-- Lazy (non-strict) function evaluation (pythonic_fp.fptools.lazy)
-- Singletons (pythonic_fp.fptools.singletons)
-  - 3 singleton classes representing
-    - a missing value (actually missing, not potentially missing)
-    - a sentinel values
-    - a failed calculation
-- State monad implementation (pythonic_fp.fptools.state)
-  - pure FP handling of state (the state monad)
-  - Classic FP implementation
-    - the monad encapsulates a state transformation, not a "state"
+Library for functional programming in Python which endeavors to remain
+Pythonic.
 
 ______________________________________________________________________
 
@@ -88,13 +67,25 @@ to guarantee behaviors supporting certain algorithmic use cases.
 - LIFOQueue: Last-In-First-Out Queue
 - DEQueue: Double-Ended Queue
 
+Note: DEPRECATED, use pythonic_fp.containers.queues instead
+______________________________________________________________________
+
+### FP Tools: pythonic_fp.singletons
+
+Singleton classes representing
+
+- missing values (actually missing, not potentially missing)
+- sentinel values
+- failed calculations
+- subtypeable Booleans
+
 ______________________________________________________________________
 
 ### Splitends: pythonic_fp.splitends
 
 Python package Implementing a singularly linked LIFO queue called
 a ``SplitEnd``. These data structures can safely share data nodes
-between themselves.
+between themselves and form branching *hair-like* data structures.
 
 ______________________________________________________________________
 
@@ -125,9 +116,9 @@ ______________________________________________________________________
 [204]: https://github.com/grscheller/pythonic-fp-iterables
 [205]: https://github.com/grscheller/pythonic-fp-queues
 [206]: https://github.com/grscheller/pythonic-fp-splitends
-[301]: https://grscheller.github.io/pythonic-fp/circulararray/API/development/build/html/releases.html
-[302]: https://grscheller.github.io/pythonic-fp/containers/API/development/build/html/releases.html
-[303]: https://grscheller.github.io/pythonic-fp/fptools/API/development/build/html/releases.html
-[304]: https://grscheller.github.io/pythonic-fp/iterables/API/development/build/html/releases.html
-[305]: https://grscheller.github.io/pythonic-fp/deprecated/queues/v5.0.0/build/html/releases.html
-[306]: https://grscheller.github.io/pythonic-fp/splitends/API/development/build/html/releases.html
+[301]: https://grscheller.github.io/pythonic-fp/circulararray/development/build/html/releases.html
+[302]: https://grscheller.github.io/pythonic-fp/containers/development/build/html/releases.html
+[303]: https://grscheller.github.io/pythonic-fp/fptools/development/build/html/releases.html
+[304]: https://grscheller.github.io/pythonic-fp/iterables/development/build/html/releases.html
+[305]: https://grscheller.github.io/pythonic-fp/deprecated/queues/development/build/html/releases.html
+[306]: https://grscheller.github.io/pythonic-fp/splitends/development/build/html/releases.html
