@@ -5,10 +5,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Getting Started &#8212; Pythonic FP - Circular Array 5.2.1 documentation</title>
+    <title>usage &#8212; Pythonic FP - Circular Array 5.3.0 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="_static/basic_mod.css?v=9b2032db" />
-    <script src="_static/documentation_options.js?v=89a6d609"></script>
+    <script src="_static/documentation_options.js?v=5c0b1849"></script>
     <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
@@ -16,7 +16,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="PyPI Releases" href="releases.html" />
-    <link rel="prev" title="Pythonic FP - Circular Array" href="index.html" /> 
+    <link rel="prev" title="package circulararray" href="index.html" /> 
   </head><body data-dark_mode_code_blocks="true">
 
 <div id="top_nav">
@@ -30,7 +30,7 @@
         <p id="toggle_sidebar">
             <a href="#" title="Toggle sidebar">|||</a>
         </p>
-        <h1><a href="index.html" title="Go to homepage">Pythonic FP - Circular Array 5.2.1 documentation</a></h1>
+        <h1><a href="index.html" title="Go to homepage">Pythonic FP - Circular Array 5.3.0 documentation</a></h1>
 
         <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
     <template v-if="mode == 'light'">
@@ -120,16 +120,16 @@
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper"><p class="caption" role="heading"><span class="caption-text">Overview</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="index.html">Pythonic FP - Circular Array</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">package circulararray</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Getting Started</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">usage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="releases.html">PyPI Releases</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="api/index.html">pythonic_fp.circulararray</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/index.html">circulararray modules</a></li>
 </ul>
 
         </div>
@@ -141,8 +141,8 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <section id="getting-started">
-<h1>Getting Started<a class="headerlink" href="#getting-started" title="Link to this heading">¶</a></h1>
+  <section id="usage">
+<h1>usage<a class="headerlink" href="#usage" title="Link to this heading">¶</a></h1>
 <section id="how-to-installing-the-module">
 <h2>How to installing the module<a class="headerlink" href="#how-to-installing-the-module" title="Link to this heading">¶</a></h2>
 <p>Install the project into your Python environment:</p>
@@ -153,13 +153,16 @@
 <section id="importing-the-module">
 <h2>Importing the module<a class="headerlink" href="#importing-the-module" title="Link to this heading">¶</a></h2>
 <p>Import the <code class="docutils literal notranslate"><span class="pre">CA</span></code> class and <code class="docutils literal notranslate"><span class="pre">ca</span></code> “factory function” into your code.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">pythonic_fp.circulararray</span><span class="w"> </span><span class="kn">import</span> <span class="n">CA</span><span class="p">,</span> <span class="n">ca</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">pythonic_fp.circulararray.resizing</span><span class="w"> </span><span class="kn">import</span> <span class="n">CA</span><span class="p">,</span> <span class="n">ca</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pythonic_fp.circulararray.fixed_capacity</span><span class="w"> </span><span class="kn">import</span> <span class="n">CAFix</span><span class="p">,</span> <span class="n">ca_fix</span>
 </pre></div>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The <code class="docutils literal notranslate"><span class="pre">CA</span></code> class can be instantiated with either one iterable or no arguments.
-The factory function <code class="docutils literal notranslate"><span class="pre">ca</span></code>  behaves like Python’s <code class="docutils literal notranslate"><span class="pre">[]</span></code> syntax. It creates
+<p>The <code class="docutils literal notranslate"><span class="pre">CA</span></code> and <code class="docutils literal notranslate"><span class="pre">CAFix</span></code> classes can be instantiated with either one iterable or no arguments,
+just like Python builtins <code class="docutils literal notranslate"><span class="pre">list</span></code> or <code class="docutils literal notranslate"><span class="pre">tuple</span></code>.</p>
+<p>The factory functions <code class="docutils literal notranslate"><span class="pre">ca</span></code> and <code class="docutils literal notranslate"><span class="pre">ca_fix</span></code> behaves like Python’s <code class="docutils literal notranslate"><span class="pre">[]</span></code> syntax. Each creates
+its corresponding circular array object from the arguments past to it.
 a <code class="docutils literal notranslate"><span class="pre">CA</span></code> object from the arguments passed to it.</p>
 </div>
 </section>
@@ -179,7 +182,7 @@ a <code class="docutils literal notranslate"><span class="pre">CA</span></code> 
             <p><a class="toggle_right_sidebar" href="#"><span class="icon">&gt;</span><span>Page contents:</span></a></p>
             <div class="page_toc">
                 <ul>
-<li><a class="reference internal" href="#">Getting Started</a><ul>
+<li><a class="reference internal" href="#">usage</a><ul>
 <li><a class="reference internal" href="#how-to-installing-the-module">How to installing the module</a></li>
 <li><a class="reference internal" href="#importing-the-module">Importing the module</a></li>
 </ul>
@@ -197,7 +200,7 @@ a <code class="docutils literal notranslate"><span class="pre">CA</span></code> 
             <div class="left">
                 
                 <a href="index.html">
-                    <span class="icon">&lt;</span><span>Pythonic FP - Circular Array</span></a>
+                    <span class="icon">&lt;</span><span>package circulararray</span></a>
                 
             </div>
 

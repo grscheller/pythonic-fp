@@ -2,8 +2,8 @@
    Pythonic FP - Queues documentation master file. To regenerate the sphinx
    documentation do: "$ make html" from the "docs/" directory.
 
-Pythonic FP - Circular Array
-============================
+package circulararray
+=====================
 
 PyPI project `pythonic-fp.circulararray <https://pypi.org/project/pythonic-fp.circulararray/>`_.
 

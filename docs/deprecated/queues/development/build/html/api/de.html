@@ -147,25 +147,21 @@
             
   <section id="module-pythonic_fp.queues.de">
 <span id="module-de"></span><h1>module de<a class="headerlink" href="#module-pythonic_fp.queues.de" title="Link to this heading">¶</a></h1>
-<dl class="py class">
-<dt class="sig sig-object py" id="pythonic_fp.queues.de.DEQueue">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.queues.de.</span></span><span class="sig-name descname"><span class="pre">DEQueue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">dss</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.queues.de.DEQueue" title="Link to this definition">¶</a></dt>
-<dd><p>module de</p>
-<p>Stateful Double Ended (DE) queue data structure.
-Initial data instantiated in FIFO order.</p>
+<p>Stateful Double-Ended (DE) queue data structure.</p>
 <ul class="simple">
-<li><p>O(1) length determination</p></li>
+<li><p>O(1) pushes and pops</p></li>
 <li><p>in a Boolean context, true if not empty, false if empty</p></li>
 <li><p>will automatically resize itself larger when needed</p></li>
 <li><p>neither indexable nor sliceable by design</p></li>
-<li><p>O(1) pushes and pops</p></li>
+<li><p>O(1) length determination</p></li>
 </ul>
+<dl class="py class">
+<dt class="sig sig-object py" id="pythonic_fp.queues.de.DEQueue">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.queues.de.</span></span><span class="sig-name descname"><span class="pre">DEQueue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">dss</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.queues.de.DEQueue" title="Link to this definition">¶</a></dt>
+<dd><p>Initial data instantiated in FIFO order.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>dss</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Iterable</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">D</span></code>)]</span>)</p></li>
-<li><p><strong>dss</strong> – takes one or no iterables</p></li>
-</ul>
+<dd class="field-odd"><p><strong>dss</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Iterable</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">D</span></code>)]</span>) – takes one or no iterables</p>
 </dd>
 <dt class="field-even">Raises<span class="colon">:</span></dt>
 <dd class="field-even"><p><strong>ValueError</strong> – if more than 1 iterable is given</p>

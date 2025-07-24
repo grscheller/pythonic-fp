@@ -148,25 +148,21 @@
             
   <section id="module-pythonic_fp.queues.lifo">
 <span id="module-lifo"></span><h1>module lifo<a class="headerlink" href="#module-pythonic_fp.queues.lifo" title="Link to this heading">¶</a></h1>
-<dl class="py class">
-<dt class="sig sig-object py" id="pythonic_fp.queues.lifo.LIFOQueue">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.queues.lifo.</span></span><span class="sig-name descname"><span class="pre">LIFOQueue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">dss</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.queues.lifo.LIFOQueue" title="Link to this definition">¶</a></dt>
-<dd><p>module lifo</p>
-<p>Stateful Last In First Out (LIFO) data structure.
-Initial data instantiated in natural LIFO order.</p>
+<p>Stateful Last-In-First-Out (LIFO) data structure.</p>
 <ul class="simple">
-<li><p>O(1) length determination</p></li>
+<li><p>O(1) pushes and pops</p></li>
 <li><p>in a Boolean context, true if not empty, false if empty</p></li>
 <li><p>will automatically resize itself larger when needed</p></li>
 <li><p>neither indexable nor sliceable by design</p></li>
-<li><p>O(1) pushes and pops</p></li>
+<li><p>O(1) length determination</p></li>
 </ul>
+<dl class="py class">
+<dt class="sig sig-object py" id="pythonic_fp.queues.lifo.LIFOQueue">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.queues.lifo.</span></span><span class="sig-name descname"><span class="pre">LIFOQueue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">dss</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.queues.lifo.LIFOQueue" title="Link to this definition">¶</a></dt>
+<dd><p>Initial data instantiated in natural LIFO order.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>dss</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Iterable</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">D</span></code>)]</span>)</p></li>
-<li><p><strong>dss</strong> – takes one or no iterables</p></li>
-</ul>
+<dd class="field-odd"><p><strong>dss</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Iterable</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">D</span></code>)]</span>) – takes one or no iterables</p>
 </dd>
 <dt class="field-even">Raises<span class="colon">:</span></dt>
 <dd class="field-even"><p><strong>ValueError</strong> – if more than 1 iterable is given</p>
@@ -175,13 +171,13 @@ Initial data instantiated in natural LIFO order.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.queues.lifo.LIFOQueue.copy">
 <span class="sig-name descname"><span class="pre">copy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.queues.lifo.LIFOQueue.copy" title="Link to this definition">¶</a></dt>
-<dd><p>Copy.</p>
+<dd><p>Shallow copy.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="#pythonic_fp.queues.lifo.LIFOQueue" title="pythonic_fp.queues.lifo.LIFOQueue"><code class="xref py py-class docutils literal notranslate"><span class="pre">LIFOQueue</span></code></a>[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">D</span></code>)]</span></p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>shallow copy of the LIFOQueue</p>
+<dd class="field-even"><p>shallow copy of the queue</p>
 </dd>
 </dl>
 </dd></dl>
@@ -189,11 +185,11 @@ Initial data instantiated in natural LIFO order.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.queues.lifo.LIFOQueue.fold">
 <span class="sig-name descname"><span class="pre">fold</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.queues.lifo.LIFOQueue.fold" title="Link to this definition">¶</a></dt>
-<dd><p>Reduces in natural LIFO Order (newest to oldest.</p>
+<dd><p>Reduces in natural LIFO Order, newest to oldest.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>f</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Callable</span></code>[[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">T</span></code>), <code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">D</span></code>)], <code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">T</span></code>)]</span>) – reducing function, second argument is for accumulator</p></li>
+<li><p><strong>f</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Callable</span></code>[[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">T</span></code>), <code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">D</span></code>)], <code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">T</span></code>)]</span>) – reducing function, first argument is for accumulator</p></li>
 <li><p><strong>initial</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">T</span></code>) | <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span>) – Optional initial value</p></li>
 </ul>
 </dd>
@@ -226,13 +222,13 @@ Initial data instantiated in natural LIFO order.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.queues.lifo.LIFOQueue.peak">
 <span class="sig-name descname"><span class="pre">peak</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.queues.lifo.LIFOQueue.peak" title="Link to this definition">¶</a></dt>
-<dd><p>Peak lans in/next out. Does not consume data.</p>
+<dd><p>Peak at newest item on queue. Does not consume data.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">MayBe</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">D</span></code>)]</span></p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>MayBe of item at top of queue.</p>
+<dd class="field-even"><p>MayBe of next item to be popped</p>
 </dd>
 </dl>
 </dd></dl>
@@ -240,13 +236,13 @@ Initial data instantiated in natural LIFO order.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.queues.lifo.LIFOQueue.pop">
 <span class="sig-name descname"><span class="pre">pop</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.queues.lifo.LIFOQueue.pop" title="Link to this definition">¶</a></dt>
-<dd><p>Pop top item off of LIFOQueue.</p>
+<dd><p>Pop newest item off of queue.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">MayBe</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">D</span></code>)]</span></p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>MayBe of item popped from queue</p>
+<dd class="field-even"><p>MayBe of popped item</p>
 </dd>
 </dl>
 </dd></dl>
@@ -254,10 +250,10 @@ Initial data instantiated in natural LIFO order.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.queues.lifo.LIFOQueue.push">
 <span class="sig-name descname"><span class="pre">push</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">ds</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.queues.lifo.LIFOQueue.push" title="Link to this definition">¶</a></dt>
-<dd><p>Push an item onto LIFOQueue.</p>
+<dd><p>Push data onto FIFOQueue.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>ds</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">D</span></code>)</span>)</p>
+<dd class="field-odd"><p><strong>ds</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">D</span></code>)</span>) – items to be pushed onto queue</p>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>

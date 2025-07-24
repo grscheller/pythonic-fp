@@ -148,25 +148,21 @@
             
   <section id="module-pythonic_fp.queues.fifo">
 <span id="module-fifo"></span><h1>module fifo<a class="headerlink" href="#module-pythonic_fp.queues.fifo" title="Link to this heading">¶</a></h1>
-<dl class="py class">
-<dt class="sig sig-object py" id="pythonic_fp.queues.fifo.FIFOQueue">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.queues.fifo.</span></span><span class="sig-name descname"><span class="pre">FIFOQueue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">dss</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.queues.fifo.FIFOQueue" title="Link to this definition">¶</a></dt>
-<dd><p>module fifo</p>
-<p>Stateful First In First Out (FIFO) queue data structure.
-Initial data instantiated in natural FIFO order.</p>
+<p>Stateful First-In-First-Out (FIFO) queue data structure.</p>
 <ul class="simple">
-<li><p>O(1) length determination</p></li>
+<li><p>O(1) pushes and pops</p></li>
 <li><p>in a Boolean context, true if not empty, false if empty</p></li>
 <li><p>will automatically resize itself larger when needed</p></li>
 <li><p>neither indexable nor sliceable by design</p></li>
-<li><p>O(1) pushes and pops</p></li>
+<li><p>O(1) length determination</p></li>
 </ul>
+<dl class="py class">
+<dt class="sig sig-object py" id="pythonic_fp.queues.fifo.FIFOQueue">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.queues.fifo.</span></span><span class="sig-name descname"><span class="pre">FIFOQueue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">dss</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.queues.fifo.FIFOQueue" title="Link to this definition">¶</a></dt>
+<dd><p>Initial data instantiated in natural FIFO order.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>dss</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Iterable</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">D</span></code>)]</span>)</p></li>
-<li><p><strong>dss</strong> – takes one or no iterables</p></li>
-</ul>
+<dd class="field-odd"><p><strong>dss</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Iterable</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">D</span></code>)]</span>) – takes one or no iterables</p>
 </dd>
 <dt class="field-even">Raises<span class="colon">:</span></dt>
 <dd class="field-even"><p><strong>ValueError</strong> – if more than 1 iterable is given</p>
@@ -175,13 +171,13 @@ Initial data instantiated in natural FIFO order.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.queues.fifo.FIFOQueue.copy">
 <span class="sig-name descname"><span class="pre">copy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.queues.fifo.FIFOQueue.copy" title="Link to this definition">¶</a></dt>
-<dd><p>Copy.</p>
+<dd><p>Shallow copy.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="#pythonic_fp.queues.fifo.FIFOQueue" title="pythonic_fp.queues.fifo.FIFOQueue"><code class="xref py py-class docutils literal notranslate"><span class="pre">FIFOQueue</span></code></a>[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">D</span></code>)]</span></p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>shallow copy of the FIFOQueue</p>
+<dd class="field-even"><p>shallow copy of the queue</p>
 </dd>
 </dl>
 </dd></dl>
@@ -189,7 +185,7 @@ Initial data instantiated in natural FIFO order.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.queues.fifo.FIFOQueue.fold">
 <span class="sig-name descname"><span class="pre">fold</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.queues.fifo.FIFOQueue.fold" title="Link to this definition">¶</a></dt>
-<dd><p>Reduces in natural FIFO Order (oldest to newest).</p>
+<dd><p>Reduces in natural FIFO Order, oldest to newest.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
@@ -226,13 +222,13 @@ Initial data instantiated in natural FIFO order.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.queues.fifo.FIFOQueue.peak_last_in">
 <span class="sig-name descname"><span class="pre">peak_last_in</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.queues.fifo.FIFOQueue.peak_last_in" title="Link to this definition">¶</a></dt>
-<dd><p>Peak at end. Does not consume data.</p>
+<dd><p>Peak at newest item on queue. Does not consume data.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">MayBe</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">D</span></code>)]</span></p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>MayBe of last item in queue</p>
+<dd class="field-even"><p>MayBe of newest item pushed on queue</p>
 </dd>
 </dl>
 </dd></dl>
@@ -240,13 +236,13 @@ Initial data instantiated in natural FIFO order.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.queues.fifo.FIFOQueue.peak_next_out">
 <span class="sig-name descname"><span class="pre">peak_next_out</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.queues.fifo.FIFOQueue.peak_next_out" title="Link to this definition">¶</a></dt>
-<dd><p>Peak at beginning. Does not consume data.</p>
+<dd><p>Peak at oldest item on queue. Does not consume data.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">MayBe</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">D</span></code>)]</span></p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>MayBe of next item in queue</p>
+<dd class="field-even"><p>MayBe of next item to be popped</p>
 </dd>
 </dl>
 </dd></dl>
@@ -254,13 +250,13 @@ Initial data instantiated in natural FIFO order.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.queues.fifo.FIFOQueue.pop">
 <span class="sig-name descname"><span class="pre">pop</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.queues.fifo.FIFOQueue.pop" title="Link to this definition">¶</a></dt>
-<dd><p>Pop oldest item from FIFOQueue.</p>
+<dd><p>Pop oldest item off of queue.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">MayBe</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">D</span></code>)]</span></p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>MayBe of item popped from queue</p>
+<dd class="field-even"><p>MayBe of popped item</p>
 </dd>
 </dl>
 </dd></dl>
@@ -268,10 +264,10 @@ Initial data instantiated in natural FIFO order.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.queues.fifo.FIFOQueue.push">
 <span class="sig-name descname"><span class="pre">push</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">ds</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.queues.fifo.FIFOQueue.push" title="Link to this definition">¶</a></dt>
-<dd><p>Push an item onto FIFOQueue.</p>
+<dd><p>Push data onto FIFOQueue.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>ds</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">D</span></code>)</span>)</p>
+<dd class="field-odd"><p><strong>ds</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">D</span></code>)</span>) – items to be pushed onto queue</p>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>

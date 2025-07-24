@@ -4,7 +4,7 @@ PyPI Releases
 Package pythonic_fp.queues
 --------------------------
 
-**DEPRECATED:** use pythonic_fp.containers,queues instead
+**DEPRECATED:** use pythonic_fp.containers.queues instead
 
 +-----------------------------------------------------------------------------------------------------+--------------+
 | PyPI Release Documentation                                                                          | Release date |
