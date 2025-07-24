@@ -3,14 +3,13 @@
 Collection of Functional Programming (FP) oriented Python libraries.
 While taking a functional programming approach, these packages endeavor
 to remain Pythonic.
-:wq
-Pythonic FP is a hobby project, but the maintainer
-is serious about its quality.
+
+Pythonic FP is a hobby project, but the maintainer is serious about its quality.
 
 ## Pythonic FP
 
-The overall project's name is **Pythonic FP** and consists of PyPI Python projects all under the
-`pythonic-fp` namespace.
+The overall project's name is **Pythonic FP** and consists of PyPI Python projects
+all under the `pythonic-fp` namespace.
 
 | Name | Python Package | PyPI | GitHub | Docs |
 |:---- |:-------------- |:----:|:------:|:----:|
