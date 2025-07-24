@@ -4,10 +4,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index &#8212; Pythonic FP - FPTools 4.0.1 documentation</title>
+    <title>Index &#8212; Pythonic FP - FPTools 5.0.0 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="_static/basic_mod.css?v=9b2032db" />
-    <script src="_static/documentation_options.js?v=977c7dfd"></script>
+    <script src="_static/documentation_options.js?v=ce74c6a2"></script>
     <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
@@ -27,7 +27,7 @@
         <p id="toggle_sidebar">
             <a href="#" title="Toggle sidebar">|||</a>
         </p>
-        <h1><a href="index.html" title="Go to homepage">Pythonic FP - FPTools 4.0.1 documentation</a></h1>
+        <h1><a href="index.html" title="Go to homepage">Pythonic FP - FPTools 5.0.0 documentation</a></h1>
 
         <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
     <template v-if="mode == 'light'">
@@ -117,7 +117,7 @@
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper"><p class="caption" role="heading"><span class="caption-text">Overview</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="index.html">Pythonic FP - FP Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">package fptools</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
@@ -152,18 +152,23 @@
  | <a href="#P"><strong>P</strong></a>
  | <a href="#R"><strong>R</strong></a>
  | <a href="#S"><strong>S</strong></a>
- | <a href="#T"><strong>T</strong></a>
  | <a href="#U"><strong>U</strong></a>
  
 </div>
 <h2 id="B">B</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api/state.html#pythonic_fp.fptools.state.State.bind">bind() (pythonic_fp.fptools.state.State method)</a>
+      <li><a href="api/either.html#pythonic_fp.fptools.either.Either.bind">bind() (pythonic_fp.fptools.either.Either method)</a>
+
+      <ul>
+        <li><a href="api/maybe.html#pythonic_fp.fptools.maybe.MayBe.bind">(pythonic_fp.fptools.maybe.MayBe method)</a>
 </li>
+        <li><a href="api/state.html#pythonic_fp.fptools.state.State.bind">(pythonic_fp.fptools.state.State method)</a>
+</li>
+      </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api/bool.html#pythonic_fp.fptools.bool.Bool">Bool (class in pythonic_fp.fptools.bool)</a>
+      <li><a href="api/either.html#pythonic_fp.fptools.either.Either.bind_except">bind_except() (pythonic_fp.fptools.either.Either method)</a>
 </li>
       <li><a href="api/state.html#pythonic_fp.fptools.state.State.both">both() (pythonic_fp.fptools.state.State method)</a>
 </li>
@@ -172,6 +177,10 @@
 
 <h2 id="E">E</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/either.html#pythonic_fp.fptools.either.Either">Either (class in pythonic_fp.fptools.either)</a>
+</li>
+  </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api/lazy.html#pythonic_fp.fptools.lazy.Lazy.eval">eval() (pythonic_fp.fptools.lazy.Lazy method)</a>
 
@@ -185,9 +194,13 @@
 <h2 id="G">G</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api/lazy.html#pythonic_fp.fptools.lazy.Lazy.get">get() (pythonic_fp.fptools.lazy.Lazy method)</a>
+      <li><a href="api/either.html#pythonic_fp.fptools.either.Either.get">get() (pythonic_fp.fptools.either.Either method)</a>
 
       <ul>
+        <li><a href="api/lazy.html#pythonic_fp.fptools.lazy.Lazy.get">(pythonic_fp.fptools.lazy.Lazy method)</a>
+</li>
+        <li><a href="api/maybe.html#pythonic_fp.fptools.maybe.MayBe.get">(pythonic_fp.fptools.maybe.MayBe method)</a>
+</li>
         <li><a href="api/state.html#pythonic_fp.fptools.state.State.get">(pythonic_fp.fptools.state.State static method)</a>
 </li>
       </ul></li>
@@ -195,7 +208,11 @@
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/either.html#pythonic_fp.fptools.either.Either.get_left">get_left() (pythonic_fp.fptools.either.Either method)</a>
+</li>
       <li><a href="api/lazy.html#pythonic_fp.fptools.lazy.Lazy.get_result">get_result() (pythonic_fp.fptools.lazy.Lazy method)</a>
+</li>
+      <li><a href="api/either.html#pythonic_fp.fptools.either.Either.get_right">get_right() (pythonic_fp.fptools.either.Either method)</a>
 </li>
       <li><a href="api/lazy.html#pythonic_fp.fptools.lazy.Lazy.got_exception">got_exception() (pythonic_fp.fptools.lazy.Lazy method)</a>
 </li>
@@ -221,33 +238,43 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api/lazy.html#pythonic_fp.fptools.lazy.lazy">lazy() (in module pythonic_fp.fptools.lazy)</a>
 </li>
-      <li><a href="api/bool.html#pythonic_fp.fptools.bool.Lie">Lie (class in pythonic_fp.fptools.bool)</a>
-</li>
   </ul></td>
 </tr></table>
 
 <h2 id="M">M</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api/state.html#pythonic_fp.fptools.state.State.map">map() (pythonic_fp.fptools.state.State method)</a>
+      <li><a href="api/either.html#pythonic_fp.fptools.either.Either.map">map() (pythonic_fp.fptools.either.Either method)</a>
+
+      <ul>
+        <li><a href="api/maybe.html#pythonic_fp.fptools.maybe.MayBe.map">(pythonic_fp.fptools.maybe.MayBe method)</a>
 </li>
+        <li><a href="api/state.html#pythonic_fp.fptools.state.State.map">(pythonic_fp.fptools.state.State method)</a>
+</li>
+      </ul></li>
       <li><a href="api/state.html#pythonic_fp.fptools.state.State.map2">map2() (pythonic_fp.fptools.state.State method)</a>
 </li>
+      <li><a href="api/either.html#pythonic_fp.fptools.either.Either.map_except">map_except() (pythonic_fp.fptools.either.Either method)</a>
+</li>
+      <li><a href="api/either.html#pythonic_fp.fptools.either.Either.map_right">map_right() (pythonic_fp.fptools.either.Either method)</a>
+</li>
+      <li><a href="api/maybe.html#pythonic_fp.fptools.maybe.MayBe">MayBe (class in pythonic_fp.fptools.maybe)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api/state.html#pythonic_fp.fptools.state.State.modify">modify() (pythonic_fp.fptools.state.State static method)</a>
 </li>
       <li>
     module
 
       <ul>
-        <li><a href="index.html#module-pythonic_fp.fptools">pythonic_fp.fptools</a>
-</li>
-        <li><a href="api/bool.html#module-pythonic_fp.fptools.bool">pythonic_fp.fptools.bool</a>
+        <li><a href="api/either.html#module-pythonic_fp.fptools.either">pythonic_fp.fptools.either</a>
 </li>
         <li><a href="api/function.html#module-pythonic_fp.fptools.function">pythonic_fp.fptools.function</a>
 </li>
         <li><a href="api/lazy.html#module-pythonic_fp.fptools.lazy">pythonic_fp.fptools.lazy</a>
 </li>
-        <li><a href="api/singletons.html#module-pythonic_fp.fptools.singletons">pythonic_fp.fptools.singletons</a>
+        <li><a href="api/maybe.html#module-pythonic_fp.fptools.maybe">pythonic_fp.fptools.maybe</a>
 </li>
         <li><a href="api/state.html#module-pythonic_fp.fptools.state">pythonic_fp.fptools.state</a>
 </li>
@@ -258,15 +285,7 @@
 <h2 id="N">N</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api/singletons.html#pythonic_fp.fptools.singletons.Nada">Nada (class in pythonic_fp.fptools.singletons)</a>
-</li>
-      <li><a href="api/singletons.html#pythonic_fp.fptools.singletons.Nada.nada_get">nada_get() (pythonic_fp.fptools.singletons.Nada method)</a>
-</li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api/function.html#pythonic_fp.fptools.function.negate">negate() (in module pythonic_fp.fptools.function)</a>
-</li>
-      <li><a href="api/singletons.html#pythonic_fp.fptools.singletons.NoValue">NoValue (class in pythonic_fp.fptools.singletons)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -279,17 +298,10 @@
       <li><a href="api/state.html#pythonic_fp.fptools.state.State.put">put() (pythonic_fp.fptools.state.State static method)</a>
 </li>
       <li>
-    pythonic_fp.fptools
+    pythonic_fp.fptools.either
 
       <ul>
-        <li><a href="index.html#module-pythonic_fp.fptools">module</a>
-</li>
-      </ul></li>
-      <li>
-    pythonic_fp.fptools.bool
-
-      <ul>
-        <li><a href="api/bool.html#module-pythonic_fp.fptools.bool">module</a>
+        <li><a href="api/either.html#module-pythonic_fp.fptools.either">module</a>
 </li>
       </ul></li>
       <li>
@@ -309,10 +321,10 @@
 </li>
       </ul></li>
       <li>
-    pythonic_fp.fptools.singletons
+    pythonic_fp.fptools.maybe
 
       <ul>
-        <li><a href="api/singletons.html#module-pythonic_fp.fptools.singletons">module</a>
+        <li><a href="api/maybe.html#module-pythonic_fp.fptools.maybe">module</a>
 </li>
       </ul></li>
       <li>
@@ -336,10 +348,14 @@
 <h2 id="S">S</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api/singletons.html#pythonic_fp.fptools.singletons.Sentinel">Sentinel (class in pythonic_fp.fptools.singletons)</a>
+      <li><a href="api/either.html#pythonic_fp.fptools.either.Either.sequence">sequence() (pythonic_fp.fptools.either.Either static method)</a>
+
+      <ul>
+        <li><a href="api/maybe.html#pythonic_fp.fptools.maybe.MayBe.sequence">(pythonic_fp.fptools.maybe.MayBe static method)</a>
 </li>
-      <li><a href="api/state.html#pythonic_fp.fptools.state.State.sequence">sequence() (pythonic_fp.fptools.state.State static method)</a>
+        <li><a href="api/state.html#pythonic_fp.fptools.state.State.sequence">(pythonic_fp.fptools.state.State static method)</a>
 </li>
+      </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api/function.html#pythonic_fp.fptools.function.sequenced">sequenced() (in module pythonic_fp.fptools.function)</a>
@@ -347,14 +363,6 @@
       <li><a href="api/state.html#pythonic_fp.fptools.state.State">State (class in pythonic_fp.fptools.state)</a>
 </li>
       <li><a href="api/function.html#pythonic_fp.fptools.function.swap">swap() (in module pythonic_fp.fptools.function)</a>
-</li>
-  </ul></td>
-</tr></table>
-
-<h2 id="T">T</h2>
-<table style="width: 100%" class="indextable genindextable"><tr>
-  <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api/bool.html#pythonic_fp.fptools.bool.Truth">Truth (class in pythonic_fp.fptools.bool)</a>
 </li>
   </ul></td>
 </tr></table>

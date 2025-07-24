@@ -200,14 +200,14 @@
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">fold</span><span class="p">(</span>
     <span class="bp">self</span><span class="p">,</span>
     <span class="n">f</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[[</span><span class="n">T</span><span class="p">,</span> <span class="n">D</span><span class="p">],</span> <span class="n">T</span><span class="p">],</span>
-    <span class="n">init</span><span class="p">:</span> <span class="n">T</span>
+    <span class="n">init</span><span class="p">:</span> <span class="n">T</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">T</span>
 </pre></div>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>f</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Callable</span></code>[[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">T</span></code>), <code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">D</span></code>, bound= <code class="xref py py-class docutils literal notranslate"><span class="pre">Hashable</span></code>)], <code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">T</span></code>)]</span>) – folding function, first argument is for accumulated value</p></li>
+<li><p><strong>f</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Callable</span></code>[[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">T</span></code>), <code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">D</span></code>, bound= <code class="xref py py-class docutils literal notranslate"><span class="pre">Hashable</span></code>)], <code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">T</span></code>)]</span>) – folding function, for argument is for the accumulator</p></li>
 <li><p><strong>init</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">T</span></code>) | <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span>) – optional initial starting value for the fold</p></li>
 </ul>
 </dd>
@@ -233,6 +233,33 @@
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>data at the end of the SplitEnd</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.splitends.splitend.SplitEnd.rev_fold">
+<span class="sig-name descname"><span class="pre">rev_fold</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">init</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.splitends.splitend.SplitEnd.rev_fold" title="Link to this definition">¶</a></dt>
+<dd><p>Reduce with a function, fold from root to tip.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">fold</span><span class="p">(</span>
+    <span class="bp">self</span><span class="p">,</span>
+    <span class="n">f</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[[</span><span class="n">T</span><span class="p">,</span> <span class="n">D</span><span class="p">],</span> <span class="n">T</span><span class="p">],</span>
+    <span class="n">init</span><span class="p">:</span> <span class="n">T</span> <span class="o">|</span> <span class="kc">None</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">T</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>f</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Callable</span></code>[[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">T</span></code>), <code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">D</span></code>, bound= <code class="xref py py-class docutils literal notranslate"><span class="pre">Hashable</span></code>)], <code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">T</span></code>)]</span>) – folding function, for argument is for the accumulator</p></li>
+<li><p><strong>init</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">T</span></code>) | <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span>) – optional initial starting value for the fold</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">T</span></code>)</span></p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>reduced value folding from tip to root in natural LIFO order</p>
 </dd>
 </dl>
 </dd></dl>
@@ -278,6 +305,7 @@
 <li><a class="reference internal" href="#pythonic_fp.splitends.splitend.SplitEnd.extend"><code class="docutils literal notranslate"><span class="pre">SplitEnd.extend()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.splitends.splitend.SplitEnd.fold"><code class="docutils literal notranslate"><span class="pre">SplitEnd.fold()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.splitends.splitend.SplitEnd.peak"><code class="docutils literal notranslate"><span class="pre">SplitEnd.peak()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.splitends.splitend.SplitEnd.rev_fold"><code class="docutils literal notranslate"><span class="pre">SplitEnd.rev_fold()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.splitends.splitend.SplitEnd.snip"><code class="docutils literal notranslate"><span class="pre">SplitEnd.snip()</span></code></a></li>
 </ul>
 </li>

@@ -2,13 +2,14 @@
    Pythonic FP - FPTools documentation master file. To regenerate the sphinx
    documentation do: "$ make html" from the "docs/" directory.
 
-Pythonic FP - FP Tools
-======================
+package fptools
+===============
 
 PyPI project `pythonic.fptools <https://pypi.org/project/pythonic-fp.fptools/>`_.
 
 .. automodule:: pythonic_fp.fptools
-   :members:
+   :synopsis:
+   :noindex:
 
 Part of of the
 `pythonic-fp namespace projects <https://github.com/grscheller/pythonic-fp/blob/main/README.md>`_.
@@ -29,7 +30,7 @@ Programming API:
 ~~~~~~~~~~~~~~~~
 
 :doc:`Package pythonic_fp.fptools <api/index>`
-    For |PROPOSED_RELEASE_STRING| PyPI pythonic-fp.queues project |VERSION_RELEASED| release.
+    For |PROPOSED_RELEASE_STRING| PyPI pythonic-fp.fptools project |VERSION_RELEASED| release.
 
 CHANGELOG:
 ~~~~~~~~~~
@@ -59,4 +60,3 @@ PyPI project.
    :hidden:
 
    api/index
-

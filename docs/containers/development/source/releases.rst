@@ -9,5 +9,5 @@ Package pythonic_fp.containers
 +============================================================================================+==============+
 | `current development <https://grscheller.github.io/pythonic-fp-containers/html/api.html>`_ |     TBD      |
 +--------------------------------------------------------------------------------------------+--------------+
-| `v2.0.0 <https://grscheller.github.io/pythonic-fp/containers/API/v2.0.0/build/html/>`_     |  2025-07-06  |
+| `v2.0.0 <https://grscheller.github.io/pythonic-fp/containers/v2.0.0/build/html/>`_         |  2025-07-06  |
 +--------------------------------------------------------------------------------------------+--------------+

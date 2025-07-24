@@ -143,18 +143,19 @@
   <section id="pythonic-fp-splitends">
 <h1>Pythonic FP - Splitends<a class="headerlink" href="#pythonic-fp-splitends" title="Link to this heading">¶</a></h1>
 <p>PyPI project <a class="reference external" href="https://pypi.org/project/pythonic-fp.spltends/">pythonic-fp.spltends</a>.</p>
-<p>Package <code class="docutils literal notranslate"><span class="pre">pythonic_fp.splitends</span></code>.</p>
-<p>Implementing a singularly linked LIFO queue called a SplitEnd.
-These data structures can safely share data nodes between themselves.</p>
+<p>Pythonic FP - Splitends``.</p>
+<p>Python package Implementing a singularly linked LIFO queue called
+a <code class="docutils literal notranslate"><span class="pre">SplitEnd</span></code>. These data structures can safely share data nodes
+between themselves.</p>
 <ul class="simple">
 <li><p>each <code class="docutils literal notranslate"><span class="pre">SplitEnd</span></code> is a very simple stateful (mutable) LIFO stack</p></li>
-<li><p>data can be extended to and cut off the of the end (top)</p></li>
-<li><p>the “root” value of a <code class="docutils literal notranslate"><span class="pre">SplitEnd</span></code> is fixed and not removable</p></li>
+<li><p>data can be “extended” to or “snipped” off of the end (tip)</p></li>
+<li><p>the “root” value of a <code class="docutils literal notranslate"><span class="pre">SplitEnd</span></code> is fixed and cannot be “snipped”</p></li>
 <li><p>different mutable split ends can safely share the same “tail”</p></li>
 <li><p>each <code class="docutils literal notranslate"><span class="pre">SplitEnd</span></code> sees itself as a singularly linked list</p></li>
 <li><p>bush-like datastructures can be formed using multiple <code class="docutils literal notranslate"><span class="pre">SplitEnds</span></code></p></li>
 <li><p>the <code class="docutils literal notranslate"><span class="pre">SplitEnd</span></code> copy method and <code class="docutils literal notranslate"><span class="pre">len</span></code> are O(1)</p></li>
-<li><p>in boolean context returns true if the <code class="docutils literal notranslate"><span class="pre">SplitEnd</span></code> not just its “root”</p></li>
+<li><p>in boolean context returns true if the <code class="docutils literal notranslate"><span class="pre">SplitEnd</span></code> is not just a “root”</p></li>
 </ul>
 <p>Part of of the
 <a class="reference external" href="https://github.com/grscheller/pythonic-fp/blob/main/README.md">pythonic-fp namespace projects</a>.</p>

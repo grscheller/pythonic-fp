@@ -5,18 +5,18 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Module bool &#8212; Pythonic FP - FPTools 4.0.1 documentation</title>
+    <title>pythonic_fp.fptools.maybe &#8212; Pythonic FP - FPTools 5.0.0 documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/basic_mod.css?v=9b2032db" />
-    <script src="../_static/documentation_options.js?v=977c7dfd"></script>
+    <script src="../_static/documentation_options.js?v=ce74c6a2"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <script src="../_static/js/petite-vue.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Module function" href="function.html" />
-    <link rel="prev" title="Package pythonic_fp.fptools" href="index.html" /> 
+    <link rel="next" title="pythonic_fp.fptools.either" href="either.html" />
+    <link rel="prev" title="Modules lazy" href="lazy.html" /> 
   </head><body data-dark_mode_code_blocks="true">
 
 <div id="top_nav">
@@ -30,7 +30,7 @@
         <p id="toggle_sidebar">
             <a href="#" title="Toggle sidebar">|||</a>
         </p>
-        <h1><a href="../index.html" title="Go to homepage">Pythonic FP - FPTools 4.0.1 documentation</a></h1>
+        <h1><a href="../index.html" title="Go to homepage">Pythonic FP - FPTools 5.0.0 documentation</a></h1>
 
         <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
     <template v-if="mode == 'light'">
@@ -120,7 +120,7 @@
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper"><p class="caption" role="heading"><span class="caption-text">Overview</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../index.html">Pythonic FP - FP Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">package fptools</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
@@ -130,10 +130,10 @@
 <p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Package pythonic_fp.fptools</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Module bool</a></li>
 <li class="toctree-l2"><a class="reference internal" href="function.html">Module function</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lazy.html">Modules lazy</a></li>
-<li class="toctree-l2"><a class="reference internal" href="singletons.html">Module singletons</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">pythonic_fp.fptools.maybe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="either.html">pythonic_fp.fptools.either</a></li>
 <li class="toctree-l2"><a class="reference internal" href="state.html">Module state</a></li>
 </ul>
 </li>
@@ -148,71 +148,105 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <section id="module-pythonic_fp.fptools.bool">
-<span id="module-bool"></span><h1>Module bool<a class="headerlink" href="#module-pythonic_fp.fptools.bool" title="Link to this heading">¶</a></h1>
-<p>Class <cite>Bool</cite> - Subclassable Boolean</p>
-<p>Python does not permit bool to be subclassed, but <code class="docutils literal notranslate"><span class="pre">int</span></code> can be subclassed.
-Under-the-hood a <code class="docutils literal notranslate"><span class="pre">bool</span></code> is just an <code class="docutils literal notranslate"><span class="pre">int</span></code>. The Bool class inherits from
-<code class="docutils literal notranslate"><span class="pre">int</span></code> and relies on the underlying truthiness and falsiness
-of <code class="docutils literal notranslate"><span class="pre">1</span></code> and <code class="docutils literal notranslate"><span class="pre">0</span></code>.</p>
-<p>The <code class="docutils literal notranslate"><span class="pre">Truth(truth:</span> <span class="pre">str)</span></code> and <code class="docutils literal notranslate"><span class="pre">Lie(lie:</span> <span class="pre">str)</span></code> subclass constructors
-produce singletons based on their input parameters. When using type hints,
-declare variables of these types as type <code class="docutils literal notranslate"><span class="pre">Bool</span></code>. Best practices when
-used with these subclasses are:</p>
+  <section id="pythonic-fp-fptools-maybe">
+<h1>pythonic_fp.fptools.maybe<a class="headerlink" href="#pythonic-fp-fptools-maybe" title="Link to this heading">¶</a></h1>
+<section id="module-pythonic_fp.fptools.maybe">
+<span id="maybe-monad"></span><h2>Maybe Monad<a class="headerlink" href="#module-pythonic_fp.fptools.maybe" title="Link to this heading">¶</a></h2>
+<p>Pythonic FP - Maybe Monad</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="pythonic_fp.fptools.maybe.MayBe">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.fptools.maybe.</span></span><span class="sig-name descname"><span class="pre">MayBe</span></span><a class="headerlink" href="#pythonic_fp.fptools.maybe.MayBe" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object py">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.fptools.maybe.</span></span><span class="sig-name descname"><span class="pre">MayBe</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">D</span></span></em><span class="sig-paren">)</span></dt>
+<dd><p>Maybe monad, data structure wrapping a potentially missing value.</p>
+<p>Immutable semantics</p>
 <ul class="simple">
-<li><p>use <cite>==</cite> or <cite>!=</cite> for pure Boolean comparisons</p></li>
-<li><p>use <cite>is</cite> or <cite>not is</cite> if the type of truth matters</p></li>
-<li><p>only use Bool() as a type, never as a constructor</p></li>
-<li><p>when using Python shortcut logic remember</p>
-<ul>
-<li><p>an instance of <code class="docutils literal notranslate"><span class="pre">Truth</span></code> is truthy</p></li>
-<li><p>an instance of <code class="docutils literal notranslate"><span class="pre">Lie</span></code> is falsy</p></li>
-<li><p>shortcut logic is lazy</p>
-<ul>
-<li><p>the last truthy thing evaluated is returned</p></li>
-<li><p>and is not converted to a <code class="docutils literal notranslate"><span class="pre">bool</span></code></p></li>
+<li><p>can store any item of any type, including <code class="docutils literal notranslate"><span class="pre">None</span></code></p></li>
+<li><p>can store any value of any type with one exception</p></li>
+<li><p>immutable semantics, therefore made covariant</p></li>
 </ul>
-</li>
-<li><p>the <cite>not</cite> statement converts a <code class="docutils literal notranslate"><span class="pre">Bool</span></code> to an actual <code class="docutils literal notranslate"><span class="pre">bool</span></code></p></li>
-</ul>
-</li>
-</ul>
-<dl class="py class">
-<dt class="sig sig-object py" id="pythonic_fp.fptools.bool.Bool">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.fptools.bool.</span></span><span class="sig-name descname"><span class="pre">Bool</span></span><a class="headerlink" href="#pythonic_fp.fptools.bool.Bool" title="Link to this definition">¶</a></dt>
-<dd><p>Subclassable Boolean-like class.</p>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="pythonic_fp.fptools.bool.Lie">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.fptools.bool.</span></span><span class="sig-name descname"><span class="pre">Lie</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lie</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'LIE'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.fptools.bool.Lie" title="Link to this definition">¶</a></dt>
-<dd><p>Falsy singleton Bool subclass.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>When using type hints, declare variables Bool, not Lie.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>hashability invalidated if contained value is not hashable</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>lie</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>)</p>
+<dd class="field-odd"><p><strong>value</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">D</span></code>, covariant=True) | <code class="xref py py-class docutils literal notranslate"><span class="pre">Sentinel</span></code></span>)</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.fptools.maybe.MayBe.bind">
+<span class="sig-name descname"><span class="pre">bind</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.fptools.maybe.MayBe.bind" title="Link to this definition">¶</a></dt>
+<dd><p>Flatmap <code class="docutils literal notranslate"><span class="pre">MayBe</span></code> with function <code class="docutils literal notranslate"><span class="pre">f</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>f</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Callable</span></code>[[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">D</span></code>, covariant=True)], <a class="reference internal" href="#pythonic_fp.fptools.maybe.MayBe" title="pythonic_fp.fptools.maybe.MayBe"><code class="xref py py-class docutils literal notranslate"><span class="pre">MayBe</span></code></a>[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">U</span></code>)]]</span>)</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="#pythonic_fp.fptools.maybe.MayBe" title="pythonic_fp.fptools.maybe.MayBe"><code class="xref py py-class docutils literal notranslate"><span class="pre">MayBe</span></code></a>[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">U</span></code>)]</span></p>
 </dd>
 </dl>
 </dd></dl>
 
-<dl class="py class">
-<dt class="sig sig-object py" id="pythonic_fp.fptools.bool.Truth">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.fptools.bool.</span></span><span class="sig-name descname"><span class="pre">Truth</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">truth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'TRUTH'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.fptools.bool.Truth" title="Link to this definition">¶</a></dt>
-<dd><p>Truthy singleton Bool subclass.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>When using type hints, declare variables Bool, not Truth.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.fptools.maybe.MayBe.get">
+<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">alt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Sentinel('MayBe')</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.fptools.maybe.MayBe.get" title="Link to this definition">¶</a></dt>
+<dd><p>Return the contained value if it exists, otherwise an alternate value.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Unsafe method <code class="docutils literal notranslate"><span class="pre">get</span></code>. Will raise <code class="docutils literal notranslate"><span class="pre">ValueError</span></code> if MayBe empty
+and an alt return value not given. Best practice is to first check
+the MayBe in a boolean context.</p>
 </div>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>truth</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>)</p>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>ValueError</strong> – when an alternate value is not provided but needed</p>
+</dd>
+<dt class="field-even">Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>alt</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">D</span></code>, covariant=True) | <code class="xref py py-class docutils literal notranslate"><span class="pre">Sentinel</span></code></span>)</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">D</span></code>, covariant=True) | <code class="xref py py-class docutils literal notranslate"><span class="pre">Never</span></code></span></p>
 </dd>
 </dl>
 </dd></dl>
 
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.fptools.maybe.MayBe.map">
+<span class="sig-name descname"><span class="pre">map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.fptools.maybe.MayBe.map" title="Link to this definition">¶</a></dt>
+<dd><p>Map function <cite>f</cite> over contents.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>f</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Callable</span></code>[[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">D</span></code>, covariant=True)], <code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">U</span></code>)]</span>)</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="#pythonic_fp.fptools.maybe.MayBe" title="pythonic_fp.fptools.maybe.MayBe"><code class="xref py py-class docutils literal notranslate"><span class="pre">MayBe</span></code></a>[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">U</span></code>)]</span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.fptools.maybe.MayBe.sequence">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sequence</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence_mb_u</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.fptools.maybe.MayBe.sequence" title="Link to this definition">¶</a></dt>
+<dd><p>Sequence a mutable indexable of type <code class="docutils literal notranslate"><span class="pre">MayBe[~U]</span></code></p>
+<p>If the iterated <cite>MayBe</cite> values are not all empty,</p>
+<ul class="simple">
+<li><p>return a MayBe of the Sequence subtype of the contained values</p></li>
+<li><p>otherwise return an empty MayBe</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>sequence_mb_u</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sequence</span></code>[<a class="reference internal" href="#pythonic_fp.fptools.maybe.MayBe" title="pythonic_fp.fptools.maybe.MayBe"><code class="xref py py-class docutils literal notranslate"><span class="pre">MayBe</span></code></a>[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">U</span></code>)]]</span>)</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="#pythonic_fp.fptools.maybe.MayBe" title="pythonic_fp.fptools.maybe.MayBe"><code class="xref py py-class docutils literal notranslate"><span class="pre">MayBe</span></code></a>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Sequence</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">U</span></code>)]]</span></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
 </section>
 
 
@@ -229,10 +263,17 @@ used with these subclasses are:</p>
             <p><a class="toggle_right_sidebar" href="#"><span class="icon">&gt;</span><span>Page contents:</span></a></p>
             <div class="page_toc">
                 <ul>
-<li><a class="reference internal" href="#">Module bool</a><ul>
-<li><a class="reference internal" href="#pythonic_fp.fptools.bool.Bool"><code class="docutils literal notranslate"><span class="pre">Bool</span></code></a></li>
-<li><a class="reference internal" href="#pythonic_fp.fptools.bool.Lie"><code class="docutils literal notranslate"><span class="pre">Lie</span></code></a></li>
-<li><a class="reference internal" href="#pythonic_fp.fptools.bool.Truth"><code class="docutils literal notranslate"><span class="pre">Truth</span></code></a></li>
+<li><a class="reference internal" href="#">pythonic_fp.fptools.maybe</a><ul>
+<li><a class="reference internal" href="#module-pythonic_fp.fptools.maybe">Maybe Monad</a><ul>
+<li><a class="reference internal" href="#pythonic_fp.fptools.maybe.MayBe"><code class="docutils literal notranslate"><span class="pre">MayBe</span></code></a><ul>
+<li><a class="reference internal" href="#pythonic_fp.fptools.maybe.MayBe.bind"><code class="docutils literal notranslate"><span class="pre">MayBe.bind()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.fptools.maybe.MayBe.get"><code class="docutils literal notranslate"><span class="pre">MayBe.get()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.fptools.maybe.MayBe.map"><code class="docutils literal notranslate"><span class="pre">MayBe.map()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.fptools.maybe.MayBe.sequence"><code class="docutils literal notranslate"><span class="pre">MayBe.sequence()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -247,14 +288,14 @@ used with these subclasses are:</p>
         <div class="button_nav">
             <div class="left">
                 
-                <a href="index.html">
-                    <span class="icon">&lt;</span><span>Package pythonic_fp.fptools</span></a>
+                <a href="lazy.html">
+                    <span class="icon">&lt;</span><span>Modules lazy</span></a>
                 
             </div>
 
             <div class="right">
                 
-                    <a href="function.html"><span>Module function</span><span class="icon">&gt;</span></a>
+                    <a href="either.html"><span>pythonic_fp.fptools.either</span><span class="icon">&gt;</span></a>
                 
             </div>
         </div>

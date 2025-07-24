@@ -5,10 +5,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Module function &#8212; Pythonic FP - FPTools 4.0.1 documentation</title>
+    <title>Module function &#8212; Pythonic FP - FPTools 5.0.0 documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/basic_mod.css?v=9b2032db" />
-    <script src="../_static/documentation_options.js?v=977c7dfd"></script>
+    <script src="../_static/documentation_options.js?v=ce74c6a2"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
@@ -16,7 +16,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Modules lazy" href="lazy.html" />
-    <link rel="prev" title="Module bool" href="bool.html" /> 
+    <link rel="prev" title="Package pythonic_fp.fptools" href="index.html" /> 
   </head><body data-dark_mode_code_blocks="true">
 
 <div id="top_nav">
@@ -30,7 +30,7 @@
         <p id="toggle_sidebar">
             <a href="#" title="Toggle sidebar">|||</a>
         </p>
-        <h1><a href="../index.html" title="Go to homepage">Pythonic FP - FPTools 4.0.1 documentation</a></h1>
+        <h1><a href="../index.html" title="Go to homepage">Pythonic FP - FPTools 5.0.0 documentation</a></h1>
 
         <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
     <template v-if="mode == 'light'">
@@ -120,7 +120,7 @@
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper"><p class="caption" role="heading"><span class="caption-text">Overview</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../index.html">Pythonic FP - FP Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">package fptools</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
@@ -130,10 +130,10 @@
 <p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Package pythonic_fp.fptools</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="bool.html">Module bool</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Module function</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lazy.html">Modules lazy</a></li>
-<li class="toctree-l2"><a class="reference internal" href="singletons.html">Module singletons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="maybe.html">pythonic_fp.fptools.maybe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="either.html">pythonic_fp.fptools.either</a></li>
 <li class="toctree-l2"><a class="reference internal" href="state.html">Module state</a></li>
 </ul>
 </li>
@@ -148,8 +148,10 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <section id="module-pythonic_fp.fptools.function">
-<span id="module-function"></span><h1>Module function<a class="headerlink" href="#module-pythonic_fp.fptools.function" title="Link to this heading">¶</a></h1>
+  <section id="module-function">
+<h1>Module function<a class="headerlink" href="#module-function" title="Link to this heading">¶</a></h1>
+<section id="module-pythonic_fp.fptools.function">
+<span id="maybe-monad"></span><h2>Maybe Monad<a class="headerlink" href="#module-pythonic_fp.fptools.function" title="Link to this heading">¶</a></h2>
 <p>Pythonic FP - FP tools for functions</p>
 <p>Not a replacement for the std library’s <cite>functools</cite> which is more about
 modifying function behavior through decorators than functional composition
@@ -251,6 +253,7 @@ a tuple of the original arguments.</p>
 </dd></dl>
 
 </section>
+</section>
 
 
             <div class="clearer"></div>
@@ -267,11 +270,14 @@ a tuple of the original arguments.</p>
             <div class="page_toc">
                 <ul>
 <li><a class="reference internal" href="#">Module function</a><ul>
+<li><a class="reference internal" href="#module-pythonic_fp.fptools.function">Maybe Monad</a><ul>
 <li><a class="reference internal" href="#pythonic_fp.fptools.function.it"><code class="docutils literal notranslate"><span class="pre">it()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.fptools.function.negate"><code class="docutils literal notranslate"><span class="pre">negate()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.fptools.function.partial"><code class="docutils literal notranslate"><span class="pre">partial()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.fptools.function.sequenced"><code class="docutils literal notranslate"><span class="pre">sequenced()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.fptools.function.swap"><code class="docutils literal notranslate"><span class="pre">swap()</span></code></a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -286,8 +292,8 @@ a tuple of the original arguments.</p>
         <div class="button_nav">
             <div class="left">
                 
-                <a href="bool.html">
-                    <span class="icon">&lt;</span><span>Module bool</span></a>
+                <a href="index.html">
+                    <span class="icon">&lt;</span><span>Package pythonic_fp.fptools</span></a>
                 
             </div>
 

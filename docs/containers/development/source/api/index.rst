@@ -10,12 +10,6 @@ pythonic_fp.containers
 :doc:`Module pythonic_fp.containers.immutable_list <immutable_list>`
     Immutable List - guaranteed to be hashable
 
-:doc:`Module pythonic_fp.containers.maybe <maybe>`
-    Maybe monad - class MayBe
-
-:doc:`Module pythonic_fp.containers.xor <xor>`
-    Either monad - class Xor
-
 .. toctree::
    :caption: Box
    :maxdepth: 1
@@ -36,17 +30,3 @@ pythonic_fp.containers
    :hidden:
 
    immutable_list
-
-.. toctree::
-   :caption: MayBe
-   :maxdepth: 1
-   :hidden:
-
-   maybe
-
-.. toctree::
-   :caption: Xor
-   :maxdepth: 1
-   :hidden:
-
-   xor
