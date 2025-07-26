@@ -10,11 +10,11 @@ circulararray modules
    :maxdepth: 1
    :hidden:
 
-   resizing
+   auto
 
 .. toctree::
-   :caption: CAFixed
+   :caption: CAF
    :maxdepth: 1
    :hidden:
 
-   fixed_capacity
+   fixed

@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>package circulararray &#8212; Pythonic FP - Circular Array 5.3.0 documentation</title>
+    <title>Package circulararray &#8212; Pythonic FP - Circular Array 5.3.0 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="_static/basic_mod.css?v=9b2032db" />
     <script src="_static/documentation_options.js?v=5c0b1849"></script>
@@ -15,7 +15,7 @@
     <script src="_static/js/petite-vue.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="usage" href="getting_started.html" /> 
+    <link rel="next" title="Usage" href="getting_started.html" /> 
   </head><body data-dark_mode_code_blocks="true">
 
 <div id="top_nav">
@@ -119,11 +119,11 @@
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper"><p class="caption" role="heading"><span class="caption-text">Overview</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">package circulararray</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Package circulararray</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="getting_started.html">usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Usage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="releases.html">PyPI Releases</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
@@ -141,22 +141,28 @@
           <div class="body" role="main">
             
   <section id="package-circulararray">
-<h1>package circulararray<a class="headerlink" href="#package-circulararray" title="Link to this heading">¶</a></h1>
-<p>PyPI project <a class="reference external" href="https://pypi.org/project/pythonic-fp.circulararray/">pythonic-fp.circulararray</a>.</p>
-<p>Pythonic FP - Circular Array</p>
+<h1>Package circulararray<a class="headerlink" href="#package-circulararray" title="Link to this heading">¶</a></h1>
+<p>PyPI project
+<a class="reference external" href="https://pypi.org/project/pythonic-fp.circulararray/">pythonic-fp.circulararray</a>
+a part of the
+<a class="reference external" href="https://github.com/grscheller/pythonic-fp/blob/main/README.md">pythonic-fp</a>
+namespace projects.</p>
 <p>Modules implementing stateful circular array data structures.</p>
-<p><strong>Module: pythonic_fp.circulararray.resizing</strong></p>
+<p>Module <strong>pythonic_fp.circulararray.auto</strong></p>
+<p><code class="docutils literal notranslate"><span class="pre">CA</span></code> objects automatically increase their total storage capacity as
+needed. They can be manually resized smaller.</p>
 <ul class="simple">
-<li><p>Class CA</p></li>
-<li><p>Function ca</p></li>
+<li><p>class <code class="docutils literal notranslate"><span class="pre">CA</span></code></p></li>
+<li><p>factory function <code class="docutils literal notranslate"><span class="pre">ca</span></code></p></li>
 </ul>
-<p><strong>Module: pythonic_fp.circulararray.fixed_capacity</strong></p>
+<p>Module <strong>pythonic_fp.circulararray.fixed</strong></p>
+<p>The total capacity of <code class="docutils literal notranslate"><span class="pre">CAF</span></code> objects is fixed at object instantiation.</p>
 <ul class="simple">
-<li><p>Class CAFix</p></li>
-<li><p>Function ca_fix</p></li>
+<li><p>class <code class="docutils literal notranslate"><span class="pre">CAF</span></code></p></li>
+<li><p>factory function <code class="docutils literal notranslate"><span class="pre">caf</span></code></p></li>
 </ul>
-<p>Part of of the
-<a class="reference external" href="https://github.com/grscheller/pythonic-fp/blob/main/README.md">pythonic-fp namespace projects</a>.</p>
+<p><a class="reference external" href="https://github.com/grscheller/pythonic-fp-circulararray/blob/main/CHANGELOG.rst">CHANGELOG</a>
+for the project.</p>
 <section id="getting-started">
 <h2>Getting Started<a class="headerlink" href="#getting-started" title="Link to this heading">¶</a></h2>
 <dl class="simple">
@@ -168,25 +174,16 @@
 </section>
 <section id="documentation">
 <h2>Documentation<a class="headerlink" href="#documentation" title="Link to this heading">¶</a></h2>
-<section id="programming-api">
-<h3>Programming API:<a class="headerlink" href="#programming-api" title="Link to this heading">¶</a></h3>
 <dl class="simple">
-<dt><a class="reference internal" href="api/index.html"><span class="doc">Package pythonic_fp.circulararray</span></a></dt><dd><p>For a proposed PyPI pythonic-fp.circulararray project v5.3.0 release.</p>
+<dt><a class="reference internal" href="api/index.html"><span class="doc">Programming API for pythonic_fp.circulararray</span></a></dt><dd><p>For a proposed PyPI pythonic-fp.circulararray project v5.3.0 release.</p>
 </dd>
 </dl>
-</section>
-<section id="changelog">
-<h3>CHANGELOG:<a class="headerlink" href="#changelog" title="Link to this heading">¶</a></h3>
-<p>Change log for the
-<a class="reference external" href="https://github.com/grscheller/pythonic-fp-circulararray/blob/main/CHANGELOG.rst">pythonic-fp circulararray</a>
-PyPI project.</p>
 <div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">
 </div>
-</section>
 </section>
 </section>
 
@@ -204,13 +201,9 @@ PyPI project.</p>
             <p><a class="toggle_right_sidebar" href="#"><span class="icon">&gt;</span><span>Page contents:</span></a></p>
             <div class="page_toc">
                 <ul>
-<li><a class="reference internal" href="#">package circulararray</a><ul>
+<li><a class="reference internal" href="#">Package circulararray</a><ul>
 <li><a class="reference internal" href="#getting-started">Getting Started</a></li>
 <li><a class="reference internal" href="#documentation">Documentation</a><ul>
-<li><a class="reference internal" href="#programming-api">Programming API:</a></li>
-<li><a class="reference internal" href="#changelog">CHANGELOG:</a><ul>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -231,7 +224,7 @@ PyPI project.</p>
 
             <div class="right">
                 
-                    <a href="getting_started.html"><span>usage</span><span class="icon">&gt;</span></a>
+                    <a href="getting_started.html"><span>Usage</span><span class="icon">&gt;</span></a>
                 
             </div>
         </div>

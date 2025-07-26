@@ -42,14 +42,18 @@ Python package of container like data structures.
 
 ______________________________________________________________________
 
-### FP Tools: pythonic_fp.fptools
+### pythonic_fp.fptools
 
-Library for functional programming in Python which endeavors to remain
-Pythonic.
+Functional programming library for Python.
+
+This library implements tools to aid in Python functional programming
+in a way which endeavors to be Pythonic.
 
 ______________________________________________________________________
 
-### Iterable Tools: pythonic_fp.iterables
+### pythonic_fp.iterables
+
+Tools for creating iterators from iterables.
 
 - Concatenating and merging iterables
 - Dropping and taking values from iterables
@@ -57,7 +61,7 @@ ______________________________________________________________________
 
 ______________________________________________________________________
 
-### Queues: pythonic_fp.queues
+### pythonic_fp.queues
 
 Queue based data structures which provide the "bit twiddling" necessary
 to guarantee behaviors supporting certain algorithmic use cases.
@@ -69,7 +73,7 @@ to guarantee behaviors supporting certain algorithmic use cases.
 Note: DEPRECATED, use pythonic_fp.containers.queues instead
 ______________________________________________________________________
 
-### FP Tools: pythonic_fp.singletons
+### pythonic_fp.singletons
 
 Singleton classes representing
 
@@ -80,15 +84,17 @@ Singleton classes representing
 
 ______________________________________________________________________
 
-### Splitends: pythonic_fp.splitends
+### pythonic_fp.splitends
 
-Python package Implementing a singularly linked LIFO queue called
+The splitends package implements a singularly linked LIFO queue called
 a ``SplitEnd``. These data structures can safely share data nodes
 between themselves and form branching *hair-like* data structures.
 
 ______________________________________________________________________
 
-### Basename Project: pythonic_fp
+## Basename Project
+
+### pythonic_fp
 
 **DO NOT INSTALL**
 
@@ -96,10 +102,11 @@ The PyPI `pythonic-fp` project's sole purpose is to claim the name on
 PyPI. Do not install it, otherwise all `pythonic-fp` namespace projects
 will **break**.
 
-I don't want to cause anyone any confusion if someone chooses the name
-because PyPI said it was available.
+I don't want to cause any confusion if someone chooses the name
+``pythonic-fp`` for their project because PyPI said it was available.
 
-Its source code is in the name_claim directory.
+The source code for this "project" is located in the name_claim
+directory.
 
 ______________________________________________________________________
 

@@ -14,8 +14,8 @@ Important Milestones
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Updated all pyprojects.toml files and corresponding Sphinx documentation for
-an upcoming coordinated release of all packages. From flowchart of library
-dependencies a better organization became apparent to the maintainer. Will be
+an upcoming coordinated release of all packages. From a flowchart of library
+dependencies, a better organization became apparent to the maintainer. Will be
 removing all "from future import annotations" from the code. All this does is
 replace module names with strings. It was a hack to support a future feature
 that will never happen. This future import will be deprecated in Python 3.14.

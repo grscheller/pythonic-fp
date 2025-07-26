@@ -1,7 +1,6 @@
 PyPI Releases
 =============
 
-
 Package pythonic_fp.circulararray
 ---------------------------------
 

@@ -15,7 +15,7 @@
     <script src="../_static/js/petite-vue.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="module resizing" href="resizing.html" />
+    <link rel="next" title="module auto" href="auto.html" />
     <link rel="prev" title="PyPI Releases" href="../releases.html" /> 
   </head><body data-dark_mode_code_blocks="true">
 
@@ -120,18 +120,18 @@
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper"><p class="caption" role="heading"><span class="caption-text">Overview</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../index.html">package circulararray</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Package circulararray</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../getting_started.html">usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started.html">Usage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../releases.html">PyPI Releases</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">circulararray modules</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="resizing.html">module resizing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="fixed_capacity.html">module fixed_capacity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="auto.html">module auto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fixed.html">module fixed</a></li>
 </ul>
 </li>
 </ul>
@@ -147,17 +147,19 @@
             
   <section id="circulararray-modules">
 <h1>circulararray modules<a class="headerlink" href="#circulararray-modules" title="Link to this heading">¶</a></h1>
-<p>Pythonic FP - Circular Array</p>
 <p>Modules implementing stateful circular array data structures.</p>
-<p><strong>Module: pythonic_fp.circulararray.resizing</strong></p>
+<p>Module <strong>pythonic_fp.circulararray.auto</strong></p>
+<p><code class="docutils literal notranslate"><span class="pre">CA</span></code> objects automatically increase their total storage capacity as
+needed. They can be manually resized smaller.</p>
 <ul class="simple">
-<li><p>Class CA</p></li>
-<li><p>Function ca</p></li>
+<li><p>class <code class="docutils literal notranslate"><span class="pre">CA</span></code></p></li>
+<li><p>factory function <code class="docutils literal notranslate"><span class="pre">ca</span></code></p></li>
 </ul>
-<p><strong>Module: pythonic_fp.circulararray.fixed_capacity</strong></p>
+<p>Module <strong>pythonic_fp.circulararray.fixed</strong></p>
+<p>The total capacity of <code class="docutils literal notranslate"><span class="pre">CAF</span></code> objects is fixed at object instantiation.</p>
 <ul class="simple">
-<li><p>Class CAFix</p></li>
-<li><p>Function ca_fix</p></li>
+<li><p>class <code class="docutils literal notranslate"><span class="pre">CAF</span></code></p></li>
+<li><p>factory function <code class="docutils literal notranslate"><span class="pre">caf</span></code></p></li>
 </ul>
 <div class="toctree-wrapper compound">
 </div>
@@ -185,7 +187,7 @@
 
             <div class="right">
                 
-                    <a href="resizing.html"><span>module resizing</span><span class="icon">&gt;</span></a>
+                    <a href="auto.html"><span>module auto</span><span class="icon">&gt;</span></a>
                 
             </div>
         </div>
