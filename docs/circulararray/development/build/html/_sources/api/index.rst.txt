@@ -6,14 +6,12 @@ circulararray modules
    :no-index:
 
 .. toctree::
-   :caption: CA
    :maxdepth: 1
    :hidden:
 
    auto
 
 .. toctree::
-   :caption: CAF
    :maxdepth: 1
    :hidden:
 

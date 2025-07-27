@@ -27,8 +27,8 @@ Importing the queue classes and "factory functions" into your code.
 
 .. note::
 
-    Each type of Queue can be instantiated with either one iterable or no arguments,
-    just like Python builtins ``list`` or ``tuple``.
+    Each type of Queue can be instantiated with either one iterable or no arguments, just like
+    Python builtins ``list`` or ``tuple`` can be.
 
-    The factory functions behaves like Python's ``[]`` syntax. Each creates its
+    The factory functions ``fifo_queue``, ``lifo_queue`` and ``de_queue`` create their
     corresponding Queue object from the arguments given it.

@@ -22,16 +22,17 @@ Importing the queue classes and functions into your code.
    # Convenience constants for default "truth" and "lie"
    from pythonic_fp.fptools.bool import TRUTH, LIE
 
-   # FP tools library for functions
+   # Functional programming library for functions
    from pythonic_fp.fptools.function import swap, sequenced, partial, it, negate
 
-   # Non-strict delayed function evaluation
+   # Non-strict (lazy) delayed function evaluation
    from pythonic_fp.fptools.lazy import Lazy, lazy, real_lazy
 
-   # Singleton classes
-   from pythonic_fp.fptools.singltons import NoValue
-   from pythonic_fp.fptools.singletons import Sentinel
-   from pythonic_fp.fptools.singletons import Nada
-   
-   # State Monad
+   # Maybe monad
+   from pythonic_fp.fptools.state import State
+
+   # Either monad
+   from pythonic_fp.fptools.state import State
+
+   # State monad
    from pythonic_fp.fptools.state import State

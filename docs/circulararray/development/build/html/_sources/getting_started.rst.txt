@@ -29,4 +29,4 @@ Import the circulararray classes and "factory functions" into your code.
     - methods which modify the objects return no values
     - their corresponding factory functions ``ca`` and ``caf`` behave like Python's ``[]`` syntax.
 
-      - each creates its corresponding circulararray object from the arguments past to it
+      - each creates its corresponding circulararray object from the arguments passed to it

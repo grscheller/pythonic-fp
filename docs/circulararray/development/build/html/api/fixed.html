@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>module fixed &#8212; Pythonic FP - Circular Array 5.3.0 documentation</title>
+    <title>circularary.fixed &#8212; Pythonic FP - Circular Array 5.3.0 documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/basic_mod.css?v=9b2032db" />
     <script src="../_static/documentation_options.js?v=5c0b1849"></script>
@@ -15,7 +15,7 @@
     <script src="../_static/js/petite-vue.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="module auto" href="auto.html" /> 
+    <link rel="prev" title="circulararray.auto" href="auto.html" /> 
   </head><body data-dark_mode_code_blocks="true">
 
 <div id="top_nav">
@@ -119,7 +119,7 @@
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper"><p class="caption" role="heading"><span class="caption-text">Overview</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../index.html">Package circulararray</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">pythonic_fp.circulararray</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
@@ -129,8 +129,8 @@
 <p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">circulararray modules</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="auto.html">module auto</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">module fixed</a></li>
+<li class="toctree-l2"><a class="reference internal" href="auto.html">circulararray.auto</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">circularary.fixed</a></li>
 </ul>
 </li>
 </ul>
@@ -145,8 +145,8 @@
           <div class="body" role="main">
             
   <section id="module-pythonic_fp.circulararray.fixed">
-<span id="module-fixed"></span><h1>module fixed<a class="headerlink" href="#module-pythonic_fp.circulararray.fixed" title="Link to this heading">¶</a></h1>
-<p>Fixed storage capacity circular array.</p>
+<span id="circularary-fixed"></span><h1>circularary.fixed<a class="headerlink" href="#module-pythonic_fp.circulararray.fixed" title="Link to this heading">¶</a></h1>
+<p>Circular array with fixed storage capacity.</p>
 <ul class="simple">
 <li><p>O(1) pops and pushes either end</p></li>
 <li><p>O(1) indexing, does not support slicing</p></li>
@@ -154,29 +154,27 @@
 <li><p>iterable, can safely mutate while iterators continue iterating over previous state</p></li>
 <li><p>comparisons compare identity before equality, like builtins</p></li>
 <li><p>in boolean context, falsy when either empty or full, otherwise truthy</p></li>
+<li><p>factory function caf produces a fixed storage capacity circular array from its arguments</p></li>
 </ul>
 <dl class="py class">
 <dt class="sig sig-object py" id="pythonic_fp.circulararray.fixed.CAF">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.circulararray.fixed.</span></span><span class="sig-name descname"><span class="pre">CAF</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">D</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">capacity</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.circulararray.fixed.CAF" title="Link to this definition">¶</a></dt>
-<dd><p>Fixed sized circular array data structure.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">CA</span><span class="p">[</span><span class="n">D</span><span class="p">](</span><span class="n">data</span><span class="p">:</span> <span class="n">Iterable</span><span class="p">[</span><span class="n">D</span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span><span class="p">,</span> <span class="n">capacity</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">2</span><span class="p">)</span>
-</pre></div>
-</div>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.circulararray.fixed.</span></span><span class="sig-name descname"><span class="pre">CAF</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">items</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">I</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">capacity</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.circulararray.fixed.CAF" title="Link to this definition">¶</a></dt>
+<dd><p>Basically a list that can grow in O(1) time and space complexity.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>data</strong> – optional iterable to initial populate circular array</p>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>items</strong> – optional iterable to initial populate circular array</p></li>
+<li><p><strong>capacity</strong> – fixed storage capacity of circular array</p></li>
+</ul>
 </dd>
 <dt class="field-even">Raises<span class="colon">:</span></dt>
-<dd class="field-even"><p><strong>TypeError</strong> – if data is not Iterable</p>
+<dd class="field-even"><p><strong>TypeError</strong> – if items is not Iterable</p>
 </dd>
 </dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.circulararray.fixed.CAF.capacity">
 <span class="sig-name descname"><span class="pre">capacity</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#pythonic_fp.circulararray.fixed.CAF.capacity" title="Link to this definition">¶</a></dt>
-<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">capacity</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span>
-</pre></div>
-</div>
-<p>Return fixed storage capacity of the circular array.</p>
+<dd><p>Return fixed storage capacity of the circular array.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>fixed storage capacity</p>
@@ -187,19 +185,13 @@
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.circulararray.fixed.CAF.empty">
 <span class="sig-name descname"><span class="pre">empty</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pythonic_fp.circulararray.fixed.CAF.empty" title="Link to this definition">¶</a></dt>
-<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">empty</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
-</pre></div>
-</div>
-<p>Empty the circular array.</p>
+<dd><p>Empty the circular array.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.circulararray.fixed.CAF.foldl">
-<span class="sig-name descname"><span class="pre">foldl</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">L</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">D</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">L</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">L</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">L</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Never</span></span></span><a class="headerlink" href="#pythonic_fp.circulararray.fixed.CAF.foldl" title="Link to this definition">¶</a></dt>
-<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">foldl</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">f</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[[</span><span class="n">L</span><span class="p">,</span> <span class="n">D</span><span class="p">],</span> <span class="n">L</span><span class="p">],</span> <span class="n">start</span><span class="p">:</span> <span class="n">L</span> <span class="o">|</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">L</span> <span class="o">|</span> <span class="n">Never</span>
-</pre></div>
-</div>
-<p>Fold left with a function and optional stating item.</p>
+<span class="sig-name descname"><span class="pre">foldl</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">L</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">I</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">L</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">L</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">L</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Never</span></span></span><a class="headerlink" href="#pythonic_fp.circulararray.fixed.CAF.foldl" title="Link to this definition">¶</a></dt>
+<dd><p>Fold left with a function and optional stating item.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
@@ -218,11 +210,8 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.circulararray.fixed.CAF.foldr">
-<span class="sig-name descname"><span class="pre">foldr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">D</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">R</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">R</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">R</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">R</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Never</span></span></span><a class="headerlink" href="#pythonic_fp.circulararray.fixed.CAF.foldr" title="Link to this definition">¶</a></dt>
-<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">foldr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">f</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[[</span><span class="n">D</span><span class="p">,</span> <span class="n">R</span><span class="p">],</span> <span class="n">R</span><span class="p">],</span> <span class="n">start</span><span class="p">:</span> <span class="n">R</span> <span class="o">|</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">R</span> <span class="o">|</span> <span class="n">Never</span>
-</pre></div>
-</div>
-<p>Fold right with a function and an optional starting item.</p>
+<span class="sig-name descname"><span class="pre">foldr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">I</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">R</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">R</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">R</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">R</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Never</span></span></span><a class="headerlink" href="#pythonic_fp.circulararray.fixed.CAF.foldr" title="Link to this definition">¶</a></dt>
+<dd><p>Fold right with a function and an optional starting item.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
@@ -242,27 +231,21 @@
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.circulararray.fixed.CAF.fraction_filled">
 <span class="sig-name descname"><span class="pre">fraction_filled</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#pythonic_fp.circulararray.fixed.CAF.fraction_filled" title="Link to this definition">¶</a></dt>
-<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">fraction_filled</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span>
-</pre></div>
-</div>
-<p>Find fraction of the storage capacity which is filled.</p>
+<dd><p>Find fraction of the storage capacity which is filled.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><p>the ratio cnt/capacity</p>
+<dd class="field-odd"><p>the ratio count/capacity</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.circulararray.fixed.CAF.map">
-<span class="sig-name descname"><span class="pre">map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">D</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">U</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.circulararray.fixed.CAF" title="pythonic_fp.circulararray.fixed.CAF"><span class="pre">CAF</span></a></span></span><a class="headerlink" href="#pythonic_fp.circulararray.fixed.CAF.map" title="Link to this definition">¶</a></dt>
-<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">map</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">f</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[[</span><span class="n">D</span><span class="p">],</span> <span class="n">U</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">CAF</span><span class="p">[</span><span class="n">U</span><span class="p">]</span>
-</pre></div>
-</div>
-<p>Apply function f over the fixed circular array’s contents,</p>
+<span class="sig-name descname"><span class="pre">map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">I</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">U</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.circulararray.fixed.CAF" title="pythonic_fp.circulararray.fixed.CAF"><span class="pre">CAF</span></a></span></span><a class="headerlink" href="#pythonic_fp.circulararray.fixed.CAF.map" title="Link to this definition">¶</a></dt>
+<dd><p>Apply function f over the circular array’s contents,</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>f</strong> – callable from type D to type U</p>
+<dd class="field-odd"><p><strong>f</strong> – callable from type I to type U</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>new fixed circular array instance</p>
@@ -272,10 +255,8 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.circulararray.fixed.CAF.popl">
-<span class="sig-name descname"><span class="pre">popl</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">D</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Never</span></span></span><a class="headerlink" href="#pythonic_fp.circulararray.fixed.CAF.popl" title="Link to this definition">¶</a></dt>
-<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">popl</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">D</span> <span class="o">|</span> <span class="n">Never</span>
-</pre></div>
-</div>
+<span class="sig-name descname"><span class="pre">popl</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">I</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Never</span></span></span><a class="headerlink" href="#pythonic_fp.circulararray.fixed.CAF.popl" title="Link to this definition">¶</a></dt>
+<dd><p>Pop item off left side (front) of circular array.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>item popped from left side of circular array</p>
@@ -288,10 +269,9 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.circulararray.fixed.CAF.popld">
-<span class="sig-name descname"><span class="pre">popld</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">D</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">D</span></span></span><a class="headerlink" href="#pythonic_fp.circulararray.fixed.CAF.popld" title="Link to this definition">¶</a></dt>
-<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">popld</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">default</span><span class="p">:</span> <span class="n">D</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">D</span>
-</pre></div>
-</div>
+<span class="sig-name descname"><span class="pre">popld</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">I</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">I</span></span></span><a class="headerlink" href="#pythonic_fp.circulararray.fixed.CAF.popld" title="Link to this definition">¶</a></dt>
+<dd><p>Pop one item from left side of the circular array, provide
+a mandatory default value. “Safe” version of popl.</p>
 <p>Pop one item from left side of the circular array, provide
 a mandatory default value. “Safe” version of popl.</p>
 <dl class="field-list simple">
@@ -306,27 +286,22 @@ a mandatory default value. “Safe” version of popl.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.circulararray.fixed.CAF.poplt">
-<span class="sig-name descname"><span class="pre">poplt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">maximum</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">D</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.circulararray.fixed.CAF.poplt" title="Link to this definition">¶</a></dt>
-<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">poplt</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">maximum</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="n">D</span><span class="p">,</span> <span class="o">...</span><span class="p">]</span>
-</pre></div>
-</div>
-<p>Pop multiple items from left side of circular array.</p>
+<span class="sig-name descname"><span class="pre">poplt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">maximum</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">I</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.circulararray.fixed.CAF.poplt" title="Link to this definition">¶</a></dt>
+<dd><p>Pop multiple items from left side of circular array.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>maximum</strong> – maximum number of values to pop</p>
+<dd class="field-odd"><p><strong>maximum</strong> – maximum number of items to pop, may pop less if not enough items</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>tuple of popped items in the order popped, left to right</p>
+<dd class="field-even"><p>items in the order popped, left to right</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.circulararray.fixed.CAF.popr">
-<span class="sig-name descname"><span class="pre">popr</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">D</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Never</span></span></span><a class="headerlink" href="#pythonic_fp.circulararray.fixed.CAF.popr" title="Link to this definition">¶</a></dt>
-<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">popr</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">D</span> <span class="o">|</span> <span class="n">Never</span>
-</pre></div>
-</div>
+<span class="sig-name descname"><span class="pre">popr</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">I</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Never</span></span></span><a class="headerlink" href="#pythonic_fp.circulararray.fixed.CAF.popr" title="Link to this definition">¶</a></dt>
+<dd><p>Pop item off right side (rear) of circular array.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>item popped from right side of circular array</p>
@@ -339,11 +314,8 @@ a mandatory default value. “Safe” version of popl.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.circulararray.fixed.CAF.poprd">
-<span class="sig-name descname"><span class="pre">poprd</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">D</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">D</span></span></span><a class="headerlink" href="#pythonic_fp.circulararray.fixed.CAF.poprd" title="Link to this definition">¶</a></dt>
-<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">poprd</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">default</span><span class="p">:</span> <span class="n">D</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">D</span>
-</pre></div>
-</div>
-<p>Pop one value from right side of the circular array, provide
+<span class="sig-name descname"><span class="pre">poprd</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">I</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">I</span></span></span><a class="headerlink" href="#pythonic_fp.circulararray.fixed.CAF.poprd" title="Link to this definition">¶</a></dt>
+<dd><p>Pop one item from right side of the circular array, provide
 a mandatory default value. “Safe” version of popr.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -357,30 +329,25 @@ a mandatory default value. “Safe” version of popr.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.circulararray.fixed.CAF.poprt">
-<span class="sig-name descname"><span class="pre">poprt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">maximum</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">D</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.circulararray.fixed.CAF.poprt" title="Link to this definition">¶</a></dt>
-<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">poprt</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">maximum</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="n">D</span><span class="p">,</span> <span class="o">...</span><span class="p">]</span>
-</pre></div>
-</div>
-<p>Pop multiple items from right side of circular array.</p>
+<span class="sig-name descname"><span class="pre">poprt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">maximum</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">I</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.circulararray.fixed.CAF.poprt" title="Link to this definition">¶</a></dt>
+<dd><p>Pop multiple items from right side of circular array.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>maximum</strong> – maximum number of items to pop</p>
+<dd class="field-odd"><p><strong>maximum</strong> – maximum number of items to pop, may pop less if not enough items</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>tuple of popped items in the order popped, right to left</p>
+<dd class="field-even"><p>items in the order popped, right to left</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.circulararray.fixed.CAF.pushl">
-<span class="sig-name descname"><span class="pre">pushl</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">d</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">D</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pythonic_fp.circulararray.fixed.CAF.pushl" title="Link to this definition">¶</a></dt>
-<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">pushl</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">d</span><span class="p">:</span> <span class="n">D</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
-</pre></div>
-</div>
+<span class="sig-name descname"><span class="pre">pushl</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">item</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">I</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pythonic_fp.circulararray.fixed.CAF.pushl" title="Link to this definition">¶</a></dt>
+<dd><p>Push single item onto left side (front) of circular array.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>d</strong> – single item pushed onto circular array from left</p>
+<dd class="field-odd"><p><strong>item</strong> – single item pushed onto circular array from left</p>
 </dd>
 <dt class="field-even">Raises<span class="colon">:</span></dt>
 <dd class="field-even"><p><strong>ValueError</strong> – when called on a full CAF</p>
@@ -390,16 +357,14 @@ a mandatory default value. “Safe” version of popr.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.circulararray.fixed.CAF.pushr">
-<span class="sig-name descname"><span class="pre">pushr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">d</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">D</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pythonic_fp.circulararray.fixed.CAF.pushr" title="Link to this definition">¶</a></dt>
-<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">pushr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">d</span><span class="p">:</span> <span class="n">D</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
-</pre></div>
-</div>
+<span class="sig-name descname"><span class="pre">pushr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">item</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">I</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pythonic_fp.circulararray.fixed.CAF.pushr" title="Link to this definition">¶</a></dt>
+<dd><p>Push a single item onto right side (rear) of circular array.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>d</strong> – single item pushed onto circular array from right</p>
+<dd class="field-odd"><p><strong>item</strong> – single item pushed onto circular array from right</p>
 </dd>
 <dt class="field-even">Raises<span class="colon">:</span></dt>
-<dd class="field-even"><p><strong>ValueError</strong> – when called on a full CAF.</p>
+<dd class="field-even"><p><strong>ValueError</strong> – when called on a full fixed storage capacity circular array</p>
 </dd>
 </dl>
 </dd></dl>
@@ -407,10 +372,7 @@ a mandatory default value. “Safe” version of popr.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.circulararray.fixed.CAF.rotl">
 <span class="sig-name descname"><span class="pre">rotl</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pythonic_fp.circulararray.fixed.CAF.rotl" title="Link to this definition">¶</a></dt>
-<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">rotl</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
-</pre></div>
-</div>
-<p>Rotate items left.</p>
+<dd><p>Rotate items left.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>n</strong> – number of times to shift elements to the left</p>
@@ -421,10 +383,7 @@ a mandatory default value. “Safe” version of popr.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.circulararray.fixed.CAF.rotr">
 <span class="sig-name descname"><span class="pre">rotr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pythonic_fp.circulararray.fixed.CAF.rotr" title="Link to this definition">¶</a></dt>
-<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">rotr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
-</pre></div>
-</div>
-<p>Rotate items right.</p>
+<dd><p>Rotate items right.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>n</strong> – number of times to shift elements to the right</p>
@@ -437,15 +396,12 @@ a mandatory default value. “Safe” version of popr.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="pythonic_fp.circulararray.fixed.caf">
 <span class="sig-prename descclassname"><span class="pre">pythonic_fp.circulararray.fixed.</span></span><span class="sig-name descname"><span class="pre">caf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">items</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">T</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">capacity</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">2</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.circulararray.fixed.CAF" title="pythonic_fp.circulararray.fixed.CAF"><span class="pre">CAF</span></a></span></span><a class="headerlink" href="#pythonic_fp.circulararray.fixed.caf" title="Link to this definition">¶</a></dt>
-<dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">caf</span><span class="p">(</span><span class="o">*</span><span class="n">items</span><span class="p">:</span> <span class="n">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">CAF</span><span class="p">[</span><span class="n">T</span><span class="p">]</span>
-</pre></div>
-</div>
-<p>Function to produce a circular array from a variable number of arguments.</p>
+<dd><p>Produce a circular array from a variable number of arguments.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>items</strong> – initial items for a new circular array</p></li>
-<li><p><strong>capacity</strong> – minimum storage capacity to set</p></li>
+<li><p><strong>capacity</strong> – the minimum storage capacity to set</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -470,7 +426,7 @@ a mandatory default value. “Safe” version of popr.</p>
             <p><a class="toggle_right_sidebar" href="#"><span class="icon">&gt;</span><span>Page contents:</span></a></p>
             <div class="page_toc">
                 <ul>
-<li><a class="reference internal" href="#">module fixed</a><ul>
+<li><a class="reference internal" href="#">circularary.fixed</a><ul>
 <li><a class="reference internal" href="#pythonic_fp.circulararray.fixed.CAF"><code class="docutils literal notranslate"><span class="pre">CAF</span></code></a><ul>
 <li><a class="reference internal" href="#pythonic_fp.circulararray.fixed.CAF.capacity"><code class="docutils literal notranslate"><span class="pre">CAF.capacity()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.circulararray.fixed.CAF.empty"><code class="docutils literal notranslate"><span class="pre">CAF.empty()</span></code></a></li>
@@ -506,7 +462,7 @@ a mandatory default value. “Safe” version of popr.</p>
             <div class="left">
                 
                 <a href="auto.html">
-                    <span class="icon">&lt;</span><span>module auto</span></a>
+                    <span class="icon">&lt;</span><span>circulararray.auto</span></a>
                 
             </div>
 
