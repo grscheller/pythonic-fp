@@ -1,9 +1,9 @@
-usage
+Usage
 =====
 
-.. admonition:: **DEPRECATED**
+.. deprecated:: 5.0.0
 
-    This package is deprecated, use package ``pythonic_fp.containers.queues`` instead.
+   Use package ``pythonic_fp.containers.queues`` instead.
 
 How to installing the module
 ----------------------------
@@ -27,8 +27,8 @@ Importing the queue classes and "factory functions" into your code.
 
 .. note::
 
-    Each type of Queue can be instantiated with either one iterable or no arguments, just like
-    Python builtins ``list`` or ``tuple`` can be.
+    Each type of Queue can be instantiated with either one iterable or no arguments,
+    just like Python builtins ``list`` or ``tuple`` can be.
 
-    The factory functions ``fifo_queue``, ``lifo_queue`` and ``de_queue`` create their
-    corresponding Queue object from the arguments given it.
+    The factory functions ``fifo_queue``, ``lifo_queue`` and ``de_queue``
+    create their corresponding Queue object from the arguments given them.

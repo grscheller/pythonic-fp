@@ -2,21 +2,25 @@
    Pythonic FP - Queues documentation master file. To regenerate the sphinx
    documentation do: "$ make html" from the "docs/" directory.
 
-package queues
-==============
+pythonic_fp.queues
+==================
 
-.. admonition:: **DEPRECATED**
+PyPI project
+`pythonic-fp.queues <https://pypi.org/project/pythonic-fp.queues/>`_.
+a part of the
+`pythonic-fp <https://github.com/grscheller/pythonic-fp/blob/main/README.md>`_
+namespace projects.
 
-    Package ``pythonic_fp.queues`` is deprecated, use ``pythonic_fp.containers.queues`` instead.
+.. deprecated:: 5.0.0
 
-PyPI project `pythonic-fp.queues <https://pypi.org/project/pythonic-fp.queues/>`_.
+   This PyPI project has been deprecated, use PyPY project ``pythonic-fp.containers`` instead.
 
 .. automodule:: pythonic_fp.queues
    :synopsis:
    :no-index:
 
-Part of of the
-`pythonic-fp namespace projects <https://github.com/grscheller/pythonic-fp/blob/main/README.md>`_.
+`CHANGELOG <https://github.com/grscheller/pythonic-fp-queues/blob/main/CHANGELOG.rst>`_
+for the project.
 
 Getting Started
 ---------------
@@ -30,18 +34,8 @@ Getting Started
 Documentation
 -------------
 
-Programming API:
-~~~~~~~~~~~~~~~~
-
-:doc:`Package pythonic_fp.queues <api/index>`
+:doc:`Programming API for pythonic_fp.queues <api/index>`
     For |PROPOSED_RELEASE_STRING| PyPI pythonic-fp.queues project |VERSION_RELEASED| release.
-
-CHANGELOG:
-~~~~~~~~~~
-
-Changelog for the
-`pythonic-fp queues <https://github.com/grscheller/pythonic-fp-queues/blob/main/CHANGELOG.rst>`_
-PyPI project.
 
 .. toctree::
    :caption: Overview

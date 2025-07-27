@@ -1,4 +1,4 @@
-module fifo
+queues.fifo
 ===========
 
 .. automodule:: pythonic_fp.queues.fifo

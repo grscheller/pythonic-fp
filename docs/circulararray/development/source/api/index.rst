@@ -1,4 +1,4 @@
-circulararray modules
+package circulararray
 =====================
 
 .. automodule:: pythonic_fp.circulararray

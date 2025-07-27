@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>queues modules &#8212; Pythonic FP - Queues 5.0.0 documentation</title>
+    <title>package queues &#8212; Pythonic FP - Queues 5.0.0 documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/basic_mod.css?v=9b2032db" />
     <script src="../_static/documentation_options.js?v=ce74c6a2"></script>
@@ -15,7 +15,7 @@
     <script src="../_static/js/petite-vue.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="module fifo" href="fifo.html" />
+    <link rel="next" title="queues.fifo" href="fifo.html" />
     <link rel="prev" title="PyPI Releases" href="../releases.html" /> 
   </head><body data-dark_mode_code_blocks="true">
 
@@ -120,19 +120,19 @@
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper"><p class="caption" role="heading"><span class="caption-text">Overview</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../index.html">package queues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">pythonic_fp.queues</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../getting_started.html">usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started.html">Usage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../releases.html">PyPI Releases</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">queues modules</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="fifo.html">module fifo</a></li>
-<li class="toctree-l2"><a class="reference internal" href="lifo.html">module lifo</a></li>
-<li class="toctree-l2"><a class="reference internal" href="de.html">module de</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">package queues</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="fifo.html">queues.fifo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lifo.html">queues.lifo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="de.html">queues.de</a></li>
 </ul>
 </li>
 </ul>
@@ -146,16 +146,34 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <section id="queues-modules">
-<h1>queues modules<a class="headerlink" href="#queues-modules" title="Link to this heading">¶</a></h1>
-<dl class="simple">
-<dt><a class="reference internal" href="fifo.html"><span class="doc">pythonic_fp.queues.fifo</span></a></dt><dd><p>First In First Out Queue</p>
-</dd>
-<dt><a class="reference internal" href="lifo.html"><span class="doc">LIFOQueue.queues.lifo</span></a></dt><dd><p>Last In First Out Queue</p>
-</dd>
-<dt><a class="reference internal" href="de.html"><span class="doc">DEQueue.queues.de</span></a></dt><dd><p>Double Ended Queue</p>
-</dd>
-</dl>
+  <section id="package-queues">
+<h1>package queues<a class="headerlink" href="#package-queues" title="Link to this heading">¶</a></h1>
+<p>Three types of queues.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>module</p></th>
+<th class="head"><p>class</p></th>
+<th class="head"><p>description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>pythonic_fp.queues.de</p></td>
+<td><p>DEQueue</p></td>
+<td><p>Double-Ended queue</p></td>
+</tr>
+<tr class="row-odd"><td><p>pythonic_fp.queues.fifo</p></td>
+<td><p>FIFOQueue</p></td>
+<td><p>First-In-First-Out queue</p></td>
+</tr>
+<tr class="row-even"><td><p>pythonic_fp.queues.lifo</p></td>
+<td><p>LIFOQueue</p></td>
+<td><p>Last-In-First-Out queue</p></td>
+</tr>
+</tbody>
+</table>
+<div class="deprecated">
+<p><span class="versionmodified deprecated">Deprecated since version 5.0.0: </span>Use package <code class="docutils literal notranslate"><span class="pre">pythonic_fp.containers.queues</span></code> instead.</p>
+</div>
 <div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">
@@ -184,7 +202,7 @@
 
             <div class="right">
                 
-                    <a href="fifo.html"><span>module fifo</span><span class="icon">&gt;</span></a>
+                    <a href="fifo.html"><span>queues.fifo</span><span class="icon">&gt;</span></a>
                 
             </div>
         </div>
