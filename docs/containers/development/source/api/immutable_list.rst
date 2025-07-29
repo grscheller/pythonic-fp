@@ -1,5 +1,5 @@
-pythonic_fp.containers.immutable_list
-=====================================
+containers.immutable_list
+=========================
 
 Immutable List
 --------------

@@ -2,17 +2,20 @@
    Pythonic FP - Containers documentation master file. To regenerate the sphinx
    documentation do: "$ make html" from the "docs/" directory.
 
-Pythonic FP - Containers
-========================
+pythonic_fp.containers
+======================
 
-PyPI project `pythonic.containers <https://pypi.org/project/pythonic-fp.containers/>`_
+PyPI project
+`pythonic.containers
+<https://pypi.org/project/pythonic-fp.containers/>`_,
+part of of the
+`pythonic-fp namespace projects
+<https://github.com/grscheller/pythonic-fp/blob/main/README.md>`_.
 
-.. automodule:: pythonic_fp.iterables
-   :synopsis:
-   :no-index:
+**A collection of container-like classes.**
 
-Part of of the
-`pythonic-fp namespace projects <https://github.com/grscheller/pythonic-fp/blob/main/README.md>`_.
+For |PROPOSED_RELEASE_STRING| |VERSION_RELEASED| release.
+
 
 Getting Started
 ---------------
@@ -23,21 +26,15 @@ Getting Started
 :doc:`PyPI Releases <releases>`
     Documentation for pythonic-fp.containers PyPI releases.
 
-Documentation
--------------
 
-Programming API:
-~~~~~~~~~~~~~~~~
-
-:doc:`Package pythonic_fp.containers <api/index>`
-    For |PROPOSED_RELEASE_STRING| PyPI pythonic-fp.containers project |VERSION_RELEASED| release.
-
-CHANGELOG:
-~~~~~~~~~~
+Project CHANGELOG:
+------------------
 
 Change log for the
-`pythonic-fp.containers <https://github.com/grscheller/pythonic-fp-iterables/blob/main/CHANGELOG.rst>`_
+`pythonic-fp.containers
+<https://github.com/grscheller/pythonic-fp-containers/blob/main/CHANGELOG.rst>`_
 PyPI project.
+
 
 .. toctree::
    :caption: Overview

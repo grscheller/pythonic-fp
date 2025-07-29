@@ -1,5 +1,5 @@
-pythonic_fp.containers.functional_tuple
-=======================================
+containers.functional_tuple
+===========================
 
 Functional Tuple
 ----------------

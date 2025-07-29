@@ -22,7 +22,6 @@ proposed_release_string = 'a proposed'
 
 extensions = [
     'sphinx.ext.autodoc',
-    'sphinx_autodoc_typehints',
 ]
 
 templates_path = ['_templates']
@@ -31,16 +30,6 @@ exclude_patterns: list[str] = []
 # -- Options for Sphinx
 autoclass_content = 'both'
 
-# -- Options for sphinx_autodoc_typehints
-always_use_bars_union = True
-typehints_fully_qualified = False
-always_document_param_types = True
-typehints_use_rtype = True
-simplify_optional_unions = False
-typehints_document_rtype_none = True
-typehints_use_signatures = True
-typehints_use_signatures_return = True
-
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
@@ -48,7 +37,7 @@ html_theme = 'piccolo_theme'
 html_static_path = ['_static']
 
 rst_epilog = f"""
-.. |VERSION_RELEASED| replace:: v{release}
+.. |VERSION_RELEASED| replace:: version {release}
 
 .. |PROPOSED_RELEASE_STRING| replace:: {proposed_release_string}
 """

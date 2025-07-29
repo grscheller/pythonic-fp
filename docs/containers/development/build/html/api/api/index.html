@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 
-<html lang="en" data-content_root="./">
+<html lang="en" data-content_root="../../">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Getting Started &#8212; Pythonic FP - Containers 3.0.0 documentation</title>
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
-    <link rel="stylesheet" type="text/css" href="_static/basic_mod.css?v=9b2032db" />
-    <script src="_static/documentation_options.js?v=acc74ff5"></script>
-    <script src="_static/doctools.js?v=9bcbadda"></script>
-    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="_static/js/theme.js"></script>
-    <script src="_static/js/petite-vue.js"></script>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="PyPI release docs" href="releases.html" />
-    <link rel="prev" title="pythonic_fp.containers" href="index.html" /> 
+    <title>containers.queues &#8212; Pythonic FP - Containers 3.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
+    <link rel="stylesheet" type="text/css" href="../../_static/basic_mod.css?v=9b2032db" />
+    <script src="../../_static/documentation_options.js?v=acc74ff5"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <script src="../../_static/js/petite-vue.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="queues.fifo" href="fifo.html" />
+    <link rel="prev" title="containers.immutable_list" href="../immutable_list.html" /> 
   </head><body data-dark_mode_code_blocks="true">
 
 <div id="top_nav">
@@ -30,7 +30,7 @@
         <p id="toggle_sidebar">
             <a href="#" title="Toggle sidebar">|||</a>
         </p>
-        <h1><a href="index.html" title="Go to homepage">Pythonic FP - Containers 3.0.0 documentation</a></h1>
+        <h1><a href="../../index.html" title="Go to homepage">Pythonic FP - Containers 3.0.0 documentation</a></h1>
 
         <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
     <template v-if="mode == 'light'">
@@ -92,7 +92,7 @@
 })()
 </script>
             <p class="mobile_search_link">
-                <a href="search.html" title="Search">
+                <a href="../../search.html" title="Search">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 64" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
                         <path d="M14.873 40.009c-2.315-3.943-3.642-8.532-3.642-13.429C11.231 11.91 23.141 0 37.811 0s26.58 11.91 26.58 26.58-11.91 26.58-26.58 26.58a26.44 26.44 0 0 1-14.277-4.161L9.739 62.794a3.12 3.12 0 0 1-4.413 0L.913 58.382c-1.217-1.218-1.217-3.196 0-4.413l13.96-13.96zM37.811 8.054c10.225 0 18.526 8.301 18.526 18.526s-8.301 18.526-18.526 18.526-18.526-8.301-18.526-18.526S27.586 8.054 37.811 8.054z" fill="#fff" />
                     </svg>
@@ -105,7 +105,7 @@
 <search id="searchbox" style="display: none" role="search">
   <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
-    <form class="search" action="search.html" method="get">
+    <form class="search" action="../../search.html" method="get">
       <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
       <input type="submit" value="Go" />
     </form>
@@ -120,16 +120,26 @@
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper"><p class="caption" role="heading"><span class="caption-text">Overview</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="index.html">pythonic_fp.containers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">pythonic_fp.containers</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Getting Started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="releases.html">PyPI release docs</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../releases.html">PyPI release docs</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="api/index.html">pythonic_fp.containers</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">pythonic_fp.containers</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../functional_tuple.html">containers.functional_tuple</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../immutable_list.html">containers.immutable_list</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">containers.queues</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="fifo.html">queues.fifo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="lifo.html">queues.lifo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="de.html">queues.de</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
         </div>
@@ -141,23 +151,37 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <section id="getting-started">
-<h1>Getting Started<a class="headerlink" href="#getting-started" title="Link to this heading">¶</a></h1>
-<section id="how-to-installing-the-module">
-<h2>How to installing the module<a class="headerlink" href="#how-to-installing-the-module" title="Link to this heading">¶</a></h2>
-<p>Install the project into your Python environment:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pip<span class="w"> </span>install<span class="w"> </span>pythonic-fp.containers
-</pre></div>
+  <section id="containers-queues">
+<h1>containers.queues<a class="headerlink" href="#containers-queues" title="Link to this heading">¶</a></h1>
+<p>Three types of queues.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>module</p></th>
+<th class="head"><p>class</p></th>
+<th class="head"><p>description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>pythonic_fp.containers.queues.de</p></td>
+<td><p>DEQueue</p></td>
+<td><p>Double-Ended queue</p></td>
+</tr>
+<tr class="row-odd"><td><p>pythonic_fp.containers.queues.fifo</p></td>
+<td><p>FIFOQueue</p></td>
+<td><p>First-In-First-Out queue</p></td>
+</tr>
+<tr class="row-even"><td><p>pythonic_fp.containers.queues.lifo</p></td>
+<td><p>LIFOQueue</p></td>
+<td><p>Last-In-First-Out queue</p></td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
 </div>
-</section>
-<section id="importing-the-module">
-<h2>Importing the module<a class="headerlink" href="#importing-the-module" title="Link to this heading">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">pythonic_fp.containers.box</span><span class="w"> </span><span class="kn">import</span> <span class="n">Box</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">pythonic_fp.containers.functional_tuple</span><span class="w"> </span><span class="kn">import</span> <span class="n">FunctionalTuple</span><span class="p">,</span> <span class="n">functional_tuple</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">pythonic_fp.containers.immutable_list</span><span class="w"> </span><span class="kn">import</span> <span class="n">ImmutableList</span><span class="p">,</span> <span class="n">immutable_list</span>
-</pre></div>
+<div class="toctree-wrapper compound">
 </div>
-</section>
+<div class="toctree-wrapper compound">
+</div>
 </section>
 
 
@@ -166,24 +190,6 @@
         </div>
       </div>
     
-        <div id="show_right_sidebar">
-            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&lt;</span><span>Page contents</span></a></p>
-        </div>
-
-        <div id="right_sidebar">
-            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&gt;</span><span>Page contents:</span></a></p>
-            <div class="page_toc">
-                <ul>
-<li><a class="reference internal" href="#">Getting Started</a><ul>
-<li><a class="reference internal" href="#how-to-installing-the-module">How to installing the module</a></li>
-<li><a class="reference internal" href="#importing-the-module">Importing the module</a></li>
-</ul>
-</li>
-</ul>
-
-            </div>
-        </div>
-    
 
       <div class="clearer"></div>
     </div>
@@ -191,14 +197,14 @@
         <div class="button_nav">
             <div class="left">
                 
-                <a href="index.html">
-                    <span class="icon">&lt;</span><span>pythonic_fp.containers</span></a>
+                <a href="../immutable_list.html">
+                    <span class="icon">&lt;</span><span>containers.immutable_list</span></a>
                 
             </div>
 
             <div class="right">
                 
-                    <a href="releases.html"><span>PyPI release docs</span><span class="icon">&gt;</span></a>
+                    <a href="fifo.html"><span>queues.fifo</span><span class="icon">&gt;</span></a>
                 
             </div>
         </div>
