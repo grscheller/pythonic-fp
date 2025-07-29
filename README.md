@@ -119,9 +119,9 @@ ______________________________________________________________________
 [204]: https://github.com/grscheller/pythonic-fp-gadgets
 [205]: https://github.com/grscheller/pythonic-fp-iterables
 [206]: https://github.com/grscheller/pythonic-fp-splitends
-[301]: https://grscheller.github.io/pythonic-fp/circulararray/development/build/html/releases.html
-[302]: https://grscheller.github.io/pythonic-fp/containers/development/build/html/releases.html
-[303]: https://grscheller.github.io/pythonic-fp/fptools/development/build/html/releases.html
-[304]: https://grscheller.github.io/pythonic-fp/deprecated/gadgets/development/build/html/releases.html
-[305]: https://grscheller.github.io/pythonic-fp/iterables/development/build/html/releases.html
-[306]: https://grscheller.github.io/pythonic-fp/splitends/development/build/html/releases.html
+[301]: https://grscheller.github.io/pythonic-fp/circulararray/development/build/html
+[302]: https://grscheller.github.io/pythonic-fp/containers/development/build/html
+[303]: https://grscheller.github.io/pythonic-fp/fptools/development/build/html
+[304]: https://grscheller.github.io/pythonic-fp/deprecated/gadgets/development/build/html
+[305]: https://grscheller.github.io/pythonic-fp/iterables/development/build/html
+[306]: https://grscheller.github.io/pythonic-fp/splitends/development/build/html
