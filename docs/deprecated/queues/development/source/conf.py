@@ -37,7 +37,7 @@ html_theme = 'piccolo_theme'
 html_static_path = ['_static']
 
 rst_epilog = f"""
-.. |VERSION_RELEASED| replace:: v{release}
+.. |VERSION_RELEASED| replace:: version {release}
 
 .. |PROPOSED_RELEASE_STRING| replace:: {proposed_release_string}
 """

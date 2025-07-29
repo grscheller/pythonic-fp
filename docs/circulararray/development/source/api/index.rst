@@ -1,5 +1,5 @@
-package circulararray
-=====================
+pythonic_fp.circulararray
+=========================
 
 .. automodule:: pythonic_fp.circulararray
    :synopsis:
@@ -7,12 +7,10 @@ package circulararray
 
 .. toctree::
    :maxdepth: 1
-   :hidden:
 
    auto
 
 .. toctree::
    :maxdepth: 1
-   :hidden:
 
    fixed

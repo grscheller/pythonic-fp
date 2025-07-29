@@ -15,6 +15,5 @@ Importing the module
 
 .. code:: python
 
-    from pythonic_fp.containers.box import Box
     from pythonic_fp.containers.functional_tuple import FunctionalTuple, functional_tuple
     from pythonic_fp.containers.immutable_list import ImmutableList, immutable_list

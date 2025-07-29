@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>package circulararray &#8212; Pythonic FP - Circular Array 5.3.0 documentation</title>
+    <title>pythonic_fp.circulararray &#8212; Pythonic FP - Circular Array 5.3.0 documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/basic_mod.css?v=9b2032db" />
     <script src="../_static/documentation_options.js?v=5c0b1849"></script>
@@ -16,7 +16,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="circulararray.auto" href="auto.html" />
-    <link rel="prev" title="PyPI Releases" href="../releases.html" /> 
+    <link rel="prev" title="changelog" href="../changelog.html" /> 
   </head><body data-dark_mode_code_blocks="true">
 
 <div id="top_nav">
@@ -121,15 +121,17 @@
         <div class="sphinxsidebarwrapper"><p class="caption" role="heading"><span class="caption-text">Overview</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../index.html">pythonic_fp.circulararray</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../description.html">description</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../getting_started.html">Usage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../releases.html">PyPI Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage.html">usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../releases.html">PyPI releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">changelog</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">package circulararray</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">pythonic_fp.circulararray</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="auto.html">circulararray.auto</a></li>
 <li class="toctree-l2"><a class="reference internal" href="fixed.html">circularary.fixed</a></li>
 </ul>
@@ -145,27 +147,38 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <section id="package-circulararray">
-<h1>package circulararray<a class="headerlink" href="#package-circulararray" title="Link to this heading">¶</a></h1>
-<p>Modules implementing stateful circular array data structures.</p>
-<p>Module <strong>pythonic_fp.circulararray.auto</strong></p>
-<p><code class="docutils literal notranslate"><span class="pre">CA</span></code> objects automatically increase their total storage capacity as
-needed. They can be manually resized smaller.</p>
+  <section id="pythonic-fp-circulararray">
+<h1>pythonic_fp.circulararray<a class="headerlink" href="#pythonic-fp-circulararray" title="Link to this heading">¶</a></h1>
+<p>Package implementing stateful circular array data structures.</p>
 <ul class="simple">
-<li><p>class <code class="docutils literal notranslate"><span class="pre">CA</span></code></p></li>
-<li><p>factory function <code class="docutils literal notranslate"><span class="pre">ca</span></code></p></li>
+<li><p>O(1) pops and pushes either end</p></li>
+<li><p>O(1) indexing and size determination</p></li>
+<li><p>O(1) size determination</p></li>
 </ul>
-<hr class="docutils" />
-<p>Module <strong>pythonic_fp.circulararray.fixed</strong></p>
-<p>The total storage capacity of <code class="docutils literal notranslate"><span class="pre">CAF</span></code> objects is fixed at object instantiation.</p>
-<ul class="simple">
-<li><p>class <code class="docutils literal notranslate"><span class="pre">CAF</span></code></p></li>
-<li><p>factory function <code class="docutils literal notranslate"><span class="pre">caf</span></code></p></li>
-</ul>
-<hr class="docutils" />
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Module</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>pythonic_fp.circulararray.auto</strong></p></td>
+<td><p>Variable storage capacity circular array.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>pythonic_fp.circulararray.fixed</strong></p></td>
+<td><p>Fixed storage capacity circular array.</p></td>
+</tr>
+</tbody>
+</table>
 <div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="auto.html">circulararray.auto</a></li>
+</ul>
 </div>
 <div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="fixed.html">circularary.fixed</a></li>
+</ul>
 </div>
 </section>
 
@@ -182,8 +195,8 @@ needed. They can be manually resized smaller.</p>
         <div class="button_nav">
             <div class="left">
                 
-                <a href="../releases.html">
-                    <span class="icon">&lt;</span><span>PyPI Releases</span></a>
+                <a href="../changelog.html">
+                    <span class="icon">&lt;</span><span>changelog</span></a>
                 
             </div>
 

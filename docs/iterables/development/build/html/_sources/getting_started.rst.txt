@@ -34,4 +34,4 @@ Import the functions and the ``FM`` enum class into your code.
 
    When using the ``take_split`` and ``take_while_split`` functions there
    is a **contract:** Do not access the second returned iterator until the
-   first one is exhausted.
+   first one is totally exhausted.

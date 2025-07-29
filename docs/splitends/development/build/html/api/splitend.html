@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>splitend &#8212; Pythonic FP - SplitEnds 1.0.0 documentation</title>
+    <title>splitends.splitend &#8212; Pythonic FP - SplitEnds 1.0.0 documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/basic_mod.css?v=9b2032db" />
     <script src="../_static/documentation_options.js?v=8d563738"></script>
@@ -15,7 +15,7 @@
     <script src="../_static/js/petite-vue.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="splitend_nodes" href="splitend_node.html" />
+    <link rel="next" title="splitends.splitend_node" href="splitend_node.html" />
     <link rel="prev" title="pythonic_fp.splitends" href="index.html" /> 
   </head><body data-dark_mode_code_blocks="true">
 
@@ -120,18 +120,18 @@
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper"><p class="caption" role="heading"><span class="caption-text">Overview</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../index.html">Pythonic FP - Splitends</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Pythonic_fp.splitends</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../releases.html">PyPI releases</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">API</span></p>
+<p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">pythonic_fp.splitends</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">splitend</a></li>
-<li class="toctree-l2"><a class="reference internal" href="splitend_node.html">splitend_nodes</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">splitends.splitend</a></li>
+<li class="toctree-l2"><a class="reference internal" href="splitend_node.html">splitends.splitend_node</a></li>
 </ul>
 </li>
 </ul>
@@ -146,137 +146,99 @@
           <div class="body" role="main">
             
   <section id="module-pythonic_fp.splitends.splitend">
-<span id="splitend"></span><h1>splitend<a class="headerlink" href="#module-pythonic_fp.splitends.splitend" title="Link to this heading">¶</a></h1>
+<span id="splitends-splitend"></span><h1>splitends.splitend<a class="headerlink" href="#module-pythonic_fp.splitends.splitend" title="Link to this heading">¶</a></h1>
+<p>LIFO stacks safely sharing immutable data between themselves.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="pythonic_fp.splitends.splitend.SplitEnd">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.splitends.splitend.</span></span><span class="sig-name descname"><span class="pre">SplitEnd</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">root_data</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">ds</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.splitends.splitend.SplitEnd" title="Link to this definition">¶</a></dt>
-<dd><p>LIFO stacks safely sharing immutable data between themselves.</p>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.splitends.splitend.</span></span><span class="sig-name descname"><span class="pre">SplitEnd</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">root_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">D</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">D</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.splitends.splitend.SplitEnd" title="Link to this definition">¶</a></dt>
+<dd><p>Like one of many “split ends” from a shaft of hair,
+a <code class="docutils literal notranslate"><span class="pre">splitend</span></code> can be “snipped” shorter or “extended”
+further from its “tip”. Its root is irremovable and
+cannot be “snipped” off. While mutable, different
+splitends can safely share data with each other.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>root_data</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">D</span></code>, bound= <code class="xref py py-class docutils literal notranslate"><span class="pre">Hashable</span></code>)</span>)</p></li>
-<li><p><strong>ds</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">D</span></code>, bound= <code class="xref py py-class docutils literal notranslate"><span class="pre">Hashable</span></code>)</span>)</p></li>
+<li><p><strong>root_data</strong> – irremovable initial data at bottom of stack</p></li>
+<li><p><strong>data</strong> – removable data to be pushed onto splitend stack</p></li>
 </ul>
 </dd>
 </dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.splitends.splitend.SplitEnd.copy">
-<span class="sig-name descname"><span class="pre">copy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.splitends.splitend.SplitEnd.copy" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">copy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.splitends.splitend.SplitEnd" title="pythonic_fp.splitends.splitend.SplitEnd"><span class="pre">SplitEnd</span></a><span class="p"><span class="pre">[</span></span><span class="pre">D</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.splitends.splitend.SplitEnd.copy" title="Link to this definition">¶</a></dt>
 <dd><p>Return a copy of the SplitEnd. O(1) space &amp; time complexity.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">copy</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">D</span>
-</pre></div>
-</div>
 <dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="#pythonic_fp.splitends.splitend.SplitEnd" title="pythonic_fp.splitends.splitend.SplitEnd"><code class="xref py py-class docutils literal notranslate"><span class="pre">SplitEnd</span></code></a>[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">D</span></code>, bound= <code class="xref py py-class docutils literal notranslate"><span class="pre">Hashable</span></code>)]</span></p>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>a new SplitEnd instance with same data and root</p>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>a new SplitEnd instance with same data and root</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.splitends.splitend.SplitEnd.extend">
-<span class="sig-name descname"><span class="pre">extend</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">ds</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.splitends.splitend.SplitEnd.extend" title="Link to this definition">¶</a></dt>
-<dd><p>Add data onto the top of the SplitEnd.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">extend</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">ds</span><span class="p">:</span> <span class="n">D</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
-</pre></div>
-</div>
+<span class="sig-name descname"><span class="pre">extend</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">ds</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">D</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pythonic_fp.splitends.splitend.SplitEnd.extend" title="Link to this definition">¶</a></dt>
+<dd><p>Add data onto the tip of the SplitEnd. Like adding a hair
+extension.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>ds</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">D</span></code>, bound= <code class="xref py py-class docutils literal notranslate"><span class="pre">Hashable</span></code>)</span>) – data to be added to end of splitend</p>
-</dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+<dd class="field-odd"><p><strong>ds</strong> – data to extend the splitend</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.splitends.splitend.SplitEnd.fold">
-<span class="sig-name descname"><span class="pre">fold</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">init</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.splitends.splitend.SplitEnd.fold" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">fold</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">D</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">T</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">init</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">T</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">T</span></span></span><a class="headerlink" href="#pythonic_fp.splitends.splitend.SplitEnd.fold" title="Link to this definition">¶</a></dt>
 <dd><p>Reduce with a function, fold in natural LIFO Order.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">fold</span><span class="p">(</span>
-    <span class="bp">self</span><span class="p">,</span>
-    <span class="n">f</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[[</span><span class="n">T</span><span class="p">,</span> <span class="n">D</span><span class="p">],</span> <span class="n">T</span><span class="p">],</span>
-    <span class="n">init</span><span class="p">:</span> <span class="n">T</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
-<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">T</span>
-</pre></div>
-</div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>f</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Callable</span></code>[[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">T</span></code>), <code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">D</span></code>, bound= <code class="xref py py-class docutils literal notranslate"><span class="pre">Hashable</span></code>)], <code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">T</span></code>)]</span>) – folding function, for argument is for the accumulator</p></li>
-<li><p><strong>init</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">T</span></code>) | <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span>) – optional initial starting value for the fold</p></li>
+<li><p><strong>f</strong> – folding function, for argument is for the accumulator</p></li>
+<li><p><strong>init</strong> – optional initial starting value for the fold</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">T</span></code>)</span></p>
-</dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><p>reduced value folding from tip to root in natural LIFO order</p>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>reduced value folding from tip to root in natural LIFO order</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.splitends.splitend.SplitEnd.peak">
-<span class="sig-name descname"><span class="pre">peak</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.splitends.splitend.SplitEnd.peak" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">peak</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">D</span></span></span><a class="headerlink" href="#pythonic_fp.splitends.splitend.SplitEnd.peak" title="Link to this definition">¶</a></dt>
 <dd><p>Return data from tip of SplitEnd, do not consume it.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">peak</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">D</span>
-</pre></div>
-</div>
 <dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">D</span></code>, bound= <code class="xref py py-class docutils literal notranslate"><span class="pre">Hashable</span></code>)</span></p>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>data at the end of the SplitEnd</p>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>data at the end of the SplitEnd</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.splitends.splitend.SplitEnd.rev_fold">
-<span class="sig-name descname"><span class="pre">rev_fold</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">init</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.splitends.splitend.SplitEnd.rev_fold" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">rev_fold</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">D</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">T</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">init</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">T</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">T</span></span></span><a class="headerlink" href="#pythonic_fp.splitends.splitend.SplitEnd.rev_fold" title="Link to this definition">¶</a></dt>
 <dd><p>Reduce with a function, fold from root to tip.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">fold</span><span class="p">(</span>
-    <span class="bp">self</span><span class="p">,</span>
-    <span class="n">f</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[[</span><span class="n">T</span><span class="p">,</span> <span class="n">D</span><span class="p">],</span> <span class="n">T</span><span class="p">],</span>
-    <span class="n">init</span><span class="p">:</span> <span class="n">T</span> <span class="o">|</span> <span class="kc">None</span>
-<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">T</span>
-</pre></div>
-</div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>f</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Callable</span></code>[[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">T</span></code>), <code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">D</span></code>, bound= <code class="xref py py-class docutils literal notranslate"><span class="pre">Hashable</span></code>)], <code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">T</span></code>)]</span>) – folding function, for argument is for the accumulator</p></li>
-<li><p><strong>init</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">T</span></code>) | <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span>) – optional initial starting value for the fold</p></li>
+<li><p><strong>f</strong> – folding function, for argument is for the accumulator</p></li>
+<li><p><strong>init</strong> – optional initial starting value for the fold</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">T</span></code>)</span></p>
-</dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><p>reduced value folding from tip to root in natural LIFO order</p>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>reduced value folding from tip to root in natural LIFO order</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.splitends.splitend.SplitEnd.snip">
-<span class="sig-name descname"><span class="pre">snip</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.splitends.splitend.SplitEnd.snip" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">snip</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">D</span></span></span><a class="headerlink" href="#pythonic_fp.splitends.splitend.SplitEnd.snip" title="Link to this definition">¶</a></dt>
 <dd><p>Snip data off tip of SplitEnd. Just return data if tip is root.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">snip</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">D</span>
-</pre></div>
-</div>
 <dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">D</span></code>, bound= <code class="xref py py-class docutils literal notranslate"><span class="pre">Hashable</span></code>)</span></p>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>data snipped off tip, otherwise root data if tip is root</p>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>data snipped off tip, otherwise root data if tip is root</p>
 </dd>
 </dl>
 </dd></dl>
@@ -299,7 +261,7 @@
             <p><a class="toggle_right_sidebar" href="#"><span class="icon">&gt;</span><span>Page contents:</span></a></p>
             <div class="page_toc">
                 <ul>
-<li><a class="reference internal" href="#">splitend</a><ul>
+<li><a class="reference internal" href="#">splitends.splitend</a><ul>
 <li><a class="reference internal" href="#pythonic_fp.splitends.splitend.SplitEnd"><code class="docutils literal notranslate"><span class="pre">SplitEnd</span></code></a><ul>
 <li><a class="reference internal" href="#pythonic_fp.splitends.splitend.SplitEnd.copy"><code class="docutils literal notranslate"><span class="pre">SplitEnd.copy()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.splitends.splitend.SplitEnd.extend"><code class="docutils literal notranslate"><span class="pre">SplitEnd.extend()</span></code></a></li>
@@ -330,7 +292,7 @@
 
             <div class="right">
                 
-                    <a href="splitend_node.html"><span>splitend_nodes</span><span class="icon">&gt;</span></a>
+                    <a href="splitend_node.html"><span>splitends.splitend_node</span><span class="icon">&gt;</span></a>
                 
             </div>
         </div>

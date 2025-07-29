@@ -167,30 +167,19 @@
 </ul>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>hashability invalidated if contained value is not hashable</p>
+<p>Hashability invalidated if contained value is not hashable.</p>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>value</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">D</span></code>, covariant=True) | <code class="xref py py-class docutils literal notranslate"><span class="pre">Sentinel</span></code></span>)</p>
-</dd>
-</dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.fptools.maybe.MayBe.bind">
-<span class="sig-name descname"><span class="pre">bind</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.fptools.maybe.MayBe.bind" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">bind</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">D</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#pythonic_fp.fptools.maybe.MayBe" title="pythonic_fp.fptools.maybe.MayBe"><span class="pre">MayBe</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.fptools.maybe.MayBe" title="pythonic_fp.fptools.maybe.MayBe"><span class="pre">MayBe</span></a></span></span><a class="headerlink" href="#pythonic_fp.fptools.maybe.MayBe.bind" title="Link to this definition">¶</a></dt>
 <dd><p>Flatmap <code class="docutils literal notranslate"><span class="pre">MayBe</span></code> with function <code class="docutils literal notranslate"><span class="pre">f</span></code>.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>f</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Callable</span></code>[[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">D</span></code>, covariant=True)], <a class="reference internal" href="#pythonic_fp.fptools.maybe.MayBe" title="pythonic_fp.fptools.maybe.MayBe"><code class="xref py py-class docutils literal notranslate"><span class="pre">MayBe</span></code></a>[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">U</span></code>)]]</span>)</p>
-</dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="#pythonic_fp.fptools.maybe.MayBe" title="pythonic_fp.fptools.maybe.MayBe"><code class="xref py py-class docutils literal notranslate"><span class="pre">MayBe</span></code></a>[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">U</span></code>)]</span></p>
-</dd>
-</dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.fptools.maybe.MayBe.get">
-<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">alt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Sentinel('MayBe')</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.fptools.maybe.MayBe.get" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">D</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Never</span></span></span><a class="headerlink" href="#pythonic_fp.fptools.maybe.MayBe.get" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">alt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">D</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">D</span></span></span></dt>
 <dd><p>Return the contained value if it exists, otherwise an alternate value.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -202,46 +191,24 @@ the MayBe in a boolean context.</p>
 <dt class="field-odd">Raises<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>ValueError</strong> – when an alternate value is not provided but needed</p>
 </dd>
-<dt class="field-even">Parameters<span class="colon">:</span></dt>
-<dd class="field-even"><p><strong>alt</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">D</span></code>, covariant=True) | <code class="xref py py-class docutils literal notranslate"><span class="pre">Sentinel</span></code></span>)</p>
-</dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">D</span></code>, covariant=True) | <code class="xref py py-class docutils literal notranslate"><span class="pre">Never</span></code></span></p>
-</dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.fptools.maybe.MayBe.map">
-<span class="sig-name descname"><span class="pre">map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.fptools.maybe.MayBe.map" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">D</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">U</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.fptools.maybe.MayBe" title="pythonic_fp.fptools.maybe.MayBe"><span class="pre">MayBe</span></a></span></span><a class="headerlink" href="#pythonic_fp.fptools.maybe.MayBe.map" title="Link to this definition">¶</a></dt>
 <dd><p>Map function <cite>f</cite> over contents.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>f</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Callable</span></code>[[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">D</span></code>, covariant=True)], <code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">U</span></code>)]</span>)</p>
-</dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="#pythonic_fp.fptools.maybe.MayBe" title="pythonic_fp.fptools.maybe.MayBe"><code class="xref py py-class docutils literal notranslate"><span class="pre">MayBe</span></code></a>[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">U</span></code>)]</span></p>
-</dd>
-</dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.fptools.maybe.MayBe.sequence">
-<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sequence</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence_mb_u</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.fptools.maybe.MayBe.sequence" title="Link to this definition">¶</a></dt>
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sequence</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence_mb_u</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#pythonic_fp.fptools.maybe.MayBe" title="pythonic_fp.fptools.maybe.MayBe"><span class="pre">MayBe</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.fptools.maybe.MayBe" title="pythonic_fp.fptools.maybe.MayBe"><span class="pre">MayBe</span></a><span class="p"><span class="pre">[</span></span><span class="pre">Sequence</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.fptools.maybe.MayBe.sequence" title="Link to this definition">¶</a></dt>
 <dd><p>Sequence a mutable indexable of type <code class="docutils literal notranslate"><span class="pre">MayBe[~U]</span></code></p>
 <p>If the iterated <cite>MayBe</cite> values are not all empty,</p>
 <ul class="simple">
 <li><p>return a MayBe of the Sequence subtype of the contained values</p></li>
 <li><p>otherwise return an empty MayBe</p></li>
 </ul>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>sequence_mb_u</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sequence</span></code>[<a class="reference internal" href="#pythonic_fp.fptools.maybe.MayBe" title="pythonic_fp.fptools.maybe.MayBe"><code class="xref py py-class docutils literal notranslate"><span class="pre">MayBe</span></code></a>[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">U</span></code>)]]</span>)</p>
-</dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="#pythonic_fp.fptools.maybe.MayBe" title="pythonic_fp.fptools.maybe.MayBe"><code class="xref py py-class docutils literal notranslate"><span class="pre">MayBe</span></code></a>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Sequence</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">U</span></code>)]]</span></p>
-</dd>
-</dl>
 </dd></dl>
 
 </dd></dl>

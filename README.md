@@ -16,8 +16,8 @@ all under the `pythonic-fp` namespace.
 | Circular Array | pythonic_fp.circulararray | [pythonic-fp.circulararray][101] | [pythonic-fp-circulararray][201] | [docs][301] |
 | Containers | pythonic_fp.containers | [pythonic-fp.containers][102] | [pythonic-fp-containers][202] | [docs][302] |
 | FP Tools | pythonic_fp.fptools | [pythonic-fp.fptools][103] | [pythonic-fp-fptools][203] | [docs][303] |
-| Iterables | pythonic_fp.iterables | [pythonic-fp.iterables][104] | [pythonic-fp-iterables][204] | [docs][304] |
-| Queues | pythonic_fp.queues | [pythonic-fp.queues][105] | [pythonic-fp-queues][205] | [docs][305] |
+| Gadgets | pythonic_fp.gadgets | [pythonic-fp.gadgets][104] | [pythonic-fp-gadgets][204] | [docs][304] |
+| Iterables | pythonic_fp.iterables | [pythonic-fp.iterables][105] | [pythonic-fp-iterables][205] | [docs][305] |
 | Splitends | pythonic_fp.splitends | [pythonic-fp.splitends][106] | [pythonic-fp-splitends][206] | [docs][306] |
 
 ## Namespace Projects
@@ -51,6 +51,15 @@ in a way which endeavors to be Pythonic.
 
 ______________________________________________________________________
 
+### pythonic_fp.gadgets
+
+Queue based data structures which provide the "bit twiddling" necessary
+to guarantee behaviors supporting certain algorithmic use cases.
+
+- Box: Single item box
+
+______________________________________________________________________
+
 ### pythonic_fp.iterables
 
 Tools for creating iterators from iterables.
@@ -59,18 +68,6 @@ Tools for creating iterators from iterables.
 - Dropping and taking values from iterables
 - Reducing and accumulating iterables
 
-______________________________________________________________________
-
-### pythonic_fp.queues
-
-Queue based data structures which provide the "bit twiddling" necessary
-to guarantee behaviors supporting certain algorithmic use cases.
-
-- FIFOQueue: First-In-First-Out Queue
-- LIFOQueue: Last-In-First-Out Queue
-- DEQueue: Double-Ended Queue
-
-Note: DEPRECATED, use pythonic_fp.containers.queues instead
 ______________________________________________________________________
 
 ### pythonic_fp.singletons
@@ -113,18 +110,18 @@ ______________________________________________________________________
 [101]: https://pypi.org/project/pythonic-fp.circulararray
 [102]: https://pypi.org/project/pythonic-fp.containers
 [103]: https://pypi.org/project/pythonic-fp.fptools
-[104]: https://pypi.org/project/pythonic-fp.iterables
-[105]: https://pypi.org/project/pythonic-fp.queues
+[104]: https://pypi.org/project/pythonic-fp.gadgets
+[105]: https://pypi.org/project/pythonic-fp.iterables
 [106]: https://pypi.org/project/pythonic-fp.splitends
 [201]: https://github.com/grscheller/pythonic-fp-circulararray
 [202]: https://github.com/grscheller/pythonic-fp-containers
 [203]: https://github.com/grscheller/pythonic-fp-fptools
-[204]: https://github.com/grscheller/pythonic-fp-iterables
-[205]: https://github.com/grscheller/pythonic-fp-queues
+[204]: https://github.com/grscheller/pythonic-fp-gadgets
+[205]: https://github.com/grscheller/pythonic-fp-iterables
 [206]: https://github.com/grscheller/pythonic-fp-splitends
 [301]: https://grscheller.github.io/pythonic-fp/circulararray/development/build/html/releases.html
 [302]: https://grscheller.github.io/pythonic-fp/containers/development/build/html/releases.html
 [303]: https://grscheller.github.io/pythonic-fp/fptools/development/build/html/releases.html
-[304]: https://grscheller.github.io/pythonic-fp/iterables/development/build/html/releases.html
-[305]: https://grscheller.github.io/pythonic-fp/deprecated/queues/development/build/html/releases.html
+[304]: https://grscheller.github.io/pythonic-fp/deprecated/gadgets/development/build/html/releases.html
+[305]: https://grscheller.github.io/pythonic-fp/iterables/development/build/html/releases.html
 [306]: https://grscheller.github.io/pythonic-fp/splitends/development/build/html/releases.html

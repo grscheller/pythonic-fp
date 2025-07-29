@@ -190,31 +190,15 @@ not hashable if value is mutable.</p>
 <p><code class="docutils literal notranslate"><span class="pre">Either(value:</span> <span class="pre">+L,</span> <span class="pre">side:</span> <span class="pre">Left):</span> <span class="pre">Either[+L,</span> <span class="pre">+R]</span> <span class="pre">-&gt;</span> <span class="pre">left:</span> <span class="pre">Either[+L,</span> <span class="pre">+R]</span></code>
 <code class="docutils literal notranslate"><span class="pre">Either(value:</span> <span class="pre">+R,</span> <span class="pre">side:</span> <span class="pre">Right):</span> <span class="pre">Either[+L,</span> <span class="pre">+R]</span> <span class="pre">-&gt;</span> <span class="pre">right:</span> <span class="pre">Either[+L,</span> <span class="pre">+R]</span></code></p>
 </div>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>value</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">L</span></code>, covariant=True) | <code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">R</span></code>, covariant=True)</span>)</p></li>
-<li><p><strong>side</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">SBool</span></code></span>)</p></li>
-</ul>
-</dd>
-</dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.fptools.either.Either.bind">
-<span class="sig-name descname"><span class="pre">bind</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.fptools.either.Either.bind" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">bind</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">L</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#pythonic_fp.fptools.either.Either" title="pythonic_fp.fptools.either.Either"><span class="pre">Either</span></a><span class="p"><span class="pre">[</span></span><span class="pre">U</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">R</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.fptools.either.Either" title="pythonic_fp.fptools.either.Either"><span class="pre">Either</span></a><span class="p"><span class="pre">[</span></span><span class="pre">U</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">R</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.fptools.either.Either.bind" title="Link to this definition">¶</a></dt>
 <dd><p>Flatmap over the left value, propagate right values.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>f</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Callable</span></code>[[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">L</span></code>, covariant=True)], <a class="reference internal" href="#pythonic_fp.fptools.either.Either" title="pythonic_fp.fptools.either.Either"><code class="xref py py-class docutils literal notranslate"><span class="pre">Either</span></code></a>[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">U</span></code>), <code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">R</span></code>, covariant=True)]]</span>)</p>
-</dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="#pythonic_fp.fptools.either.Either" title="pythonic_fp.fptools.either.Either"><code class="xref py py-class docutils literal notranslate"><span class="pre">Either</span></code></a>[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">U</span></code>), <code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">R</span></code>, covariant=True)]</span></p>
-</dd>
-</dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.fptools.either.Either.bind_except">
-<span class="sig-name descname"><span class="pre">bind_except</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fallback_right</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.fptools.either.Either.bind_except" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">bind_except</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">L</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#pythonic_fp.fptools.either.Either" title="pythonic_fp.fptools.either.Either"><span class="pre">Either</span></a><span class="p"><span class="pre">[</span></span><span class="pre">U</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">R</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fallback_right</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">R</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.fptools.either.Either" title="pythonic_fp.fptools.either.Either"><span class="pre">Either</span></a><span class="p"><span class="pre">[</span></span><span class="pre">U</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">R</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.fptools.either.Either.bind_except" title="Link to this definition">¶</a></dt>
 <dd><p>Flatmap <cite>Either</cite> with function <cite>f</cite> with fallback right</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -222,20 +206,14 @@ not hashable if value is mutable.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>fallback_right</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">R</span></code>, covariant=True)</span>) – fallback value if exception thrown</p></li>
-<li><p><strong>f</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Callable</span></code>[[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">L</span></code>, covariant=True)], <a class="reference internal" href="#pythonic_fp.fptools.either.Either" title="pythonic_fp.fptools.either.Either"><code class="xref py py-class docutils literal notranslate"><span class="pre">Either</span></code></a>[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">U</span></code>), <code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">R</span></code>, covariant=True)]]</span>)</p></li>
-</ul>
-</dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="#pythonic_fp.fptools.either.Either" title="pythonic_fp.fptools.either.Either"><code class="xref py py-class docutils literal notranslate"><span class="pre">Either</span></code></a>[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">U</span></code>), <code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">R</span></code>, covariant=True)]</span></p>
+<dd class="field-odd"><p><strong>fallback_right</strong> – fallback value if exception thrown</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.fptools.either.Either.get">
-<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.fptools.either.Either.get" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">L</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Never</span></span></span><a class="headerlink" href="#pythonic_fp.fptools.either.Either.get" title="Link to this definition">¶</a></dt>
 <dd><p>Get value if a left.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -258,51 +236,33 @@ a boolean context.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.fptools.either.Either.get_left">
-<span class="sig-name descname"><span class="pre">get_left</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.fptools.either.Either.get_left" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">get_left</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="maybe.html#pythonic_fp.fptools.maybe.MayBe" title="pythonic_fp.fptools.maybe.MayBe"><span class="pre">MayBe</span></a><span class="p"><span class="pre">[</span></span><span class="pre">L</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.fptools.either.Either.get_left" title="Link to this definition">¶</a></dt>
 <dd><p>Get value of <cite>Either</cite> if a left. Safer version of <cite>get</cite> method.</p>
 <ul class="simple">
 <li><p>if <cite>Either</cite> contains a left value, return it wrapped in a MayBe</p></li>
 <li><p>if <cite>Either</cite> contains a right value, return MayBe()</p></li>
 </ul>
-<dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="maybe.html#pythonic_fp.fptools.maybe.MayBe" title="pythonic_fp.fptools.maybe.MayBe"><code class="xref py py-class docutils literal notranslate"><span class="pre">MayBe</span></code></a>[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">L</span></code>, covariant=True)]</span></p>
-</dd>
-</dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.fptools.either.Either.get_right">
-<span class="sig-name descname"><span class="pre">get_right</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.fptools.either.Either.get_right" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">get_right</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="maybe.html#pythonic_fp.fptools.maybe.MayBe" title="pythonic_fp.fptools.maybe.MayBe"><span class="pre">MayBe</span></a><span class="p"><span class="pre">[</span></span><span class="pre">R</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.fptools.either.Either.get_right" title="Link to this definition">¶</a></dt>
 <dd><p>Get value of <cite>Either</cite> if a right</p>
 <ul class="simple">
 <li><p>if <cite>Either</cite> contains a right value, return it wrapped in a MayBe</p></li>
 <li><p>if <cite>Either</cite> contains a left value, return MayBe()</p></li>
 </ul>
-<dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="maybe.html#pythonic_fp.fptools.maybe.MayBe" title="pythonic_fp.fptools.maybe.MayBe"><code class="xref py py-class docutils literal notranslate"><span class="pre">MayBe</span></code></a>[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">R</span></code>, covariant=True)]</span></p>
-</dd>
-</dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.fptools.either.Either.map">
-<span class="sig-name descname"><span class="pre">map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.fptools.either.Either.map" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">L</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">U</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.fptools.either.Either" title="pythonic_fp.fptools.either.Either"><span class="pre">Either</span></a><span class="p"><span class="pre">[</span></span><span class="pre">U</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">R</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.fptools.either.Either.map" title="Link to this definition">¶</a></dt>
 <dd><p>Map over if a left value. Return new instance.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>f</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Callable</span></code>[[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">L</span></code>, covariant=True)], <code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">U</span></code>)]</span>)</p>
-</dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="#pythonic_fp.fptools.either.Either" title="pythonic_fp.fptools.either.Either"><code class="xref py py-class docutils literal notranslate"><span class="pre">Either</span></code></a>[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">U</span></code>), <code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">R</span></code>, covariant=True)]</span></p>
-</dd>
-</dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.fptools.either.Either.map_except">
-<span class="sig-name descname"><span class="pre">map_except</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fallback_right</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.fptools.either.Either.map_except" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">map_except</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">L</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">U</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fallback_right</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">R</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.fptools.either.Either" title="pythonic_fp.fptools.either.Either"><span class="pre">Either</span></a><span class="p"><span class="pre">[</span></span><span class="pre">U</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">R</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.fptools.either.Either.map_except" title="Link to this definition">¶</a></dt>
 <dd><p>Map over if a left value - with fallback upon exception.</p>
 <ul class="simple">
 <li><p>if <cite>Either</cite> is a left then map <cite>f</cite> over its value</p>
@@ -321,48 +281,21 @@ a boolean context.</p>
 </ul>
 </li>
 </ul>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>f</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Callable</span></code>[[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">L</span></code>, covariant=True)], <code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">U</span></code>)]</span>)</p></li>
-<li><p><strong>fallback_right</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">R</span></code>, covariant=True)</span>)</p></li>
-</ul>
-</dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="#pythonic_fp.fptools.either.Either" title="pythonic_fp.fptools.either.Either"><code class="xref py py-class docutils literal notranslate"><span class="pre">Either</span></code></a>[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">U</span></code>), <code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">R</span></code>, covariant=True)]</span></p>
-</dd>
-</dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.fptools.either.Either.map_right">
-<span class="sig-name descname"><span class="pre">map_right</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.fptools.either.Either.map_right" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">map_right</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">R</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">V</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.fptools.either.Either" title="pythonic_fp.fptools.either.Either"><span class="pre">Either</span></a><span class="p"><span class="pre">[</span></span><span class="pre">L</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">V</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.fptools.either.Either.map_right" title="Link to this definition">¶</a></dt>
 <dd><p>Construct new Either with a different right.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>f</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Callable</span></code>[[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">R</span></code>, covariant=True)], <code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">V</span></code>)]</span>)</p>
-</dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="#pythonic_fp.fptools.either.Either" title="pythonic_fp.fptools.either.Either"><code class="xref py py-class docutils literal notranslate"><span class="pre">Either</span></code></a>[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">L</span></code>, covariant=True), <code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">V</span></code>)]</span></p>
-</dd>
-</dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.fptools.either.Either.sequence">
-<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sequence</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence_xor_uv</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.fptools.either.Either.sequence" title="Link to this definition">¶</a></dt>
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sequence</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence_xor_uv</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#pythonic_fp.fptools.either.Either" title="pythonic_fp.fptools.either.Either"><span class="pre">Either</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.fptools.either.Either" title="pythonic_fp.fptools.either.Either"><span class="pre">Either</span></a><span class="p"><span class="pre">[</span></span><span class="pre">Sequence</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">V</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.fptools.either.Either.sequence" title="Link to this definition">¶</a></dt>
 <dd><p>Sequence an indexable of type <cite>Either[~U, ~V]</cite></p>
 <p>If the iterated <cite>Either</cite> values are all lefts, then return an <cite>Either</cite> of
 an iterable of the left values. Otherwise return a right Either containing
 the first right encountered.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>sequence_xor_uv</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sequence</span></code>[<a class="reference internal" href="#pythonic_fp.fptools.either.Either" title="pythonic_fp.fptools.either.Either"><code class="xref py py-class docutils literal notranslate"><span class="pre">Either</span></code></a>[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">U</span></code>), <code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">V</span></code>)]]</span>)</p>
-</dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="#pythonic_fp.fptools.either.Either" title="pythonic_fp.fptools.either.Either"><code class="xref py py-class docutils literal notranslate"><span class="pre">Either</span></code></a>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Sequence</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">U</span></code>)], <code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">V</span></code>)]</span></p>
-</dd>
-</dl>
 </dd></dl>
 
 </dd></dl>

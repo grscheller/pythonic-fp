@@ -1,4 +1,4 @@
-Usage
+usage
 =====
 
 How to installing the module

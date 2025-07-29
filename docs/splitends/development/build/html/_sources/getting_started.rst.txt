@@ -23,5 +23,5 @@ Importing the SplitEnd class into your code.
 
    Module splitends.splitend_node is an implementation detail for
    the SplitEnd class. It should not be imported. It is kept "public" 
-   since it could be useful if one were to implement another data
+   since it could be useful if someone were to implement another data
    structures similar to a SplitEnd.

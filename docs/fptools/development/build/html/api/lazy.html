@@ -163,7 +163,7 @@ Useful to delay a function’s evaluation until some inner scope.</p>
 </ul>
 <dl class="py class">
 <dt class="sig sig-object py" id="pythonic_fp.fptools.lazy.Lazy">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.fptools.lazy.</span></span><span class="sig-name descname"><span class="pre">Lazy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">d</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pure</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.fptools.lazy.Lazy" title="Link to this definition">¶</a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.fptools.lazy.</span></span><span class="sig-name descname"><span class="pre">Lazy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">D</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">R</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">d</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">D</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pure</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.fptools.lazy.Lazy" title="Link to this definition">¶</a></dt>
 <dd><p>Delayed evaluation of a singled valued function.</p>
 <p>Class instance delays the executable of a function where <code class="docutils literal notranslate"><span class="pre">Lazy(f,</span> <span class="pre">arg)</span></code>
 constructs an object that can evaluate the Callable <code class="docutils literal notranslate"><span class="pre">f</span></code> with its argument
@@ -181,97 +181,55 @@ at a later time.</p>
 </ul>
 <p>Usually use case is to make a function “non-strict” by passing some of its
 arguments wrapped in Lazy instances.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>f</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Callable</span></code>[[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">D</span></code>)], <code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">R</span></code>, contravariant=True)]</span>)</p></li>
-<li><p><strong>d</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">D</span></code>)</span>)</p></li>
-<li><p><strong>pure</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></span>)</p></li>
-</ul>
-</dd>
-</dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.fptools.lazy.Lazy.eval">
-<span class="sig-name descname"><span class="pre">eval</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.fptools.lazy.Lazy.eval" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">eval</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pythonic_fp.fptools.lazy.Lazy.eval" title="Link to this definition">¶</a></dt>
 <dd><p>Evaluate function with its argument.</p>
 <ul class="simple">
 <li><p>evaluate function</p></li>
 <li><p>cache result or exception if <code class="docutils literal notranslate"><span class="pre">pure</span> <span class="pre">==</span> <span class="pre">True</span></code></p></li>
 <li><p>reevaluate if <code class="docutils literal notranslate"><span class="pre">pure</span> <span class="pre">==</span> <span class="pre">False</span></code></p></li>
 </ul>
-<dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
-</dd>
-</dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.fptools.lazy.Lazy.get">
-<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">alt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.fptools.lazy.Lazy.get" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">alt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">R</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">R</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Never</span></span></span><a class="headerlink" href="#pythonic_fp.fptools.lazy.Lazy.get" title="Link to this definition">¶</a></dt>
 <dd><p>Get result only if evaluated and no exceptions occurred, otherwise
 return an alternate value.</p>
 <p>A possible use case would be if the calculation is expensive, but if it
 has already been done, its result is better than the alternate value.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>alt</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">R</span></code>, contravariant=True) | <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span>)</p>
-</dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">R</span></code>, contravariant=True) | <code class="xref py py-class docutils literal notranslate"><span class="pre">Never</span></code></span></p>
-</dd>
-</dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.fptools.lazy.Lazy.get_exception">
-<span class="sig-name descname"><span class="pre">get_exception</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.fptools.lazy.Lazy.get_exception" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">get_exception</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="maybe.html#pythonic_fp.fptools.maybe.MayBe" title="pythonic_fp.fptools.maybe.MayBe"><span class="pre">MayBe</span></a><span class="p"><span class="pre">[</span></span><span class="pre">Exception</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.fptools.lazy.Lazy.get_exception" title="Link to this definition">¶</a></dt>
 <dd><p>Get result only if evaluate and exceptional.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="maybe.html#pythonic_fp.fptools.maybe.MayBe" title="pythonic_fp.fptools.maybe.MayBe"><code class="xref py py-class docutils literal notranslate"><span class="pre">MayBe</span></code></a>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code>]</span></p>
-</dd>
-</dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.fptools.lazy.Lazy.get_result">
-<span class="sig-name descname"><span class="pre">get_result</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.fptools.lazy.Lazy.get_result" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">get_result</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="maybe.html#pythonic_fp.fptools.maybe.MayBe" title="pythonic_fp.fptools.maybe.MayBe"><span class="pre">MayBe</span></a><span class="p"><span class="pre">[</span></span><span class="pre">R</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.fptools.lazy.Lazy.get_result" title="Link to this definition">¶</a></dt>
 <dd><p>Get result only if evaluated and not exceptional.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="maybe.html#pythonic_fp.fptools.maybe.MayBe" title="pythonic_fp.fptools.maybe.MayBe"><code class="xref py py-class docutils literal notranslate"><span class="pre">MayBe</span></code></a>[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">R</span></code>, contravariant=True)]</span></p>
-</dd>
-</dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.fptools.lazy.Lazy.got_exception">
-<span class="sig-name descname"><span class="pre">got_exception</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.fptools.lazy.Lazy.got_exception" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">got_exception</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="maybe.html#pythonic_fp.fptools.maybe.MayBe" title="pythonic_fp.fptools.maybe.MayBe"><span class="pre">MayBe</span></a><span class="p"><span class="pre">[</span></span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.fptools.lazy.Lazy.got_exception" title="Link to this definition">¶</a></dt>
 <dd><p>Return true if Lazy raised exception.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="maybe.html#pythonic_fp.fptools.maybe.MayBe" title="pythonic_fp.fptools.maybe.MayBe"><code class="xref py py-class docutils literal notranslate"><span class="pre">MayBe</span></code></a>[<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>]</span></p>
-</dd>
-</dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.fptools.lazy.Lazy.got_result">
-<span class="sig-name descname"><span class="pre">got_result</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.fptools.lazy.Lazy.got_result" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">got_result</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="maybe.html#pythonic_fp.fptools.maybe.MayBe" title="pythonic_fp.fptools.maybe.MayBe"><span class="pre">MayBe</span></a><span class="p"><span class="pre">[</span></span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.fptools.lazy.Lazy.got_result" title="Link to this definition">¶</a></dt>
 <dd><p>Return true if an evaluated Lazy did not raise an exception.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="maybe.html#pythonic_fp.fptools.maybe.MayBe" title="pythonic_fp.fptools.maybe.MayBe"><code class="xref py py-class docutils literal notranslate"><span class="pre">MayBe</span></code></a>[<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>]</span></p>
-</dd>
-</dl>
 </dd></dl>
 
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pythonic_fp.fptools.lazy.lazy">
-<span class="sig-prename descclassname"><span class="pre">pythonic_fp.fptools.lazy.</span></span><span class="sig-name descname"><span class="pre">lazy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.fptools.lazy.lazy" title="Link to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pythonic_fp.fptools.lazy.</span></span><span class="sig-name descname"><span class="pre">lazy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">P</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">R</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">P</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">P</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.fptools.lazy.Lazy" title="pythonic_fp.fptools.lazy.Lazy"><span class="pre">Lazy</span></a><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">R</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.fptools.lazy.lazy" title="Link to this definition">¶</a></dt>
 <dd><p>Delayed evaluation of a function with arbitrary positional arguments.</p>
 <p>Function returning a delayed evaluation of a function of an arbitrary number
 of positional arguments.</p>
@@ -288,23 +246,11 @@ of positional arguments.</p>
 </ul>
 </li>
 </ul>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>f</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Callable</span></code>[[<code class="xref py py-class docutils literal notranslate"><span class="pre">ParamSpec</span></code>(<code class="docutils literal notranslate"><span class="pre">P</span></code>)], <code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">R</span></code>)]</span>)</p></li>
-<li><p><strong>args</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">ParamSpecArgs</span></code></span>)</p></li>
-<li><p><strong>kwargs</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">ParamSpecKwargs</span></code></span>)</p></li>
-</ul>
-</dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="#pythonic_fp.fptools.lazy.Lazy" title="pythonic_fp.fptools.lazy.Lazy"><code class="xref py py-class docutils literal notranslate"><span class="pre">Lazy</span></code></a>[<code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code>[<code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">...</span></code>], <code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">R</span></code>)]</span></p>
-</dd>
-</dl>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pythonic_fp.fptools.lazy.real_lazy">
-<span class="sig-prename descclassname"><span class="pre">pythonic_fp.fptools.lazy.</span></span><span class="sig-name descname"><span class="pre">real_lazy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.fptools.lazy.real_lazy" title="Link to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pythonic_fp.fptools.lazy.</span></span><span class="sig-name descname"><span class="pre">real_lazy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">P</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">R</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">P</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">P</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.fptools.lazy.Lazy" title="pythonic_fp.fptools.lazy.Lazy"><span class="pre">Lazy</span></a><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">R</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.fptools.lazy.real_lazy" title="Link to this definition">¶</a></dt>
 <dd><p>Cached delayed evaluation of a function with arbitrary positional arguments.</p>
 <p>Function returning a delayed evaluation of a function of an arbitrary number
 of positional arguments.</p>
@@ -322,18 +268,6 @@ of positional arguments.</p>
 </ul>
 </li>
 </ul>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>f</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Callable</span></code>[[<code class="xref py py-class docutils literal notranslate"><span class="pre">ParamSpec</span></code>(<code class="docutils literal notranslate"><span class="pre">P</span></code>)], <code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">R</span></code>)]</span>)</p></li>
-<li><p><strong>args</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">ParamSpecArgs</span></code></span>)</p></li>
-<li><p><strong>kwargs</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">ParamSpecKwargs</span></code></span>)</p></li>
-</ul>
-</dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="#pythonic_fp.fptools.lazy.Lazy" title="pythonic_fp.fptools.lazy.Lazy"><code class="xref py py-class docutils literal notranslate"><span class="pre">Lazy</span></code></a>[<code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code>[<code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">...</span></code>], <code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">R</span></code>)]</span></p>
-</dd>
-</dl>
 </dd></dl>
 
 </section>
