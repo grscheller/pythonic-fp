@@ -1,5 +1,5 @@
-package queues
-==============
+pythonic_fp.queues
+==================
 
 .. automodule:: pythonic_fp.queues
    :synopsis:
@@ -7,18 +7,15 @@ package queues
 
 .. toctree::
    :maxdepth: 1
-   :hidden:
 
    fifo
 
 .. toctree::
    :maxdepth: 1
-   :hidden:
 
    lifo
 
 .. toctree::
    :maxdepth: 1
-   :hidden:
 
    de

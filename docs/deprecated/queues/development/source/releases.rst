@@ -1,14 +1,8 @@
-PyPI Releases
-=============
-
-Package pythonic_fp.queues
---------------------------
-
-.. deprecated:: 5.0.0
-   Use pythonic_fp.containers.queues instead.
+PyPI releases
+-------------
 
 +-----------------------------------------------------------------------------------------------------+--------------+
-| PyPI Release Documentation                                                                          | Release date |
+| PyPI Release                                                                                        | Release date |
 +=====================================================================================================+==============+
 | `development <https://grscheller.github.io/pythonic-fp/deprecated/queues/development/build/html/>`_ | TBD          |
 +-----------------------------------------------------------------------------------------------------+--------------+

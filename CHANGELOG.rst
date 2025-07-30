@@ -10,6 +10,11 @@ remain Pythonic. All projects are under the ``pythonic-fp`` namespace on PyPI.
 Important Milestones
 --------------------
 
+2025-07-30 - Updated Sphinx docs for pythonic_fp.queues
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Which has been deprecated. Use pythonic_fp.containers.queues instead.
+
 2025-07-30 - Added Sphinx docs for gadgets
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
