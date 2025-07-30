@@ -125,7 +125,7 @@ ______________________________________________________________________
 [301]: https://grscheller.github.io/pythonic-fp/circulararray/development/build/html
 [302]: https://grscheller.github.io/pythonic-fp/containers/development/build/html
 [303]: https://grscheller.github.io/pythonic-fp/fptools/development/build/html
-[304]: https://grscheller.github.io/pythonic-fp/deprecated/gadgets/development/build/html
+[304]: https://grscheller.github.io/pythonic-fp/gadgets/development/build/html
 [305]: https://grscheller.github.io/pythonic-fp/iterables/development/build/html
 [306]: https://grscheller.github.io/pythonic-fp/splitends/development/build/html
 [307]: https://grscheller.github.io/pythonic-fp/queues/development/build/html
