@@ -10,6 +10,17 @@ remain Pythonic. All projects are under the ``pythonic-fp`` namespace on PyPI.
 Important Milestones
 --------------------
 
+2025-07-30 - Added Sphinx docs for gadgets
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Fairly easy copy and edit from circulararray.
+
+2025-07-29 - Complete redo of circulararray docs
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Now PyPI project pythonic-fp.circulararray will be the exemplar for
+Sphinx documentation. The toctrees are no longer hidden.
+
 2025-07-27 - Finished Sphinx documentation for two PyPI projects
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
