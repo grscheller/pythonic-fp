@@ -4,8 +4,14 @@ pythonic-fp.singletons
 .. toctree::
    :caption: Overview
    :maxdepth: 1
+   :hidden:
 
    self
+
+.. toctree::
+   :caption: Description
+   :maxdepth: 1
+
    description
 
 .. toctree::
