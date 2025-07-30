@@ -19,6 +19,7 @@ all under the `pythonic-fp` namespace.
 | Gadgets | pythonic_fp.gadgets | [pythonic-fp.gadgets][104] | [pythonic-fp-gadgets][204] | [docs][304] |
 | Iterables | pythonic_fp.iterables | [pythonic-fp.iterables][105] | [pythonic-fp-iterables][205] | [docs][305] |
 | Splitends | pythonic_fp.splitends | [pythonic-fp.splitends][106] | [pythonic-fp-splitends][206] | [docs][306] |
+| Queues (deprecated) | pythonic_fp.queues | [pythonic-fp.queues][107] | [pythonic-fp-queues][207] | [docs][307] |
 
 ## Namespace Projects
 
@@ -113,15 +114,18 @@ ______________________________________________________________________
 [104]: https://pypi.org/project/pythonic-fp.gadgets
 [105]: https://pypi.org/project/pythonic-fp.iterables
 [106]: https://pypi.org/project/pythonic-fp.splitends
+[107]: https://pypi.org/project/pythonic-fp.queues
 [201]: https://github.com/grscheller/pythonic-fp-circulararray
 [202]: https://github.com/grscheller/pythonic-fp-containers
 [203]: https://github.com/grscheller/pythonic-fp-fptools
 [204]: https://github.com/grscheller/pythonic-fp-gadgets
 [205]: https://github.com/grscheller/pythonic-fp-iterables
 [206]: https://github.com/grscheller/pythonic-fp-splitends
+[207]: https://github.com/grscheller/pythonic-fp-queues
 [301]: https://grscheller.github.io/pythonic-fp/circulararray/development/build/html
 [302]: https://grscheller.github.io/pythonic-fp/containers/development/build/html
 [303]: https://grscheller.github.io/pythonic-fp/fptools/development/build/html
 [304]: https://grscheller.github.io/pythonic-fp/deprecated/gadgets/development/build/html
 [305]: https://grscheller.github.io/pythonic-fp/iterables/development/build/html
 [306]: https://grscheller.github.io/pythonic-fp/splitends/development/build/html
+[307]: https://grscheller.github.io/pythonic-fp/queues/development/build/html
