@@ -1,11 +1,8 @@
-PyPI Releases
+PyPI releases
 =============
 
-Module pythonic_fp.iterables
-----------------------------
-
 +---------------------------------------------------------------------------------------------+--------------+
-| PyPI Release Documentation                                                                  | Release date |
+| PyPI Release                                                                                | Release date |
 +=============================================================================================+==============+
 | `development <https://grscheller.github.io/pythonic-fp/iterables/development/build/html/>`_ |     TBD      |
 +---------------------------------------------------------------------------------------------+--------------+

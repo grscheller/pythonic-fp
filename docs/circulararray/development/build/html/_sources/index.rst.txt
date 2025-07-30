@@ -1,11 +1,17 @@
-pythonic_fp.circulararray
+pythonic-fp.circulararray
 =========================
 
 .. toctree::
    :caption: Overview
    :maxdepth: 1
+   :hidden:
 
    self
+
+.. toctree::
+   :caption: Description
+   :maxdepth: 1
+
    description
 
 .. toctree::

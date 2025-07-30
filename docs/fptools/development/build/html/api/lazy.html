@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Modules lazy &#8212; Pythonic FP - FPTools 5.0.0 documentation</title>
+    <title>fptools.lazy &#8212; Pythonic FP - FPTools 5.0.0 documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/basic_mod.css?v=9b2032db" />
     <script src="../_static/documentation_options.js?v=ce74c6a2"></script>
@@ -15,8 +15,8 @@
     <script src="../_static/js/petite-vue.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="pythonic_fp.fptools.maybe" href="maybe.html" />
-    <link rel="prev" title="Module function" href="function.html" /> 
+    <link rel="next" title="fptools.maybe" href="maybe.html" />
+    <link rel="prev" title="fptools.function" href="function.html" /> 
   </head><body data-dark_mode_code_blocks="true">
 
 <div id="top_nav">
@@ -120,21 +120,26 @@
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper"><p class="caption" role="heading"><span class="caption-text">Overview</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../index.html">package fptools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">pythonic-fp.fptools</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Description</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../description.html">description</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../getting_started.html">Getting Started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../releases.html">PyPI Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage.html">usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../releases.html">PyPI releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">changelog</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">Package pythonic_fp.fptools</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="function.html">Module function</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Modules lazy</a></li>
-<li class="toctree-l2"><a class="reference internal" href="maybe.html">pythonic_fp.fptools.maybe</a></li>
-<li class="toctree-l2"><a class="reference internal" href="either.html">pythonic_fp.fptools.either</a></li>
-<li class="toctree-l2"><a class="reference internal" href="state.html">Module state</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">pythonic_fp.fptools</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="function.html">fptools.function</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">fptools.lazy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="maybe.html">fptools.maybe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="either.html">fptools.either</a></li>
+<li class="toctree-l2"><a class="reference internal" href="state.html">fptools.state</a></li>
 </ul>
 </li>
 </ul>
@@ -148,10 +153,8 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <section id="modules-lazy">
-<h1>Modules lazy<a class="headerlink" href="#modules-lazy" title="Link to this heading">¶</a></h1>
-<section id="module-pythonic_fp.fptools.lazy">
-<span id="lazy-evaluation"></span><h2>Lazy Evaluation<a class="headerlink" href="#module-pythonic_fp.fptools.lazy" title="Link to this heading">¶</a></h2>
+  <section id="module-pythonic_fp.fptools.lazy">
+<span id="fptools-lazy"></span><h1>fptools.lazy<a class="headerlink" href="#module-pythonic_fp.fptools.lazy" title="Link to this heading">¶</a></h1>
 <p>Pythonic FP - Lazy function evaluation</p>
 <p>Delayed function evaluations. FP tools for “non-strict” function evaluations.
 Useful to delay a function’s evaluation until some inner scope.</p>
@@ -271,7 +274,6 @@ of positional arguments.</p>
 </dd></dl>
 
 </section>
-</section>
 
 
             <div class="clearer"></div>
@@ -287,8 +289,7 @@ of positional arguments.</p>
             <p><a class="toggle_right_sidebar" href="#"><span class="icon">&gt;</span><span>Page contents:</span></a></p>
             <div class="page_toc">
                 <ul>
-<li><a class="reference internal" href="#">Modules lazy</a><ul>
-<li><a class="reference internal" href="#module-pythonic_fp.fptools.lazy">Lazy Evaluation</a><ul>
+<li><a class="reference internal" href="#">fptools.lazy</a><ul>
 <li><a class="reference internal" href="#pythonic_fp.fptools.lazy.Lazy"><code class="docutils literal notranslate"><span class="pre">Lazy</span></code></a><ul>
 <li><a class="reference internal" href="#pythonic_fp.fptools.lazy.Lazy.eval"><code class="docutils literal notranslate"><span class="pre">Lazy.eval()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.fptools.lazy.Lazy.get"><code class="docutils literal notranslate"><span class="pre">Lazy.get()</span></code></a></li>
@@ -300,8 +301,6 @@ of positional arguments.</p>
 </li>
 <li><a class="reference internal" href="#pythonic_fp.fptools.lazy.lazy"><code class="docutils literal notranslate"><span class="pre">lazy()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.fptools.lazy.real_lazy"><code class="docutils literal notranslate"><span class="pre">real_lazy()</span></code></a></li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -317,13 +316,13 @@ of positional arguments.</p>
             <div class="left">
                 
                 <a href="function.html">
-                    <span class="icon">&lt;</span><span>Module function</span></a>
+                    <span class="icon">&lt;</span><span>fptools.function</span></a>
                 
             </div>
 
             <div class="right">
                 
-                    <a href="maybe.html"><span>pythonic_fp.fptools.maybe</span><span class="icon">&gt;</span></a>
+                    <a href="maybe.html"><span>fptools.maybe</span><span class="icon">&gt;</span></a>
                 
             </div>
         </div>

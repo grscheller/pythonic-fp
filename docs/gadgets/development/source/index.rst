@@ -1,4 +1,4 @@
-pythonic_fp.gadgets
+pythonic-fp.gadgets
 ===================
 
 .. toctree::

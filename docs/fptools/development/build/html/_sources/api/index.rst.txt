@@ -1,5 +1,5 @@
-Package pythonic_fp.fptools
-===========================
+pythonic_fp.fptools
+===================
 
 .. automodule:: pythonic_fp.fptools
    :synopsis:
@@ -8,34 +8,29 @@ Package pythonic_fp.fptools
 .. toctree::
    :caption: function
    :maxdepth: 1
-   :hidden:
 
    function
 
 .. toctree::
    :caption: lazy
    :maxdepth: 1
-   :hidden:
 
    lazy
 
 .. toctree::
-   :caption: MayBe Monad
+   :caption: maybe monad
    :maxdepth: 1
-   :hidden:
 
    maybe
 
 .. toctree::
-   :caption: Either Monad
+   :caption: either monad
    :maxdepth: 1
-   :hidden:
 
    either
 
 .. toctree::
-   :caption: State Monad
+   :caption: state monad
    :maxdepth: 1
-   :hidden:
 
    state

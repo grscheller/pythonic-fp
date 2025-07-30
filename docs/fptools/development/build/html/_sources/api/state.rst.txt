@@ -1,8 +1,5 @@
-Module state
-============
-
-State Monad
------------
+fptools.state
+=============
 
 .. automodule:: pythonic_fp.fptools.state
    :members:

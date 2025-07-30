@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>pythonic_fp.fptools.either &#8212; Pythonic FP - FPTools 5.0.0 documentation</title>
+    <title>fptools.either &#8212; Pythonic FP - FPTools 5.0.0 documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/basic_mod.css?v=9b2032db" />
     <script src="../_static/documentation_options.js?v=ce74c6a2"></script>
@@ -15,8 +15,8 @@
     <script src="../_static/js/petite-vue.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Module state" href="state.html" />
-    <link rel="prev" title="pythonic_fp.fptools.maybe" href="maybe.html" /> 
+    <link rel="next" title="fptools.state" href="state.html" />
+    <link rel="prev" title="fptools.maybe" href="maybe.html" /> 
   </head><body data-dark_mode_code_blocks="true">
 
 <div id="top_nav">
@@ -120,21 +120,26 @@
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper"><p class="caption" role="heading"><span class="caption-text">Overview</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../index.html">package fptools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">pythonic-fp.fptools</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Description</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../description.html">description</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../getting_started.html">Getting Started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../releases.html">PyPI Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage.html">usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../releases.html">PyPI releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">changelog</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">Package pythonic_fp.fptools</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="function.html">Module function</a></li>
-<li class="toctree-l2"><a class="reference internal" href="lazy.html">Modules lazy</a></li>
-<li class="toctree-l2"><a class="reference internal" href="maybe.html">pythonic_fp.fptools.maybe</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">pythonic_fp.fptools.either</a></li>
-<li class="toctree-l2"><a class="reference internal" href="state.html">Module state</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">pythonic_fp.fptools</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="function.html">fptools.function</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lazy.html">fptools.lazy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="maybe.html">fptools.maybe</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">fptools.either</a></li>
+<li class="toctree-l2"><a class="reference internal" href="state.html">fptools.state</a></li>
 </ul>
 </li>
 </ul>
@@ -148,10 +153,8 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <section id="pythonic-fp-fptools-either">
-<h1>pythonic_fp.fptools.either<a class="headerlink" href="#pythonic-fp-fptools-either" title="Link to this heading">¶</a></h1>
-<section id="module-pythonic_fp.fptools.either">
-<span id="either-monad"></span><h2>Either Monad<a class="headerlink" href="#module-pythonic_fp.fptools.either" title="Link to this heading">¶</a></h2>
+  <section id="module-pythonic_fp.fptools.either">
+<span id="fptools-either"></span><h1>fptools.either<a class="headerlink" href="#module-pythonic_fp.fptools.either" title="Link to this heading">¶</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="pythonic_fp.fptools.either.Either">
 <em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.fptools.either.</span></span><span class="sig-name descname"><span class="pre">Either</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">L</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">side</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Truth</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.fptools.either.Either" title="Link to this definition">¶</a></dt>
@@ -301,7 +304,6 @@ the first right encountered.</p>
 </dd></dl>
 
 </section>
-</section>
 
 
             <div class="clearer"></div>
@@ -317,8 +319,7 @@ the first right encountered.</p>
             <p><a class="toggle_right_sidebar" href="#"><span class="icon">&gt;</span><span>Page contents:</span></a></p>
             <div class="page_toc">
                 <ul>
-<li><a class="reference internal" href="#">pythonic_fp.fptools.either</a><ul>
-<li><a class="reference internal" href="#module-pythonic_fp.fptools.either">Either Monad</a><ul>
+<li><a class="reference internal" href="#">fptools.either</a><ul>
 <li><a class="reference internal" href="#pythonic_fp.fptools.either.Either"><code class="docutils literal notranslate"><span class="pre">Either</span></code></a><ul>
 <li><a class="reference internal" href="#pythonic_fp.fptools.either.Either.bind"><code class="docutils literal notranslate"><span class="pre">Either.bind()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.fptools.either.Either.bind_except"><code class="docutils literal notranslate"><span class="pre">Either.bind_except()</span></code></a></li>
@@ -329,8 +330,6 @@ the first right encountered.</p>
 <li><a class="reference internal" href="#pythonic_fp.fptools.either.Either.map_except"><code class="docutils literal notranslate"><span class="pre">Either.map_except()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.fptools.either.Either.map_right"><code class="docutils literal notranslate"><span class="pre">Either.map_right()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.fptools.either.Either.sequence"><code class="docutils literal notranslate"><span class="pre">Either.sequence()</span></code></a></li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -348,13 +347,13 @@ the first right encountered.</p>
             <div class="left">
                 
                 <a href="maybe.html">
-                    <span class="icon">&lt;</span><span>pythonic_fp.fptools.maybe</span></a>
+                    <span class="icon">&lt;</span><span>fptools.maybe</span></a>
                 
             </div>
 
             <div class="right">
                 
-                    <a href="state.html"><span>Module state</span><span class="icon">&gt;</span></a>
+                    <a href="state.html"><span>fptools.state</span><span class="icon">&gt;</span></a>
                 
             </div>
         </div>

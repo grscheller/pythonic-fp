@@ -1,52 +1,23 @@
-..
-   Pythonic FP - FPTools documentation master file. To regenerate the sphinx
-   documentation do: "$ make html" from the "docs/" directory.
-
-Pythonic_fp.singletons
-=======================
-
-PyPI project
-`pythonic-fp.singletons
-<https://pypi.org/project/pythonic-fp.singletons/>`_
-part of the 
-`pythonic-fp namespace projects
-<https://github.com/grscheller/pythonic-fp/blob/main/README.md>`_.
-
-.. automodule:: pythonic_fp.singletons
-   :synopsis:
-   :noindex:
-
-For |PROPOSED_RELEASE_STRING| |VERSION_RELEASED| release.
-
-Getting Started
----------------
-
-:doc:`Getting Started <getting_started>`
-    Getting started with the PyPI pythonic-fp.singletons project.
-
-PyPI Releases
--------------
-
-.. include:: releases.rst
-
-Project CHANGELOG
------------------
-
-Changelog for the
-`pythonic-fp.singletons
-<https://github.com/grscheller/pythonic-fp-singleton/blob/main/CHANGELOG.rst>`_
-PyPI project.
+pythonic-fp.singletons
+======================
 
 .. toctree::
    :caption: Overview
    :maxdepth: 1
-   :hidden:
 
    self
+   description
+
+.. toctree::
+   :caption: Getting Started
+   :maxdepth: 1
+
+   usage
+   releases
+   changelog
 
 .. toctree::
    :caption: Documentation
-   :maxdepth: 1
-   :hidden:
+   :maxdepth: 2
 
    api/index

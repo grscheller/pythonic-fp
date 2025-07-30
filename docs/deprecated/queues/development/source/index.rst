@@ -1,4 +1,4 @@
-pythonic_fp.queues
+pythonic-fp.queues
 ==================
 
 .. toctree::

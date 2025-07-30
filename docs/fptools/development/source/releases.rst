@@ -1,11 +1,8 @@
-PyPI Releases
+PyPI releases
 =============
 
-Package pythonic_fp.fptools
----------------------------
-
 +-------------------------------------------------------------------------------------------+--------------+
-| PyPI Release Documentation                                                                | Release date |
+| PyPI Release                                                                              | Release date |
 +===========================================================================================+==============+
 | `development <https://grscheller.github.io/pythonic-fp/fptools/development/build/html/>`_ |     TBD      |
 +-------------------------------------------------------------------------------------------+--------------+

@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>pythonic_fp.fptools.maybe &#8212; Pythonic FP - FPTools 5.0.0 documentation</title>
+    <title>fptools.maybe &#8212; Pythonic FP - FPTools 5.0.0 documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/basic_mod.css?v=9b2032db" />
     <script src="../_static/documentation_options.js?v=ce74c6a2"></script>
@@ -15,8 +15,8 @@
     <script src="../_static/js/petite-vue.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="pythonic_fp.fptools.either" href="either.html" />
-    <link rel="prev" title="Modules lazy" href="lazy.html" /> 
+    <link rel="next" title="fptools.either" href="either.html" />
+    <link rel="prev" title="fptools.lazy" href="lazy.html" /> 
   </head><body data-dark_mode_code_blocks="true">
 
 <div id="top_nav">
@@ -120,21 +120,26 @@
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper"><p class="caption" role="heading"><span class="caption-text">Overview</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../index.html">package fptools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">pythonic-fp.fptools</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Description</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../description.html">description</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../getting_started.html">Getting Started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../releases.html">PyPI Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage.html">usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../releases.html">PyPI releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">changelog</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">Package pythonic_fp.fptools</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="function.html">Module function</a></li>
-<li class="toctree-l2"><a class="reference internal" href="lazy.html">Modules lazy</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">pythonic_fp.fptools.maybe</a></li>
-<li class="toctree-l2"><a class="reference internal" href="either.html">pythonic_fp.fptools.either</a></li>
-<li class="toctree-l2"><a class="reference internal" href="state.html">Module state</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">pythonic_fp.fptools</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="function.html">fptools.function</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lazy.html">fptools.lazy</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">fptools.maybe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="either.html">fptools.either</a></li>
+<li class="toctree-l2"><a class="reference internal" href="state.html">fptools.state</a></li>
 </ul>
 </li>
 </ul>
@@ -148,10 +153,8 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <section id="pythonic-fp-fptools-maybe">
-<h1>pythonic_fp.fptools.maybe<a class="headerlink" href="#pythonic-fp-fptools-maybe" title="Link to this heading">¶</a></h1>
-<section id="module-pythonic_fp.fptools.maybe">
-<span id="maybe-monad"></span><h2>Maybe Monad<a class="headerlink" href="#module-pythonic_fp.fptools.maybe" title="Link to this heading">¶</a></h2>
+  <section id="module-pythonic_fp.fptools.maybe">
+<span id="fptools-maybe"></span><h1>fptools.maybe<a class="headerlink" href="#module-pythonic_fp.fptools.maybe" title="Link to this heading">¶</a></h1>
 <p>Pythonic FP - Maybe Monad</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="pythonic_fp.fptools.maybe.MayBe">
@@ -214,7 +217,6 @@ the MayBe in a boolean context.</p>
 </dd></dl>
 
 </section>
-</section>
 
 
             <div class="clearer"></div>
@@ -230,15 +232,12 @@ the MayBe in a boolean context.</p>
             <p><a class="toggle_right_sidebar" href="#"><span class="icon">&gt;</span><span>Page contents:</span></a></p>
             <div class="page_toc">
                 <ul>
-<li><a class="reference internal" href="#">pythonic_fp.fptools.maybe</a><ul>
-<li><a class="reference internal" href="#module-pythonic_fp.fptools.maybe">Maybe Monad</a><ul>
+<li><a class="reference internal" href="#">fptools.maybe</a><ul>
 <li><a class="reference internal" href="#pythonic_fp.fptools.maybe.MayBe"><code class="docutils literal notranslate"><span class="pre">MayBe</span></code></a><ul>
 <li><a class="reference internal" href="#pythonic_fp.fptools.maybe.MayBe.bind"><code class="docutils literal notranslate"><span class="pre">MayBe.bind()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.fptools.maybe.MayBe.get"><code class="docutils literal notranslate"><span class="pre">MayBe.get()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.fptools.maybe.MayBe.map"><code class="docutils literal notranslate"><span class="pre">MayBe.map()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.fptools.maybe.MayBe.sequence"><code class="docutils literal notranslate"><span class="pre">MayBe.sequence()</span></code></a></li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -256,13 +255,13 @@ the MayBe in a boolean context.</p>
             <div class="left">
                 
                 <a href="lazy.html">
-                    <span class="icon">&lt;</span><span>Modules lazy</span></a>
+                    <span class="icon">&lt;</span><span>fptools.lazy</span></a>
                 
             </div>
 
             <div class="right">
                 
-                    <a href="either.html"><span>pythonic_fp.fptools.either</span><span class="icon">&gt;</span></a>
+                    <a href="either.html"><span>fptools.either</span><span class="icon">&gt;</span></a>
                 
             </div>
         </div>

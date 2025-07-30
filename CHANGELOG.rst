@@ -10,6 +10,12 @@ remain Pythonic. All projects are under the ``pythonic-fp`` namespace on PyPI.
 Important Milestones
 --------------------
 
+2025-07-30 - Updated all Sphinx docs
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Updated Sphinx docs for all pythonic_fp namespace projects to the latest format.
+Still need to do consistency checks.
+
 2025-07-30 - Updated Sphinx docs for pythonic_fp.queues
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

@@ -1,8 +1,5 @@
-pythonic_fp.fptools.either
-==========================
-
-Either Monad
-------------
+fptools.either
+==============
 
 .. automodule:: pythonic_fp.fptools.either
    :members:

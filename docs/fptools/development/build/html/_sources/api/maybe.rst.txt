@@ -1,8 +1,5 @@
-pythonic_fp.fptools.maybe
-=========================
-
-Maybe Monad
------------
+fptools.maybe
+=============
 
 .. automodule:: pythonic_fp.fptools.maybe
    :members:

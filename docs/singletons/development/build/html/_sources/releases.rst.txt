@@ -1,5 +1,8 @@
+PyPI releases
+-------------
+
 +----------------------------------------------------------------------------------------------+--------------+
-| PyPI  pythonic-fp.singletons Release Documentation                                                                   | Release date |
+| PyPI  pythonic-fp.singletons Release Documentation                                           | Release date |
 +==============================================================================================+==============+
 | `development <https://grscheller.github.io/pythonic-fp/singletons/development/build/html/>`_ |     TBD      |
 +----------------------------------------------------------------------------------------------+--------------+
