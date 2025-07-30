@@ -128,4 +128,4 @@ ______________________________________________________________________
 [304]: https://grscheller.github.io/pythonic-fp/gadgets/development/build/html
 [305]: https://grscheller.github.io/pythonic-fp/iterables/development/build/html
 [306]: https://grscheller.github.io/pythonic-fp/splitends/development/build/html
-[307]: https://grscheller.github.io/pythonic-fp/queues/development/build/html
+[307]: https://grscheller.github.io/pythonic-fp/deprecated/queues/development/build/html
