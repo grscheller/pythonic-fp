@@ -51,13 +51,14 @@ Stateful circular array data structures each with
 
 Two types
 
-- variable storage capacity
-  - O(1) amortized pushes either end
-  - O(1) indexing, fully supports slicing
-  - Auto-resizing larger when necessary, manually compatible
 - fixed storage capacity
   - O(1) pushes either end
   - O(1) indexing, does not support slicing
+- variable storage capacity
+  - O(1) amortized pushes either end
+  - O(1) indexing, fully supports slicing
+  - Auto-resizing larger storage capacity when necessary
+  - manually compatible
 
 ______________________________________________________________________
 
