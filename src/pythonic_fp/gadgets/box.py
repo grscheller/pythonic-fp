@@ -12,13 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""
-Python module for a stateful data structure that can hold at
-most one item. The same can be accomplished with just a list,
-but Python lists have way too many moving parts. This data
-structure's type will make obvious its use case.
-
-"""
+"""Class for a stateful container that can hold at most one item."""
 
 from __future__ import annotations
 
@@ -37,11 +31,14 @@ class Box[D]:
 
     - where ``Box(item)`` contains at most one item of type ``D``
 
-      - ``Box()`` creates an empty container
-      - can store any item of any definite type, including ``None``
+      - ``Box[T]()`` creates empty container
+
+        - where ``T`` is some definite type
+        - which could be ``None`` or even ``Never``
+
+    - Box objects can be used in Python ``match`` statements
 
     """
-
     __slots__ = ('_item',)
     __match_args__ = ('_item',)
 
@@ -55,7 +52,7 @@ class Box[D]:
     def __init__(self, value: D | Sentinel = Sentinel('Box')) -> None:
         """Initialize Box with an "optional" initial value.
 
-           :param value: an "optional" initial value for Box to contain.
+           :param value: an "optional" initial value for Box.
 
         """
         self._item: D | Sentinel = value

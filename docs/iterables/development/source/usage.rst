@@ -8,12 +8,12 @@ Install the project into your Python environment:
 
 .. code:: console
 
-   $ pip install pythonic-fp.iterables
+   $ pip install pythonic-fp-iterables
 
 Importing the module
 --------------------
 
-Import the circulararray classes and "factory functions" into your code.
+Import the functions and the enum into your code.
 
 .. code:: python
 

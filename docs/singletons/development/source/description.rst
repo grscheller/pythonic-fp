@@ -2,7 +2,7 @@ description
 -----------
 
 PyPI project
-`pythonic-fp.singletons
+`pythonic-fp-singletons
 <https://pypi.org/project/pythonic-fp.singletons/>`_
 part of the 
 `pythonic-fp namespace projects

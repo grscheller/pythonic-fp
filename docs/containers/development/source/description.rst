@@ -2,7 +2,7 @@ description
 -----------
 
 PyPI project
-`pythonic-fp.containers
+`pythonic-fp-containers
 <https://pypi.org/project/pythonic-fp.containers/>`_
 part of the 
 `pythonic-fp namespace projects

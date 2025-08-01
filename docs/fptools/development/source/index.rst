@@ -1,4 +1,4 @@
-pythonic-fp.fptools
+pythonic-fp-fptools
 ===================
 
 .. toctree::

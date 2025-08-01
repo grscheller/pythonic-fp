@@ -8,7 +8,7 @@ Install the project into your Python environment:
 
 .. code:: console
 
-   $ pip install pythonic-fp.fptools
+   $ pip install pythonic-fp-fptools
 
 Importing the module
 --------------------

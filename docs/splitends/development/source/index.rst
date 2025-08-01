@@ -1,4 +1,4 @@
-pythonic-fp.splitends
+pythonic-fp-splitends
 =====================
 
 .. toctree::

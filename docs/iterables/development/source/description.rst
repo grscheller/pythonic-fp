@@ -2,7 +2,7 @@ description
 -----------
 
 PyPI project
-`pythonic-fp.iterables
+`pythonic-fp-iterables
 <https://pypi.org/project/pythonic-fp.iterables/>`_
 part of the 
 `pythonic-fp namespace projects

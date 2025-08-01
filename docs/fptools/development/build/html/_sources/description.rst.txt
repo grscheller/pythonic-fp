@@ -2,7 +2,7 @@ description
 -----------
 
 PyPI project
-`pythonic-fp.fptools
+`pythonic-fp-fptools
 <https://pypi.org/project/pythonic-fp.fptools/>`_
 part of the 
 `pythonic-fp namespace projects

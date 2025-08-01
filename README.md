@@ -27,8 +27,8 @@ all under the `pythonic-fp` namespace.
 The PyPI `pythonic-fp` project has three purposes. The first is to claim
 the project name `pythonic-fp` on PyPI. The second purpose is to host
 the python package `pythonic_fp.gadgets`. The third to host the Sphinx
-based documentation for all the pythonic-fp namespace projects on
-GH-Pages.
+based documentation on GH-Pages for all the pythonic-fp namespace
+projects.
 
 The gadgets package is intended for **simple tools** with minimal
 dependencies that have multiple locations, or no good location, where
@@ -73,7 +73,7 @@ ______________________________________________________________________
 
 ### FP Tools: pythonic-fp-fptools
 
-Functional programming library for Python.
+A Functional programming library for Python.
 
 This library implements tools to aid in Python functional programming
 in a way which endeavors to remain Pythonic.
@@ -98,10 +98,9 @@ Singleton classes representing
 - sentinel values
 - failed calculations
 
-Also a classes implementing subtypeable Boolean values.
+Also a class to implement subtypeable Boolean values.
 
-- Python bool cannot be subclassed
-- this one can
+- Python bool cannot be subclassed, this one can
 
 ______________________________________________________________________
 

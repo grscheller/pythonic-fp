@@ -2,8 +2,8 @@ description
 -----------
 
 PyPI project
-`pythonic-fp.circulararray
-<https://pypi.org/project/pythonic-fp.circulararray/>`_
+`pythonic-fp-circulararray
+<https://pypi.org/project/pythonic-fp-circulararray/>`_
 part of the 
 `pythonic-fp namespace projects
 <https://github.com/grscheller/pythonic-fp/blob/main/README.md>`_.

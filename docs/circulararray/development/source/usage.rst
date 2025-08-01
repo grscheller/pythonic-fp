@@ -8,7 +8,7 @@ Install the project into your Python environment:
 
 .. code:: console
 
-   $ pip install pythonic-fp.circulararray
+   $ pip install pythonic-fp-circulararray
 
 Importing the module
 --------------------

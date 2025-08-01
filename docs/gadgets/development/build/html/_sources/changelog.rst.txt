@@ -1,7 +1,8 @@
-changelog
----------
+changelogs
+----------
 
-Change log for the
-`pythonic-fp.gadgets
-<https://github.com/grscheller/pythonic-fp-gadgets/blob/main/CHANGELOG.rst>`_
-PyPI project.
+Overall changelog for the
+`pythonic-fp 
+<https://github.com/grscheller/pythonic-fp/blob/main/CHANGELOG.rst>`_
+PyPI project. This project also contains the pythonic_fp.gadgets package.
+

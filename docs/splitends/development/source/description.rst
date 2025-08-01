@@ -2,7 +2,7 @@ description
 -----------
 
 PyPI project
-`pythonic-fp.splitends
+`pythonic-fp-splitends
 <https://pypi.org/project/pythonic-fp.splitends/>`_
 part of the 
 `pythonic-fp namespace projects

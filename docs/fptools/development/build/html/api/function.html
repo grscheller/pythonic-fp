@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>fptools.function &#8212; Pythonic FP - FPTools 5.0.0 documentation</title>
+    <title>fptools.function &#8212; Pythonic FP - Functional Programming Tools 5.0.0 documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/basic_mod.css?v=9b2032db" />
     <script src="../_static/documentation_options.js?v=ce74c6a2"></script>
@@ -30,7 +30,7 @@
         <p id="toggle_sidebar">
             <a href="#" title="Toggle sidebar">|||</a>
         </p>
-        <h1><a href="../index.html" title="Go to homepage">Pythonic FP - FPTools 5.0.0 documentation</a></h1>
+        <h1><a href="../index.html" title="Go to homepage">Pythonic FP - Functional Programming Tools 5.0.0 documentation</a></h1>
 
         <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
     <template v-if="mode == 'light'">
@@ -120,7 +120,7 @@
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper"><p class="caption" role="heading"><span class="caption-text">Overview</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../index.html">pythonic-fp.fptools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">pythonic-fp-fptools</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Description</span></p>
 <ul>
@@ -162,17 +162,10 @@ and application.</p>
 <p>FP utilities to manipulate and partially apply functions</p>
 <ul class="simple">
 <li><p><em>function</em> <strong>swap</strong> - Swap the arguments of a 2 argument function</p></li>
-<li><p><em>function</em> <strong>it</strong> - Function returning an iterator of its arguments</p></li>
 <li><p><em>function</em> <strong>sequenced</strong> - Convert function to take a sequence of its arguments</p></li>
 <li><p><em>function</em> <strong>negate</strong> - Transforms a predicate to its negation</p></li>
 <li><p><em>function</em> <strong>partial</strong> - Returns a partially applied function</p></li>
 </ul>
-<dl class="py function">
-<dt class="sig sig-object py" id="pythonic_fp.fptools.function.it">
-<span class="sig-prename descclassname"><span class="pre">pythonic_fp.fptools.function.</span></span><span class="sig-name descname"><span class="pre">it</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">A</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Iterator</span></span></span><a class="headerlink" href="#pythonic_fp.fptools.function.it" title="Link to this definition">¶</a></dt>
-<dd><p>Function returning an iterator of its arguments.</p>
-</dd></dl>
-
 <dl class="py function">
 <dt class="sig sig-object py" id="pythonic_fp.fptools.function.negate">
 <span class="sig-prename descclassname"><span class="pre">pythonic_fp.fptools.function.</span></span><span class="sig-name descname"><span class="pre">negate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">P</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">P</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.fptools.function.negate" title="Link to this definition">¶</a></dt>
@@ -212,11 +205,6 @@ a tuple of the original arguments.</p>
 <dd><p>Swap arguments of a two argument function.</p>
 </dd></dl>
 
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Maintainer is considering moving <code class="docutils literal notranslate"><span class="pre">function.it</span></code> to
-the iterables package.</p>
-</div>
 </section>
 
 
@@ -234,7 +222,6 @@ the iterables package.</p>
             <div class="page_toc">
                 <ul>
 <li><a class="reference internal" href="#">fptools.function</a><ul>
-<li><a class="reference internal" href="#pythonic_fp.fptools.function.it"><code class="docutils literal notranslate"><span class="pre">it()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.fptools.function.negate"><code class="docutils literal notranslate"><span class="pre">negate()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.fptools.function.partial"><code class="docutils literal notranslate"><span class="pre">partial()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.fptools.function.sequenced"><code class="docutils literal notranslate"><span class="pre">sequenced()</span></code></a></li>

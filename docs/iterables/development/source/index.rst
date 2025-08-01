@@ -1,4 +1,4 @@
-pythonic-fp.iterables
+pythonic-fp-iterables
 =====================
 
 .. toctree::

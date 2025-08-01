@@ -2,8 +2,8 @@ description
 -----------
 
 PyPI project
-`pythonic-fp.gadgets
-<https://pypi.org/project/pythonic-fp.gadgets/>`_
+`pythonic-fp
+<https://pypi.org/project/pythonic-fp/>`_
 part of the 
 `pythonic-fp namespace projects
 <https://github.com/grscheller/pythonic-fp/blob/main/README.md>`_.

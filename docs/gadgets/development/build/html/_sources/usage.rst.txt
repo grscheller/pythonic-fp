@@ -8,7 +8,7 @@ Install the project into your Python environment:
 
 .. code:: console
 
-   $ pip install pythonic-fp.gadgets
+   $ pip install pythonic-fp-gadgets
 
 Importing the module
 --------------------

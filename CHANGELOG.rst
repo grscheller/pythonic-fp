@@ -1,14 +1,22 @@
 CHANGELOG
 =========
 
-Pythonic FP namespace projects
-------------------------------
+**Pythonic FP namespace projects**
 
 Developer Tools supporting a functional style of programming yet endeavoring to
 remain Pythonic. All projects are under the ``pythonic-fp`` namespace on PyPI.
 
 Important Milestones
 --------------------
+
+2025-08-01 - Added pythonic_fp.gadgets to pythonic-fp
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Added package pythonic_fp.gadgets to PyPI project pythonic-fp. Now
+this "name-claim" package is installable.
+
+The gadgets library is for simple, but useful, data structures with
+minimal dependencies.
 
 2025-07-30 - Updated all Sphinx docs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

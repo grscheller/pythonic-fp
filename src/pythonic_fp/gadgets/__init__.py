@@ -12,15 +12,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Pythonic FP - Gadgets
+"""Simple Gadgets.
 
 Library of simple, but useful, data structures with minimal dependencies.
 
-+------------------+-----------------------------+
-| Description      | Module                      |
-+==================+=============================+
-| Single item box  | ``pythonic_fp.gadgets.box`` |
-+------------------+-----------------------------+
++-----------------------------+-----------------------------+
+| Description                 | Module                      |
++=============================+=============================+
+| Single item box             | ``pythonic_fp.gadgets.box`` |
++-----------------------------+-----------------------------+
+| function to iterate it args | ``pythonic_fp.gadgets.it``  |
++-----------------------------+-----------------------------+
 
 """
 

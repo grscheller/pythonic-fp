@@ -1,4 +1,4 @@
-pythonic-fp.singletons
+pythonic-fp-singletons
 ======================
 
 .. toctree::
