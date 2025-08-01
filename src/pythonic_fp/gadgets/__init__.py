@@ -12,14 +12,18 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""PyPI pythonic-fp namespace stub project
+"""Pythonic FP - Gadgets
 
-**WARNING: DO NOT INSTALL THIS PACKAGE**
+Library of simple, but useful, data structures with minimal dependencies.
 
-It is an empty module whose purpose is to claim the`pythonic-fp` name on PyPI.
-This name is used by a family of namespace PyPI packages to support a functional
-style of programming which still endeavors to remain Pythonic.
++------------------+-----------------------------+
+| Description      | Module                      |
++==================+=============================+
+| Single item box  | ``pythonic_fp.gadgets.box`` |
++------------------+-----------------------------+
 
-If this module is installed the rest of the namespace packages will no longer
-work.
 """
+
+__author__ = 'Geoffrey R. Scheller'
+__copyright__ = 'Copyright (c) 2023-2025 Geoffrey R. Scheller'
+__license__ = 'Apache License 2.0'
