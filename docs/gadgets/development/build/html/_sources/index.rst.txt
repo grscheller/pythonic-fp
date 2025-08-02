@@ -1,5 +1,5 @@
-pythonic-fp
-===========
+pythonic-fp-gadgets
+===================
 
 .. toctree::
    :caption: Overview

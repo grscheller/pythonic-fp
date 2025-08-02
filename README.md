@@ -8,8 +8,9 @@ Pythonic FP is a hobby project, but the maintainer is serious about its quality.
 
 ## Pythonic FP
 
-The overall project's name is **Pythonic FP** and consists of PyPI Python projects
-all under the `pythonic-fp` namespace.
+The overall project's name is **Pythonic FP** and consists of PyPI
+projects all under the `pythonic-fp` project namespace. This corresponds
+to the Python `pythonic_fp` package namespace.
 
 | Name | PyPI | GitHub | Docs | Python Package |
 |:---- |:----:|:------:|:----:|:-------------- |

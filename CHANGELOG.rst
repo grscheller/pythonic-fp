@@ -9,6 +9,16 @@ remain Pythonic. All projects are under the ``pythonic-fp`` namespace on PyPI.
 Important Milestones
 --------------------
 
+2025-08-02 - Beginning coordinated release of pythonic-fp namespace projects
+
+- released pythonic-fp 1.1.0 which contains pythonic_fp.gadgets package
+- released pythonic-fp-circulararray 5.3.0 immediately followed by 5.3.1
+
+  - had to fix a link in README.rst, changed
+
+    - pythonic-fp.circulararray to pythonic-fp-circulararray 
+    - linked still worked since PyPI maps ``.`` and ``_`` to ``-``
+
 2025-08-01 - Added pythonic_fp.gadgets to pythonic-fp
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
