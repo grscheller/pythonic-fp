@@ -1,12 +1,16 @@
 PyPI releases
-=============
+-------------
+
+**pythonic-fp-fptools:** pythonic_fp.fptools
 
 +-------------------------------------------------------------------------------------------+--------------+
 | PyPI Release                                                                              | Release date |
 +===========================================================================================+==============+
-| `development <https://grscheller.github.io/pythonic-fp/fptools/development/build/html/>`_ |     TBD      |
+| `development <https://grscheller.github.io/pythonic-fp/fptools/development/build/html/>`_ | TBD          |
 +-------------------------------------------------------------------------------------------+--------------+
-| `v4.0.0 <https://grscheller.github.io/pythonic-fp/fptools/v4.0.0/build/html/>`_           |  2025-07-13  |
+| `v5.0.0 <https://grscheller.github.io/pythonic-fp/fptools/v5.0.0/build/html/>`_           | TBD          |
 +-------------------------------------------------------------------------------------------+--------------+
-| `v3.0.0 <https://grscheller.github.io/pythonic-fp/fptools/v3.0.0/build/html/>`_           |  2025-07-06  |
+| `v4.0.0 <https://grscheller.github.io/pythonic-fp/fptools/v4.0.0/build/html/>`_           | 2025-07-13   |
++-------------------------------------------------------------------------------------------+--------------+
+| `v3.0.0 <https://grscheller.github.io/pythonic-fp/fptools/v3.0.0/build/html/>`_           | 2025-07-06   |
 +-------------------------------------------------------------------------------------------+--------------+

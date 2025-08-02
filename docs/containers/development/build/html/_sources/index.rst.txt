@@ -1,4 +1,4 @@
-pythonic-fp.containers
+pythonic-fp-containers
 ======================
 
 .. toctree::

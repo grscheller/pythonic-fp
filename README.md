@@ -11,30 +11,30 @@ Pythonic FP is a hobby project, but the maintainer is serious about its quality.
 The overall project's name is **Pythonic FP** and consists of PyPI Python projects
 all under the `pythonic-fp` namespace.
 
-| Name | Python Package | PyPI | GitHub | Docs |
-|:---- |:-------------- |:----:|:------:|:----:|
-| Gadgets | pythonic_fp.gadgets | [pythonic-fp][100] | [pythonic-fp][200] | [docs][300] |
-| Circular Array | pythonic_fp.circulararray | [pythonic-fp.circulararray][101] | [pythonic-fp-circulararray][201] | [docs][301] |
-| Containers | pythonic_fp.containers | [pythonic-fp.containers][102] | [pythonic-fp-containers][202] | [docs][302] |
-| FP Tools | pythonic_fp.fptools | [pythonic-fp.fptools][103] | [pythonic-fp-fptools][203] | [docs][303] |
-| Iterables | pythonic_fp.iterables | [pythonic-fp.iterables][104] | [pythonic-fp-iterables][204] | [docs][304] |
-| Splitends | pythonic_fp.splitends | [pythonic-fp.splitends][105] | [pythonic-fp-splitends][205] | [docs][305] |
+| Name | PyPI | GitHub | Docs | Python Package |
+|:---- |:----:|:------:|:----:|:-------------- |
+| Gadgets | [pythonic-fp][100] | [gh][200] | [gh_pages][300] |  pythonic_f.gadgets |
+| Circular Array | [pythonic-fp-circulararray][101] | [gh][201] | [gh_pages][301] |  pythonic_f.circulararray |
+| Containers | [pythonic-fp-containers][102] | [gh][202] | [gh_pages][302] |  pythonic_f.containers |
+| FP Tools | [pythonic-fp-fptools][103] | [gh][203] | [gh_pages][303] |  pythonic_f.fptools |
+| Iterables | [pythonic-fp-iterables][104] | [gh][204] | [gh_pages][304] |  pythonic_f.iterables |
+| Splitends | [pythonic-fp-splitends][105] | [gh][205] | [gh_pages][305] |  pythonic_f.splitends |
 
 ## Namespace Projects
 
 ### Pythonic Functional Programming: pythonic-fp
 
 The PyPI `pythonic-fp` project has three purposes. The first is to claim
-the project name `pythonic-fp` on PyPI. The second purpose is to host
-the python package `pythonic_fp.gadgets`. The third to host the Sphinx
+the project name `pythonic-fp` on PyPI. The second is to host the python
+package `pythonic_fp.gadgets`. The third is to host the Sphinx
 based documentation on GH-Pages for all the pythonic-fp namespace
 projects.
 
 The gadgets package is intended for **simple tools** with minimal
-dependencies that have multiple locations, or no good location, where
-they can go.
+dependencies that may have multiple locations, or no good location,
+to where they can go.
 
-This package is now installable, but is not necessarily required to use
+This project is now installable, but is not necessarily required to use
 other `pythonic_fp` namespace packages.
 
 ______________________________________________________________________
@@ -118,7 +118,7 @@ ______________________________________________________________________
 [103]: https://pypi.org/project/pythonic-fp-fptools
 [104]: https://pypi.org/project/pythonic-fp-iterables
 [105]: https://pypi.org/project/pythonic-fp-splitends
-[200]: https://github.com/grscheller/pythonic-fp-gadgets
+[200]: https://github.com/grscheller/pythonic-fp
 [201]: https://github.com/grscheller/pythonic-fp-circulararray
 [202]: https://github.com/grscheller/pythonic-fp-containers
 [203]: https://github.com/grscheller/pythonic-fp-fptools

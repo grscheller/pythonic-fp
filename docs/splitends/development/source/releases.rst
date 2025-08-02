@@ -1,10 +1,14 @@
 PyPI releases
-=============
+-------------
+
+**pythonic-fp-splitends:** pythonic_fp.splitends
 
 +---------------------------------------------------------------------------------------------+--------------+
-| PyPI Release Documentation                                                                  | Release date |
+| PyPI Release                                                                                | Release date |
 +=============================================================================================+==============+
-| `development <https://grscheller.github.io/pythonic-fp/splitends/development/build/html/>`_ |     TBD      |
+| `development <https://grscheller.github.io/pythonic-fp/splitends/development/build/html/>`_ | TBD          |
 +---------------------------------------------------------------------------------------------+--------------+
-| `v0.30.0 <https://grscheller.github.io/pythonic-fp/splitends/v0.30.0/build/html/>`_         |  2025-07-06  |
+| `v1.0.0 <https://grscheller.github.io/pythonic-fp/splitends/v1.0.0/build/html/>`_           | TBD          |
++---------------------------------------------------------------------------------------------+--------------+
+| `v0.30.0 <https://grscheller.github.io/pythonic-fp/splitends/v0.30.0/build/html/>`_         | 2025-07-06   |
 +---------------------------------------------------------------------------------------------+--------------+

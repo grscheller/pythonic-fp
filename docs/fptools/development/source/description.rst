@@ -3,7 +3,7 @@ description
 
 PyPI project
 `pythonic-fp-fptools
-<https://pypi.org/project/pythonic-fp.fptools/>`_
+<https://pypi.org/project/pythonic-fp-fptools/>`_
 part of the 
 `pythonic-fp namespace projects
 <https://github.com/grscheller/pythonic-fp/blob/main/README.md>`_.

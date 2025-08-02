@@ -1,4 +1,4 @@
-pythonic-fp.circulararray
+pythonic-fp-circulararray
 =========================
 
 .. toctree::

@@ -1,8 +1,12 @@
 PyPI releases
 -------------
 
+**pythonic-fp-singletons:** pythonic-fp-singletons
+
 +----------------------------------------------------------------------------------------------+--------------+
-| PyPI  pythonic-fp.singletons Release Documentation                                           | Release date |
+| PyPI Release                                                                                 | Release date |
 +==============================================================================================+==============+
-| `development <https://grscheller.github.io/pythonic-fp/singletons/development/build/html/>`_ |     TBD      |
+| `development <https://grscheller.github.io/pythonic-fp/singletons/development/build/html/>`_ | TBD          |
++----------------------------------------------------------------------------------------------+--------------+
+| `v1.0.0 <https://grscheller.github.io/pythonic-fp/singletons/v1.0.0/build/html/>`_           | TBD          |
 +----------------------------------------------------------------------------------------------+--------------+

@@ -3,7 +3,7 @@ description
 
 PyPI project
 `pythonic-fp-singletons
-<https://pypi.org/project/pythonic-fp.singletons/>`_
+<https://pypi.org/project/pythonic-fp-singletons/>`_
 part of the 
 `pythonic-fp namespace projects
 <https://github.com/grscheller/pythonic-fp/blob/main/README.md>`_.

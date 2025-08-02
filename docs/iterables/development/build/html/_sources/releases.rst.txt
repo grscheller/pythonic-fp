@@ -1,12 +1,16 @@
 PyPI releases
-=============
+-------------
+
+**pythonic-fp-iterables:** pythonic_fp.iterables
 
 +---------------------------------------------------------------------------------------------+--------------+
 | PyPI Release                                                                                | Release date |
 +=============================================================================================+==============+
-| `development <https://grscheller.github.io/pythonic-fp/iterables/development/build/html/>`_ |     TBD      |
+| `development <https://grscheller.github.io/pythonic-fp/iterables/development/build/html/>`_ | TBD          |
 +---------------------------------------------------------------------------------------------+--------------+
-| `v4.0.0 <https://grscheller.github.io/pythonic-fp/iterables/v4.0.0/build/html/>`_           |  2025-07-15  |
+| `v5.0.0 <https://grscheller.github.io/pythonic-fp/iterables/v5.0.0/build/html/>`_           | TBD          |
 +---------------------------------------------------------------------------------------------+--------------+
-| `v3.0.0 <https://grscheller.github.io/pythonic-fp/iterables/v3.0.0/build/html/>`_           |  2025-07-06  |
+| `v4.0.0 <https://grscheller.github.io/pythonic-fp/iterables/v4.0.0/build/html/>`_           | 2025-07-15   |
++---------------------------------------------------------------------------------------------+--------------+
+| `v3.0.0 <https://grscheller.github.io/pythonic-fp/iterables/v3.0.0/build/html/>`_           | 2025-07-06   |
 +---------------------------------------------------------------------------------------------+--------------+
