@@ -13,9 +13,9 @@
 project = 'Pythonic FP - Gadgets'
 copyright = '2023-2025, Geoffrey R. Scheller'
 author = 'Geoffrey R. Scheller'
-release = '1.1.0' 
-# proposed_release_string = 'a proposed'
-proposed_release_string = 'the'
+release = '1.1.1' 
+proposed_release_string = 'a proposed'
+# proposed_release_string = 'the'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration

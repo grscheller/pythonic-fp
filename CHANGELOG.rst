@@ -29,6 +29,10 @@ Important Milestones
 - released pythonic-fp-iterables v5.0.0
 - released pythonic-fp-singletons v1.0.0
 - released pythonic-fp-splitends v1.0.0
+- setup Sphinx for development environment documentation
+
+  - bumped all version numbers by one patch level
+  - redid Sphinx development docs for entire namespace project
 
 2025-08-01 - Added pythonic_fp.gadgets to pythonic-fp
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
