@@ -17,7 +17,18 @@ Important Milestones
   - had to fix a link in README.rst, changed
 
     - pythonic-fp.circulararray to pythonic-fp-circulararray 
-    - linked still worked since PyPI maps ``.`` and ``_`` to ``-``
+
+      - linked still worked since PyPI maps ``.`` and ``_`` to ``-``
+
+    - had to update development/source/conf.py
+    - had to update development/source/releases.py
+    - had to copy generated html to release directories
+
+- released pythonic-fp-containers v3.0.0
+- released pythonic-fp-fptools v5.0.0
+- released pythonic-fp-iterables v5.0.0
+- released pythonic-fp-singletons v1.0.0
+- released pythonic-fp-splitends v1.0.0
 
 2025-08-01 - Added pythonic_fp.gadgets to pythonic-fp
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
