@@ -11,8 +11,8 @@ Important Milestones
 
 2025-08-02 - Beginning coordinated release of pythonic-fp namespace projects
 
-- released pythonic-fp 1.1.0 which contains pythonic_fp.gadgets package
-- released pythonic-fp-circulararray 5.3.0 immediately followed by 5.3.1
+- released pythonic-fp v1.1.0 which contains pythonic_fp.gadgets package
+- released pythonic-fp-circulararray v5.3.0 immediately followed by v5.3.1
 
   - had to fix a link in README.rst, changed
 
