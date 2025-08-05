@@ -12,14 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from __future__ import annotations
 from pythonic_fp.gadgets.box import Box
 
 
 class TestGadgetBox:
     """Functionality testing"""
 
-    def test_box_unchanged(self) -> None:
+    def test_box_unchanged(self) -> None:  # noqa: C901
         box_init_empty: Box[int] = Box()
         box_init_full = Box(42)
 
