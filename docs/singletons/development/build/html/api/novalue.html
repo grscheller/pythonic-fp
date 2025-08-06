@@ -154,34 +154,77 @@
             
   <section id="module-pythonic_fp.singletons.novalue">
 <span id="singletons-novalue"></span><h1>singletons.novalue<a class="headerlink" href="#module-pythonic_fp.singletons.novalue" title="Link to this heading">¶</a></h1>
-<p>Pythonic FP - Collection of singleton classes</p>
-<dl class="py class">
-<dt class="sig sig-object py" id="pythonic_fp.singletons.novalue.NoValue">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.singletons.novalue.</span></span><span class="sig-name descname"><span class="pre">NoValue</span></span><a class="headerlink" href="#pythonic_fp.singletons.novalue.NoValue" title="Link to this definition">¶</a></dt>
-<dd><p>Singleton class representing a missing value.</p>
-<p>Similar to <code class="docutils literal notranslate"><span class="pre">None</span></code> but</p>
+<p>Singleton class representing a missing value.</p>
+<p>In untyped Python, both <code class="docutils literal notranslate"><span class="pre">None</span></code> and <code class="docutils literal notranslate"><span class="pre">()</span></code> are often used as sentinel values.
+When typing tools like MyPy are used, both are shoe-horded into Union types.</p>
+<p><code class="docutils literal notranslate"><span class="pre">NoValue()</span></code> is a singleton object  representing a missing value.</p>
+<p>Given variables <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code> where</p>
 <ul class="simple">
-<li><p>while <code class="docutils literal notranslate"><span class="pre">None</span></code> represents “returned no values”</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">NoValue()</span></code> represents the absence of a value</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">x:</span> <span class="pre">int</span> <span class="pre">|</span> <span class="pre">NoValue</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">y:</span> <span class="pre">int</span> <span class="pre">|</span> <span class="pre">NoValue</span></code></p></li>
 </ul>
-<p><strong>Usage:</strong></p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">NoValue</span></code> from <code class="docutils literal notranslate"><span class="pre">pythonic-fp.singletons</span></code> and then</p>
-<ul>
-<li><p>either use <code class="docutils literal notranslate"><span class="pre">NoValue()</span></code> directly</p></li>
-<li><p>or define <code class="docutils literal notranslate"><span class="pre">_noValue:</span> <span class="pre">Final[NoValue]</span> <span class="pre">=</span> <span class="pre">NoValue()</span></code> don’t export it</p></li>
-</ul>
-</li>
-<li><p>compare using <code class="docutils literal notranslate"><span class="pre">is</span></code> and <code class="docutils literal notranslate"><span class="pre">is</span> <span class="pre">not</span></code></p>
-<ul>
-<li><p>not <code class="docutils literal notranslate"><span class="pre">==</span></code> or <code class="docutils literal notranslate"><span class="pre">!=</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">None</span></code> means returned no values, so <code class="docutils literal notranslate"><span class="pre">None</span> <span class="pre">==</span> <span class="pre">None</span></code> makes sense</p></li>
-<li><p>if one or both values are missing, then what is there to compare?</p></li>
-</ul>
-</li>
-</ul>
-</dd></dl>
-
+<p>Equality between them means both values exist and compare as equal.
+If one or both of theses values are missing, then what is there to compare?</p>
+<table class="docutils align-default" id="id1">
+<caption><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">==</span> <span class="pre">y</span></code></span><a class="headerlink" href="#id1" title="Link to this table">¶</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>x∖y</p></th>
+<th class="head"><p>NoValue()</p></th>
+<th class="head"><p>42</p></th>
+<th class="head"><p>57</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>NoValue()</p></td>
+<td><p>false</p></td>
+<td><p>false</p></td>
+<td><p>false</p></td>
+</tr>
+<tr class="row-odd"><td><p>42</p></td>
+<td><p>false</p></td>
+<td><p>true</p></td>
+<td><p>false</p></td>
+</tr>
+<tr class="row-even"><td><p>57</p></td>
+<td><p>false</p></td>
+<td><p>false</p></td>
+<td><p>true</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default" id="id2">
+<caption><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">!=</span> <span class="pre">y</span></code></span><a class="headerlink" href="#id2" title="Link to this table">¶</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>x∖y</p></th>
+<th class="head"><p>NoValue()</p></th>
+<th class="head"><p>42</p></th>
+<th class="head"><p>57</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>NoValue()</p></td>
+<td><p>false</p></td>
+<td><p>false</p></td>
+<td><p>false</p></td>
+</tr>
+<tr class="row-odd"><td><p>42</p></td>
+<td><p>false</p></td>
+<td><p>false</p></td>
+<td><p>true</p></td>
+</tr>
+<tr class="row-even"><td><p>57</p></td>
+<td><p>false</p></td>
+<td><p>true</p></td>
+<td><p>false</p></td>
+</tr>
+</tbody>
+</table>
+<p>Of course, we can also compare directly by identity.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">x</span> <span class="ow">is</span> <span class="n">NoValue</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;do something&#39;</span><span class="p">)</span>
+    <span class="o">...</span>
+</pre></div>
+</div>
 </section>
 
 
@@ -189,23 +232,6 @@
           </div>
         </div>
       </div>
-    
-        <div id="show_right_sidebar">
-            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&lt;</span><span>Page contents</span></a></p>
-        </div>
-
-        <div id="right_sidebar">
-            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&gt;</span><span>Page contents:</span></a></p>
-            <div class="page_toc">
-                <ul>
-<li><a class="reference internal" href="#">singletons.novalue</a><ul>
-<li><a class="reference internal" href="#pythonic_fp.singletons.novalue.NoValue"><code class="docutils literal notranslate"><span class="pre">NoValue</span></code></a></li>
-</ul>
-</li>
-</ul>
-
-            </div>
-        </div>
     
 
       <div class="clearer"></div>

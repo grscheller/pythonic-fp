@@ -154,43 +154,40 @@
             
   <section id="module-pythonic_fp.singletons.sentinel">
 <span id="singletons-sentinel"></span><h1>singletons.sentinel<a class="headerlink" href="#module-pythonic_fp.singletons.sentinel" title="Link to this heading">¶</a></h1>
-<p>Pythonic FP - Collection of singleton classes</p>
-<dl class="py class">
-<dt class="sig sig-object py" id="pythonic_fp.singletons.sentinel.Sentinel">
-<em class="property"><span class="k"><span class="pre">final</span></span><span class="w"> </span><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.singletons.sentinel.</span></span><span class="sig-name descname"><span class="pre">Sentinel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sentinel_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.singletons.sentinel.Sentinel" title="Link to this definition">¶</a></dt>
-<dd><p>Singleton classes representing sentinel values.</p>
+<p>Singleton classes representing sentinel values.</p>
+<p>Intended for library code, not to be exported/shared between modules,
+otherwise some of its intended typing guarantees may be lost.</p>
+<p>Useful substitute for <code class="docutils literal notranslate"><span class="pre">None</span></code> as a hidden implementation detail.</p>
 <ul class="simple">
-<li><p>intended for library code, not to be exported/shared between modules</p>
-<ul>
-<li><p>otherwise some of its intended typing guarantees may be lost</p></li>
-</ul>
-</li>
-<li><p>useful substitute for <code class="docutils literal notranslate"><span class="pre">None</span></code> as a hidden sentinel value</p>
-<ul>
 <li><p>allows <code class="docutils literal notranslate"><span class="pre">None</span></code> to be stored in data structures</p></li>
-<li><p>allows end users to choose to use <code class="docutils literal notranslate"><span class="pre">None</span></code> or <code class="docutils literal notranslate"><span class="pre">()</span></code> as sentinel values</p></li>
+<li><p>allows end users to choose to use <code class="docutils literal notranslate"><span class="pre">None</span></code> or <code class="docutils literal notranslate"><span class="pre">()</span></code> as “sentinel” values</p></li>
 <li><p>always equals itself (unlike <code class="docutils literal notranslate"><span class="pre">NoValue</span></code>)</p></li>
-</ul>
-</li>
+<li><p>never equals anything else</p></li>
 </ul>
 <p><strong>Usage:</strong></p>
-<ul class="simple">
-<li><p>import Sentinel and then either</p>
-<ul>
-<li><p>define <code class="docutils literal notranslate"><span class="pre">_my_sentinel:</span> <span class="pre">Final[Sentinel]</span> <span class="pre">=</span> <span class="pre">Sentinel('my_sentinel')</span></code></p></li>
-<li><p>or use <code class="docutils literal notranslate"><span class="pre">Sentinel('my_sentinel')</span></code> directly</p></li>
-</ul>
-</li>
-<li><p>compare using either</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">is</span></code> and <code class="docutils literal notranslate"><span class="pre">is</span> <span class="pre">not</span></code> or <code class="docutils literal notranslate"><span class="pre">==</span></code> and <code class="docutils literal notranslate"><span class="pre">!=</span></code></p></li>
-<li><p>the <code class="docutils literal notranslate"><span class="pre">Sentinel()</span></code> value always equals itself</p></li>
-<li><p>and never equals anything else, especially other sentinel values</p></li>
-</ul>
-</li>
-</ul>
-</dd></dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">pythonic_fp.singletons.sentinel</span><span class="w"> </span><span class="kn">import</span> <span class="n">Sentinel</span>
 
+<span class="n">_my_sentinel</span><span class="p">:</span> <span class="n">Final</span><span class="p">[</span><span class="n">Sentinel</span><span class="p">]</span> <span class="o">=</span> <span class="n">Sentinel</span><span class="p">(</span><span class="s1">&#39;my_sentinel&#39;</span><span class="p">)</span>
+<span class="n">_another_one</span><span class="p">:</span> <span class="n">Final</span><span class="p">[</span><span class="n">Sentinel</span><span class="p">]</span> <span class="o">=</span> <span class="n">Sentinel</span><span class="p">(</span><span class="s1">&#39;foofoo rules&#39;</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">some_ref</span> <span class="ow">is</span> <span class="n">_my_sentinel</span><span class="p">:</span>
+    <span class="o">...</span>
+
+<span class="k">if</span> <span class="k">if</span> <span class="n">some_ref</span> <span class="ow">is</span> <span class="n">Sentinel</span><span class="p">(</span><span class="s1">&#39;foofoo rules&#39;</span><span class="p">):</span>
+    <span class="o">...</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Can be compared using either <code class="docutils literal notranslate"><span class="pre">is</span></code> and <code class="docutils literal notranslate"><span class="pre">is</span> <span class="pre">not</span></code> or <code class="docutils literal notranslate"><span class="pre">==</span></code> and <code class="docutils literal notranslate"><span class="pre">!=</span></code>. A Sentinel
+value always equals itself and never equals anything else, especially other sentinel
+values defined with different strings.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>When comparing using <code class="docutils literal notranslate"><span class="pre">==</span></code> or <code class="docutils literal notranslate"><span class="pre">!=</span></code> put the known sentinel value first to ensure
+reference equality is used.</p>
+</div>
 </section>
 
 
@@ -198,23 +195,6 @@
           </div>
         </div>
       </div>
-    
-        <div id="show_right_sidebar">
-            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&lt;</span><span>Page contents</span></a></p>
-        </div>
-
-        <div id="right_sidebar">
-            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&gt;</span><span>Page contents:</span></a></p>
-            <div class="page_toc">
-                <ul>
-<li><a class="reference internal" href="#">singletons.sentinel</a><ul>
-<li><a class="reference internal" href="#pythonic_fp.singletons.sentinel.Sentinel"><code class="docutils literal notranslate"><span class="pre">Sentinel</span></code></a></li>
-</ul>
-</li>
-</ul>
-
-            </div>
-        </div>
     
 
       <div class="clearer"></div>
