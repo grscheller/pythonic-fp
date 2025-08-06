@@ -18,7 +18,6 @@ Import the functional tools into your code.
 .. code:: python
 
     from pythonic_fp.fptools.function import swap, negate
-    from pythonic_fp.fptools.function import it
     from pythonic_fp.fptools.function import sequenced, partial
 
     from pythonic_fp.fptools.lazy import Lazy
@@ -28,7 +27,3 @@ Import the functional tools into your code.
     from pythonic_fp.fptools.maybe import MayBe
     from pythonic_fp.fptools.either import Either, LEFT, RIGHT
     from pythonic_fp.fptools.state import State
-
-.. note::
-
-   Maintainer is considering moving ``it`` to the iterables package.

@@ -6,41 +6,50 @@ to remain Pythonic.
 
 Pythonic FP is a hobby project, but the maintainer is serious about its quality.
 
-## Pythonic FP
+## Pythonic FP `pythonic-fp` namespace projects
+
+| Name | PyPI | GitHub | Docs | Python Package |
+|:---- |:----:|:------:|:----:|:-------------- |
+| [Booleans](#booleans) | [pythonic-fp-booleans][10x] | [gh][20x] | [gh_pages][30x] | pythonic_fp.Booleans |
+| [Circular Array](#circular-array) | [pythonic-fp-circulararray][101] | [gh][201] | [gh_pages][301] | pythonic_fp.circulararray |
+| [Containers](#containers) | [pythonic-fp-containers][102] | [gh][202] | [gh_pages][302] | pythonic_fp.containers |
+| [FP Tools](#fp-tools) | [pythonic-fp-fptools][103] | [gh][203] | [gh_pages][303] | pythonic_fp.fptools |
+| [Gadgets](#gadgets) | [pythonic-fp][100] | [gh][200] | [gh_pages][300] | pythonic_fp.gadgets |
+| [Iterables](#tools-for-iterables) | [pythonic-fp-iterables][105] | [gh][205] | [gh_pages][305] | pythonic_fp.iterables |
+| [Singletons](#useful-singletons) | [pythonic-fp-singletons][106] | [gh][206] | [gh_pages][306] | pythonic_fp.singletons |
+| [Splitends](#splitends) | [pythonic-fp-splitends][107] | [gh][207] | [gh_pages][307] | pythonic_fp.splitends |
 
 The overall project's name is **Pythonic FP** and consists of PyPI
 projects all under the `pythonic-fp` project namespace. This corresponds
 to the Python `pythonic_fp` package namespace.
 
-| Name | PyPI | GitHub | Docs | Python Package |
-|:---- |:----:|:------:|:----:|:-------------- |
-| Gadgets | [pythonic-fp][100] | [gh][200] | [gh_pages][300] |  pythonic_f.gadgets |
-| Circular Array | [pythonic-fp-circulararray][101] | [gh][201] | [gh_pages][301] |  pythonic_f.circulararray |
-| Containers | [pythonic-fp-containers][102] | [gh][202] | [gh_pages][302] |  pythonic_f.containers |
-| FP Tools | [pythonic-fp-fptools][103] | [gh][203] | [gh_pages][303] |  pythonic_f.fptools |
-| Iterables | [pythonic-fp-iterables][104] | [gh][204] | [gh_pages][304] |  pythonic_f.iterables |
-| Splitends | [pythonic-fp-splitends][105] | [gh][205] | [gh_pages][305] |  pythonic_f.splitends |
-
 ## Namespace Projects
 
 ### Pythonic Functional Programming: pythonic-fp
 
-The PyPI `pythonic-fp` project has three purposes. The first is to claim
-the project name `pythonic-fp` on PyPI. The second is to host the python
-package `pythonic_fp.gadgets`. The third is to host the Sphinx
-based documentation on GH-Pages for all the pythonic-fp namespace
-projects.
+The PyPI `pythonic-fp` project has several purposes.
 
-The gadgets package is intended for **simple tools** with minimal
-dependencies that may have multiple locations, or no good location,
-to where they can go.
-
-This project is now installable, but is not necessarily required to use
-other `pythonic_fp` namespace packages.
+- Its README.md file provides a "homepage" for the overall effort.
+- It is used to claim the `pythonic-fp` namespace on PyPI.
+- It hosts the Sphinx documentation for all the pythonic-fp namespace projects.
+- It contains the source code for the pythonic-fp-gadgets project.
 
 ______________________________________________________________________
 
-### Circular Array: pythonic-fp-circulararray
+### Booleans pythonic_fp.booleans
+
+Boolean type classes which interact well with Python's boolean
+infrastructure.
+
+- class **IBool:** Python's bool cannot be inherited from, this one can be
+- class **SBool[H]:** Subclassed IBool from any hashable type
+
+  - class **Truth[H]:** "truthy" **SBool[H]** subtype 
+  - class **Lie[H]:** "falsy" **SBool[H]** subtype 
+
+______________________________________________________________________
+
+### Circular Array: pythonic_fp.circulararray
 
 Stateful circular array data structures each with
 
@@ -63,7 +72,7 @@ Two types
 
 ______________________________________________________________________
 
-### Containers: pythonic-fp-containers
+### Containers: pythonic_fp.containers
 
 Python package of container like data structures.
 
@@ -72,7 +81,7 @@ Python package of container like data structures.
 
 ______________________________________________________________________
 
-### FP Tools: pythonic-fp-fptools
+### FP Tools: pythonic_fp.fptools
 
 A Functional programming library for Python.
 
@@ -81,7 +90,15 @@ in a way which endeavors to remain Pythonic.
 
 ______________________________________________________________________
 
-### pythonic-fp-iterables
+### Gadgets: pythonic_fp.gadgets
+
+The gadgets package is intended for **simple tools** with minimal
+dependencies that may have multiple locations, or no good location,
+to where they can go.
+
+______________________________________________________________________
+
+### Tools for Iterables - pythonic_fp.iterables
 
 Tools for creating iterators from iterables.
 
@@ -91,7 +108,7 @@ Tools for creating iterators from iterables.
 
 ______________________________________________________________________
 
-### pythonic-fp-singletons
+### Useful Singletons - pythonic_fp.singletons
 
 Singleton classes representing
 
@@ -99,35 +116,36 @@ Singleton classes representing
 - sentinel values
 - failed calculations
 
-Also a class to implement subtypeable Boolean values.
-
-- Python bool cannot be subclassed, this one can
-
 ______________________________________________________________________
 
-### pythonic-fp-splitends
+### Splitends - pythonic_fp.splitends
 
 The splitends package implements a singularly linked LIFO queue called
 a ``SplitEnd``. These data structures can safely share data nodes
 between themselves and form branching *hair-like* data structures.
 
-______________________________________________________________________
 
-[100]: https://pypi.org/project/pythonic-fp
+[100]: https://pypi.org/project/pythonic-fp-booleans
 [101]: https://pypi.org/project/pythonic-fp-circulararray
 [102]: https://pypi.org/project/pythonic-fp-containers
 [103]: https://pypi.org/project/pythonic-fp-fptools
-[104]: https://pypi.org/project/pythonic-fp-iterables
-[105]: https://pypi.org/project/pythonic-fp-splitends
-[200]: https://github.com/grscheller/pythonic-fp
+[104]: https://pypi.org/project/pythonic-fp
+[105]: https://pypi.org/project/pythonic-fp-iterables
+[106]: https://pypi.org/project/pythonic-fp-singletons
+[107]: https://pypi.org/project/pythonic-fp-splitends
+[200]: https://github.com/grscheller/pythonic-fp-booleans
 [201]: https://github.com/grscheller/pythonic-fp-circulararray
 [202]: https://github.com/grscheller/pythonic-fp-containers
 [203]: https://github.com/grscheller/pythonic-fp-fptools
-[204]: https://github.com/grscheller/pythonic-fp-iterables
-[205]: https://github.com/grscheller/pythonic-fp-splitends
-[300]: https://grscheller.github.io/pythonic-fp/gadgets/development/build/html
+[204]: https://github.com/grscheller/pythonic-fp
+[205]: https://github.com/grscheller/pythonic-fp-iterables
+[206]: https://github.com/grscheller/pythonic-fp-singletons
+[207]: https://github.com/grscheller/pythonic-fp-splitends
+[300]: https://grscheller.github.io/pythonic-fp/booleans/development/build/html
 [301]: https://grscheller.github.io/pythonic-fp/circulararray/development/build/html
 [302]: https://grscheller.github.io/pythonic-fp/containers/development/build/html
 [303]: https://grscheller.github.io/pythonic-fp/fptools/development/build/html
-[304]: https://grscheller.github.io/pythonic-fp/iterables/development/build/html
-[305]: https://grscheller.github.io/pythonic-fp/splitends/development/build/html
+[304]: https://grscheller.github.io/pythonic-fp/gadgets/development/build/html
+[305]: https://grscheller.github.io/pythonic-fp/iterables/development/build/html
+[306]: https://grscheller.github.io/pythonic-fp/singletons/development/build/html
+[307]: https://grscheller.github.io/pythonic-fp/splitends/development/build/html
