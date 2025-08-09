@@ -23,8 +23,8 @@ class TestGadgetIt:
         trg0: list[int] = list(it())
         assert ref0 == trg0
 
-        ref1 = [1, 2, 4, 8, 42]
-        trg1 = list(it(1, 2, 4, 8, 42))
+        ref1 = [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2046, 4092]
+        trg1 = list(it(1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2046, 4092))
         assert ref1 == trg1
 
         ref2 = [1, 2, 3]

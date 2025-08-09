@@ -5,17 +5,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>singletons.sentinel &#8212; Pythonic FP - Singletons 1.0.1 documentation</title>
+    <title>singletons.sentinel &#8212; Pythonic FP - Singletons 2.0.0 documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/basic_mod.css?v=9b2032db" />
-    <script src="../_static/documentation_options.js?v=292eb321"></script>
+    <script src="../_static/documentation_options.js?v=51b770b3"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <script src="../_static/js/petite-vue.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="singletons.sbool" href="sbool.html" />
     <link rel="prev" title="singletons.novalue" href="novalue.html" /> 
   </head><body data-dark_mode_code_blocks="true">
 
@@ -30,7 +29,7 @@
         <p id="toggle_sidebar">
             <a href="#" title="Toggle sidebar">|||</a>
         </p>
-        <h1><a href="../index.html" title="Go to homepage">Pythonic FP - Singletons 1.0.1 documentation</a></h1>
+        <h1><a href="../index.html" title="Go to homepage">Pythonic FP - Singletons 2.0.0 documentation</a></h1>
 
         <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
     <template v-if="mode == 'light'">
@@ -135,10 +134,8 @@
 <p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">pythonic_fp.singletons</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="nada.html">singletons.nada</a></li>
 <li class="toctree-l2"><a class="reference internal" href="novalue.html">singletons.novalue</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">singletons.sentinel</a></li>
-<li class="toctree-l2"><a class="reference internal" href="sbool.html">singletons.sbool</a></li>
 </ul>
 </li>
 </ul>
@@ -154,40 +151,78 @@
             
   <section id="module-pythonic_fp.singletons.sentinel">
 <span id="singletons-sentinel"></span><h1>singletons.sentinel<a class="headerlink" href="#module-pythonic_fp.singletons.sentinel" title="Link to this heading">¶</a></h1>
-<p>Singleton classes representing sentinel values.</p>
-<p>Intended for library code, not to be exported/shared between modules,
-otherwise some of its intended typing guarantees may be lost.</p>
-<p>Useful substitute for <code class="docutils literal notranslate"><span class="pre">None</span></code> as a hidden implementation detail.</p>
-<ul class="simple">
-<li><p>allows <code class="docutils literal notranslate"><span class="pre">None</span></code> to be stored in data structures</p></li>
-<li><p>allows end users to choose to use <code class="docutils literal notranslate"><span class="pre">None</span></code> or <code class="docutils literal notranslate"><span class="pre">()</span></code> as “sentinel” values</p></li>
-<li><p>always equals itself (unlike <code class="docutils literal notranslate"><span class="pre">NoValue</span></code>)</p></li>
-<li><p>never equals anything else</p></li>
-</ul>
-<p><strong>Usage:</strong></p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">pythonic_fp.singletons.sentinel</span><span class="w"> </span><span class="kn">import</span> <span class="n">Sentinel</span>
+<p>Sentinel values of different flavors.</p>
+<p>Can be used with functions or classes,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Final</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pythonic_fp.singletons.sentinel</span><span class="w"> </span><span class="kn">import</span> <span class="n">Sentinel</span>
 
-<span class="n">_my_sentinel</span><span class="p">:</span> <span class="n">Final</span><span class="p">[</span><span class="n">Sentinel</span><span class="p">]</span> <span class="o">=</span> <span class="n">Sentinel</span><span class="p">(</span><span class="s1">&#39;my_sentinel&#39;</span><span class="p">)</span>
-<span class="n">_another_one</span><span class="p">:</span> <span class="n">Final</span><span class="p">[</span><span class="n">Sentinel</span><span class="p">]</span> <span class="o">=</span> <span class="n">Sentinel</span><span class="p">(</span><span class="s1">&#39;foofoo rules&#39;</span><span class="p">)</span>
+<span class="n">my_sentinel</span><span class="p">:</span> <span class="n">Final</span><span class="p">[</span><span class="n">Sentinel</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="n">Sentinel</span><span class="p">(</span><span class="s1">&#39;my_sentinel&#39;</span><span class="p">)</span>
+<span class="n">ultimate_one</span><span class="p">:</span> <span class="n">Final</span><span class="p">[</span><span class="n">Sentinel</span><span class="p">[</span><span class="nb">int</span><span class="p">]]</span> <span class="o">=</span> <span class="n">Sentinel</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+<span class="n">one_sentinel</span><span class="p">:</span> <span class="n">Final</span><span class="p">[</span><span class="n">Sentinel</span><span class="p">[</span><span class="nb">int</span><span class="p">]]</span> <span class="o">=</span> <span class="n">Sentinel</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 
-<span class="k">if</span> <span class="n">some_ref</span> <span class="ow">is</span> <span class="n">_my_sentinel</span><span class="p">:</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">figure_something_out</span><span class="p">(</span><span class="n">n</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Sentinel</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span>
     <span class="o">...</span>
 
-<span class="k">if</span> <span class="k">if</span> <span class="n">some_ref</span> <span class="ow">is</span> <span class="n">Sentinel</span><span class="p">(</span><span class="s1">&#39;foofoo rules&#39;</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">do_something</span><span class="p">(</span><span class="n">sentinel</span><span class="p">:</span> <span class="n">Sentinel</span><span class="p">[</span><span class="nb">int</span><span class="p">]):</span>
     <span class="o">...</span>
+
+<span class="n">do_something</span><span class="p">(</span><span class="n">figure_something_out</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">))</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">my_class</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="nb">float</span> <span class="o">|</span> <span class="n">Sentinel</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">value</span> <span class="ow">is</span> <span class="n">my_sentinel</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="mf">42.0</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">get_value</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">value</span>
+</pre></div>
+</div>
+<p>Can be used as a private implementation detail for a class,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;my_class&#39;</span><span class="p">]</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">ClassVar</span><span class="p">,</span> <span class="n">Final</span><span class="p">,</span> <span class="n">final</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pythonic_fp.singletons.sentinel</span><span class="w"> </span><span class="kn">import</span> <span class="n">Sentinel</span>
+
+<span class="nd">@final</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">my_class</span><span class="p">():</span>
+
+    <span class="n">_sentinel</span><span class="p">:</span> <span class="n">Final</span><span class="p">[</span><span class="n">ClassVar</span><span class="p">[</span><span class="n">Sentinel</span><span class="p">[</span><span class="nb">str</span><span class="p">]]]</span> <span class="o">=</span> <span class="n">Sentinel</span><span class="p">(</span><span class="s1">&#39;_my_class_secret_str&#39;</span><span class="p">)</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">number</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="n">Sentinel</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sentinel</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">number</span> <span class="ow">is</span> <span class="n">_sentinel</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">number</span> <span class="o">=</span> <span class="mi">42</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">number</span> <span class="o">=</span> <span class="n">number</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">get_number</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">number</span>
 </pre></div>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Can be compared using either <code class="docutils literal notranslate"><span class="pre">is</span></code> and <code class="docutils literal notranslate"><span class="pre">is</span> <span class="pre">not</span></code> or <code class="docutils literal notranslate"><span class="pre">==</span></code> and <code class="docutils literal notranslate"><span class="pre">!=</span></code>. A Sentinel
-value always equals itself and never equals anything else, especially other sentinel
-values defined with different strings.</p>
+<p>Threadsafe.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Can be compared using <code class="docutils literal notranslate"><span class="pre">==</span></code> and <code class="docutils literal notranslate"><span class="pre">!=</span></code>. A Sentinel
+value always equals itself and never equals anything else,
+especially other sentinel values defined with different flavors.</p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>When comparing using <code class="docutils literal notranslate"><span class="pre">==</span></code> or <code class="docutils literal notranslate"><span class="pre">!=</span></code> put the known sentinel value first to ensure
-reference equality is used.</p>
+<p>Useful substitute for <code class="docutils literal notranslate"><span class="pre">None</span></code> for “optional” values. Don’t export to
+use as a hidden implementation detail. Does not clash with end user
+code which may use either <code class="docutils literal notranslate"><span class="pre">None</span></code> or <code class="docutils literal notranslate"><span class="pre">()</span></code> as “sentinel” values.</p>
+<p>To ensure that reference equality is used for either <code class="docutils literal notranslate"><span class="pre">==</span></code> or <code class="docutils literal notranslate"><span class="pre">!=</span></code>,
+put the known sentinel value first.</p>
 </div>
+<dl class="py class">
+<dt class="sig sig-object py" id="pythonic_fp.singletons.sentinel.Sentinel">
+<em class="property"><span class="k"><span class="pre">final</span></span><span class="w"> </span><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.singletons.sentinel.</span></span><span class="sig-name descname"><span class="pre">Sentinel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flavor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">H</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.singletons.sentinel.Sentinel" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
 </section>
 
 
@@ -195,6 +230,23 @@ reference equality is used.</p>
           </div>
         </div>
       </div>
+    
+        <div id="show_right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&lt;</span><span>Page contents</span></a></p>
+        </div>
+
+        <div id="right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&gt;</span><span>Page contents:</span></a></p>
+            <div class="page_toc">
+                <ul>
+<li><a class="reference internal" href="#">singletons.sentinel</a><ul>
+<li><a class="reference internal" href="#pythonic_fp.singletons.sentinel.Sentinel"><code class="docutils literal notranslate"><span class="pre">Sentinel</span></code></a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </div>
     
 
       <div class="clearer"></div>
@@ -209,8 +261,6 @@ reference equality is used.</p>
             </div>
 
             <div class="right">
-                
-                    <a href="sbool.html"><span>singletons.sbool</span><span class="icon">&gt;</span></a>
                 
             </div>
         </div>

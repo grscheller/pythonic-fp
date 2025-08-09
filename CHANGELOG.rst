@@ -9,7 +9,12 @@ remain Pythonic. All projects are under the ``pythonic-fp`` namespace on PyPI.
 Important Milestones
 --------------------
 
-2025-08-02 - Beginning coordinated release of pythonic-fp namespace projects
+2025-08-09 - Preparing for upcoming PyPI release for gadgets
+
+- decided to make gadget's pyproject.toml the exemplar for rest of pythonic-fp namespace
+- pythonic_fp.gadget works with previous and next release of singletons
+
+2025-08-02 - Completed coordinated release of pythonic-fp namespace projects
 
 - released pythonic-fp v1.1.0 which contains pythonic_fp.gadgets package
 - released pythonic-fp-circulararray v5.3.0 immediately followed by v5.3.1

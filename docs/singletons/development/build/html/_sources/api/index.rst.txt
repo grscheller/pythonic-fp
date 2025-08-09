@@ -9,12 +9,6 @@ pythonic_fp.singletons
    :maxdepth: 1
    :hidden:
 
-   nada
-
-.. toctree::
-   :maxdepth: 1
-   :hidden:
-
    novalue
 
 .. toctree::
@@ -22,9 +16,3 @@ pythonic_fp.singletons
    :hidden:
 
    sentinel
-
-.. toctree::
-   :maxdepth: 1
-   :hidden:
-
-   sbool

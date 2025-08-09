@@ -21,7 +21,7 @@ Library of simple, but useful, data structures with minimal dependencies.
 +==============================================+=============================+
 | Single item box                              | ``pythonic_fp.gadgets.box`` |
 +----------------------------------------------+-----------------------------+
-| function returning iterator of its arguments | ``pythonic_fp.gadgets.it``  |
+| Function returning iterator of its arguments | ``pythonic_fp.gadgets.it``  |
 +----------------------------------------------+-----------------------------+
 
 """

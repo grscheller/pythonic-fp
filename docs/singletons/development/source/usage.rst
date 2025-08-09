@@ -19,4 +19,3 @@ Import the singletons classes into your code.
 
     from pythonic_fp.singletons.sentinel
     from pythonic_fp.singletons.novalue
-    from pythonic_fp.singletons.nada

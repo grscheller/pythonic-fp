@@ -5,10 +5,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>singletons.novalue &#8212; Pythonic FP - Singletons 1.0.1 documentation</title>
+    <title>singletons.novalue &#8212; Pythonic FP - Singletons 2.0.0 documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/basic_mod.css?v=9b2032db" />
-    <script src="../_static/documentation_options.js?v=292eb321"></script>
+    <script src="../_static/documentation_options.js?v=51b770b3"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
@@ -16,7 +16,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="singletons.sentinel" href="sentinel.html" />
-    <link rel="prev" title="singletons.nada" href="nada.html" /> 
+    <link rel="prev" title="pythonic_fp.singletons" href="index.html" /> 
   </head><body data-dark_mode_code_blocks="true">
 
 <div id="top_nav">
@@ -30,7 +30,7 @@
         <p id="toggle_sidebar">
             <a href="#" title="Toggle sidebar">|||</a>
         </p>
-        <h1><a href="../index.html" title="Go to homepage">Pythonic FP - Singletons 1.0.1 documentation</a></h1>
+        <h1><a href="../index.html" title="Go to homepage">Pythonic FP - Singletons 2.0.0 documentation</a></h1>
 
         <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
     <template v-if="mode == 'light'">
@@ -135,10 +135,8 @@
 <p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">pythonic_fp.singletons</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="nada.html">singletons.nada</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">singletons.novalue</a></li>
 <li class="toctree-l2"><a class="reference internal" href="sentinel.html">singletons.sentinel</a></li>
-<li class="toctree-l2"><a class="reference internal" href="sbool.html">singletons.sbool</a></li>
 </ul>
 </li>
 </ul>
@@ -157,13 +155,13 @@
 <p>Singleton class representing a missing value.</p>
 <p>In untyped Python, both <code class="docutils literal notranslate"><span class="pre">None</span></code> and <code class="docutils literal notranslate"><span class="pre">()</span></code> are often used as sentinel values.
 When typing tools like MyPy are used, both are shoe-horded into Union types.</p>
-<p><code class="docutils literal notranslate"><span class="pre">NoValue()</span></code> is a singleton object  representing a missing value.</p>
-<p>Given variables <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code> where</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">x:</span> <span class="pre">int</span> <span class="pre">|</span> <span class="pre">NoValue</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">y:</span> <span class="pre">int</span> <span class="pre">|</span> <span class="pre">NoValue</span></code></p></li>
-</ul>
-<p>Equality between them means both values exist and compare as equal.
+<p><code class="docutils literal notranslate"><span class="pre">NoValue()</span></code> is a singleton object representing a missing value.</p>
+<p>Given variables</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="n">NoValue</span>
+<span class="n">y</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="n">NoValue</span>
+</pre></div>
+</div>
+<p>Equality between <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code> means both values exist and compare as equal.
 If one or both of theses values are missing, then what is there to compare?</p>
 <table class="docutils align-default" id="id1">
 <caption><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">==</span> <span class="pre">y</span></code></span><a class="headerlink" href="#id1" title="Link to this table">¶</a></caption>
@@ -221,9 +219,17 @@ If one or both of theses values are missing, then what is there to compare?</p>
 </table>
 <p>Of course, we can also compare directly by identity.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">x</span> <span class="ow">is</span> <span class="n">NoValue</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;do something&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;nobody home&#39;</span><span class="p">)</span>
     <span class="o">...</span>
 </pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Threadsafe only if instantiated before going multi-threaded.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Non-standard (unpythonic?) <code class="docutils literal notranslate"><span class="pre">==</span></code> and <code class="docutils literal notranslate"><span class="pre">!=</span></code> comparison operators.</p>
 </div>
 </section>
 
@@ -240,8 +246,8 @@ If one or both of theses values are missing, then what is there to compare?</p>
         <div class="button_nav">
             <div class="left">
                 
-                <a href="nada.html">
-                    <span class="icon">&lt;</span><span>singletons.nada</span></a>
+                <a href="index.html">
+                    <span class="icon">&lt;</span><span>pythonic_fp.singletons</span></a>
                 
             </div>
 

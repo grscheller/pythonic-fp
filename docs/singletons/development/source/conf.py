@@ -13,7 +13,7 @@
 project = 'Pythonic FP - Singletons'
 copyright = '2023-2025, Geoffrey R. Scheller'
 author = 'Geoffrey R. Scheller'
-release = '1.0.1' 
+release = '2.0.0' 
 proposed_release_string = 'a proposed'
 # proposed_release_string = 'the'
 

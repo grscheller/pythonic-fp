@@ -10,14 +10,14 @@ Pythonic FP is a hobby project, but the maintainer is serious about its quality.
 
 | Name | PyPI | GitHub | Docs | Python Package |
 |:---- |:----:|:------:|:----:|:-------------- |
-| [Booleans](#booleans) | [pythonic-fp-booleans][10x] | [gh][20x] | [gh_pages][30x] | pythonic_fp.Booleans |
-| [Circular Array](#circular-array) | [pythonic-fp-circulararray][101] | [gh][201] | [gh_pages][301] | pythonic_fp.circulararray |
-| [Containers](#containers) | [pythonic-fp-containers][102] | [gh][202] | [gh_pages][302] | pythonic_fp.containers |
-| [FP Tools](#fp-tools) | [pythonic-fp-fptools][103] | [gh][203] | [gh_pages][303] | pythonic_fp.fptools |
-| [Gadgets](#gadgets) | [pythonic-fp][100] | [gh][200] | [gh_pages][300] | pythonic_fp.gadgets |
-| [Iterables](#tools-for-iterables) | [pythonic-fp-iterables][105] | [gh][205] | [gh_pages][305] | pythonic_fp.iterables |
-| [Singletons](#useful-singletons) | [pythonic-fp-singletons][106] | [gh][206] | [gh_pages][306] | pythonic_fp.singletons |
-| [Splitends](#splitends) | [pythonic-fp-splitends][107] | [gh][207] | [gh_pages][307] | pythonic_fp.splitends |
+| [Booleans](#booleans-pythonic-fp-booleans) | [pythonic-fp-booleans][100] | [gh][200] | [gh_pages][300] | pythonic_fp.Booleans |
+| [Circular Array](#circular-array-pythonic-fp-circulararray) | [pythonic-fp-circulararray][101] | [gh][201] | [gh_pages][301] | pythonic_fp.circulararray |
+| [Containers](#containers-pythonic-fp-containers) | [pythonic-fp-containers][102] | [gh][202] | [gh_pages][302] | pythonic_fp.containers |
+| [FP Tools](#fp-tools-pythonic-fp-fptools) | [pythonic-fp-fptools][103] | [gh][203] | [gh_pages][303] | pythonic_fp.fptools |
+| [Gadgets](#gadgets-pythonic-fp-gadgets) | [pythonic-fp][104] | [gh][204] | [gh_pages][304] | pythonic_fp.gadgets |
+| [Iterables](#tools-for-iterables-pythonic-fp-iterables) | [pythonic-fp-iterables][105] | [gh][205] | [gh_pages][305] | pythonic_fp.iterables |
+| [Singletons](#useful-singletons-pythonic-fp-singletons) | [pythonic-fp-singletons][106] | [gh][206] | [gh_pages][306] | pythonic_fp.singletons |
+| [Splitends](#splitends-pythonic-fp-splitends) | [pythonic-fp-splitends][107] | [gh][207] | [gh_pages][307] | pythonic_fp.splitends |
 
 The overall project's name is **Pythonic FP** and consists of PyPI
 projects all under the `pythonic-fp` project namespace. This corresponds
