@@ -9,6 +9,10 @@ remain Pythonic. All projects are under the ``pythonic-fp`` namespace on PyPI.
 Important Milestones
 --------------------
 
+2025-08-11 - The next gadget's release will be v1.2.0
+
+- added module pythonic_fp.gadgets.lca for function latest common ancestor
+
 2025-08-09 - Preparing for upcoming PyPI release for gadgets
 
 - decided to make gadget's pyproject.toml the exemplar for rest of pythonic-fp namespace
