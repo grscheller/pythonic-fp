@@ -8,7 +8,7 @@ PyPI releases
 +===========================================================================================+==============+
 | `development <https://grscheller.github.io/pythonic-fp/gadgets/development/build/html/>`_ | TBD          |
 +-------------------------------------------------------------------------------------------+--------------+
-| `v1.2.0 <https://grscheller.github.io/pythonic-fp/gadgets/v1.2.0/build/html/>`_            | TBD          |
+| `v1.2.0 <https://grscheller.github.io/pythonic-fp/gadgets/v1.2.0/build/html/>`_           | TBD          |
 +-------------------------------------------------------------------------------------------+--------------+
-| `v1.1.0 <https://grscheller.github.io/pythonic-fp/gadgets/v1.1.0/build/html/>`_            | 2025-08-02   |
+| `v1.1.0 <https://grscheller.github.io/pythonic-fp/gadgets/v1.1.0/build/html/>`_           | 2025-08-02   |
 +-------------------------------------------------------------------------------------------+--------------+
