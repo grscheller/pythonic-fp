@@ -17,10 +17,10 @@
 from inspect import getmro
 from typing import Never
 
-__all__ = ['lastest_common_ancestor']
+__all__ = ['latest_common_ancestor']
 
 
-def lastest_common_ancestor(cls1: type, cls2: type) -> type | Never:
+def latest_common_ancestor(cls1: type, cls2: type) -> type | Never:
     """Find the least upper bound in the inheritance graph
     of two classes.
 
