@@ -14,8 +14,6 @@
 
 """Class for a stateful container that can hold at most one item."""
 
-from __future__ import annotations
-
 __all__ = ['Box']
 
 from collections.abc import Callable, Iterator
@@ -41,7 +39,7 @@ class Box[D]:
     __slots__ = ('_item',)
     __match_args__ = ('_item',)
 
-    _sentinel: Final[ClassVar[Sentinel[str]]] = Sentinel('Box')
+    _sentinel: Final[ClassVar[Sentinel[str]]] = Sentinel('_Box')
 
     T = TypeVar('T')
 
@@ -50,7 +48,7 @@ class Box[D]:
     @overload
     def __init__(self, value: D) -> None: ...
 
-    def __init__(self, value: D | Sentinel[str] = Sentinel('Box')) -> None:
+    def __init__(self, value: D | Sentinel[str] = Sentinel('_Box')) -> None:
         """Initialize Box with an "optional" initial value.
 
            :param value: an "optional" initial value for Box.
@@ -59,7 +57,7 @@ class Box[D]:
         self._item: D | Sentinel[str] = value
 
     def __bool__(self) -> bool:
-        return self._item is not Sentinel('Box')
+        return self._item is not Sentinel('_Box')
 
     def __iter__(self) -> Iterator[D]:
         if self:
@@ -88,7 +86,7 @@ class Box[D]:
     @overload
     def get(self, alt: D) -> D: ...
 
-    def get(self, alt: D | Sentinel[str] = Sentinel('Box')) -> D | Never:
+    def get(self, alt: D | Sentinel[str] = Sentinel('_Box')) -> D | Never:
         """Return the contained value if it exists, otherwise an alternate value.
 
         :param alt: an "optional" value to return if Box is empty
@@ -123,7 +121,7 @@ class Box[D]:
         :raises ValueError: if Box is not empty
 
         """
-        if self._item is Sentinel('Box'):
+        if self._item is Sentinel('_Box'):
             self._item = item
         else:
             msg = 'Box: Trying to push an item in a non-empty Box'
@@ -147,7 +145,7 @@ class Box[D]:
         self._item = new_item
         return popped
 
-    def map[T](self, f: Callable[[D], T]) -> Box[T]:
+    def map[T](self, f: Callable[[D], T]) -> 'Box[T]':
         """Map function ``f`` over contents. We need to return a new
         instance since the type of Box can change.
 
@@ -155,11 +153,11 @@ class Box[D]:
         :return: a new instance
 
         """
-        if self._item is Sentinel('Box'):
+        if self._item is Sentinel('_Box'):
             return Box()
         return Box(f(cast(D, self._item)))
 
-    def bind[T](self, f: Callable[[D], Box[T]]) -> Box[T]:
+    def bind[T](self, f: Callable[[D], 'Box[T]']) -> 'Box[T]':
         """Flatmap ``Box`` with function ``f``.
 
         :param f: binding function

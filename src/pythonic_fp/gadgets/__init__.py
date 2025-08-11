@@ -14,15 +14,17 @@
 
 """Simple Gadgets.
 
-Library of simple, but useful, data structures with minimal dependencies.
+Library of simple, but useful, functions and classes with minimal dependencies.
 
-+----------------------------------------------+-----------------------------+
-| Description                                  | Module                      |
-+==============================================+=============================+
-| Single item box                              | ``pythonic_fp.gadgets.box`` |
-+----------------------------------------------+-----------------------------+
-| Function returning iterator of its arguments | ``pythonic_fp.gadgets.it``  |
-+----------------------------------------------+-----------------------------+
++--------------------------------+----------------------------------------------+------------------------------+
+| Gadget                         | Description                                  | Module                       |
++================================+========+====================================+==============================+
+| class Box                      | Single item box                              | ``pythonic_fp.gadgets.box``  |
++--------------------------------+----------------------------------------------+------------------------------+
+| function it                    | Function returning iterator of its arguments | ``pythonic_fp.gadgets.it``   |
++--------------------------------+----------------------------------------------+------------------------------+
+| function least_common_ancestor | Function to find a least common base class   | ``pythonic_fp.gadgets.lca``  |
++--------------------------------+----------------------------------------------+------------------------------+
 
 """
 

@@ -63,7 +63,7 @@ warn_unused_configs = true
 [tool.pylsp-mypy]
 enabled = true
 live-mode = true
-dmypy = false
+dmypy = true
 strict = true
 report_progress = true
 
@@ -80,6 +80,7 @@ docstring-quotes = "double"
 
 [tool.ruff.lint.per-file-ignores]
 "tests/*" = ["C901"]
+"**/*.py" = ["E741"]
 
 [tool.ruff.format]
 quote-style = "single"
