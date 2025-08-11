@@ -12,15 +12,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Least Common Ancestor of Two Classes."""
+"""Lastest Common Ancestor of Two Classes."""
 
 from inspect import getmro
 from typing import Never
 
-__all__ = ['least_common_ancestor']
+__all__ = ['lastest_common_ancestor']
 
 
-def least_common_ancestor(cls1: type, cls2: type) -> type | Never:
+def lastest_common_ancestor(cls1: type, cls2: type) -> type | Never:
     """Find the least upper bound in the inheritance graph
     of two classes.
 
@@ -38,7 +38,7 @@ def least_common_ancestor(cls1: type, cls2: type) -> type | Never:
     :param cls1: first class
     :param cls2: second class
     :returns: least common ancestor base class of cls1 and cls2
-    :raises TypeError:
+    :raises TypeError: theoretically only from inspect.getmto
 
     """
     if issubclass(cls1, cls2):
@@ -46,11 +46,7 @@ def least_common_ancestor(cls1: type, cls2: type) -> type | Never:
     if issubclass(cls2, cls1):
         return cls1
 
-    for common_ancestor in reversed(
-        getmro(type('LcaDiamondClass', (cls1, cls2), {}))
-    ):
-        if common_ancestor is object:
-            continue
+    for common_ancestor in getmro(type('LcaDiamondClass', (cls1, cls2), {})):
         if issubclass(cls1, common_ancestor) and issubclass(cls2, common_ancestor):
             return common_ancestor
-    return object
+    raise TypeError("latest_common_ancestor: no common ancestor found!!!") 

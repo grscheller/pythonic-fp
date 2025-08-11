@@ -14,6 +14,6 @@
 
 from typing import Never
 
-__all__ = ['least_common_ancestor']
+__all__ = ['lastest_common_ancestor']
 
-def least_common_ancestor(cls1: type, cls2: type) -> type | Never: ...
+def lastest_common_ancestor(cls1: type, cls2: type) -> type | Never: ...
