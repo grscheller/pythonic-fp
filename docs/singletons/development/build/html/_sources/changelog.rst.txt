@@ -1,0 +1,7 @@
+changelog
+---------
+
+Change log for the former
+`pythonic-fp-singletons
+<https://github.com/grscheller/pythonic-fp-sentinels/blob/main/CHANGELOG.rst>`_
+PyPI project.
