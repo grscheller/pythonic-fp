@@ -9,6 +9,7 @@ Library of simple, but useful, data structures with minimal dependencies.
 
 - single item box
 - function returning iterator of its arguments
+- find the last common ancestor of two classes
 
 This PyPI project is part of of the grscheller
 `pythonic-fp namespace projects
