@@ -151,53 +151,43 @@
             
   <section id="module-pythonic_fp.singletons.sentinel">
 <span id="singletons-sentinel"></span><h1>singletons.sentinel<a class="headerlink" href="#module-pythonic_fp.singletons.sentinel" title="Link to this heading">¶</a></h1>
-<p>Sentinel values of different flavors.</p>
-<p>Can be used with functions or classes,</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Final</span>
+<p>Sentinel values of different flavors. Can be used
+with functions or classes.</p>
+<p><strong>Some Use Casses</strong></p>
+<p>Could be used like an Enum.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">pythonic_fp.singletons.sentinel</span><span class="w"> </span><span class="kn">import</span> <span class="n">Sentinel</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">calculate_something</span><span class="p">(</span><span class="n">n</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="n">Sentinel</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span> <span class="nb">float</span><span class="p">]:</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="p">(</span><span class="n">Sentinel</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="n">x</span><span class="p">)</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">Sentinel</span><span class="p">(</span><span class="n">n</span><span class="p">),</span> <span class="n">x</span><span class="o">/</span><span class="n">n</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">process_result</span><span class="p">(</span><span class="n">pair</span><span class="p">:</span> <span class="nb">tuple</span><span class="p">[</span><span class="n">Sentinel</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span> <span class="nb">float</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">pair</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">is</span> <span class="n">Sentinel</span><span class="p">(</span><span class="mi">0</span><span class="p">):</span>
+        <span class="k">return</span> <span class="mf">0.0</span>
+    <span class="k">return</span> <span class="n">pair</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="n">result</span> <span class="o">=</span> <span class="n">process_result</span><span class="p">(</span><span class="n">calculate_something</span><span class="p">(</span><span class="mi">213</span><span class="p">,</span> <span class="mf">15234.541</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Can be also be used as a private implementation detail for a class.
+Here is an example of an class that can take an “optional” value
+yet still be able to store <code class="docutils literal notranslate"><span class="pre">None</span></code> as a value.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">ClassVar</span><span class="p">,</span> <span class="n">Final</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">pythonic_fp.singletons.sentinel</span><span class="w"> </span><span class="kn">import</span> <span class="n">Sentinel</span>
 
-<span class="n">my_sentinel</span><span class="p">:</span> <span class="n">Final</span><span class="p">[</span><span class="n">Sentinel</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="n">Sentinel</span><span class="p">(</span><span class="s1">&#39;my_sentinel&#39;</span><span class="p">)</span>
-<span class="n">ultimate_one</span><span class="p">:</span> <span class="n">Final</span><span class="p">[</span><span class="n">Sentinel</span><span class="p">[</span><span class="nb">int</span><span class="p">]]</span> <span class="o">=</span> <span class="n">Sentinel</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
-<span class="n">one_sentinel</span><span class="p">:</span> <span class="n">Final</span><span class="p">[</span><span class="n">Sentinel</span><span class="p">[</span><span class="nb">int</span><span class="p">]]</span> <span class="o">=</span> <span class="n">Sentinel</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-
-<span class="k">def</span><span class="w"> </span><span class="nf">figure_something_out</span><span class="p">(</span><span class="n">n</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Sentinel</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span>
-    <span class="o">...</span>
-
-<span class="k">def</span><span class="w"> </span><span class="nf">do_something</span><span class="p">(</span><span class="n">sentinel</span><span class="p">:</span> <span class="n">Sentinel</span><span class="p">[</span><span class="nb">int</span><span class="p">]):</span>
-    <span class="o">...</span>
-
-<span class="n">do_something</span><span class="p">(</span><span class="n">figure_something_out</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">))</span>
-
 <span class="k">class</span><span class="w"> </span><span class="nc">my_class</span><span class="p">:</span>
-    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="nb">float</span> <span class="o">|</span> <span class="n">Sentinel</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+
+    <span class="n">_sentinel</span><span class="p">:</span> <span class="n">Final</span><span class="p">[</span><span class="n">ClassVar</span><span class="p">[</span><span class="n">Sentinel</span><span class="p">[</span><span class="nb">str</span><span class="p">]]]</span> <span class="o">=</span> <span class="n">Sentinel</span><span class="p">(</span><span class="s1">&#39;_my_class_secret_str&#39;</span><span class="p">)</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="nb">float</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">|</span> <span class="n">Sentinel</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">value</span> <span class="ow">is</span> <span class="n">my_sentinel</span><span class="p">:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="mf">42.0</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="n">value</span>
 
-    <span class="k">def</span><span class="w"> </span><span class="nf">get_value</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">get_value</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span> <span class="o">|</span> <span class="kc">None</span><span class="p">:</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">value</span>
-</pre></div>
-</div>
-<p>Can be used as a private implementation detail for a class,</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;my_class&#39;</span><span class="p">]</span>
-
-<span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">ClassVar</span><span class="p">,</span> <span class="n">Final</span><span class="p">,</span> <span class="n">final</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">pythonic_fp.singletons.sentinel</span><span class="w"> </span><span class="kn">import</span> <span class="n">Sentinel</span>
-
-<span class="nd">@final</span>
-<span class="k">class</span><span class="w"> </span><span class="nc">my_class</span><span class="p">():</span>
-
-    <span class="n">_sentinel</span><span class="p">:</span> <span class="n">Final</span><span class="p">[</span><span class="n">ClassVar</span><span class="p">[</span><span class="n">Sentinel</span><span class="p">[</span><span class="nb">str</span><span class="p">]]]</span> <span class="o">=</span> <span class="n">Sentinel</span><span class="p">(</span><span class="s1">&#39;_my_class_secret_str&#39;</span><span class="p">)</span>
-
-    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">number</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="n">Sentinel</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sentinel</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">number</span> <span class="ow">is</span> <span class="n">_sentinel</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">number</span> <span class="o">=</span> <span class="mi">42</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">number</span> <span class="o">=</span> <span class="n">number</span>
-
-    <span class="k">def</span><span class="w"> </span><span class="nf">get_number</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">number</span>
 </pre></div>
 </div>
 <div class="admonition note">
@@ -208,15 +198,20 @@
 <p class="admonition-title">Note</p>
 <p>Can be compared using <code class="docutils literal notranslate"><span class="pre">==</span></code> and <code class="docutils literal notranslate"><span class="pre">!=</span></code>. A Sentinel
 value always equals itself and never equals anything else,
-especially other sentinel values defined with different flavors.</p>
+especially other sentinel values.</p>
+<p>To ensure that reference equality is used put the known
+sentinel value first.</p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>Useful substitute for <code class="docutils literal notranslate"><span class="pre">None</span></code> for “optional” values. Don’t export to
-use as a hidden implementation detail. Does not clash with end user
-code which may use either <code class="docutils literal notranslate"><span class="pre">None</span></code> or <code class="docutils literal notranslate"><span class="pre">()</span></code> as “sentinel” values.</p>
-<p>To ensure that reference equality is used for either <code class="docutils literal notranslate"><span class="pre">==</span></code> or <code class="docutils literal notranslate"><span class="pre">!=</span></code>,
-put the known sentinel value first.</p>
+<ul class="simple">
+<li><p>don’t export when using as a hidden implementation detail.</p></li>
+<li><p>does not clash with end user code</p>
+<ul>
+<li><p>which may use <code class="docutils literal notranslate"><span class="pre">None</span></code> or <code class="docutils literal notranslate"><span class="pre">()</span></code> as their “sentinel” values.</p></li>
+</ul>
+</li>
+</ul>
 </div>
 <dl class="py class">
 <dt class="sig sig-object py" id="pythonic_fp.singletons.sentinel.Sentinel">
