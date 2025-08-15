@@ -10,7 +10,7 @@
 # when generating the docs for an actual, not proposed, release.
 #
 
-project = 'Pythonic FP - Singletons'
+project = 'Pythonic FP - Sentinels'
 copyright = '2023-2025, Geoffrey R. Scheller'
 author = 'Geoffrey R. Scheller'
 release = '2.0.0' 

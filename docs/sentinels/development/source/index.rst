@@ -1,5 +1,5 @@
-pythonic-fp-singletons
-======================
+pythonic-fp-sentinels
+=====================
 
 .. toctree::
    :caption: Overview

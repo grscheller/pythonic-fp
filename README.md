@@ -16,7 +16,7 @@ Pythonic FP is a hobby project, but the maintainer is serious about its quality.
 | [FP Tools](#fp-tools-pythonic_fpfptools) | [pythonic-fp-fptools][103] | [gh][203] | [gh_pages][303] | pythonic_fp.fptools |
 | [Gadgets](#gadgets-pythonic_fpgadgets) | [pythonic-fp][104] | [gh][204] | [gh_pages][304] | pythonic_fp.gadgets |
 | [Iterables](#tools-for-iterables---pythonic_fpiterables) | [pythonic-fp-iterables][105] | [gh][205] | [gh_pages][305] | pythonic_fp.iterables |
-| [Singletons](#sentinel-values---pythonic_fpsentinels) | [pythonic-fp-sentinels][106] | [gh][206] | [gh_pages][306] | pythonic_fp.sentinels |
+| [Sentinels](#sentinel-values---pythonic_fpsentinels) | [pythonic-fp-sentinels][106] | [gh][206] | [gh_pages][306] | pythonic_fp.sentinels |
 | [Splitends](#splitends---pythonic_fpsplitends) | [pythonic-fp-splitends][107] | [gh][207] | [gh_pages][307] | pythonic_fp.splitends |
 
 The overall project's name is **Pythonic FP** and consists of PyPI
@@ -41,11 +41,8 @@ ______________________________________________________________________
 Boolean type classes which interact well with Python's boolean
 infrastructure.
 
-- class **IBool:** Python's bool cannot be inherited from, this one can be
-- class **SBool[H]:** Subclassed IBool from any hashable type
-
-  - class **Truth[H]:** "truthy" **SBool[H]** subtype 
-  - class **Lie[H]:** "falsy" **SBool[H]** subtype 
+- class **SBool:** Python's bool cannot be inherited from, this one can be
+- class **FBool:** Family of boolean of different "flavors" of truth
 
 ______________________________________________________________________
 
@@ -113,7 +110,7 @@ ______________________________________________________________________
 Singleton classes representing
 
 - missing values (actually missing, not potentially missing)
-- sentinel values
+- distinct sentinel values
 
 ______________________________________________________________________
 

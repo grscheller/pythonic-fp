@@ -2,6 +2,6 @@ changelog
 ---------
 
 Change log for the
-`pythonic-fp-singletons
-<https://github.com/grscheller/pythonic-fp-singletons/blob/main/CHANGELOG.rst>`_
+`pythonic-fp-sentinels
+<https://github.com/grscheller/pythonic-fp-sentinels/blob/main/CHANGELOG.rst>`_
 PyPI project.

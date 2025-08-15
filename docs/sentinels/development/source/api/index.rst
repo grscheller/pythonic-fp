@@ -1,7 +1,7 @@
-pythonic_fp.singletons
-======================
+pythonic_fp.sentinels
+=====================
 
-.. automodule:: pythonic_fp.singletons
+.. automodule:: pythonic_fp.sentinels
    :synopsis:
    :no-index:
 

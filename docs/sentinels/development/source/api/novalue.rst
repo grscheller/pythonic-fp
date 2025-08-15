@@ -1,5 +1,5 @@
-singletons.novalue
-==================
+sentinels.novalue
+=================
 
-.. automodule:: pythonic_fp.singletons.novalue
+.. automodule:: pythonic_fp.sentinels.novalue
    :members:

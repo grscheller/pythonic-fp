@@ -17,5 +17,5 @@ Import the sentinel classes into your code.
 
 .. code:: python
 
-    from pythonic_fp.singletons.sentinel import Sentinel
-    from pythonic_fp.singletons.novalue import NoValue
+    from pythonic_fp.sentinels.sentinel import Sentinel
+    from pythonic_fp.sentinels.novalue import NoValue
