@@ -6,7 +6,7 @@ pythonic_fp.booleans
    :no-index:
 
 .. toctree::
+   :caption: sbool
    :maxdepth: 1
-   :hidden:
 
    sbool

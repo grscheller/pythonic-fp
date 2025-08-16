@@ -18,7 +18,7 @@ __all__ = ['Box']
 
 from collections.abc import Callable, Iterator
 from typing import ClassVar, cast, Final, Never, overload, TypeVar
-from pythonic_fp.singletons.sentinel import Sentinel
+from pythonic_fp.sentinels.sentinel import Sentinel
 
 D = TypeVar('D')
 

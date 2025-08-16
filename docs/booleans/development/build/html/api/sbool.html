@@ -152,6 +152,20 @@
 <span id="booleans-sbool"></span><h1>booleans.sbool<a class="headerlink" href="#module-pythonic_fp.booleans.sbool" title="Link to this heading">¶</a></h1>
 <p>Subtypable Booleans.</p>
 <dl class="py class">
+<dt class="sig sig-object py" id="pythonic_fp.booleans.sbool.FSBool">
+<em class="property"><span class="k"><span class="pre">final</span></span><span class="w"> </span><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.booleans.sbool.</span></span><span class="sig-name descname"><span class="pre">FSBool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ignored</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.booleans.sbool.FSBool" title="Link to this definition">¶</a></dt>
+<dd><p>Falsy SBool subtype.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>value</strong> – The truthiness of obj determines truthiness of SBool created.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The truthy or falsy SBool subclass instance.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
 <dt class="sig sig-object py" id="pythonic_fp.booleans.sbool.SBool">
 <em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.booleans.sbool.</span></span><span class="sig-name descname"><span class="pre">SBool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">witness</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">object</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.booleans.sbool.SBool" title="Link to this definition">¶</a></dt>
 <dd><p>Subtypable Booleans.</p>
@@ -194,10 +208,24 @@ to return an <code class="docutils literal notranslate"><span class="pre">SBool<
 </table>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>These “bitwise” operators will raise <code class="docutils literal notranslate"><span class="pre">TypeError</span></code> exceptions
+<p>These “bitwise” operators could raise <code class="docutils literal notranslate"><span class="pre">TypeError</span></code> exceptions
 when applied against an <code class="docutils literal notranslate"><span class="pre">SBool</span></code> and objects not descended
 from <code class="docutils literal notranslate"><span class="pre">SBool</span></code>.</p>
 </div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>value</strong> – The truthiness of obj determines truthiness of SBool created.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The truthy or falsy SBool subclass instance.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pythonic_fp.booleans.sbool.TSBool">
+<em class="property"><span class="k"><span class="pre">final</span></span><span class="w"> </span><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.booleans.sbool.</span></span><span class="sig-name descname"><span class="pre">TSBool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ignored</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.booleans.sbool.TSBool" title="Link to this definition">¶</a></dt>
+<dd><p>Truthy SBool subtype.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>value</strong> – The truthiness of obj determines truthiness of SBool created.</p>
@@ -237,7 +265,9 @@ that will change the behavior of <code class="docutils literal notranslate"><spa
             <div class="page_toc">
                 <ul>
 <li><a class="reference internal" href="#">booleans.sbool</a><ul>
+<li><a class="reference internal" href="#pythonic_fp.booleans.sbool.FSBool"><code class="docutils literal notranslate"><span class="pre">FSBool</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.booleans.sbool.SBool"><code class="docutils literal notranslate"><span class="pre">SBool</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.booleans.sbool.TSBool"><code class="docutils literal notranslate"><span class="pre">TSBool</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.booleans.sbool.snot"><code class="docutils literal notranslate"><span class="pre">snot()</span></code></a></li>
 </ul>
 </li>
