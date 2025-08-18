@@ -26,4 +26,4 @@ pythonic-fp-booleans
    :caption: Documentation
    :maxdepth: 2
 
-   api/index
+   booleans/index
