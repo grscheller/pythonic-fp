@@ -1,5 +1,5 @@
-pythonic-fp-booleans
-====================
+PyPI pythonic-fp-booleans Project
+=================================
 
 .. toctree::
    :caption: Overview
@@ -24,6 +24,6 @@ pythonic-fp-booleans
 
 .. toctree::
    :caption: Documentation
-   :maxdepth: 2
+   :maxdepth: 4
 
    booleans/index
