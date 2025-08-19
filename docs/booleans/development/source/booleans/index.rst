@@ -6,13 +6,13 @@ pythonic_fp.booleans
    :no-index:
 
 .. toctree::
-   :caption: subtypable
+   :caption: subtypable_boolean
    :maxdepth: 1
 
-   subtypable/index
+   subtypable_boolean
 
 .. toctree::
-   :caption: invariant
+   :caption: subtypes
    :maxdepth: 1
 
-   invariant/index
+   subtypes/index
