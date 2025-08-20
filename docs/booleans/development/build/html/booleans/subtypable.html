@@ -149,6 +149,12 @@
   <section id="module-pythonic_fp.booleans.subtypable">
 <span id="subtypable"></span><h1>subtypable<a class="headerlink" href="#module-pythonic_fp.booleans.subtypable" title="Link to this heading">¶</a></h1>
 <p>Subtypable Booleans.</p>
+<dl class="py data">
+<dt class="sig sig-object py" id="pythonic_fp.booleans.subtypable.LIE">
+<span class="sig-prename descclassname"><span class="pre">pythonic_fp.booleans.subtypable.</span></span><span class="sig-name descname"><span class="pre">LIE</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Final</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#pythonic_fp.booleans.subtypable.SBool" title="pythonic_fp.booleans.subtypable.SBool"><span class="pre">SBool</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">LIE</span></em><a class="headerlink" href="#pythonic_fp.booleans.subtypable.LIE" title="Link to this definition">¶</a></dt>
+<dd><p>the falsy singleton of type <code class="docutils literal notranslate"><span class="pre">SBool</span></code></p>
+</dd></dl>
+
 <dl class="py class">
 <dt class="sig sig-object py" id="pythonic_fp.booleans.subtypable.SBool">
 <em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.booleans.subtypable.</span></span><span class="sig-name descname"><span class="pre">SBool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">witness</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">object</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.booleans.subtypable.SBool" title="Link to this definition">¶</a></dt>
@@ -198,12 +204,18 @@ from <code class="docutils literal notranslate"><span class="pre">SBool</span></
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>value</strong> – The truthiness of obj determines truthiness of SBool created.</p>
+<dd class="field-odd"><p><strong>witness</strong> – truthiness of <code class="docutils literal notranslate"><span class="pre">witness</span></code> determines truthiness of the <code class="docutils literal notranslate"><span class="pre">SBool</span></code> returned</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>The truthy or falsy SBool subclass instance.</p>
+<dd class="field-even"><p>the truthy or falsy SBool class instance</p>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="pythonic_fp.booleans.subtypable.TRUTH">
+<span class="sig-prename descclassname"><span class="pre">pythonic_fp.booleans.subtypable.</span></span><span class="sig-name descname"><span class="pre">TRUTH</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Final</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#pythonic_fp.booleans.subtypable.SBool" title="pythonic_fp.booleans.subtypable.SBool"><span class="pre">SBool</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">TRUTH</span></em><a class="headerlink" href="#pythonic_fp.booleans.subtypable.TRUTH" title="Link to this definition">¶</a></dt>
+<dd><p>the truthy singleton of type <code class="docutils literal notranslate"><span class="pre">SBool</span></code></p>
 </dd></dl>
 
 <dl class="py function">
@@ -216,6 +228,14 @@ from <code class="docutils literal notranslate"><span class="pre">SBool</span></
 return a <code class="docutils literal notranslate"><span class="pre">bool</span></code>. There is no <code class="docutils literal notranslate"><span class="pre">__not__</span></code> dunder method
 that will change the behavior of <code class="docutils literal notranslate"><span class="pre">not</span></code>.</p>
 </div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>sbool</strong> – an <code class="docutils literal notranslate"><span class="pre">SBool</span></code> subtypes</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>the <code class="docutils literal notranslate"><span class="pre">SBool</span></code> subtype of the opposite truthiness</p>
+</dd>
+</dl>
 </dd></dl>
 
 </section>
@@ -235,7 +255,9 @@ that will change the behavior of <code class="docutils literal notranslate"><spa
             <div class="page_toc">
                 <ul>
 <li><a class="reference internal" href="#">subtypable</a><ul>
+<li><a class="reference internal" href="#pythonic_fp.booleans.subtypable.LIE"><code class="docutils literal notranslate"><span class="pre">LIE</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.booleans.subtypable.SBool"><code class="docutils literal notranslate"><span class="pre">SBool</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.booleans.subtypable.TRUTH"><code class="docutils literal notranslate"><span class="pre">TRUTH</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.booleans.subtypable.snot"><code class="docutils literal notranslate"><span class="pre">snot()</span></code></a></li>
 </ul>
 </li>
