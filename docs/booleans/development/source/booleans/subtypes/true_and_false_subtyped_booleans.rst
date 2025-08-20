@@ -1,5 +1,0 @@
-true_and_false_subtyped_booleans
-================================
-
-.. automodule:: pythonic_fp.booleans.subtypes.true_and_false_subtyped_booleans
-   :members:

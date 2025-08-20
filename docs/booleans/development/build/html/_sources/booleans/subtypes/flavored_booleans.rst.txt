@@ -1,5 +1,0 @@
-flavored_booleans
-=================
-
-.. automodule:: pythonic_fp.booleans.subtypes.flavored_booleans
-   :members:

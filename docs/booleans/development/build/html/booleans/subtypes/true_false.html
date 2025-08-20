@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>flavored_booleans &#8212; Pythonic FP - Booleans 0.1.0 documentation</title>
+    <title>true_false &#8212; Pythonic FP - Booleans 0.1.0 documentation</title>
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../../_static/basic_mod.css?v=9b2032db" />
     <script src="../../_static/documentation_options.js?v=01f34227"></script>
@@ -15,8 +15,7 @@
     <script src="../../_static/js/petite-vue.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="true_and_false_subtyped_booleans" href="true_and_false_subtyped_booleans.html" />
-    <link rel="prev" title="subtypes" href="index.html" /> 
+    <link rel="prev" title="flavored" href="flavored.html" /> 
   </head><body data-dark_mode_code_blocks="true">
 
 <div id="top_nav">
@@ -120,25 +119,21 @@
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper"><p class="caption" role="heading"><span class="caption-text">Overview</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../index.html">PyPI pythonic-fp-booleans Project</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Description</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../description.html">description</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">PyPI: pythonic-fp-booleans</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../usage.html">usage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../releases.html">PyPI releases</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../changelog.html">changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../releases.html">PyPI Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../changelog.html">Changelog</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">pythonic_fp.booleans</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../subtypable_boolean.html">subtypable_boolean</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../subtypable.html">subtypable</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">subtypes</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">flavored_booleans</a></li>
-<li class="toctree-l3"><a class="reference internal" href="true_and_false_subtyped_booleans.html">true_and_false_subtyped_booleans</a></li>
+<li class="toctree-l3"><a class="reference internal" href="flavored.html">flavored</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">true_false</a></li>
 </ul>
 </li>
 </ul>
@@ -154,55 +149,30 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <section id="module-pythonic_fp.booleans.subtypes.flavored_booleans">
-<span id="flavored-booleans"></span><h1>flavored_booleans<a class="headerlink" href="#module-pythonic_fp.booleans.subtypes.flavored_booleans" title="Link to this heading">¶</a></h1>
-<p>Flavored Booleans.</p>
+  <section id="module-pythonic_fp.booleans.subtypes.true_false">
+<span id="true-false"></span><h1>true_false<a class="headerlink" href="#module-pythonic_fp.booleans.subtypes.true_false" title="Link to this heading">¶</a></h1>
+<p>Booleans which are either always “truthy” or always “falsy”.</p>
 <dl class="py class">
-<dt class="sig sig-object py" id="pythonic_fp.booleans.subtypes.flavored_booleans.FBool">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.booleans.subtypes.flavored_booleans.</span></span><span class="sig-name descname"><span class="pre">FBool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flavor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">H</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">witness</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">object</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.booleans.subtypes.flavored_booleans.FBool" title="Link to this definition">¶</a></dt>
-<dd><p>Flavored Booleans.</p>
-<p>When you need to deal with different flavors of the truth.</p>
-<p>This type can also do (non-shortcut) Boolean logic using</p>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head"><p>Boolean op</p></th>
-<th class="head"><p>symbol</p></th>
-<th class="head"><p>dunder</p></th>
-<th class="head"><p>Python name</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>and</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">&amp;</span></code></p></td>
-<td><p>__and__</p></td>
-<td><p>bitwise and</p></td>
-</tr>
-<tr class="row-odd"><td><p>or</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">|</span></code></p></td>
-<td><p>__or__</p></td>
-<td><p>bitwise or</p></td>
-</tr>
-<tr class="row-even"><td><p>xor</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">^</span></code></p></td>
-<td><p>__xor__</p></td>
-<td><p>bitwise xor</p></td>
-</tr>
-<tr class="row-odd"><td><p>not</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">~</span></code></p></td>
-<td><p>__invert__</p></td>
-<td><p>bitwise not</p></td>
-</tr>
-</tbody>
-</table>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>These “bitwise” operators could raise <code class="docutils literal notranslate"><span class="pre">TypeError</span></code> exceptions
-when applied against an <code class="docutils literal notranslate"><span class="pre">FBool</span></code> and objects not descended
-from <code class="docutils literal notranslate"><span class="pre">FBool</span></code>.</p>
-</div>
+<dt class="sig sig-object py" id="pythonic_fp.booleans.subtypes.true_false.FSBool">
+<em class="property"><span class="k"><span class="pre">final</span></span><span class="w"> </span><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.booleans.subtypes.true_false.</span></span><span class="sig-name descname"><span class="pre">FSBool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ignored</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.booleans.subtypes.true_false.FSBool" title="Link to this definition">¶</a></dt>
+<dd><p>Subtype of <code class="docutils literal notranslate"><span class="pre">SBool</span></code> which is always Falsy.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>flavor</strong> – The truthiness of obj determines truthiness of FBool created.</p>
+<dd class="field-odd"><p><strong>value</strong> – The truthiness of obj determines truthiness of SBool created.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The truthy or falsy SBool subclass instance.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pythonic_fp.booleans.subtypes.true_false.TSBool">
+<em class="property"><span class="k"><span class="pre">final</span></span><span class="w"> </span><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.booleans.subtypes.true_false.</span></span><span class="sig-name descname"><span class="pre">TSBool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ignored</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.booleans.subtypes.true_false.TSBool" title="Link to this definition">¶</a></dt>
+<dd><p>Subtype of <code class="docutils literal notranslate"><span class="pre">SBool</span></code> which is always Truthy.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>value</strong> – The truthiness of obj determines truthiness of SBool created.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>The truthy or falsy SBool subclass instance.</p>
@@ -226,8 +196,9 @@ from <code class="docutils literal notranslate"><span class="pre">FBool</span></
             <p><a class="toggle_right_sidebar" href="#"><span class="icon">&gt;</span><span>Page contents:</span></a></p>
             <div class="page_toc">
                 <ul>
-<li><a class="reference internal" href="#">flavored_booleans</a><ul>
-<li><a class="reference internal" href="#pythonic_fp.booleans.subtypes.flavored_booleans.FBool"><code class="docutils literal notranslate"><span class="pre">FBool</span></code></a></li>
+<li><a class="reference internal" href="#">true_false</a><ul>
+<li><a class="reference internal" href="#pythonic_fp.booleans.subtypes.true_false.FSBool"><code class="docutils literal notranslate"><span class="pre">FSBool</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.booleans.subtypes.true_false.TSBool"><code class="docutils literal notranslate"><span class="pre">TSBool</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -242,14 +213,12 @@ from <code class="docutils literal notranslate"><span class="pre">FBool</span></
         <div class="button_nav">
             <div class="left">
                 
-                <a href="index.html">
-                    <span class="icon">&lt;</span><span>subtypes</span></a>
+                <a href="flavored.html">
+                    <span class="icon">&lt;</span><span>flavored</span></a>
                 
             </div>
 
             <div class="right">
-                
-                    <a href="true_and_false_subtyped_booleans.html"><span>true_and_false_subtyped_booleans</span><span class="icon">&gt;</span></a>
                 
             </div>
         </div>

@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>usage &#8212; Pythonic FP - Booleans 0.1.0 documentation</title>
+    <title>Usage &#8212; Pythonic FP - Booleans 0.1.0 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="_static/basic_mod.css?v=9b2032db" />
     <script src="_static/documentation_options.js?v=01f34227"></script>
@@ -15,8 +15,8 @@
     <script src="_static/js/petite-vue.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="PyPI releases" href="releases.html" />
-    <link rel="prev" title="description" href="description.html" /> 
+    <link rel="next" title="PyPI Releases" href="releases.html" />
+    <link rel="prev" title="PyPI: pythonic-fp-booleans" href="index.html" /> 
   </head><body data-dark_mode_code_blocks="true">
 
 <div id="top_nav">
@@ -120,17 +120,13 @@
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper"><p class="caption" role="heading"><span class="caption-text">Overview</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="index.html">PyPI pythonic-fp-booleans Project</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Description</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="description.html">description</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">PyPI: pythonic-fp-booleans</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">usage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="releases.html">PyPI releases</a></li>
-<li class="toctree-l1"><a class="reference internal" href="changelog.html">changelog</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="releases.html">PyPI Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
 <ul>
@@ -147,7 +143,7 @@
           <div class="body" role="main">
             
   <section id="usage">
-<h1>usage<a class="headerlink" href="#usage" title="Link to this heading">¶</a></h1>
+<h1>Usage<a class="headerlink" href="#usage" title="Link to this heading">¶</a></h1>
 <section id="how-to-installing-the-package">
 <h2>How to installing the package<a class="headerlink" href="#how-to-installing-the-package" title="Link to this heading">¶</a></h2>
 <p>Install the project into your Python environment:</p>
@@ -158,9 +154,9 @@
 <section id="importing-the-module">
 <h2>Importing the module<a class="headerlink" href="#importing-the-module" title="Link to this heading">¶</a></h2>
 <p>Import package booleans classes, functions and constants into your code.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">pythonic_fp.booleans.subtypable_boolean</span> <span class="n">SBool</span><span class="p">,</span> <span class="n">snot</span><span class="p">,</span> <span class="n">TRUTH</span><span class="p">,</span> <span class="n">LIE</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">pythonic_fp.booleans.subtypes.flavored_booleans</span> <span class="n">FBool</span><span class="p">,</span> <span class="n">truthy</span><span class="p">,</span> <span class="n">falsy</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">pythonic_fp.booleans.subtypes.true_and_false_subtyped_booleans</span> <span class="n">TSBool</span><span class="p">,</span> <span class="n">FSBool</span><span class="p">,</span> <span class="n">ALWAYS</span><span class="p">,</span> <span class="n">NEVER_EVER</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">pythonic_fp.booleans.subtypable</span> <span class="n">SBool</span><span class="p">,</span> <span class="n">snot</span><span class="p">,</span> <span class="n">TRUTH</span><span class="p">,</span> <span class="n">LIE</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pythonic_fp.booleans.subtypes.flavored</span> <span class="n">FBool</span><span class="p">,</span> <span class="n">truthy</span><span class="p">,</span> <span class="n">falsy</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pythonic_fp.booleans.subtypes.true_false</span> <span class="n">TSBool</span><span class="p">,</span> <span class="n">FSBool</span><span class="p">,</span> <span class="n">ALWAYS</span><span class="p">,</span> <span class="n">NEVER_EVER</span>
 </pre></div>
 </div>
 </section>
@@ -180,7 +176,7 @@
             <p><a class="toggle_right_sidebar" href="#"><span class="icon">&gt;</span><span>Page contents:</span></a></p>
             <div class="page_toc">
                 <ul>
-<li><a class="reference internal" href="#">usage</a><ul>
+<li><a class="reference internal" href="#">Usage</a><ul>
 <li><a class="reference internal" href="#how-to-installing-the-package">How to installing the package</a></li>
 <li><a class="reference internal" href="#importing-the-module">Importing the module</a></li>
 </ul>
@@ -197,14 +193,14 @@
         <div class="button_nav">
             <div class="left">
                 
-                <a href="description.html">
-                    <span class="icon">&lt;</span><span>description</span></a>
+                <a href="index.html">
+                    <span class="icon">&lt;</span><span>PyPI: pythonic-fp-booleans</span></a>
                 
             </div>
 
             <div class="right">
                 
-                    <a href="releases.html"><span>PyPI releases</span><span class="icon">&gt;</span></a>
+                    <a href="releases.html"><span>PyPI Releases</span><span class="icon">&gt;</span></a>
                 
             </div>
         </div>

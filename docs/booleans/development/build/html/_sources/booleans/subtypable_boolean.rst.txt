@@ -1,5 +1,0 @@
-subtypable_boolean
-==================
-
-.. automodule:: pythonic_fp.booleans.subtypable_boolean
-   :members:

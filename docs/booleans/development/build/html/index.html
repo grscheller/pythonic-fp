@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>PyPI pythonic-fp-booleans Project &#8212; Pythonic FP - Booleans 0.1.0 documentation</title>
+    <title>PyPI: pythonic-fp-booleans &#8212; Pythonic FP - Booleans 0.1.0 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="_static/basic_mod.css?v=9b2032db" />
     <script src="_static/documentation_options.js?v=01f34227"></script>
@@ -15,7 +15,7 @@
     <script src="_static/js/petite-vue.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="description" href="description.html" /> 
+    <link rel="next" title="Usage" href="usage.html" /> 
   </head><body data-dark_mode_code_blocks="true">
 
 <div id="top_nav">
@@ -119,17 +119,13 @@
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper"><p class="caption" role="heading"><span class="caption-text">Overview</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">PyPI pythonic-fp-booleans Project</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Description</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="description.html">description</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">PyPI: pythonic-fp-booleans</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="usage.html">usage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="releases.html">PyPI releases</a></li>
-<li class="toctree-l1"><a class="reference internal" href="changelog.html">changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="releases.html">PyPI Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
 <ul>
@@ -145,41 +141,75 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <section id="pypi-pythonic-fp-booleans-project">
-<h1>PyPI pythonic-fp-booleans Project<a class="headerlink" href="#pypi-pythonic-fp-booleans-project" title="Link to this heading">¶</a></h1>
-<div class="toctree-wrapper compound">
-</div>
-<div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">Description</span></p>
+  <section id="pypi-pythonic-fp-booleans">
+<h1>PyPI: pythonic-fp-booleans<a class="headerlink" href="#pypi-pythonic-fp-booleans" title="Link to this heading">¶</a></h1>
+<blockquote>
+<div><p>PyPI project
+<a class="reference external" href="https://pypi.org/project/pythonic-fp-booleans/">pythonic-fp-booleans</a>
+part of the
+<a class="reference external" href="https://github.com/grscheller/pythonic-fp/blob/main/README.md">pythonic-fp namespace projects</a>.</p>
+<p>For a proposed version 0.1.0 release.</p>
+</div></blockquote>
+<p>Boolean like class. Compatible with Python shortcut logic.</p>
+<ul class="simple">
+<li><p>module subtypable</p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="description.html">description</a></li>
+<li><p>class <code class="docutils literal notranslate"><span class="pre">subtypable</span></code></p>
+<ul>
+<li><p>like Python’s built-in <code class="docutils literal notranslate"><span class="pre">bool</span></code>, class <code class="docutils literal notranslate"><span class="pre">SBool</span></code> is a subclass of <code class="docutils literal notranslate"><span class="pre">int</span></code></p></li>
+<li><p>unlike <code class="docutils literal notranslate"><span class="pre">bool</span></code>, class <code class="docutils literal notranslate"><span class="pre">SBool</span></code> can be further subclassed</p></li>
 </ul>
+</li>
+</ul>
+</li>
+<li><p>module <code class="docutils literal notranslate"><span class="pre">subtypes</span></code></p>
+<ul>
+<li><p>module <code class="docutils literal notranslate"><span class="pre">flavored</span></code></p>
+<ul>
+<li><p>class <code class="docutils literal notranslate"><span class="pre">FBool</span></code> is a subclass of <code class="docutils literal notranslate"><span class="pre">SBool</span></code></p>
+<ul>
+<li><p>for when you need to deal with different “flavors” of the truth</p></li>
+<li><p>each “flavor” corresponds to a hashable value</p></li>
+</ul>
+</li>
+<li><p>module <code class="docutils literal notranslate"><span class="pre">true_false</span></code></p>
+<ul>
+<li><p>class <code class="docutils literal notranslate"><span class="pre">TSBool</span></code> is an <code class="docutils literal notranslate"><span class="pre">SBool</span></code> which is always truthy</p></li>
+<li><p>class <code class="docutils literal notranslate"><span class="pre">FSBool</span></code> is <code class="docutils literal notranslate"><span class="pre">SBool</span></code> which is always falsy</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">
 <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="usage.html">usage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="releases.html">PyPI releases</a></li>
-<li class="toctree-l1"><a class="reference internal" href="changelog.html">changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="releases.html">PyPI Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="booleans/index.html">pythonic_fp.booleans</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="booleans/subtypable_boolean.html">subtypable_boolean</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="booleans/subtypable_boolean.html#pythonic_fp.booleans.subtypable_boolean.SBool"><code class="docutils literal notranslate"><span class="pre">SBool</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="booleans/subtypable_boolean.html#pythonic_fp.booleans.subtypable_boolean.snot"><code class="docutils literal notranslate"><span class="pre">snot()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="booleans/subtypable.html">subtypable</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="booleans/subtypable.html#pythonic_fp.booleans.subtypable.SBool"><code class="docutils literal notranslate"><span class="pre">SBool</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="booleans/subtypable.html#pythonic_fp.booleans.subtypable.snot"><code class="docutils literal notranslate"><span class="pre">snot()</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="booleans/subtypes/index.html">subtypes</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="booleans/subtypes/flavored_booleans.html">flavored_booleans</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="booleans/subtypes/flavored_booleans.html#pythonic_fp.booleans.subtypes.flavored_booleans.FBool"><code class="docutils literal notranslate"><span class="pre">FBool</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="booleans/subtypes/flavored.html">flavored</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="booleans/subtypes/flavored.html#pythonic_fp.booleans.subtypes.flavored.FBool"><code class="docutils literal notranslate"><span class="pre">FBool</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="booleans/subtypes/true_and_false_subtyped_booleans.html">true_and_false_subtyped_booleans</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="booleans/subtypes/true_and_false_subtyped_booleans.html#pythonic_fp.booleans.subtypes.true_and_false_subtyped_booleans.FSBool"><code class="docutils literal notranslate"><span class="pre">FSBool</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="booleans/subtypes/true_and_false_subtyped_booleans.html#pythonic_fp.booleans.subtypes.true_and_false_subtyped_booleans.TSBool"><code class="docutils literal notranslate"><span class="pre">TSBool</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="booleans/subtypes/true_false.html">true_false</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="booleans/subtypes/true_false.html#pythonic_fp.booleans.subtypes.true_false.FSBool"><code class="docutils literal notranslate"><span class="pre">FSBool</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="booleans/subtypes/true_false.html#pythonic_fp.booleans.subtypes.true_false.TSBool"><code class="docutils literal notranslate"><span class="pre">TSBool</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -207,7 +237,7 @@
 
             <div class="right">
                 
-                    <a href="description.html"><span>description</span><span class="icon">&gt;</span></a>
+                    <a href="usage.html"><span>Usage</span><span class="icon">&gt;</span></a>
                 
             </div>
         </div>

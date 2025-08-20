@@ -1,4 +1,4 @@
-PyPI releases
+PyPI Releases
 -------------
 
 **pythonic-fp-booleans:** pythonic_fp.booleans

@@ -8,9 +8,9 @@ subtypes
 .. toctree::
    :maxdepth: 1
 
-   flavored_booleans
+   flavored
 
 .. toctree::
    :maxdepth: 2
 
-   true_and_false_subtyped_booleans
+   true_false
