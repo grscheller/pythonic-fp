@@ -160,14 +160,18 @@
 
 <dl class="py class">
 <dt class="sig sig-object py" id="pythonic_fp.booleans.subtypes.true_false.FSBool">
-<em class="property"><span class="k"><span class="pre">final</span></span><span class="w"> </span><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.booleans.subtypes.true_false.</span></span><span class="sig-name descname"><span class="pre">FSBool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ignored</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.booleans.subtypes.true_false.FSBool" title="Link to this definition">¶</a></dt>
-<dd><p>Subtype of <code class="docutils literal notranslate"><span class="pre">SBool</span></code> which is always Falsy.</p>
+<em class="property"><span class="k"><span class="pre">final</span></span><span class="w"> </span><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.booleans.subtypes.true_false.</span></span><span class="sig-name descname"><span class="pre">FSBool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_witness</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">object</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flavor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Hashable</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">NoValue()</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.booleans.subtypes.true_false.FSBool" title="Link to this definition">¶</a></dt>
+<dd><p>The subtype of <code class="docutils literal notranslate"><span class="pre">SBool</span></code> which is always Falsy.</p>
+<p>Get the <code class="docutils literal notranslate"><span class="pre">FSBool</span></code> always falsy singleton instance.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>witness</strong> – truthiness of <code class="docutils literal notranslate"><span class="pre">witness</span></code> determines truthiness of the <code class="docutils literal notranslate"><span class="pre">SBool</span></code> returned</p>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>witness</strong> – parameter ignored, <code class="docutils literal notranslate"><span class="pre">FSBool</span></code> always falsy</p></li>
+<li><p><strong>flavor</strong> – parameter ignored, only one falsy “flavor”</p></li>
+</ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>the truthy or falsy SBool class instance</p>
+<dd class="field-even"><p>the falsy <code class="docutils literal notranslate"><span class="pre">FSBool</span></code> singleton instance, an <code class="docutils literal notranslate"><span class="pre">SBool</span></code> subtype</p>
 </dd>
 </dl>
 </dd></dl>
@@ -179,16 +183,47 @@
 </dd></dl>
 
 <dl class="py class">
-<dt class="sig sig-object py" id="pythonic_fp.booleans.subtypes.true_false.TSBool">
-<em class="property"><span class="k"><span class="pre">final</span></span><span class="w"> </span><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.booleans.subtypes.true_false.</span></span><span class="sig-name descname"><span class="pre">TSBool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ignored</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.booleans.subtypes.true_false.TSBool" title="Link to this definition">¶</a></dt>
-<dd><p>Subtype of <code class="docutils literal notranslate"><span class="pre">SBool</span></code> which is always Truthy.</p>
-<p>Get the <code class="docutils literal notranslate"><span class="pre">TSBool</span></code> always truthy instance subtype of <code class="docutils literal notranslate"><span class="pre">SBool</span></code>.</p>
+<dt class="sig sig-object py" id="pythonic_fp.booleans.subtypes.true_false.TFSBool">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.booleans.subtypes.true_false.</span></span><span class="sig-name descname"><span class="pre">TFSBool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">witness</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flavor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Hashable</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">NoValue()</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.booleans.subtypes.true_false.TFSBool" title="Link to this definition">¶</a></dt>
+<dd><p>Rough idea</p>
+<p>Create a “subtypable” Boolean-like value.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">witness</span></code> determines whether its “truthy” or “falsy”</p>
+<ul>
+<li><p>defaults to falsy if no <code class="docutils literal notranslate"><span class="pre">witness</span></code> is provided</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">flavor</span></code> is ignored for the <code class="docutils literal notranslate"><span class="pre">SBool</span></code> base class</p>
+<ul>
+<li><p>there is only one “flavor”</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">flavor</span></code> ensures Liskov substitution principle holds</p></li>
+</ul>
+</li>
+</ul>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>ignored</strong> – ignored parameter, for Liskov substitution principle to hold</p>
+<dd class="field-odd"><p><strong>witness</strong> – determines truthiness of the <code class="docutils literal notranslate"><span class="pre">SBool</span></code></p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>the truthy or falsy SBool subclass instance</p>
+<dd class="field-even"><p>the truthy or falsy SBool class instance</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pythonic_fp.booleans.subtypes.true_false.TSBool">
+<em class="property"><span class="k"><span class="pre">final</span></span><span class="w"> </span><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.booleans.subtypes.true_false.</span></span><span class="sig-name descname"><span class="pre">TSBool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_witness</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">object</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">NoValue()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flavor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Hashable</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">NoValue()</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.booleans.subtypes.true_false.TSBool" title="Link to this definition">¶</a></dt>
+<dd><p>The subtype of <code class="docutils literal notranslate"><span class="pre">TFSBool</span></code> which is always Truthy.</p>
+<p>Get the <code class="docutils literal notranslate"><span class="pre">TSBool</span></code> always truthy singleton instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>witness</strong> – ignored parameter, always truthy”</p></li>
+<li><p><strong>flavor</strong> – ignored parameter, only one truthy “flavor”</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>the truthy <code class="docutils literal notranslate"><span class="pre">TSBool</span></code> singleton instance, an <code class="docutils literal notranslate"><span class="pre">SBool</span></code> subtype</p>
 </dd>
 </dl>
 </dd></dl>
@@ -213,6 +248,7 @@
 <li><a class="reference internal" href="#pythonic_fp.booleans.subtypes.true_false.ALWAYS"><code class="docutils literal notranslate"><span class="pre">ALWAYS</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.booleans.subtypes.true_false.FSBool"><code class="docutils literal notranslate"><span class="pre">FSBool</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.booleans.subtypes.true_false.NEVER_EVER"><code class="docutils literal notranslate"><span class="pre">NEVER_EVER</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.booleans.subtypes.true_false.TFSBool"><code class="docutils literal notranslate"><span class="pre">TFSBool</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.booleans.subtypes.true_false.TSBool"><code class="docutils literal notranslate"><span class="pre">TSBool</span></code></a></li>
 </ul>
 </li>

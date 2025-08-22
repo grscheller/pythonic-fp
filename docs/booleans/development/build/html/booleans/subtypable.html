@@ -157,7 +157,9 @@
 
 <dl class="py class">
 <dt class="sig sig-object py" id="pythonic_fp.booleans.subtypable.SBool">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.booleans.subtypable.</span></span><span class="sig-name descname"><span class="pre">SBool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">witness</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">object</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.booleans.subtypable.SBool" title="Link to this definition">¶</a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.booleans.subtypable.</span></span><span class="sig-name descname"><span class="pre">SBool</span></span><a class="headerlink" href="#pythonic_fp.booleans.subtypable.SBool" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object py">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.booleans.subtypable.</span></span><span class="sig-name descname"><span class="pre">SBool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">witness</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">object</span></span></em><span class="sig-paren">)</span></dt>
 <dd><p>Subtypable Booleans.</p>
 <p>Like Python’s built in bool, class SBool is a subclass of int.
 Unlike bool, this version can be further subclassed. It can be
@@ -202,9 +204,23 @@ to return an <code class="docutils literal notranslate"><span class="pre">SBool<
 when applied against an <code class="docutils literal notranslate"><span class="pre">SBool</span></code> and objects not descended
 from <code class="docutils literal notranslate"><span class="pre">SBool</span></code>.</p>
 </div>
+<p>Create a “subtypable” Boolean-like value.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">witness</span></code> determines whether its “truthy” or “falsy”</p>
+<ul>
+<li><p>defaults to falsy if no <code class="docutils literal notranslate"><span class="pre">witness</span></code> is provided</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">flavor</span></code> is ignored for the <code class="docutils literal notranslate"><span class="pre">SBool</span></code> base class</p>
+<ul>
+<li><p>there is only one “flavor”</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">flavor</span></code> ensures Liskov substitution principle holds</p></li>
+</ul>
+</li>
+</ul>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>witness</strong> – truthiness of <code class="docutils literal notranslate"><span class="pre">witness</span></code> determines truthiness of the <code class="docutils literal notranslate"><span class="pre">SBool</span></code> returned</p>
+<dd class="field-odd"><p><strong>witness</strong> – determines truthiness of the <code class="docutils literal notranslate"><span class="pre">SBool</span></code></p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>the truthy or falsy SBool class instance</p>
@@ -220,8 +236,8 @@ from <code class="docutils literal notranslate"><span class="pre">SBool</span></
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pythonic_fp.booleans.subtypable.snot">
-<span class="sig-prename descclassname"><span class="pre">pythonic_fp.booleans.subtypable.</span></span><span class="sig-name descname"><span class="pre">snot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sbool</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">S</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">S</span></span></span><a class="headerlink" href="#pythonic_fp.booleans.subtypable.snot" title="Link to this definition">¶</a></dt>
-<dd><p>Return the subtype <code class="docutils literal notranslate"><span class="pre">S</span></code> of <code class="docutils literal notranslate"><span class="pre">SBool</span></code> of the opposite truthiness.</p>
+<span class="sig-prename descclassname"><span class="pre">pythonic_fp.booleans.subtypable.</span></span><span class="sig-name descname"><span class="pre">snot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sbool</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#pythonic_fp.booleans.subtypable.SBool" title="pythonic_fp.booleans.subtypable.SBool"><span class="pre">SBool</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.booleans.subtypable.SBool" title="pythonic_fp.booleans.subtypable.SBool"><span class="pre">SBool</span></a></span></span><a class="headerlink" href="#pythonic_fp.booleans.subtypable.snot" title="Link to this definition">¶</a></dt>
+<dd><p>Return the <code class="docutils literal notranslate"><span class="pre">SBool</span></code> subtype of the opposite truthiness.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Trying to use the Python <code class="docutils literal notranslate"><span class="pre">not</span></code> operator for this will just
@@ -230,10 +246,10 @@ that will change the behavior of <code class="docutils literal notranslate"><spa
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>sbool</strong> – an <code class="docutils literal notranslate"><span class="pre">SBool</span></code> subtypes</p>
+<dd class="field-odd"><p><strong>sbool</strong> – an <code class="docutils literal notranslate"><span class="pre">SBool</span></code> or <code class="docutils literal notranslate"><span class="pre">SBool</span></code> subtype</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>the <code class="docutils literal notranslate"><span class="pre">SBool</span></code> subtype of the opposite truthiness</p>
+<dd class="field-even"><p>the <code class="docutils literal notranslate"><span class="pre">SBool</span></code> or <code class="docutils literal notranslate"><span class="pre">SBool</span></code> subtype of the opposite truthiness</p>
 </dd>
 </dl>
 </dd></dl>
