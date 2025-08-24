@@ -17,7 +17,8 @@ Pythonic FP is a hobby project, but the maintainer is serious about its quality.
 | [Gadgets](#gadgets-pythonic_fpgadgets) | [pythonic-fp][104] | [gh][204] | [gh_pages][304] | pythonic_fp.gadgets |
 | [Iterables](#tools-for-iterables---pythonic_fpiterables) | [pythonic-fp-iterables][105] | [gh][205] | [gh_pages][305] | pythonic_fp.iterables |
 | [Sentinels](#sentinel-values---pythonic_fpsentinels) | [pythonic-fp-sentinels][106] | [gh][206] | [gh_pages][306] | pythonic_fp.sentinels |
-| [Splitends](#splitends---pythonic_fpsplitends) | [pythonic-fp-splitends][107] | [gh][207] | [gh_pages][307] | pythonic_fp.splitends |
+| [Sentinels](#singletons---pythonic_fpsingletons) | [pythonic-fp-singletons][107] | [gh][207] | [gh_pages][307] | pythonic_fp.singletons **DEPRECATED** |
+| [Splitends](#splitends---pythonic_fpsplitends) | [pythonic-fp-splitends][108] | [gh][208] | [gh_pages][308] | pythonic_fp.splitends |
 
 The overall project's name is **Pythonic FP** and consists of PyPI
 projects all under the `pythonic-fp` project namespace. This corresponds
@@ -114,6 +115,14 @@ Singleton classes representing
 
 ______________________________________________________________________
 
+### Singletons - pythonic_fp.sentinels
+
+Singleton classes **DEPRECATED**
+
+- see Sentinel Values and Booleans sections
+
+______________________________________________________________________
+
 ### Splitends - pythonic_fp.splitends
 
 The splitends package implements a singularly linked LIFO queue called
@@ -128,7 +137,8 @@ between themselves and form branching *hair-like* data structures.
 [104]: https://pypi.org/project/pythonic-fp
 [105]: https://pypi.org/project/pythonic-fp-iterables
 [106]: https://pypi.org/project/pythonic-fp-sentinels
-[107]: https://pypi.org/project/pythonic-fp-splitends
+[107]: https://pypi.org/project/pythonic-fp-singletons
+[108]: https://pypi.org/project/pythonic-fp-splitends
 [200]: https://github.com/grscheller/pythonic-fp-booleans/blob/main/README.rst
 [201]: https://github.com/grscheller/pythonic-fp-circulararray/blob/main/README.rst
 [202]: https://github.com/grscheller/pythonic-fp-containers/blob/main/README.rst
@@ -136,7 +146,8 @@ between themselves and form branching *hair-like* data structures.
 [204]: https://github.com/grscheller/pythonic-fp/blob/main/README.rst
 [205]: https://github.com/grscheller/pythonic-fp-iterables/blob/main/README.rst
 [206]: https://github.com/grscheller/pythonic-fp-sentinels/blob/main/README.rst
-[207]: https://github.com/grscheller/pythonic-fp-splitends/blob/main/README.rst
+[207]: https://github.com/grscheller/pythonic-fp-singletons/blob/main/README.rst
+[208]: https://github.com/grscheller/pythonic-fp-splitends/blob/main/README.rst
 [300]: https://grscheller.github.io/pythonic-fp/booleans/development/build/html
 [301]: https://grscheller.github.io/pythonic-fp/circulararray/development/build/html
 [302]: https://grscheller.github.io/pythonic-fp/containers/development/build/html
@@ -144,4 +155,5 @@ between themselves and form branching *hair-like* data structures.
 [304]: https://grscheller.github.io/pythonic-fp/gadgets/development/build/html
 [305]: https://grscheller.github.io/pythonic-fp/iterables/development/build/html
 [306]: https://grscheller.github.io/pythonic-fp/sentinels/development/build/html
-[307]: https://grscheller.github.io/pythonic-fp/splitends/development/build/html
+[307]: https://grscheller.github.io/pythonic-fp/singletons/development/build/html
+[308]: https://grscheller.github.io/pythonic-fp/splitends/development/build/html
