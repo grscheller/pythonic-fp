@@ -8,6 +8,7 @@
     <title>pythonic_fp.booleans &#8212; Pythonic FP - Booleans 0.1.0 documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/basic_mod.css?v=9b2032db" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
     <script src="../_static/documentation_options.js?v=01f34227"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
@@ -148,39 +149,103 @@
             
   <section id="module-pythonic_fp.booleans">
 <span id="pythonic-fp-booleans"></span><h1>pythonic_fp.booleans<a class="headerlink" href="#module-pythonic_fp.booleans" title="Link to this heading">¶</a></h1>
-<p>Boolean like class. Compatible with Python shortcut logic.</p>
+<section id="subtypable-boolean-like-classes">
+<h2>Subtypable Boolean like classes<a class="headerlink" href="#subtypable-boolean-like-classes" title="Link to this heading">¶</a></h2>
+<p>While still compatible with Python shortcut logic, these classes can
+be non-shortcut logically composed with Python’s bitwise operators.
+These classes are implemented with the Singleton Pattern.</p>
+<section id="covariant-class-hierarchy">
+<h3>Covariant class hierarchy<a class="headerlink" href="#covariant-class-hierarchy" title="Link to this heading">¶</a></h3>
+<div class="graphviz"><img src="../_images/graphviz-9c34b15775fef74842e920f3aacf8ddf9856dc87.png" alt="digraph Booleans {
+    int -&gt; bool;
+    int -&gt; SBool;
+    SBool -&gt; FBool;
+    SBool -&gt; TF_Bool;
+    TF_Bool -&gt; T_Bool;
+    TF_Bool -&gt; F_Bool;
+}" class="graphviz" /></div>
+</section>
+<section id="contravariant-non-shortcut-operators">
+<h3>Contravariant non-shortcut operators<a class="headerlink" href="#contravariant-non-shortcut-operators" title="Link to this heading">¶</a></h3>
+<blockquote>
+<div><table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Boolean op</p></th>
+<th class="head"><p>symbol</p></th>
+<th class="head"><p>dunder</p></th>
+<th class="head"><p>Python name</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>not</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">~</span></code></p></td>
+<td><p>__invert__</p></td>
+<td><p>bitwise not</p></td>
+</tr>
+<tr class="row-odd"><td><p>and</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&amp;</span></code></p></td>
+<td><p>__and__</p></td>
+<td><p>bitwise and</p></td>
+</tr>
+<tr class="row-even"><td><p>or</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">|</span></code></p></td>
+<td><p>__or__</p></td>
+<td><p>bitwise or</p></td>
+</tr>
+<tr class="row-odd"><td><p>xor</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">^</span></code></p></td>
+<td><p>__xor__</p></td>
+<td><p>bitwise xor</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>These “bitwise” operators could raise <code class="docutils literal notranslate"><span class="pre">TypeError</span></code> exceptions
+when applied against an <code class="docutils literal notranslate"><span class="pre">SBool</span></code> and objects not descended
+from <code class="docutils literal notranslate"><span class="pre">SBool</span></code>.</p>
+</div>
+</div></blockquote>
+</section>
+<section id="classes">
+<h3>Classes<a class="headerlink" href="#classes" title="Link to this heading">¶</a></h3>
+<section id="class-sbool">
+<h4>Class SBool<a class="headerlink" href="#class-sbool" title="Link to this heading">¶</a></h4>
 <ul class="simple">
-<li><p>module subtypable</p>
+<li><p>base of the hierarchy</p>
 <ul>
-<li><p>class <code class="docutils literal notranslate"><span class="pre">subtypable</span></code></p>
-<ul>
-<li><p>like Python’s built-in <code class="docutils literal notranslate"><span class="pre">bool</span></code>, class <code class="docutils literal notranslate"><span class="pre">SBool</span></code> is a subclass of <code class="docutils literal notranslate"><span class="pre">int</span></code></p></li>
+<li><p>like Python’s built-in <code class="docutils literal notranslate"><span class="pre">bool</span></code>, <code class="docutils literal notranslate"><span class="pre">SBool</span></code> is a subclass of <code class="docutils literal notranslate"><span class="pre">int</span></code></p></li>
 <li><p>unlike <code class="docutils literal notranslate"><span class="pre">bool</span></code>, class <code class="docutils literal notranslate"><span class="pre">SBool</span></code> can be further subclassed</p></li>
 </ul>
 </li>
 </ul>
-</li>
-<li><p>module <code class="docutils literal notranslate"><span class="pre">subtypes</span></code></p>
+</section>
+<section id="class-fbool">
+<h4>Class FBool<a class="headerlink" href="#class-fbool" title="Link to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>for when you need to deal with different “flavors” of the truth</p>
 <ul>
-<li><p>module <code class="docutils literal notranslate"><span class="pre">flavored</span></code></p>
-<ul>
-<li><p>class <code class="docutils literal notranslate"><span class="pre">FBool</span></code> is a subclass of <code class="docutils literal notranslate"><span class="pre">SBool</span></code></p>
-<ul>
-<li><p>for when you need to deal with different “flavors” of the truth</p></li>
 <li><p>each “flavor” corresponds to a hashable value</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">FBool</span></code> instances are invariant in their flavor</p></li>
 </ul>
 </li>
-<li><p>module <code class="docutils literal notranslate"><span class="pre">true_false</span></code></p>
+</ul>
+</section>
+<section id="class-tf-bool">
+<h4>Class TF_Bool<a class="headerlink" href="#class-tf-bool" title="Link to this heading">¶</a></h4>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">TF_Bool</span></code> consists of just two disjoint subtypes, each a singleton</p>
 <ul>
-<li><p>class <code class="docutils literal notranslate"><span class="pre">TSBool</span></code> is an <code class="docutils literal notranslate"><span class="pre">SBool</span></code> which is always truthy</p></li>
-<li><p>class <code class="docutils literal notranslate"><span class="pre">FSBool</span></code> is <code class="docutils literal notranslate"><span class="pre">SBool</span></code> which is always falsy</p></li>
+<li><p>class <code class="docutils literal notranslate"><span class="pre">T_Bool</span></code> is the  always truthy <code class="docutils literal notranslate"><span class="pre">TF_Bool</span></code> subtype</p></li>
+<li><p>class <code class="docutils literal notranslate"><span class="pre">F_Bool</span></code> is the  always falsy <code class="docutils literal notranslate"><span class="pre">TF_Bool</span></code> subtype</p></li>
 </ul>
 </li>
 </ul>
-</li>
-</ul>
-</li>
-</ul>
+</div></blockquote>
+</section>
+</section>
+</section>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="subtypable.html">subtypable</a></li>
@@ -189,18 +254,23 @@
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="subtypes/index.html">subtypes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="subtypes/index.html#module-subtypes">Module subtypes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="subtypes/index.html#module-flavored">Module flavored</a></li>
+<li class="toctree-l3"><a class="reference internal" href="subtypes/index.html#module-true-false">Module true_false</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="subtypes/flavored.html">flavored</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="subtypes/flavored.html#pythonic_fp.booleans.subtypes.flavored.FBool"><code class="docutils literal notranslate"><span class="pre">FBool</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="subtypes/flavored.html#pythonic_fp.booleans.subtypes.flavored.falsy"><code class="docutils literal notranslate"><span class="pre">falsy()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="subtypes/flavored.html#pythonic_fp.booleans.subtypes.flavored.truthy"><code class="docutils literal notranslate"><span class="pre">truthy()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="subtypes/flavored.html#pythonic_fp.booleans.subtypes.flavored.falsy"><code class="docutils literal notranslate"><span class="pre">falsy()</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="subtypes/true_false.html">true_false</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="subtypes/true_false.html#pythonic_fp.booleans.subtypes.true_false.TF_Bool"><code class="docutils literal notranslate"><span class="pre">TF_Bool</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="subtypes/true_false.html#pythonic_fp.booleans.subtypes.true_false.T_Bool"><code class="docutils literal notranslate"><span class="pre">T_Bool</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="subtypes/true_false.html#pythonic_fp.booleans.subtypes.true_false.F_Bool"><code class="docutils literal notranslate"><span class="pre">F_Bool</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="subtypes/true_false.html#pythonic_fp.booleans.subtypes.true_false.ALWAYS"><code class="docutils literal notranslate"><span class="pre">ALWAYS</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="subtypes/true_false.html#pythonic_fp.booleans.subtypes.true_false.FSBool"><code class="docutils literal notranslate"><span class="pre">FSBool</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="subtypes/true_false.html#pythonic_fp.booleans.subtypes.true_false.NEVER_EVER"><code class="docutils literal notranslate"><span class="pre">NEVER_EVER</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="subtypes/true_false.html#pythonic_fp.booleans.subtypes.true_false.TFSBool"><code class="docutils literal notranslate"><span class="pre">TFSBool</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="subtypes/true_false.html#pythonic_fp.booleans.subtypes.true_false.TSBool"><code class="docutils literal notranslate"><span class="pre">TSBool</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -214,6 +284,33 @@
           </div>
         </div>
       </div>
+    
+        <div id="show_right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&lt;</span><span>Page contents</span></a></p>
+        </div>
+
+        <div id="right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&gt;</span><span>Page contents:</span></a></p>
+            <div class="page_toc">
+                <ul>
+<li><a class="reference internal" href="#">pythonic_fp.booleans</a><ul>
+<li><a class="reference internal" href="#subtypable-boolean-like-classes">Subtypable Boolean like classes</a><ul>
+<li><a class="reference internal" href="#covariant-class-hierarchy">Covariant class hierarchy</a></li>
+<li><a class="reference internal" href="#contravariant-non-shortcut-operators">Contravariant non-shortcut operators</a></li>
+<li><a class="reference internal" href="#classes">Classes</a><ul>
+<li><a class="reference internal" href="#class-sbool">Class SBool</a></li>
+<li><a class="reference internal" href="#class-fbool">Class FBool</a></li>
+<li><a class="reference internal" href="#class-tf-bool">Class TF_Bool</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </div>
     
 
       <div class="clearer"></div>

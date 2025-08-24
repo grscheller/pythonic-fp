@@ -22,13 +22,14 @@ proposed_release_string = 'a proposed'
 
 extensions = [
     'sphinx.ext.autodoc',
+    'sphinx.ext.graphviz',
 ]
+
+autodoc_member_order = 'bysource'
+autoclass_content = 'both'
 
 templates_path = ['_templates']
 exclude_patterns: list[str] = []
-
-# -- Options for Sphinx
-autoclass_content = 'both'
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output

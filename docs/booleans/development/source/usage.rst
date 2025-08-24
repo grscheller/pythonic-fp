@@ -19,4 +19,4 @@ Import package booleans classes, functions and constants into your code.
 
     from pythonic_fp.booleans.subtypable SBool, snot, TRUTH, LIE
     from pythonic_fp.booleans.subtypes.flavored FBool, truthy, falsy
-    from pythonic_fp.booleans.subtypes.true_false TSBool, FSBool, ALWAYS, NEVER_EVER
+    from pythonic_fp.booleans.subtypes.true_false TF_Bool, T_Bool, F_Bool, ALWAYS, NEVER_EVER

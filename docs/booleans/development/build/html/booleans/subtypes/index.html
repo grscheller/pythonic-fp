@@ -8,6 +8,7 @@
     <title>subtypes &#8212; Pythonic FP - Booleans 0.1.0 documentation</title>
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../../_static/basic_mod.css?v=9b2032db" />
+    <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
     <script src="../../_static/documentation_options.js?v=01f34227"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
@@ -152,25 +153,28 @@
             
   <section id="subtypes">
 <h1>subtypes<a class="headerlink" href="#subtypes" title="Link to this heading">¶</a></h1>
-<p>Subtypes of the booleans.subtypable <code class="docutils literal notranslate"><span class="pre">SBool</span></code> class.</p>
+<section id="module-subtypes">
+<h2>Module subtypes<a class="headerlink" href="#module-subtypes" title="Link to this heading">¶</a></h2>
+<section id="module-flavored">
+<h3>Module flavored<a class="headerlink" href="#module-flavored" title="Link to this heading">¶</a></h3>
 <ul class="simple">
-<li><p>module flavored</p>
-<ul>
 <li><p>When you need different “flavors” of the truth</p></li>
-<li><p>Flavors of <code class="docutils literal notranslate"><span class="pre">FBool</span></code> based on any hashable value</p></li>
+<li><p>Flavors of <code class="docutils literal notranslate"><span class="pre">FBool</span></code> instances are based on any hashable value</p></li>
 </ul>
-</li>
-<li><p>module true_false</p>
+</section>
+<section id="module-true-false">
+<h3>Module true_false<a class="headerlink" href="#module-true-false" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>where truthy and falsy are typeable</p></li>
+<li><p>class <code class="docutils literal notranslate"><span class="pre">TS_Bool</span></code> consists of two disjoint subclasses</p>
 <ul>
-<li><p>contains two final subclasses of <code class="docutils literal notranslate"><span class="pre">SBool</span></code></p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">TSBool</span></code> instances are always truthy</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">FSBool</span></code> instances are always falsy</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">T_Bool</span></code> instances are always truthy</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">F_Bool</span></code> instances are always falsy</p></li>
 </ul>
 </li>
 </ul>
-</li>
-</ul>
+</section>
+</section>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="flavored.html">flavored</a></li>
@@ -179,11 +183,11 @@
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="true_false.html">true_false</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="true_false.html#pythonic_fp.booleans.subtypes.true_false.TF_Bool"><code class="docutils literal notranslate"><span class="pre">TF_Bool</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="true_false.html#pythonic_fp.booleans.subtypes.true_false.T_Bool"><code class="docutils literal notranslate"><span class="pre">T_Bool</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="true_false.html#pythonic_fp.booleans.subtypes.true_false.F_Bool"><code class="docutils literal notranslate"><span class="pre">F_Bool</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="true_false.html#pythonic_fp.booleans.subtypes.true_false.ALWAYS"><code class="docutils literal notranslate"><span class="pre">ALWAYS</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="true_false.html#pythonic_fp.booleans.subtypes.true_false.FSBool"><code class="docutils literal notranslate"><span class="pre">FSBool</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="true_false.html#pythonic_fp.booleans.subtypes.true_false.NEVER_EVER"><code class="docutils literal notranslate"><span class="pre">NEVER_EVER</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="true_false.html#pythonic_fp.booleans.subtypes.true_false.TFSBool"><code class="docutils literal notranslate"><span class="pre">TFSBool</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="true_false.html#pythonic_fp.booleans.subtypes.true_false.TSBool"><code class="docutils literal notranslate"><span class="pre">TSBool</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -195,6 +199,27 @@
           </div>
         </div>
       </div>
+    
+        <div id="show_right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&lt;</span><span>Page contents</span></a></p>
+        </div>
+
+        <div id="right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&gt;</span><span>Page contents:</span></a></p>
+            <div class="page_toc">
+                <ul>
+<li><a class="reference internal" href="#">subtypes</a><ul>
+<li><a class="reference internal" href="#module-subtypes">Module subtypes</a><ul>
+<li><a class="reference internal" href="#module-flavored">Module flavored</a></li>
+<li><a class="reference internal" href="#module-true-false">Module true_false</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </div>
     
 
       <div class="clearer"></div>
