@@ -21,7 +21,7 @@ classifiers = [
   "Typing :: Typed",
 ]
 dependencies = [
-  "pythonic-fp-singletons>=1.0.1",
+  "pythonic-fp-sentinels>=2.0.0",
 ]
 dynamic = ["description"]
 
