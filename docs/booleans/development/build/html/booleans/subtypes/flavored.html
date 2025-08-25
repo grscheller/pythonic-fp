@@ -159,9 +159,11 @@
 <em class="property"><span class="k"><span class="pre">final</span></span><span class="w"> </span><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.booleans.subtypes.flavored.</span></span><span class="sig-name descname"><span class="pre">FBool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">witness</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flavor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Hashable</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.booleans.subtypes.flavored.FBool" title="Link to this definition">¶</a></dt>
 <dd><p>Flavored Booleans.</p>
 <p>When you need to deal with different flavors of the truth.
-Each “flavor” is indexed by a hashable value.</p>
+Each “flavor” is “indexed” by a hashable value, not “subtyped”
+by it.</p>
 <p>This type can also do (non-shortcut) Boolean logic using Python
-bitwise operators.</p>
+bitwise operators. Combining <code class="docutils literal notranslate"><span class="pre">FBool</span></code> instances of different
+flavors in this way will just result in an <code class="docutils literal notranslate"><span class="pre">SBool</span></code>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
