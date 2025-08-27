@@ -13,4 +13,4 @@ subtypes
 .. toctree::
    :maxdepth: 2
 
-   true_false
+   truthy_falsy
