@@ -153,9 +153,13 @@
   <section id="module-pythonic_fp.sentinels.novalue">
 <span id="sentinels-novalue"></span><h1>sentinels.novalue<a class="headerlink" href="#module-pythonic_fp.sentinels.novalue" title="Link to this heading">¶</a></h1>
 <p>Singleton class representing a missing value.</p>
-<p>In untyped Python, both <code class="docutils literal notranslate"><span class="pre">None</span></code> and <code class="docutils literal notranslate"><span class="pre">()</span></code> are often used as sentinel values.
-When typing tools like MyPy are used, both are shoe-horded into Union types.</p>
-<p><code class="docutils literal notranslate"><span class="pre">NoValue()</span></code> is a singleton object representing a missing value.</p>
+<p>In untyped Python, both <code class="docutils literal notranslate"><span class="pre">None</span></code> and <code class="docutils literal notranslate"><span class="pre">()</span></code> are often used by end users
+and libraries as sentinel values. I prefer to think of them as</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">None</span></code>: returned (or returns) no values</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">()</span></code>: an empty, possibly typed, but still iterable collection</p></li>
+</ul>
+<p>While <code class="docutils literal notranslate"><span class="pre">NoValue()</span></code> is a singleton object representing a missing value.</p>
 <p>Given variables</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="n">NoValue</span>
 <span class="n">y</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="n">NoValue</span>
