@@ -1,18 +1,25 @@
 pythonic-fp-sentinels
 =====================
 
+PyPI project
+`pythonic-fp-sentinels
+<https://pypi.org/project/pythonic-fp-sentinels/>`_
+part of the 
+`pythonic-fp namespace projects
+<https://github.com/grscheller/pythonic-fp/blob/main/README.md>`_.
+
+For |PROPOSED_RELEASE_STRING| |VERSION_RELEASED| release.
+
+.. automodule:: pythonic_fp.sentinels
+   :synopsis:
+   :noindex:
+
 .. toctree::
    :caption: Overview
    :maxdepth: 1
    :hidden:
 
    self
-
-.. toctree::
-   :caption: Description
-   :maxdepth: 1
-
-   description
 
 .. toctree::
    :caption: Getting Started
@@ -26,4 +33,4 @@ pythonic-fp-sentinels
    :caption: Documentation
    :maxdepth: 2
 
-   api/index
+   sentinels/index

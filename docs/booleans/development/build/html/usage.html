@@ -190,12 +190,22 @@
 <ul class="simple">
 <li><p>use <code class="docutils literal notranslate"><span class="pre">TF_Booleans</span> <span class="pre">=</span> <span class="pre">T_Bool</span> <span class="pre">|</span> <span class="pre">F_Bool</span> <span class="pre">|</span> <span class="pre">TF_Bool</span></code> only as a type</p></li>
 <li><p>directly use <code class="docutils literal notranslate"><span class="pre">T_Bool</span></code>, <code class="docutils literal notranslate"><span class="pre">F_Bool</span></code>, <code class="docutils literal notranslate"><span class="pre">TF_Bool</span></code> as the type constructors</p></li>
-<li><p>constants <code class="docutils literal notranslate"><span class="pre">ALWAYS</span></code> and <code class="docutils literal notranslate"><span class="pre">Never</span></code> are the unique truthy and falsy values</p>
+<li><p>constants <code class="docutils literal notranslate"><span class="pre">ALWAYS</span></code> and <code class="docutils literal notranslate"><span class="pre">Never</span></code> are the unique <code class="docutils literal notranslate"><span class="pre">TS_Bool</span></code> truthy and falsy values</p>
 <ul>
-<li><p>but they have distinct distinct types</p>
+<li><p>but they are distinct subtypes of <code class="docutils literal notranslate"><span class="pre">TS_Bool</span></code></p>
 <ul>
-<li><p>we have <code class="docutils literal notranslate"><span class="pre">type(ALWAYS)</span> <span class="pre">is</span> <span class="pre">T_Bool</span></code> and <code class="docutils literal notranslate"><span class="pre">type(NEVER)</span> <span class="pre">is</span> <span class="pre">F_Bool</span></code></p></li>
-<li><p>while <code class="docutils literal notranslate"><span class="pre">type(True)</span> <span class="pre">is</span> <span class="pre">bool</span></code> and <code class="docutils literal notranslate"><span class="pre">type(False)</span> <span class="pre">is</span> <span class="pre">bool</span></code></p></li>
+<li><p>for <code class="docutils literal notranslate"><span class="pre">TS_Bool</span></code> we have</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">type(ALWAYS)</span> <span class="pre">is</span> <span class="pre">T_Bool</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">type(NEVER)</span> <span class="pre">is</span> <span class="pre">F_Bool</span></code></p></li>
+</ul>
+</li>
+<li><p>while for <code class="docutils literal notranslate"><span class="pre">bool</span></code> we have</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">type(True)</span> <span class="pre">is</span> <span class="pre">bool</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">type(False)</span> <span class="pre">is</span> <span class="pre">bool</span></code></p></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
