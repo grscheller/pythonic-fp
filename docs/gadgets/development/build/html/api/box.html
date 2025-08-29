@@ -163,14 +163,15 @@
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Box(item)</span></code> contains at one item of type <code class="docutils literal notranslate"><span class="pre">T</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Box[T]()</span></code> creates empty container</p>
-<ul>
-<li><p>where <code class="docutils literal notranslate"><span class="pre">T</span></code> is some definite type</p></li>
-<li><p>which could be <code class="docutils literal notranslate"><span class="pre">None</span></code> or even <code class="docutils literal notranslate"><span class="pre">Never</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Box(item:</span> <span class="pre">T)</span></code>: contains at one item of type <code class="docutils literal notranslate"><span class="pre">T</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Box[T]()</span></code>: creates empty container</p></li>
 </ul>
-</li>
-</ul>
+<p>Where type <code class="docutils literal notranslate"><span class="pre">T</span></code> is some definite type, which
+could be <code class="docutils literal notranslate"><span class="pre">None</span></code> or even <code class="docutils literal notranslate"><span class="pre">Never</span></code>.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><code class="docutils literal notranslate"><span class="pre">Box</span></code> objects can be used in Python match statements.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -200,13 +201,13 @@
 <dd><p>Exchange an item with what is in the Box.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>item</strong> – <code class="docutils literal notranslate"><span class="pre">item</span></code> to exchanges</p>
+<dd class="field-odd"><p><strong>new_item</strong> – New item to exchange for current item.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>original contents of the <code class="docutils literal notranslate"><span class="pre">Box</span></code></p>
+<dd class="field-even"><p>Original contents of the <code class="docutils literal notranslate"><span class="pre">Box</span></code>.</p>
 </dd>
 <dt class="field-odd">Raises<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>ValueError</strong> – if Box is empty</p>
+<dd class="field-odd"><p><strong>ValueError</strong> – If Box is empty.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -248,13 +249,13 @@ instance since the type of Box can change.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.gadgets.box.Box.pop">
 <span class="sig-name descname"><span class="pre">pop</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">T</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Never</span></span></span><a class="headerlink" href="#pythonic_fp.gadgets.box.Box.pop" title="Link to this definition">¶</a></dt>
-<dd><p>Pop the contained item if Box is not empty.</p>
+<dd><p>Pop the contained item if <code class="docutils literal notranslate"><span class="pre">Box</span></code> is not empty.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><p>item contained in <code class="docutils literal notranslate"><span class="pre">Box</span></code></p>
+<dd class="field-odd"><p>item contained in the <code class="docutils literal notranslate"><span class="pre">Box</span></code></p>
 </dd>
 <dt class="field-even">Raises<span class="colon">:</span></dt>
-<dd class="field-even"><p>ValueError if Box is empty</p>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">ValueError</span></code> if Box is empty</p>
 </dd>
 </dl>
 </dd></dl>

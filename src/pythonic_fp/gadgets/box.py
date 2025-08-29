@@ -28,13 +28,13 @@ class Box[T]:
 
     .. note::
 
-       - ``Box(item)`` contains at one item of type ``T``
-       - ``Box[T]()`` creates empty container
+       - ``Box(item: T)``: contains at one item of type ``T``
+       - ``Box[T]()``: creates empty container
 
-         - where ``T`` is some definite type
-         - which could be ``None`` or even ``Never``
+       Where type ``T`` is some definite type, which
+       could be ``None`` or even ``Never``.
 
-    .. info ::
+    .. tip ::
 
        ``Box`` objects can be used in Python match statements.
 
@@ -106,10 +106,10 @@ class Box[T]:
         return cast(T, alt)
 
     def pop(self) -> T | Never:
-        """Pop the contained item if Box is not empty.
+        """Pop the contained item if ``Box`` is not empty.
 
-        :returns: item contained in ``Box``
-        :raises: ValueError if Box is empty
+        :returns: item contained in the ``Box``
+        :raises: ``ValueError`` if Box is empty
 
         """
         if self._item is self._sentinel:
@@ -140,9 +140,9 @@ class Box[T]:
     def exchange(self, new_item: T) -> T | Never:
         """Exchange an item with what is in the Box.
 
-        :param item: ``item`` to exchanges
-        :returns: original contents of the ``Box``
-        :raises ValueError: if Box is empty
+        :param ``new_item``: New item to exchange for current item.
+        :returns: Original contents of the ``Box``.
+        :raises ValueError: If Box is empty.
         """
         if self._item is self._sentinel:
             msg = 'Box: Trying to exchange items from an empty Box'
