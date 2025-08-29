@@ -37,8 +37,8 @@ def latest_common_ancestor(cls1: type, cls2: type) -> type | Never:
 
     :param cls1: first class
     :param cls2: second class
-    :returns: least common ancestor base class of cls1 and cls2
-    :raises TypeError: theoretically only from inspect.getmto
+    :returns: Least common ancestor base class of ``cls1`` and ``cls2``.
+    :raises TypeError: theoretically only from ``inspect.getmto``
 
     """
     if issubclass(cls1, cls2):

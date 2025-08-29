@@ -18,13 +18,19 @@ from collections.abc import Iterator
 
 __all__ = ['it']
 
+
 def it[A](*args: A) -> Iterator[A]:
     """Function returning an iterator of its arguments.
 
-    Does not create an object to iterate over.
+    .. note:
 
-    - well, not in the Python world
-    - maybe in the C world
+        Does not create an object to iterate over.
+
+        - well, not in the Python world
+        - maybe in the C world
+
+    :param args: Objects to iterate over.
+    :returns: An iterator of the arguments.
 
     """
     yield from args
