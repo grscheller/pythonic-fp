@@ -63,7 +63,7 @@ warn_unused_configs = true
 [tool.pylsp-mypy]
 enabled = true
 live-mode = true
-dmypy = true
+dmypy = false
 strict = true
 report_progress = true
 

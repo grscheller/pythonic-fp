@@ -39,13 +39,10 @@ class Box[T]:
        ``Box`` objects can be used in Python match statements.
 
     """
-
     __slots__ = ('_item',)
     __match_args__ = ('_item',)
 
     _sentinel: Final[ClassVar[Sentinel[str]]] = Sentinel('_Box')
-
-    T = TypeVar('T')
 
     @overload
     def __init__(self) -> None: ...
@@ -58,7 +55,7 @@ class Box[T]:
         :returns: New ``Box`` instance.
 
         """
-        self._item: T | Sentinel[str] = item
+        self._item = item
 
     def __bool__(self) -> bool:
         return self._item is not Sentinel('_Box')
@@ -161,7 +158,7 @@ class Box[T]:
         """
         if self._item is Sentinel('_Box'):
             return Box()
-        return Box(f(cast(U, self._item)))
+        return Box(f(cast(T, self._item)))
 
     def bind[U](self, f: Callable[[T], 'Box[U]']) -> 'Box[U]':
         """Flatmap ``Box`` with function ``f``.
