@@ -1,14 +1,14 @@
 usage
 =====
 
-How to installing the module
-----------------------------
+How to installing the package
+-----------------------------
 
 Install the project into your Python environment:
 
 .. code:: console
 
-    $ pip install pythonic-fp
+    $ pip install pythonic-fp-gadgets
 
 Importing the modules
 ---------------------

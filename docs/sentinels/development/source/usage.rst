@@ -10,8 +10,8 @@ Install the project into your Python environment:
 
     $ pip install pythonic-fp-sentinel
 
-Importing the module
---------------------
+Importing the modules
+---------------------
 
 Import the sentinel classes into your code.
 

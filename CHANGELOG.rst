@@ -9,11 +9,23 @@ remain Pythonic. All projects are under the ``pythonic-fp`` namespace on PyPI.
 Important Milestones
 --------------------
 
-2025-08-13 - generated docs for pythonic-fp-booleans PyPI project
+Update - 2025-08-13
+~~~~~~~~~~~~~~~~~~~
+
+Moved pythonic_fp.gadgets to its own repo. Replaced it with
+an empty module called pythonic_fp.name_claim.
+
+Update - 2025-08-13
+~~~~~~~~~~~~~~~~~~~
+
+Generated docs for pythonic-fp-booleans PyPI project
 
 - first development (prerelease) generation of of docs for booleans.sbool
 
-2025-08-11 - The next gadget's release will be v1.2.0
+Update - 2025-08-11
+~~~~~~~~~~~~~~~~~~~
+
+The next gadget's release will be v1.2.0.
 
 - added module pythonic_fp.gadgets.lca for function latest common ancestor
 

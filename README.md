@@ -17,7 +17,7 @@ Pythonic FP is a hobby project, but the maintainer is serious about its quality.
 | [Gadgets](#gadgets-pythonic_fpgadgets) | [pythonic-fp][104] | [gh][204] | [gh_pages][304] | pythonic_fp.gadgets |
 | [Iterables](#tools-for-iterables---pythonic_fpiterables) | [pythonic-fp-iterables][105] | [gh][205] | [gh_pages][305] | pythonic_fp.iterables |
 | [Sentinels](#sentinel-values---pythonic_fpsentinels) | [pythonic-fp-sentinels][106] | [gh][206] | [gh_pages][306] | pythonic_fp.sentinels |
-| [Sentinels](#singletons---pythonic_fpsingletons) | [pythonic-fp-singletons][107] | [gh][207] | [gh_pages][307] | pythonic_fp.singletons **DEPRECATED** |
+| [Singletons](#singletons---pythonic_fpsingletons) | [pythonic-fp-singletons][107] | [gh][207] | [gh_pages][307] | pythonic_fp.singletons **DEPRECATED** |
 | [Splitends](#splitends---pythonic_fpsplitends) | [pythonic-fp-splitends][108] | [gh][208] | [gh_pages][308] | pythonic_fp.splitends |
 
 The overall project's name is **Pythonic FP** and consists of PyPI
@@ -106,7 +106,7 @@ Tools for creating iterators from iterables.
 
 ______________________________________________________________________
 
-### Sentinel Values - pythonic_fp.sentinels
+### Sentinels - pythonic_fp.sentinels
 
 Singleton classes representing
 
@@ -115,11 +115,11 @@ Singleton classes representing
 
 ______________________________________________________________________
 
-### Singletons - pythonic_fp.sentinels
+### Singletons - pythonic_fp.singletons
 
 Singleton classes **DEPRECATED**
 
-- see Sentinel Values and Booleans sections
+- see Sentinel and Booleans sections
 
 ______________________________________________________________________
 

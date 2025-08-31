@@ -1,14 +1,14 @@
 PyPI releases
 -------------
 
-**pythonic-fp:** pythonic_fp.gadgets
+**pythonic-fp-gadgets:** pythonic_fp.gadgets
 
 +-------------------------------------------------------------------------------------------+--------------+
 | PyPI Release                                                                              | Release date |
 +===========================================================================================+==============+
 | `development <https://grscheller.github.io/pythonic-fp/gadgets/development/build/html/>`_ | TBD          |
 +-------------------------------------------------------------------------------------------+--------------+
-| `v1.2.0 <https://grscheller.github.io/pythonic-fp/gadgets/v1.2.0/build/html/>`_           | TBD          |
+| `v1.2.0 <https://grscheller.github.io/pythonic-fp/gadgets/v1.2.0/build/html/>`_           | 2025-08-30   |
 +-------------------------------------------------------------------------------------------+--------------+
 | `v1.1.0 <https://grscheller.github.io/pythonic-fp/gadgets/v1.1.0/build/html/>`_           | 2025-08-02   |
 +-------------------------------------------------------------------------------------------+--------------+
