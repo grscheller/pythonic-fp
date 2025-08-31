@@ -1,0 +1,5 @@
+latest_common_ancestor
+======================
+
+.. automodule:: pythonic_fp.gadgets.latest_common_ancestor
+   :members:

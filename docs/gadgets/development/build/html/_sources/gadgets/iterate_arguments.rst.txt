@@ -1,0 +1,5 @@
+iterate_arguments
+=================
+
+.. automodule:: pythonic_fp.gadgets.iterate_arguments
+   :members:

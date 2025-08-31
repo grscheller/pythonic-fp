@@ -2,7 +2,7 @@ pythonic-fp-gadgets
 ===================
 
 PyPI project
-`pythonic-fp
+`pythonic-fp-gadhets
 <https://pypi.org/project/pythonic-fp-gadgets/>`_
 part of the 
 `pythonic-fp namespace projects

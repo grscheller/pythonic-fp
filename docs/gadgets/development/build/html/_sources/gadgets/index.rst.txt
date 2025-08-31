@@ -9,9 +9,9 @@ pythonic_fp.gadgets
 .. toctree::
    :maxdepth: 1
 
-   it
+   iterate_arguments
 
 .. toctree::
    :maxdepth: 1
 
-   lca
+   latest_common_ancestor
