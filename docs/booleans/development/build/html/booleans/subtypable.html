@@ -5,11 +5,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>subtypable &#8212; Pythonic FP - Booleans 1.1.0 documentation</title>
+    <title>subtypable &#8212; Pythonic FP - Booleans 1.1.1 documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/basic_mod.css?v=9b2032db" />
     <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
-    <script src="../_static/documentation_options.js?v=fc837d61"></script>
+    <script src="../_static/documentation_options.js?v=58fbf978"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
@@ -31,7 +31,7 @@
         <p id="toggle_sidebar">
             <a href="#" title="Toggle sidebar">|||</a>
         </p>
-        <h1><a href="../index.html" title="Go to homepage">Pythonic FP - Booleans 1.1.0 documentation</a></h1>
+        <h1><a href="../index.html" title="Go to homepage">Pythonic FP - Booleans 1.1.1 documentation</a></h1>
 
         <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
     <template v-if="mode == 'light'">
@@ -173,26 +173,6 @@ using Python bitwise operators.</p>
 </dl>
 </dd></dl>
 
-<dl class="py function">
-<dt class="sig sig-object py" id="pythonic_fp.booleans.subtypable.snot">
-<span class="sig-prename descclassname"><span class="pre">pythonic_fp.booleans.subtypable.</span></span><span class="sig-name descname"><span class="pre">snot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sbool</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#pythonic_fp.booleans.subtypable.SBool" title="pythonic_fp.booleans.subtypable.SBool"><span class="pre">SBool</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.booleans.subtypable.SBool" title="pythonic_fp.booleans.subtypable.SBool"><span class="pre">SBool</span></a></span></span><a class="headerlink" href="#pythonic_fp.booleans.subtypable.snot" title="Link to this definition">¶</a></dt>
-<dd><p>Return the <code class="docutils literal notranslate"><span class="pre">SBool</span></code> subtype of the opposite truthiness.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Trying to use the Python <code class="docutils literal notranslate"><span class="pre">not</span></code> operator for this will just
-return a <code class="docutils literal notranslate"><span class="pre">bool</span></code>. There is no <code class="docutils literal notranslate"><span class="pre">__not__</span></code> dunder method
-that will change the behavior of <code class="docutils literal notranslate"><span class="pre">not</span></code>.</p>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>sbool</strong> – An <code class="docutils literal notranslate"><span class="pre">SBool</span></code> or <code class="docutils literal notranslate"><span class="pre">SBool</span></code> subtype.</p>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>The <code class="docutils literal notranslate"><span class="pre">SBool</span></code> or <code class="docutils literal notranslate"><span class="pre">SBool</span></code> subtype of the opposite truthiness.</p>
-</dd>
-</dl>
-</dd></dl>
-
 <dl class="py data">
 <dt class="sig sig-object py" id="pythonic_fp.booleans.subtypable.TRUTH">
 <span class="sig-prename descclassname"><span class="pre">pythonic_fp.booleans.subtypable.</span></span><span class="sig-name descname"><span class="pre">TRUTH</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Final</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#pythonic_fp.booleans.subtypable.SBool" title="pythonic_fp.booleans.subtypable.SBool"><span class="pre">SBool</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">TRUTH</span></em><a class="headerlink" href="#pythonic_fp.booleans.subtypable.TRUTH" title="Link to this definition">¶</a></dt>
@@ -223,7 +203,6 @@ that will change the behavior of <code class="docutils literal notranslate"><spa
                 <ul>
 <li><a class="reference internal" href="#">subtypable</a><ul>
 <li><a class="reference internal" href="#pythonic_fp.booleans.subtypable.SBool"><code class="docutils literal notranslate"><span class="pre">SBool</span></code></a></li>
-<li><a class="reference internal" href="#pythonic_fp.booleans.subtypable.snot"><code class="docutils literal notranslate"><span class="pre">snot()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.booleans.subtypable.TRUTH"><code class="docutils literal notranslate"><span class="pre">TRUTH</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.booleans.subtypable.LIE"><code class="docutils literal notranslate"><span class="pre">LIE</span></code></a></li>
 </ul>

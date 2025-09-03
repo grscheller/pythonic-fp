@@ -5,11 +5,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>flavored &#8212; Pythonic FP - Booleans 1.1.0 documentation</title>
+    <title>flavored &#8212; Pythonic FP - Booleans 1.1.1 documentation</title>
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../../_static/basic_mod.css?v=9b2032db" />
     <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
-    <script src="../../_static/documentation_options.js?v=fc837d61"></script>
+    <script src="../../_static/documentation_options.js?v=58fbf978"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/js/theme.js"></script>
@@ -31,7 +31,7 @@
         <p id="toggle_sidebar">
             <a href="#" title="Toggle sidebar">|||</a>
         </p>
-        <h1><a href="../../index.html" title="Go to homepage">Pythonic FP - Booleans 1.1.0 documentation</a></h1>
+        <h1><a href="../../index.html" title="Go to homepage">Pythonic FP - Booleans 1.1.1 documentation</a></h1>
 
         <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
     <template v-if="mode == 'light'">
@@ -153,66 +153,74 @@
             
   <section id="module-pythonic_fp.booleans.subtypes.flavored">
 <span id="flavored"></span><h1>flavored<a class="headerlink" href="#module-pythonic_fp.booleans.subtypes.flavored" title="Link to this heading">¶</a></h1>
-<p>Flavored Booleans.</p>
+<section id="flavored-booleans">
+<h2>Flavored Booleans<a class="headerlink" href="#flavored-booleans" title="Link to this heading">¶</a></h2>
+<p>When different flavors of the truth are needed. Each “flavor” is
+“indexed” by a hashable value, not “subtyped” by it.</p>
+</section>
 <dl class="py class">
 <dt class="sig sig-object py" id="pythonic_fp.booleans.subtypes.flavored.FBool">
 <em class="property"><span class="k"><span class="pre">final</span></span><span class="w"> </span><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.booleans.subtypes.flavored.</span></span><span class="sig-name descname"><span class="pre">FBool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">witness</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flavor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Hashable</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.booleans.subtypes.flavored.FBool" title="Link to this definition">¶</a></dt>
-<dd><p>Flavored Booleans.</p>
-<p>When you need to deal with different flavors of the truth.
-Each “flavor” is “indexed” by a hashable value, not “subtyped”
-by it.</p>
+<dd><section id="flavored-boolean">
+<h2>Flavored Boolean<a class="headerlink" href="#flavored-boolean" title="Link to this heading">¶</a></h2>
+<p>When different flavors of the truth are needed. Each “flavor” is
+“indexed” by a hashable value, not “subtyped” by it.</p>
 <p>This type can also do (non-shortcut) Boolean logic using Python
 bitwise operators. Combining <code class="docutils literal notranslate"><span class="pre">FBool</span></code> instances of different
 flavors in this way will just result in an <code class="docutils literal notranslate"><span class="pre">SBool</span></code>.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>witness</strong> – Determines truthiness of the <code class="docutils literal notranslate"><span class="pre">FBool</span></code> instance returned.</p></li>
-<li><p><strong>flavor</strong> – The <code class="docutils literal notranslate"><span class="pre">flavor</span></code> of <code class="docutils literal notranslate"><span class="pre">FBool</span></code> to created.</p></li>
-</ul>
+<dt class="field-odd">param witness<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Determines truthiness of the <code class="docutils literal notranslate"><span class="pre">FBool</span></code> instance returned.</p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>The truthy or falsy <code class="docutils literal notranslate"><span class="pre">FBool</span></code> instance of a particular <code class="docutils literal notranslate"><span class="pre">flavor</span></code>.</p>
+<dt class="field-even">param flavor<span class="colon">:</span></dt>
+<dd class="field-even"><p>The <code class="docutils literal notranslate"><span class="pre">flavor</span></code> of <code class="docutils literal notranslate"><span class="pre">FBool</span></code> to created.</p>
+</dd>
+<dt class="field-odd">returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The truthy or falsy <code class="docutils literal notranslate"><span class="pre">FBool</span></code> instance of a particular <code class="docutils literal notranslate"><span class="pre">flavor</span></code>.</p>
 </dd>
 </dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.booleans.subtypes.flavored.FBool.flavor">
 <span class="sig-name descname"><span class="pre">flavor</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Hashable</span></span></span><a class="headerlink" href="#pythonic_fp.booleans.subtypes.flavored.FBool.flavor" title="Link to this definition">¶</a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><p>The flavor of the FBool.</p>
-</dd>
-</dl>
+<dd><p>t
+:returns: The flavor of the FBool.</p>
 </dd></dl>
 
+</section>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pythonic_fp.booleans.subtypes.flavored.truthy">
 <span class="sig-prename descclassname"><span class="pre">pythonic_fp.booleans.subtypes.flavored.</span></span><span class="sig-name descname"><span class="pre">truthy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flavor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Hashable</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.booleans.subtypes.flavored.FBool" title="pythonic_fp.booleans.subtypes.flavored.FBool"><span class="pre">FBool</span></a></span></span><a class="headerlink" href="#pythonic_fp.booleans.subtypes.flavored.truthy" title="Link to this definition">¶</a></dt>
-<dd><p>Get the truthy <code class="docutils literal notranslate"><span class="pre">FBool</span></code> of a particular <code class="docutils literal notranslate"><span class="pre">flavor</span></code>.</p>
+<dd><section id="get-truthy-fbool">
+<h2>Get truthy FBool<a class="headerlink" href="#get-truthy-fbool" title="Link to this heading">¶</a></h2>
+<p>Get the truthy <code class="docutils literal notranslate"><span class="pre">FBool</span></code> of a particular <code class="docutils literal notranslate"><span class="pre">flavor</span></code>.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>flavor</strong> – Hashable value to determine which singleton <code class="docutils literal notranslate"><span class="pre">flavor</span></code> to return.</p>
+<dt class="field-odd">param flavor<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Hashable value to determine which singleton <code class="docutils literal notranslate"><span class="pre">flavor</span></code> to return.</p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>The truthy singleton of a particular  <code class="docutils literal notranslate"><span class="pre">flavor</span></code>.</p>
 </dd>
 </dl>
+</section>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pythonic_fp.booleans.subtypes.flavored.falsy">
 <span class="sig-prename descclassname"><span class="pre">pythonic_fp.booleans.subtypes.flavored.</span></span><span class="sig-name descname"><span class="pre">falsy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flavor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Hashable</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.booleans.subtypes.flavored.FBool" title="pythonic_fp.booleans.subtypes.flavored.FBool"><span class="pre">FBool</span></a></span></span><a class="headerlink" href="#pythonic_fp.booleans.subtypes.flavored.falsy" title="Link to this definition">¶</a></dt>
-<dd><p>Get the falsy <code class="docutils literal notranslate"><span class="pre">FBool</span></code> of a particular <code class="docutils literal notranslate"><span class="pre">flavor</span></code>.</p>
+<dd><section id="get-falsy-fbool">
+<h2>Get falsy FBool<a class="headerlink" href="#get-falsy-fbool" title="Link to this heading">¶</a></h2>
+<p>Get the falsy <code class="docutils literal notranslate"><span class="pre">FBool</span></code> of a particular <code class="docutils literal notranslate"><span class="pre">flavor</span></code>.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>flavor</strong> – Hashable value to determine which singleton <code class="docutils literal notranslate"><span class="pre">flavor</span></code> to return.</p>
+<dt class="field-odd">param flavor<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Hashable value to determine which singleton <code class="docutils literal notranslate"><span class="pre">flavor</span></code> to return.</p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>The falsy singleton of a particular  <code class="docutils literal notranslate"><span class="pre">flavor</span></code>.</p>
 </dd>
 </dl>
+</section>
 </dd></dl>
 
 </section>
@@ -232,6 +240,7 @@ flavors in this way will just result in an <code class="docutils literal notrans
             <div class="page_toc">
                 <ul>
 <li><a class="reference internal" href="#">flavored</a><ul>
+<li><a class="reference internal" href="#flavored-booleans">Flavored Booleans</a></li>
 <li><a class="reference internal" href="#pythonic_fp.booleans.subtypes.flavored.FBool"><code class="docutils literal notranslate"><span class="pre">FBool</span></code></a><ul>
 <li><a class="reference internal" href="#pythonic_fp.booleans.subtypes.flavored.FBool.flavor"><code class="docutils literal notranslate"><span class="pre">FBool.flavor()</span></code></a></li>
 </ul>

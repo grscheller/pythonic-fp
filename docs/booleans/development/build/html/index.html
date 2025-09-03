@@ -5,11 +5,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>PyPI: pythonic-fp-booleans &#8212; Pythonic FP - Booleans 1.1.0 documentation</title>
+    <title>PyPI: pythonic-fp-booleans &#8212; Pythonic FP - Booleans 1.1.1 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="_static/basic_mod.css?v=9b2032db" />
     <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=4ae1632d" />
-    <script src="_static/documentation_options.js?v=fc837d61"></script>
+    <script src="_static/documentation_options.js?v=58fbf978"></script>
     <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
@@ -30,7 +30,7 @@
         <p id="toggle_sidebar">
             <a href="#" title="Toggle sidebar">|||</a>
         </p>
-        <h1><a href="#" title="Go to homepage">Pythonic FP - Booleans 1.1.0 documentation</a></h1>
+        <h1><a href="#" title="Go to homepage">Pythonic FP - Booleans 1.1.1 documentation</a></h1>
 
         <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
     <template v-if="mode == 'light'">
@@ -148,7 +148,7 @@
 <a class="reference external" href="https://pypi.org/project/pythonic-fp-booleans/">pythonic-fp-booleans</a>
 part of the
 <a class="reference external" href="https://github.com/grscheller/pythonic-fp/blob/main/README.md">pythonic-fp namespace projects</a>.</p>
-<p>For a proposed version 1.1.0 release.</p>
+<p>For a proposed version 1.1.1 release.</p>
 <section id="subtypable-boolean-like-classes">
 <h2>Subtypable Boolean like classes<a class="headerlink" href="#subtypable-boolean-like-classes" title="Link to this heading">¶</a></h2>
 <p>While still compatible with Python shortcut logic, these classes can
@@ -205,7 +205,7 @@ of the two arguments.</p>
 <p class="admonition-title">Warning</p>
 <p>These “bitwise” operators could raise <code class="docutils literal notranslate"><span class="pre">TypeError</span></code> exceptions
 when applied against an <code class="docutils literal notranslate"><span class="pre">SBool</span></code> and objects not descended
-from <code class="docutils literal notranslate"><span class="pre">SBool</span></code>.</p>
+from <code class="docutils literal notranslate"><span class="pre">int</span></code>.</p>
 </div>
 </section>
 <section id="classes">
@@ -248,20 +248,13 @@ a singleton.</p>
 <p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="booleans/index.html">pythonic_fp.booleans</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="booleans/index.html#subtypable-boolean-like-classes">Subtypable Boolean like classes</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="booleans/index.html#covariant-class-hierarchy">Covariant class hierarchy</a></li>
-<li class="toctree-l3"><a class="reference internal" href="booleans/index.html#contravariant-non-shortcut-bitwise-operators">Contravariant non-shortcut “bitwise” operators</a></li>
-<li class="toctree-l3"><a class="reference internal" href="booleans/index.html#classes">Classes</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="booleans/index.html#class-sbool">Class SBool</a></li>
-<li class="toctree-l4"><a class="reference internal" href="booleans/index.html#class-fbool">Class FBool</a></li>
-<li class="toctree-l4"><a class="reference internal" href="booleans/index.html#class-tf-bool">Class TF_Bool</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="booleans/index.html#module-subtypes">Module subtypes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="booleans/index.html#module-flavored">Module flavored</a></li>
+<li class="toctree-l3"><a class="reference internal" href="booleans/index.html#module-truthy-falsy">Module truthy_falsy</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="booleans/subtypable.html">subtypable</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="booleans/subtypable.html#pythonic_fp.booleans.subtypable.SBool"><code class="docutils literal notranslate"><span class="pre">SBool</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="booleans/subtypable.html#pythonic_fp.booleans.subtypable.snot"><code class="docutils literal notranslate"><span class="pre">snot()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="booleans/subtypable.html#pythonic_fp.booleans.subtypable.TRUTH"><code class="docutils literal notranslate"><span class="pre">TRUTH</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="booleans/subtypable.html#pythonic_fp.booleans.subtypable.LIE"><code class="docutils literal notranslate"><span class="pre">LIE</span></code></a></li>
 </ul>
@@ -273,12 +266,14 @@ a singleton.</p>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="booleans/subtypes/flavored.html">flavored</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="booleans/subtypes/flavored.html#flavored-booleans">Flavored Booleans</a></li>
 <li class="toctree-l4"><a class="reference internal" href="booleans/subtypes/flavored.html#pythonic_fp.booleans.subtypes.flavored.FBool"><code class="docutils literal notranslate"><span class="pre">FBool</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="booleans/subtypes/flavored.html#pythonic_fp.booleans.subtypes.flavored.truthy"><code class="docutils literal notranslate"><span class="pre">truthy()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="booleans/subtypes/flavored.html#pythonic_fp.booleans.subtypes.flavored.falsy"><code class="docutils literal notranslate"><span class="pre">falsy()</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="booleans/subtypes/truthy_falsy.html">truthy_falsy</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="booleans/subtypes/truthy_falsy.html#truthy-falsy-booleans">Truthy-Falsy Booleans</a></li>
 <li class="toctree-l4"><a class="reference internal" href="booleans/subtypes/truthy_falsy.html#pythonic_fp.booleans.subtypes.truthy_falsy.TF_Bool"><code class="docutils literal notranslate"><span class="pre">TF_Bool</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="booleans/subtypes/truthy_falsy.html#pythonic_fp.booleans.subtypes.truthy_falsy.T_Bool"><code class="docutils literal notranslate"><span class="pre">T_Bool</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="booleans/subtypes/truthy_falsy.html#pythonic_fp.booleans.subtypes.truthy_falsy.F_Bool"><code class="docutils literal notranslate"><span class="pre">F_Bool</span></code></a></li>

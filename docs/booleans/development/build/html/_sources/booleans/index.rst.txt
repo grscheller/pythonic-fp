@@ -1,8 +1,9 @@
 pythonic_fp.booleans
 ====================
 
-.. automodule:: pythonic_fp.booleans
+.. automodule:: pythonic_fp.booleans.subtypes
    :synopsis:
+   :noindex:
 
 .. toctree::
    :maxdepth: 1

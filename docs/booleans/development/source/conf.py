@@ -13,7 +13,7 @@
 project = 'Pythonic FP - Booleans'
 copyright = '2023-2025, Geoffrey R. Scheller'
 author = 'Geoffrey R. Scheller'
-release = '1.1.0' 
+release = '1.1.1' 
 proposed_release_string = 'a proposed'
 # proposed_release_string = 'the'
 

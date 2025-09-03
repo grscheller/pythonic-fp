@@ -14,7 +14,7 @@ Pythonic FP is a hobby project, but the maintainer is serious about its quality.
 | [Circular Array](#circular-array-pythonic_fpcirculararray) | [pythonic-fp-circulararray][101] | [gh][201] | [gh_pages][301] | pythonic_fp.circulararray |
 | [Containers](#containers-pythonic_fpcontainers) | [pythonic-fp-containers][102] | [gh][202] | [gh_pages][302] | pythonic_fp.containers |
 | [FP Tools](#fp-tools-pythonic_fpfptools) | [pythonic-fp-fptools][103] | [gh][203] | [gh_pages][303] | pythonic_fp.fptools |
-| [Gadgets](#gadgets-pythonic_fpgadgets) | [pythonic-fp][104] | [gh][204] | [gh_pages][304] | pythonic_fp.gadgets |
+| [Gadgets](#gadgets-pythonic_fpgadgets) | [pythonic-fp-gadgets][104] | [gh][204] | [gh_pages][304] | pythonic_fp.gadgets |
 | [Iterables](#tools-for-iterables---pythonic_fpiterables) | [pythonic-fp-iterables][105] | [gh][205] | [gh_pages][305] | pythonic_fp.iterables |
 | [Sentinels](#sentinel-values---pythonic_fpsentinels) | [pythonic-fp-sentinels][106] | [gh][206] | [gh_pages][306] | pythonic_fp.sentinels |
 | [Singletons](#singletons---pythonic_fpsingletons) | [pythonic-fp-singletons][107] | [gh][207] | [gh_pages][307] | pythonic_fp.singletons **DEPRECATED** |
@@ -134,7 +134,7 @@ between themselves and form branching *hair-like* data structures.
 [101]: https://pypi.org/project/pythonic-fp-circulararray
 [102]: https://pypi.org/project/pythonic-fp-containers
 [103]: https://pypi.org/project/pythonic-fp-fptools
-[104]: https://pypi.org/project/pythonic-fp
+[104]: https://pypi.org/project/pythonic-fp-gadgets
 [105]: https://pypi.org/project/pythonic-fp-iterables
 [106]: https://pypi.org/project/pythonic-fp-sentinels
 [107]: https://pypi.org/project/pythonic-fp-singletons
@@ -143,7 +143,7 @@ between themselves and form branching *hair-like* data structures.
 [201]: https://github.com/grscheller/pythonic-fp-circulararray/blob/main/README.rst
 [202]: https://github.com/grscheller/pythonic-fp-containers/blob/main/README.rst
 [203]: https://github.com/grscheller/pythonic-fp-fptools/blob/main/README.rst
-[204]: https://github.com/grscheller/pythonic-fp/blob/main/README.rst
+[204]: https://github.com/grscheller/pythonic-fp-gadgets/blob/main/README.rst
 [205]: https://github.com/grscheller/pythonic-fp-iterables/blob/main/README.rst
 [206]: https://github.com/grscheller/pythonic-fp-sentinels/blob/main/README.rst
 [207]: https://github.com/grscheller/pythonic-fp-singletons/blob/main/README.rst
