@@ -1,0 +1,22 @@
+usage
+=====
+
+How to installing the package
+-----------------------------
+
+Install the project into your Python environment:
+
+.. code:: console
+
+    $ pip install pythonic-fp-gadgets
+
+Importing the modules
+---------------------
+
+Import the gadgets where "gadgets" are simple objects with minimal dependencies.
+
+.. code:: python
+
+    from pythonic_fp.gadgets.box import Box
+    from pythonic_fp.gadgets.iterate_arguments import ita
+    from pythonic_fp.gadgets.latest_common_ancestor import lca

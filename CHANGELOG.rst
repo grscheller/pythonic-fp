@@ -1,7 +1,8 @@
 CHANGELOG
 =========
 
-**Pythonic FP namespace projects**
+Pythonic FP namespace projects
+------------------------------
 
 Developer Tools supporting a functional style of programming yet endeavoring to
 remain Pythonic. All projects are under the ``pythonic-fp`` namespace on PyPI.
