@@ -1,5 +1,5 @@
-PyPI releases
--------------
+PyPI release documentation
+--------------------------
 
 **pythonic-fp-iterables:** pythonic_fp.iterables
 

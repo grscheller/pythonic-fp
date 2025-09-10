@@ -1,4 +1,4 @@
-changelog
+Changelog
 ---------
 
 Change log for the

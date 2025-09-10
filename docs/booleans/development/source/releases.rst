@@ -1,5 +1,5 @@
-PyPI Releases
--------------
+PyPI release documentation
+--------------------------
 
 **pythonic-fp-booleans:** pythonic_fp.booleans
 

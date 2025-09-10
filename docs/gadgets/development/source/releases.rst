@@ -1,5 +1,5 @@
-PyPI releases
--------------
+PyPI release documentation
+--------------------------
 
 **pythonic-fp-gadgets:** pythonic_fp.gadgets
 

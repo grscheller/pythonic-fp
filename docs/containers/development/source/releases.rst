@@ -1,5 +1,5 @@
-PyPI releases
--------------
+PyPI release documentation
+--------------------------
 
 **pythonic-fp-containers:** pythonic_fp.containers
 

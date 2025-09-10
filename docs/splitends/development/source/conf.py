@@ -13,9 +13,9 @@
 project = 'Pythonic FP - SplitEnds'
 copyright = '2023-2025, Geoffrey R. Scheller'
 author = 'Geoffrey R. Scheller'
-release = '1.0.1' 
-# release_string = 'For a proposed PyPI'
-release_string = 'PyPI'
+release = '1.0.3' 
+release_string = 'For a proposed PyPI'
+# release_string = 'PyPI'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration

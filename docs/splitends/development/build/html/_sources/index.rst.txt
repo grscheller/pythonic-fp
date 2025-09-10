@@ -1,18 +1,25 @@
 pythonic-fp-splitends
 =====================
 
+PyPI project
+`pythonic-fp-splitends
+<https://pypi.org/project/pythonic-fp-splitends/>`_
+part of the 
+`pythonic-fp namespace projects
+<https://github.com/grscheller/pythonic-fp/blob/main/README.md>`_.
+
+|RELEASE_STRING| |VERSION_RELEASED| release.
+
+.. automodule:: pythonic_fp.splitends
+   :synopsis:
+   :noindex:
+
 .. toctree::
    :caption: Overview
    :maxdepth: 1
    :hidden:
 
    self
-
-.. toctree::
-   :caption: Description
-   :maxdepth: 1
-
-   description
 
 .. toctree::
    :caption: Getting Started
@@ -26,4 +33,4 @@ pythonic-fp-splitends
    :caption: Documentation
    :maxdepth: 2
 
-   api/index
+   splitends/index
