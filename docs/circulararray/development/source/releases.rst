@@ -1,5 +1,5 @@
-PyPI release documentation
---------------------------
+PyPI releases
+-------------
 
 **pythonic-fp-circulararray:** pythonic_fp.circulararray
 
