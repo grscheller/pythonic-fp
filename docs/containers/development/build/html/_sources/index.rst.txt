@@ -1,18 +1,25 @@
 pythonic-fp-containers
 ======================
 
+PyPI project
+`pythonic-fp-containers
+<https://pypi.org/project/pythonic-fp-containers/>`_
+part of the 
+`pythonic-fp namespace projects
+<https://github.com/grscheller/pythonic-fp/blob/main/README.md>`_.
+
+|RELEASE_STRING| |VERSION_RELEASED| release.
+
+.. automodule:: pythonic_fp.containers
+   :synopsis:
+   :noindex:
+
 .. toctree::
    :caption: Overview
    :maxdepth: 1
    :hidden:
 
    self
-
-.. toctree::
-   :caption: Description
-   :maxdepth: 1
-
-   description
 
 .. toctree::
    :caption: Getting Started
@@ -24,6 +31,6 @@ pythonic-fp-containers
 
 .. toctree::
    :caption: Documentation
-   :maxdepth: 3
+   :maxdepth: 2
 
-   api/index
+   containers/index

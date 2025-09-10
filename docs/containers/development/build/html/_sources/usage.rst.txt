@@ -1,8 +1,8 @@
-usage
+Usage
 =====
 
-How to installing the module
-----------------------------
+How to installing the package
+-----------------------------
 
 Install the project into your Python environment:
 
@@ -22,5 +22,5 @@ Import the circulararray classes and "factory functions" into your code.
 
     from pythonic_fp.containers.queues.fifo import FIFOQueue, fifo_queue
     from pythonic_fp.containers.queues.lifo import LIFOQueue, lifo_queue
-    from pythonic_fp.containers.queues.lifo import DEQueue, de_queue
+    from pythonic_fp.containers.queues.de import DEQueue, de_queue
 

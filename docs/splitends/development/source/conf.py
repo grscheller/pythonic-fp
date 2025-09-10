@@ -14,8 +14,8 @@ project = 'Pythonic FP - SplitEnds'
 copyright = '2023-2025, Geoffrey R. Scheller'
 author = 'Geoffrey R. Scheller'
 release = '1.0.1' 
-proposed_release_string = 'a proposed'
-# proposed_release_string = 'the'
+# release_string = 'For a proposed PyPI'
+release_string = 'PyPI'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -39,5 +39,5 @@ html_static_path = ['_static']
 rst_epilog = f"""
 .. |VERSION_RELEASED| replace:: version {release}
 
-.. |PROPOSED_RELEASE_STRING| replace:: {proposed_release_string}
+.. |RELEASE_STRING| replace:: {release_string}
 """
