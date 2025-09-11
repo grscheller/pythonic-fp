@@ -1,8 +1,7 @@
 # PyPI Pythonic FP Namespace Projects
 
-Collection of Functional Programming (FP) oriented Python libraries.
-While taking a functional programming approach, these packages endeavor
-to remain Pythonic.
+Collection of Functional Programming (FP) oriented Python libraries
+which endeavor to be Pythonic.
 
 Pythonic FP is a hobby project, but the maintainer is serious about its quality.
 
@@ -21,19 +20,17 @@ Pythonic FP is a hobby project, but the maintainer is serious about its quality.
 | [Splitends](#splitends---pythonic_fpsplitends) | [pythonic-fp-splitends][108] | [gh][208] | [gh_pages][308] | pythonic_fp.splitends |
 
 The overall project's name is **Pythonic FP** and consists of PyPI
-projects all under the `pythonic-fp` project namespace. This corresponds
-to the Python `pythonic_fp` package namespace.
+projects all under the `pythonic_fp` Python package namespace.
 
-## Namespace Projects
+## Namespace Packages
 
-### Pythonic Functional Programming: pythonic-fp
+### Pythonic Functional Programming: pythonic_fp
 
 The PyPI `pythonic-fp` project has several purposes.
 
 - Its README.md file provides a "homepage" for the overall effort.
-- It is used to claim the `pythonic-fp` namespace on PyPI.
 - It hosts the Sphinx documentation for all the pythonic-fp namespace projects.
-- It contains the source code for the pythonic-fp-gadgets project.
+- It hosts a stub Python module to claim the `pythonic-fp` name on PyPI.
 
 ______________________________________________________________________
 
@@ -43,7 +40,7 @@ Boolean type classes which interact well with Python's boolean
 infrastructure.
 
 - class **SBool:** Python's bool cannot be inherited from, this one can be
-- class **FBool:** Family of boolean of different "flavors" of truth
+- class **FBool:** Family of booleans with different "flavors" of truth
 
 ______________________________________________________________________
 
@@ -111,7 +108,7 @@ ______________________________________________________________________
 Singleton classes representing
 
 - missing values (actually missing, not potentially missing)
-- distinct sentinel values
+- distinct sentinel values with different hashable "flavors"
 
 ______________________________________________________________________
 
