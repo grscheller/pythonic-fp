@@ -20,17 +20,23 @@ Pythonic FP is a hobby project, but the maintainer is serious about its quality.
 | [Splitends](#splitends---pythonic_fpsplitends) | [pythonic-fp-splitends][108] | [gh][208] | [gh_pages][308] | pythonic_fp.splitends |
 
 The overall project's name is **Pythonic FP** and consists of PyPI
-projects all under the `pythonic_fp` Python package namespace.
+projects under the `pythonic_fp` Python package namespace. All these
+PyPI projects have names on PyPI that begin ``pythonic-fp-``.
 
 ## Namespace Packages
 
 ### Pythonic Functional Programming: pythonic_fp
 
-The PyPI `pythonic-fp` project has several purposes.
+The PyPI `pythonic-fp` project has three purposes.
 
 - Its README.md file provides a "homepage" for the overall effort.
-- It hosts the Sphinx documentation for all the pythonic-fp namespace projects.
-- It hosts a stub Python module to claim the `pythonic-fp` name on PyPI.
+- Hosts Sphinx documentation for all the pythonic-fp namespace projects.
+- Claims the pythonic-fp name on PyPI
+
+  - by hosting an empty stub module called pythonic_fp.name_claim
+
+    - this module does not need to be installed
+    - does not hurt anything if it is installed
 
 ______________________________________________________________________
 

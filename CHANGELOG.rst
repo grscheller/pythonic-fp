@@ -5,16 +5,22 @@ Pythonic FP namespace projects
 ------------------------------
 
 Developer Tools supporting a functional style of programming yet endeavoring to
-remain Pythonic. All projects are under the ``pythonic-fp`` namespace on PyPI.
+remain Pythonic. All project names begin ``pythonic-fp-`` on PyPI and are Python
+namespace packages under the ``pythonic_fp`` name.
 
 Important Milestones
 --------------------
 
-Update - 2025-08-13
-~~~~~~~~~~~~~~~~~~~
+Pythonic-fp PyPI release v2.0.1
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Moved pythonic_fp.gadgets to its own repo. Replaced it with
-an empty module called pythonic_fp.name_claim.
+- Removed Documentation link in pyproject.toml
+
+  - decided for now not to provide overarching Sphinx docs for entire effort
+
+- Changes to better describe overall the Pythonic FP project
+
+  - Updated README.md & CHANGELOG.md
 
 Update - 2025-08-13
 ~~~~~~~~~~~~~~~~~~~
