@@ -6,11 +6,7 @@ subtypes
    :no-index:
 
 .. toctree::
-   :maxdepth: 1
-
-   flavored
-
-.. toctree::
    :maxdepth: 2
 
+   flavored
    truthy_falsy

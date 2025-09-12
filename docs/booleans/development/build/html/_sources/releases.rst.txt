@@ -1,5 +1,5 @@
-PyPI release documentation
---------------------------
+PyPI releases
+-------------
 
 **pythonic-fp-booleans:** pythonic_fp.booleans
 
@@ -7,6 +7,10 @@ PyPI release documentation
 | PyPI Release                                                                                              | Release Date |
 +===========================================================================================================+==============+
 | `development <https://grscheller.github.io/pythonic-fp/booleans/development/build/html/>`_                | TBD          |
++-----------------------------------------------------------------------------------------------------------+--------------+
+| `v1.1.3 <https://grscheller.github.io/pythonic-fp/booleans/v1.1.3/build/html/>`_ + docstring updates      | 2025-09-09   |
++-----------------------------------------------------------------------------------------------------------+--------------+
+| `v1.1.2 <https://grscheller.github.io/pythonic-fp/booleans/v1.1.2/build/html/>`_                          | 2025-09-09   |
 +-----------------------------------------------------------------------------------------------------------+--------------+
 | `v1.1.1 <https://grscheller.github.io/pythonic-fp/booleans/v1.1.1/build/html/>`_                          | 2025-09-03   |
 +-----------------------------------------------------------------------------------------------------------+--------------+

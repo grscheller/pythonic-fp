@@ -5,18 +5,18 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>pythonic_fp.booleans &#8212; Pythonic FP - Booleans 1.1.3 documentation</title>
+    <title>pythonic_fp.booleans &#8212; Pythonic FP - Booleans 2.0.0 documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/basic_mod.css?v=9b2032db" />
     <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
-    <script src="../_static/documentation_options.js?v=cb7bf70b"></script>
+    <script src="../_static/documentation_options.js?v=51b770b3"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <script src="../_static/js/petite-vue.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="subtypable" href="subtypable.html" />
+    <link rel="next" title="module subtypable" href="subtypable.html" />
     <link rel="prev" title="Changelog" href="../changelog.html" /> 
   </head><body data-dark_mode_code_blocks="true">
 
@@ -31,7 +31,7 @@
         <p id="toggle_sidebar">
             <a href="#" title="Toggle sidebar">|||</a>
         </p>
-        <h1><a href="../index.html" title="Go to homepage">Pythonic FP - Booleans 1.1.3 documentation</a></h1>
+        <h1><a href="../index.html" title="Go to homepage">Pythonic FP - Booleans 2.0.0 documentation</a></h1>
 
         <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
     <template v-if="mode == 'light'">
@@ -126,13 +126,13 @@
 <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../usage.html">Usage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../releases.html">PyPI release documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../releases.html">PyPI releases</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../changelog.html">Changelog</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">pythonic_fp.booleans</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="subtypable.html">subtypable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="subtypable.html">module subtypable</a></li>
 <li class="toctree-l2"><a class="reference internal" href="subtypes/index.html">subtypes</a></li>
 </ul>
 </li>
@@ -149,35 +149,90 @@
             
   <section id="pythonic-fp-booleans">
 <h1>pythonic_fp.booleans<a class="headerlink" href="#pythonic-fp-booleans" title="Link to this heading">¶</a></h1>
-<section id="module-subtypes">
-<h2>Module subtypes<a class="headerlink" href="#module-subtypes" title="Link to this heading">¶</a></h2>
-<section id="module-flavored">
-<h3>Module flavored<a class="headerlink" href="#module-flavored" title="Link to this heading">¶</a></h3>
-<ul class="simple">
-<li><p>when different “flavors” of the truth matter</p></li>
-<li><p>the constructor <code class="docutils literal notranslate"><span class="pre">FBool(witness:</span> <span class="pre">object,</span> <span class="pre">flavor:</span> <span class="pre">Hashable)</span></code> produces invariant types</p></li>
-</ul>
+<section id="subtypable-boolean-like-classes">
+<h2>Subtypable Boolean like classes<a class="headerlink" href="#subtypable-boolean-like-classes" title="Link to this heading">¶</a></h2>
+<p>While still compatible with Python shortcut logic, these classes can
+be non-shortcut logically composed with Python’s bitwise operators.
+These classes are implemented with the Singleton Pattern.</p>
+<section id="covariant-class-hierarchy">
+<h3>Covariant class hierarchy<a class="headerlink" href="#covariant-class-hierarchy" title="Link to this heading">¶</a></h3>
+<div class="graphviz"><img src="../_images/graphviz-8986d11785061aebd2395ca6fac5bceb7d2589a2.png" alt="digraph Booleans {
+    bgcolor=&quot;#957fb8&quot;;
+    node [style=filled, fillcolor=&quot;#181616&quot;, fontcolor=&quot;#dcd7ba&quot;];
+    edge [color=&quot;#181616&quot;, fontcolor=&quot;#dcd7ba&quot;];
+    int -&gt; bool;
+    int -&gt; SBool;
+    SBool -&gt; &quot;FBool(h1)&quot;;
+    SBool -&gt; &quot;FBool(h2)&quot;;
+    SBool -&gt; &quot;FBool(h3)&quot;;
+    SBool -&gt; TF_Bool;
+    TF_Bool -&gt; T_Bool;
+    TF_Bool -&gt; F_Bool;
+}" class="graphviz" /></div>
 </section>
-<section id="module-truthy-falsy">
-<h3>Module truthy_falsy<a class="headerlink" href="#module-truthy-falsy" title="Link to this heading">¶</a></h3>
-<ul class="simple">
-<li><p>where truthy and falsy are typeable</p></li>
-<li><p>class <code class="docutils literal notranslate"><span class="pre">TF_Bool</span></code> consists of two disjoint subclasses</p>
+<section id="contravariant-non-shortcut-bitwise-operators">
+<h3>Contravariant non-shortcut “bitwise” operators<a class="headerlink" href="#contravariant-non-shortcut-bitwise-operators" title="Link to this heading">¶</a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Boolean operation</p></th>
+<th class="head"><p>symbol</p></th>
+<th class="head"><p>dunder</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>not</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">~</span></code></p></td>
+<td><p>__invert__</p></td>
+</tr>
+<tr class="row-odd"><td><p>and</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&amp;</span></code></p></td>
+<td><p>__and__</p></td>
+</tr>
+<tr class="row-even"><td><p>or</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">|</span></code></p></td>
+<td><p>__or__</p></td>
+</tr>
+<tr class="row-odd"><td><p>xor</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">^</span></code></p></td>
+<td><p>__xor__</p></td>
+</tr>
+</tbody>
+</table>
+<p>These operators are contravariant, that is they will return
+the instance of the latest common ancestor of their arguments.
+More specifically, the instance returned will have the type
+of the least upper bound in the inheritance graph of the classes
+of the two arguments.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>These “bitwise” operators could raise <code class="docutils literal notranslate"><span class="pre">TypeError</span></code> exceptions
+when applied against an <code class="docutils literal notranslate"><span class="pre">SBool</span></code> and objects not descended
+from <code class="docutils literal notranslate"><span class="pre">int</span></code>.</p>
+</div>
+</section>
+<section id="classes-modules">
+<h3>Classes &amp; Modules<a class="headerlink" href="#classes-modules" title="Link to this heading">¶</a></h3>
+<p>Top level classes and modules.</p>
+<section id="class-sbool">
+<h4>Class SBool<a class="headerlink" href="#class-sbool" title="Link to this heading">¶</a></h4>
+<p>Base of the hierarchy.</p>
+<p>Like Python’s built-in <code class="docutils literal notranslate"><span class="pre">bool</span></code>, <code class="docutils literal notranslate"><span class="pre">SBool</span></code> is a subclass of <code class="docutils literal notranslate"><span class="pre">int</span></code>,
+unlike <code class="docutils literal notranslate"><span class="pre">bool</span></code>, class <code class="docutils literal notranslate"><span class="pre">SBool</span></code> can be further subclassed.</p>
+</section>
+<section id="module-subtypable">
+<h4>Module subtypable<a class="headerlink" href="#module-subtypable" title="Link to this heading">¶</a></h4>
+<p>Two examples of <code class="docutils literal notranslate"><span class="pre">SBool</span></code> subtypes.</p>
+</section>
+</section>
+</section>
+<div class="toctree-wrapper compound">
 <ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">T_Bool</span></code> instances are always truthy</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">F_Bool</span></code> instances are always falsy</p></li>
+<li class="toctree-l1"><a class="reference internal" href="subtypable.html">module subtypable</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="subtypable.html#pythonic_fp.booleans.subtypable.SBool"><code class="docutils literal notranslate"><span class="pre">SBool</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="subtypable.html#pythonic_fp.booleans.subtypable.TRUTH"><code class="docutils literal notranslate"><span class="pre">TRUTH</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="subtypable.html#pythonic_fp.booleans.subtypable.LIE"><code class="docutils literal notranslate"><span class="pre">LIE</span></code></a></li>
 </ul>
 </li>
-</ul>
-</section>
-</section>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="subtypable.html">subtypable</a></li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<ul>
 <li class="toctree-l1"><a class="reference internal" href="subtypes/index.html">subtypes</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="subtypes/index.html#module-subtypes">Module subtypes</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="subtypes/index.html#module-flavored">Module flavored</a></li>
@@ -222,9 +277,14 @@
             <div class="page_toc">
                 <ul>
 <li><a class="reference internal" href="#">pythonic_fp.booleans</a><ul>
-<li><a class="reference internal" href="#module-subtypes">Module subtypes</a><ul>
-<li><a class="reference internal" href="#module-flavored">Module flavored</a></li>
-<li><a class="reference internal" href="#module-truthy-falsy">Module truthy_falsy</a></li>
+<li><a class="reference internal" href="#subtypable-boolean-like-classes">Subtypable Boolean like classes</a><ul>
+<li><a class="reference internal" href="#covariant-class-hierarchy">Covariant class hierarchy</a></li>
+<li><a class="reference internal" href="#contravariant-non-shortcut-bitwise-operators">Contravariant non-shortcut “bitwise” operators</a></li>
+<li><a class="reference internal" href="#classes-modules">Classes &amp; Modules</a><ul>
+<li><a class="reference internal" href="#class-sbool">Class SBool</a></li>
+<li><a class="reference internal" href="#module-subtypable">Module subtypable</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -248,7 +308,7 @@
 
             <div class="right">
                 
-                    <a href="subtypable.html"><span>subtypable</span><span class="icon">&gt;</span></a>
+                    <a href="subtypable.html"><span>module subtypable</span><span class="icon">&gt;</span></a>
                 
             </div>
         </div>
