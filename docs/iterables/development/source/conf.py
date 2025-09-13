@@ -13,9 +13,9 @@
 project = 'Pythonic FP - Iterables'
 copyright = '2023-2025, Geoffrey R. Scheller'
 author = 'Geoffrey R. Scheller'
-release = '5.1.1' 
-# release_string = 'For a proposed PyPI'
-release_string = 'PyPI'
+release = '5.1.2' 
+release_string = 'For a proposed PyPI'
+# release_string = 'PyPI'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
