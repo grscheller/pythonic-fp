@@ -1,0 +1,5 @@
+modulw flavored
+===============
+
+.. automodule:: pythonic_fp.booleans.flavored
+    :members:

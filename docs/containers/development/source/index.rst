@@ -31,6 +31,6 @@ part of the
 
 .. toctree::
    :caption: Documentation
-   :maxdepth: 2
+   :maxdepth: 3
 
    containers/index

@@ -31,6 +31,6 @@ part of the
 
 .. toctree::
     :caption: Documentation
-    :maxdepth: 4
+    :maxdepth: 2
 
     booleans/index

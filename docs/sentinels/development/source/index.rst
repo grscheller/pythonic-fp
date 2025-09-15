@@ -8,7 +8,7 @@ part of the
 `pythonic-fp namespace projects
 <https://github.com/grscheller/pythonic-fp/blob/main/README.md>`_.
 
-|PROPOSED_RELEASE_STRING| |VERSION_RELEASED| release.
+|RELEASE_STRING| |VERSION_RELEASED| release.
 
 .. automodule:: pythonic_fp.sentinels
    :synopsis:

@@ -10,7 +10,7 @@ part of the
 
 |RELEASE_STRING| |VERSION_RELEASED| release.
 
-.. automodule:: pythonic_fp.sentinels
+.. automodule:: pythonic_fp.circulararray
    :synopsis:
    :noindex:
 

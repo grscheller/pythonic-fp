@@ -2,11 +2,7 @@ pythonic_fp.sentinels
 =====================
 
 .. toctree::
-   :maxdepth: 1
+    :maxdepth: 1
 
-   flavored
-
-.. toctree::
-   :maxdepth: 1
-
-   novalue
+    flavored
+    novalue

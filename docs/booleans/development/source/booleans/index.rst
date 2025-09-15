@@ -1,12 +1,9 @@
 pythonic_fp.booleans
 ====================
 
-.. automodule:: pythonic_fp.booleans
-   :synopsis:
-   :noindex:
-
 .. toctree::
-   :maxdepth: 3
+    :maxdepth: 1
 
-   subtypable
-   subtypes/index
+    subtypable
+    flavored
+    truthy_falsy
