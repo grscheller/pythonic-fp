@@ -11,6 +11,20 @@ namespace packages under the ``pythonic_fp`` name.
 Important Milestones
 --------------------
 
+Update - 2025-09-15
+~~~~~~~~~~~~~~~~~~~
+
+Consistent set of Pythonic FP projects:
+
+- pythonic-fp-booleans          1.1.2
+- pythonic-fp-circulararray     5.3.2
+- pythonic-fp-containers        3.0.1
+- pythonic-fp-fptools           5.1.1
+- pythonic-fp-gadgets           3.0.1
+- pythonic-fp-iterables         5.1.1
+- pythonic-fp-sentinels         2.1.0
+- pythonic-fp-splitends         1.0.2
+
 Pythonic-fp PyPI release v2.0.1
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
