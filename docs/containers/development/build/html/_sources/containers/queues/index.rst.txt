@@ -6,16 +6,16 @@ package queues
    :no-index:
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    fifo
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    lifo
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    de

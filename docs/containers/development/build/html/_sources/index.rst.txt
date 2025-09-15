@@ -10,9 +10,8 @@ part of the
 
 |RELEASE_STRING| |VERSION_RELEASED| release.
 
-.. automodule:: pythonic_fp.containers
-   :synopsis:
-   :noindex:
+Package of container like data structures
+-----------------------------------------
 
 .. toctree::
    :caption: Overview
@@ -31,6 +30,6 @@ part of the
 
 .. toctree::
    :caption: Documentation
-   :maxdepth: 3
+   :maxdepth: 4
 
    containers/index

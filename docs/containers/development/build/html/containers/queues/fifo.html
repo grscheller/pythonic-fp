@@ -154,22 +154,21 @@
             
   <section id="module-pythonic_fp.containers.queues.fifo">
 <span id="module-fifo"></span><h1>module fifo<a class="headerlink" href="#module-pythonic_fp.containers.queues.fifo" title="Link to this heading">¶</a></h1>
-<p>Stateful First-In-First-Out (FIFO) Queue data structure.</p>
-<ul class="simple">
-<li><p>O(1) pops</p></li>
-<li><p>O(1) amortized pushes</p></li>
-<li><p>in a Boolean context, true if not empty, false if empty</p></li>
-<li><p>will automatically increase storage capacity when needed</p></li>
-<li><p>neither indexable nor sliceable by design</p></li>
-<li><p>O(1) length determination</p></li>
-</ul>
 <dl class="py class">
 <dt class="sig sig-object py" id="pythonic_fp.containers.queues.fifo.FIFOQueue">
 <em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.containers.queues.fifo.</span></span><span class="sig-name descname"><span class="pre">FIFOQueue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">dss</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.containers.queues.fifo.FIFOQueue" title="Link to this definition">¶</a></dt>
-<dd><p>Initial data in natural FIFO order, newest to oldest.</p>
+<dd><p>Stateful First-In-First-Out (FIFO) Queue data structure.</p>
+<ul class="simple">
+<li><p>O(1) pops</p></li>
+<li><p>O(1) amortized pushes</p></li>
+<li><p>O(1) length determination</p></li>
+<li><p>in a Boolean context, truthy if not empty, falsy if empty</p></li>
+<li><p>will automatically increase storage capacity when needed</p></li>
+<li><p>neither indexable nor sliceable by design</p></li>
+</ul>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>dss</strong> – takes up to one iterable</p>
+<dd class="field-odd"><p><strong>dss</strong> – takes 1 or 0 iterables, initializes data in natural FIFO order</p>
 </dd>
 <dt class="field-even">Raises<span class="colon">:</span></dt>
 <dd class="field-even"><p><strong>ValueError</strong> – if more than 1 iterable is given</p>
@@ -208,8 +207,11 @@
 <span class="sig-name descname"><span class="pre">map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">D</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">U</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.containers.queues.fifo.FIFOQueue" title="pythonic_fp.containers.queues.fifo.FIFOQueue"><span class="pre">FIFOQueue</span></a></span></span><a class="headerlink" href="#pythonic_fp.containers.queues.fifo.FIFOQueue.map" title="Link to this definition">¶</a></dt>
 <dd><p>Map f over the FIFOQueue, retain original order.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><p>new FIFOQueue instance</p>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>f</strong> – function to map over queue</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>new FIFOQueue instance</p>
 </dd>
 </dl>
 </dd></dl>
