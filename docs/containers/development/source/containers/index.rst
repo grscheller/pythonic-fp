@@ -6,8 +6,7 @@ pythonic_fp.containers
    :noindex:
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
 
    functional_tuple
    immutable_list
-   queues/index

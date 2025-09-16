@@ -10,8 +10,7 @@ part of the
 
 |RELEASE_STRING| |VERSION_RELEASED| release.
 
-Package of container like data structures
------------------------------------------
+**Package of container like data structures.**
 
 .. toctree::
    :caption: Overview
@@ -30,6 +29,6 @@ Package of container like data structures
 
 .. toctree::
    :caption: Documentation
-   :maxdepth: 4
+   :maxdepth: 3
 
    containers/index

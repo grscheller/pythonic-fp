@@ -8,6 +8,8 @@ PyPI releases
 +==============================================================================================+==============+
 | `development <https://grscheller.github.io/pythonic-fp/containers/development/build/html/>`_ | TBD          |
 +----------------------------------------------------------------------------------------------+--------------+
+| `v4.0.0 <https://grscheller.github.io/pythonic-fp/containers/v4.0.0/build/html/>`_           | TBD          |
++----------------------------------------------------------------------------------------------+--------------+
 | `v3.0.1 <https://grscheller.github.io/pythonic-fp/containers/v3.0.1/build/html/>`_           | 2025-09-09   |
 +----------------------------------------------------------------------------------------------+--------------+
 | `v3.0.0 <https://grscheller.github.io/pythonic-fp/containers/v3.0.0/build/html/>`_           | 2025-08-02   |
