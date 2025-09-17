@@ -147,37 +147,49 @@
             
   <section id="module-pythonic_fp.containers.immutable_list">
 <span id="module-immutable-list"></span><h1>module immutable_list<a class="headerlink" href="#module-pythonic_fp.containers.immutable_list" title="Link to this heading">¶</a></h1>
-<p>Pythonic FP - Immutable guaranteed hashable lists</p>
-<ul class="simple">
-<li><p>hashable if elements are hashable</p></li>
-<li><p>declared covariant in its generic datatype
-- hashability should be enforced by LSP tooling
-- hashability will be enforced at runtime
-- IList addition supported via concatenation
-- IList integer multiplication supported</p></li>
-</ul>
+<p>Pythonic FP - Immutable guaranteed hashable lists.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="pythonic_fp.containers.immutable_list.IList">
 <em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.containers.immutable_list.</span></span><span class="sig-name descname"><span class="pre">IList</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">dss</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.containers.immutable_list.IList" title="Link to this definition">¶</a></dt>
 <dd><p>Immutable List like data structure.</p>
 <ul class="simple">
+<li><p>hashability should be enforced by LSP tooling</p></li>
+<li><p>hashability will be enforced at runtime</p></li>
 <li><p>its method type parameters are also covariant</p></li>
-<li><p>hashability will be enforced by LSP tooling</p></li>
 <li><p>supports both indexing and slicing</p></li>
-<li><p>addition concatenates results, resulting type a Union type</p></li>
-<li><p>both left and right int multiplication supported</p></li>
+<li><p>addition and left &amp; right <code class="docutils literal notranslate"><span class="pre">int</span></code> multiplication supported</p>
+<ul>
+<li><p>addition is concatenation resulting in a union type</p></li>
 </ul>
+</li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>dss</strong> – 0 or 1 iterables</p>
+</dd>
+</dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.containers.immutable_list.IList.accummulate">
 <span class="sig-name descname"><span class="pre">accummulate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">L</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">D</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">L</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">s</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">L</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="positional-only-separator o"><abbr title="Positional-only parameter separator (PEP 570)"><span class="pre">/</span></abbr></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.containers.immutable_list.IList" title="pythonic_fp.containers.immutable_list.IList"><span class="pre">IList</span></a></span></span><a class="headerlink" href="#pythonic_fp.containers.immutable_list.IList.accummulate" title="Link to this definition">¶</a></dt>
-<dd><p>Accumulate partial folds</p>
-<p>Accumulate partial fold results in an IList with
-an optional starting value.</p>
+<dd><p>Accumulate partial folds.</p>
+<p>Accumulate partial fold with an optional starting value,
+results in an <code class="docutils literal notranslate"><span class="pre">IList</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>f</strong> – Folding function used to produce partial folds.</p></li>
+<li><p><strong>s</strong> – Optional starting value.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>New <code class="docutils literal notranslate"><span class="pre">FTuple</span></code> of the partial folds.</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.containers.immutable_list.IList.bind">
-<span class="sig-name descname"><span class="pre">bind</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">D</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#pythonic_fp.containers.immutable_list.IList" title="pythonic_fp.containers.immutable_list.IList"><span class="pre">IList</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">merge_enum</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">MergeEnum</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">MergeEnum.Concat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">yield_partials</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.containers.immutable_list.IList" title="pythonic_fp.containers.immutable_list.IList"><span class="pre">IList</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Never</span></span></span><a class="headerlink" href="#pythonic_fp.containers.immutable_list.IList.bind" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">bind</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">D</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#pythonic_fp.containers.immutable_list.IList" title="pythonic_fp.containers.immutable_list.IList"><span class="pre">IList</span></a><span class="p"><span class="pre">[</span></span><span class="pre">U</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">merge_enum</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">MergeEnum</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">MergeEnum.Concat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">yield_partials</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.containers.immutable_list.IList" title="pythonic_fp.containers.immutable_list.IList"><span class="pre">IList</span></a><span class="p"><span class="pre">[</span></span><span class="pre">U</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Never</span></span></span><a class="headerlink" href="#pythonic_fp.containers.immutable_list.IList.bind" title="Link to this definition">¶</a></dt>
 <dd><p>Bind function <cite>f</cite> to the <cite>IList</cite>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -195,23 +207,43 @@ an optional starting value.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.containers.immutable_list.IList.foldl">
 <span class="sig-name descname"><span class="pre">foldl</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">L</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">D</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">L</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="positional-only-separator o"><abbr title="Positional-only parameter separator (PEP 570)"><span class="pre">/</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">L</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">L</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">L</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></span><a class="headerlink" href="#pythonic_fp.containers.immutable_list.IList.foldl" title="Link to this definition">¶</a></dt>
-<dd><p>Fold Left</p>
-<ul class="simple">
-<li><p>fold left with an optional starting value</p></li>
-<li><p>first argument of function <code class="docutils literal notranslate"><span class="pre">f</span></code> is for the accumulated value</p></li>
+<dd><p>Fold Left.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>f</strong> – Folding function, first argument is for the accumulated value.</p></li>
+<li><p><strong>start</strong> – Optional starting value.</p></li>
+<li><p><strong>default</strong> – Optional default value if fold does not exist.</p></li>
 </ul>
-<p>“raises ValueError: when empty and a start value not given</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Folded value.</p>
+</dd>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>ValueError</strong> – When empty and a start value not given.</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.containers.immutable_list.IList.foldr">
 <span class="sig-name descname"><span class="pre">foldr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">D</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">R</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">R</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="positional-only-separator o"><abbr title="Positional-only parameter separator (PEP 570)"><span class="pre">/</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">R</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">R</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">R</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></span><a class="headerlink" href="#pythonic_fp.containers.immutable_list.IList.foldr" title="Link to this definition">¶</a></dt>
-<dd><p>Fold Right</p>
-<ul class="simple">
-<li><p>fold right with an optional starting value</p></li>
-<li><p>second argument of function <code class="docutils literal notranslate"><span class="pre">f</span></code> is for the accumulated value</p></li>
+<dd><p>Fold Right.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>f</strong> – Folding function, second argument is for the accumulated value.</p></li>
+<li><p><strong>start</strong> – Optional starting value.</p></li>
+<li><p><strong>default</strong> – Optional default value if fold does not exist.</p></li>
 </ul>
-<p>“raises ValueError: when empty and a start value not given</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Folded value.</p>
+</dd>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>ValueError</strong> – When empty and a start value not given.</p>
+</dd>
+</dl>
 </dd></dl>
 
 </dd></dl>
