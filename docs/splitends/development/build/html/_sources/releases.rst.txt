@@ -1,5 +1,5 @@
-PyPI release documentation
---------------------------
+PyPI releases
+-------------
 
 **pythonic-fp-splitends:** pythonic_fp.splitends
 
