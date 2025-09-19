@@ -29,11 +29,8 @@ Pythonic-fp PyPI release v2.0.1
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Removed Documentation link in pyproject.toml
-
   - decided for now not to provide overarching Sphinx docs for entire effort
-
 - Changes to better describe overall the Pythonic FP project
-
   - Updated README.md & CHANGELOG.md
 
 Update - 2025-08-13
@@ -59,24 +56,18 @@ The next gadget's release will be v1.2.0.
 
 - released pythonic-fp v1.1.0 which contains pythonic_fp.gadgets package
 - released pythonic-fp-circulararray v5.3.0 immediately followed by v5.3.1
-
   - had to fix a link in README.rst, changed
-
     - pythonic-fp.circulararray to pythonic-fp-circulararray 
-
       - linked still worked since PyPI maps ``.`` and ``_`` to ``-``
-
     - had to update development/source/conf.py
     - had to update development/source/releases.py
     - had to copy generated html to release directories
-
 - released pythonic-fp-containers v3.0.0
 - released pythonic-fp-fptools v5.0.0
 - released pythonic-fp-iterables v5.0.0
 - released pythonic-fp-singletons v1.0.0
 - released pythonic-fp-splitends v1.0.0
 - setup Sphinx for development environment documentation
-
   - bumped all version numbers by one patch level
   - redid Sphinx development docs for entire namespace project
 
@@ -136,27 +127,21 @@ that will never happen. This future import will be deprecated in Python 3.14.
 TODO:
 
 - finish pdoc -> Sphinx migration
-
   - all informational content will come from docstrings
   - replace the Markdown Pythonic FP "homepage" with Sphinx based one
-
     - grscheller/pythonic-fp/README.md will point to the new docs
-
 - next PyPI release will happen when "everything is ready"
 
 2025-07-13 - All document generation brought back to this repo
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Sphinx now used
-
   - looks much more professional
   - all documentation generation moved back to this repo
   - docstrings in code a bit rough, but now more terse
-
 - Updated docs for circulararray PyPI release v5.2.0
 - Updated docs for queues PyPI release v4.0.1
 - the docs links on the README.md pythonic-fp homepage updated
-
   - now points to docs development's release page instead of docs development itself
 
 2025-07-04 - Beginning dtools deprecation
@@ -166,7 +151,6 @@ TODO:
 - Updated pyproject.toml files for all pythonic-fp namespace repos
 - Updated all README.md files to use GitHub, not GH-Pages, for Pythonic FP Homepage
 - Updated all repo root CHANGELOG.rst files
-
   - preparing to rename them docs/source/changelog.rst for Sphinx build
   - all except this one
 
@@ -174,12 +158,9 @@ TODO:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Building pythonic-fp.circulararray docs with Sphinx
-
   - ended up using the Sphinx autodoc extension
   - using the `piccolo-theme <https://pypi.org/project/piccolo-theme>`_ as the html_theme
-
 - Not yet "publishing" them on gh-pages, looking into ``sphinx.ext.githubpages``
-
   - realized I will need to move docs over to pythonic-fp repo for PyPI releases
   - the gh-pages for the namespace repos will host the current devel env docs
 
@@ -188,7 +169,6 @@ TODO:
 
 - Stumble on PyPI project python-sphinx-doc
 - Supposedly will parse Python type annotations
-
   - uninstall ``pdoc``, install ``python-sphinx-doc``
   - when I get these packages with "sphinx" in their names
 
@@ -212,7 +192,6 @@ TODO:
 
 - Decided on the pythonic-fp namespace name instead of fpythonic 
 - Brought over source code from all dtools namespace projects
-
   - pythonic-fp.circulararray 5.0.0
   - pythonic-fp.containers 2.0.0
   - pythonic-fp.fptools 3.0.0
@@ -225,31 +204,22 @@ TODO:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Decided on the unclaimed name fpythonic
-
   - for fp + pythonic
-
 - Releases under this name
-
   - fpythonic 1.2.0
   - fpythonic 1.1.0
   - fpythonic 1.0.0
   - fpythonic.circular-array v4.1.0
   - fpythonic.circular-array v4.0.0 (Yanked)
   - yanked because v4.0.0 was published on PyPI too soon
-
 - fpythonic is an empty module
-
   - will permanently be <2.0
   - has a __init__.py file
-
     - DO NOT INSTALL IT!!!
     - if you do, fpythonic will no longer be a namespace module!
     - PyPI was happy to accept it
-
       - thought it best to take the name
-
   - its GitHub repo has 2 purposes other than implementing this "module"
-
     - serves as a homepage for the fpythonic namespace modules
     - hosts the generated documentation on gh-pages
 
@@ -279,7 +249,6 @@ TODO:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     
 - GitHub repo name change
-
   - grscheller/dtools-docs -> grscheller/dtools-namespace-projects
   - will double as a project homepage as well as the document repo
 
@@ -288,9 +257,7 @@ TODO:
 
 - Added dtools.containers project and deprecated dtools.tuples
 - dtools.tuples content moved to dtools.containers
-
   - actually dtools.tuples repo just renamed to dtools.containers
-
     - this allows older PyPI source code links to keep working
     - thought necessary since my Boring Math Library not updated yet
 
@@ -315,30 +282,24 @@ TODO:
 2025-03-28: updated docs for all dtools projects
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- Ran linters and against all dtools namespace repos
+Ran linters and against all dtools namespace repos.
 
 2025-02-06: Standardized dtools and bm docs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- Standardized Developer Tools and Boring Math project documentation
+Standardized Developer Tools and Boring Math project documentation,
 
 2025-01-17: Created this repo - dtools-docs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Created this repo for pdoc generated dtools project documentation
-
   - purpose to keep actual source code repos smaller
   - detailed documentation generated from source code docstrings
   - replaces grscheller-pypi-namespace-docs 
-
     - older repo still exits as a "zombie" project
-
       - to keep older PyPI document links working
-
 - Added development documentation infrastructure for all dtools repos
-
   - dtools.datastructures
   - dtools.fp
   - dtools.circular-array
-
 - Generated docs for first PyPI releases under dtools namespace

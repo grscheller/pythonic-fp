@@ -1,18 +1,15 @@
 pythonic-fp-splitends
 =====================
 
+LIFO stacks which can safely share immutable data between themselves.
+
 PyPI project
 `pythonic-fp-splitends
 <https://pypi.org/project/pythonic-fp-splitends/>`_
-part of the 
-`pythonic-fp namespace projects
+one of the Python
+`pythonic_fp namespace projects
 <https://github.com/grscheller/pythonic-fp/blob/main/README.md>`_.
-
 |RELEASE_STRING| |VERSION_RELEASED| release.
-
-.. automodule:: pythonic_fp.splitends
-   :synopsis:
-   :noindex:
 
 .. toctree::
    :caption: Overview

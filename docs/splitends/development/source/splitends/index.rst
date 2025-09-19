@@ -9,8 +9,4 @@ pythonic_fp.splitends
    :maxdepth: 1
 
    splitend
-
-.. toctree::
-   :maxdepth: 1
-
    splitend_node

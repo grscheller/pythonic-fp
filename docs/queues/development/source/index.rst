@@ -4,7 +4,7 @@ pythonic-fp-queues
 PyPI project
 `pythonic-fp-queues
 <https://pypi.org/project/pythonic-fp-queues/>`_
-part of the 
+part of the
 `pythonic-fp namespace projects
 <https://github.com/grscheller/pythonic-fp/blob/main/README.md>`_.
 

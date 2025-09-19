@@ -1,5 +1,5 @@
 PyPI releases
--------------
+=============
 
 **pythonic-fp-gadgets:** pythonic_fp.gadgets
 

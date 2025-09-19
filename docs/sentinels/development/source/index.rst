@@ -4,7 +4,7 @@ pythonic-fp-sentinels
 PyPI project
 `pythonic-fp-sentinels
 <https://pypi.org/project/pythonic-fp-sentinels/>`_
-part of the 
+part of the
 `pythonic-fp namespace projects
 <https://github.com/grscheller/pythonic-fp/blob/main/README.md>`_.
 

@@ -82,7 +82,7 @@ yet still be able to store ``None`` as a value.
         def get_value(self) -> float | None:
             return self.value
 
-Sentinel NoValue 
+Sentinel NoValue
 ~~~~~~~~~~~~~~~~
 
 This test from the test suite is a bit contrived, but I think

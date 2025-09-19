@@ -123,9 +123,9 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage.html">usage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../releases.html">PyPI releases</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">changelog</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
 <ul class="current">
@@ -147,37 +147,51 @@
             
   <section id="module-pythonic_fp.splitends.splitend_node">
 <span id="module-splitend-node"></span><h1>module splitend_node<a class="headerlink" href="#module-pythonic_fp.splitends.splitend_node" title="Link to this heading">¶</a></h1>
-<p>Node class used to make inwardly directed bush-like graphs.</p>
-<dl class="py class">
-<dt class="sig sig-object py" id="pythonic_fp.splitends.splitend_node.SENode">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.splitends.splitend_node.</span></span><span class="sig-name descname"><span class="pre">SENode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">H</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prev</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#pythonic_fp.splitends.splitend_node.SENode" title="pythonic_fp.splitends.splitend_node.SENode"><span class="pre">SENode</span></a><span class="p"><span class="pre">[</span></span><span class="pre">H</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.splitends.splitend_node.SENode" title="Link to this definition">¶</a></dt>
-<dd><p>Used by class SplitEnd as a hidden implementation detail.</p>
+<section id="senode">
+<h2>SENode<a class="headerlink" href="#senode" title="Link to this heading">¶</a></h2>
+<p><strong>Used to make inwardly directed bush-like graphs.</strong></p>
 <ul class="simple">
-<li><p>hashable data node for a end-to-root singularly linked list.</p></li>
 <li><p>designed so multiple splitends can safely share the same data</p></li>
-<li><p>two nodes compare as equal if</p>
-<ul>
+<li><p>nodes always contain data</p></li>
+<li><p>data node <code class="docutils literal notranslate"><span class="pre">SENode[D]</span></code> make up end-to-root singularly linked lists</p></li>
+<li><dl class="simple">
+<dt>two nodes compare as equal if</dt><dd><ul>
 <li><p>both their previous Nodes are the same</p></li>
 <li><p>their data compare as equal</p></li>
 </ul>
+</dd>
+</dl>
 </li>
-<li><p>more than one node can point to the same proceeding node</p>
-<ul>
+<li><dl class="simple">
+<dt>a root node whose previous node is itself</dt><dd><ul>
+<li><p>root nodes mark ends of lists</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>more than one node can point to the same proceeding node</dt><dd><ul>
 <li><p>forming bush like graphs</p></li>
 </ul>
+</dd>
+</dl>
 </li>
 </ul>
-<dl class="field-list simple">
+</section>
+<dl class="py class">
+<dt class="sig sig-object py" id="pythonic_fp.splitends.splitend_node.SENode">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.splitends.splitend_node.</span></span><span class="sig-name descname"><span class="pre">SENode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data:</span> <span class="pre">D</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prev:</span> <span class="pre">SENode[D]</span> <span class="pre">|</span> <span class="pre">_Sentinel</span> <span class="pre">=</span> <span class="pre">Sentinel('('split'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">'end'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">'node'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">'private')')</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.splitends.splitend_node.SENode" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>data</strong> – Nodes always contain data of type <code class="docutils literal notranslate"><span class="pre">H</span></code>.</p></li>
-<li><p><strong>prev</strong> – potential link to a previous node</p></li>
+<li><p><strong>data</strong> – Nodes always contain data of type <code class="docutils literal notranslate"><span class="pre">D</span></code>.</p></li>
+<li><p><strong>prev</strong> – optional link to a previous node</p></li>
 </ul>
 </dd>
 </dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.splitends.splitend_node.SENode.fold">
-<span class="sig-name descname"><span class="pre">fold</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">H</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">T</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">init</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">T</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">T</span></span></span><a class="headerlink" href="#pythonic_fp.splitends.splitend_node.SENode.fold" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">fold</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">D</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">T</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">init</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">T</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">T</span></span></span><a class="headerlink" href="#pythonic_fp.splitends.splitend_node.SENode.fold" title="Link to this definition">¶</a></dt>
 <dd><p>Fold data across linked nodes with a function..</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -194,18 +208,18 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.splitends.splitend_node.SENode.peak2">
-<span class="sig-name descname"><span class="pre">peak2</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">H</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#pythonic_fp.splitends.splitend_node.SENode" title="pythonic_fp.splitends.splitend_node.SENode"><span class="pre">SENode</span></a><span class="p"><span class="pre">[</span></span><span class="pre">H</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.splitends.splitend_node.SENode.peak2" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">peak2</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">D</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#pythonic_fp.splitends.splitend_node.SENode" title="pythonic_fp.splitends.splitend_node.SENode"><span class="pre">SENode</span></a><span class="p"><span class="pre">[</span></span><span class="pre">D</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.splitends.splitend_node.SENode.peak2" title="Link to this definition">¶</a></dt>
 <dd><p>Peak at data and previous node, if a root then data and self.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><p>tuple of type tuple[H, SENode[H]]</p>
+<dd class="field-odd"><p>tuple of type tuple[D, SENode[D]]</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.splitends.splitend_node.SENode.peak_data">
-<span class="sig-name descname"><span class="pre">peak_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">H</span></span></span><a class="headerlink" href="#pythonic_fp.splitends.splitend_node.SENode.peak_data" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">peak_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">D</span></span></span><a class="headerlink" href="#pythonic_fp.splitends.splitend_node.SENode.peak_data" title="Link to this definition">¶</a></dt>
 <dd><p>Peak at data.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -216,7 +230,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.splitends.splitend_node.SENode.peak_prev">
-<span class="sig-name descname"><span class="pre">peak_prev</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.splitends.splitend_node.SENode" title="pythonic_fp.splitends.splitend_node.SENode"><span class="pre">SENode</span></a><span class="p"><span class="pre">[</span></span><span class="pre">H</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.splitends.splitend_node.SENode.peak_prev" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">peak_prev</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.splitends.splitend_node.SENode" title="pythonic_fp.splitends.splitend_node.SENode"><span class="pre">SENode</span></a><span class="p"><span class="pre">[</span></span><span class="pre">D</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.splitends.splitend_node.SENode.peak_prev" title="Link to this definition">¶</a></dt>
 <dd><p>Peak at previous node.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -227,7 +241,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.splitends.splitend_node.SENode.push">
-<span class="sig-name descname"><span class="pre">push</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">H</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.splitends.splitend_node.SENode" title="pythonic_fp.splitends.splitend_node.SENode"><span class="pre">SENode</span></a><span class="p"><span class="pre">[</span></span><span class="pre">H</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.splitends.splitend_node.SENode.push" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">push</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">D</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.splitends.splitend_node.SENode" title="pythonic_fp.splitends.splitend_node.SENode"><span class="pre">SENode</span></a><span class="p"><span class="pre">[</span></span><span class="pre">D</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.splitends.splitend_node.SENode.push" title="Link to this definition">¶</a></dt>
 <dd><p>Create a new <code class="docutils literal notranslate"><span class="pre">SENode</span></code>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -258,6 +272,7 @@
             <div class="page_toc">
                 <ul>
 <li><a class="reference internal" href="#">module splitend_node</a><ul>
+<li><a class="reference internal" href="#senode">SENode</a></li>
 <li><a class="reference internal" href="#pythonic_fp.splitends.splitend_node.SENode"><code class="docutils literal notranslate"><span class="pre">SENode</span></code></a><ul>
 <li><a class="reference internal" href="#pythonic_fp.splitends.splitend_node.SENode.fold"><code class="docutils literal notranslate"><span class="pre">SENode.fold()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.splitends.splitend_node.SENode.peak2"><code class="docutils literal notranslate"><span class="pre">SENode.peak2()</span></code></a></li>

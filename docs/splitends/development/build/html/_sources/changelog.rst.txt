@@ -1,5 +1,5 @@
-Changelog
----------
+changelog
+=========
 
 Change log for the
 `pythonic-fp-splitends

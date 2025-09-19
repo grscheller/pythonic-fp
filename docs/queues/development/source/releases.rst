@@ -1,5 +1,5 @@
 PyPI releases
--------------
+=============
 
 **pythonic-fp-queues:** pythonic_fp.queues
 

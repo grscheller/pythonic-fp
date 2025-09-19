@@ -149,7 +149,7 @@
 <span id="circularary-fixed"></span><h1>circularary.fixed<a class="headerlink" href="#module-pythonic_fp.circulararray.fixed" title="Link to this heading">¶</a></h1>
 <section id="fixed-storage-capacity">
 <h2>Fixed Storage Capacity<a class="headerlink" href="#fixed-storage-capacity" title="Link to this heading">¶</a></h2>
-<p>Circular array with fixed storage capacity.</p>
+<p><strong>Circular array with fixed storage capacity.</strong></p>
 <ul class="simple">
 <li><p>O(1) pops and pushes either end</p></li>
 <li><p>O(1) indexing, does not support slicing</p></li>
@@ -157,23 +157,21 @@
 <li><p>iterable, can safely mutate while iterators continue iterating over previous state</p></li>
 <li><p>comparisons compare identity before equality, like builtins</p></li>
 <li><p>in boolean context, falsy when either empty or full, otherwise truthy</p></li>
-<li><p>factory function caf produces a fixed storage capacity circular array from its arguments</p></li>
+<li><p>factory function <code class="docutils literal notranslate"><span class="pre">caf</span></code> produces a fixed storage capacity circular array from its arguments</p></li>
 </ul>
 </section>
 <dl class="py class">
 <dt class="sig sig-object py" id="pythonic_fp.circulararray.fixed.CAF">
 <em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.circulararray.fixed.</span></span><span class="sig-name descname"><span class="pre">CAF</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">items</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">capacity</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.circulararray.fixed.CAF" title="Link to this definition">¶</a></dt>
-<dd><p>Basically a list that can be grown from both ends
-in O(1) time and space complexity.</p>
-<dl class="field-list simple">
+<dd><dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>items</strong> – optional iterable to initial populate circular array</p></li>
-<li><p><strong>capacity</strong> – fixed storage capacity of circular array</p></li>
+<li><p><strong>items</strong> – Optional iterable to initial populate circular array.</p></li>
+<li><p><strong>capacity</strong> – Fixed storage capacity of circular array.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Raises<span class="colon">:</span></dt>
-<dd class="field-even"><p><strong>TypeError</strong> – if items is not Iterable</p>
+<dd class="field-even"><p><strong>TypeError</strong> – When <code class="docutils literal notranslate"><span class="pre">items</span></code> not Iterable,</p>
 </dd>
 </dl>
 <dl class="py method">
@@ -182,7 +180,7 @@ in O(1) time and space complexity.</p>
 <dd><p>Return fixed storage capacity of the circular array.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><p>fixed storage capacity</p>
+<dd class="field-odd"><p>Fixed storage capacity.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -200,15 +198,15 @@ in O(1) time and space complexity.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>f</strong> – first argument to f is for the accumulator</p></li>
-<li><p><strong>start</strong> – optional starting item</p></li>
+<li><p><strong>f</strong> – First argument to f is for the accumulator.</p></li>
+<li><p><strong>start</strong> – Optional starting item.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>reduced value produced by the left fold</p>
+<dd class="field-even"><p>Reduced value produced by the left fold.</p>
 </dd>
 <dt class="field-odd">Raises<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>ValueError</strong> – when circular array empty and no starting item given</p>
+<dd class="field-odd"><p><strong>ValueError</strong> – When circular array empty and no starting item given.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -239,7 +237,7 @@ in O(1) time and space complexity.</p>
 <dd><p>Find fraction of the storage capacity which is filled.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><p>the ratio count/capacity</p>
+<dd class="field-odd"><p>The ratio count/capacity.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -250,10 +248,10 @@ in O(1) time and space complexity.</p>
 <dd><p>Apply function <code class="docutils literal notranslate"><span class="pre">f</span></code> over the circular array’s contents,</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>f</strong> – callable from type I to type U</p>
+<dd class="field-odd"><p><strong>f</strong> – Callable from type I to type U.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>new fixed circular array instance</p>
+<dd class="field-even"><p>New fixed circular array instance.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -264,10 +262,10 @@ in O(1) time and space complexity.</p>
 <dd><p>Pop item off left side (front) of circular array.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><p>item popped from left side of circular array</p>
+<dd class="field-odd"><p>Item popped from left side of circular array.</p>
 </dd>
 <dt class="field-even">Raises<span class="colon">:</span></dt>
-<dd class="field-even"><p><strong>ValueError</strong> – when called on an empty circular array</p>
+<dd class="field-even"><p><strong>ValueError</strong> – When called on an empty circular array.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -279,10 +277,10 @@ in O(1) time and space complexity.</p>
 a mandatory default value. “Safe” version of popl.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>default</strong> – item returned if circular array is empty</p>
+<dd class="field-odd"><p><strong>default</strong> – Item returned if circular array is empty.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>item popped from left side or default item if empty</p>
+<dd class="field-even"><p>Item popped from left side or default item if empty.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -293,10 +291,10 @@ a mandatory default value. “Safe” version of popl.</p>
 <dd><p>Pop multiple items from left side of circular array.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>maximum</strong> – maximum number of items to pop, may pop less if not enough items</p>
+<dd class="field-odd"><p><strong>maximum</strong> – Maximum number of items to pop, may pop less if not enough items.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>items in the order popped, left to right</p>
+<dd class="field-even"><p>Items in the order popped, left to right.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -307,10 +305,10 @@ a mandatory default value. “Safe” version of popl.</p>
 <dd><p>Pop item off right side (rear) of circular array.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><p>item popped from right side of circular array</p>
+<dd class="field-odd"><p>Item popped from right side of circular array.</p>
 </dd>
 <dt class="field-even">Raises<span class="colon">:</span></dt>
-<dd class="field-even"><p><strong>ValueError</strong> – when called on an empty circular array</p>
+<dd class="field-even"><p><strong>ValueError</strong> – When called on an empty circular array.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -322,10 +320,10 @@ a mandatory default value. “Safe” version of popl.</p>
 a mandatory default value. “Safe” version of popr.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>default</strong> – item returned if circular array is empty</p>
+<dd class="field-odd"><p><strong>default</strong> – Item returned if circular array is empty.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>item popped from right side or default item if empty</p>
+<dd class="field-even"><p>Item popped from right side or default item if empty.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -336,10 +334,10 @@ a mandatory default value. “Safe” version of popr.</p>
 <dd><p>Pop multiple items from right side of circular array.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>maximum</strong> – maximum number of items to pop, may pop less if not enough items</p>
+<dd class="field-odd"><p><strong>maximum</strong> – Maximum number of items to pop, may pop less if not enough items.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>items in the order popped, right to left</p>
+<dd class="field-even"><p>Items in the order popped, right to left.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -350,10 +348,10 @@ a mandatory default value. “Safe” version of popr.</p>
 <dd><p>Push single item onto left side (front) of circular array.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>item</strong> – single item pushed onto circular array from left</p>
+<dd class="field-odd"><p><strong>item</strong> – Single item pushed onto circular array from left.</p>
 </dd>
 <dt class="field-even">Raises<span class="colon">:</span></dt>
-<dd class="field-even"><p><strong>ValueError</strong> – when called on a full CAF</p>
+<dd class="field-even"><p><strong>ValueError</strong> – When called on a full <code class="docutils literal notranslate"><span class="pre">CAF</span></code>.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -364,10 +362,10 @@ a mandatory default value. “Safe” version of popr.</p>
 <dd><p>Push a single item onto right side (rear) of circular array.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>item</strong> – single item pushed onto circular array from right</p>
+<dd class="field-odd"><p><strong>item</strong> – Single item pushed onto circular array from right.</p>
 </dd>
 <dt class="field-even">Raises<span class="colon">:</span></dt>
-<dd class="field-even"><p><strong>ValueError</strong> – when called on a full fixed storage capacity circular array</p>
+<dd class="field-even"><p><strong>ValueError</strong> – When called on a full fixed storage capacity circular array.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -378,7 +376,7 @@ a mandatory default value. “Safe” version of popr.</p>
 <dd><p>Rotate items to the left.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>n</strong> – number of times to shift elements to the left</p>
+<dd class="field-odd"><p><strong>n</strong> – Number of times to shift elements to the left.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -389,7 +387,7 @@ a mandatory default value. “Safe” version of popr.</p>
 <dd><p>Rotate items to the right.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>n</strong> – number of times to shift elements to the right</p>
+<dd class="field-odd"><p><strong>n</strong> – Number of times to shift elements to the right.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -403,12 +401,12 @@ a mandatory default value. “Safe” version of popr.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>items</strong> – initial items for a new circular array</p></li>
-<li><p><strong>capacity</strong> – the minimum storage capacity to set</p></li>
+<li><p><strong>items</strong> – Initial items for a new circular array.</p></li>
+<li><p><strong>capacity</strong> – The minimum storage capacity to set.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>new fixed storage capacity circular array</p>
+<dd class="field-even"><p>New fixed storage capacity circular array.</p>
 </dd>
 </dl>
 </dd></dl>
