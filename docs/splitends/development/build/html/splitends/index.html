@@ -149,19 +149,11 @@
   <section id="pythonic-fp-splitends">
 <h1>pythonic_fp.splitends<a class="headerlink" href="#pythonic-fp-splitends" title="Link to this heading">¶</a></h1>
 <p>Mutable stack objects that can safely share data.</p>
-<p>Python package Implementing a singularly linked LIFO queue
-called a <code class="docutils literal notranslate"><span class="pre">SplitEnd</span></code>. These data structures can safely share
-data nodes between themselves.</p>
-<ul class="simple">
-<li><p>each <code class="docutils literal notranslate"><span class="pre">SplitEnd</span></code> is a very simple stateful (mutable) LIFO stack</p></li>
-<li><p>data can be “extended” to or “snipped” off the “end”</p></li>
-<li><p>the “root” value of a <code class="docutils literal notranslate"><span class="pre">SplitEnd</span></code> is fixed and cannot be “snipped”</p></li>
-<li><p>different mutable split ends can safely share the same “tail”</p></li>
-<li><p>each <code class="docutils literal notranslate"><span class="pre">SplitEnd</span></code> sees itself as a singularly linked list</p></li>
-<li><p>bush-like datastructures can be formed using multiple <code class="docutils literal notranslate"><span class="pre">SplitEnds</span></code></p></li>
-<li><p>the <code class="docutils literal notranslate"><span class="pre">SplitEnd</span></code> copy method and <code class="docutils literal notranslate"><span class="pre">len</span></code> are O(1)</p></li>
-<li><p>in boolean context returns true if the <code class="docutils literal notranslate"><span class="pre">SplitEnd</span></code> is not just its “root”</p></li>
-</ul>
+<p>Like one of many “split ends” from shafts of hair, a <code class="docutils literal notranslate"><span class="pre">splitend</span></code> can be “snipped”
+shorter or “extended” further from its “tip”. Its root is irremovable and cannot be
+“snipped” off. While mutable, different splitends can safely share data with each other.
+Python package Implementing a singularly linked LIFO queue called a <code class="docutils literal notranslate"><span class="pre">SplitEnd</span></code>. These
+data structures can safely share data nodes between themselves.</p>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="splitend.html">module splitend</a></li>
