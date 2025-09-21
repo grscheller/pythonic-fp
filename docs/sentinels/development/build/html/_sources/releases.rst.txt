@@ -1,7 +1,7 @@
 PyPI releases
--------------
+=============
 
-**pythonic-fp-sentinels:** pythonic_fp.sentinels
+**pythonic-fp-sentinels:** pythonic_fp.sentinels**
 
 +-----------------------------------------------------------------------------------------------------------+--------------+
 | PyPI Release                                                                                              | Release Date |

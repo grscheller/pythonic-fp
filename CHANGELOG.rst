@@ -11,6 +11,16 @@ namespace packages under the ``pythonic_fp`` name.
 Important Milestones
 --------------------
 
+Update - 2025-09-21
+~~~~~~~~~~~~~~~~~~~
+
+Decided to deprecate the pythonic-fp-sentinels PyPI project.
+
+- code moved to pythonic-fp-gadgets
+  - wanted to make gadgets independent of all external code
+  - except the Python standard library
+- will actually deprecate on PyPI when I move rest of pythonic-fp off of it
+
 Update - 2025-09-15
 ~~~~~~~~~~~~~~~~~~~
 

@@ -1,12 +1,19 @@
 pythonic-fp-sentinels
 =====================
 
+**DEPRICATED!!!**
+
 PyPI project
 `pythonic-fp-sentinels
 <https://pypi.org/project/pythonic-fp-sentinels/>`_
-part of the 
+has been **Depricated**. It is part of the
 `pythonic-fp namespace projects
 <https://github.com/grscheller/pythonic-fp/blob/main/README.md>`_.
+
+All of this project's source code has been migrated to the
+`pythonic-fp-gadgets
+<https://pypi.org/project/pythonic-fp-gadgets/>`_
+project.
 
 |RELEASE_STRING| |VERSION_RELEASED| release.
 
