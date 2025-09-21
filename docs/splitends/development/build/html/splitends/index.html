@@ -149,11 +149,19 @@
   <section id="pythonic-fp-splitends">
 <h1>pythonic_fp.splitends<a class="headerlink" href="#pythonic-fp-splitends" title="Link to this heading">¶</a></h1>
 <p>Mutable stack objects that can safely share data.</p>
-<p>Like one of many “split ends” from shafts of hair, a <code class="docutils literal notranslate"><span class="pre">splitend</span></code> can be “snipped”
-shorter or “extended” further from its “tip”. Its root is irremovable and cannot be
-“snipped” off. While mutable, different splitends can safely share data with each other.
-Python package Implementing a singularly linked LIFO queue called a <code class="docutils literal notranslate"><span class="pre">SplitEnd</span></code>. These
-data structures can safely share data nodes between themselves.</p>
+<p>Python package implementing a singularly linked stack of nodes called a <code class="docutils literal notranslate"><span class="pre">SplitEnd</span></code>.
+While mutable, these data structures can safely share immutable data nodes between
+themselves. These nodes, of type <code class="docutils literal notranslate"><span class="pre">SENode</span></code>, always contain data. A root node is
+a node whose previous node is itself. Root nodes mark the bottom of the stack.</p>
+<p>Like one of many “split ends” from shafts of hair, a <code class="docutils literal notranslate"><span class="pre">SplitEnd</span></code> can be “snipped”
+shorter or “extended” further from its “end” node at the top of the stack. Its “root”
+node is at the bottom of the stack and can not be “snipped” or “cut” off.</p>
+<p>A <code class="docutils literal notranslate"><span class="pre">SplitEnd</span></code> can be duplicated onto a compatible root node. By compatible, the
+new root must contain data that compares as equal to the old root node.</p>
+<p>TODO: A <code class="docutils literal notranslate"><span class="pre">scalp</span></code> is a container of root nodes all of whose contained data must be
+hashable. The <code class="docutils literal notranslate"><span class="pre">scalp.add(d)</span></code> method will return the unique root node with data
+that compares as equal to <code class="docutils literal notranslate"><span class="pre">d</span></code>, or create a new root node if such a contained node
+does not exist.</p>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="splitend.html">module splitend</a></li>
