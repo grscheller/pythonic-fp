@@ -10,6 +10,8 @@ part of the
 
 |RELEASE_STRING| |VERSION_RELEASED| release.
 
+**Tools for iterators and iterables.**
+
 .. automodule:: pythonic_fp.iterables
     :synopsis:
     :noindex:

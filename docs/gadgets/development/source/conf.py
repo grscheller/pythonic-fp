@@ -14,7 +14,7 @@ project = 'Pythonic FP - Gadgets'
 copyright = '2025, Geoffrey R. Scheller'
 author = 'Geoffrey R. Scheller'
 release = '3.1.0' 
-release_string = 'For a proposed PyPI'
+release_string = 'Proposed PyPI'
 # release_string = 'PyPI'
 
 # -- General configuration ---------------------------------------------------

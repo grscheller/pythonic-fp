@@ -1,8 +1,6 @@
 pythonic-fp-circulararray
 =========================
 
-Circular array - basically an efficient full featured double ended list.
-
 PyPI project
 `pythonic-fp-circulararray
 <https://pypi.org/project/pythonic-fp-circulararray/>`_
@@ -11,6 +9,8 @@ one of the Python
 <https://github.com/grscheller/pythonic-fp/blob/main/README.md>`_.
 
 |RELEASE_STRING| |VERSION_RELEASED| release.
+
+**Circular array, basically an efficient full featured double ended list.**
 
 .. toctree::
    :caption: Overview
