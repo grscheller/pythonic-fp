@@ -13,7 +13,7 @@
 project = 'Pythonic FP - Sentinels'
 copyright = '2023-2025, Geoffrey R. Scheller'
 author = 'Geoffrey R. Scheller'
-release = '2.1.2' 
+release = '2.1.3' 
 # release_string = 'For a proposed PyPI'
 release_string = 'Final PyPI'
 

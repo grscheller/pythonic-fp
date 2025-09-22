@@ -19,7 +19,8 @@ Decided to deprecate the pythonic-fp-sentinels PyPI project.
 - code moved to pythonic-fp-gadgets
   - wanted to make gadgets independent of all external code
   - except the Python standard library
-- will actually deprecate on PyPI when I move rest of pythonic-fp off of it
+- moved rest of pythonic-fp development off sentinels and onto gadgets
+- with some difficulty, final release version is 2.1.3
 
 Update - 2025-09-15
 ~~~~~~~~~~~~~~~~~~~

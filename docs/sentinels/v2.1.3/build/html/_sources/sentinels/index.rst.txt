@@ -1,0 +1,12 @@
+pythonic_fp.sentinels
+=====================
+
+.. automodule:: pythonic_fp.sentinels
+   :synopsis:
+   :noindex:
+
+.. toctree::
+    :maxdepth: 2
+
+    flavored
+    novalue
