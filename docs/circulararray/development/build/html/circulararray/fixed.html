@@ -5,10 +5,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>circularary.fixed &#8212; Pythonic FP - Circular Array 5.3.3 documentation</title>
+    <title>circularary.fixed &#8212; Pythonic FP - Circular Array 5.3.4 documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/basic_mod.css?v=9b2032db" />
-    <script src="../_static/documentation_options.js?v=6bf39223"></script>
+    <script src="../_static/documentation_options.js?v=a07a02ee"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
@@ -29,7 +29,7 @@
         <p id="toggle_sidebar">
             <a href="#" title="Toggle sidebar">|||</a>
         </p>
-        <h1><a href="../index.html" title="Go to homepage">Pythonic FP - Circular Array 5.3.3 documentation</a></h1>
+        <h1><a href="../index.html" title="Go to homepage">Pythonic FP - Circular Array 5.3.4 documentation</a></h1>
 
         <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
     <template v-if="mode == 'light'">
@@ -154,10 +154,10 @@
 <li><p>O(1) pops and pushes either end</p></li>
 <li><p>O(1) indexing, does not support slicing</p></li>
 <li><p>fixed total storage capacity</p></li>
-<li><p>iterable, can safely mutate while iterators continue iterating over previous state</p></li>
+<li><p>iterable, safely mutates while iterators iterating over previous state</p></li>
 <li><p>comparisons compare identity before equality, like builtins</p></li>
 <li><p>in boolean context, falsy when either empty or full, otherwise truthy</p></li>
-<li><p>factory function <code class="docutils literal notranslate"><span class="pre">caf</span></code> produces a fixed storage capacity circular array from its arguments</p></li>
+<li><p>function <code class="docutils literal notranslate"><span class="pre">caf</span></code> produces fixed capacity circular array from arguments</p></li>
 </ul>
 </section>
 <dl class="py class">
