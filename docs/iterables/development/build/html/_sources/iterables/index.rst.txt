@@ -6,19 +6,9 @@ pythonic_fp.iterables
    :noindex:
 
 .. toctree::
-   :caption: merging
+   :caption: iterables
    :maxdepth: 1
 
    merging
-
-.. toctree::
-   :caption: drop_take
-   :maxdepth: 1
-
    drop_take
-
-.. toctree::
-   :caption: folding
-   :maxdepth: 1
-
    folding

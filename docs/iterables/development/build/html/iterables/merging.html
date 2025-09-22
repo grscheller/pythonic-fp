@@ -168,16 +168,16 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>iterables</strong> – iterables to blend together</p></li>
-<li><p><strong>merge_enum</strong> – MergeEnum to determine merging behavior</p></li>
-<li><p><strong>yield_partials</strong> – yield yielded unpaired values from other iterables</p></li>
+<li><p><strong>iterables</strong> – Iterables to blend together.</p></li>
+<li><p><strong>merge_enum</strong> – <code class="docutils literal notranslate"><span class="pre">MergeEnum</span></code> to determine merging behavior.</p></li>
+<li><p><strong>yield_partials</strong> – Yield unpaired values from other iterables.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>an iterator of type D</p>
+<dd class="field-even"><p>An iterator of type <code class="docutils literal notranslate"><span class="pre">D</span></code>.</p>
 </dd>
 <dt class="field-odd">Raises<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>ValueError</strong> – when an unknown MergeEnum is given</p>
+<dd class="field-odd"><p><strong>ValueError</strong> – When an unknown <code class="docutils literal notranslate"><span class="pre">MergeEnum</span></code> is given.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -197,10 +197,10 @@ yielding any values.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>iterables</strong> – iterables to concatenate</p>
+<dd class="field-odd"><p><strong>iterables</strong> – Iterables to concatenate.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>iterator of concatenated values from the iterables</p>
+<dd class="field-even"><p>Iterator of concatenated values from the iterables.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -211,10 +211,10 @@ yielding any values.</p>
 <dd><p>Merge together multiple iterables until all are exhausted.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>iterables</strong> – iterables to exhaustively merge</p>
+<dd class="field-odd"><p><strong>iterables</strong> – Iterables to exhaustively merge.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>iterator of merged values from the iterables until all are exhausted</p>
+<dd class="field-even"><p>Iterator of merged values from the iterables until all are exhausted.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -232,12 +232,12 @@ data lose if any of the iterables are iterators with external references.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>iterables</strong> – iterables to merge until one gets exhausted</p></li>
-<li><p><strong>yield_partials</strong> – yield any unpaired yielded values from other iterables</p></li>
+<li><p><strong>iterables</strong> – Iterables to merge until one gets exhausted.</p></li>
+<li><p><strong>yield_partials</strong> – Yield any unpaired yielded values from other iterables.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>iterator of merged values from the iterables until one is exhausted</p>
+<dd class="field-even"><p>Iterator of merged values from the iterables until one is exhausted.</p>
 </dd>
 </dl>
 </dd></dl>

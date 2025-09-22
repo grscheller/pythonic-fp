@@ -4,7 +4,7 @@ pythonic-fp-gadgets
 PyPI project
 `pythonic-fp-gadhets
 <https://pypi.org/project/pythonic-fp-gadgets/>`_
-part of the 
+part of the
 `pythonic-fp namespace projects
 <https://github.com/grscheller/pythonic-fp/blob/main/README.md>`_.
 

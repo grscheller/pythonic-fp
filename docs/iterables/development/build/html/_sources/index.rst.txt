@@ -4,7 +4,7 @@ pythonic-fp-iterables
 PyPI project
 `pythonic-fp-iterabless
 <https://pypi.org/project/pythonic-fp-iterables/>`_
-part of the 
+part of the
 `pythonic-fp namespace projects
 <https://github.com/grscheller/pythonic-fp/blob/main/README.md>`_.
 

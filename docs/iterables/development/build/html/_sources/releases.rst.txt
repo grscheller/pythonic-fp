@@ -1,5 +1,5 @@
 PyPI releases
--------------
+=============
 
 **pythonic-fp-iterables:** pythonic_fp.iterables
 

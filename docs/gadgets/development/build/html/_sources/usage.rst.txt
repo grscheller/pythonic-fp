@@ -1,4 +1,4 @@
-usage
+Usage
 =====
 
 How to installing the package

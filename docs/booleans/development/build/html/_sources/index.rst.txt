@@ -4,7 +4,7 @@ PyPI: pythonic-fp-booleans
 PyPI project
 `pythonic-fp-booleans
 <https://pypi.org/project/pythonic-fp-booleans/>`_
-part of the 
+part of the
 `pythonic-fp namespace projects
 <https://github.com/grscheller/pythonic-fp/blob/main/README.md>`_.
 

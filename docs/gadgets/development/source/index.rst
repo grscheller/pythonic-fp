@@ -1,18 +1,15 @@
 pythonic-fp-gadgets
 ===================
 
+Simple classes and functions with no external dependencies.
+
 PyPI project
 `pythonic-fp-gadhets
 <https://pypi.org/project/pythonic-fp-gadgets/>`_
-part of the
-`pythonic-fp namespace projects
+part of the Python
+`pythonic_fp namespace projects
 <https://github.com/grscheller/pythonic-fp/blob/main/README.md>`_.
-
 |RELEASE_STRING| |VERSION_RELEASED| release.
-
-.. automodule:: pythonic_fp.gadgets
-   :synopsis:
-   :noindex:
 
 .. toctree::
    :caption: Overview
@@ -31,6 +28,6 @@ part of the
 
 .. toctree::
    :caption: Documentation
-   :maxdepth: 2
+   :maxdepth: 3
 
    gadgets/index

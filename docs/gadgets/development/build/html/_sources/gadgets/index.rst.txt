@@ -5,13 +5,5 @@ pythonic_fp.gadgets
    :maxdepth: 1
 
    box
-
-.. toctree::
-   :maxdepth: 1
-
    iterate_arguments
-
-.. toctree::
-   :maxdepth: 1
-
    latest_common_ancestor
