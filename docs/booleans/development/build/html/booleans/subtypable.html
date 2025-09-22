@@ -16,7 +16,7 @@
     <script src="../_static/js/petite-vue.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="modulw flavored" href="flavored.html" />
+    <link rel="next" title="module flavored" href="flavored.html" />
     <link rel="prev" title="pythonic_fp.booleans" href="index.html" /> 
   </head><body data-dark_mode_code_blocks="true">
 
@@ -133,7 +133,7 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">pythonic_fp.booleans</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">module subtypable</a></li>
-<li class="toctree-l2"><a class="reference internal" href="flavored.html">modulw flavored</a></li>
+<li class="toctree-l2"><a class="reference internal" href="flavored.html">module flavored</a></li>
 <li class="toctree-l2"><a class="reference internal" href="truthy_falsy.html">module truthy_falsy</a></li>
 </ul>
 </li>
@@ -150,7 +150,7 @@
             
   <section id="module-pythonic_fp.booleans.subtypable">
 <span id="module-subtypable"></span><h1>module subtypable<a class="headerlink" href="#module-pythonic_fp.booleans.subtypable" title="Link to this heading">¶</a></h1>
-<p>Subtypable Booleans.</p>
+<p>Subtypable Boolean.</p>
 <p>Like Python’s built in bool, class <code class="docutils literal notranslate"><span class="pre">SBool</span></code> is a subclass of int.
 Unlike bool, this version can be further subclassed.</p>
 <p>This type and its subtypes can also do (non-shortcut) Boolean logic
@@ -189,9 +189,9 @@ specifically, the instance returned will have the type of the
 least upper bound in the inheritance graph of the classes of
 the two arguments.</p>
 </div>
-<p>While compatible with Python <code class="docutils literal notranslate"><span class="pre">and</span></code>,``or`` short-cut logic. The <code class="docutils literal notranslate"><span class="pre">not</span></code>
-operator always returns a <code class="docutils literal notranslate"><span class="pre">bool</span></code>. Use the bitwise <code class="docutils literal notranslate"><span class="pre">~</span></code> operator
-to return an opposite <code class="docutils literal notranslate"><span class="pre">SBool</span></code> or opposite <code class="docutils literal notranslate"><span class="pre">SBool</span></code> subclass.</p>
+<p>While compatible with Python  short-cut logic. Unfortunately, the
+<code class="docutils literal notranslate"><span class="pre">not</span></code> operator always returns a <code class="docutils literal notranslate"><span class="pre">bool</span></code>. Use the bitwise <code class="docutils literal notranslate"><span class="pre">~</span></code>
+operator to return an opposite <code class="docutils literal notranslate"><span class="pre">SBool</span></code> or subclass.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>The “bitwise” operators can raise <code class="docutils literal notranslate"><span class="pre">TypeError</span></code> exceptions
@@ -266,7 +266,7 @@ from <code class="docutils literal notranslate"><span class="pre">int</span></co
 
             <div class="right">
                 
-                    <a href="flavored.html"><span>modulw flavored</span><span class="icon">&gt;</span></a>
+                    <a href="flavored.html"><span>module flavored</span><span class="icon">&gt;</span></a>
                 
             </div>
         </div>
