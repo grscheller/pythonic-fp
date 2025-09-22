@@ -9,6 +9,7 @@ PyPI project
 one of the Python
 `pythonic_fp namespace projects
 <https://github.com/grscheller/pythonic-fp/blob/main/README.md>`_.
+
 |RELEASE_STRING| |VERSION_RELEASED| release.
 
 .. toctree::
