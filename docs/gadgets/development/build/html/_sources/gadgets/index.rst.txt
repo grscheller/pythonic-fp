@@ -2,8 +2,20 @@ pythonic_fp.gadgets
 ===================
 
 .. toctree::
-   :maxdepth: 1
+    :caption: Functions
+    :maxdepth: 1
 
-   box
-   iterate_arguments
-   latest_common_ancestor
+    iterate_arguments
+    latest_common_ancestor
+
+.. toctree::
+    :caption: Classes
+    :maxdepth: 1
+
+    box
+
+.. toctree::
+    :caption: Modules
+    :maxdepth: 2
+
+    sentinels/index

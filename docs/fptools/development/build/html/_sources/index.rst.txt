@@ -10,6 +10,8 @@ part of the
 
 |RELEASE_STRING| |VERSION_RELEASED| release.
 
+**Tools for Functional Programming.**
+
 .. automodule:: pythonic_fp.fptools
     :synopsis:
     :noindex:

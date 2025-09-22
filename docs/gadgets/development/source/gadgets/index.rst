@@ -18,4 +18,4 @@ pythonic_fp.gadgets
     :caption: Modules
     :maxdepth: 2
 
-    sentinel/index
+    sentinels/index

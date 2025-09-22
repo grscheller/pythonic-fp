@@ -126,7 +126,7 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Usage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="releases.html">PyPI releases</a></li>
-<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">changelog</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
 <ul>
@@ -153,12 +153,140 @@
 </section>
 <section id="importing-the-modules">
 <h2>Importing the modules<a class="headerlink" href="#importing-the-modules" title="Link to this heading">¶</a></h2>
-<p>Import the gadgets where “gadgets” are simple objects with minimal dependencies.</p>
+<p>Import the gadgets where “gadgets” are simple objects with no external dependencies
+other than the Python standard library.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">pythonic_fp.gadgets.box</span><span class="w"> </span><span class="kn">import</span> <span class="n">Box</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">pythonic_fp.gadgets.iterate_arguments</span><span class="w"> </span><span class="kn">import</span> <span class="n">ita</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">pythonic_fp.gadgets.latest_common_ancestor</span><span class="w"> </span><span class="kn">import</span> <span class="n">lca</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pythonic_fp.gadgets.sentinels.flavored</span><span class="w"> </span><span class="kn">import</span> <span class="n">Sentinel</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pythonic_fp.gadgets.sentinels.novalue</span><span class="w"> </span><span class="kn">import</span> <span class="n">NoValue</span>
 </pre></div>
 </div>
+</section>
+<section id="use-case-examples">
+<h2>Use case examples<a class="headerlink" href="#use-case-examples" title="Link to this heading">¶</a></h2>
+<section id="flavored-sentinels">
+<h3>Flavored Sentinels<a class="headerlink" href="#flavored-sentinels" title="Link to this heading">¶</a></h3>
+<p>Sentinel values of different (hashable) flavors. Can be used
+with functions or classes.</p>
+<p><strong>Some Use Cases</strong></p>
+<p>Could be used like an Enum.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">pythonic_fp.gadgets.sentinels.flavored</span><span class="w"> </span><span class="kn">import</span> <span class="n">Sentinel</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">calculate_something</span><span class="p">(</span><span class="n">n</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="n">Sentinel</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span> <span class="nb">float</span><span class="p">]:</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="p">(</span><span class="n">Sentinel</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="n">x</span><span class="p">)</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">Sentinel</span><span class="p">(</span><span class="n">n</span><span class="p">),</span> <span class="n">x</span><span class="o">/</span><span class="n">n</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">process_result</span><span class="p">(</span><span class="n">pair</span><span class="p">:</span> <span class="nb">tuple</span><span class="p">[</span><span class="n">Sentinel</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span> <span class="nb">float</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">pair</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">is</span> <span class="n">Sentinel</span><span class="p">(</span><span class="mi">0</span><span class="p">):</span>
+        <span class="k">return</span> <span class="mf">0.0</span>
+    <span class="k">return</span> <span class="n">pair</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="n">result</span> <span class="o">=</span> <span class="n">process_result</span><span class="p">(</span><span class="n">calculate_something</span><span class="p">(</span><span class="mi">213</span><span class="p">,</span> <span class="mf">15234.541</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Can be also be used as a private implementation detail for a class.
+Here is an example of an class that can take an “optional” value
+yet still be able to store <code class="docutils literal notranslate"><span class="pre">None</span></code> as a value.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">cast</span><span class="p">,</span> <span class="n">ClassVar</span><span class="p">,</span> <span class="n">Final</span><span class="p">,</span> <span class="n">overload</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pythonic_fp.gadgets.sentinels.flavored</span><span class="w"> </span><span class="kn">import</span> <span class="n">Sentinel</span>
+
+
+<span class="k">class</span><span class="w"> </span><span class="nc">MyClass</span><span class="p">:</span>
+    <span class="n">_sentinel</span><span class="p">:</span> <span class="n">Final</span><span class="p">[</span><span class="n">ClassVar</span><span class="p">[</span><span class="n">Sentinel</span><span class="p">[</span><span class="nb">str</span><span class="p">]]]</span> <span class="o">=</span> <span class="n">Sentinel</span><span class="p">(</span><span class="s1">&#39;_secret_str&#39;</span><span class="p">)</span>
+
+    <span class="nd">@overload</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span> <span class="o">...</span>
+    <span class="nd">@overload</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span> <span class="o">...</span>
+    <span class="nd">@overload</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span> <span class="o">...</span>
+    <span class="nd">@overload</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="nb">float</span> <span class="o">|</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span> <span class="o">...</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="nb">float</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">|</span> <span class="n">Sentinel</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="n">Sentinel</span><span class="p">(</span><span class="s1">&#39;_secret_str&#39;</span><span class="p">)</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">value</span> <span class="ow">is</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sentinel</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">value</span><span class="p">:</span> <span class="nb">float</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="mf">42.0</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="n">cast</span><span class="p">(</span><span class="nb">float</span> <span class="o">|</span> <span class="kc">None</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">get_value</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span> <span class="o">|</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">value</span>
+</pre></div>
+</div>
+</section>
+<section id="sentinel-novalue">
+<h3>Sentinel NoValue<a class="headerlink" href="#sentinel-novalue" title="Link to this heading">¶</a></h3>
+<p>This test from the test suite is a bit contrived, but I think
+it illustrates the usage.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">cast</span><span class="p">,</span> <span class="n">Final</span><span class="p">,</span> <span class="n">overload</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pythonic_fp.gadgets.sentinels.novalue</span><span class="w"> </span><span class="kn">import</span> <span class="n">NoValue</span>
+
+
+<span class="k">class</span><span class="w"> </span><span class="nc">Foo</span><span class="p">:</span>
+    <span class="nd">@overload</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">/</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span> <span class="o">...</span>
+    <span class="nd">@overload</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">repeat</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span> <span class="o">/</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span> <span class="o">...</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">repeat</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">|</span> <span class="n">NoValue</span> <span class="o">=</span> <span class="n">NoValue</span><span class="p">(),</span> <span class="o">/</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">repeat</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_repeat</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_repeat</span> <span class="o">=</span> <span class="mi">1</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">repeat</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s1">&#39;foo&#39;</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">_repeat</span>
+
+
+<span class="k">class</span><span class="w"> </span><span class="nc">RepeatFoo</span><span class="p">(</span><span class="n">Foo</span><span class="p">):</span>
+    <span class="nd">@overload</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">/</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span> <span class="o">...</span>
+    <span class="nd">@overload</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">repeat</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span> <span class="o">/</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span> <span class="o">...</span>
+    <span class="nd">@overload</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">repeat</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="o">/</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span> <span class="o">...</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">repeat</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">|</span> <span class="n">NoValue</span> <span class="o">=</span> <span class="n">NoValue</span><span class="p">(),</span> <span class="o">/</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">repeat</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_repeat</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="k">elif</span> <span class="n">repeat</span> <span class="ow">is</span> <span class="n">NoValue</span><span class="p">():</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_repeat</span> <span class="o">=</span> <span class="mi">2</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">ii</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">cast</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="n">repeat</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_repeat</span> <span class="o">=</span> <span class="n">ii</span> <span class="k">if</span> <span class="n">ii</span> <span class="o">&gt;=</span><span class="mi">0</span> <span class="k">else</span> <span class="o">-</span><span class="n">ii</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">test_foo</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="n">foo</span><span class="p">:</span> <span class="n">Foo</span> <span class="o">=</span> <span class="n">Foo</span><span class="p">()</span>
+    <span class="n">foo_none</span><span class="p">:</span> <span class="n">Foo</span> <span class="o">=</span> <span class="n">Foo</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
+
+    <span class="k">assert</span> <span class="n">foo</span><span class="o">.</span><span class="n">repeat</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;foo&#39;</span>
+    <span class="k">assert</span> <span class="n">foo_none</span><span class="o">.</span><span class="n">repeat</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;&#39;</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">test_repeat_foo</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="n">foo</span><span class="p">:</span> <span class="n">Foo</span> <span class="o">=</span> <span class="n">RepeatFoo</span><span class="p">()</span>
+    <span class="n">foo_none</span><span class="p">:</span> <span class="n">Foo</span> <span class="o">=</span> <span class="n">RepeatFoo</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
+    <span class="n">foo_0</span><span class="p">:</span> <span class="n">Foo</span> <span class="o">=</span> <span class="n">RepeatFoo</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">foo_1</span><span class="p">:</span> <span class="n">Foo</span> <span class="o">=</span> <span class="n">RepeatFoo</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">foo_2</span><span class="p">:</span> <span class="n">Foo</span> <span class="o">=</span> <span class="n">RepeatFoo</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">foo_3</span><span class="p">:</span> <span class="n">Foo</span> <span class="o">=</span> <span class="n">RepeatFoo</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+    <span class="n">foo_neg_4</span><span class="p">:</span> <span class="n">Foo</span> <span class="o">=</span> <span class="n">RepeatFoo</span><span class="p">(</span><span class="o">-</span><span class="mi">4</span><span class="p">)</span>
+
+    <span class="k">assert</span> <span class="n">foo</span><span class="o">.</span><span class="n">repeat</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;foofoo&#39;</span>
+    <span class="k">assert</span> <span class="n">foo_none</span><span class="o">.</span><span class="n">repeat</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;foo&#39;</span>
+    <span class="k">assert</span> <span class="n">foo_0</span><span class="o">.</span><span class="n">repeat</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;&#39;</span>
+    <span class="k">assert</span> <span class="n">foo_1</span><span class="o">.</span><span class="n">repeat</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;foo&#39;</span>
+    <span class="k">assert</span> <span class="n">foo_2</span><span class="o">.</span><span class="n">repeat</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;foofoo&#39;</span>
+    <span class="k">assert</span> <span class="n">foo_3</span><span class="o">.</span><span class="n">repeat</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;foofoofoo&#39;</span>
+    <span class="k">assert</span> <span class="n">foo_neg_4</span><span class="o">.</span><span class="n">repeat</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;foofoofoofoo&#39;</span>
+</pre></div>
+</div>
+</section>
 </section>
 </section>
 
@@ -179,6 +307,11 @@
 <li><a class="reference internal" href="#">Usage</a><ul>
 <li><a class="reference internal" href="#how-to-installing-the-package">How to installing the package</a></li>
 <li><a class="reference internal" href="#importing-the-modules">Importing the modules</a></li>
+<li><a class="reference internal" href="#use-case-examples">Use case examples</a><ul>
+<li><a class="reference internal" href="#flavored-sentinels">Flavored Sentinels</a></li>
+<li><a class="reference internal" href="#sentinel-novalue">Sentinel NoValue</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
