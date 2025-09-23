@@ -1,5 +1,6 @@
 Overview
 =========
 
-.. automodule:: pythonic_fp.overview
+.. automodule:: pythonic_fp.homepage
+    :synopsis:
     :noindex:

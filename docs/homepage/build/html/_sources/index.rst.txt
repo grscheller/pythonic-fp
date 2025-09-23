@@ -1,5 +1,5 @@
-PyPI: pythonic-fp
-=================
+Pythonic Functional Programming
+===============================
 
 PyPI project
 `pythonic-fp
@@ -10,11 +10,12 @@ overview for the
 
 |RELEASE_STRING|
 
-.. automodule:: pythonic_fp.overview
+.. automodule:: pythonic_fp.homepage.intro
+    :synopsis:
     :noindex:
 
 .. toctree::
-    :caption: Pythonic Functional Programming
+    :caption: Pythonic FP
     :maxdepth: 1
     :hidden:
 
@@ -25,10 +26,5 @@ overview for the
     :maxdepth: 1
 
     overview
+    configuration_management
     changelog
-
-.. toctree::
-    :caption: Coordinated Releases
-    :maxdepth: 1
-
-    coordinated_releases
