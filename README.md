@@ -1,9 +1,10 @@
-# PyPI Pythonic FP Namespace Projects
+# PyPI Pythonic FP Projects
 
 Collection of Functional Programming (FP) oriented Python libraries
 which endeavor to be Pythonic.
 
-Pythonic FP is a hobby project, but the maintainer is serious about its quality.
+Pythonic FP is a hobby project, but the maintainer is serious about
+its quality.
 
 ## Pythonic FP `pythonic-fp` namespace projects
 

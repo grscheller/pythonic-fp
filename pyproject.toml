@@ -1,8 +1,8 @@
 [project]
 name = "pythonic-fp"
-version = "2.0.1"
+version = "3.0.0"
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.13"
 license = { file = "LICENSE" }
 authors = [{ name = "Geoffrey R. Scheller", email = "geoffrey@scheller.com" }]
 keywords = [
@@ -22,7 +22,7 @@ dynamic = ["description"]
 
 [project.urls]
 Changelog = "https://github.com/grscheller/pythonic-fp/blob/main/CHANGELOG.rst"
-Homepage = "https://github.com/grscheller/pythonic-fp/blob/main/README.md"
+Homepage = "https://grscheller.github.io/pythonic-fp/overview/next/build/html/index.html"
 Source = "https://github.com/grscheller/pythonic-fp"
 
 [build-system]
@@ -35,7 +35,7 @@ exclude = [
 ]
 
 [tool.flit.module]
-name = "pythonic_fp.name_claim"
+name = "pythonic_fp.overview"
 
 [tool.mypy]
 enable_incomplete_feature = ["NewGenericSyntax"]
