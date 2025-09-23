@@ -20,10 +20,10 @@ which still endeavor to be Pythonic.
 
 The overall project's name is *Pythonic FP* and consists of PyPI
 projects under the `pythonic_fp` Python package namespace. All these
-projects have PyPI and GitHub names beginning `pythonic-fp-`.
+projects have PyPI and GitHub names beginning `pythonic-fp`.
 
 For more information visit the
-[project's homepage](https://grscheller.github.io/pythonic-fp/overview/next/build/html/index.html).
+[project's homepage](https://grscheller.github.io/pythonic-fp/homepage/build/html/index.html).
 
 ## Copyright and License
 
