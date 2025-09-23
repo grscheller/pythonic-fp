@@ -1,4 +1,4 @@
-# PyPI Pythonic FP Projects
+# Pythonic FP PyPI Projects
 
 Collection of Functional Programming (FP) oriented Python libraries
 which still endeavor to be Pythonic.
@@ -18,9 +18,9 @@ which still endeavor to be Pythonic.
 | Singletons | [pythonic-fp-singletons][108] | [gh][208] | [gh_pages][308] | pythonic_fp.singletons **DEPRECATED** |
 | Splitends | [pythonic-fp-splitends][109] | [gh][209] | [gh_pages][309] | pythonic_fp.splitends |
 
-The overall project's name is *pythonic-fp* and consists of PyPI
+The overall project's name is *Pythonic FP* and consists of PyPI
 projects under the `pythonic_fp` Python package namespace. All these
-PyPI projects have names beginning `pythonic-fp-`.
+projects have PyPI and GitHub names beginning `pythonic-fp-`.
 
 For more information visit the
 [project's homepage](https://grscheller.github.io/pythonic-fp/overview/next/build/html/index.html).

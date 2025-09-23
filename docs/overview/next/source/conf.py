@@ -17,6 +17,7 @@ release = '3.0.0'
 title_string = 'Next Coordinated Release'
 date_string = 'TBD'
 # title_string = 'Coordinated Release'
+# title_string = 'Project Release'
 # date_string = '2025-09-15'
 
 # -- General configuration ---------------------------------------------------
