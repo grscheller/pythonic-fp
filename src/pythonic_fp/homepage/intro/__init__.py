@@ -20,10 +20,23 @@ Developer Tools supporting a functional style of programming yet endeavoring to
 remain Pythonic. All project names begin ``pythonic-fp-`` on PyPI and are Python
 namespace packages under the ``pythonic_fp`` name.
 
-For the complete list of all available pythonic-fp on PyPI, see the
-`README.md
-<https://github.com/grscheller/pythonic-fp/blob/main/README.md>`_
-file from the grscheller/pythonic-fp GitHub repo.
+A complete list of links to the PyPI and GitHub repos making up the project
+can be found
+`here <https://github.com/grscheller/pythonic-fp/blob/main/README.md>`_.
+
+Goals
+-----
+
+- to assist in a functional style of programming
+- to fulling support typing and tooling like `mypy <https://mypy-lang.org/>`_
+- support stateful as well as functional paradigms
+- good documentation
+- be extensible
+
+Non-Goals
+---------
+
+- try and make Python a pure functional language like Haskell
 
 Releases
 --------
