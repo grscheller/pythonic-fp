@@ -16,9 +16,10 @@
 Pythonic FP projects
 ====================
 
-Developer Tools supporting a functional style of programming yet endeavoring to
-remain Pythonic. All project names begin ``pythonic-fp-`` on PyPI and are Python
-namespace packages under the ``pythonic_fp`` name.
+Developer Tools supporting a functional style of programming yet endeavoring
+to remain Pythonic. Project names begin ``pythonic-fp-`` on PyPI and
+``grscheller/pythonic-fp-`` on GitHub. As Python modules, all are under
+the ``pythonic_fp`` package name.
 
 A complete list of links to the PyPI and GitHub repos making up the project
 can be found
@@ -65,13 +66,15 @@ Releases
 | Splitends      | pythonic-fp-splitends     | 1.0.2   | pythonic_fp.splitends     |
 +----------------+---------------------------+---------+---------------------------+
 
-- **\* DEPRECATED:** Use ``Gadgets`` instead.
-- **\*\* DEPRECATED:** Use ``Booleans`` and ``Gadgets`` instead.
+**\* DEPRECATED:** Use ``Gadgets`` instead.
+
+**\*\* DEPRECATED:** Use ``Booleans`` and ``Gadgets`` instead.
 
 Module dependencies
 -------------------
 
-Graph of latest module dependencies.
+Current module dependencies where arrows point to dependencies. There
+are no external dependency except for the Python standard library.
 
 .. graphviz::
 
