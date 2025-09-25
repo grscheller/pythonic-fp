@@ -1,9 +1,7 @@
 pythonic_fp.circulararray
 =========================
 
-.. automodule:: pythonic_fp.circulararray
-   :synopsis:
-   :no-index:
+**An efficient full featured double ended list.**
 
 .. toctree::
    :maxdepth: 1

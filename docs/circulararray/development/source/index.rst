@@ -10,7 +10,9 @@ one of the Python
 
 |RELEASE_STRING| |VERSION_RELEASED| release.
 
-**Circular array, basically an efficient full featured double ended list.**
+.. automodule:: pythonic_fp.circulararray
+   :synopsis:
+   :no-index:
 
 .. toctree::
    :caption: Overview

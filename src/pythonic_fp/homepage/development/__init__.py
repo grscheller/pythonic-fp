@@ -13,8 +13,8 @@
 # limitations under the License.
 
 """
-Version Control
-===============
+Development
+===========
 
 Semantic versioning
 -------------------
@@ -30,34 +30,64 @@ Periodically coordinated releases of versions are done for those concerned with
 stability. These are also posted in the project's
 `CHANGELOG <https://github.com/grscheller/pythonic-fp/blob/main/CHANGELOG.rst>`_.
 
+Module dependencies
+-------------------
+
+Current module dependencies where arrows point from modules to their
+dependencies. There are no external dependency except for the Python
+standard library.
+
+.. graphviz::
+
+    digraph Modules {
+        bgcolor="#957fb8";
+        node [style=filled, fillcolor="#181616", fontcolor="#dcd7ba"];
+        edge [color="#181616", fontcolor="#dcd7ba"];
+        containers -> fptools;
+        containers -> iterables;
+        containers -> circulararray;
+        splitends -> fptools;
+        splitends -> iterables;
+        splitends -> queues;
+        queues -> fptools;
+        queues -> circulararray;
+        circulararray -> gadgets;
+        fptools -> circulararray;
+        fptools -> gadgets;
+        fptools -> booleans;
+        booleans -> gadgets;
+        iterables -> gadgets;
+        iterables -> fptools;
+    }
+
 Coordinated releases
 --------------------
 
-Upcoming coordinated release - TBD
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Release - 2025-09-TBD
+~~~~~~~~~~~~~~~~~~~~~
 
 +----------------+---------------------------+---------+
 | Name           | PyPI Project              | version |
 +================+===========================+=========+
-| Booleans       | pythonic-fp-booleans      | 1.1.2   |
+| Booleans       | pythonic-fp-booleans      | 2.0.0   |
 +----------------+---------------------------+---------+
 | Circular Array | pythonic-fp-circulararray | 5.4.0   |
 +----------------+---------------------------+---------+
-| Containers     | pythonic-fp-containers    | 3.0.1   |
+| Containers     | pythonic-fp-containers    | 4.0.0   |
 +----------------+---------------------------+---------+
-| FP Tools       | pythonic-fp-fptools       | 5.1.1   |
+| FP Tools       | pythonic-fp-fptools       | 5.1.2   |
 +----------------+---------------------------+---------+
 | Gadgets        | pythonic-fp-gadgets       | 3.1.0   |
 +----------------+---------------------------+---------+
-| Iterables      | pythonic-fp-iterables     | 5.1.1   |
+| Iterables      | pythonic-fp-iterables     | 5.1.2   |
 +----------------+---------------------------+---------+
 | Queues         | pythonic-fp-queues        | 3.1.0   |
 +----------------+---------------------------+---------+
-| Splitends      | pythonic-fp-splitends     | 1.0.2   |
+| Splitends      | pythonic-fp-splitends     | 2.0.0   |
 +----------------+---------------------------+---------+
 
-Coordinated release - 2025-09-15
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Release - 2025-09-15
+~~~~~~~~~~~~~~~~~~~~
 
 +----------------+---------------------------+---------+
 | Name           | PyPI Project              | version |

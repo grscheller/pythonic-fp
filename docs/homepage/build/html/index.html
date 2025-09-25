@@ -125,7 +125,7 @@
 <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
-<li class="toctree-l1"><a class="reference internal" href="configuration_management.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development.html">Development</a></li>
 <li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
 </ul>
 
@@ -153,7 +153,8 @@ to remain Pythonic. Project names begin <code class="docutils literal notranslat
 the <code class="docutils literal notranslate"><span class="pre">pythonic_fp</span></code> package name.</p>
 <p>A complete list of links to the PyPI and GitHub repos making up the project
 can be found
-<a class="reference external" href="https://github.com/grscheller/pythonic-fp/blob/main/README.md">here</a>.</p>
+<a class="reference external" href="https://github.com/grscheller/pythonic-fp/blob/main/README.md">here</a>
+on GitHub.</p>
 <section id="goals">
 <h3>Goals<a class="headerlink" href="#goals" title="Link to this heading">¶</a></h3>
 <ul class="simple">
@@ -170,96 +171,70 @@ can be found
 <li><p>try and make Python a pure functional language like Haskell</p></li>
 </ul>
 </section>
-<section id="releases">
-<h3>Releases<a class="headerlink" href="#releases" title="Link to this heading">¶</a></h3>
+<section id="top-level-pypi-releases">
+<h3>Top level PyPI releases<a class="headerlink" href="#top-level-pypi-releases" title="Link to this heading">¶</a></h3>
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>PyPI Project</p></th>
-<th class="head"><p>version</p></th>
+<tr class="row-odd"><th class="head"><p>PyPI Project</p></th>
 <th class="head"><p>Python Module</p></th>
+<th class="head"><p>version</p></th>
+<th class="head"><p>date</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>Booleans</p></td>
-<td><p>pythonic-fp-booleans</p></td>
-<td><p>1.1.2</p></td>
+<tr class="row-even"><td><p>pythonic-fp-booleans</p></td>
 <td><p>pythonic_fp.booleans</p></td>
+<td><p>1.1.2</p></td>
+<td><p>2025-09-09</p></td>
 </tr>
-<tr class="row-odd"><td><p>Circular Array</p></td>
-<td><p>pythonic-fp-circulararray</p></td>
-<td><p>5.3.3</p></td>
+<tr class="row-odd"><td><p>pythonic-fp-circulararray</p></td>
 <td><p>pythonic_fp.circulararray</p></td>
+<td><p>5.3.3</p></td>
+<td><p>2025-09-25</p></td>
 </tr>
-<tr class="row-even"><td><p>Containers</p></td>
-<td><p>pythonic-fp-containers</p></td>
-<td><p>3.0.1</p></td>
+<tr class="row-even"><td><p>pythonic-fp-containers</p></td>
 <td><p>pythonic_fp.containers</p></td>
-</tr>
-<tr class="row-odd"><td><p>FP Tools</p></td>
-<td><p>pythonic-fp-fptools</p></td>
-<td><p>5.1.1</p></td>
-<td><p>pythonic_fp.fptools</p></td>
-</tr>
-<tr class="row-even"><td><p>Gadgets</p></td>
-<td><p>pythonic-fp-gadgets</p></td>
 <td><p>3.0.1</p></td>
-<td><p>pythonic_fp.gadgets</p></td>
+<td><p>2025-09-09</p></td>
 </tr>
-<tr class="row-odd"><td><p>Iterables</p></td>
-<td><p>pythonic-fp-iterables</p></td>
+<tr class="row-odd"><td><p>pythonic-fp-fptools</p></td>
+<td><p>pythonic_fp.fptools</p></td>
 <td><p>5.1.1</p></td>
+<td><p>2025-09-09</p></td>
+</tr>
+<tr class="row-even"><td><p>pythonic-fp-gadgets</p></td>
+<td><p>pythonic_fp.gadgets</p></td>
+<td><p>3.0.1</p></td>
+<td><p>2025-09-09</p></td>
+</tr>
+<tr class="row-odd"><td><p>pythonic-fp-iterables</p></td>
 <td><p>pythonic_fp.iterables</p></td>
+<td><p>5.1.1</p></td>
+<td><p>2025-09-09</p></td>
 </tr>
-<tr class="row-even"><td><p>Queues</p></td>
-<td><p>pythonic-fp-queues</p></td>
-<td><p>TBD</p></td>
+<tr class="row-even"><td><p>pythonic-fp-queues</p></td>
 <td><p>pythonic_fp.queues</p></td>
+<td><p>5.1.0</p></td>
+<td><p>TBD</p></td>
 </tr>
-<tr class="row-odd"><td><p>Sentinels *</p></td>
-<td><p>pythonic-fp-sentinels</p></td>
-<td><p>2.1.3</p></td>
+<tr class="row-odd"><td><p>pythonic-fp-sentinels *</p></td>
 <td><p>pythonic_fp.sentinels</p></td>
+<td><p>2.1.3</p></td>
+<td><p>2025-08-02</p></td>
 </tr>
-<tr class="row-even"><td><p>Singletons **</p></td>
-<td><p>pythonic-fp-singletons</p></td>
-<td><p>1.0.0</p></td>
+<tr class="row-even"><td><p>pythonic-fp-singletons *</p></td>
 <td><p>pythonic_fp.singletons</p></td>
+<td><p>1.0.0</p></td>
+<td><p>2025-09-25</p></td>
 </tr>
-<tr class="row-odd"><td><p>Splitends</p></td>
-<td><p>pythonic-fp-splitends</p></td>
-<td><p>1.0.2</p></td>
+<tr class="row-odd"><td><p>pythonic-fp-splitends</p></td>
 <td><p>pythonic_fp.splitends</p></td>
+<td><p>1.0.2</p></td>
+<td><p>2025-09-25</p></td>
 </tr>
 </tbody>
 </table>
-<p><strong>* DEPRECATED:</strong> Use <code class="docutils literal notranslate"><span class="pre">Gadgets</span></code> instead.</p>
-<p><strong>** DEPRECATED:</strong> Use <code class="docutils literal notranslate"><span class="pre">Booleans</span></code> and <code class="docutils literal notranslate"><span class="pre">Gadgets</span></code> instead.</p>
-</section>
-<section id="module-dependencies">
-<h3>Module dependencies<a class="headerlink" href="#module-dependencies" title="Link to this heading">¶</a></h3>
-<p>Current module dependencies where arrows point to dependencies. There
-are no external dependency except for the Python standard library.</p>
-<div class="graphviz"><img src="_images/graphviz-e9fd327f9ab024de8160ac7a570eb892513d2a53.png" alt="digraph Modules {
-    bgcolor=&quot;#957fb8&quot;;
-    node [style=filled, fillcolor=&quot;#181616&quot;, fontcolor=&quot;#dcd7ba&quot;];
-    edge [color=&quot;#181616&quot;, fontcolor=&quot;#dcd7ba&quot;];
-    containers -&gt; fptools;
-    containers -&gt; iterables;
-    containers -&gt; circulararray;
-    splitends -&gt; fptools;
-    splitends -&gt; iterables;
-    splitends -&gt; queues;
-    queues -&gt; fptools;
-    queues -&gt; circulararray;
-    circulararray -&gt; gadgets;
-    fptools -&gt; circulararray;
-    fptools -&gt; gadgets;
-    fptools -&gt; booleans;
-    booleans -&gt; gadgets;
-    iterables -&gt; gadgets;
-    iterables -&gt; fptools;
-}" class="graphviz" /></div>
+<p>* Deprecated</p>
 </section>
 </section>
 <div class="toctree-wrapper compound">
@@ -268,7 +243,7 @@ are no external dependency except for the Python standard library.</p>
 <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
-<li class="toctree-l1"><a class="reference internal" href="configuration_management.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development.html">Development</a></li>
 <li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
 </ul>
 </div>
@@ -292,8 +267,7 @@ are no external dependency except for the Python standard library.</p>
 <li><a class="reference internal" href="#pythonic-fp-projects">Pythonic FP projects</a><ul>
 <li><a class="reference internal" href="#goals">Goals</a></li>
 <li><a class="reference internal" href="#non-goals">Non-Goals</a></li>
-<li><a class="reference internal" href="#releases">Releases</a></li>
-<li><a class="reference internal" href="#module-dependencies">Module dependencies</a></li>
+<li><a class="reference internal" href="#top-level-pypi-releases">Top level PyPI releases</a></li>
 </ul>
 </li>
 </ul>

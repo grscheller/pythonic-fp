@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Overview &#8212; Pythonic FP 3.0.0 documentation</title>
+    <title>Development &#8212; Pythonic FP 3.0.0 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="_static/basic_mod.css?v=9b2032db" />
     <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=4ae1632d" />
@@ -126,7 +126,7 @@
 <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Overview</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Development</a></li>
 <li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
 </ul>
 
@@ -139,10 +139,10 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <section id="overview">
-<h1>Overview<a class="headerlink" href="#overview" title="Link to this heading">¶</a></h1>
-<section id="version-control">
-<h2>Version Control<a class="headerlink" href="#version-control" title="Link to this heading">¶</a></h2>
+  <section id="development">
+<h1>Development<a class="headerlink" href="#development" title="Link to this heading">¶</a></h1>
+<section id="id1">
+<h2>Development<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
 <section id="semantic-versioning">
 <h3>Semantic versioning<a class="headerlink" href="#semantic-versioning" title="Link to this heading">¶</a></h3>
 <p>Maintainer has adopted strict 3 digit
@@ -155,10 +155,36 @@ access to the latest features.</p>
 stability. These are also posted in the project’s
 <a class="reference external" href="https://github.com/grscheller/pythonic-fp/blob/main/CHANGELOG.rst">CHANGELOG</a>.</p>
 </section>
+<section id="module-dependencies">
+<h3>Module dependencies<a class="headerlink" href="#module-dependencies" title="Link to this heading">¶</a></h3>
+<p>Current module dependencies where arrows point from modules to their
+dependencies. There are no external dependency except for the Python
+standard library.</p>
+<div class="graphviz"><img src="_images/graphviz-e69e3d373005a42b9b2cfa4fd5b02a76c2c72720.png" alt="digraph Modules {
+    bgcolor=&quot;#957fb8&quot;;
+    node [style=filled, fillcolor=&quot;#181616&quot;, fontcolor=&quot;#dcd7ba&quot;];
+    edge [color=&quot;#181616&quot;, fontcolor=&quot;#dcd7ba&quot;];
+    containers -&gt; fptools;
+    containers -&gt; iterables;
+    containers -&gt; circulararray;
+    splitends -&gt; fptools;
+    splitends -&gt; iterables;
+    splitends -&gt; queues;
+    queues -&gt; fptools;
+    queues -&gt; circulararray;
+    circulararray -&gt; gadgets;
+    fptools -&gt; circulararray;
+    fptools -&gt; gadgets;
+    fptools -&gt; booleans;
+    booleans -&gt; gadgets;
+    iterables -&gt; gadgets;
+    iterables -&gt; fptools;
+}" class="graphviz" /></div>
+</section>
 <section id="coordinated-releases">
 <h3>Coordinated releases<a class="headerlink" href="#coordinated-releases" title="Link to this heading">¶</a></h3>
-<section id="upcoming-coordinated-release-tbd">
-<h4>Upcoming coordinated release - TBD<a class="headerlink" href="#upcoming-coordinated-release-tbd" title="Link to this heading">¶</a></h4>
+<section id="release-2025-09-tbd">
+<h4>Release - 2025-09-TBD<a class="headerlink" href="#release-2025-09-tbd" title="Link to this heading">¶</a></h4>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -169,7 +195,7 @@ stability. These are also posted in the project’s
 <tbody>
 <tr class="row-even"><td><p>Booleans</p></td>
 <td><p>pythonic-fp-booleans</p></td>
-<td><p>1.1.2</p></td>
+<td><p>2.0.0</p></td>
 </tr>
 <tr class="row-odd"><td><p>Circular Array</p></td>
 <td><p>pythonic-fp-circulararray</p></td>
@@ -177,11 +203,11 @@ stability. These are also posted in the project’s
 </tr>
 <tr class="row-even"><td><p>Containers</p></td>
 <td><p>pythonic-fp-containers</p></td>
-<td><p>3.0.1</p></td>
+<td><p>4.0.0</p></td>
 </tr>
 <tr class="row-odd"><td><p>FP Tools</p></td>
 <td><p>pythonic-fp-fptools</p></td>
-<td><p>5.1.1</p></td>
+<td><p>5.1.2</p></td>
 </tr>
 <tr class="row-even"><td><p>Gadgets</p></td>
 <td><p>pythonic-fp-gadgets</p></td>
@@ -189,7 +215,7 @@ stability. These are also posted in the project’s
 </tr>
 <tr class="row-odd"><td><p>Iterables</p></td>
 <td><p>pythonic-fp-iterables</p></td>
-<td><p>5.1.1</p></td>
+<td><p>5.1.2</p></td>
 </tr>
 <tr class="row-even"><td><p>Queues</p></td>
 <td><p>pythonic-fp-queues</p></td>
@@ -197,13 +223,13 @@ stability. These are also posted in the project’s
 </tr>
 <tr class="row-odd"><td><p>Splitends</p></td>
 <td><p>pythonic-fp-splitends</p></td>
-<td><p>1.0.2</p></td>
+<td><p>2.0.0</p></td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="coordinated-release-2025-09-15">
-<h4>Coordinated release - 2025-09-15<a class="headerlink" href="#coordinated-release-2025-09-15" title="Link to this heading">¶</a></h4>
+<section id="release-2025-09-15">
+<h4>Release - 2025-09-15<a class="headerlink" href="#release-2025-09-15" title="Link to this heading">¶</a></h4>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -265,12 +291,13 @@ stability. These are also posted in the project’s
             <p><a class="toggle_right_sidebar" href="#"><span class="icon">&gt;</span><span>Page contents:</span></a></p>
             <div class="page_toc">
                 <ul>
-<li><a class="reference internal" href="#">Overview</a><ul>
-<li><a class="reference internal" href="#version-control">Version Control</a><ul>
+<li><a class="reference internal" href="#">Development</a><ul>
+<li><a class="reference internal" href="#id1">Development</a><ul>
 <li><a class="reference internal" href="#semantic-versioning">Semantic versioning</a></li>
+<li><a class="reference internal" href="#module-dependencies">Module dependencies</a></li>
 <li><a class="reference internal" href="#coordinated-releases">Coordinated releases</a><ul>
-<li><a class="reference internal" href="#upcoming-coordinated-release-tbd">Upcoming coordinated release - TBD</a></li>
-<li><a class="reference internal" href="#coordinated-release-2025-09-15">Coordinated release - 2025-09-15</a></li>
+<li><a class="reference internal" href="#release-2025-09-tbd">Release - 2025-09-TBD</a></li>
+<li><a class="reference internal" href="#release-2025-09-15">Release - 2025-09-15</a></li>
 </ul>
 </li>
 </ul>

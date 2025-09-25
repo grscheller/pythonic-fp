@@ -26,5 +26,5 @@ overview for the
     :maxdepth: 1
 
     overview
-    configuration_management
+    development
     changelog

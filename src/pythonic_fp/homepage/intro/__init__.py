@@ -23,7 +23,8 @@ the ``pythonic_fp`` package name.
 
 A complete list of links to the PyPI and GitHub repos making up the project
 can be found
-`here <https://github.com/grscheller/pythonic-fp/blob/main/README.md>`_.
+`here <https://github.com/grscheller/pythonic-fp/blob/main/README.md>`_
+on GitHub.
 
 Goals
 -----
@@ -39,64 +40,33 @@ Non-Goals
 
 - try and make Python a pure functional language like Haskell
 
-Releases
---------
+Top level PyPI releases
+-----------------------
 
-+----------------+---------------------------+---------+---------------------------+
-| Name           | PyPI Project              | version | Python Module             |
-+================+===========================+=========+===========================+
-| Booleans       | pythonic-fp-booleans      | 1.1.2   | pythonic_fp.booleans      |
-+----------------+---------------------------+---------+---------------------------+
-| Circular Array | pythonic-fp-circulararray | 5.3.3   | pythonic_fp.circulararray |
-+----------------+---------------------------+---------+---------------------------+
-| Containers     | pythonic-fp-containers    | 3.0.1   | pythonic_fp.containers    |
-+----------------+---------------------------+---------+---------------------------+
-| FP Tools       | pythonic-fp-fptools       | 5.1.1   | pythonic_fp.fptools       |
-+----------------+---------------------------+---------+---------------------------+
-| Gadgets        | pythonic-fp-gadgets       | 3.0.1   | pythonic_fp.gadgets       |
-+----------------+---------------------------+---------+---------------------------+
-| Iterables      | pythonic-fp-iterables     | 5.1.1   | pythonic_fp.iterables     |
-+----------------+---------------------------+---------+---------------------------+
-| Queues         | pythonic-fp-queues        | TBD     | pythonic_fp.queues        |
-+----------------+---------------------------+---------+---------------------------+
-| Sentinels *    | pythonic-fp-sentinels     | 2.1.3   | pythonic_fp.sentinels     |
-+----------------+---------------------------+---------+---------------------------+
-| Singletons **  | pythonic-fp-singletons    | 1.0.0   | pythonic_fp.singletons    |
-+----------------+---------------------------+---------+---------------------------+
-| Splitends      | pythonic-fp-splitends     | 1.0.2   | pythonic_fp.splitends     |
-+----------------+---------------------------+---------+---------------------------+
++---------------------------+---------------------------+---------+------------+
+| PyPI Project              | Python Module             | version | date       |
++===========================+===========================+=========+============+
+| pythonic-fp-booleans      | pythonic_fp.booleans      | 1.1.2   | 2025-09-09 |
++---------------------------+---------------------------+---------+------------+
+| pythonic-fp-circulararray | pythonic_fp.circulararray | 5.3.3   | 2025-09-25 |
++---------------------------+---------------------------+---------+------------+
+| pythonic-fp-containers    | pythonic_fp.containers    | 3.0.1   | 2025-09-09 |
++---------------------------+---------------------------+---------+------------+
+| pythonic-fp-fptools       | pythonic_fp.fptools       | 5.1.1   | 2025-09-09 |
++---------------------------+---------------------------+---------+------------+
+| pythonic-fp-gadgets       | pythonic_fp.gadgets       | 3.0.1   | 2025-09-09 |
++---------------------------+---------------------------+---------+------------+
+| pythonic-fp-iterables     | pythonic_fp.iterables     | 5.1.1   | 2025-09-09 |
++---------------------------+---------------------------+---------+------------+
+| pythonic-fp-queues        | pythonic_fp.queues        | 5.1.0   | TBD        |
++---------------------------+---------------------------+---------+------------+
+| pythonic-fp-sentinels *   | pythonic_fp.sentinels     | 2.1.3   | 2025-08-02 |
++---------------------------+---------------------------+---------+------------+
+| pythonic-fp-singletons *  | pythonic_fp.singletons    | 1.0.0   | 2025-09-25 |
++---------------------------+---------------------------+---------+------------+
+| pythonic-fp-splitends     | pythonic_fp.splitends     | 1.0.2   | 2025-09-25 |
++---------------------------+---------------------------+---------+------------+
 
-**\* DEPRECATED:** Use ``Gadgets`` instead.
-
-**\*\* DEPRECATED:** Use ``Booleans`` and ``Gadgets`` instead.
-
-Module dependencies
--------------------
-
-Current module dependencies where arrows point to dependencies. There
-are no external dependency except for the Python standard library.
-
-.. graphviz::
-
-    digraph Modules {
-        bgcolor="#957fb8";
-        node [style=filled, fillcolor="#181616", fontcolor="#dcd7ba"];
-        edge [color="#181616", fontcolor="#dcd7ba"];
-        containers -> fptools;
-        containers -> iterables;
-        containers -> circulararray;
-        splitends -> fptools;
-        splitends -> iterables;
-        splitends -> queues;
-        queues -> fptools;
-        queues -> circulararray;
-        circulararray -> gadgets;
-        fptools -> circulararray;
-        fptools -> gadgets;
-        fptools -> booleans;
-        booleans -> gadgets;
-        iterables -> gadgets;
-        iterables -> fptools;
-    }
+\* Deprecated
 
 """
