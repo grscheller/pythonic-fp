@@ -1,18 +1,16 @@
 pythonic-fp-circulararray
 =========================
 
-PyPI project
-`pythonic-fp-circulararray
-<https://pypi.org/project/pythonic-fp-circulararray/>`_
-one of the Python
-`pythonic_fp namespace projects
-<https://github.com/grscheller/pythonic-fp/blob/main/README.md>`_.
+**An efficient full featured double ended list.**
 
 |RELEASE_STRING| |VERSION_RELEASED| release.
 
-.. automodule:: pythonic_fp.circulararray
-   :synopsis:
-   :no-index:
+Project
+`pythonic-fp-circulararray <https://pypi.org/project/pythonic-fp-circulararray/>`_
+one of the PyPI
+`Pythonic_FP
+<https://grscheller.github.io/pythonic-fp/homepage/build/html/index.html>`_
+projects.
 
 .. toctree::
    :caption: Overview
@@ -31,6 +29,6 @@ one of the Python
 
 .. toctree::
    :caption: Documentation
-   :maxdepth: 2
+   :maxdepth: 3
 
    circulararray/index

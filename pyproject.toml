@@ -1,6 +1,6 @@
 [project]
 name = "pythonic-fp"
-version = "3.0.0"
+version = "3.0.1"
 readme = "README.md"
 requires-python = ">=3.13"
 license = { file = "LICENSE" }
@@ -35,7 +35,7 @@ exclude = [
 ]
 
 [tool.flit.module]
-name = "pythonic_fp.overview"
+name = "pythonic_fp.homepage"
 
 [tool.mypy]
 enable_incomplete_feature = ["NewGenericSyntax"]

@@ -1,4 +1,4 @@
-# Pythonic FP PyPI Projects
+# Pythonic FP
 
 Collection of Functional Programming (FP) oriented Python libraries
 which still endeavor to be Pythonic.
@@ -14,9 +14,7 @@ which still endeavor to be Pythonic.
 | Gadgets | [pythonic-fp-gadgets][104] | [gh][204] | [gh_pages][304] | pythonic_fp.gadgets |
 | Iterables | [pythonic-fp-iterables][105] | [gh][205] | [gh_pages][305] | pythonic_fp.iterables |
 | Queues | [pythonic-fp-queues][106] | [gh][206] | [gh_pages][306] | pythonic_fp.queues |
-| Sentinels | [pythonic-fp-sentinels][107] | [gh][207] | [gh_pages][307] | pythonic_fp.sentinels **DEPRECATED** |
-| Singletons | [pythonic-fp-singletons][108] | [gh][208] | [gh_pages][308] | pythonic_fp.singletons **DEPRECATED** |
-| Splitends | [pythonic-fp-splitends][109] | [gh][209] | [gh_pages][309] | pythonic_fp.splitends |
+| Splitends | [pythonic-fp-splitends][107] | [gh][207] | [gh_pages][307] | pythonic_fp.splitends |
 
 The overall project's name is *Pythonic FP* and consists of PyPI
 projects under the `pythonic_fp` Python package namespace. All these
@@ -38,9 +36,7 @@ License, Version 2.0. See the LICENSE file for details.
 [104]: https://pypi.org/project/pythonic-fp-gadgets
 [105]: https://pypi.org/project/pythonic-fp-iterables
 [106]: https://pypi.org/project/pythonic-fp-queues
-[107]: https://pypi.org/project/pythonic-fp-sentinels
-[108]: https://pypi.org/project/pythonic-fp-singletons
-[109]: https://pypi.org/project/pythonic-fp-splitends
+[107]: https://pypi.org/project/pythonic-fp-splitends
 [200]: https://github.com/grscheller/pythonic-fp-booleans/blob/main/README.rst
 [201]: https://github.com/grscheller/pythonic-fp-circulararray/blob/main/README.rst
 [202]: https://github.com/grscheller/pythonic-fp-containers/blob/main/README.rst
@@ -48,9 +44,7 @@ License, Version 2.0. See the LICENSE file for details.
 [204]: https://github.com/grscheller/pythonic-fp-gadgets/blob/main/README.rst
 [205]: https://github.com/grscheller/pythonic-fp-iterables/blob/main/README.rst
 [206]: https://github.com/grscheller/pythonic-fp-queues/blob/main/README.rst
-[207]: https://github.com/grscheller/pythonic-fp-sentinels/blob/main/README.rst
-[208]: https://github.com/grscheller/pythonic-fp-singletons/blob/main/README.rst
-[209]: https://github.com/grscheller/pythonic-fp-splitends/blob/main/README.rst
+[207]: https://github.com/grscheller/pythonic-fp-splitends/blob/main/README.rst
 [300]: https://grscheller.github.io/pythonic-fp/booleans/development/build/html
 [301]: https://grscheller.github.io/pythonic-fp/circulararray/development/build/html
 [302]: https://grscheller.github.io/pythonic-fp/containers/development/build/html
@@ -58,6 +52,4 @@ License, Version 2.0. See the LICENSE file for details.
 [304]: https://grscheller.github.io/pythonic-fp/gadgets/development/build/html
 [305]: https://grscheller.github.io/pythonic-fp/iterables/development/build/html
 [306]: https://grscheller.github.io/pythonic-fp/queues/development/build/html
-[307]: https://grscheller.github.io/pythonic-fp/sentinels/development/build/html
-[308]: https://grscheller.github.io/pythonic-fp/singletons/development/build/html
-[309]: https://grscheller.github.io/pythonic-fp/splitends/development/build/html
+[307]: https://grscheller.github.io/pythonic-fp/splitends/development/build/html

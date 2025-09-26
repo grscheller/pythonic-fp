@@ -11,6 +11,19 @@ namespace packages under the ``pythonic_fp`` name.
 Important Milestones
 --------------------
 
+PyPI release v3.0.1 - 2025-09-26
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- major release will remain 3 for this homepage paradigm
+- minor release will increase for coordinated release points
+- oatch release will increase when src/ gets updated
+
+PyPI release v3.0.0 - 2025-09-26
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Project's homepage taking shape. Provides overarching documentation
+for the entire Pythonic FP project.
+
 Update - 2025-09-22
 ~~~~~~~~~~~~~~~~~~~
 
@@ -46,8 +59,8 @@ Consistent set of Pythonic FP projects:
 - pythonic-fp-sentinels         2.1.0
 - pythonic-fp-splitends         1.0.2
 
-Pythonic-fp PyPI release v2.0.1
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+PyPI release v2.0.1 - pythonic-fp
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Removed Documentation link in pyproject.toml
 

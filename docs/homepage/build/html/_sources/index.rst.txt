@@ -1,14 +1,13 @@
-Pythonic Functional Programming
-===============================
+Pythonic FP
+===========
+
+**Python functional programming libraries which endeavor to be pythonic.**
 
 PyPI project
-`pythonic-fp
-<https://pypi.org/project/pythonic-fp/>`_
-overview for the
-`pythonic-fp namespace projects
-<https://github.com/grscheller/pythonic-fp/blob/main/README.md>`_.
+`pythonic-fp <https://pypi.org/project/pythonic-fp/>`_.
 
-|RELEASE_STRING|
+GitHub and PyPI repos
+`locations <https://github.com/grscheller/pythonic-fp/blob/main/README.md>`_.
 
 .. automodule:: pythonic_fp.homepage.intro
     :synopsis:

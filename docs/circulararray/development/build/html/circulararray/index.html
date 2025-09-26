@@ -15,7 +15,7 @@
     <script src="../_static/js/petite-vue.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="circulararray.auto" href="auto.html" />
+    <link rel="next" title="module auto" href="auto.html" />
     <link rel="prev" title="changelog" href="../changelog.html" /> 
   </head><body data-dark_mode_code_blocks="true">
 
@@ -131,8 +131,8 @@
 <p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">pythonic_fp.circulararray</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="auto.html">circulararray.auto</a></li>
-<li class="toctree-l2"><a class="reference internal" href="fixed.html">circularary.fixed</a></li>
+<li class="toctree-l2"><a class="reference internal" href="auto.html">module auto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fixed.html">module.fixed</a></li>
 </ul>
 </li>
 </ul>
@@ -148,11 +148,44 @@
             
   <section id="pythonic-fp-circulararray">
 <h1>pythonic_fp.circulararray<a class="headerlink" href="#pythonic-fp-circulararray" title="Link to this heading">¶</a></h1>
-<p><strong>An efficient full featured double ended list.</strong></p>
+<section id="circular-array">
+<h2>Circular Array<a class="headerlink" href="#circular-array" title="Link to this heading">¶</a></h2>
+<p>Package implementing stateful circular array data structures.</p>
+<ul class="simple">
+<li><p>O(1) pops and pushes either end</p></li>
+<li><p>O(1) indexing and size determination</p></li>
+<li><p>O(1) size determination</p></li>
+</ul>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Module</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>pythonic_fp.circulararray.auto</strong></p></td>
+<td><p>Variable storage capacity circular array.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>pythonic_fp.circulararray.fixed</strong></p></td>
+<td><p>Fixed storage capacity circular array.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="auto.html">circulararray.auto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="fixed.html">circularary.fixed</a></li>
+<li class="toctree-l1"><a class="reference internal" href="auto.html">module auto</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="auto.html#variable-storage-capacity">Variable Storage Capacity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="auto.html#pythonic_fp.circulararray.auto.CA"><code class="docutils literal notranslate"><span class="pre">CA</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="auto.html#pythonic_fp.circulararray.auto.ca"><code class="docutils literal notranslate"><span class="pre">ca()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="fixed.html">module.fixed</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="fixed.html#fixed-storage-capacity">Fixed Storage Capacity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fixed.html#pythonic_fp.circulararray.fixed.CAF"><code class="docutils literal notranslate"><span class="pre">CAF</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="fixed.html#pythonic_fp.circulararray.fixed.caf"><code class="docutils literal notranslate"><span class="pre">caf()</span></code></a></li>
+</ul>
+</li>
 </ul>
 </div>
 </section>
@@ -162,6 +195,23 @@
           </div>
         </div>
       </div>
+    
+        <div id="show_right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&lt;</span><span>Page contents</span></a></p>
+        </div>
+
+        <div id="right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&gt;</span><span>Page contents:</span></a></p>
+            <div class="page_toc">
+                <ul>
+<li><a class="reference internal" href="#">pythonic_fp.circulararray</a><ul>
+<li><a class="reference internal" href="#circular-array">Circular Array</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </div>
     
 
       <div class="clearer"></div>
@@ -177,7 +227,7 @@
 
             <div class="right">
                 
-                    <a href="auto.html"><span>circulararray.auto</span><span class="icon">&gt;</span></a>
+                    <a href="auto.html"><span>module auto</span><span class="icon">&gt;</span></a>
                 
             </div>
         </div>
