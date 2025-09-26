@@ -1,5 +1,5 @@
-module iterate_arguments
-========================
+iterate_arguments
+=================
 
 .. automodule:: pythonic_fp.gadgets.iterate_arguments
    :members:

@@ -1,5 +1,5 @@
-module box
-==========
+box
+===
 
 .. automodule:: pythonic_fp.gadgets.box
    :members:

@@ -14,9 +14,17 @@ Important Milestones
 PyPI release v3.0.1 - 2025-09-26
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- major release will remain 3 for this homepage paradigm
-- minor release will increase for coordinated release points
-- oatch release will increase when src/ gets updated
+- modified 3 digit release string
+
+  - major release will remain 3 for this homepage module paradigm
+  - minor release will increase for coordinated release points
+  - oatch release will increase when src/ gets updated
+
+- released with or after this version and before next
+
+  - circulararray 6.0.0
+  - queues 5.1.0
+  - gadgets 3.1.0
 
 PyPI release v3.0.0 - 2025-09-26
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

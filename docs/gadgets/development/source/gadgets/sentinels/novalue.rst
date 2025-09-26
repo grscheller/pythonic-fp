@@ -1,5 +1,5 @@
-module novalue
-==============
+novalue
+=======
 
 .. automodule:: pythonic_fp.gadgets.sentinels.novalue
    :members:

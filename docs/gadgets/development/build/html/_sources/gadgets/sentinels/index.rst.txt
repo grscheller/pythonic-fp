@@ -1,8 +1,13 @@
-pythonic_fp.gadgets
-===================
+sentinels
+=========
 
 .. toctree::
-    :maxdepth: 1
+    :caption: Modules
+    :maxdepth: 2
 
     novalue
     flavored
+
+.. automodule:: pythonic_fp.gadgets.sentinels
+   :synopsis:
+   :noindex:
