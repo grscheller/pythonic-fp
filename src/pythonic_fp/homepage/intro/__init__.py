@@ -48,7 +48,7 @@ Top level PyPI releases
 +===========================+===========================+=========+============+
 | pythonic-fp-booleans      | pythonic_fp.booleans      | 1.1.2   | 2025-09-09 |
 +---------------------------+---------------------------+---------+------------+
-| pythonic-fp-circulararray | pythonic_fp.circulararray | 5.3.3   | 2025-09-25 |
+| pythonic-fp-circulararray | pythonic_fp.circulararray | 5.4.0   | 2025-09-25 |
 +---------------------------+---------------------------+---------+------------+
 | pythonic-fp-containers    | pythonic_fp.containers    | 3.0.1   | 2025-09-09 |
 +---------------------------+---------------------------+---------+------------+

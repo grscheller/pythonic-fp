@@ -71,7 +71,7 @@ Release - 2025-09-TBD
 +================+===========================+=========+
 | Booleans       | pythonic-fp-booleans      | 2.0.0   |
 +----------------+---------------------------+---------+
-| Circular Array | pythonic-fp-circulararray | 5.4.0   |
+| Circular Array | pythonic-fp-circulararray | 6.0.0   |
 +----------------+---------------------------+---------+
 | Containers     | pythonic-fp-containers    | 4.0.0   |
 +----------------+---------------------------+---------+
