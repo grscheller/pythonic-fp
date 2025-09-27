@@ -152,17 +152,31 @@
 <h1>booleans<a class="headerlink" href="#booleans" title="Link to this heading">¶</a></h1>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="subtypable.html">module subtypable</a></li>
-<li class="toctree-l1"><a class="reference internal" href="flavored.html">module flavored</a></li>
-<li class="toctree-l1"><a class="reference internal" href="truthy_falsy.html">module truthy_falsy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="subtypable.html">module subtypable</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="subtypable.html#pythonic_fp.booleans.subtypable.SBool"><code class="docutils literal notranslate"><span class="pre">SBool</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="subtypable.html#pythonic_fp.booleans.subtypable.TRUTH"><code class="docutils literal notranslate"><span class="pre">TRUTH</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="subtypable.html#pythonic_fp.booleans.subtypable.LIE"><code class="docutils literal notranslate"><span class="pre">LIE</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="flavored.html">module flavored</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="flavored.html#pythonic_fp.booleans.flavored.FBool"><code class="docutils literal notranslate"><span class="pre">FBool</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="flavored.html#pythonic_fp.booleans.flavored.truthy"><code class="docutils literal notranslate"><span class="pre">truthy()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="flavored.html#pythonic_fp.booleans.flavored.falsy"><code class="docutils literal notranslate"><span class="pre">falsy()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="truthy_falsy.html">module truthy_falsy</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="truthy_falsy.html#pythonic_fp.booleans.truthy_falsy.TF_Bool"><code class="docutils literal notranslate"><span class="pre">TF_Bool</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="truthy_falsy.html#pythonic_fp.booleans.truthy_falsy.T_Bool"><code class="docutils literal notranslate"><span class="pre">T_Bool</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="truthy_falsy.html#pythonic_fp.booleans.truthy_falsy.F_Bool"><code class="docutils literal notranslate"><span class="pre">F_Bool</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="truthy_falsy.html#pythonic_fp.booleans.truthy_falsy.ALWAYS"><code class="docutils literal notranslate"><span class="pre">ALWAYS</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="truthy_falsy.html#pythonic_fp.booleans.truthy_falsy.NEVER"><code class="docutils literal notranslate"><span class="pre">NEVER</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="truthy_falsy.html#pythonic_fp.booleans.truthy_falsy.TF_Boolean"><code class="docutils literal notranslate"><span class="pre">TF_Boolean</span></code></a></li>
+</ul>
+</li>
 </ul>
 </div>
-<section id="subtypable-boolean">
-<h2>Subtypable Boolean<a class="headerlink" href="#subtypable-boolean" title="Link to this heading">¶</a></h2>
-<p>While still compatible with Python shortcut logic, these classes can
-also be non-shortcut logically composed with Python’s bitwise operators.</p>
-<section id="covariant-class-hierarchy">
-<h3>Covariant class hierarchy<a class="headerlink" href="#covariant-class-hierarchy" title="Link to this heading">¶</a></h3>
+<section id="subtypable-boolean-class-hierarchy">
+<h2>Subtypable Boolean Class Hierarchy<a class="headerlink" href="#subtypable-boolean-class-hierarchy" title="Link to this heading">¶</a></h2>
 <div class="graphviz"><img src="../_images/graphviz-8986d11785061aebd2395ca6fac5bceb7d2589a2.png" alt="digraph Booleans {
     bgcolor=&quot;#957fb8&quot;;
     node [style=filled, fillcolor=&quot;#181616&quot;, fontcolor=&quot;#dcd7ba&quot;];
@@ -176,7 +190,9 @@ also be non-shortcut logically composed with Python’s bitwise operators.</p>
     TF_Bool -&gt; T_Bool;
     TF_Bool -&gt; F_Bool;
 }" class="graphviz" /></div>
-</section>
+<p>While still compatible with Python shortcut logic, <code class="docutils literal notranslate"><span class="pre">SBool</span></code> and its
+subclasses can be non-shortcut logically composed with Python’s bitwise
+operators.</p>
 </section>
 </section>
 
@@ -195,10 +211,7 @@ also be non-shortcut logically composed with Python’s bitwise operators.</p>
             <div class="page_toc">
                 <ul>
 <li><a class="reference internal" href="#">booleans</a><ul>
-<li><a class="reference internal" href="#subtypable-boolean">Subtypable Boolean</a><ul>
-<li><a class="reference internal" href="#covariant-class-hierarchy">Covariant class hierarchy</a></li>
-</ul>
-</li>
+<li><a class="reference internal" href="#subtypable-boolean-class-hierarchy">Subtypable Boolean Class Hierarchy</a></li>
 </ul>
 </li>
 </ul>

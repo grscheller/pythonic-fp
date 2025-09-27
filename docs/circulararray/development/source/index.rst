@@ -1,7 +1,7 @@
 pythonic-fp-circulararray
 =========================
 
-**An efficient full featured double ended list.**
+**Efficient full featured double ended lists.**
 
 |RELEASE_STRING| |VERSION_RELEASED| release.
 

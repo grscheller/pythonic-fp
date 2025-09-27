@@ -1,7 +1,7 @@
 pythonic-fp-booleans
 ====================
 
-**Subtypable Boolean with examples.**
+**Subtypable Boolean with sub-typed examples.**
 
 |RELEASE_STRING| |VERSION_RELEASED| release.
 

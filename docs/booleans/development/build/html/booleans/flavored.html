@@ -150,26 +150,21 @@
             
   <section id="module-pythonic_fp.booleans.flavored">
 <span id="module-flavored"></span><h1>module flavored<a class="headerlink" href="#module-pythonic_fp.booleans.flavored" title="Link to this heading">¶</a></h1>
-<section id="flavored">
-<h2>flavored<a class="headerlink" href="#flavored" title="Link to this heading">¶</a></h2>
-<p>When different flavors of the truth are needed. Each “flavor” of an
-<code class="docutils literal notranslate"><span class="pre">FBool</span></code> is “indexed” by a hashable value, not “subtyped” by it.</p>
-<p>This type can also do (non-shortcut) Boolean logic using Python
-bitwise operators.</p>
+<p><strong>Class F_Bool.</strong></p>
+<p>When different flavors of the truth matter. Each <code class="docutils literal notranslate"><span class="pre">FBool</span></code> is
+an <code class="docutils literal notranslate"><span class="pre">SBool</span></code> subtype corresponds to a hashable value
+called its flavor.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Combining <code class="docutils literal notranslate"><span class="pre">FBool</span></code> instances of different flavors
 with bitwise operators will just result in an <code class="docutils literal notranslate"><span class="pre">SBool</span></code>.</p>
 </div>
-<section id="function-truthy-flavor-hashable">
-<h3>Function truthy(flavor: Hashable)<a class="headerlink" href="#function-truthy-flavor-hashable" title="Link to this heading">¶</a></h3>
-<p>Get the truthy <code class="docutils literal notranslate"><span class="pre">FBool</span></code> of a particular <code class="docutils literal notranslate"><span class="pre">flavor</span></code>.</p>
-</section>
-<section id="function-falsy-flavor-hashable">
-<h3>Function falsy(flavor: Hashable)<a class="headerlink" href="#function-falsy-flavor-hashable" title="Link to this heading">¶</a></h3>
-<p>Get the falsy <code class="docutils literal notranslate"><span class="pre">FBool</span></code> of a particular <code class="docutils literal notranslate"><span class="pre">flavor</span></code>.</p>
-</section>
-</section>
+<hr class="docutils" />
+<p><strong>Function truthy(flavor: Hashable)</strong></p>
+<p>Returns the truthy <code class="docutils literal notranslate"><span class="pre">FBool</span></code> of a particular <code class="docutils literal notranslate"><span class="pre">flavor</span></code>.</p>
+<hr class="docutils" />
+<p><strong>Function falsy(flavor: Hashable)</strong></p>
+<p>Returns the falsy <code class="docutils literal notranslate"><span class="pre">FBool</span></code> of a particular <code class="docutils literal notranslate"><span class="pre">flavor</span></code>.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="pythonic_fp.booleans.flavored.FBool">
 <em class="property"><span class="k"><span class="pre">final</span></span><span class="w"> </span><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.booleans.flavored.</span></span><span class="sig-name descname"><span class="pre">FBool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">witness</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flavor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Hashable</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.booleans.flavored.FBool" title="Link to this definition">¶</a></dt>
@@ -239,11 +234,6 @@ with bitwise operators will just result in an <code class="docutils literal notr
             <div class="page_toc">
                 <ul>
 <li><a class="reference internal" href="#">module flavored</a><ul>
-<li><a class="reference internal" href="#flavored">flavored</a><ul>
-<li><a class="reference internal" href="#function-truthy-flavor-hashable">Function truthy(flavor: Hashable)</a></li>
-<li><a class="reference internal" href="#function-falsy-flavor-hashable">Function falsy(flavor: Hashable)</a></li>
-</ul>
-</li>
 <li><a class="reference internal" href="#pythonic_fp.booleans.flavored.FBool"><code class="docutils literal notranslate"><span class="pre">FBool</span></code></a><ul>
 <li><a class="reference internal" href="#pythonic_fp.booleans.flavored.FBool.flavor"><code class="docutils literal notranslate"><span class="pre">FBool.flavor()</span></code></a></li>
 </ul>
