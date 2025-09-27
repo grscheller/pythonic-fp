@@ -1,5 +1,5 @@
-fptools
-=======
+pythonic_fp.fptools
+===================
 
 .. toctree::
    :caption: Function Tools

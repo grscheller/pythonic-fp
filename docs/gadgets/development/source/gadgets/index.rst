@@ -1,5 +1,5 @@
-gadgets
-=======
+pythonic_fp.gadgets
+===================
 
 .. toctree::
     :caption: Functions

@@ -1,5 +1,5 @@
-iterables
-=========
+pythonic_fp.iterables
+=====================
 
 .. toctree::
    :caption: iterables

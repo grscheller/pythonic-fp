@@ -1,5 +1,5 @@
-containers
-==========
+pythonic_fp.containers
+======================
 
 .. toctree::
    :maxdepth: 2

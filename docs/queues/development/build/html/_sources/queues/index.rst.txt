@@ -1,5 +1,5 @@
-queues
-======
+pythonic_fp.queues
+==================
 
 .. toctree::
     :maxdepth: 2

@@ -1,5 +1,5 @@
-splitends
-=========
+pythonic_fp.splitends
+=====================
 
 .. toctree::
     :maxdepth: 2

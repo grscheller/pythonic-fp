@@ -1,5 +1,5 @@
-circulararray
-=============
+pythonic_fp.circulararray
+=========================
 
 .. toctree::
    :maxdepth: 2
