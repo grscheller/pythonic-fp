@@ -11,6 +11,12 @@ namespace packages under the ``pythonic_fp`` name.
 Important Milestones
 --------------------
 
+PyPI release v3.1.0 - 2025-09-26
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Oops, meant this one to be the 3.0.1 release. Got confused with the 3.1.0
+release of pythonic-fp-gadgets.
+
 PyPI release v3.0.1 - 2025-09-26
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
