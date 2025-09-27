@@ -1,5 +1,5 @@
-pythonic_fp.booleans
-====================
+booleans
+========
 
 .. toctree::
     :maxdepth: 1
@@ -7,3 +7,7 @@ pythonic_fp.booleans
     subtypable
     flavored
     truthy_falsy
+
+.. automodule:: pythonic_fp.booleans
+    :synopsis:
+    :noindex:

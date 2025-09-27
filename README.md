@@ -21,7 +21,7 @@ projects under the `pythonic_fp` Python package namespace. All these
 projects have PyPI and GitHub names beginning `pythonic-fp`.
 
 For more information visit the
-[project's homepage](https://grscheller.github.io/pythonic-fp/homepage/build/html/index.html).
+[project's homepage](https://grscheller.github.io/pythonic-fp/homepage/build/html/).
 
 ## Copyright and License
 

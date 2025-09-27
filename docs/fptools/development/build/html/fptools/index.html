@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>pythonic_fp.fptools &#8212; Pythonic FP - Functional Programming Tools 5.1.2 documentation</title>
+    <title>fptools &#8212; Pythonic FP - Functional Programming Tools 5.1.2 documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/basic_mod.css?v=9b2032db" />
     <script src="../_static/documentation_options.js?v=2c218288"></script>
@@ -130,7 +130,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">pythonic_fp.fptools</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">fptools</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="function.html">fptools.function</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lazy.html">fptools.lazy</a></li>
 <li class="toctree-l2"><a class="reference internal" href="maybe.html">fptools.maybe</a></li>
@@ -149,8 +149,50 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <section id="pythonic-fp-fptools">
-<h1>pythonic_fp.fptools<a class="headerlink" href="#pythonic-fp-fptools" title="Link to this heading">¶</a></h1>
+  <section id="fptools">
+<h1>fptools<a class="headerlink" href="#fptools" title="Link to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Function Tools</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function.html">fptools.function</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function.html#fp-tools-for-functions">FP tools for functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="function.html#pythonic_fp.fptools.function.negate"><code class="docutils literal notranslate"><span class="pre">negate()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="function.html#pythonic_fp.fptools.function.partial"><code class="docutils literal notranslate"><span class="pre">partial()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="function.html#pythonic_fp.fptools.function.sequenced"><code class="docutils literal notranslate"><span class="pre">sequenced()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="function.html#pythonic_fp.fptools.function.swap"><code class="docutils literal notranslate"><span class="pre">swap()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Lazy Evaluation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="lazy.html">fptools.lazy</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lazy.html#lazy-function-evaluation">Lazy function evaluation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lazy.html#pythonic_fp.fptools.lazy.Lazy"><code class="docutils literal notranslate"><span class="pre">Lazy</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="lazy.html#pythonic_fp.fptools.lazy.lazy"><code class="docutils literal notranslate"><span class="pre">lazy()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="lazy.html#pythonic_fp.fptools.lazy.real_lazy"><code class="docutils literal notranslate"><span class="pre">real_lazy()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Monads</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="maybe.html">fptools.maybe</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="maybe.html#pythonic_fp.fptools.maybe.MayBe"><code class="docutils literal notranslate"><span class="pre">MayBe</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="either.html">fptools.either</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="either.html#pythonic_fp.fptools.either.Either"><code class="docutils literal notranslate"><span class="pre">Either</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="state.html">fptools.state</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="state.html#pythonic_fp.fptools.state.State"><code class="docutils literal notranslate"><span class="pre">State</span></code></a></li>
+</ul>
+</li>
+</ul>
+</div>
 <section id="pythonic-fp-functional-programming-tools">
 <h2>Pythonic FP - Functional Programming Tools<a class="headerlink" href="#pythonic-fp-functional-programming-tools" title="Link to this heading">¶</a></h2>
 <p>Functions as first class objects, Lazy (non-strict) function evaluation,
@@ -180,36 +222,6 @@ and classical Functional Programming data structures.</p>
 </tbody>
 </table>
 </section>
-<div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">function</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="function.html">fptools.function</a></li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">lazy</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="lazy.html">fptools.lazy</a></li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">maybe monad</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="maybe.html">fptools.maybe</a></li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">either monad</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="either.html">fptools.either</a></li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">state monad</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="state.html">fptools.state</a></li>
-</ul>
-</div>
 </section>
 
 
@@ -226,7 +238,7 @@ and classical Functional Programming data structures.</p>
             <p><a class="toggle_right_sidebar" href="#"><span class="icon">&gt;</span><span>Page contents:</span></a></p>
             <div class="page_toc">
                 <ul>
-<li><a class="reference internal" href="#">pythonic_fp.fptools</a><ul>
+<li><a class="reference internal" href="#">fptools</a><ul>
 <li><a class="reference internal" href="#pythonic-fp-functional-programming-tools">Pythonic FP - Functional Programming Tools</a></li>
 </ul>
 </li>

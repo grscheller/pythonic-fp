@@ -1,9 +1,5 @@
-pythonic_fp.queues
-==================
-
-.. automodule:: pythonic_fp.queues
-   :synopsis:
-   :noindex:
+queues
+======
 
 .. toctree::
     :maxdepth: 2
@@ -11,3 +7,7 @@ pythonic_fp.queues
     fifo
     lifo
     de 
+
+.. automodule:: pythonic_fp.queues
+   :synopsis:
+   :noindex:

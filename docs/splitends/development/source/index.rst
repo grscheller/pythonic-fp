@@ -1,16 +1,15 @@
 pythonic-fp-splitends
 =====================
 
-PyPI project
-`pythonic-fp-splitends
-<https://pypi.org/project/pythonic-fp-splitends/>`_
-one of the Python
-`pythonic_fp namespace projects
-<https://github.com/grscheller/pythonic-fp/blob/main/README.md>`_.
+**Mutable LIFO stacks which can safely share immutable data between themselves.**
 
 |RELEASE_STRING| |VERSION_RELEASED| release.
 
-**LIFO stacks which can safely share immutable data between themselves.**
+Project
+`pythonic-fp-splitends <https://pypi.org/project/pythonic-fp-splitends/>`_
+one of the PyPI
+`Pythonic FP <https://grscheller.github.io/pythonic-fp/homepage/build/html/index.html>`_
+projects.
 
 .. toctree::
    :caption: Overview
@@ -29,6 +28,6 @@ one of the Python
 
 .. toctree::
    :caption: Documentation
-   :maxdepth: 2
+   :maxdepth: 3
 
    splitends/index

@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>pythonic_fp.splitends &#8212; Pythonic FP - SplitEnds 2.0.0 documentation</title>
+    <title>splitends &#8212; Pythonic FP - SplitEnds 2.0.0 documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="../_static/basic_mod.css?v=9b2032db" />
     <script src="../_static/documentation_options.js?v=51b770b3"></script>
@@ -130,7 +130,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">pythonic_fp.splitends</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">splitends</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="splitend.html">module splitend</a></li>
 <li class="toctree-l2"><a class="reference internal" href="splitend_node.html">module splitend_node</a></li>
 </ul>
@@ -146,8 +146,22 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <section id="pythonic-fp-splitends">
-<h1>pythonic_fp.splitends<a class="headerlink" href="#pythonic-fp-splitends" title="Link to this heading">¶</a></h1>
+  <section id="splitends">
+<h1>splitends<a class="headerlink" href="#splitends" title="Link to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="splitend.html">module splitend</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="splitend.html#class-splitends">Class SplitEnds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="splitend.html#pythonic_fp.splitends.splitend.SplitEnd"><code class="docutils literal notranslate"><span class="pre">SplitEnd</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="splitend_node.html">module splitend_node</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="splitend_node.html#class-senode">Class SENode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="splitend_node.html#pythonic_fp.splitends.splitend_node.SENode"><code class="docutils literal notranslate"><span class="pre">SENode</span></code></a></li>
+</ul>
+</li>
+</ul>
+</div>
 <p>Mutable stack objects that can safely share data.</p>
 <p>Python package implementing a singularly linked stack of nodes called a <code class="docutils literal notranslate"><span class="pre">SplitEnd</span></code>.
 While mutable, these data structures can safely share immutable data nodes between
@@ -162,12 +176,6 @@ new root must contain data that compares as equal to the old root node.</p>
 hashable. The <code class="docutils literal notranslate"><span class="pre">scalp.add(d)</span></code> method will return the unique root node with data
 that compares as equal to <code class="docutils literal notranslate"><span class="pre">d</span></code>, or create a new root node if such a contained node
 does not exist.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="splitend.html">module splitend</a></li>
-<li class="toctree-l1"><a class="reference internal" href="splitend_node.html">module splitend_node</a></li>
-</ul>
-</div>
 </section>
 
 

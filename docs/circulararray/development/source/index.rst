@@ -8,8 +8,7 @@ pythonic-fp-circulararray
 Project
 `pythonic-fp-circulararray <https://pypi.org/project/pythonic-fp-circulararray/>`_
 one of the PyPI
-`Pythonic_FP
-<https://grscheller.github.io/pythonic-fp/homepage/build/html/index.html>`_
+`Pythonic FP <https://grscheller.github.io/pythonic-fp/homepage/build/html/index.html>`_
 projects.
 
 .. toctree::

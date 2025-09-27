@@ -2,7 +2,7 @@ sentinels
 =========
 
 .. toctree::
-    :caption: Modules
+    :caption: Sentinel Values
     :maxdepth: 2
 
     novalue

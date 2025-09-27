@@ -1,36 +1,26 @@
-pythonic_fp.fptools
-===================
-
-.. automodule:: pythonic_fp.fptools
-   :synopsis:
-   :noindex:
+fptools
+=======
 
 .. toctree::
-   :caption: function
-   :maxdepth: 1
+   :caption: Function Tools
+   :maxdepth: 2
 
    function
 
 .. toctree::
-   :caption: lazy
-   :maxdepth: 1
+   :caption: Lazy Evaluation
+   :maxdepth: 2
 
    lazy
 
 .. toctree::
-   :caption: maybe monad
-   :maxdepth: 1
+   :caption: Monads
+   :maxdepth: 2
 
    maybe
-
-.. toctree::
-   :caption: either monad
-   :maxdepth: 1
-
    either
-
-.. toctree::
-   :caption: state monad
-   :maxdepth: 1
-
    state
+
+.. automodule:: pythonic_fp.fptools
+   :synopsis:
+   :noindex:

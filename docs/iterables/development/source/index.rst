@@ -1,20 +1,15 @@
 pythonic-fp-iterables
 =====================
 
-PyPI project
-`pythonic-fp-iterabless
-<https://pypi.org/project/pythonic-fp-iterables/>`_
-part of the
-`pythonic-fp namespace projects
-<https://github.com/grscheller/pythonic-fp/blob/main/README.md>`_.
+**Tools for iterators and iterables.**
 
 |RELEASE_STRING| |VERSION_RELEASED| release.
 
-**Tools for iterators and iterables.**
-
-.. automodule:: pythonic_fp.iterables
-    :synopsis:
-    :noindex:
+Project
+`pythonic-fp-iterabless <https://pypi.org/project/pythonic-fp-iterables/>`_
+one of the PyPI
+`Pythonic FP <https://grscheller.github.io/pythonic-fp/homepage/build/html/index.html>`_
+projects.
 
 .. toctree::
    :caption: Overview

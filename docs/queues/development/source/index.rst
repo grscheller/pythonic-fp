@@ -8,8 +8,7 @@ pythonic-fp-queues
 Project
 `pythonic-fp-queues <https://pypi.org/project/pythonic-fp-queues/>`_
 one of the PyPI
-`Pythonic FP
-<https://grscheller.github.io/pythonic-fp/homepage/build/html/index.html>`_
+`Pythonic FP <https://grscheller.github.io/pythonic-fp/homepage/build/html/index.html>`_
 projects.
 
 .. toctree::

@@ -1,16 +1,15 @@
 pythonic-fp-containers
 ======================
 
-PyPI project
-`pythonic-fp-containers
-<https://pypi.org/project/pythonic-fp-containers/>`_
-part of the
-`pythonic-fp namespace projects
-<https://github.com/grscheller/pythonic-fp/blob/main/README.md>`_.
+**Package of container like data structures with functional interfaces.**
 
 |RELEASE_STRING| |VERSION_RELEASED| release.
 
-**Package of container like data structures.**
+Project
+`pythonic-fp-containers <https://pypi.org/project/pythonic-fp-containers/>`_
+one of the PyPI
+`Pythonic FP <https://grscheller.github.io/pythonic-fp/homepage/build/html/index.html>`_
+projects.
 
 .. toctree::
    :caption: Overview

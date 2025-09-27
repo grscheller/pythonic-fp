@@ -1,14 +1,14 @@
-pythonic_fp.iterables
-=====================
-
-.. automodule:: pythonic_fp.iterables
-   :synopsis:
-   :noindex:
+iterables
+=========
 
 .. toctree::
    :caption: iterables
-   :maxdepth: 1
+   :maxdepth: 2
 
    merging
    drop_take
    folding
+
+.. automodule:: pythonic_fp.iterables
+   :synopsis:
+   :noindex:

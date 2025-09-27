@@ -1,20 +1,15 @@
 pythonic-fp-fptools
 ===================
 
-PyPI project
-`pythonic-fp-fptools
-<https://pypi.org/project/pythonic-fp-fptools/>`_
-part of the
-`pythonic-fp namespace projects
-<https://github.com/grscheller/pythonic-fp/blob/main/README.md>`_.
+**Tools for Functional Programming.**
 
 |RELEASE_STRING| |VERSION_RELEASED| release.
 
-**Tools for Functional Programming.**
-
-.. automodule:: pythonic_fp.fptools
-    :synopsis:
-    :noindex:
+Project
+`pythonic-fp-fptools <https://pypi.org/project/pythonic-fp-fptools/>`_
+one of the PyPI
+`Pythonic FP <https://grscheller.github.io/pythonic-fp/homepage/build/html/index.html>`_
+projects.
 
 .. toctree::
     :caption: Overview

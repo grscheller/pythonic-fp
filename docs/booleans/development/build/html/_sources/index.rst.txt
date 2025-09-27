@@ -1,18 +1,15 @@
-PyPI: pythonic-fp-booleans
-==========================
+pythonic-fp-booleans
+====================
 
-PyPI project
-`pythonic-fp-booleans
-<https://pypi.org/project/pythonic-fp-booleans/>`_
-part of the
-`pythonic-fp namespace projects
-<https://github.com/grscheller/pythonic-fp/blob/main/README.md>`_.
+**Subtypable Boolean with examples.**
 
 |RELEASE_STRING| |VERSION_RELEASED| release.
 
-.. automodule:: pythonic_fp.booleans
-    :synopsis:
-    :noindex:
+Project
+`pythonic-fp-booleans <https://pypi.org/project/pythonic-fp-booleans/>`_
+one of the PyPI
+`Pythonic FP <https://grscheller.github.io/pythonic-fp/homepage/build/html/index.html>`_
+projects.
 
 .. toctree::
     :caption: Overview
@@ -31,6 +28,6 @@ part of the
 
 .. toctree::
     :caption: Documentation
-    :maxdepth: 2
+    :maxdepth: 3
 
     booleans/index
