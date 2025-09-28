@@ -1,6 +1,6 @@
 [project]
 name = "pythonic-fp"
-version = "3.1.0"
+version = "3.1.1"
 readme = "README.md"
 requires-python = ">=3.13"
 license = { file = "LICENSE" }
@@ -22,7 +22,7 @@ dynamic = ["description"]
 
 [project.urls]
 Changelog = "https://github.com/grscheller/pythonic-fp/blob/main/CHANGELOG.rst"
-Homepage = "https://grscheller.github.io/pythonic-fp/overview/next/build/html/index.html"
+Homepage = "https://grscheller.github.io/pythonic-fp/homepage/build/html/"
 Source = "https://github.com/grscheller/pythonic-fp"
 
 [build-system]

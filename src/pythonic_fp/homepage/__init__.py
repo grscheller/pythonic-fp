@@ -1,38 +1,30 @@
 """
-Pythonic FP Project
-===================
+The pythonic-fp PyPI project is the central component of the
+*Pythonic FP* libraries. It has several purposes.
 
-PyPI project pythonic-fp itself consists of a PyPI project and GitHub repo
-both named pythonic-fp.
+- claims the pythonic-fp name on PyPI for the overall effort
+- hosts the effort's homepage on *GitHub Pages*
+- hosts detailed Sphinx documentation for each *Pythonic FP* project
+- contains the ``pythonic_fp.homepage`` module
 
-It has several purposes.
+  - which is used in the construction of the homepage
+  - keeps important information available and modifiable
 
-- claims the pythonic-fp name on PyPI for the overall Pythonic FP effort
-- hosts on its GitHub Pages
+    - outside of Sphinx boilerplate
 
-  - detailed Sphinx based documentation for each pythonic_fp project
-  - a homepage for the effort
+- provides locations for effort's overall CHANGELOG and README files
 
-- provides a location on GitHub for
+  - the README.md file provides
 
-  - CHANGELOG.rst for the overall Pythonic FP effort
+    - the pythonic-fp PyPI description giving an overview of *Pythonic FP*
+    - provide links to the individual projects on PyPI and their GitHub repos
 
-    - each individual Pythonic FP project has its on CHANGELOG.rst
+  - each *Pythonic FP* project has its on CHANGELOG and README files
 
-  - README.md for the overall Pythonic FP effort
-
-    - produces list of links to all the Pythonic FP PyPI projects
-    - populates the description on PyPI for pythonic-fp
-
-      - overall describing the effort
-      - naming the individual Pythonic FP projects on PyPI
-
-The pythonic_fp.homepage module is used to construct the projects homepage.
-
-There is no need to install it, but does not hurt anything if it is installed.
+There is no need to install pythonic-fp itself, but does not hurt
+anything if it is installed.
 """
 
 __author__ = 'Geoffrey R. Scheller'
 __copyright__ = 'Copyright (c) 2023-2025 Geoffrey R. Scheller'
 __license__ = 'Apache License 2.0'
-

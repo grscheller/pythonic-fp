@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Development &#8212; Pythonic FP 3.1.0 documentation</title>
+    <title>Top Level Releases &#8212; Pythonic FP 3.1.0 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="_static/basic_mod.css?v=9b2032db" />
     <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=4ae1632d" />
@@ -16,8 +16,8 @@
     <script src="_static/js/petite-vue.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Top Level Releases" href="top_level_releases.html" />
-    <link rel="prev" title="Purpose pythonic-fp" href="purpose.html" /> 
+    <link rel="next" title="Consistent Versions" href="consistent_versions.html" />
+    <link rel="prev" title="Development" href="development.html" /> 
   </head><body data-dark_mode_code_blocks="true">
 
 <div id="top_nav">
@@ -126,8 +126,8 @@
 <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="purpose.html">Purpose pythonic-fp</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Development</a></li>
-<li class="toctree-l1"><a class="reference internal" href="top_level_releases.html">Top Level Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development.html">Development</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Top Level Releases</a></li>
 <li class="toctree-l1"><a class="reference internal" href="consistent_versions.html">Consistent Versions</a></li>
 </ul>
 
@@ -140,50 +140,84 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <section id="development">
-<h1>Development<a class="headerlink" href="#development" title="Link to this heading">¶</a></h1>
-<section id="module-dependencies">
-<h2>Module dependencies<a class="headerlink" href="#module-dependencies" title="Link to this heading">¶</a></h2>
-<p>Current module dependencies where arrows point from modules to their
-dependencies. There are no external dependency except for the Python
-standard library.</p>
-<div class="graphviz"><img src="_images/graphviz-e69e3d373005a42b9b2cfa4fd5b02a76c2c72720.png" alt="digraph Modules {
-    bgcolor=&quot;#957fb8&quot;;
-    node [style=filled, fillcolor=&quot;#181616&quot;, fontcolor=&quot;#dcd7ba&quot;];
-    edge [color=&quot;#181616&quot;, fontcolor=&quot;#dcd7ba&quot;];
-    containers -&gt; fptools;
-    containers -&gt; iterables;
-    containers -&gt; circulararray;
-    splitends -&gt; fptools;
-    splitends -&gt; iterables;
-    splitends -&gt; queues;
-    queues -&gt; fptools;
-    queues -&gt; circulararray;
-    circulararray -&gt; gadgets;
-    fptools -&gt; circulararray;
-    fptools -&gt; gadgets;
-    fptools -&gt; booleans;
-    booleans -&gt; gadgets;
-    iterables -&gt; gadgets;
-    iterables -&gt; fptools;
-}" class="graphviz" /></div>
-</section>
-<section id="semantic-versioning">
-<h2>Semantic versioning<a class="headerlink" href="#semantic-versioning" title="Link to this heading">¶</a></h2>
-<p>Maintainer has adopted strict 3 digit
-<a class="reference external" href="https://semver.org">semantic versioning</a>
-and does not use
-<a class="reference external" href="https://iscinumpy.dev/post/bound-version-constraints">caps on dependencies</a>.
-This allows for more package management flexibility for developers and
-access to the latest features.</p>
-<p>Periodically known consistent releases of versions are done for those
-concerned with stability. These are also posted in the project’s CHANGELOG.</p>
-</section>
-<section id="changelog">
-<h2>CHANGELOG<a class="headerlink" href="#changelog" title="Link to this heading">¶</a></h2>
-<p>Pythonic FP overarching
-<a class="reference external" href="https://github.com/grscheller/pythonic-fp/blob/main/CHANGELOG.rst">CHANGELOG</a>.</p>
-<p>Each individual Pythonic FP project also has its own CHANGELOG.</p>
+  <section id="top-level-releases">
+<h1>Top Level Releases<a class="headerlink" href="#top-level-releases" title="Link to this heading">¶</a></h1>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>PyPI Project</p></th>
+<th class="head"><p>Python Module</p></th>
+<th class="head"><p>version</p></th>
+<th class="head"><p>date</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>pythonic-fp-booleans</p></td>
+<td><p>pythonic_fp.booleans</p></td>
+<td><p>2.0.0</p></td>
+<td><p>2025-09-27</p></td>
+</tr>
+<tr class="row-odd"><td><p>pythonic-fp-circulararray</p></td>
+<td><p>pythonic_fp.circulararray</p></td>
+<td><p>6.0.0</p></td>
+<td><p>2025-09-25</p></td>
+</tr>
+<tr class="row-even"><td><p>pythonic-fp-containers</p></td>
+<td><p>pythonic_fp.containers</p></td>
+<td><p>3.0.1</p></td>
+<td><p>2025-09-09</p></td>
+</tr>
+<tr class="row-odd"><td><p>pythonic-fp-fptools</p></td>
+<td><p>pythonic_fp.fptools</p></td>
+<td><p>5.1.1</p></td>
+<td><p>2025-09-09</p></td>
+</tr>
+<tr class="row-even"><td><p>pythonic-fp-gadgets</p></td>
+<td><p>pythonic_fp.gadgets</p></td>
+<td><p>3.1.0</p></td>
+<td><p>2025-09-09</p></td>
+</tr>
+<tr class="row-odd"><td><p>pythonic-fp-iterables</p></td>
+<td><p>pythonic_fp.iterables</p></td>
+<td><p>5.1.1</p></td>
+<td><p>2025-09-09</p></td>
+</tr>
+<tr class="row-even"><td><p>pythonic-fp-queues</p></td>
+<td><p>pythonic_fp.queues</p></td>
+<td><p>5.1.0</p></td>
+<td><p>2025-09-26</p></td>
+</tr>
+<tr class="row-odd"><td><p>pythonic-fp-sentinels <a class="footnote-reference brackets" href="#id3" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></p></td>
+<td><p>pythonic_fp.sentinels</p></td>
+<td><p>2.1.3</p></td>
+<td><p>2025-08-02</p></td>
+</tr>
+<tr class="row-even"><td><p>pythonic-fp-singletons <a class="footnote-reference brackets" href="#id4" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a></p></td>
+<td><p>pythonic_fp.singletons</p></td>
+<td><p>1.0.0</p></td>
+<td><p>2025-09-25</p></td>
+</tr>
+<tr class="row-odd"><td><p>pythonic-fp-splitends</p></td>
+<td><p>pythonic_fp.splitends</p></td>
+<td><p>1.0.2</p></td>
+<td><p>2025-09-25</p></td>
+</tr>
+</tbody>
+</table>
+<section id="footnotes">
+<h2>Footnotes<a class="headerlink" href="#footnotes" title="Link to this heading">¶</a></h2>
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id3" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>Project pythonic-fp-sentinels was <strong>DEPRECATED</strong>. Content was moved
+to pythonic-fp-gadgets where the work continues.</p>
+</aside>
+<aside class="footnote brackets" id="id4" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">2</a><span class="fn-bracket">]</span></span>
+<p>Project pythonic-fp-singletons was <strong>DEPRECATED</strong>. Content was moved
+to <code class="docutils literal notranslate"><span class="pre">pythonic-fp-booleans</span></code> and <code class="docutils literal notranslate"><span class="pre">pythonic-fp-sentinels</span></code>. Naming
+a module after an implementation detail turned out not to scale well.</p>
+</aside>
+</aside>
 </section>
 </section>
 
@@ -201,10 +235,8 @@ concerned with stability. These are also posted in the project’s CHANGELOG.</p
             <p><a class="toggle_right_sidebar" href="#"><span class="icon">&gt;</span><span>Page contents:</span></a></p>
             <div class="page_toc">
                 <ul>
-<li><a class="reference internal" href="#">Development</a><ul>
-<li><a class="reference internal" href="#module-dependencies">Module dependencies</a></li>
-<li><a class="reference internal" href="#semantic-versioning">Semantic versioning</a></li>
-<li><a class="reference internal" href="#changelog">CHANGELOG</a></li>
+<li><a class="reference internal" href="#">Top Level Releases</a><ul>
+<li><a class="reference internal" href="#footnotes">Footnotes</a></li>
 </ul>
 </li>
 </ul>
@@ -219,14 +251,14 @@ concerned with stability. These are also posted in the project’s CHANGELOG.</p
         <div class="button_nav">
             <div class="left">
                 
-                <a href="purpose.html">
-                    <span class="icon">&lt;</span><span>Purpose pythonic-fp</span></a>
+                <a href="development.html">
+                    <span class="icon">&lt;</span><span>Development</span></a>
                 
             </div>
 
             <div class="right">
                 
-                    <a href="top_level_releases.html"><span>Top Level Releases</span><span class="icon">&gt;</span></a>
+                    <a href="consistent_versions.html"><span>Consistent Versions</span><span class="icon">&gt;</span></a>
                 
             </div>
         </div>

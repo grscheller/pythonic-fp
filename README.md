@@ -1,9 +1,16 @@
 # Pythonic FP
 
 Collection of Functional Programming (FP) oriented Python libraries
-which still endeavor to be Pythonic.
+which endeavor to still remain Pythonic.
 
-## PyPI `pythonic-fp` projects.
+The overall project's name is **Pythonic FP** and consists of PyPI
+projects with PyPI and GitHub names beginning `python-fp`. All projects
+are all under the Python `pythonic_fp` namespace.
+
+For more information visit the project's
+[homepage](https://grscheller.github.io/pythonic-fp/homepage/build/html/).
+
+## Current PyPI pythonic-fp projects
 
 | Name | PyPI | GitHub | Docs | Python Package |
 |:---- |:----:|:------:|:----:|:-------------- |
@@ -15,13 +22,6 @@ which still endeavor to be Pythonic.
 | Iterables | [pythonic-fp-iterables][105] | [gh][205] | [gh_pages][305] | pythonic_fp.iterables |
 | Queues | [pythonic-fp-queues][106] | [gh][206] | [gh_pages][306] | pythonic_fp.queues |
 | Splitends | [pythonic-fp-splitends][107] | [gh][207] | [gh_pages][307] | pythonic_fp.splitends |
-
-The overall project's name is *Pythonic FP* and consists of PyPI
-projects under the `pythonic_fp` Python package namespace. All these
-projects have PyPI and GitHub names beginning `pythonic-fp`.
-
-For more information visit the
-[project's homepage](https://grscheller.github.io/pythonic-fp/homepage/build/html/).
 
 ## Copyright and License
 

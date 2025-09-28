@@ -11,6 +11,11 @@ namespace packages under the ``pythonic_fp`` name.
 Important Milestones
 --------------------
 
+PyPI release v3.1.1 - 2025-09-28
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Got home page to a finished state.
+
 PyPI release v3.1.0 - 2025-09-26
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
