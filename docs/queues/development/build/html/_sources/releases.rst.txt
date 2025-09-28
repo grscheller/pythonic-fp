@@ -8,5 +8,5 @@ PyPI releases
 +==========================================================================================+==============+
 | `development <https://grscheller.github.io/pythonic-fp/queues/development/build/html/>`_ | TBD          |
 +------------------------------------------------------------------------------------------+--------------+
-| `v5.1.0 <https://grscheller.github.io/pythonic-fp/queues/v5.1.0/build/html/>`_           | TBD          |
+| `v5.1.0 <https://grscheller.github.io/pythonic-fp/queues/v5.1.0/build/html/>`_           | 2025-09-28   |
 +------------------------------------------------------------------------------------------+--------------+

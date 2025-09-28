@@ -28,12 +28,12 @@ Footnotes
 
 .. [#] 
 
-    Project pythonic-fp-sentinels was **DEPRECATED**. Content was moved
+    Project **pythonic-fp-sentinels** was **DEPRECATED**. Content was moved
     to pythonic-fp-gadgets where the work continues.
 
 .. [#]
 
-    Project pythonic-fp-singletons was **DEPRECATED**. Content was moved
+    Project **pythonic-fp-singletons** was **DEPRECATED**. Content was moved
     to ``pythonic-fp-booleans`` and ``pythonic-fp-sentinels``. Naming
     a module after an implementation detail turned out not to scale well.
 

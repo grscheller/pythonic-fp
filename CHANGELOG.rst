@@ -8,19 +8,36 @@ Developer Tools supporting a functional style of programming yet endeavoring to
 remain Pythonic. All project names begin ``pythonic-fp-`` on PyPI and are Python
 namespace packages under the ``pythonic_fp`` name.
 
+versioning
+----------
+
+- non-standard 3 digit release string for pythonic-fp
+
+  - major release will remain 3 for the homepage module paradigm
+  - minor release will increase for consistent release points
+  - patch release will increase when the homepage gets modified
+
 Important Milestones
 --------------------
+
+PyPI release v3.2.0 - 2025-09-28
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Consistent set of Pythonic FP projects:
+
+- pythonic-fp-booleans          2.0.0
+- pythonic-fp-circulararray     6.0.0
+- pythonic-fp-containers        4.0.0
+- pythonic-fp-fptools           5.1.2
+- pythonic-fp-gadgets           3.1.0
+- pythonic-fp-iterables         5.1.2
+- pythonic-fp-queues            5.1.0
+- pythonic-fp-splitends         1.0.2
 
 PyPI release v3.1.1 - 2025-09-28
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Got home page to a finished state.
-
-PyPI release v3.1.0 - 2025-09-26
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Oops, meant this one to be the 3.0.1 release. Got confused with the 3.1.0
-release of pythonic-fp-gadgets.
 
 PyPI release v3.0.1 - 2025-09-26
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -29,7 +46,7 @@ PyPI release v3.0.1 - 2025-09-26
 
   - major release will remain 3 for this homepage module paradigm
   - minor release will increase for coordinated release points
-  - oatch release will increase when src/ gets updated
+  - patch release will increase when src/ gets updated
 
 - released with or after this version and before next
 
