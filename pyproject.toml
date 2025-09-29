@@ -60,10 +60,6 @@ target-version = "py313"
 [tool.ruff.lint.flake8-quotes]
 docstring-quotes = "double"
 
-[tool.ruff.lint.per-file-ignores]
-"tests/*" = ["C901"]
-"**/*.py" = ["E741"]
-
 [tool.ruff.format]
 quote-style = "single"
 docstring-code-line-length = 72
