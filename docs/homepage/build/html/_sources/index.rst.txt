@@ -3,10 +3,11 @@ Pythonic FP
 
 **Python functional programming libraries.**
 
-PyPI projects under the PyPI namespace
-`pythonic-fp <https://pypi.org/project/pythonic-fp/>`_.
-GitHub and PyPI repos located
-`here <https://github.com/grscheller/pythonic-fp/blob/main/README.md>`_.
+`PyPI projects <https://pypi.org/project/pythonic-fp/>`_
+and their associated
+`GitHub and PyPI repos <https://github.com/grscheller/pythonic-fp/blob/main/README.md>`_
+all under the pythonic_fp Python namespace.
+.
 
 .. toctree::
     :caption: Pythonic FP
