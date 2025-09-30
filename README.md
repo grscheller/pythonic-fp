@@ -4,8 +4,8 @@ Collection of Functional Programming (FP) oriented Python libraries
 which endeavor to still remain Pythonic.
 
 The overall project's name is **Pythonic FP** and consists of PyPI
-projects with PyPI and GitHub names beginning `python-fp`. All
-projects are all under the Python `pythonic_fp` namespace.
+projects with PyPI and GitHub names beginning "python-fp". All
+projects are all under the Python "pythonic_fp" namespace.
 
 For more information visit the project's
 [homepage](https://grscheller.github.io/pythonic-fp/).
