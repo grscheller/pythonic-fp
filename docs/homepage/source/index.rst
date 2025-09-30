@@ -7,7 +7,6 @@ Pythonic FP
 and their associated
 `GitHub and PyPI repos <https://github.com/grscheller/pythonic-fp/blob/main/README.md>`_
 all under the pythonic_fp Python namespace.
-.
 
 .. toctree::
     :caption: Pythonic FP

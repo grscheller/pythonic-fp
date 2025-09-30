@@ -5,7 +5,7 @@ Pythonic FP Projects
 Collection of Functional Programming (FP) PyPI projects.
 
 The overall project's name is **Pythonic FP** and consists of PyPI
-projects with PyPI and GitHub names beginning `python-fp`. All project
+projects with PyPI and GitHub names beginning *python-fp*. All project
 libraries install under the Python ``pythonic_fp`` namespace.
 
 Goals
