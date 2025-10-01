@@ -5,7 +5,7 @@
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
-# 
+#
 # Must match what is in pyproject.toml, also update proposed_release_string accordingly
 # when generating the docs for an actual, not proposed, release.
 #
@@ -13,7 +13,7 @@
 project = 'Pythonic FP - Gadgets'
 copyright = '2025, Geoffrey R. Scheller'
 author = 'Geoffrey R. Scheller'
-release = '3.1.1' 
+release = '3.1.1'
 release_string = 'Proposed PyPI'
 # release_string = 'PyPI'
 

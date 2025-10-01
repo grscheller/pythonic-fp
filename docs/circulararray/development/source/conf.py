@@ -5,7 +5,7 @@
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
-# 
+#
 # Must match what is in pyproject.toml, also update proposed_release_string accordingly
 # when generating the docs for an actual, not proposed, release.
 #
@@ -13,9 +13,9 @@
 project = 'Pythonic FP - Circular Array'
 copyright = '2023-2025, Geoffrey R. Scheller'
 author = 'Geoffrey R. Scheller'
-release = '6.0.0' 
-# release_string = 'Proposed PyPI'
-release_string = 'PyPI'
+release = '6.0.1'
+release_string = 'Proposed PyPI'
+# release_string = 'PyPI'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
