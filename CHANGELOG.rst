@@ -21,6 +21,7 @@ Important Milestones
 --------------------
 
 PyPI release v3.2.1 - 2025-09-30
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Spent a lot of effort to make the homepage smooth and concise.
 
