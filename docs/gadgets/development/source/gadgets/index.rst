@@ -22,5 +22,4 @@ pythonic_fp.gadgets
     :caption: Packages
     :maxdepth: 4
 
-    sentinels
-
+    sentinels/index
