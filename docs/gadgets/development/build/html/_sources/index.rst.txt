@@ -7,9 +7,9 @@ pythonic-fp-gadgets
 
 Project
 `pythonic-fp-gadhets <https://pypi.org/project/pythonic-fp-gadgets/>`_
-one of the PyPI
-`Pythonic FP PyPI <https://grscheller.github.io/pythonic-fp/homepage/build/html/index.html>`_
-projects.
+one of the
+`Pythonic FP <https://grscheller.github.io/pythonic-fp/>`_
+PyPI projects.
 
 .. toctree::
    :caption: Overview
