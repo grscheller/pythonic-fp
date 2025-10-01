@@ -1,6 +1,10 @@
 pythonic_fp.gadgets
 ===================
 
+.. automodule:: pythonic_fp.gadgets
+   :synopsis:
+   :noindex:
+
 .. toctree::
     :caption: Functions
     :maxdepth: 2
@@ -18,8 +22,5 @@ pythonic_fp.gadgets
     :caption: Packages
     :maxdepth: 4
 
-    sentinels/index
+    sentinels
 
-.. automodule:: pythonic_fp.gadgets
-   :synopsis:
-   :noindex:
