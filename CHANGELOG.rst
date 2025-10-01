@@ -20,6 +20,12 @@ versioning
 Important Milestones
 --------------------
 
+PyPI release v3.2.1 - 2025-09-30
+
+Spent a lot of effort to make the homepage smooth and concise.
+
+TODO: Incorporate ideas into the docs for the individual PyPI projects.
+
 PyPI release v3.2.0 - 2025-09-28
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

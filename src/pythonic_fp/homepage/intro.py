@@ -1,12 +1,9 @@
 """
-Pythonic FP Projects
-====================
-
-Collection of Functional Programming (FP) PyPI projects.
+Collection of Functional Programming PyPI Projects
+==================================================
 
 The overall project's name is **Pythonic FP** and consists of PyPI
-projects with PyPI and GitHub names beginning *python-fp*. All project
-libraries install under the Python ``pythonic_fp`` namespace.
+projects with PyPI and GitHub names beginning *python-fp*.
 
 Goals
 -----
@@ -14,7 +11,7 @@ Goals
 - assist in a functional style of programming
 - support stateful as well as functional paradigms
 - be extensible, type safe, and efficient
-- threadsafe when practical, thread tolerant when efficiency important
+- threadsafe when practical, thread tolerant otherwise
 - have good documentation
 - fulling support typing tools like `mypy <https://mypy-lang.org/>`_
 - be pythonic

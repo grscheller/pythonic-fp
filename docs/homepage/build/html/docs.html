@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Pythonic FP &#8212; Pythonic FP 3.2.1 documentation</title>
+    <title>Pythonic FP docs &#8212; Pythonic FP 3.2.1 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="_static/basic_mod.css?v=9b2032db" />
     <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=4ae1632d" />
@@ -16,7 +16,8 @@
     <script src="_static/js/petite-vue.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Development" href="development.html" /> 
+    <link rel="next" title="Top level releases" href="top_level_releases.html" />
+    <link rel="prev" title="Purpose of pythonic-fp" href="purpose.html" /> 
   </head><body data-dark_mode_code_blocks="true">
 
 <div id="top_nav">
@@ -30,7 +31,7 @@
         <p id="toggle_sidebar">
             <a href="#" title="Toggle sidebar">|||</a>
         </p>
-        <h1><a href="#" title="Go to homepage">Pythonic FP 3.2.1 documentation</a></h1>
+        <h1><a href="index.html" title="Go to homepage">Pythonic FP 3.2.1 documentation</a></h1>
 
         <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
     <template v-if="mode == 'light'">
@@ -119,8 +120,8 @@
     
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper"><p class="caption" role="heading"><span class="caption-text">Pythonic FP</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Pythonic FP</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">Pythonic FP</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
 <ul>
@@ -128,8 +129,8 @@
 <li class="toctree-l1"><a class="reference internal" href="purpose.html">Purpose of pythonic-fp</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="docs.html">Pythonic FP docs</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Pythonic FP docs</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Releases</span></p>
 <ul>
@@ -146,57 +147,18 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <section id="pythonic-fp">
-<h1>Pythonic FP<a class="headerlink" href="#pythonic-fp" title="Link to this heading">¶</a></h1>
-<p>All of the PyPI <a class="reference external" href="https://pypi.org/project/pythonic-fp/">Pythonic FP</a>
-projects implement top level packages in the <code class="docutils literal notranslate"><span class="pre">pythonic_fp</span></code> namespace.</p>
-<section id="collection-of-functional-programming-pypi-projects">
-<h2>Collection of Functional Programming PyPI Projects<a class="headerlink" href="#collection-of-functional-programming-pypi-projects" title="Link to this heading">¶</a></h2>
-<p>The overall project’s name is <strong>Pythonic FP</strong> and consists of PyPI
-projects with PyPI and GitHub names beginning <em>python-fp</em>.</p>
-<section id="goals">
-<h3>Goals<a class="headerlink" href="#goals" title="Link to this heading">¶</a></h3>
+  <section id="pythonic-fp-docs">
+<h1>Pythonic FP docs<a class="headerlink" href="#pythonic-fp-docs" title="Link to this heading">¶</a></h1>
 <ul class="simple">
-<li><p>assist in a functional style of programming</p></li>
-<li><p>support stateful as well as functional paradigms</p></li>
-<li><p>be extensible, type safe, and efficient</p></li>
-<li><p>threadsafe when practical, thread tolerant otherwise</p></li>
-<li><p>have good documentation</p></li>
-<li><p>fulling support typing tools like <a class="reference external" href="https://mypy-lang.org/">mypy</a></p></li>
-<li><p>be pythonic</p></li>
+<li><p><a class="reference external" href="https://grscheller.github.io/pythonic-fp/booleans/development/build/html/">pythonic-fp-booleans</a></p></li>
+<li><p><a class="reference external" href="https://grscheller.github.io/pythonic-fp/circulararray/development/build/html/">pythonic-fp-circulararray</a></p></li>
+<li><p><a class="reference external" href="https://grscheller.github.io/pythonic-fp/containers/development/build/html/">pythonic-fp-containers</a></p></li>
+<li><p><a class="reference external" href="https://grscheller.github.io/pythonic-fp/fptools/development/build/html/">pythonic-fp-fptools</a></p></li>
+<li><p><a class="reference external" href="https://grscheller.github.io/pythonic-fp/gadgets/development/build/html/">pythonic-fp-gadgets</a></p></li>
+<li><p><a class="reference external" href="https://grscheller.github.io/pythonic-fp/iterables/development/build/html/">pythonic-fp-iterables</a></p></li>
+<li><p><a class="reference external" href="https://grscheller.github.io/pythonic-fp/queues/development/build/html/">pythonic-fp-queues</a></p></li>
+<li><p><a class="reference external" href="https://grscheller.github.io/pythonic-fp/splitends/development/build/html/">pythonic-fp-splitends</a></p></li>
 </ul>
-</section>
-<section id="non-goals">
-<h3>Non-Goals<a class="headerlink" href="#non-goals" title="Link to this heading">¶</a></h3>
-<ul class="simple">
-<li><p>try and make Python a pure functional language like Haskell</p></li>
-<li><p>implement a functional domain specific language in Python</p></li>
-<li><p>force users to adopt unpythonic cryptic coding styles</p></li>
-</ul>
-</section>
-</section>
-<div class="toctree-wrapper compound">
-</div>
-<div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">Overview</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="development.html">Development</a></li>
-<li class="toctree-l1"><a class="reference internal" href="purpose.html">Purpose of pythonic-fp</a></li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="docs.html">Pythonic FP docs</a></li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">Releases</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="top_level_releases.html">Top level releases</a></li>
-<li class="toctree-l1"><a class="reference internal" href="consistent_release_sets.html">Consistent versions</a></li>
-</ul>
-</div>
 </section>
 
 
@@ -205,27 +167,6 @@ projects with PyPI and GitHub names beginning <em>python-fp</em>.</p>
         </div>
       </div>
     
-        <div id="show_right_sidebar">
-            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&lt;</span><span>Page contents</span></a></p>
-        </div>
-
-        <div id="right_sidebar">
-            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&gt;</span><span>Page contents:</span></a></p>
-            <div class="page_toc">
-                <ul>
-<li><a class="reference internal" href="#">Pythonic FP</a><ul>
-<li><a class="reference internal" href="#collection-of-functional-programming-pypi-projects">Collection of Functional Programming PyPI Projects</a><ul>
-<li><a class="reference internal" href="#goals">Goals</a></li>
-<li><a class="reference internal" href="#non-goals">Non-Goals</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-            </div>
-        </div>
-    
 
       <div class="clearer"></div>
     </div>
@@ -233,11 +174,14 @@ projects with PyPI and GitHub names beginning <em>python-fp</em>.</p>
         <div class="button_nav">
             <div class="left">
                 
+                <a href="purpose.html">
+                    <span class="icon">&lt;</span><span>Purpose of pythonic-fp</span></a>
+                
             </div>
 
             <div class="right">
                 
-                    <a href="development.html"><span>Development</span><span class="icon">&gt;</span></a>
+                    <a href="top_level_releases.html"><span>Top level releases</span><span class="icon">&gt;</span></a>
                 
             </div>
         </div>

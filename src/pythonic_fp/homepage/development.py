@@ -1,6 +1,6 @@
 """
 Module dependencies
--------------------
+===================
 
 Current module dependencies where arrows point from modules to their
 dependencies. There are no external dependency except for the Python
@@ -30,24 +30,20 @@ standard library.
     }
 
 Semantic versioning
--------------------
+===================
 
-Maintainer has adopted strict 3 digit
-`semantic versioning <https://semver.org>`_
-and does not use
-`caps on dependencies <https://iscinumpy.dev/post/bound-version-constraints>`_.
-This allows for more package management flexibility for developers and
-access to the latest features.
+Maintainer has adopted strict 3 digit `semantic versioning <https://semver.org>`_
+and does not put `caps on dependencies <https://iscinumpy.dev/post/bound-version-constraints>`_.
+This allows for more package management flexibility and access to the latest features.
+For those concerned with stability, periodically known consistent sets of releases
+are given in the Releases section of these docs.
 
-Periodically known consistent releases of versions are done for those
-concerned with stability. These are also posted in the project's CHANGELOG.
-
-CHANGELOG
----------
+Changelog
+=========
 
 Pythonic FP overarching
 `CHANGELOG <https://github.com/grscheller/pythonic-fp/blob/main/CHANGELOG.rst>`_.
 
-Each individual Pythonic FP project also has its own CHANGELOG.
+Each individual *Pythonic FP* project also has its own CHANGELOG.
 
 """

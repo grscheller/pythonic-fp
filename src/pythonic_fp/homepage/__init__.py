@@ -3,21 +3,13 @@ The pythonic-fp PyPI project is the central component of the
 *Pythonic FP* libraries. It has several purposes.
 
 - claims the pythonic-fp name on PyPI for the overall effort
-- hosts the effort's homepage on *GitHub Pages*
-- hosts detailed Sphinx documentation for each *Pythonic FP* project
-- contains the ``pythonic_fp.homepage`` module
+- hosts on *GitHub Pages*
 
-  - which is used in the construction of the homepage
-  - keeps important information available and modifiable
+  - the *Python FP* homepage
+  - Sphinx documentation for each *Pythonic FP* project
 
-    - outside of Sphinx boilerplate
-
-- provides locations for effort's overall CHANGELOG and README files
-
-  - the README.md file provides
-
-    - the pythonic-fp PyPI description giving an overview of *Pythonic FP*
-    - provide links to the individual projects on PyPI and their GitHub repos
+- home of the ``pythonic_fp.homepage`` module
+- provides locations for overarching CHANGELOG and README files
 
   - each *Pythonic FP* project has its on CHANGELOG and README files
 
