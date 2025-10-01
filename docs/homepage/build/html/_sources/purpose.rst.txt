@@ -1,5 +1,5 @@
-Purpose pythonic-fp
-===================
+Purpose of pythonic-fp
+======================
 
 .. automodule:: pythonic_fp.homepage
     :synopsis:

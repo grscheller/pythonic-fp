@@ -1,12 +1,12 @@
 Pythonic FP
 ===========
 
-**Python functional programming libraries.**
+All of the PyPI `Pythonic FP <https://pypi.org/project/pythonic-fp/>`_
+projects implement top level packages in the ``pythonic_fp`` namespace.
 
-PyPI projects under the PyPI namespace
-`pythonic-fp <https://pypi.org/project/pythonic-fp/>`_.
-GitHub and PyPI repos located
-`here <https://github.com/grscheller/pythonic-fp/blob/main/README.md>`_.
+.. automodule:: pythonic_fp.homepage.intro
+    :synopsis:
+    :noindex:
 
 .. toctree::
     :caption: Pythonic FP
@@ -19,11 +19,18 @@ GitHub and PyPI repos located
     :caption: Overview
     :maxdepth: 1
 
-    purpose
     development
-    top_level_releases
-    consistent_versions
+    purpose
 
-.. automodule:: pythonic_fp.homepage.intro
-    :synopsis:
-    :noindex:
+.. toctree::
+    :caption: Documentation
+    :maxdepth: 1
+
+    docs
+
+.. toctree::
+    :caption: Releases
+    :maxdepth: 1
+
+    top_level_releases
+    consistent_release_sets
