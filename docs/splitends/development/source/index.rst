@@ -13,14 +13,12 @@ projects.
 
 .. toctree::
    :caption: Overview
-   :maxdepth: 1
    :hidden:
 
    self
 
 .. toctree::
    :caption: Getting Started
-   :maxdepth: 1
 
    usage
    releases
@@ -28,6 +26,5 @@ projects.
 
 .. toctree::
    :caption: Documentation
-   :maxdepth: 3
 
    splitends/index

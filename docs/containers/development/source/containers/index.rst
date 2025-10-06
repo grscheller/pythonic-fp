@@ -9,4 +9,3 @@ pythonic_fp.containers
 
 .. automodule:: pythonic_fp.containers
    :synopsis:
-   :noindex:

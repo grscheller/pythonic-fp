@@ -10,4 +10,3 @@ pythonic_fp.booleans
 
 .. automodule:: pythonic_fp.booleans
     :synopsis:
-    :noindex:

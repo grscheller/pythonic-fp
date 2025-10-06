@@ -249,20 +249,39 @@
           <section id="pythonic-fp-splitends">
 <h1>pythonic_fp.splitends<a class="headerlink" href="#pythonic-fp-splitends" title="Link to this heading">¶</a></h1>
 <div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">splitends</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="splitend.html">module splitend</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="splitend.html#class-splitends">Class SplitEnds</a></li>
-<li class="toctree-l2"><a class="reference internal" href="splitend.html#pythonic_fp.splitends.splitend.SplitEnd"><code class="docutils literal notranslate"><span class="pre">SplitEnd</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="splitend.html#pythonic_fp.splitends.splitend.SplitEnd"><code class="docutils literal notranslate"><span class="pre">SplitEnd</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="splitend.html#pythonic_fp.splitends.splitend.SplitEnd.cut"><code class="docutils literal notranslate"><span class="pre">SplitEnd.cut()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="splitend.html#pythonic_fp.splitends.splitend.SplitEnd.extend"><code class="docutils literal notranslate"><span class="pre">SplitEnd.extend()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="splitend.html#pythonic_fp.splitends.splitend.SplitEnd.fold"><code class="docutils literal notranslate"><span class="pre">SplitEnd.fold()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="splitend.html#pythonic_fp.splitends.splitend.SplitEnd.peak"><code class="docutils literal notranslate"><span class="pre">SplitEnd.peak()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="splitend.html#pythonic_fp.splitends.splitend.SplitEnd.reroot"><code class="docutils literal notranslate"><span class="pre">SplitEnd.reroot()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="splitend.html#pythonic_fp.splitends.splitend.SplitEnd.rev_fold"><code class="docutils literal notranslate"><span class="pre">SplitEnd.rev_fold()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="splitend.html#pythonic_fp.splitends.splitend.SplitEnd.root"><code class="docutils literal notranslate"><span class="pre">SplitEnd.root()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="splitend.html#pythonic_fp.splitends.splitend.SplitEnd.snip"><code class="docutils literal notranslate"><span class="pre">SplitEnd.snip()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="splitend.html#pythonic_fp.splitends.splitend.SplitEnd.split"><code class="docutils literal notranslate"><span class="pre">SplitEnd.split()</span></code></a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="splitend_node.html">module splitend_node</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="splitend_node.html#class-senode">Class SENode</a></li>
-<li class="toctree-l2"><a class="reference internal" href="splitend_node.html#pythonic_fp.splitends.splitend_node.SENode"><code class="docutils literal notranslate"><span class="pre">SENode</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="splitend_node.html#pythonic_fp.splitends.splitend_node.SENode"><code class="docutils literal notranslate"><span class="pre">SENode</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="splitend_node.html#pythonic_fp.splitends.splitend_node.SENode.both"><code class="docutils literal notranslate"><span class="pre">SENode.both()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="splitend_node.html#pythonic_fp.splitends.splitend_node.SENode.data"><code class="docutils literal notranslate"><span class="pre">SENode.data()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="splitend_node.html#pythonic_fp.splitends.splitend_node.SENode.fold"><code class="docutils literal notranslate"><span class="pre">SENode.fold()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="splitend_node.html#pythonic_fp.splitends.splitend_node.SENode.prev"><code class="docutils literal notranslate"><span class="pre">SENode.prev()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="splitend_node.html#pythonic_fp.splitends.splitend_node.SENode.push"><code class="docutils literal notranslate"><span class="pre">SENode.push()</span></code></a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 </div>
-<p>Mutable stack objects that can safely share data.</p>
+<p id="module-pythonic_fp.splitends">Mutable stack objects that can safely share data.</p>
 <p>Python package implementing a singularly linked stack of nodes called a <code class="docutils literal notranslate"><span class="pre">SplitEnd</span></code>.
 While mutable, these data structures can safely share immutable data nodes between
 themselves. These nodes, of type <code class="docutils literal notranslate"><span class="pre">SENode</span></code>, always contain data. A root node is

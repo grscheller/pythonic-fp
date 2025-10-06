@@ -2,11 +2,10 @@ pythonic_fp.splitends
 =====================
 
 .. toctree::
-    :maxdepth: 2
+    :caption: splitends
 
     splitend
     splitend_node
 
 .. automodule:: pythonic_fp.splitends
     :synopsis:
-    :no-index:
