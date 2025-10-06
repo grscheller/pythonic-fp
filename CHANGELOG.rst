@@ -20,6 +20,11 @@ versioning
 Important Milestones
 --------------------
 
+Update - 2025-10-06
+~~~~~~~~~~~~~~~~~~~
+
+Rebuilt homepage (development) and all Pythonic FP projects docs with furo theme.
+
 PyPI release v3.2.1 - 2025-09-30
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
