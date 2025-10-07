@@ -248,11 +248,25 @@
         <article role="main" id="furo-main-content">
           <section id="development">
 <h1>Development<a class="headerlink" href="#development" title="Link to this heading">¶</a></h1>
+<section id="semantic-versioning">
+<h2>Semantic versioning<a class="headerlink" href="#semantic-versioning" title="Link to this heading">¶</a></h2>
+<p>Maintainer has adopted strict 3 digit <a class="reference external" href="https://semver.org">semantic versioning</a>
+and does not put <a class="reference external" href="https://iscinumpy.dev/post/bound-version-constraints">caps on dependencies</a>.
+This allows for more package management flexibility and access to the latest features.
+For those concerned with stability, periodically known consistent sets of releases
+are given in the Releases section of these docs.</p>
+</section>
+<section id="changelog">
+<h2>Changelog<a class="headerlink" href="#changelog" title="Link to this heading">¶</a></h2>
+<p>Pythonic FP overarching
+<a class="reference external" href="https://github.com/grscheller/pythonic-fp/blob/main/CHANGELOG.rst">CHANGELOG</a>.</p>
+<p>Each individual <em>Pythonic FP</em> project has its own CHANGELOG too.</p>
+</section>
 <section id="module-dependencies">
-<h2>Module dependencies<a class="headerlink" href="#module-dependencies" title="Link to this heading">¶</a></h2>
+<h2>Module Dependencies<a class="headerlink" href="#module-dependencies" title="Link to this heading">¶</a></h2>
 <p>Arrows point from modules to their dependencies.</p>
-<section id="internal-dependencies">
-<h3>Internal dependencies<a class="headerlink" href="#internal-dependencies" title="Link to this heading">¶</a></h3>
+<section id="internal">
+<h3>Internal<a class="headerlink" href="#internal" title="Link to this heading">¶</a></h3>
 <p>There are no external dependency except for the Python standard library.</p>
 <div class="graphviz"><img src="_images/graphviz-e69e3d373005a42b9b2cfa4fd5b02a76c2c72720.png" alt="digraph Modules {
     bgcolor=&quot;#957fb8&quot;;
@@ -275,48 +289,19 @@
     iterables -&gt; fptools;
 }" class="graphviz" /></div>
 </section>
-<section id="external-dependencies">
-<h3>External dependencies<a class="headerlink" href="#external-dependencies" title="Link to this heading">¶</a></h3>
-<div class="graphviz"><img src="_images/graphviz-b4e0575fac5d227a977dc621821f5925553ce47a.png" alt="digraph Modules {
+<section id="external">
+<h3>External<a class="headerlink" href="#external" title="Link to this heading">¶</a></h3>
+<p>All Python Std Library non-typing related dependencies.</p>
+<div class="graphviz"><img src="_images/graphviz-4b50bbfca58d39cb737c999633f55aaad006578f.png" alt="digraph Modules {
     bgcolor=&quot;#957fb8&quot;;
     node [style=filled, fillcolor=&quot;#181616&quot;, fontcolor=&quot;#dcd7ba&quot;];
     edge [color=&quot;#181616&quot;, fontcolor=&quot;#dcd7ba&quot;];
-    booleans -&gt; &quot;collections.abc&quot;;
     booleans -&gt; threading;
-    booleans -&gt; typing;
-    circulararray -&gt; &quot;collections.abc&quot;;
-    circulararray -&gt; typing;
-    containers -&gt; &quot;collections.abc&quot;;
-    containers -&gt; typing;
-    fptools -&gt; &quot;collections.abc&quot;;
-    fptools -&gt; typing;
-    gadgets -&gt; &quot;collections.abc&quot;;
     gadgets -&gt; inspect;
     gadgets -&gt; threading;
-    gadgets -&gt; typing;
-    iterables -&gt; &quot;collections.abc&quot;;
     iterables -&gt; enum;
-    iterables -&gt; typing;
-    queues -&gt; &quot;collections.abc&quot;;
-    queues -&gt; typing;
-    splitends -&gt; &quot;collections.abc&quot;;
-    splitends -&gt; typing;
 }" class="graphviz" /></div>
 </section>
-</section>
-<section id="semantic-versioning">
-<h2>Semantic versioning<a class="headerlink" href="#semantic-versioning" title="Link to this heading">¶</a></h2>
-<p>Maintainer has adopted strict 3 digit <a class="reference external" href="https://semver.org">semantic versioning</a>
-and does not put <a class="reference external" href="https://iscinumpy.dev/post/bound-version-constraints">caps on dependencies</a>.
-This allows for more package management flexibility and access to the latest features.
-For those concerned with stability, periodically known consistent sets of releases
-are given in the Releases section of these docs.</p>
-</section>
-<section id="changelog">
-<h2>Changelog<a class="headerlink" href="#changelog" title="Link to this heading">¶</a></h2>
-<p>Pythonic FP overarching
-<a class="reference external" href="https://github.com/grscheller/pythonic-fp/blob/main/CHANGELOG.rst">CHANGELOG</a>.</p>
-<p>Each individual <em>Pythonic FP</em> project has its own CHANGELOG too.</p>
 </section>
 </section>
 
@@ -376,13 +361,13 @@ are given in the Releases section of these docs.</p>
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#">Development</a><ul>
-<li><a class="reference internal" href="#module-dependencies">Module dependencies</a><ul>
-<li><a class="reference internal" href="#internal-dependencies">Internal dependencies</a></li>
-<li><a class="reference internal" href="#external-dependencies">External dependencies</a></li>
-</ul>
-</li>
 <li><a class="reference internal" href="#semantic-versioning">Semantic versioning</a></li>
 <li><a class="reference internal" href="#changelog">Changelog</a></li>
+<li><a class="reference internal" href="#module-dependencies">Module Dependencies</a><ul>
+<li><a class="reference internal" href="#internal">Internal</a></li>
+<li><a class="reference internal" href="#external">External</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>

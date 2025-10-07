@@ -1,9 +1,6 @@
 Pythonic FP
 ===========
 
-All of the PyPI `Pythonic FP <https://pypi.org/project/pythonic-fp/>`_
-projects are top level packages in the ``pythonic_fp`` namespace.
-
 .. automodule:: pythonic_fp.homepage.intro
     :synopsis:
 
