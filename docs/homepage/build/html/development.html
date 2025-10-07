@@ -206,7 +206,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Releases</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="top_level_releases.html">Top level releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="top_level_releases.html">Top level PyPI releases</a></li>
 <li class="toctree-l1"><a class="reference internal" href="consistent_release_sets.html">Consistent versions</a></li>
 </ul>
 
@@ -250,9 +250,10 @@
 <h1>Development<a class="headerlink" href="#development" title="Link to this heading">¶</a></h1>
 <section id="module-dependencies">
 <h2>Module dependencies<a class="headerlink" href="#module-dependencies" title="Link to this heading">¶</a></h2>
-<p>Current module dependencies where arrows point from modules to their
-dependencies. There are no external dependency except for the Python
-standard library.</p>
+<p>Arrows point from modules to their dependencies.</p>
+<section id="internal-dependencies">
+<h3>Internal dependencies<a class="headerlink" href="#internal-dependencies" title="Link to this heading">¶</a></h3>
+<p>There are no external dependency except for the Python standard library.</p>
 <div class="graphviz"><img src="_images/graphviz-e69e3d373005a42b9b2cfa4fd5b02a76c2c72720.png" alt="digraph Modules {
     bgcolor=&quot;#957fb8&quot;;
     node [style=filled, fillcolor=&quot;#181616&quot;, fontcolor=&quot;#dcd7ba&quot;];
@@ -274,6 +275,35 @@ standard library.</p>
     iterables -&gt; fptools;
 }" class="graphviz" /></div>
 </section>
+<section id="external-dependencies">
+<h3>External dependencies<a class="headerlink" href="#external-dependencies" title="Link to this heading">¶</a></h3>
+<div class="graphviz"><img src="_images/graphviz-b4e0575fac5d227a977dc621821f5925553ce47a.png" alt="digraph Modules {
+    bgcolor=&quot;#957fb8&quot;;
+    node [style=filled, fillcolor=&quot;#181616&quot;, fontcolor=&quot;#dcd7ba&quot;];
+    edge [color=&quot;#181616&quot;, fontcolor=&quot;#dcd7ba&quot;];
+    booleans -&gt; &quot;collections.abc&quot;;
+    booleans -&gt; threading;
+    booleans -&gt; typing;
+    circulararray -&gt; &quot;collections.abc&quot;;
+    circulararray -&gt; typing;
+    containers -&gt; &quot;collections.abc&quot;;
+    containers -&gt; typing;
+    fptools -&gt; &quot;collections.abc&quot;;
+    fptools -&gt; typing;
+    gadgets -&gt; &quot;collections.abc&quot;;
+    gadgets -&gt; inspect;
+    gadgets -&gt; threading;
+    gadgets -&gt; typing;
+    iterables -&gt; &quot;collections.abc&quot;;
+    iterables -&gt; enum;
+    iterables -&gt; typing;
+    queues -&gt; &quot;collections.abc&quot;;
+    queues -&gt; typing;
+    splitends -&gt; &quot;collections.abc&quot;;
+    splitends -&gt; typing;
+}" class="graphviz" /></div>
+</section>
+</section>
 <section id="semantic-versioning">
 <h2>Semantic versioning<a class="headerlink" href="#semantic-versioning" title="Link to this heading">¶</a></h2>
 <p>Maintainer has adopted strict 3 digit <a class="reference external" href="https://semver.org">semantic versioning</a>
@@ -286,7 +316,7 @@ are given in the Releases section of these docs.</p>
 <h2>Changelog<a class="headerlink" href="#changelog" title="Link to this heading">¶</a></h2>
 <p>Pythonic FP overarching
 <a class="reference external" href="https://github.com/grscheller/pythonic-fp/blob/main/CHANGELOG.rst">CHANGELOG</a>.</p>
-<p>Each individual <em>Pythonic FP</em> project also has its own CHANGELOG.</p>
+<p>Each individual <em>Pythonic FP</em> project has its own CHANGELOG too.</p>
 </section>
 </section>
 
@@ -346,7 +376,11 @@ are given in the Releases section of these docs.</p>
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#">Development</a><ul>
-<li><a class="reference internal" href="#module-dependencies">Module dependencies</a></li>
+<li><a class="reference internal" href="#module-dependencies">Module dependencies</a><ul>
+<li><a class="reference internal" href="#internal-dependencies">Internal dependencies</a></li>
+<li><a class="reference internal" href="#external-dependencies">External dependencies</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#semantic-versioning">Semantic versioning</a></li>
 <li><a class="reference internal" href="#changelog">Changelog</a></li>
 </ul>

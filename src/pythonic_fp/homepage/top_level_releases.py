@@ -1,8 +1,4 @@
 """
-Pythonic FP Project Release Dates
-=================================
-
-
 ============================ =========================== ========= =============
 PyPI and GitHub Name         Python Module               Version   Date Released
 ============================ =========================== ========= =============
@@ -18,9 +14,7 @@ pythonic-fp-singletons [#]_  pythonic_fp.singletons      1.0.0     2025-09-25
 pythonic-fp-splitends        pythonic_fp.splitends       2.0.0     2025-09-28
 ============================ =========================== ========= =============
 
-
-Footnotes
----------
+**Footnotes:**
 
 .. [#]
 
