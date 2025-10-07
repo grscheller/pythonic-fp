@@ -12,7 +12,7 @@ Pythonic FP
 
 .. toctree::
     :caption: Overview
-    :maxdepth: 1
+    :maxdepth: 2
 
     development
     purpose
@@ -24,7 +24,7 @@ Pythonic FP
 
 .. toctree::
     :caption: Releases
-    :maxdepth: 1
+    :maxdepth: 2
 
     top_level_releases
-    consistent_release_sets
+    compatible_versions
