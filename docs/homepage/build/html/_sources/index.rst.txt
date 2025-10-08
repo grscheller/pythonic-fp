@@ -11,20 +11,16 @@ Pythonic FP
     self
 
 .. toctree::
-    :caption: Overview
+    :caption: Development
     :maxdepth: 2
 
+    overview
     development
-    purpose
-
-.. toctree::
-    :caption: Documentation
-
     docs
 
 .. toctree::
     :caption: Releases
-    :maxdepth: 2
+    :maxdepth: 1
 
     top_level_releases
     compatible_versions

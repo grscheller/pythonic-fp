@@ -2,12 +2,6 @@
 Pythonic Functional Programming Libraries
 =========================================
 
-The overall effort's name is
-`Pythonic FP <https://pypi.org/project/pythonic-fp/>`_.
-It consists of Python projects whose names on PyPI and GitHub
-all begin with *"python-fp-"*. Each project implements a top-level
-package in the ``pythonic_fp`` Python namespace.
-
 **Goals:**
 
 - assist in a functional style of programming in Python
