@@ -24,20 +24,18 @@ Remarks
 
 .. attention::
     Maintainer will try to keep these top level releases consistent
-    with each other as much as possible, but makes no guarantees.
+    with each other as much as possible.
 
 .. important::
 
     When a package needs updated dependencies, the package
-    will be upgraded first before any of its dependencies.
-    This will prevent pip from installing the package until
-    all its dependencies are in place.
-
-.. important::
+    will be deployed to PyPI first before any of the dependencies.
+    This will prevent pip from installing the version of the package
+    until all its dependencies are in place.
 
     When a package needs updating in a way that is not
     consistent with packages that depend on it, the packages
-    dependent on it will be upgraded first.
+    dependent on it will be deployed to PyPI first.
 
 .. note::
 
@@ -45,6 +43,7 @@ Remarks
     dependencies are usually developed in parallel along
     with their test suites.
 
+----
 
 **Footnotes**
 

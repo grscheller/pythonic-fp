@@ -1,10 +1,6 @@
 """
-Pythonic FP compatible versions
-===============================
-
-**Known compatible versions.**
-
-----
+Known Pythonic FP compatible versions
+=====================================
 
 2025-09-28 - 3.2.0
 ------------------
