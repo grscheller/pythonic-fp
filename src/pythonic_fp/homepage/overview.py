@@ -6,6 +6,6 @@ The overall effort's name is
 - each project's PyPI and GitHub names begin with *"python-fp-"*
 - each project implements a top-level package in the ``pythonic_fp`` Python namespace
 - for links to all the Pythonic FP project PyPI and GitHub repos `click here
-  <https://github.com/grscheller/pythonic-fp>`_
+  <https://github.com/grscheller/pythonic-fp/blob/main/README.md>`_
 
 """
