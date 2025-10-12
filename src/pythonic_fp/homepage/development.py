@@ -26,7 +26,7 @@ Arrows point from modules to their dependencies.
 Internal
 --------
 
-There are no external dependency except for the Python standard library.
+There are no external dependencies except for the Python standard library.
 
 .. graphviz::
 
