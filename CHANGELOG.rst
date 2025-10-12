@@ -8,31 +8,38 @@ Developer Tools supporting a functional style of programming yet endeavoring to
 remain Pythonic. All project names begin ``pythonic-fp-`` on PyPI and are Python
 namespace packages under the ``pythonic_fp`` name.
 
-versioning
-----------
+Release based versioning
+------------------------
 
-- non-standard 3 digit release string for pythonic-fp
+Unlike the PyPI projects that make up Pythonic FP, which use strict semantic versioning,
+the overall version number is based on consistent relative release. The release string
+changes when
 
-  - major release will remain 3 for the homepage module paradigm
-  - minor release will increase for consistent release points
-  - patch release will increase when the homepage gets modified
+- **MAJOR:** a consistent, coordinated release of Pythonic FP PyPI projects happens
+- **MINOR:** breaking API changes are made to a Pythonic FP PyPI project
+- **PATCH:** minor code improvements and homepage updates are made
 
 Important Milestones
 --------------------
 
-Update - 2025-10-06
+2025-10-12 - PyPI release v3.2.2
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Incorporated lessons learned from Boring Math project into homepage.
+
+2025-10-06 - Update
 ~~~~~~~~~~~~~~~~~~~
 
 Rebuilt homepage (development) and all Pythonic FP projects docs with furo theme.
 
-PyPI release v3.2.1 - 2025-09-30
+2025-09-30 - PyPI release v3.2.1
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Spent a lot of effort to make the homepage smooth and concise.
 
 TODO: Incorporate ideas into the docs for the individual PyPI projects.
 
-PyPI release v3.2.0 - 2025-09-28
+2025-09-28 - PyPI release v3.2.0
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Consistent set of Pythonic FP projects:
@@ -46,12 +53,12 @@ Consistent set of Pythonic FP projects:
 - pythonic-fp-queues            5.1.0
 - pythonic-fp-splitends         1.0.2
 
-PyPI release v3.1.1 - 2025-09-28
+2025-09-28 - PyPI release v3.1.1
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Got home page to a finished state.
 
-PyPI release v3.0.1 - 2025-09-26
+2025-09-26 - PyPI release v3.0.1
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - modified 3 digit release string
@@ -66,13 +73,13 @@ PyPI release v3.0.1 - 2025-09-26
   - queues 5.1.0
   - gadgets 3.1.0
 
-PyPI release v3.0.0 - 2025-09-26
+2025-09-26 - PyPI release v3.0.0
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Project's homepage taking shape. Provides overarching documentation
 for the entire Pythonic FP project.
 
-Update - 2025-09-22
+2025-09-22 - Update
 ~~~~~~~~~~~~~~~~~~~
 
 Started effort to host the project's "homepage" with Sphinx.
@@ -80,7 +87,7 @@ Started effort to host the project's "homepage" with Sphinx.
 Development is somewhat ahead of what is on PyPI. I need to do
 a new coordinated release soon.
 
-Update - 2025-09-21
+2025-09-21 - Update
 ~~~~~~~~~~~~~~~~~~~
 
 Deprecate the pythonic-fp-sentinels PyPI project.
@@ -93,7 +100,7 @@ Deprecate the pythonic-fp-sentinels PyPI project.
 - moved rest of pythonic-fp development off sentinels and onto gadgets
 - with some difficulty, final release version is 2.1.3
 
-Update - 2025-09-15
+2025-09-15 - Update
 ~~~~~~~~~~~~~~~~~~~
 
 Consistent set of Pythonic FP projects:
@@ -107,8 +114,8 @@ Consistent set of Pythonic FP projects:
 - pythonic-fp-sentinels         2.1.0
 - pythonic-fp-splitends         1.0.2
 
-PyPI release v2.0.1 - pythonic-fp
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-09-11 - PyPI release v2.0.1
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Removed Documentation link in pyproject.toml
 
@@ -118,14 +125,14 @@ PyPI release v2.0.1 - pythonic-fp
 
   - Updated README.md & CHANGELOG.md
 
-Update - 2025-08-13
+2025-08-13 - Update
 ~~~~~~~~~~~~~~~~~~~
 
 Generated docs for pythonic-fp-booleans PyPI project
 
 - first development (prerelease) generation of of docs for booleans.sbool
 
-Update - 2025-08-11
+2025-08-11 - Update
 ~~~~~~~~~~~~~~~~~~~
 
 The next gadget's release will be v1.2.0.
@@ -137,7 +144,10 @@ The next gadget's release will be v1.2.0.
 - decided to make gadget's pyproject.toml the exemplar for rest of pythonic-fp namespace
 - pythonic_fp.gadget works with previous and next release of singletons
 
-2025-08-02 - Completed coordinated release of pythonic-fp namespace projects
+2025-08-02 - PyPI release 1.1.0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Completed a coordinated, consistent release of pythonic-fp namespace projects
 
 - released pythonic-fp v1.1.0 which contains pythonic_fp.gadgets package
 - released pythonic-fp-circulararray v5.3.0 immediately followed by v5.3.1
@@ -365,7 +375,7 @@ that is not also a ``Sphinx`` dependency.
   - grscheller/dtools-docs -> grscheller/dtools-namespace-projects
   - will double as a project homepage as well as the document repo
 
-2025-05-05 Added dtools.containers project
+2025-05-05 - Added dtools.containers project
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Added dtools.containers project and deprecated dtools.tuples
@@ -376,36 +386,36 @@ that is not also a ``Sphinx`` dependency.
     - this allows older PyPI source code links to keep working
     - thought necessary since my Boring Math Library not updated yet
 
-2025-04-24: Decided to change name back to dtools-docs
+2025-04-24 -: Decided to change name back to dtools-docs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     
 - A PyPI project named dtools already exists
 - Unfortunately, I missed this back in January
 
-2025-04-24: Renamed repo from dtools-docs to just dtools
+2025-04-24 - Renamed repo from dtools-docs to just dtools
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     
 - Morphing README.md into a project-wide Homepage
 - Created CHANGELOG.md file
 - Removed README.md links to deprecated dtools.datastructures project
 
-2025-03-31: Updates for new dtools project Mar 31
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-31 - Updates for new dtools project
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Adding infrastructure for dtools.tuples
 
-2025-03-28: updated docs for all dtools projects
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-28 - Updated docs for all dtools projects
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Ran linters and against all dtools namespace repos.
 
-2025-02-06: Standardized dtools and bm docs
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-02-06 - Standardized dtools and bm docs
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Standardized Developer Tools and Boring Math project documentation,
 
-2025-01-17: Created this repo - dtools-docs
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-01-17 - Created this repo (dtools-docs)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Created this repo for pdoc generated dtools project documentation
 

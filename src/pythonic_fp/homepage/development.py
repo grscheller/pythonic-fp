@@ -4,9 +4,11 @@ Semantic versioning
 
 Maintainer has adopted strict 3 digit `semantic versioning <https://semver.org>`_
 and does not put `caps on dependencies <https://iscinumpy.dev/post/bound-version-constraints>`_.
-This allows for more package management flexibility and access to the latest features.
-For those concerned with stability, periodically known consistent sets of releases
-are given in the Releases section of these docs.
+
+This allows for more package management flexibility for software developers using these
+libraries, and easier access to the latest features. For those concerned with stability,
+periodically known consistent sets of releases are given in the Releases section of
+these docs.
 
 Changelog
 =========

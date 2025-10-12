@@ -1,6 +1,8 @@
 """
-Known Pythonic FP compatible versions
-=====================================
+Known Boring Math compatible versions.
+
+Coordinated releases
+====================
 
 2025-09-28 - 3.2.0
 ------------------
@@ -20,7 +22,7 @@ Splitends      pythonic-fp-splitends     2.0.0
 
 ----
 
-2025-09-15 - 3.0.0
+2025-09-26 - 3.0.0
 ------------------
 
 ============== ========================= =======
