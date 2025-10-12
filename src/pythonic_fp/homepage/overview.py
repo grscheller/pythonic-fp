@@ -2,10 +2,10 @@
 The overall effort's name is
 `Pythonic FP <https://pypi.org/project/pythonic-fp/>`_.
 
-- It is a collection of Python projects to aid in Functional Programming (FP)
-- Each project's PyPI and GitHub names begin with *"python-fp-"*
-- Each project implements a top-level package in the ``pythonic_fp`` Python namespace
-- Here are links to all the Pythonic FP project `PyPI and GitHub repos
-  <https://github.com/grscheller/pythonic-fp/blob/main/README.md>`_
+- It is a collection of Functional Programming (FP) oriented libraries.
+- Each project's name begins with *"python-fp-"* on PyPI and GitHub.
+- Each project implements a top-level package in the ``pythonic_fp`` Python namespace.
+- Here are all the Pythonic FP projects on `PyPI and GitHub
+  <https://github.com/grscheller/pythonic-fp/blob/main/README.md>`_.
 
 """
