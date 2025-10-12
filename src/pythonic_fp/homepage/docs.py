@@ -1,4 +1,4 @@
-"""`
+"""
 - `pythonic-fp-booleans <https://grscheller.github.io/pythonic-fp/booleans/development/build/html/>`_
 - `pythonic-fp-circulararray <https://grscheller.github.io/pythonic-fp/circulararray/development/build/html/>`_ 
 - `pythonic-fp-containers <https://grscheller.github.io/pythonic-fp/containers/development/build/html/>`_
