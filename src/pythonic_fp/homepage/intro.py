@@ -13,8 +13,8 @@ Pythonic Functional Programming Libraries
 
 **Non-Goals:**
 
-- Try and make Python a pure functional language.
+- Try to make Python a pure functional language.
 - Implement a functional domain specific language in Python.
-- Force users to adopt some unpythonic cryptic coding styles.
+- Force users to adopt some cryptic unpythonic coding style.
 
 """
