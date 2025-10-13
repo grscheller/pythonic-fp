@@ -14,9 +14,9 @@ Changelog
 =========
 
 Pythonic FP overarching
-`CHANGELOG <https://github.com/grscheller/pythonic-fp/blob/main/CHANGELOG.rst>`_.
+`CHANGELOG <https://github.com/grscheller/pythonic-fp/blob/main/CHANGELOG.md>`_.
 
-Each individual *Pythonic FP* project has its own CHANGELOG too.
+Each individual Pythonic FP project has its own CHANGELOG too.
 
 Module Dependencies
 ===================
