@@ -14,6 +14,7 @@ pythonic_fp.gadgets
     :caption: Classes
 
     box
+    wrap
 
 .. toctree::
     :caption: Packages
