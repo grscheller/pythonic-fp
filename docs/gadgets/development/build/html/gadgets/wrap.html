@@ -6,7 +6,7 @@
 <link rel="index" title="Index" href="../genindex.html"><link rel="search" title="Search" href="../search.html"><link rel="next" title="sentinels" href="sentinels/index.html"><link rel="prev" title="box" href="box.html">
 
     <!-- Generated with Sphinx 8.2.3 and Furo 2025.09.25 -->
-        <title>&lt;no title&gt; - Pythonic FP - Gadgets 3.1.2 documentation</title>
+        <title>wrap - Pythonic FP - Gadgets 4.0.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=d111a655" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=580074bf" />
     <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
@@ -165,7 +165,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../index.html"><div class="brand">Pythonic FP - Gadgets 3.1.2 documentation</div></a>
+      <a href="../index.html"><div class="brand">Pythonic FP - Gadgets 4.0.0 documentation</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -186,7 +186,7 @@
       
       <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
   
-  <span class="sidebar-brand-text">Pythonic FP - Gadgets 3.1.2 documentation</span>
+  <span class="sidebar-brand-text">Pythonic FP - Gadgets 4.0.0 documentation</span>
   
 </a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -207,12 +207,14 @@
 <p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
 <ul class="current">
 <li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">pythonic_fp.gadgets</a><input aria-label="Toggle navigation of pythonic_fp.gadgets" checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="iterate_arguments.html">iterate_arguments</a></li>
-<li class="toctree-l2"><a class="reference internal" href="latest_common_ancestor.html">latest_common_ancestor</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="functions/index.html">functions</a><input aria-label="Toggle navigation of functions" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="functions/first_common_ancestor.html">first_common_ancestor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="functions/iterate_over_arguments.html">iterate_over_arguments</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="box.html">box</a></li>
-<li class="toctree-l2 current current-page"><a class="current reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">HWrap</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#pythonic_fp.gadgets.wrap.Wrap"><code class="docutils literal notranslate"><span class="pre">Wrap</span></code></a></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="sentinels/index.html">sentinels</a><input aria-label="Toggle navigation of sentinels" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">wrap</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="sentinels/index.html">sentinels</a><input aria-label="Toggle navigation of sentinels" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="sentinels/novalue.html">novalue</a></li>
 <li class="toctree-l3"><a class="reference internal" href="sentinels/flavored.html">flavored</a></li>
 </ul>
@@ -257,16 +259,15 @@
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          <p>wrap
-===</p>
-<p id="module-pythonic_fp.gadgets.wrap">Class for an immutable container that holds exactly one item.</p>
+          <section id="module-pythonic_fp.gadgets.wrap">
+<span id="wrap"></span><h1>wrap<a class="headerlink" href="#module-pythonic_fp.gadgets.wrap" title="Link to this heading">¶</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="pythonic_fp.gadgets.wrap.HWrap">
 <em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.gadgets.wrap.</span></span><span class="sig-name descname"><span class="pre">HWrap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">item</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">T</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.gadgets.wrap.HWrap" title="Link to this definition">¶</a></dt>
-<dd><p>Immutable container holding exactly one hashable item of a given type.</p>
+<dd><p>Immutablely wrap exactly one hashable value of a given type.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>Use a Python match statement to get the item,</p>
+<p><code class="docutils literal notranslate"><span class="pre">Wrap</span></code> objects can be used in Python match statements.</p>
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.gadgets.wrap.HWrap.bind">
@@ -274,10 +275,10 @@
 <dd><p>Flatmap the <code class="docutils literal notranslate"><span class="pre">Wrap</span></code> with function <code class="docutils literal notranslate"><span class="pre">f</span></code>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>f</strong> – binding function</p>
+<dd class="field-odd"><p><strong>f</strong> – Binding function.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>a new instance</p>
+<dd class="field-even"><p>A new instance.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -285,13 +286,13 @@
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.gadgets.wrap.HWrap.map">
 <span class="sig-name descname"><span class="pre">map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">U</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.gadgets.wrap.HWrap" title="pythonic_fp.gadgets.wrap.HWrap"><span class="pre">HWrap</span></a></span></span><a class="headerlink" href="#pythonic_fp.gadgets.wrap.HWrap.map" title="Link to this definition">¶</a></dt>
-<dd><p>Map function <code class="docutils literal notranslate"><span class="pre">f</span></code> over contents. We need to return a new instance.</p>
+<dd><p>Map function <code class="docutils literal notranslate"><span class="pre">f</span></code> over contents.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>f</strong> – mapping function</p>
+<dd class="field-odd"><p><strong>f</strong> – Mapping function.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>a new instance</p>
+<dd class="field-even"><p>A new instance.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -301,10 +302,10 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="pythonic_fp.gadgets.wrap.Wrap">
 <em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.gadgets.wrap.</span></span><span class="sig-name descname"><span class="pre">Wrap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">item</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">T</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.gadgets.wrap.Wrap" title="Link to this definition">¶</a></dt>
-<dd><p>Immutable container holding exactly one hashable item of a given type.</p>
+<dd><p>Immutablely wrap exactly one value of a given type.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>Use a Python match statement to get the item,</p>
+<p><code class="docutils literal notranslate"><span class="pre">Wrap</span></code> objects can be used in Python match statements.</p>
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.gadgets.wrap.Wrap.bind">
@@ -312,10 +313,10 @@
 <dd><p>Flatmap the <code class="docutils literal notranslate"><span class="pre">Wrap</span></code> with function <code class="docutils literal notranslate"><span class="pre">f</span></code>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>f</strong> – binding function</p>
+<dd class="field-odd"><p><strong>f</strong> – Binding function.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>a new instance</p>
+<dd class="field-even"><p>A new instance.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -323,19 +324,20 @@
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.gadgets.wrap.Wrap.map">
 <span class="sig-name descname"><span class="pre">map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">U</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.gadgets.wrap.Wrap" title="pythonic_fp.gadgets.wrap.Wrap"><span class="pre">Wrap</span></a></span></span><a class="headerlink" href="#pythonic_fp.gadgets.wrap.Wrap.map" title="Link to this definition">¶</a></dt>
-<dd><p>Map function <code class="docutils literal notranslate"><span class="pre">f</span></code> over contents. We need to return a new instance.</p>
+<dd><p>Map function <code class="docutils literal notranslate"><span class="pre">f</span></code> over contents.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>f</strong> – mapping function</p>
+<dd class="field-odd"><p><strong>f</strong> – Mapping function.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>a new instance</p>
+<dd class="field-even"><p>A new instance.</p>
 </dd>
 </dl>
 </dd></dl>
 
 </dd></dl>
 
+</section>
 
         </article>
       </div>
@@ -392,7 +394,8 @@
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">HWrap</span></code></a><ul>
+<li><a class="reference internal" href="#">wrap</a><ul>
+<li><a class="reference internal" href="#pythonic_fp.gadgets.wrap.HWrap"><code class="docutils literal notranslate"><span class="pre">HWrap</span></code></a><ul>
 <li><a class="reference internal" href="#pythonic_fp.gadgets.wrap.HWrap.bind"><code class="docutils literal notranslate"><span class="pre">HWrap.bind()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.gadgets.wrap.HWrap.map"><code class="docutils literal notranslate"><span class="pre">HWrap.map()</span></code></a></li>
 </ul>
@@ -400,6 +403,8 @@
 <li><a class="reference internal" href="#pythonic_fp.gadgets.wrap.Wrap"><code class="docutils literal notranslate"><span class="pre">Wrap</span></code></a><ul>
 <li><a class="reference internal" href="#pythonic_fp.gadgets.wrap.Wrap.bind"><code class="docutils literal notranslate"><span class="pre">Wrap.bind()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.gadgets.wrap.Wrap.map"><code class="docutils literal notranslate"><span class="pre">Wrap.map()</span></code></a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -411,7 +416,7 @@
       
     </aside>
   </div>
-</div><script src="../_static/documentation_options.js?v=4e920bdf"></script>
+</div><script src="../_static/documentation_options.js?v=3304f9e4"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/scripts/furo.js?v=46bd48cc"></script>

@@ -1,7 +1,7 @@
 pythonic-fp-gadgets
 ===================
 
-**Simple classes and functions with no external dependencies.**
+**Simple standalone classes and functions.**
 
 |RELEASE_STRING| |VERSION_RELEASED| release.
 
@@ -10,6 +10,10 @@ Project
 one of the
 `Pythonic FP <https://grscheller.github.io/pythonic-fp/>`_
 PyPI projects.
+
+Library of simple, but useful, functions and classes with no external
+dependencies besides those from the Python standard Library. This also
+includes other Pythonic FP projects.
 
 .. toctree::
    :caption: Overview

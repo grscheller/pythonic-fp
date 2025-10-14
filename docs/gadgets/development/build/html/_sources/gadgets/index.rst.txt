@@ -1,22 +1,10 @@
 pythonic_fp.gadgets
 ===================
 
-.. automodule:: pythonic_fp.gadgets
-   :synopsis:
-
 .. toctree::
-    :caption: Functions
+    :caption: Simple Gadgets
 
-    iterate_arguments
-    latest_common_ancestor
-
-.. toctree::
-    :caption: Classes
-
+    functions/index
     box
     wrap
-
-.. toctree::
-    :caption: Packages
-
     sentinels/index

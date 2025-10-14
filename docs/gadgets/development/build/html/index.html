@@ -6,7 +6,7 @@
 <link rel="index" title="Index" href="genindex.html"><link rel="search" title="Search" href="search.html"><link rel="next" title="Usage" href="usage.html">
 
     <!-- Generated with Sphinx 8.2.3 and Furo 2025.09.25 -->
-        <title>Pythonic FP - Gadgets 3.1.2 documentation</title>
+        <title>Pythonic FP - Gadgets 4.0.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d111a655" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=580074bf" />
     <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=4ae1632d" />
@@ -165,7 +165,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="#"><div class="brand">Pythonic FP - Gadgets 3.1.2 documentation</div></a>
+      <a href="#"><div class="brand">Pythonic FP - Gadgets 4.0.0 documentation</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -186,7 +186,7 @@
       
       <div class="sidebar-sticky"><a class="sidebar-brand" href="#">
   
-  <span class="sidebar-brand-text">Pythonic FP - Gadgets 3.1.2 documentation</span>
+  <span class="sidebar-brand-text">Pythonic FP - Gadgets 4.0.0 documentation</span>
   
 </a><form class="sidebar-search-container" method="get" action="search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -207,12 +207,14 @@
 <p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
 <ul>
 <li class="toctree-l1 has-children"><a class="reference internal" href="gadgets/index.html">pythonic_fp.gadgets</a><input aria-label="Toggle navigation of pythonic_fp.gadgets" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="gadgets/iterate_arguments.html">iterate_arguments</a></li>
-<li class="toctree-l2"><a class="reference internal" href="gadgets/latest_common_ancestor.html">latest_common_ancestor</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="gadgets/functions/index.html">functions</a><input aria-label="Toggle navigation of functions" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="gadgets/functions/first_common_ancestor.html">first_common_ancestor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gadgets/functions/iterate_over_arguments.html">iterate_over_arguments</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="gadgets/box.html">box</a></li>
-<li class="toctree-l2"><a class="reference internal" href="gadgets/wrap.html"><code class="docutils literal notranslate"><span class="pre">HWrap</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="gadgets/wrap.html#pythonic_fp.gadgets.wrap.Wrap"><code class="docutils literal notranslate"><span class="pre">Wrap</span></code></a></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="gadgets/sentinels/index.html">sentinels</a><input aria-label="Toggle navigation of sentinels" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="gadgets/wrap.html">wrap</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="gadgets/sentinels/index.html">sentinels</a><input aria-label="Toggle navigation of sentinels" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="gadgets/sentinels/novalue.html">novalue</a></li>
 <li class="toctree-l3"><a class="reference internal" href="gadgets/sentinels/flavored.html">flavored</a></li>
 </ul>
@@ -259,13 +261,16 @@
         <article role="main" id="furo-main-content">
           <section id="pythonic-fp-gadgets">
 <h1>pythonic-fp-gadgets<a class="headerlink" href="#pythonic-fp-gadgets" title="Link to this heading">¶</a></h1>
-<p><strong>Simple classes and functions with no external dependencies.</strong></p>
-<p>Proposed PyPI version 3.1.2 release.</p>
+<p><strong>Simple standalone classes and functions.</strong></p>
+<p>Proposed PyPI version 4.0.0 release.</p>
 <p>Project
 <a class="reference external" href="https://pypi.org/project/pythonic-fp-gadgets/">pythonic-fp-gadhets</a>
 one of the
 <a class="reference external" href="https://grscheller.github.io/pythonic-fp/">Pythonic FP</a>
 PyPI projects.</p>
+<p>Library of simple, but useful, functions and classes with no external
+dependencies besides those from the Python standard Library. This also
+includes other Pythonic FP projects.</p>
 <div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">
@@ -289,13 +294,15 @@ PyPI projects.</p>
 <p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="gadgets/index.html">pythonic_fp.gadgets</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="gadgets/index.html#simple-gadgets">Simple Gadgets</a></li>
-<li class="toctree-l2"><a class="reference internal" href="gadgets/iterate_arguments.html">iterate_arguments</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="gadgets/iterate_arguments.html#pythonic_fp.gadgets.iterate_arguments.ita"><code class="docutils literal notranslate"><span class="pre">ita()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadgets/functions/index.html">functions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="gadgets/functions/first_common_ancestor.html">first_common_ancestor</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gadgets/functions/first_common_ancestor.html#pythonic_fp.gadgets.first_common_ancestor"><code class="docutils literal notranslate"><span class="pre">first_common_ancestor()</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="gadgets/latest_common_ancestor.html">latest_common_ancestor</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="gadgets/latest_common_ancestor.html#pythonic_fp.gadgets.latest_common_ancestor.lca"><code class="docutils literal notranslate"><span class="pre">lca()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="gadgets/functions/iterate_over_arguments.html">iterate_over_arguments</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gadgets/functions/iterate_over_arguments.html#pythonic_fp.gadgets.iterate_over_arguments"><code class="docutils literal notranslate"><span class="pre">iterate_over_arguments()</span></code></a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="gadgets/box.html">box</a><ul>
@@ -311,24 +318,29 @@ PyPI projects.</p>
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="gadgets/wrap.html"><code class="docutils literal notranslate"><span class="pre">HWrap</span></code></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="gadgets/wrap.html#pythonic_fp.gadgets.wrap.HWrap.bind"><code class="docutils literal notranslate"><span class="pre">HWrap.bind()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="gadgets/wrap.html#pythonic_fp.gadgets.wrap.HWrap.map"><code class="docutils literal notranslate"><span class="pre">HWrap.map()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="gadgets/wrap.html">wrap</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="gadgets/wrap.html#pythonic_fp.gadgets.wrap.HWrap"><code class="docutils literal notranslate"><span class="pre">HWrap</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gadgets/wrap.html#pythonic_fp.gadgets.wrap.HWrap.bind"><code class="docutils literal notranslate"><span class="pre">HWrap.bind()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gadgets/wrap.html#pythonic_fp.gadgets.wrap.HWrap.map"><code class="docutils literal notranslate"><span class="pre">HWrap.map()</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="gadgets/wrap.html#pythonic_fp.gadgets.wrap.Wrap"><code class="docutils literal notranslate"><span class="pre">Wrap</span></code></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="gadgets/wrap.html#pythonic_fp.gadgets.wrap.Wrap.bind"><code class="docutils literal notranslate"><span class="pre">Wrap.bind()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="gadgets/wrap.html#pythonic_fp.gadgets.wrap.Wrap.map"><code class="docutils literal notranslate"><span class="pre">Wrap.map()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="gadgets/wrap.html#pythonic_fp.gadgets.wrap.Wrap"><code class="docutils literal notranslate"><span class="pre">Wrap</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gadgets/wrap.html#pythonic_fp.gadgets.wrap.Wrap.bind"><code class="docutils literal notranslate"><span class="pre">Wrap.bind()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gadgets/wrap.html#pythonic_fp.gadgets.wrap.Wrap.map"><code class="docutils literal notranslate"><span class="pre">Wrap.map()</span></code></a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="gadgets/sentinels/index.html">sentinels</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="gadgets/sentinels/index.html#sentinels-with-extras">Sentinels with Extras</a></li>
 <li class="toctree-l3"><a class="reference internal" href="gadgets/sentinels/novalue.html">novalue</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="gadgets/sentinels/novalue.html#missing-value-sentinel">Missing Value Sentinel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gadgets/sentinels/novalue.html#pythonic_fp.gadgets.sentinels.novalue.NoValue"><code class="docutils literal notranslate"><span class="pre">NoValue</span></code></a><ul>
+<li class="toctree-l5"><a class="reference internal" href="gadgets/sentinels/novalue.html#pythonic_fp.gadgets.sentinels.novalue.NoValue.__eq__"><code class="docutils literal notranslate"><span class="pre">NoValue.__eq__()</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="gadgets/sentinels/novalue.html#pythonic_fp.gadgets.sentinels.novalue.NoValue.__ne__"><code class="docutils literal notranslate"><span class="pre">NoValue.__ne__()</span></code></a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="gadgets/sentinels/flavored.html">flavored</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="gadgets/sentinels/flavored.html#flavored-sentinels">Flavored Sentinels</a></li>
 <li class="toctree-l4"><a class="reference internal" href="gadgets/sentinels/flavored.html#pythonic_fp.gadgets.sentinels.flavored.Sentinel"><code class="docutils literal notranslate"><span class="pre">Sentinel</span></code></a><ul>
 <li class="toctree-l5"><a class="reference internal" href="gadgets/sentinels/flavored.html#pythonic_fp.gadgets.sentinels.flavored.Sentinel.flavor"><code class="docutils literal notranslate"><span class="pre">Sentinel.flavor()</span></code></a></li>
 </ul>
@@ -382,7 +394,7 @@ PyPI projects.</p>
       
     </aside>
   </div>
-</div><script src="_static/documentation_options.js?v=4e920bdf"></script>
+</div><script src="_static/documentation_options.js?v=3304f9e4"></script>
     <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/scripts/furo.js?v=46bd48cc"></script>

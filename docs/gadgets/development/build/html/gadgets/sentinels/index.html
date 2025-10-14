@@ -3,10 +3,10 @@
   <head><meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../../genindex.html"><link rel="search" title="Search" href="../../search.html"><link rel="next" title="novalue" href="novalue.html"><link rel="prev" title="&lt;no title&gt;" href="../wrap.html">
+<link rel="index" title="Index" href="../../genindex.html"><link rel="search" title="Search" href="../../search.html"><link rel="next" title="novalue" href="novalue.html"><link rel="prev" title="wrap" href="../wrap.html">
 
     <!-- Generated with Sphinx 8.2.3 and Furo 2025.09.25 -->
-        <title>sentinels - Pythonic FP - Gadgets 3.1.2 documentation</title>
+        <title>sentinels - Pythonic FP - Gadgets 4.0.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=d111a655" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=580074bf" />
     <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
@@ -165,7 +165,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">Pythonic FP - Gadgets 3.1.2 documentation</div></a>
+      <a href="../../index.html"><div class="brand">Pythonic FP - Gadgets 4.0.0 documentation</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -176,7 +176,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
         <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
       </label>
     </div>
@@ -186,7 +186,7 @@
       
       <div class="sidebar-sticky"><a class="sidebar-brand" href="../../index.html">
   
-  <span class="sidebar-brand-text">Pythonic FP - Gadgets 3.1.2 documentation</span>
+  <span class="sidebar-brand-text">Pythonic FP - Gadgets 4.0.0 documentation</span>
   
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -207,12 +207,14 @@
 <p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
 <ul class="current">
 <li class="toctree-l1 current has-children"><a class="reference internal" href="../index.html">pythonic_fp.gadgets</a><input aria-label="Toggle navigation of pythonic_fp.gadgets" checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../iterate_arguments.html">iterate_arguments</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../latest_common_ancestor.html">latest_common_ancestor</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../functions/index.html">functions</a><input aria-label="Toggle navigation of functions" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../functions/first_common_ancestor.html">first_common_ancestor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../functions/iterate_over_arguments.html">iterate_over_arguments</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../box.html">box</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../wrap.html"><code class="docutils literal notranslate"><span class="pre">HWrap</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../wrap.html#pythonic_fp.gadgets.wrap.Wrap"><code class="docutils literal notranslate"><span class="pre">Wrap</span></code></a></li>
-<li class="toctree-l2 current has-children current-page"><a class="current reference internal" href="#">sentinels</a><input aria-label="Toggle navigation of sentinels" checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../wrap.html">wrap</a></li>
+<li class="toctree-l2 current has-children current-page"><a class="current reference internal" href="#">sentinels</a><input aria-label="Toggle navigation of sentinels" checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="novalue.html">novalue</a></li>
 <li class="toctree-l3"><a class="reference internal" href="flavored.html">flavored</a></li>
 </ul>
@@ -252,45 +254,25 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
             <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
           </label>
         </div>
         <article role="main" id="furo-main-content">
           <section id="module-pythonic_fp.gadgets.sentinels">
 <span id="sentinels"></span><h1>sentinels<a class="headerlink" href="#module-pythonic_fp.gadgets.sentinels" title="Link to this heading">¶</a></h1>
-<section id="sentinels-with-extras">
-<h2>Sentinels with Extras<a class="headerlink" href="#sentinels-with-extras" title="Link to this heading">¶</a></h2>
-<div class="table-wrapper docutils container">
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head"><p>Gadget</p></th>
-<th class="head"><p>Description</p></th>
-<th class="head"><p>Module</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">NoValue</span></code></p></td>
-<td><p>an actually , not potentially, missing value</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">sentinel.novalue</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">Sentinel[H:</span> <span class="pre">Hashable]</span></code></p></td>
-<td><p>distinct sentinels labeled by hashable values</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">sentinel.flavored</span></code></p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
 <div class="toctree-wrapper compound">
 <p class="caption" role="heading"><span class="caption-text">Sentinel Values</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="novalue.html">novalue</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="novalue.html#missing-value-sentinel">Missing Value Sentinel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="novalue.html#pythonic_fp.gadgets.sentinels.novalue.NoValue"><code class="docutils literal notranslate"><span class="pre">NoValue</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="novalue.html#pythonic_fp.gadgets.sentinels.novalue.NoValue.__eq__"><code class="docutils literal notranslate"><span class="pre">NoValue.__eq__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="novalue.html#pythonic_fp.gadgets.sentinels.novalue.NoValue.__ne__"><code class="docutils literal notranslate"><span class="pre">NoValue.__ne__()</span></code></a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="flavored.html">flavored</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="flavored.html#flavored-sentinels">Flavored Sentinels</a></li>
 <li class="toctree-l2"><a class="reference internal" href="flavored.html#pythonic_fp.gadgets.sentinels.flavored.Sentinel"><code class="docutils literal notranslate"><span class="pre">Sentinel</span></code></a><ul>
 <li class="toctree-l3"><a class="reference internal" href="flavored.html#pythonic_fp.gadgets.sentinels.flavored.Sentinel.flavor"><code class="docutils literal notranslate"><span class="pre">Sentinel.flavor()</span></code></a></li>
 </ul>
@@ -322,7 +304,7 @@
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">&lt;no title&gt;</div>
+                <div class="title">wrap</div>
                 
               </div>
             </a>
@@ -344,32 +326,13 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer">
+    <aside class="toc-drawer no-toc">
       
-      
-      <div class="toc-sticky toc-scroll">
-        <div class="toc-title-container">
-          <span class="toc-title">
-            On this page
-          </span>
-        </div>
-        <div class="toc-tree-container">
-          <div class="toc-tree">
-            <ul>
-<li><a class="reference internal" href="#">sentinels</a><ul>
-<li><a class="reference internal" href="#sentinels-with-extras">Sentinels with Extras</a></li>
-</ul>
-</li>
-</ul>
-
-          </div>
-        </div>
-      </div>
       
       
     </aside>
   </div>
-</div><script src="../../_static/documentation_options.js?v=4e920bdf"></script>
+</div><script src="../../_static/documentation_options.js?v=3304f9e4"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/scripts/furo.js?v=46bd48cc"></script>
