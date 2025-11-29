@@ -15,6 +15,6 @@ Pythonic Functional Programming Libraries
 
 - Try to make Python a pure functional language.
 - Implement a functional domain specific language in Python.
-- Force users to adopt some cryptic unpythonic coding style.
+- Force users to adopt very cryptic unpythonic coding styles.
 
 """

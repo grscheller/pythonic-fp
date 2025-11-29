@@ -3,7 +3,8 @@ Semantic versioning
 ===================
 
 Maintainer has adopted strict 3 digit `semantic versioning <https://semver.org>`_
-and does not put `caps on dependencies <https://iscinumpy.dev/post/bound-version-constraints>`_.
+and does not put
+`caps on dependencies <https://iscinumpy.dev/post/bound-version-constraints>`_.
 
 This allows for more package management flexibility for software developers using these
 libraries, and easier access to the latest features. For those concerned with stability,
@@ -26,7 +27,7 @@ Arrows point from modules to their dependencies.
 Internal
 --------
 
-There are no external dependencies except for the Python standard library.
+Dependencies between the Pythonic FP projects.
 
 .. graphviz::
 
@@ -54,7 +55,8 @@ There are no external dependencies except for the Python standard library.
 External
 --------
 
-All Python Std Library non-typing related dependencies.
+All Python external dependencies, except for typing related standard
+library dependencies.
 
 .. graphviz::
 
@@ -62,10 +64,11 @@ All Python Std Library non-typing related dependencies.
         bgcolor="#957fb8";
         node [style=filled, fillcolor="#181616", fontcolor="#dcd7ba"];
         edge [color="#181616", fontcolor="#dcd7ba"];
-        booleans -> threading;
-        gadgets -> inspect;
-        gadgets -> threading;
-        iterables -> enum;
+        "pythonic_fp.booleans" -> threading;
+        "pythonic_fp.gadgets" -> inspect;
+        "pythonic_fp.gadgets" -> threading;
+        "pythonic_fp.iterables" -> enum;
+        "pythonic_fp.numpy" -> numpy;
     }
 
 """

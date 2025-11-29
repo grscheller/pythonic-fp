@@ -10,7 +10,7 @@ is a central component of the Pythonic FP libraries.
 - Hosts on *GitHub Pages*
 
   - The Python FP homepage.
-  - Sphinx API & usage documentation for each Pythonic FP project.
+  - Sphinx API & documentation for each Pythonic FP project.
 
 - Provides locations for overarching CHANGELOG and README files.
 
@@ -18,7 +18,7 @@ is a central component of the Pythonic FP libraries.
 
 .. tip::
 
-    There is no need to install pythonic-fp itself, but does not hurt
+    There is no reason to install pythonic-fp itself, but does not hurt
     anything if it is installed.
 
 """
