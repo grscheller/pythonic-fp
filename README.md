@@ -20,7 +20,7 @@ For more information visit the project's
 | FP Tools | [pythonic-fp-fptools][104] | [gh][204] | [gh_pages][304] | pythonic_fp.fptools |
 | Gadgets | [pythonic-fp-gadgets][105] | [gh][205] | [gh_pages][305] | pythonic_fp.gadgets |
 | Iterables | [pythonic-fp-iterables][106] | [gh][206] | [gh_pages][306] | pythonic_fp.iterables |
-| Iterables | [pythonic-fp-numpy][107] | [gh][207] | [gh_pages][307] | pythonic_fp.numpy |
+| NumPy | [pythonic-fp-numpy][107] | [gh][207] | [gh_pages][307] | pythonic_fp.numpy |
 | Queues | [pythonic-fp-queues][108] | [gh][208] | [gh_pages][308] | pythonic_fp.queues |
 | Splitends | [pythonic-fp-splitends][109] | [gh][209] | [gh_pages][309] | pythonic_fp.splitends |
 
