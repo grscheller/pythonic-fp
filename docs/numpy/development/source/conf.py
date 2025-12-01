@@ -31,6 +31,9 @@ exclude_patterns: list[str] = []
 # -- Options for Sphinx
 autoclass_content = 'both'
 
+# -- Options for autodoc extension
+autodoc_member_order = 'bysource'
+
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 

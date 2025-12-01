@@ -269,6 +269,17 @@ but NumPy will auto-promote with operations on the same type.</p>
 stores a read-only copy of the NDArray given to the constructor and
 is hashable.</p>
 <dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArray.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ndarray</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dtype</span><span class="p"><span class="pre">[</span></span><span class="pre">generic</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArray.__init__" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArray.__repr__">
+<em class="property"><span class="k"><span class="pre">abstractmethod</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArray.__repr__" title="Link to this definition">¶</a></dt>
+<dd><p>Return repr(self).</p>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArray.__call__">
 <span class="sig-name descname"><span class="pre">__call__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dtype</span><span class="p"><span class="pre">[</span></span><span class="pre">number</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArray.__call__" title="Link to this definition">¶</a></dt>
 <dd><p>Return a reference to the stored NDArray.</p>
@@ -285,26 +296,15 @@ wrapped NDArray.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArray.__eq__">
-<span class="sig-name descname"><span class="pre">__eq__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">object</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArray.__eq__" title="Link to this definition">¶</a></dt>
-<dd><p>Return self==value.</p>
-</dd></dl>
-
-<dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArray.__hash__">
 <span class="sig-name descname"><span class="pre">__hash__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArray.__hash__" title="Link to this definition">¶</a></dt>
 <dd><p>Return hash(self).</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArray.__init__">
-<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ndarray</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dtype</span><span class="p"><span class="pre">[</span></span><span class="pre">generic</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArray.__init__" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArray.__repr__">
-<em class="property"><span class="k"><span class="pre">abstractmethod</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArray.__repr__" title="Link to this definition">¶</a></dt>
-<dd><p>Return repr(self).</p>
+<dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArray.__eq__">
+<span class="sig-name descname"><span class="pre">__eq__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">object</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArray.__eq__" title="Link to this definition">¶</a></dt>
+<dd><p>Return self==value.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -317,85 +317,6 @@ wrapped NDArray.</p>
 <dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArray.copy">
 <span class="sig-name descname"><span class="pre">copy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dtype</span><span class="p"><span class="pre">[</span></span><span class="pre">number</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArray.copy" title="Link to this definition">¶</a></dt>
 <dd><p>Return a copy of the wrapped NDArray.</p>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayBool">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.numpy.hashable_wrapped_ndarray.</span></span><span class="sig-name descname"><span class="pre">HWrapNDArrayBool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ndarray</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dtype</span><span class="p"><span class="pre">[</span></span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayBool" title="Link to this definition">¶</a></dt>
-<dd><p>Wrap NDArrays of Booleans.</p>
-<p>NumPy Booleans are actual Booleans, unlike Python bools which are
-subtypes of int.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<ul class="simple">
-<li><p><strong>*</strong> uses component-wise Boolean <strong>and</strong></p></li>
-<li><p><strong>+</strong> uses component-wise Boolean <strong>or</strong></p></li>
-<li><p><strong>&#64;</strong> does matrix multiplication using <strong>and</strong> then <strong>or</strong></p></li>
-</ul>
-</div>
-<dl class="py method">
-<dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayBool.__init__">
-<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ndarray</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dtype</span><span class="p"><span class="pre">[</span></span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayBool.__init__" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayBool.__repr__">
-<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayBool.__repr__" title="Link to this definition">¶</a></dt>
-<dd><p>Return repr(self).</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayBool.__weakref__">
-<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayBool.__weakref__" title="Link to this definition">¶</a></dt>
-<dd><p>list of weak references to the object</p>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayBytes">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.numpy.hashable_wrapped_ndarray.</span></span><span class="sig-name descname"><span class="pre">HWrapNDArrayBytes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ndarray</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dtype</span><span class="p"><span class="pre">[</span></span><span class="pre">bytes_</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayBytes" title="Link to this definition">¶</a></dt>
-<dd><p>Wrap NDArrays of null-terminated byte sequences.</p>
-<dl class="py method">
-<dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayBytes.__init__">
-<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ndarray</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dtype</span><span class="p"><span class="pre">[</span></span><span class="pre">bytes_</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayBytes.__init__" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayBytes.__repr__">
-<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayBytes.__repr__" title="Link to this definition">¶</a></dt>
-<dd><p>Return repr(self).</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayBytes.__weakref__">
-<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayBytes.__weakref__" title="Link to this definition">¶</a></dt>
-<dd><p>list of weak references to the object</p>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayDateTime">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.numpy.hashable_wrapped_ndarray.</span></span><span class="sig-name descname"><span class="pre">HWrapNDArrayDateTime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ndarray</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dtype</span><span class="p"><span class="pre">[</span></span><span class="pre">datetime64</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayDateTime" title="Link to this definition">¶</a></dt>
-<dd><p>Wrap NDArrays of references to arbitrary Python objects.</p>
-<dl class="py method">
-<dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayDateTime.__init__">
-<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ndarray</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dtype</span><span class="p"><span class="pre">[</span></span><span class="pre">datetime64</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayDateTime.__init__" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayDateTime.__repr__">
-<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayDateTime.__repr__" title="Link to this definition">¶</a></dt>
-<dd><p>Return repr(self).</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayDateTime.__weakref__">
-<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayDateTime.__weakref__" title="Link to this definition">¶</a></dt>
-<dd><p>list of weak references to the object</p>
 </dd></dl>
 
 </dd></dl>
@@ -418,29 +339,6 @@ subtypes of int.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayNumber.__weakref__">
 <span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayNumber.__weakref__" title="Link to this definition">¶</a></dt>
-<dd><p>list of weak references to the object</p>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayObject">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.numpy.hashable_wrapped_ndarray.</span></span><span class="sig-name descname"><span class="pre">HWrapNDArrayObject</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ndarray</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dtype</span><span class="p"><span class="pre">[</span></span><span class="pre">object_</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayObject" title="Link to this definition">¶</a></dt>
-<dd><p>Wrap NDArrays of references to arbitrary Python objects.</p>
-<dl class="py method">
-<dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayObject.__init__">
-<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ndarray</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dtype</span><span class="p"><span class="pre">[</span></span><span class="pre">object_</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayObject.__init__" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayObject.__repr__">
-<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayObject.__repr__" title="Link to this definition">¶</a></dt>
-<dd><p>Return repr(self).</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayObject.__weakref__">
-<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayObject.__weakref__" title="Link to this definition">¶</a></dt>
 <dd><p>list of weak references to the object</p>
 </dd></dl>
 
@@ -470,23 +368,23 @@ subtypes of int.</p>
 </dd></dl>
 
 <dl class="py class">
-<dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayTimeDelta">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.numpy.hashable_wrapped_ndarray.</span></span><span class="sig-name descname"><span class="pre">HWrapNDArrayTimeDelta</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ndarray</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dtype</span><span class="p"><span class="pre">[</span></span><span class="pre">timedelta64</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayTimeDelta" title="Link to this definition">¶</a></dt>
-<dd><p>Wrap NDArrays of references to arbitrary Python objects.</p>
+<dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayBytes">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.numpy.hashable_wrapped_ndarray.</span></span><span class="sig-name descname"><span class="pre">HWrapNDArrayBytes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ndarray</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dtype</span><span class="p"><span class="pre">[</span></span><span class="pre">bytes_</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayBytes" title="Link to this definition">¶</a></dt>
+<dd><p>Wrap NDArrays of null-terminated byte sequences.</p>
 <dl class="py method">
-<dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayTimeDelta.__init__">
-<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ndarray</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dtype</span><span class="p"><span class="pre">[</span></span><span class="pre">timedelta64</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayTimeDelta.__init__" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayBytes.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ndarray</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dtype</span><span class="p"><span class="pre">[</span></span><span class="pre">bytes_</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayBytes.__init__" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayTimeDelta.__repr__">
-<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayTimeDelta.__repr__" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayBytes.__repr__">
+<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayBytes.__repr__" title="Link to this definition">¶</a></dt>
 <dd><p>Return repr(self).</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayTimeDelta.__weakref__">
-<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayTimeDelta.__weakref__" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayBytes.__weakref__">
+<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayBytes.__weakref__" title="Link to this definition">¶</a></dt>
 <dd><p>list of weak references to the object</p>
 </dd></dl>
 
@@ -511,6 +409,108 @@ subtypes of int.</p>
 <dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayVoid.__weakref__">
 <span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayVoid.__weakref__" title="Link to this definition">¶</a></dt>
 <dd><p>list of weak references to the object</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayObject">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.numpy.hashable_wrapped_ndarray.</span></span><span class="sig-name descname"><span class="pre">HWrapNDArrayObject</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ndarray</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dtype</span><span class="p"><span class="pre">[</span></span><span class="pre">object_</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayObject" title="Link to this definition">¶</a></dt>
+<dd><p>Wrap NDArrays of references to arbitrary Python objects.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayObject.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ndarray</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dtype</span><span class="p"><span class="pre">[</span></span><span class="pre">object_</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayObject.__init__" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayObject.__repr__">
+<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayObject.__repr__" title="Link to this definition">¶</a></dt>
+<dd><p>Return repr(self).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayObject.__weakref__">
+<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayObject.__weakref__" title="Link to this definition">¶</a></dt>
+<dd><p>list of weak references to the object</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayDateTime">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.numpy.hashable_wrapped_ndarray.</span></span><span class="sig-name descname"><span class="pre">HWrapNDArrayDateTime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ndarray</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dtype</span><span class="p"><span class="pre">[</span></span><span class="pre">datetime64</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayDateTime" title="Link to this definition">¶</a></dt>
+<dd><p>Wrap NDArrays of references to arbitrary Python objects.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayDateTime.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ndarray</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dtype</span><span class="p"><span class="pre">[</span></span><span class="pre">datetime64</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayDateTime.__init__" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayDateTime.__repr__">
+<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayDateTime.__repr__" title="Link to this definition">¶</a></dt>
+<dd><p>Return repr(self).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayDateTime.__weakref__">
+<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayDateTime.__weakref__" title="Link to this definition">¶</a></dt>
+<dd><p>list of weak references to the object</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayTimeDelta">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.numpy.hashable_wrapped_ndarray.</span></span><span class="sig-name descname"><span class="pre">HWrapNDArrayTimeDelta</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ndarray</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dtype</span><span class="p"><span class="pre">[</span></span><span class="pre">timedelta64</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayTimeDelta" title="Link to this definition">¶</a></dt>
+<dd><p>Wrap NDArrays of references to arbitrary Python objects.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayTimeDelta.__weakref__">
+<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayTimeDelta.__weakref__" title="Link to this definition">¶</a></dt>
+<dd><p>list of weak references to the object</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayTimeDelta.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ndarray</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dtype</span><span class="p"><span class="pre">[</span></span><span class="pre">timedelta64</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayTimeDelta.__init__" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayTimeDelta.__repr__">
+<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayTimeDelta.__repr__" title="Link to this definition">¶</a></dt>
+<dd><p>Return repr(self).</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayBool">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.numpy.hashable_wrapped_ndarray.</span></span><span class="sig-name descname"><span class="pre">HWrapNDArrayBool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ndarray</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dtype</span><span class="p"><span class="pre">[</span></span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayBool" title="Link to this definition">¶</a></dt>
+<dd><p>Wrap NDArrays of Booleans.</p>
+<p>NumPy Booleans are actual Booleans, unlike Python bools which are
+subtypes of int.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p><strong>*</strong> uses component-wise Boolean <strong>and</strong></p></li>
+<li><p><strong>+</strong> uses component-wise Boolean <strong>or</strong></p></li>
+<li><p><strong>&#64;</strong> does matrix multiplication using <strong>and</strong> then <strong>or</strong></p></li>
+</ul>
+</div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayBool.__weakref__">
+<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayBool.__weakref__" title="Link to this definition">¶</a></dt>
+<dd><p>list of weak references to the object</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayBool.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ndarray</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dtype</span><span class="p"><span class="pre">[</span></span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayBool.__init__" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayBool.__repr__">
+<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayBool.__repr__" title="Link to this definition">¶</a></dt>
+<dd><p>Return repr(self).</p>
 </dd></dl>
 
 </dd></dl>
@@ -567,31 +567,13 @@ subtypes of int.</p>
 <li><a class="reference internal" href="#">hashable_wrapped_ndarray</a><ul>
 <li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.DTypes"><code class="docutils literal notranslate"><span class="pre">DTypes</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArray"><code class="docutils literal notranslate"><span class="pre">HWrapNDArray</span></code></a><ul>
-<li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArray.__call__"><code class="docutils literal notranslate"><span class="pre">HWrapNDArray.__call__()</span></code></a></li>
-<li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArray.__eq__"><code class="docutils literal notranslate"><span class="pre">HWrapNDArray.__eq__()</span></code></a></li>
-<li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArray.__hash__"><code class="docutils literal notranslate"><span class="pre">HWrapNDArray.__hash__()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArray.__init__"><code class="docutils literal notranslate"><span class="pre">HWrapNDArray.__init__()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArray.__repr__"><code class="docutils literal notranslate"><span class="pre">HWrapNDArray.__repr__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArray.__call__"><code class="docutils literal notranslate"><span class="pre">HWrapNDArray.__call__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArray.__hash__"><code class="docutils literal notranslate"><span class="pre">HWrapNDArray.__hash__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArray.__eq__"><code class="docutils literal notranslate"><span class="pre">HWrapNDArray.__eq__()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArray.__str__"><code class="docutils literal notranslate"><span class="pre">HWrapNDArray.__str__()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArray.copy"><code class="docutils literal notranslate"><span class="pre">HWrapNDArray.copy()</span></code></a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayBool"><code class="docutils literal notranslate"><span class="pre">HWrapNDArrayBool</span></code></a><ul>
-<li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayBool.__init__"><code class="docutils literal notranslate"><span class="pre">HWrapNDArrayBool.__init__()</span></code></a></li>
-<li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayBool.__repr__"><code class="docutils literal notranslate"><span class="pre">HWrapNDArrayBool.__repr__()</span></code></a></li>
-<li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayBool.__weakref__"><code class="docutils literal notranslate"><span class="pre">HWrapNDArrayBool.__weakref__</span></code></a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayBytes"><code class="docutils literal notranslate"><span class="pre">HWrapNDArrayBytes</span></code></a><ul>
-<li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayBytes.__init__"><code class="docutils literal notranslate"><span class="pre">HWrapNDArrayBytes.__init__()</span></code></a></li>
-<li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayBytes.__repr__"><code class="docutils literal notranslate"><span class="pre">HWrapNDArrayBytes.__repr__()</span></code></a></li>
-<li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayBytes.__weakref__"><code class="docutils literal notranslate"><span class="pre">HWrapNDArrayBytes.__weakref__</span></code></a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayDateTime"><code class="docutils literal notranslate"><span class="pre">HWrapNDArrayDateTime</span></code></a><ul>
-<li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayDateTime.__init__"><code class="docutils literal notranslate"><span class="pre">HWrapNDArrayDateTime.__init__()</span></code></a></li>
-<li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayDateTime.__repr__"><code class="docutils literal notranslate"><span class="pre">HWrapNDArrayDateTime.__repr__()</span></code></a></li>
-<li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayDateTime.__weakref__"><code class="docutils literal notranslate"><span class="pre">HWrapNDArrayDateTime.__weakref__</span></code></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayNumber"><code class="docutils literal notranslate"><span class="pre">HWrapNDArrayNumber</span></code></a><ul>
@@ -600,28 +582,46 @@ subtypes of int.</p>
 <li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayNumber.__weakref__"><code class="docutils literal notranslate"><span class="pre">HWrapNDArrayNumber.__weakref__</span></code></a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayObject"><code class="docutils literal notranslate"><span class="pre">HWrapNDArrayObject</span></code></a><ul>
-<li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayObject.__init__"><code class="docutils literal notranslate"><span class="pre">HWrapNDArrayObject.__init__()</span></code></a></li>
-<li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayObject.__repr__"><code class="docutils literal notranslate"><span class="pre">HWrapNDArrayObject.__repr__()</span></code></a></li>
-<li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayObject.__weakref__"><code class="docutils literal notranslate"><span class="pre">HWrapNDArrayObject.__weakref__</span></code></a></li>
-</ul>
-</li>
 <li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayString"><code class="docutils literal notranslate"><span class="pre">HWrapNDArrayString</span></code></a><ul>
 <li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayString.__init__"><code class="docutils literal notranslate"><span class="pre">HWrapNDArrayString.__init__()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayString.__repr__"><code class="docutils literal notranslate"><span class="pre">HWrapNDArrayString.__repr__()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayString.__weakref__"><code class="docutils literal notranslate"><span class="pre">HWrapNDArrayString.__weakref__</span></code></a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayTimeDelta"><code class="docutils literal notranslate"><span class="pre">HWrapNDArrayTimeDelta</span></code></a><ul>
-<li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayTimeDelta.__init__"><code class="docutils literal notranslate"><span class="pre">HWrapNDArrayTimeDelta.__init__()</span></code></a></li>
-<li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayTimeDelta.__repr__"><code class="docutils literal notranslate"><span class="pre">HWrapNDArrayTimeDelta.__repr__()</span></code></a></li>
-<li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayTimeDelta.__weakref__"><code class="docutils literal notranslate"><span class="pre">HWrapNDArrayTimeDelta.__weakref__</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayBytes"><code class="docutils literal notranslate"><span class="pre">HWrapNDArrayBytes</span></code></a><ul>
+<li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayBytes.__init__"><code class="docutils literal notranslate"><span class="pre">HWrapNDArrayBytes.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayBytes.__repr__"><code class="docutils literal notranslate"><span class="pre">HWrapNDArrayBytes.__repr__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayBytes.__weakref__"><code class="docutils literal notranslate"><span class="pre">HWrapNDArrayBytes.__weakref__</span></code></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayVoid"><code class="docutils literal notranslate"><span class="pre">HWrapNDArrayVoid</span></code></a><ul>
 <li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayVoid.__init__"><code class="docutils literal notranslate"><span class="pre">HWrapNDArrayVoid.__init__()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayVoid.__repr__"><code class="docutils literal notranslate"><span class="pre">HWrapNDArrayVoid.__repr__()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayVoid.__weakref__"><code class="docutils literal notranslate"><span class="pre">HWrapNDArrayVoid.__weakref__</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayObject"><code class="docutils literal notranslate"><span class="pre">HWrapNDArrayObject</span></code></a><ul>
+<li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayObject.__init__"><code class="docutils literal notranslate"><span class="pre">HWrapNDArrayObject.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayObject.__repr__"><code class="docutils literal notranslate"><span class="pre">HWrapNDArrayObject.__repr__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayObject.__weakref__"><code class="docutils literal notranslate"><span class="pre">HWrapNDArrayObject.__weakref__</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayDateTime"><code class="docutils literal notranslate"><span class="pre">HWrapNDArrayDateTime</span></code></a><ul>
+<li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayDateTime.__init__"><code class="docutils literal notranslate"><span class="pre">HWrapNDArrayDateTime.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayDateTime.__repr__"><code class="docutils literal notranslate"><span class="pre">HWrapNDArrayDateTime.__repr__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayDateTime.__weakref__"><code class="docutils literal notranslate"><span class="pre">HWrapNDArrayDateTime.__weakref__</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayTimeDelta"><code class="docutils literal notranslate"><span class="pre">HWrapNDArrayTimeDelta</span></code></a><ul>
+<li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayTimeDelta.__weakref__"><code class="docutils literal notranslate"><span class="pre">HWrapNDArrayTimeDelta.__weakref__</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayTimeDelta.__init__"><code class="docutils literal notranslate"><span class="pre">HWrapNDArrayTimeDelta.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayTimeDelta.__repr__"><code class="docutils literal notranslate"><span class="pre">HWrapNDArrayTimeDelta.__repr__()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayBool"><code class="docutils literal notranslate"><span class="pre">HWrapNDArrayBool</span></code></a><ul>
+<li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayBool.__weakref__"><code class="docutils literal notranslate"><span class="pre">HWrapNDArrayBool.__weakref__</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayBool.__init__"><code class="docutils literal notranslate"><span class="pre">HWrapNDArrayBool.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.numpy.hashable_wrapped_ndarray.HWrapNDArrayBool.__repr__"><code class="docutils literal notranslate"><span class="pre">HWrapNDArrayBool.__repr__()</span></code></a></li>
 </ul>
 </li>
 </ul>
