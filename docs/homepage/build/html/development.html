@@ -6,7 +6,7 @@
 <link rel="index" title="Index" href="genindex.html"><link rel="search" title="Search" href="search.html"><link rel="next" title="Pythonic FP project docs" href="docs.html"><link rel="prev" title="Overview" href="overview.html">
 
     <!-- Generated with Sphinx 8.2.3 and Furo 2025.09.25 -->
-        <title>Development - Pythonic FP 3.2.3 documentation</title>
+        <title>Development - Pythonic FP 3.3.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d111a655" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=580074bf" />
     <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=4ae1632d" />
@@ -165,7 +165,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="index.html"><div class="brand">Pythonic FP 3.2.3 documentation</div></a>
+      <a href="index.html"><div class="brand">Pythonic FP 3.3.0 documentation</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -186,7 +186,7 @@
       
       <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
   
-  <span class="sidebar-brand-text">Pythonic FP 3.2.3 documentation</span>
+  <span class="sidebar-brand-text">Pythonic FP 3.3.0 documentation</span>
   
 </a><form class="sidebar-search-container" method="get" action="search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -251,7 +251,8 @@
 <section id="semantic-versioning">
 <h2>Semantic versioning<a class="headerlink" href="#semantic-versioning" title="Link to this heading">¶</a></h2>
 <p>Maintainer has adopted strict 3 digit <a class="reference external" href="https://semver.org">semantic versioning</a>
-and does not put <a class="reference external" href="https://iscinumpy.dev/post/bound-version-constraints">caps on dependencies</a>.</p>
+and does not put
+<a class="reference external" href="https://iscinumpy.dev/post/bound-version-constraints">caps on dependencies</a>.</p>
 <p>This allows for more package management flexibility for software developers using these
 libraries, and easier access to the latest features. For those concerned with stability,
 periodically known consistent sets of releases are given in the Releases section of
@@ -268,7 +269,7 @@ these docs.</p>
 <p>Arrows point from modules to their dependencies.</p>
 <section id="internal">
 <h3>Internal<a class="headerlink" href="#internal" title="Link to this heading">¶</a></h3>
-<p>There are no external dependencies except for the Python standard library.</p>
+<p>Dependencies between the Pythonic FP projects.</p>
 <div class="graphviz"><img src="_images/graphviz-e69e3d373005a42b9b2cfa4fd5b02a76c2c72720.png" alt="digraph Modules {
     bgcolor=&quot;#957fb8&quot;;
     node [style=filled, fillcolor=&quot;#181616&quot;, fontcolor=&quot;#dcd7ba&quot;];
@@ -292,15 +293,17 @@ these docs.</p>
 </section>
 <section id="external">
 <h3>External<a class="headerlink" href="#external" title="Link to this heading">¶</a></h3>
-<p>All Python Std Library non-typing related dependencies.</p>
-<div class="graphviz"><img src="_images/graphviz-4b50bbfca58d39cb737c999633f55aaad006578f.png" alt="digraph Modules {
+<p>All Python external dependencies, except for typing related standard
+library dependencies.</p>
+<div class="graphviz"><img src="_images/graphviz-82010abe00f58a0b2f4607ba3876c9870d3bc05d.png" alt="digraph Modules {
     bgcolor=&quot;#957fb8&quot;;
     node [style=filled, fillcolor=&quot;#181616&quot;, fontcolor=&quot;#dcd7ba&quot;];
     edge [color=&quot;#181616&quot;, fontcolor=&quot;#dcd7ba&quot;];
-    booleans -&gt; threading;
-    gadgets -&gt; inspect;
-    gadgets -&gt; threading;
-    iterables -&gt; enum;
+    &quot;pythonic_fp.booleans&quot; -&gt; threading;
+    &quot;pythonic_fp.gadgets&quot; -&gt; inspect;
+    &quot;pythonic_fp.gadgets&quot; -&gt; threading;
+    &quot;pythonic_fp.iterables&quot; -&gt; enum;
+    &quot;pythonic_fp.numpy&quot; -&gt; numpy;
 }" class="graphviz" /></div>
 </section>
 </section>
@@ -314,7 +317,7 @@ is a central component of the Pythonic FP libraries.</p>
 <li><p>Hosts on <em>GitHub Pages</em></p>
 <ul>
 <li><p>The Python FP homepage.</p></li>
-<li><p>Sphinx API &amp; usage documentation for each Pythonic FP project.</p></li>
+<li><p>Sphinx API &amp; documentation for each Pythonic FP project.</p></li>
 </ul>
 </li>
 <li><p>Provides locations for overarching CHANGELOG and README files.</p>
@@ -325,7 +328,7 @@ is a central component of the Pythonic FP libraries.</p>
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>There is no need to install pythonic-fp itself, but does not hurt
+<p>There is no reason to install pythonic-fp itself, but does not hurt
 anything if it is installed.</p>
 </div>
 </section>
@@ -406,7 +409,7 @@ anything if it is installed.</p>
       
     </aside>
   </div>
-</div><script src="_static/documentation_options.js?v=7895512d"></script>
+</div><script src="_static/documentation_options.js?v=3eb8911e"></script>
     <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/scripts/furo.js?v=46bd48cc"></script>
