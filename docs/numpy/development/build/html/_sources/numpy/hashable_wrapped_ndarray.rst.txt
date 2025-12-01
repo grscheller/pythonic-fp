@@ -1,0 +1,5 @@
+hashable_wrapped_ndarray
+========================
+
+.. automodule:: pythonic_fp.numpy.hashable_wrapped_ndarray
+    :members:

@@ -2,21 +2,27 @@
 
 ## pythonic-fp projects
 
-Developer Tools supporting a functional style of programming yet endeavoring to
-remain Pythonic. All project names begin ``pythonic-fp-`` on PyPI and are Python
-namespace packages under the ``pythonic_fp`` name.
+Developer Tools supporting a functional style of programming yet
+endeavoring to remain Pythonic. All project names begin ``pythonic-fp-``
+on PyPI and are Python namespace packages under the ``pythonic_fp``
+name.
 
 ## Release based versioning
 
-Unlike the PyPI projects that make up Pythonic FP, which use strict semantic versioning,
-the overall version number is based on consistent relative release. The release string
-changes when
+Unlike the PyPI projects that make up Pythonic FP, which use strict
+semantic versioning, the overall version number is based on consistent
+relative release. The release string changes when
 
 - **MAJOR:** a consistent, coordinated release of Pythonic FP PyPI projects happens
-- **MINOR:** breaking API changes are made to a Pythonic FP PyPI project
+- **MINOR:** breaking API changes are made to a Pythonic FP PyPI project or new project released
 - **PATCH:** minor code improvements and homepage updates are made
 
 ## Important Milestones
+
+### 2025-11-30 - PyPI release v3.3.0
+
+PyPI release of pythonic-fp-numpy was release. Ability to wrap
+a non-writable NumPy NDArray in a hashable container.
 
 ### 2025-10-12 - PyPI release v3.2.2
 
@@ -24,7 +30,8 @@ Incorporated lessons learned from Boring Math project into homepage.
 
 ### 2025-10-06 - Update
 
-Rebuilt homepage (development) and all Pythonic FP projects docs with furo theme.
+Rebuilt homepage (development) and all Pythonic FP projects docs with
+furo theme.
 
 ### 2025-09-30 - PyPI release v3.2.1
 
@@ -156,8 +163,8 @@ minimal dependencies.
 
 ### 2025-07-30 - Updated all Sphinx docs
 
-Updated Sphinx docs for all pythonic_fp namespace projects to the latest format.
-Still need to do consistency checks.
+Updated Sphinx docs for all pythonic_fp namespace projects to the latest
+format. Still need to do consistency checks.
 
 ### 2025-07-30 - Updated Sphinx docs for pythonic_fp.queues
 
@@ -179,12 +186,13 @@ pythonic-fp.circulararray and pythonic-fp.queues.
 
 ### 2025-07-21 - Unified coordinated upgrade all pytonic-fp projects
 
-Updated all pyprojects.toml files and corresponding Sphinx documentation for
-an upcoming coordinated release of all packages. From a flowchart of library
-dependencies, a better organization became apparent to the maintainer. Will be
-removing all "from future import annotations" from the code. All this does is
-replace module names with strings. It was a hack to support a future feature
-that will never happen. This future import will be deprecated in Python 3.14.
+Updated all pyproject.toml files and corresponding Sphinx documentation
+for an upcoming coordinated release of all packages. From a flowchart of
+library dependencies, a better organization became apparent to the
+maintainer. Will be removing all "from future import annotations" from
+the code. All this does is replace module names with strings. It was
+a hack to support a future feature that will never happen. This future
+import will be deprecated in Python 3.14.
 
 - rename GH-Pages mount point from pypi-release-docs/ to just docs/
 - removed ``/API/`` from ``docs/*/API/*``
