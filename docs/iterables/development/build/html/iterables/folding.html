@@ -277,6 +277,37 @@
 </dd></dl>
 
 <dl class="py function">
+<dt class="sig sig-object py" id="pythonic_fp.iterables.folding.reduce_left">
+<span class="sig-prename descclassname"><span class="pre">pythonic_fp.iterables.folding.</span></span><span class="sig-name descname"><span class="pre">reduce_left</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">D</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">D</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">D</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">D</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Never</span></span></span><a class="headerlink" href="#pythonic_fp.iterables.folding.reduce_left" title="Link to this definition">¶</a></dt>
+<dd><p>Fold an iterable left with a function.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This function never return if given an infinite iterable.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This function does not catch or re-raises exceptions from <code class="docutils literal notranslate"><span class="pre">f</span></code>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>iterable</strong> – iterable to be reduced (folded)</p></li>
+<li><p><strong>f</strong> – two parameter function, first parameter for accumulated value</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>reduced value from the iterable</p>
+</dd>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>StopIteration</strong> – when called on an empty iterable</p></li>
+<li><p><strong>Exception</strong> – does not catch any exceptions from <code class="docutils literal notranslate"><span class="pre">f</span></code></p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
 <dt class="sig sig-object py" id="pythonic_fp.iterables.folding.fold_left">
 <span class="sig-prename descclassname"><span class="pre">pythonic_fp.iterables.folding.</span></span><span class="sig-name descname"><span class="pre">fold_left</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">L</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">D</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">L</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">L</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">L</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Never</span></span></span><a class="headerlink" href="#pythonic_fp.iterables.folding.fold_left" title="Link to this definition">¶</a></dt>
 <dd><p>Fold an iterable left with a function and initial value.</p>
@@ -334,37 +365,6 @@ exception what-so-ever. The exception is thrown away.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>MayBe of a successfully folded value, otherwise MayBe()</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="pythonic_fp.iterables.folding.reduce_left">
-<span class="sig-prename descclassname"><span class="pre">pythonic_fp.iterables.folding.</span></span><span class="sig-name descname"><span class="pre">reduce_left</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">D</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">D</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">D</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">D</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Never</span></span></span><a class="headerlink" href="#pythonic_fp.iterables.folding.reduce_left" title="Link to this definition">¶</a></dt>
-<dd><p>Fold an iterable left with a function.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>This function never return if given an infinite iterable.</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>This function does not catch or re-raises exceptions from <code class="docutils literal notranslate"><span class="pre">f</span></code>.</p>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>iterable</strong> – iterable to be reduced (folded)</p></li>
-<li><p><strong>f</strong> – two parameter function, first parameter for accumulated value</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>reduced value from the iterable</p>
-</dd>
-<dt class="field-odd">Raises<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>StopIteration</strong> – when called on an empty iterable</p></li>
-<li><p><strong>Exception</strong> – does not catch any exceptions from <code class="docutils literal notranslate"><span class="pre">f</span></code></p></li>
-</ul>
 </dd>
 </dl>
 </dd></dl>
@@ -476,9 +476,9 @@ exception what-so-ever. The exception is thrown away.</p>
             <ul>
 <li><a class="reference internal" href="#">iterables.folding</a><ul>
 <li><a class="reference internal" href="#pythonic_fp.iterables.folding.accumulate"><code class="docutils literal notranslate"><span class="pre">accumulate()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.iterables.folding.reduce_left"><code class="docutils literal notranslate"><span class="pre">reduce_left()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.iterables.folding.fold_left"><code class="docutils literal notranslate"><span class="pre">fold_left()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.iterables.folding.maybe_fold_left"><code class="docutils literal notranslate"><span class="pre">maybe_fold_left()</span></code></a></li>
-<li><a class="reference internal" href="#pythonic_fp.iterables.folding.reduce_left"><code class="docutils literal notranslate"><span class="pre">reduce_left()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.iterables.folding.sc_reduce_left"><code class="docutils literal notranslate"><span class="pre">sc_reduce_left()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.iterables.folding.sc_reduce_right"><code class="docutils literal notranslate"><span class="pre">sc_reduce_right()</span></code></a></li>
 </ul>

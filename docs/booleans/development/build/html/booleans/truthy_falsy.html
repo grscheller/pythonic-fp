@@ -277,6 +277,52 @@ bitwise operators.</p>
 <dd class="field-even"><p>Either The singleton truthy or singleton falsy subtypes.</p>
 </dd>
 </dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.booleans.truthy_falsy.TF_Bool.__new__">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">__new__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cls</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">witness</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flavor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Hashable</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">NoValue()</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.booleans.truthy_falsy.TF_Bool" title="pythonic_fp.booleans.truthy_falsy.TF_Bool"><span class="pre">TF_Bool</span></a></span></span><a class="headerlink" href="#pythonic_fp.booleans.truthy_falsy.TF_Bool.__new__" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>witness</strong> – Determines which subtype, <code class="docutils literal notranslate"><span class="pre">T_Bool</span></code> or <code class="docutils literal notranslate"><span class="pre">F_Bool</span></code> is returned.</p></li>
+<li><p><strong>flavor</strong> – Ignored parameter, only two flavors, one truthy and one falsy.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Either The singleton truthy or singleton falsy subtypes.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.booleans.truthy_falsy.TF_Bool.__repr__">
+<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#pythonic_fp.booleans.truthy_falsy.TF_Bool.__repr__" title="Link to this definition">¶</a></dt>
+<dd><p>Return repr(self).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.booleans.truthy_falsy.TF_Bool.__invert__">
+<span class="sig-name descname"><span class="pre">__invert__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.booleans.truthy_falsy.TF_Bool" title="pythonic_fp.booleans.truthy_falsy.TF_Bool"><span class="pre">TF_Bool</span></a></span></span><a class="headerlink" href="#pythonic_fp.booleans.truthy_falsy.TF_Bool.__invert__" title="Link to this definition">¶</a></dt>
+<dd><p>~self</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.booleans.truthy_falsy.TF_Bool.__and__">
+<span class="sig-name descname"><span class="pre">__and__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="subtypable.html#pythonic_fp.booleans.subtypable.SBool" title="pythonic_fp.booleans.subtypable.SBool"><span class="pre">SBool</span></a></span></span><a class="headerlink" href="#pythonic_fp.booleans.truthy_falsy.TF_Bool.__and__" title="Link to this definition">¶</a></dt>
+<dd><p>Return self&amp;value.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.booleans.truthy_falsy.TF_Bool.__or__">
+<span class="sig-name descname"><span class="pre">__or__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="subtypable.html#pythonic_fp.booleans.subtypable.SBool" title="pythonic_fp.booleans.subtypable.SBool"><span class="pre">SBool</span></a></span></span><a class="headerlink" href="#pythonic_fp.booleans.truthy_falsy.TF_Bool.__or__" title="Link to this definition">¶</a></dt>
+<dd><p>Return self|value.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.booleans.truthy_falsy.TF_Bool.__xor__">
+<span class="sig-name descname"><span class="pre">__xor__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="subtypable.html#pythonic_fp.booleans.subtypable.SBool" title="pythonic_fp.booleans.subtypable.SBool"><span class="pre">SBool</span></a></span></span><a class="headerlink" href="#pythonic_fp.booleans.truthy_falsy.TF_Bool.__xor__" title="Link to this definition">¶</a></dt>
+<dd><p>Return self^value.</p>
+</dd></dl>
+
 </dd></dl>
 
 <dl class="py class">
@@ -293,6 +339,28 @@ bitwise operators.</p>
 <dd class="field-even"><p>The truthy <code class="docutils literal notranslate"><span class="pre">T_Bool</span></code> singleton instance.</p>
 </dd>
 </dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.booleans.truthy_falsy.T_Bool.__new__">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">__new__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cls</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">witness</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">object</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">NoValue()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flavor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Hashable</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">NoValue()</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.booleans.truthy_falsy.T_Bool" title="pythonic_fp.booleans.truthy_falsy.T_Bool"><span class="pre">T_Bool</span></a></span></span><a class="headerlink" href="#pythonic_fp.booleans.truthy_falsy.T_Bool.__new__" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>witness</strong> – Ignored parameter, a T_Bool is always truthy.</p></li>
+<li><p><strong>flavor</strong> – Ignored parameter, only one truthy “flavor”.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The truthy <code class="docutils literal notranslate"><span class="pre">T_Bool</span></code> singleton instance.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.booleans.truthy_falsy.T_Bool.__repr__">
+<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#pythonic_fp.booleans.truthy_falsy.T_Bool.__repr__" title="Link to this definition">¶</a></dt>
+<dd><p>Return repr(self).</p>
+</dd></dl>
+
 </dd></dl>
 
 <dl class="py class">
@@ -309,6 +377,28 @@ bitwise operators.</p>
 <dd class="field-even"><p>The falsy <code class="docutils literal notranslate"><span class="pre">F_Bool</span></code> singleton instance.</p>
 </dd>
 </dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.booleans.truthy_falsy.F_Bool.__new__">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">__new__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cls</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">witness</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">object</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">NoValue()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flavor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Hashable</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">NoValue()</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.booleans.truthy_falsy.F_Bool" title="pythonic_fp.booleans.truthy_falsy.F_Bool"><span class="pre">F_Bool</span></a></span></span><a class="headerlink" href="#pythonic_fp.booleans.truthy_falsy.F_Bool.__new__" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>witness</strong> – Parameter ignored, an <code class="docutils literal notranslate"><span class="pre">F_Bool</span></code> is always falsy.</p></li>
+<li><p><strong>flavor</strong> – Parameter ignored, only one falsy “flavor”.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The falsy <code class="docutils literal notranslate"><span class="pre">F_Bool</span></code> singleton instance.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.booleans.truthy_falsy.F_Bool.__repr__">
+<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#pythonic_fp.booleans.truthy_falsy.F_Bool.__repr__" title="Link to this definition">¶</a></dt>
+<dd><p>Return repr(self).</p>
+</dd></dl>
+
 </dd></dl>
 
 <dl class="py data">
@@ -379,9 +469,25 @@ bitwise operators.</p>
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#">module truthy_falsy</a><ul>
-<li><a class="reference internal" href="#pythonic_fp.booleans.truthy_falsy.TF_Bool"><code class="docutils literal notranslate"><span class="pre">TF_Bool</span></code></a></li>
-<li><a class="reference internal" href="#pythonic_fp.booleans.truthy_falsy.T_Bool"><code class="docutils literal notranslate"><span class="pre">T_Bool</span></code></a></li>
-<li><a class="reference internal" href="#pythonic_fp.booleans.truthy_falsy.F_Bool"><code class="docutils literal notranslate"><span class="pre">F_Bool</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.booleans.truthy_falsy.TF_Bool"><code class="docutils literal notranslate"><span class="pre">TF_Bool</span></code></a><ul>
+<li><a class="reference internal" href="#pythonic_fp.booleans.truthy_falsy.TF_Bool.__new__"><code class="docutils literal notranslate"><span class="pre">TF_Bool.__new__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.booleans.truthy_falsy.TF_Bool.__repr__"><code class="docutils literal notranslate"><span class="pre">TF_Bool.__repr__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.booleans.truthy_falsy.TF_Bool.__invert__"><code class="docutils literal notranslate"><span class="pre">TF_Bool.__invert__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.booleans.truthy_falsy.TF_Bool.__and__"><code class="docutils literal notranslate"><span class="pre">TF_Bool.__and__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.booleans.truthy_falsy.TF_Bool.__or__"><code class="docutils literal notranslate"><span class="pre">TF_Bool.__or__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.booleans.truthy_falsy.TF_Bool.__xor__"><code class="docutils literal notranslate"><span class="pre">TF_Bool.__xor__()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#pythonic_fp.booleans.truthy_falsy.T_Bool"><code class="docutils literal notranslate"><span class="pre">T_Bool</span></code></a><ul>
+<li><a class="reference internal" href="#pythonic_fp.booleans.truthy_falsy.T_Bool.__new__"><code class="docutils literal notranslate"><span class="pre">T_Bool.__new__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.booleans.truthy_falsy.T_Bool.__repr__"><code class="docutils literal notranslate"><span class="pre">T_Bool.__repr__()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#pythonic_fp.booleans.truthy_falsy.F_Bool"><code class="docutils literal notranslate"><span class="pre">F_Bool</span></code></a><ul>
+<li><a class="reference internal" href="#pythonic_fp.booleans.truthy_falsy.F_Bool.__new__"><code class="docutils literal notranslate"><span class="pre">F_Bool.__new__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.booleans.truthy_falsy.F_Bool.__repr__"><code class="docutils literal notranslate"><span class="pre">F_Bool.__repr__()</span></code></a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#pythonic_fp.booleans.truthy_falsy.ALWAYS"><code class="docutils literal notranslate"><span class="pre">ALWAYS</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.booleans.truthy_falsy.NEVER"><code class="docutils literal notranslate"><span class="pre">NEVER</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.booleans.truthy_falsy.TF_Boolean"><code class="docutils literal notranslate"><span class="pre">TF_Boolean</span></code></a></li>

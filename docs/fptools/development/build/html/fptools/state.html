@@ -271,9 +271,32 @@ A pure FP implementation for the State Monad</p>
 </li>
 </ul>
 <dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.fptools.state.State.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">S</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">A</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">S</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pythonic_fp.fptools.state.State.__init__" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.fptools.state.State.bind">
 <span class="sig-name descname"><span class="pre">bind</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">g</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">A</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#pythonic_fp.fptools.state.State" title="pythonic_fp.fptools.state.State"><span class="pre">State</span></a><span class="p"><span class="pre">[</span></span><span class="pre">S</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">B</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.fptools.state.State" title="pythonic_fp.fptools.state.State"><span class="pre">State</span></a><span class="p"><span class="pre">[</span></span><span class="pre">S</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">B</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.fptools.state.State.bind" title="Link to this definition">¶</a></dt>
 <dd><p>Perform function composition while propagating state.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.fptools.state.State.eval">
+<span class="sig-name descname"><span class="pre">eval</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">init</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">S</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">A</span></span></span><a class="headerlink" href="#pythonic_fp.fptools.state.State.eval" title="Link to this definition">¶</a></dt>
+<dd><p>Evaluate the Monad via passing an initial state.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.fptools.state.State.map">
+<span class="sig-name descname"><span class="pre">map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">A</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">B</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.fptools.state.State" title="pythonic_fp.fptools.state.State"><span class="pre">State</span></a><span class="p"><span class="pre">[</span></span><span class="pre">S</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">B</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.fptools.state.State.map" title="Link to this definition">¶</a></dt>
+<dd><p>Map a function over a run action.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.fptools.state.State.map2">
+<span class="sig-name descname"><span class="pre">map2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sb</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#pythonic_fp.fptools.state.State" title="pythonic_fp.fptools.state.State"><span class="pre">State</span></a><span class="p"><span class="pre">[</span></span><span class="pre">S</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">B</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">A</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">B</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">C</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.fptools.state.State" title="pythonic_fp.fptools.state.State"><span class="pre">State</span></a><span class="p"><span class="pre">[</span></span><span class="pre">S</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">C</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.fptools.state.State.map2" title="Link to this definition">¶</a></dt>
+<dd><p>Map a function of two variables over two state actions.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -283,9 +306,9 @@ A pure FP implementation for the State Monad</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="pythonic_fp.fptools.state.State.eval">
-<span class="sig-name descname"><span class="pre">eval</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">init</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">S</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">A</span></span></span><a class="headerlink" href="#pythonic_fp.fptools.state.State.eval" title="Link to this definition">¶</a></dt>
-<dd><p>Evaluate the Monad via passing an initial state.</p>
+<dt class="sig sig-object py" id="pythonic_fp.fptools.state.State.unit">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">unit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">B</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.fptools.state.State" title="pythonic_fp.fptools.state.State"><span class="pre">State</span></a></span></span><a class="headerlink" href="#pythonic_fp.fptools.state.State.unit" title="Link to this definition">¶</a></dt>
+<dd><p>Create a State action returning the given value.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -300,15 +323,13 @@ A pure FP implementation for the State Monad</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="pythonic_fp.fptools.state.State.map">
-<span class="sig-name descname"><span class="pre">map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">A</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">B</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.fptools.state.State" title="pythonic_fp.fptools.state.State"><span class="pre">State</span></a><span class="p"><span class="pre">[</span></span><span class="pre">S</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">B</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.fptools.state.State.map" title="Link to this definition">¶</a></dt>
-<dd><p>Map a function over a run action.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="pythonic_fp.fptools.state.State.map2">
-<span class="sig-name descname"><span class="pre">map2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sb</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#pythonic_fp.fptools.state.State" title="pythonic_fp.fptools.state.State"><span class="pre">State</span></a><span class="p"><span class="pre">[</span></span><span class="pre">S</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">B</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">A</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">B</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">C</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.fptools.state.State" title="pythonic_fp.fptools.state.State"><span class="pre">State</span></a><span class="p"><span class="pre">[</span></span><span class="pre">S</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">C</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.fptools.state.State.map2" title="Link to this definition">¶</a></dt>
-<dd><p>Map a function of two variables over two state actions.</p>
+<dt class="sig sig-object py" id="pythonic_fp.fptools.state.State.put">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">put</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ST</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.fptools.state.State" title="pythonic_fp.fptools.state.State"><span class="pre">State</span></a><span class="p"><span class="pre">[</span></span><span class="pre">ST</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.fptools.state.State.put" title="Link to this definition">¶</a></dt>
+<dd><p>Manually insert a state.</p>
+<ul class="simple">
+<li><p>ignores previous state and swaps in a new state</p></li>
+<li><p>assigns a canonically meaningless value for current value</p></li>
+</ul>
 </dd></dl>
 
 <dl class="py method">
@@ -326,16 +347,6 @@ A pure FP implementation for the State Monad</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="pythonic_fp.fptools.state.State.put">
-<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">put</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ST</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.fptools.state.State" title="pythonic_fp.fptools.state.State"><span class="pre">State</span></a><span class="p"><span class="pre">[</span></span><span class="pre">ST</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.fptools.state.State.put" title="Link to this definition">¶</a></dt>
-<dd><p>Manually insert a state.</p>
-<ul class="simple">
-<li><p>ignores previous state and swaps in a new state</p></li>
-<li><p>assigns a canonically meaningless value for current value</p></li>
-</ul>
-</dd></dl>
-
-<dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.fptools.state.State.sequence">
 <em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sequence</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sas</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#pythonic_fp.fptools.state.State" title="pythonic_fp.fptools.state.State"><span class="pre">State</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.fptools.state.State" title="pythonic_fp.fptools.state.State"><span class="pre">State</span></a><span class="p"><span class="pre">[</span></span><span class="pre">ST</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">AA</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.fptools.state.State.sequence" title="Link to this definition">¶</a></dt>
 <dd><p>Combine a list of state actions into a state action of a list.</p>
@@ -343,12 +354,6 @@ A pure FP implementation for the State Monad</p>
 <li><p>all state actions must be of the same type</p></li>
 <li><p>run method evaluates list front to back</p></li>
 </ul>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="pythonic_fp.fptools.state.State.unit">
-<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">unit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">B</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.fptools.state.State" title="pythonic_fp.fptools.state.State"><span class="pre">State</span></a></span></span><a class="headerlink" href="#pythonic_fp.fptools.state.State.unit" title="Link to this definition">¶</a></dt>
-<dd><p>Create a State action returning the given value.</p>
 </dd></dl>
 
 </section>
@@ -405,16 +410,17 @@ A pure FP implementation for the State Monad</p>
             <ul>
 <li><a class="reference internal" href="#">fptools.state</a><ul>
 <li><a class="reference internal" href="#pythonic_fp.fptools.state.State"><code class="docutils literal notranslate"><span class="pre">State</span></code></a><ul>
+<li><a class="reference internal" href="#pythonic_fp.fptools.state.State.__init__"><code class="docutils literal notranslate"><span class="pre">State.__init__()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.fptools.state.State.bind"><code class="docutils literal notranslate"><span class="pre">State.bind()</span></code></a></li>
-<li><a class="reference internal" href="#pythonic_fp.fptools.state.State.both"><code class="docutils literal notranslate"><span class="pre">State.both()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.fptools.state.State.eval"><code class="docutils literal notranslate"><span class="pre">State.eval()</span></code></a></li>
-<li><a class="reference internal" href="#pythonic_fp.fptools.state.State.get"><code class="docutils literal notranslate"><span class="pre">State.get()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.fptools.state.State.map"><code class="docutils literal notranslate"><span class="pre">State.map()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.fptools.state.State.map2"><code class="docutils literal notranslate"><span class="pre">State.map2()</span></code></a></li>
-<li><a class="reference internal" href="#pythonic_fp.fptools.state.State.modify"><code class="docutils literal notranslate"><span class="pre">State.modify()</span></code></a></li>
-<li><a class="reference internal" href="#pythonic_fp.fptools.state.State.put"><code class="docutils literal notranslate"><span class="pre">State.put()</span></code></a></li>
-<li><a class="reference internal" href="#pythonic_fp.fptools.state.State.sequence"><code class="docutils literal notranslate"><span class="pre">State.sequence()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.fptools.state.State.both"><code class="docutils literal notranslate"><span class="pre">State.both()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.fptools.state.State.unit"><code class="docutils literal notranslate"><span class="pre">State.unit()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.fptools.state.State.get"><code class="docutils literal notranslate"><span class="pre">State.get()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.fptools.state.State.put"><code class="docutils literal notranslate"><span class="pre">State.put()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.fptools.state.State.modify"><code class="docutils literal notranslate"><span class="pre">State.modify()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.fptools.state.State.sequence"><code class="docutils literal notranslate"><span class="pre">State.sequence()</span></code></a></li>
 </ul>
 </li>
 </ul>

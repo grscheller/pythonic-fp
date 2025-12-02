@@ -1,5 +1,6 @@
 module auto
-===========
+-----------
 
 .. automodule:: pythonic_fp.circulararray.auto
-   :members:
+    :members:
+    :special-members:

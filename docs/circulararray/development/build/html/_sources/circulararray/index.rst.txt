@@ -1,11 +1,11 @@
 pythonic_fp.circulararray
-=========================
+-------------------------
 
 .. toctree::
-   :maxdepth: 2
+    :maxdepth: 2
 
-   auto
-   fixed
+    auto
+    fixed
 
 .. automodule:: pythonic_fp.circulararray
-   :synopsis:
+    :synopsis:

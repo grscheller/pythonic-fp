@@ -273,39 +273,37 @@
 </dd>
 </dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="pythonic_fp.containers.immutable_list.IList.accummulate">
-<span class="sig-name descname"><span class="pre">accummulate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">L</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">D</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">L</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">s</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">L</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="positional-only-separator o"><abbr title="Positional-only parameter separator (PEP 570)"><span class="pre">/</span></abbr></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.containers.immutable_list.IList" title="pythonic_fp.containers.immutable_list.IList"><span class="pre">IList</span></a></span></span><a class="headerlink" href="#pythonic_fp.containers.immutable_list.IList.accummulate" title="Link to this definition">¶</a></dt>
-<dd><p>Accumulate partial folds.</p>
-<p>Accumulate partial fold with an optional starting value,
-results in an <code class="docutils literal notranslate"><span class="pre">IList</span></code>.</p>
-<dl class="field-list simple">
+<dt class="sig sig-object py" id="pythonic_fp.containers.immutable_list.IList.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">dss</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pythonic_fp.containers.immutable_list.IList.__init__" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>f</strong> – Folding function used to produce partial folds.</p></li>
-<li><p><strong>s</strong> – Optional starting value.</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>New <code class="docutils literal notranslate"><span class="pre">FTuple</span></code> of the partial folds.</p>
+<dd class="field-odd"><p><strong>dss</strong> – 0 or 1 iterables</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="pythonic_fp.containers.immutable_list.IList.bind">
-<span class="sig-name descname"><span class="pre">bind</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">D</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#pythonic_fp.containers.immutable_list.IList" title="pythonic_fp.containers.immutable_list.IList"><span class="pre">IList</span></a><span class="p"><span class="pre">[</span></span><span class="pre">U</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">merge_enum</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">MergeEnum</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">MergeEnum.Concat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">yield_partials</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.containers.immutable_list.IList" title="pythonic_fp.containers.immutable_list.IList"><span class="pre">IList</span></a><span class="p"><span class="pre">[</span></span><span class="pre">U</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Never</span></span></span><a class="headerlink" href="#pythonic_fp.containers.immutable_list.IList.bind" title="Link to this definition">¶</a></dt>
-<dd><p>Bind function <cite>f</cite> to the <cite>IList</cite>.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>ds</strong> – values to instantiate IList</p>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>resulting IList</p>
-</dd>
-<dt class="field-odd">Raises<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>ValueError</strong> – if given unknown merge_type</p>
-</dd>
-</dl>
+<dt class="sig sig-object py" id="pythonic_fp.containers.immutable_list.IList.__hash__">
+<span class="sig-name descname"><span class="pre">__hash__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#pythonic_fp.containers.immutable_list.IList.__hash__" title="Link to this definition">¶</a></dt>
+<dd><p>Return hash(self).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.containers.immutable_list.IList.__repr__">
+<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#pythonic_fp.containers.immutable_list.IList.__repr__" title="Link to this definition">¶</a></dt>
+<dd><p>Return repr(self).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.containers.immutable_list.IList.__str__">
+<span class="sig-name descname"><span class="pre">__str__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#pythonic_fp.containers.immutable_list.IList.__str__" title="Link to this definition">¶</a></dt>
+<dd><p>Return str(self).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.containers.immutable_list.IList.__eq__">
+<span class="sig-name descname"><span class="pre">__eq__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">object</span></span></em>, <em class="sig-param"><span class="positional-only-separator o"><abbr title="Positional-only parameter separator (PEP 570)"><span class="pre">/</span></abbr></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#pythonic_fp.containers.immutable_list.IList.__eq__" title="Link to this definition">¶</a></dt>
+<dd><p>Return self==value.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -346,6 +344,42 @@ results in an <code class="docutils literal notranslate"><span class="pre">IList
 </dd>
 <dt class="field-odd">Raises<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>ValueError</strong> – When empty and a start value not given.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.containers.immutable_list.IList.accummulate">
+<span class="sig-name descname"><span class="pre">accummulate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">L</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">D</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">L</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">s</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">L</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="positional-only-separator o"><abbr title="Positional-only parameter separator (PEP 570)"><span class="pre">/</span></abbr></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.containers.immutable_list.IList" title="pythonic_fp.containers.immutable_list.IList"><span class="pre">IList</span></a></span></span><a class="headerlink" href="#pythonic_fp.containers.immutable_list.IList.accummulate" title="Link to this definition">¶</a></dt>
+<dd><p>Accumulate partial folds.</p>
+<p>Accumulate partial fold with an optional starting value,
+results in an <code class="docutils literal notranslate"><span class="pre">IList</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>f</strong> – Folding function used to produce partial folds.</p></li>
+<li><p><strong>s</strong> – Optional starting value.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>New <code class="docutils literal notranslate"><span class="pre">FTuple</span></code> of the partial folds.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.containers.immutable_list.IList.bind">
+<span class="sig-name descname"><span class="pre">bind</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">D</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#pythonic_fp.containers.immutable_list.IList" title="pythonic_fp.containers.immutable_list.IList"><span class="pre">IList</span></a><span class="p"><span class="pre">[</span></span><span class="pre">U</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">merge_enum</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">MergeEnum</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">MergeEnum.Concat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">yield_partials</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.containers.immutable_list.IList" title="pythonic_fp.containers.immutable_list.IList"><span class="pre">IList</span></a><span class="p"><span class="pre">[</span></span><span class="pre">U</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Never</span></span></span><a class="headerlink" href="#pythonic_fp.containers.immutable_list.IList.bind" title="Link to this definition">¶</a></dt>
+<dd><p>Bind function <cite>f</cite> to the <cite>IList</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>ds</strong> – values to instantiate IList</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>resulting IList</p>
+</dd>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>ValueError</strong> – if given unknown merge_type</p>
 </dd>
 </dl>
 </dd></dl>
@@ -403,10 +437,15 @@ results in an <code class="docutils literal notranslate"><span class="pre">IList
             <ul>
 <li><a class="reference internal" href="#">module immutable_list</a><ul>
 <li><a class="reference internal" href="#pythonic_fp.containers.immutable_list.IList"><code class="docutils literal notranslate"><span class="pre">IList</span></code></a><ul>
-<li><a class="reference internal" href="#pythonic_fp.containers.immutable_list.IList.accummulate"><code class="docutils literal notranslate"><span class="pre">IList.accummulate()</span></code></a></li>
-<li><a class="reference internal" href="#pythonic_fp.containers.immutable_list.IList.bind"><code class="docutils literal notranslate"><span class="pre">IList.bind()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.containers.immutable_list.IList.__init__"><code class="docutils literal notranslate"><span class="pre">IList.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.containers.immutable_list.IList.__hash__"><code class="docutils literal notranslate"><span class="pre">IList.__hash__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.containers.immutable_list.IList.__repr__"><code class="docutils literal notranslate"><span class="pre">IList.__repr__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.containers.immutable_list.IList.__str__"><code class="docutils literal notranslate"><span class="pre">IList.__str__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.containers.immutable_list.IList.__eq__"><code class="docutils literal notranslate"><span class="pre">IList.__eq__()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.containers.immutable_list.IList.foldl"><code class="docutils literal notranslate"><span class="pre">IList.foldl()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.containers.immutable_list.IList.foldr"><code class="docutils literal notranslate"><span class="pre">IList.foldr()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.containers.immutable_list.IList.accummulate"><code class="docutils literal notranslate"><span class="pre">IList.accummulate()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.containers.immutable_list.IList.bind"><code class="docutils literal notranslate"><span class="pre">IList.bind()</span></code></a></li>
 </ul>
 </li>
 </ul>

@@ -297,36 +297,42 @@ not hashable if value is mutable.</p>
 <code class="docutils literal notranslate"><span class="pre">Either(value:</span> <span class="pre">+R,</span> <span class="pre">side:</span> <span class="pre">Right):</span> <span class="pre">Either[L,</span> <span class="pre">R]</span> <span class="pre">-&gt;</span> <span class="pre">right:</span> <span class="pre">Either[L,</span> <span class="pre">R]</span></code></p>
 </div>
 <dl class="py method">
-<dt class="sig sig-object py" id="pythonic_fp.fptools.either.Either.bind">
-<span class="sig-name descname"><span class="pre">bind</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">L</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#pythonic_fp.fptools.either.Either" title="pythonic_fp.fptools.either.Either"><span class="pre">Either</span></a><span class="p"><span class="pre">[</span></span><span class="pre">U</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">R</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.fptools.either.Either" title="pythonic_fp.fptools.either.Either"><span class="pre">Either</span></a><span class="p"><span class="pre">[</span></span><span class="pre">U</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">R</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.fptools.either.Either.bind" title="Link to this definition">¶</a></dt>
-<dd><p>Flatmap over the left value, propagate right values.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>f</strong> – function to flatmap a left value</p>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>a new Either if a left, otherwise itself</p>
-</dd>
-</dl>
+<dt class="sig sig-object py" id="pythonic_fp.fptools.either.Either.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">L</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pythonic_fp.fptools.either.Either.__init__" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">L</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">side</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">EitherBool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">R</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">side</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">EitherBool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.fptools.either.Either.__hash__">
+<span class="sig-name descname"><span class="pre">__hash__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#pythonic_fp.fptools.either.Either.__hash__" title="Link to this definition">¶</a></dt>
+<dd><p>Return hash(self).</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="pythonic_fp.fptools.either.Either.bind_except">
-<span class="sig-name descname"><span class="pre">bind_except</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">L</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#pythonic_fp.fptools.either.Either" title="pythonic_fp.fptools.either.Either"><span class="pre">Either</span></a><span class="p"><span class="pre">[</span></span><span class="pre">U</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">R</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fallback_right</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">R</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.fptools.either.Either" title="pythonic_fp.fptools.either.Either"><span class="pre">Either</span></a><span class="p"><span class="pre">[</span></span><span class="pre">U</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">R</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.fptools.either.Either.bind_except" title="Link to this definition">¶</a></dt>
-<dd><p>Flatmap <code class="docutils literal notranslate"><span class="pre">Either</span></code> with function <code class="docutils literal notranslate"><span class="pre">f</span></code> with a fallback right
-if exception is thrown.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Swallows exceptions.</p>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>fallback_right</strong> – fallback value if exception thrown</p>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>a successfully mapped left, a propagated right, or a right with fallback value</p>
-</dd>
-</dl>
+<dt class="sig sig-object py" id="pythonic_fp.fptools.either.Either.__repr__">
+<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#pythonic_fp.fptools.either.Either.__repr__" title="Link to this definition">¶</a></dt>
+<dd><p>Return repr(self).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.fptools.either.Either.__str__">
+<span class="sig-name descname"><span class="pre">__str__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#pythonic_fp.fptools.either.Either.__str__" title="Link to this definition">¶</a></dt>
+<dd><p>Return str(self).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.fptools.either.Either.__len__">
+<span class="sig-name descname"><span class="pre">__len__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#pythonic_fp.fptools.either.Either.__len__" title="Link to this definition">¶</a></dt>
+<dd><p>An Either always contains just one value.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.fptools.either.Either.__eq__">
+<span class="sig-name descname"><span class="pre">__eq__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">object</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#pythonic_fp.fptools.either.Either.__eq__" title="Link to this definition">¶</a></dt>
+<dd><p>Return self==value.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -372,12 +378,40 @@ a boolean context.</p>
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.fptools.either.Either.map_right">
+<span class="sig-name descname"><span class="pre">map_right</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">R</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">V</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.fptools.either.Either" title="pythonic_fp.fptools.either.Either"><span class="pre">Either</span></a><span class="p"><span class="pre">[</span></span><span class="pre">L</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">V</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.fptools.either.Either.map_right" title="Link to this definition">¶</a></dt>
+<dd><p>Construct new Either with a different right.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>f</strong> – function to map a right value</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>a new Either if a right, otherwise itself</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.fptools.either.Either.map">
 <span class="sig-name descname"><span class="pre">map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">L</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">U</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.fptools.either.Either" title="pythonic_fp.fptools.either.Either"><span class="pre">Either</span></a><span class="p"><span class="pre">[</span></span><span class="pre">U</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">R</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.fptools.either.Either.map" title="Link to this definition">¶</a></dt>
 <dd><p>Map over if a left value. Return new instance.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>f</strong> – function to map a left value</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>a new Either if a left, otherwise itself</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.fptools.either.Either.bind">
+<span class="sig-name descname"><span class="pre">bind</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">L</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#pythonic_fp.fptools.either.Either" title="pythonic_fp.fptools.either.Either"><span class="pre">Either</span></a><span class="p"><span class="pre">[</span></span><span class="pre">U</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">R</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.fptools.either.Either" title="pythonic_fp.fptools.either.Either"><span class="pre">Either</span></a><span class="p"><span class="pre">[</span></span><span class="pre">U</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">R</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.fptools.either.Either.bind" title="Link to this definition">¶</a></dt>
+<dd><p>Flatmap over the left value, propagate right values.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>f</strong> – function to flatmap a left value</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>a new Either if a left, otherwise itself</p>
@@ -409,15 +443,20 @@ a boolean context.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="pythonic_fp.fptools.either.Either.map_right">
-<span class="sig-name descname"><span class="pre">map_right</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">R</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">V</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.fptools.either.Either" title="pythonic_fp.fptools.either.Either"><span class="pre">Either</span></a><span class="p"><span class="pre">[</span></span><span class="pre">L</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">V</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.fptools.either.Either.map_right" title="Link to this definition">¶</a></dt>
-<dd><p>Construct new Either with a different right.</p>
+<dt class="sig sig-object py" id="pythonic_fp.fptools.either.Either.bind_except">
+<span class="sig-name descname"><span class="pre">bind_except</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">L</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#pythonic_fp.fptools.either.Either" title="pythonic_fp.fptools.either.Either"><span class="pre">Either</span></a><span class="p"><span class="pre">[</span></span><span class="pre">U</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">R</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fallback_right</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">R</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.fptools.either.Either" title="pythonic_fp.fptools.either.Either"><span class="pre">Either</span></a><span class="p"><span class="pre">[</span></span><span class="pre">U</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">R</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.fptools.either.Either.bind_except" title="Link to this definition">¶</a></dt>
+<dd><p>Flatmap <code class="docutils literal notranslate"><span class="pre">Either</span></code> with function <code class="docutils literal notranslate"><span class="pre">f</span></code> with a fallback right
+if exception is thrown.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Swallows exceptions.</p>
+</div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>f</strong> – function to map a right value</p>
+<dd class="field-odd"><p><strong>fallback_right</strong> – fallback value if exception thrown</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>a new Either if a right, otherwise itself</p>
+<dd class="field-even"><p>a successfully mapped left, a propagated right, or a right with fallback value</p>
 </dd>
 </dl>
 </dd></dl>
@@ -493,14 +532,20 @@ the first right encountered.</p>
             <ul>
 <li><a class="reference internal" href="#">fptools.either</a><ul>
 <li><a class="reference internal" href="#pythonic_fp.fptools.either.Either"><code class="docutils literal notranslate"><span class="pre">Either</span></code></a><ul>
-<li><a class="reference internal" href="#pythonic_fp.fptools.either.Either.bind"><code class="docutils literal notranslate"><span class="pre">Either.bind()</span></code></a></li>
-<li><a class="reference internal" href="#pythonic_fp.fptools.either.Either.bind_except"><code class="docutils literal notranslate"><span class="pre">Either.bind_except()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.fptools.either.Either.__init__"><code class="docutils literal notranslate"><span class="pre">Either.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.fptools.either.Either.__hash__"><code class="docutils literal notranslate"><span class="pre">Either.__hash__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.fptools.either.Either.__repr__"><code class="docutils literal notranslate"><span class="pre">Either.__repr__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.fptools.either.Either.__str__"><code class="docutils literal notranslate"><span class="pre">Either.__str__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.fptools.either.Either.__len__"><code class="docutils literal notranslate"><span class="pre">Either.__len__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.fptools.either.Either.__eq__"><code class="docutils literal notranslate"><span class="pre">Either.__eq__()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.fptools.either.Either.get"><code class="docutils literal notranslate"><span class="pre">Either.get()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.fptools.either.Either.get_left"><code class="docutils literal notranslate"><span class="pre">Either.get_left()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.fptools.either.Either.get_right"><code class="docutils literal notranslate"><span class="pre">Either.get_right()</span></code></a></li>
-<li><a class="reference internal" href="#pythonic_fp.fptools.either.Either.map"><code class="docutils literal notranslate"><span class="pre">Either.map()</span></code></a></li>
-<li><a class="reference internal" href="#pythonic_fp.fptools.either.Either.map_except"><code class="docutils literal notranslate"><span class="pre">Either.map_except()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.fptools.either.Either.map_right"><code class="docutils literal notranslate"><span class="pre">Either.map_right()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.fptools.either.Either.map"><code class="docutils literal notranslate"><span class="pre">Either.map()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.fptools.either.Either.bind"><code class="docutils literal notranslate"><span class="pre">Either.bind()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.fptools.either.Either.map_except"><code class="docutils literal notranslate"><span class="pre">Either.map_except()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.fptools.either.Either.bind_except"><code class="docutils literal notranslate"><span class="pre">Either.bind_except()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.fptools.either.Either.sequence"><code class="docutils literal notranslate"><span class="pre">Either.sequence()</span></code></a></li>
 </ul>
 </li>

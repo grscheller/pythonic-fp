@@ -1,5 +1,6 @@
 iterables.merging
-=================
+-----------------
 
 .. automodule:: pythonic_fp.iterables.merging
-   :members:
+    :members:
+    :special-members:

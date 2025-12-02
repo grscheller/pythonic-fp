@@ -294,6 +294,23 @@ arguments wrapped in Lazy instances.</p>
 </dd>
 </dl>
 <dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.fptools.lazy.Lazy.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">D</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">R</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">d</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">D</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pure</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pythonic_fp.fptools.lazy.Lazy.__init__" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>f</strong> – single argument function</p></li>
+<li><p><strong>d</strong> – argument to be passed to <code class="docutils literal notranslate"><span class="pre">f</span></code></p></li>
+<li><p><strong>pure</strong> – if true, cache the result for future <code class="docutils literal notranslate"><span class="pre">eval</span></code> method calls</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>an object that can call the function <code class="docutils literal notranslate"><span class="pre">f</span></code> at a later time</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.fptools.lazy.Lazy.eval">
 <span class="sig-name descname"><span class="pre">eval</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pythonic_fp.fptools.lazy.Lazy.eval" title="Link to this definition">¶</a></dt>
 <dd><p>Evaluate function with its argument.</p>
@@ -302,6 +319,23 @@ arguments wrapped in Lazy instances.</p>
 <li><p>cache result or exception if <code class="docutils literal notranslate"><span class="pre">pure</span> <span class="pre">is</span> <span class="pre">True</span></code></p></li>
 <li><p>reevaluate if <code class="docutils literal notranslate"><span class="pre">pure</span> <span class="pre">is</span> <span class="pre">False</span></code></p></li>
 </ul>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.fptools.lazy.Lazy.got_result">
+<span class="sig-name descname"><span class="pre">got_result</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="maybe.html#pythonic_fp.fptools.maybe.MayBe" title="pythonic_fp.fptools.maybe.MayBe"><span class="pre">MayBe</span></a><span class="p"><span class="pre">[</span></span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.fptools.lazy.Lazy.got_result" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">True</span></code> only if an evaluated <code class="docutils literal notranslate"><span class="pre">Lazy</span></code> did not raise an exception.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.fptools.lazy.Lazy.got_exception">
+<span class="sig-name descname"><span class="pre">got_exception</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="maybe.html#pythonic_fp.fptools.maybe.MayBe" title="pythonic_fp.fptools.maybe.MayBe"><span class="pre">MayBe</span></a><span class="p"><span class="pre">[</span></span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.fptools.lazy.Lazy.got_exception" title="Link to this definition">¶</a></dt>
+<dd><p>Return true if Lazy raised exception.
+:returns: <code class="docutils literal notranslate"><span class="pre">True</span></code> only if <code class="docutils literal notranslate"><span class="pre">Lazy</span></code> raised an exception.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -323,17 +357,6 @@ return an alternate value.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="pythonic_fp.fptools.lazy.Lazy.get_exception">
-<span class="sig-name descname"><span class="pre">get_exception</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="maybe.html#pythonic_fp.fptools.maybe.MayBe" title="pythonic_fp.fptools.maybe.MayBe"><span class="pre">MayBe</span></a><span class="p"><span class="pre">[</span></span><span class="pre">Exception</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.fptools.lazy.Lazy.get_exception" title="Link to this definition">¶</a></dt>
-<dd><p>Get result only if evaluate and exceptional.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><p>The exception thrown wrapped in a maybe monad.</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.fptools.lazy.Lazy.get_result">
 <span class="sig-name descname"><span class="pre">get_result</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="maybe.html#pythonic_fp.fptools.maybe.MayBe" title="pythonic_fp.fptools.maybe.MayBe"><span class="pre">MayBe</span></a></span></span><a class="headerlink" href="#pythonic_fp.fptools.lazy.Lazy.get_result" title="Link to this definition">¶</a></dt>
 <dd><p>Get result only if evaluated and not exceptional.</p>
@@ -345,18 +368,12 @@ return an alternate value.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="pythonic_fp.fptools.lazy.Lazy.got_exception">
-<span class="sig-name descname"><span class="pre">got_exception</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="maybe.html#pythonic_fp.fptools.maybe.MayBe" title="pythonic_fp.fptools.maybe.MayBe"><span class="pre">MayBe</span></a><span class="p"><span class="pre">[</span></span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.fptools.lazy.Lazy.got_exception" title="Link to this definition">¶</a></dt>
-<dd><p>Return true if Lazy raised exception.
-:returns: <code class="docutils literal notranslate"><span class="pre">True</span></code> only if <code class="docutils literal notranslate"><span class="pre">Lazy</span></code> raised an exception.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="pythonic_fp.fptools.lazy.Lazy.got_result">
-<span class="sig-name descname"><span class="pre">got_result</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="maybe.html#pythonic_fp.fptools.maybe.MayBe" title="pythonic_fp.fptools.maybe.MayBe"><span class="pre">MayBe</span></a><span class="p"><span class="pre">[</span></span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.fptools.lazy.Lazy.got_result" title="Link to this definition">¶</a></dt>
-<dd><dl class="field-list simple">
+<dt class="sig sig-object py" id="pythonic_fp.fptools.lazy.Lazy.get_exception">
+<span class="sig-name descname"><span class="pre">get_exception</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="maybe.html#pythonic_fp.fptools.maybe.MayBe" title="pythonic_fp.fptools.maybe.MayBe"><span class="pre">MayBe</span></a><span class="p"><span class="pre">[</span></span><span class="pre">Exception</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.fptools.lazy.Lazy.get_exception" title="Link to this definition">¶</a></dt>
+<dd><p>Get result only if evaluate and exceptional.</p>
+<dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">True</span></code> only if an evaluated <code class="docutils literal notranslate"><span class="pre">Lazy</span></code> did not raise an exception.</p>
+<dd class="field-odd"><p>The exception thrown wrapped in a maybe monad.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -472,12 +489,13 @@ of positional arguments. Evaluation is cached.</p>
 <li><a class="reference internal" href="#">fptools.lazy</a><ul>
 <li><a class="reference internal" href="#lazy-function-evaluation">Lazy function evaluation</a></li>
 <li><a class="reference internal" href="#pythonic_fp.fptools.lazy.Lazy"><code class="docutils literal notranslate"><span class="pre">Lazy</span></code></a><ul>
+<li><a class="reference internal" href="#pythonic_fp.fptools.lazy.Lazy.__init__"><code class="docutils literal notranslate"><span class="pre">Lazy.__init__()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.fptools.lazy.Lazy.eval"><code class="docutils literal notranslate"><span class="pre">Lazy.eval()</span></code></a></li>
-<li><a class="reference internal" href="#pythonic_fp.fptools.lazy.Lazy.get"><code class="docutils literal notranslate"><span class="pre">Lazy.get()</span></code></a></li>
-<li><a class="reference internal" href="#pythonic_fp.fptools.lazy.Lazy.get_exception"><code class="docutils literal notranslate"><span class="pre">Lazy.get_exception()</span></code></a></li>
-<li><a class="reference internal" href="#pythonic_fp.fptools.lazy.Lazy.get_result"><code class="docutils literal notranslate"><span class="pre">Lazy.get_result()</span></code></a></li>
-<li><a class="reference internal" href="#pythonic_fp.fptools.lazy.Lazy.got_exception"><code class="docutils literal notranslate"><span class="pre">Lazy.got_exception()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.fptools.lazy.Lazy.got_result"><code class="docutils literal notranslate"><span class="pre">Lazy.got_result()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.fptools.lazy.Lazy.got_exception"><code class="docutils literal notranslate"><span class="pre">Lazy.got_exception()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.fptools.lazy.Lazy.get"><code class="docutils literal notranslate"><span class="pre">Lazy.get()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.fptools.lazy.Lazy.get_result"><code class="docutils literal notranslate"><span class="pre">Lazy.get_result()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.fptools.lazy.Lazy.get_exception"><code class="docutils literal notranslate"><span class="pre">Lazy.get_exception()</span></code></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#pythonic_fp.fptools.lazy.lazy"><code class="docutils literal notranslate"><span class="pre">lazy()</span></code></a></li>

@@ -1,5 +1,6 @@
 fptools.lazy
-============
+------------
 
 .. automodule:: pythonic_fp.fptools.lazy
-   :members:
+    :members:
+    :special-members:

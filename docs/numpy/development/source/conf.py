@@ -13,7 +13,7 @@
 project = 'Pythonic FP - NumPy'
 copyright = '2025, Geoffrey R. Scheller'
 author = 'Geoffrey R. Scheller'
-release = '0.1.0'
+release = '0.1.1'
 # release_string = 'Proposed PyPI'
 release_string = 'PyPI'
 
@@ -25,14 +25,11 @@ extensions = [
     'sphinx.ext.graphviz',
 ]
 
-templates_path = ['_templates']
-exclude_patterns: list[str] = []
-
-# -- Options for Sphinx
+autodoc_member_order = 'bysource'
 autoclass_content = 'both'
 
-# -- Options for autodoc extension
-autodoc_member_order = 'bysource'
+templates_path = ['_templates']
+exclude_patterns: list[str] = []
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output

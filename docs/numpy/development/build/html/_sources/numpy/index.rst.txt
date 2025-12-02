@@ -1,5 +1,5 @@
 pythonic_fp.numpy
-=================
+-----------------
 
 .. toctree::
     :caption: FP NumPy Tools

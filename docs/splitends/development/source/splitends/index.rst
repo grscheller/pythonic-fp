@@ -1,5 +1,5 @@
 pythonic_fp.splitends
-=====================
+---------------------
 
 .. toctree::
     :caption: splitends

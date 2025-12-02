@@ -1,5 +1,5 @@
 pythonic_fp.gadgets
-===================
+-------------------
 
 .. toctree::
     :caption: Simple Gadgets

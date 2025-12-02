@@ -262,16 +262,47 @@
           <section id="module-pythonic_fp.gadgets.wrap">
 <span id="wrap"></span><h1>wrap<a class="headerlink" href="#module-pythonic_fp.gadgets.wrap" title="Link to this heading">¶</a></h1>
 <dl class="py class">
-<dt class="sig sig-object py" id="pythonic_fp.gadgets.wrap.HWrap">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.gadgets.wrap.</span></span><span class="sig-name descname"><span class="pre">HWrap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">item</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">T</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.gadgets.wrap.HWrap" title="Link to this definition">¶</a></dt>
-<dd><p>Immutablely wrap exactly one hashable value of a given type.</p>
+<dt class="sig sig-object py" id="pythonic_fp.gadgets.wrap.Wrap">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.gadgets.wrap.</span></span><span class="sig-name descname"><span class="pre">Wrap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">item</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">T</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.gadgets.wrap.Wrap" title="Link to this definition">¶</a></dt>
+<dd><p>Immutablely wrap exactly one value of a given type.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p><code class="docutils literal notranslate"><span class="pre">Wrap</span></code> objects can be used in Python match statements.</p>
 </div>
 <dl class="py method">
-<dt class="sig sig-object py" id="pythonic_fp.gadgets.wrap.HWrap.bind">
-<span class="sig-name descname"><span class="pre">bind</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#pythonic_fp.gadgets.wrap.HWrap" title="pythonic_fp.gadgets.wrap.HWrap"><span class="pre">HWrap</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.gadgets.wrap.HWrap" title="pythonic_fp.gadgets.wrap.HWrap"><span class="pre">HWrap</span></a></span></span><a class="headerlink" href="#pythonic_fp.gadgets.wrap.HWrap.bind" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pythonic_fp.gadgets.wrap.Wrap.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">item</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">T</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pythonic_fp.gadgets.wrap.Wrap.__init__" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.gadgets.wrap.Wrap.__repr__">
+<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#pythonic_fp.gadgets.wrap.Wrap.__repr__" title="Link to this definition">¶</a></dt>
+<dd><p>Return repr(self).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.gadgets.wrap.Wrap.__eq__">
+<span class="sig-name descname"><span class="pre">__eq__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">object</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#pythonic_fp.gadgets.wrap.Wrap.__eq__" title="Link to this definition">¶</a></dt>
+<dd><p>Return self==value.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.gadgets.wrap.Wrap.map">
+<span class="sig-name descname"><span class="pre">map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">U</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.gadgets.wrap.Wrap" title="pythonic_fp.gadgets.wrap.Wrap"><span class="pre">Wrap</span></a></span></span><a class="headerlink" href="#pythonic_fp.gadgets.wrap.Wrap.map" title="Link to this definition">¶</a></dt>
+<dd><p>Map function <code class="docutils literal notranslate"><span class="pre">f</span></code> over contents.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>f</strong> – Mapping function.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A new instance.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.gadgets.wrap.Wrap.bind">
+<span class="sig-name descname"><span class="pre">bind</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#pythonic_fp.gadgets.wrap.Wrap" title="pythonic_fp.gadgets.wrap.Wrap"><span class="pre">Wrap</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.gadgets.wrap.Wrap" title="pythonic_fp.gadgets.wrap.Wrap"><span class="pre">Wrap</span></a></span></span><a class="headerlink" href="#pythonic_fp.gadgets.wrap.Wrap.bind" title="Link to this definition">¶</a></dt>
 <dd><p>Flatmap the <code class="docutils literal notranslate"><span class="pre">Wrap</span></code> with function <code class="docutils literal notranslate"><span class="pre">f</span></code>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -281,6 +312,39 @@
 <dd class="field-even"><p>A new instance.</p>
 </dd>
 </dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pythonic_fp.gadgets.wrap.HWrap">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.gadgets.wrap.</span></span><span class="sig-name descname"><span class="pre">HWrap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">item</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">T</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.gadgets.wrap.HWrap" title="Link to this definition">¶</a></dt>
+<dd><p>Immutablely wrap exactly one hashable value of a given type.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><code class="docutils literal notranslate"><span class="pre">Wrap</span></code> objects can be used in Python match statements.</p>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.gadgets.wrap.HWrap.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">item</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">T</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pythonic_fp.gadgets.wrap.HWrap.__init__" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.gadgets.wrap.HWrap.__hash__">
+<span class="sig-name descname"><span class="pre">__hash__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#pythonic_fp.gadgets.wrap.HWrap.__hash__" title="Link to this definition">¶</a></dt>
+<dd><p>Return hash(self).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.gadgets.wrap.HWrap.__repr__">
+<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#pythonic_fp.gadgets.wrap.HWrap.__repr__" title="Link to this definition">¶</a></dt>
+<dd><p>Return repr(self).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.gadgets.wrap.HWrap.__eq__">
+<span class="sig-name descname"><span class="pre">__eq__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">object</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#pythonic_fp.gadgets.wrap.HWrap.__eq__" title="Link to this definition">¶</a></dt>
+<dd><p>Return self==value.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -297,37 +361,13 @@
 </dl>
 </dd></dl>
 
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="pythonic_fp.gadgets.wrap.Wrap">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.gadgets.wrap.</span></span><span class="sig-name descname"><span class="pre">Wrap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">item</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">T</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.gadgets.wrap.Wrap" title="Link to this definition">¶</a></dt>
-<dd><p>Immutablely wrap exactly one value of a given type.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p><code class="docutils literal notranslate"><span class="pre">Wrap</span></code> objects can be used in Python match statements.</p>
-</div>
 <dl class="py method">
-<dt class="sig sig-object py" id="pythonic_fp.gadgets.wrap.Wrap.bind">
-<span class="sig-name descname"><span class="pre">bind</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#pythonic_fp.gadgets.wrap.Wrap" title="pythonic_fp.gadgets.wrap.Wrap"><span class="pre">Wrap</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.gadgets.wrap.Wrap" title="pythonic_fp.gadgets.wrap.Wrap"><span class="pre">Wrap</span></a></span></span><a class="headerlink" href="#pythonic_fp.gadgets.wrap.Wrap.bind" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="pythonic_fp.gadgets.wrap.HWrap.bind">
+<span class="sig-name descname"><span class="pre">bind</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#pythonic_fp.gadgets.wrap.HWrap" title="pythonic_fp.gadgets.wrap.HWrap"><span class="pre">HWrap</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.gadgets.wrap.HWrap" title="pythonic_fp.gadgets.wrap.HWrap"><span class="pre">HWrap</span></a></span></span><a class="headerlink" href="#pythonic_fp.gadgets.wrap.HWrap.bind" title="Link to this definition">¶</a></dt>
 <dd><p>Flatmap the <code class="docutils literal notranslate"><span class="pre">Wrap</span></code> with function <code class="docutils literal notranslate"><span class="pre">f</span></code>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>f</strong> – Binding function.</p>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>A new instance.</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="pythonic_fp.gadgets.wrap.Wrap.map">
-<span class="sig-name descname"><span class="pre">map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">U</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.gadgets.wrap.Wrap" title="pythonic_fp.gadgets.wrap.Wrap"><span class="pre">Wrap</span></a></span></span><a class="headerlink" href="#pythonic_fp.gadgets.wrap.Wrap.map" title="Link to this definition">¶</a></dt>
-<dd><p>Map function <code class="docutils literal notranslate"><span class="pre">f</span></code> over contents.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>f</strong> – Mapping function.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>A new instance.</p>
@@ -395,14 +435,21 @@
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#">wrap</a><ul>
-<li><a class="reference internal" href="#pythonic_fp.gadgets.wrap.HWrap"><code class="docutils literal notranslate"><span class="pre">HWrap</span></code></a><ul>
-<li><a class="reference internal" href="#pythonic_fp.gadgets.wrap.HWrap.bind"><code class="docutils literal notranslate"><span class="pre">HWrap.bind()</span></code></a></li>
-<li><a class="reference internal" href="#pythonic_fp.gadgets.wrap.HWrap.map"><code class="docutils literal notranslate"><span class="pre">HWrap.map()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.gadgets.wrap.Wrap"><code class="docutils literal notranslate"><span class="pre">Wrap</span></code></a><ul>
+<li><a class="reference internal" href="#pythonic_fp.gadgets.wrap.Wrap.__init__"><code class="docutils literal notranslate"><span class="pre">Wrap.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.gadgets.wrap.Wrap.__repr__"><code class="docutils literal notranslate"><span class="pre">Wrap.__repr__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.gadgets.wrap.Wrap.__eq__"><code class="docutils literal notranslate"><span class="pre">Wrap.__eq__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.gadgets.wrap.Wrap.map"><code class="docutils literal notranslate"><span class="pre">Wrap.map()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.gadgets.wrap.Wrap.bind"><code class="docutils literal notranslate"><span class="pre">Wrap.bind()</span></code></a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#pythonic_fp.gadgets.wrap.Wrap"><code class="docutils literal notranslate"><span class="pre">Wrap</span></code></a><ul>
-<li><a class="reference internal" href="#pythonic_fp.gadgets.wrap.Wrap.bind"><code class="docutils literal notranslate"><span class="pre">Wrap.bind()</span></code></a></li>
-<li><a class="reference internal" href="#pythonic_fp.gadgets.wrap.Wrap.map"><code class="docutils literal notranslate"><span class="pre">Wrap.map()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.gadgets.wrap.HWrap"><code class="docutils literal notranslate"><span class="pre">HWrap</span></code></a><ul>
+<li><a class="reference internal" href="#pythonic_fp.gadgets.wrap.HWrap.__init__"><code class="docutils literal notranslate"><span class="pre">HWrap.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.gadgets.wrap.HWrap.__hash__"><code class="docutils literal notranslate"><span class="pre">HWrap.__hash__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.gadgets.wrap.HWrap.__repr__"><code class="docutils literal notranslate"><span class="pre">HWrap.__repr__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.gadgets.wrap.HWrap.__eq__"><code class="docutils literal notranslate"><span class="pre">HWrap.__eq__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.gadgets.wrap.HWrap.map"><code class="docutils literal notranslate"><span class="pre">HWrap.map()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.gadgets.wrap.HWrap.bind"><code class="docutils literal notranslate"><span class="pre">HWrap.bind()</span></code></a></li>
 </ul>
 </li>
 </ul>

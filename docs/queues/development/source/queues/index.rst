@@ -1,5 +1,5 @@
 pythonic_fp.queues
-==================
+------------------
 
 .. toctree::
     :caption: queues
@@ -9,4 +9,4 @@ pythonic_fp.queues
     de 
 
 .. automodule:: pythonic_fp.queues
-   :synopsis:
+    :synopsis:

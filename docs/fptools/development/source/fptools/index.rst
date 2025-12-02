@@ -1,22 +1,22 @@
 pythonic_fp.fptools
-===================
+-------------------
 
 .. toctree::
-   :caption: Function Tools
+    :caption: Function Tools
 
-   function
-
-.. toctree::
-   :caption: Lazy Evaluation
-
-   lazy
+    function
 
 .. toctree::
-   :caption: Monads
+    :caption: Lazy Evaluation
 
-   maybe
-   either
-   state
+    lazy
+
+.. toctree::
+    :caption: Monads
+
+    maybe
+    either
+    state
 
 .. automodule:: pythonic_fp.fptools
-   :synopsis:
+    :synopsis:

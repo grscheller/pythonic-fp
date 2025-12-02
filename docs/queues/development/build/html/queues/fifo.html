@@ -273,12 +273,87 @@
 </dd>
 </dl>
 <dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.queues.fifo.FIFOQueue.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">dss</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pythonic_fp.queues.fifo.FIFOQueue.__init__" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>dss</strong> – Takes 1 or 0 iterables, initializes items in natural FIFO order.</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>ValueError</strong> – If more than 1 iterable is given.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.queues.fifo.FIFOQueue.__eq__">
+<span class="sig-name descname"><span class="pre">__eq__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">object</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#pythonic_fp.queues.fifo.FIFOQueue.__eq__" title="Link to this definition">¶</a></dt>
+<dd><p>Return self==value.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.queues.fifo.FIFOQueue.__repr__">
+<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#pythonic_fp.queues.fifo.FIFOQueue.__repr__" title="Link to this definition">¶</a></dt>
+<dd><p>Return repr(self).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.queues.fifo.FIFOQueue.__str__">
+<span class="sig-name descname"><span class="pre">__str__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#pythonic_fp.queues.fifo.FIFOQueue.__str__" title="Link to this definition">¶</a></dt>
+<dd><p>Return str(self).</p>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.queues.fifo.FIFOQueue.copy">
 <span class="sig-name descname"><span class="pre">copy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.queues.fifo.FIFOQueue" title="pythonic_fp.queues.fifo.FIFOQueue"><span class="pre">FIFOQueue</span></a><span class="p"><span class="pre">[</span></span><span class="pre">D</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.queues.fifo.FIFOQueue.copy" title="Link to this definition">¶</a></dt>
 <dd><p>Shallow copy.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>Shallow copy of the FIFOQueue.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.queues.fifo.FIFOQueue.push">
+<span class="sig-name descname"><span class="pre">push</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">ds</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">D</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pythonic_fp.queues.fifo.FIFOQueue.push" title="Link to this definition">¶</a></dt>
+<dd><p>Push items onto FIFOQueue.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>ds</strong> – Items to be pushed onto FIFOQueue.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.queues.fifo.FIFOQueue.pop">
+<span class="sig-name descname"><span class="pre">pop</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">MayBe</span></span></span><a class="headerlink" href="#pythonic_fp.queues.fifo.FIFOQueue.pop" title="Link to this definition">¶</a></dt>
+<dd><p>Pop oldest data item off of FIFOQueue.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>MayBe of popped data item if queue was not empty, empty MayBe otherwise.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.queues.fifo.FIFOQueue.peak_last_in">
+<span class="sig-name descname"><span class="pre">peak_last_in</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">MayBe</span></span></span><a class="headerlink" href="#pythonic_fp.queues.fifo.FIFOQueue.peak_last_in" title="Link to this definition">¶</a></dt>
+<dd><p>Peak at newest item on queue.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>MayBe of newest item on queue, empty MayBe if queue empty.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.queues.fifo.FIFOQueue.peak_next_out">
+<span class="sig-name descname"><span class="pre">peak_next_out</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">MayBe</span></span></span><a class="headerlink" href="#pythonic_fp.queues.fifo.FIFOQueue.peak_next_out" title="Link to this definition">¶</a></dt>
+<dd><p>Peak at oldest data item on queue.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>MayBe of oldest item on queue, empty MayBe if queue empty.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -312,50 +387,6 @@
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>New FIFOQueue instance.</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="pythonic_fp.queues.fifo.FIFOQueue.peak_last_in">
-<span class="sig-name descname"><span class="pre">peak_last_in</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">MayBe</span></span></span><a class="headerlink" href="#pythonic_fp.queues.fifo.FIFOQueue.peak_last_in" title="Link to this definition">¶</a></dt>
-<dd><p>Peak at newest item on queue.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><p>MayBe of newest item on queue, empty MayBe if queue empty.</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="pythonic_fp.queues.fifo.FIFOQueue.peak_next_out">
-<span class="sig-name descname"><span class="pre">peak_next_out</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">MayBe</span></span></span><a class="headerlink" href="#pythonic_fp.queues.fifo.FIFOQueue.peak_next_out" title="Link to this definition">¶</a></dt>
-<dd><p>Peak at oldest data item on queue.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><p>MayBe of oldest item on queue, empty MayBe if queue empty.</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="pythonic_fp.queues.fifo.FIFOQueue.pop">
-<span class="sig-name descname"><span class="pre">pop</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">MayBe</span></span></span><a class="headerlink" href="#pythonic_fp.queues.fifo.FIFOQueue.pop" title="Link to this definition">¶</a></dt>
-<dd><p>Pop oldest data item off of FIFOQueue.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><p>MayBe of popped data item if queue was not empty, empty MayBe otherwise.</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="pythonic_fp.queues.fifo.FIFOQueue.push">
-<span class="sig-name descname"><span class="pre">push</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">ds</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">D</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pythonic_fp.queues.fifo.FIFOQueue.push" title="Link to this definition">¶</a></dt>
-<dd><p>Push items onto FIFOQueue.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>ds</strong> – Items to be pushed onto FIFOQueue.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -435,13 +466,17 @@
             <ul>
 <li><a class="reference internal" href="#">module fifo</a><ul>
 <li><a class="reference internal" href="#pythonic_fp.queues.fifo.FIFOQueue"><code class="docutils literal notranslate"><span class="pre">FIFOQueue</span></code></a><ul>
+<li><a class="reference internal" href="#pythonic_fp.queues.fifo.FIFOQueue.__init__"><code class="docutils literal notranslate"><span class="pre">FIFOQueue.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.queues.fifo.FIFOQueue.__eq__"><code class="docutils literal notranslate"><span class="pre">FIFOQueue.__eq__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.queues.fifo.FIFOQueue.__repr__"><code class="docutils literal notranslate"><span class="pre">FIFOQueue.__repr__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.queues.fifo.FIFOQueue.__str__"><code class="docutils literal notranslate"><span class="pre">FIFOQueue.__str__()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.queues.fifo.FIFOQueue.copy"><code class="docutils literal notranslate"><span class="pre">FIFOQueue.copy()</span></code></a></li>
-<li><a class="reference internal" href="#pythonic_fp.queues.fifo.FIFOQueue.fold"><code class="docutils literal notranslate"><span class="pre">FIFOQueue.fold()</span></code></a></li>
-<li><a class="reference internal" href="#pythonic_fp.queues.fifo.FIFOQueue.map"><code class="docutils literal notranslate"><span class="pre">FIFOQueue.map()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.queues.fifo.FIFOQueue.push"><code class="docutils literal notranslate"><span class="pre">FIFOQueue.push()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.queues.fifo.FIFOQueue.pop"><code class="docutils literal notranslate"><span class="pre">FIFOQueue.pop()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.queues.fifo.FIFOQueue.peak_last_in"><code class="docutils literal notranslate"><span class="pre">FIFOQueue.peak_last_in()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.queues.fifo.FIFOQueue.peak_next_out"><code class="docutils literal notranslate"><span class="pre">FIFOQueue.peak_next_out()</span></code></a></li>
-<li><a class="reference internal" href="#pythonic_fp.queues.fifo.FIFOQueue.pop"><code class="docutils literal notranslate"><span class="pre">FIFOQueue.pop()</span></code></a></li>
-<li><a class="reference internal" href="#pythonic_fp.queues.fifo.FIFOQueue.push"><code class="docutils literal notranslate"><span class="pre">FIFOQueue.push()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.queues.fifo.FIFOQueue.fold"><code class="docutils literal notranslate"><span class="pre">FIFOQueue.fold()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.queues.fifo.FIFOQueue.map"><code class="docutils literal notranslate"><span class="pre">FIFOQueue.map()</span></code></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#pythonic_fp.queues.fifo.fifo_queue"><code class="docutils literal notranslate"><span class="pre">fifo_queue()</span></code></a></li>

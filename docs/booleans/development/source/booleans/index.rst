@@ -1,5 +1,5 @@
 pythonic_fp.booleans
-====================
+--------------------
 
 .. toctree::
     :maxdepth: 2

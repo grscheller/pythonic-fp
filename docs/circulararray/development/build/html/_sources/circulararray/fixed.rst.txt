@@ -1,5 +1,6 @@
 module.fixed
-============
+------------
 
 .. automodule:: pythonic_fp.circulararray.fixed
-   :members:
+    :members:
+    :special-members:

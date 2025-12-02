@@ -19,10 +19,17 @@ relative release. The release string changes when
 
 ## Important Milestones
 
+### 2025-11-30 - PyPI release v3.3.1
+
+PyPI pythonic-fp-numpy 0.1.1 was released. The test dependencies for
+boring-math-abstract-algebra was missing.
+
+All development docs regenerated with :special-members: enabled.
+
 ### 2025-11-30 - PyPI release v3.3.0
 
-PyPI release of pythonic-fp-numpy was release. Ability to wrap
-a non-writable NumPy NDArray in a hashable container.
+PyPI pythonic-fp-numpy version 0.1.0 was released. Ability to
+wrap a non-writable NumPy NDArray with a hashable container.
 
 ### 2025-10-12 - PyPI release v3.2.2
 

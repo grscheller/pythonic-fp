@@ -270,54 +270,23 @@
 </ul>
 <p>Since these tuples are homogeneous, their covariance may be quirky.</p>
 <dl class="py method">
-<dt class="sig sig-object py" id="pythonic_fp.containers.functional_tuple.FTuple.accummulate">
-<span class="sig-name descname"><span class="pre">accummulate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">L</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">D</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">L</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">s</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">L</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="positional-only-separator o"><abbr title="Positional-only parameter separator (PEP 570)"><span class="pre">/</span></abbr></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.containers.functional_tuple.FTuple" title="pythonic_fp.containers.functional_tuple.FTuple"><span class="pre">FTuple</span></a></span></span><a class="headerlink" href="#pythonic_fp.containers.functional_tuple.FTuple.accummulate" title="Link to this definition">¶</a></dt>
-<dd><p>Accumulate partial folds.</p>
-<p>Accumulate partial fold with an optional starting value,
-results in an <code class="docutils literal notranslate"><span class="pre">FTuple</span></code>.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>f</strong> – Folding function used to produce partial folds.</p></li>
-<li><p><strong>s</strong> – Optional starting value.</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>New <code class="docutils literal notranslate"><span class="pre">FTuple</span></code> of the partial folds.</p>
-</dd>
-</dl>
+<dt class="sig sig-object py" id="pythonic_fp.containers.functional_tuple.FTuple.__repr__">
+<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#pythonic_fp.containers.functional_tuple.FTuple.__repr__" title="Link to this definition">¶</a></dt>
+<dd><p>Return repr(self).</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="pythonic_fp.containers.functional_tuple.FTuple.bind">
-<span class="sig-name descname"><span class="pre">bind</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">D</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#pythonic_fp.containers.functional_tuple.FTuple" title="pythonic_fp.containers.functional_tuple.FTuple"><span class="pre">FTuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">U</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">merge_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">MergeEnum</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">MergeEnum.Concat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">yield_partials</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.containers.functional_tuple.FTuple" title="pythonic_fp.containers.functional_tuple.FTuple"><span class="pre">FTuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">U</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Never</span></span></span><a class="headerlink" href="#pythonic_fp.containers.functional_tuple.FTuple.bind" title="Link to this definition">¶</a></dt>
-<dd><p>Bind function <code class="docutils literal notranslate"><span class="pre">f</span></code> to the <code class="docutils literal notranslate"><span class="pre">FTuple</span></code>.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>f</strong> – Function <code class="docutils literal notranslate"><span class="pre">D</span> <span class="pre">-&gt;</span> <span class="pre">FTuple[U]</span></code></p></li>
-<li><p><strong>merge_type</strong> – <code class="docutils literal notranslate"><span class="pre">MergeEnum</span></code> to determine how to merge the result.</p></li>
-<li><p><strong>yield_partials</strong> – Yield unmatched values if <code class="docutils literal notranslate"><span class="pre">MergeEnum</span></code> given as merge type.</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>Resulting <code class="docutils literal notranslate"><span class="pre">FTuple</span></code>.</p>
-</dd>
-<dt class="field-odd">Raises<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>ValueError</strong> – If given an unknown merge enumeration.</p>
-</dd>
-</dl>
+<dt class="sig sig-object py" id="pythonic_fp.containers.functional_tuple.FTuple.__eq__">
+<span class="sig-name descname"><span class="pre">__eq__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">object</span></span></em>, <em class="sig-param"><span class="positional-only-separator o"><abbr title="Positional-only parameter separator (PEP 570)"><span class="pre">/</span></abbr></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#pythonic_fp.containers.functional_tuple.FTuple.__eq__" title="Link to this definition">¶</a></dt>
+<dd><p>Return self==value.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="pythonic_fp.containers.functional_tuple.FTuple.copy">
-<span class="sig-name descname"><span class="pre">copy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.containers.functional_tuple.FTuple" title="pythonic_fp.containers.functional_tuple.FTuple"><span class="pre">FTuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">D</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.containers.functional_tuple.FTuple.copy" title="Link to this definition">¶</a></dt>
-<dd><p>Return a shallow copy of <code class="docutils literal notranslate"><span class="pre">FTuple</span></code> in O(1) time &amp; space complexity.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><p>New <code class="docutils literal notranslate"><span class="pre">FTuple</span></code>.</p>
-</dd>
-</dl>
+<dt class="sig sig-object py" id="pythonic_fp.containers.functional_tuple.FTuple.__getitem__">
+<span class="sig-name descname"><span class="pre">__getitem__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">idx</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SupportsIndex</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">D</span></span></span><a class="headerlink" href="#pythonic_fp.containers.functional_tuple.FTuple.__getitem__" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">__getitem__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">idx</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">slice</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">D</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span></span></dt>
+<dd><p>Return self[key].</p>
 </dd></dl>
 
 <dl class="py method">
@@ -362,6 +331,75 @@ results in an <code class="docutils literal notranslate"><span class="pre">FTupl
 </dd>
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>The folded value if it exists, otherwise the default value.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.containers.functional_tuple.FTuple.copy">
+<span class="sig-name descname"><span class="pre">copy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.containers.functional_tuple.FTuple" title="pythonic_fp.containers.functional_tuple.FTuple"><span class="pre">FTuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">D</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.containers.functional_tuple.FTuple.copy" title="Link to this definition">¶</a></dt>
+<dd><p>Return a shallow copy of <code class="docutils literal notranslate"><span class="pre">FTuple</span></code> in O(1) time &amp; space complexity.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>New <code class="docutils literal notranslate"><span class="pre">FTuple</span></code>.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.containers.functional_tuple.FTuple.__add__">
+<span class="sig-name descname"><span class="pre">__add__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">object</span></span></em>, <em class="sig-param"><span class="positional-only-separator o"><abbr title="Positional-only parameter separator (PEP 570)"><span class="pre">/</span></abbr></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">D</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.containers.functional_tuple.FTuple.__add__" title="Link to this definition">¶</a></dt>
+<dd><p>Return self+value.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.containers.functional_tuple.FTuple.__mul__">
+<span class="sig-name descname"><span class="pre">__mul__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SupportsIndex</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">D</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.containers.functional_tuple.FTuple.__mul__" title="Link to this definition">¶</a></dt>
+<dd><p>Return self*value.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.containers.functional_tuple.FTuple.__rmul__">
+<span class="sig-name descname"><span class="pre">__rmul__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SupportsIndex</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">D</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.containers.functional_tuple.FTuple.__rmul__" title="Link to this definition">¶</a></dt>
+<dd><p>Return value*self.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.containers.functional_tuple.FTuple.accummulate">
+<span class="sig-name descname"><span class="pre">accummulate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">L</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">D</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">L</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">s</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">L</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="positional-only-separator o"><abbr title="Positional-only parameter separator (PEP 570)"><span class="pre">/</span></abbr></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.containers.functional_tuple.FTuple" title="pythonic_fp.containers.functional_tuple.FTuple"><span class="pre">FTuple</span></a></span></span><a class="headerlink" href="#pythonic_fp.containers.functional_tuple.FTuple.accummulate" title="Link to this definition">¶</a></dt>
+<dd><p>Accumulate partial folds.</p>
+<p>Accumulate partial fold with an optional starting value,
+results in an <code class="docutils literal notranslate"><span class="pre">FTuple</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>f</strong> – Folding function used to produce partial folds.</p></li>
+<li><p><strong>s</strong> – Optional starting value.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>New <code class="docutils literal notranslate"><span class="pre">FTuple</span></code> of the partial folds.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.containers.functional_tuple.FTuple.bind">
+<span class="sig-name descname"><span class="pre">bind</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">D</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#pythonic_fp.containers.functional_tuple.FTuple" title="pythonic_fp.containers.functional_tuple.FTuple"><span class="pre">FTuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">U</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">merge_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">MergeEnum</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">MergeEnum.Concat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">yield_partials</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.containers.functional_tuple.FTuple" title="pythonic_fp.containers.functional_tuple.FTuple"><span class="pre">FTuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">U</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Never</span></span></span><a class="headerlink" href="#pythonic_fp.containers.functional_tuple.FTuple.bind" title="Link to this definition">¶</a></dt>
+<dd><p>Bind function <code class="docutils literal notranslate"><span class="pre">f</span></code> to the <code class="docutils literal notranslate"><span class="pre">FTuple</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>f</strong> – Function <code class="docutils literal notranslate"><span class="pre">D</span> <span class="pre">-&gt;</span> <span class="pre">FTuple[U]</span></code></p></li>
+<li><p><strong>merge_type</strong> – <code class="docutils literal notranslate"><span class="pre">MergeEnum</span></code> to determine how to merge the result.</p></li>
+<li><p><strong>yield_partials</strong> – Yield unmatched values if <code class="docutils literal notranslate"><span class="pre">MergeEnum</span></code> given as merge type.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Resulting <code class="docutils literal notranslate"><span class="pre">FTuple</span></code>.</p>
+</dd>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>ValueError</strong> – If given an unknown merge enumeration.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -427,11 +465,17 @@ results in an <code class="docutils literal notranslate"><span class="pre">FTupl
             <ul>
 <li><a class="reference internal" href="#">module functional_tuple</a><ul>
 <li><a class="reference internal" href="#pythonic_fp.containers.functional_tuple.FTuple"><code class="docutils literal notranslate"><span class="pre">FTuple</span></code></a><ul>
-<li><a class="reference internal" href="#pythonic_fp.containers.functional_tuple.FTuple.accummulate"><code class="docutils literal notranslate"><span class="pre">FTuple.accummulate()</span></code></a></li>
-<li><a class="reference internal" href="#pythonic_fp.containers.functional_tuple.FTuple.bind"><code class="docutils literal notranslate"><span class="pre">FTuple.bind()</span></code></a></li>
-<li><a class="reference internal" href="#pythonic_fp.containers.functional_tuple.FTuple.copy"><code class="docutils literal notranslate"><span class="pre">FTuple.copy()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.containers.functional_tuple.FTuple.__repr__"><code class="docutils literal notranslate"><span class="pre">FTuple.__repr__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.containers.functional_tuple.FTuple.__eq__"><code class="docutils literal notranslate"><span class="pre">FTuple.__eq__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.containers.functional_tuple.FTuple.__getitem__"><code class="docutils literal notranslate"><span class="pre">FTuple.__getitem__()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.containers.functional_tuple.FTuple.foldl"><code class="docutils literal notranslate"><span class="pre">FTuple.foldl()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.containers.functional_tuple.FTuple.foldr"><code class="docutils literal notranslate"><span class="pre">FTuple.foldr()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.containers.functional_tuple.FTuple.copy"><code class="docutils literal notranslate"><span class="pre">FTuple.copy()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.containers.functional_tuple.FTuple.__add__"><code class="docutils literal notranslate"><span class="pre">FTuple.__add__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.containers.functional_tuple.FTuple.__mul__"><code class="docutils literal notranslate"><span class="pre">FTuple.__mul__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.containers.functional_tuple.FTuple.__rmul__"><code class="docutils literal notranslate"><span class="pre">FTuple.__rmul__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.containers.functional_tuple.FTuple.accummulate"><code class="docutils literal notranslate"><span class="pre">FTuple.accummulate()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.containers.functional_tuple.FTuple.bind"><code class="docutils literal notranslate"><span class="pre">FTuple.bind()</span></code></a></li>
 </ul>
 </li>
 </ul>

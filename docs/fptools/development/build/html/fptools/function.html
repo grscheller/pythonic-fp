@@ -265,32 +265,19 @@
 </ul>
 </section>
 <dl class="py function">
-<dt class="sig sig-object py" id="pythonic_fp.fptools.function.negate">
-<span class="sig-prename descclassname"><span class="pre">pythonic_fp.fptools.function.</span></span><span class="sig-name descname"><span class="pre">negate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">P</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">P</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.fptools.function.negate" title="Link to this definition">¶</a></dt>
-<dd><section id="negate-predicate">
-<h2>Negate predicate<a class="headerlink" href="#negate-predicate" title="Link to this heading">¶</a></h2>
-<p>Take a predicate and return its negation.</p>
+<dt class="sig sig-object py" id="pythonic_fp.fptools.function.swap">
+<span class="sig-prename descclassname"><span class="pre">pythonic_fp.fptools.function.</span></span><span class="sig-name descname"><span class="pre">swap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">U</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">V</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">R</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">V</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">U</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">R</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.fptools.function.swap" title="Link to this definition">¶</a></dt>
+<dd><section id="swap-args">
+<h2>Swap args<a class="headerlink" href="#swap-args" title="Link to this heading">¶</a></h2>
+<p>Swap arguments of a two argument function.</p>
 <dl class="field-list simple">
 <dt class="field-odd">param f<span class="colon">:</span></dt>
-<dd class="field-odd"><p>a function <code class="docutils literal notranslate"><span class="pre">f</span></code> which returns a bool</p>
+<dd class="field-odd"><p>Two argument function.</p>
 </dd>
 <dt class="field-even">returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>the function <code class="docutils literal notranslate"><span class="pre">not</span> <span class="pre">f</span></code></p>
+<dd class="field-even"><p>A version of <code class="docutils literal notranslate"><span class="pre">f</span></code> with its arguments swapped.</p>
 </dd>
 </dl>
-</section>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="pythonic_fp.fptools.function.partial">
-<span class="sig-prename descclassname"><span class="pre">pythonic_fp.fptools.function.</span></span><span class="sig-name descname"><span class="pre">partial</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">P</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">R</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">R</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.fptools.function.partial" title="Link to this definition">¶</a></dt>
-<dd><section id="partial-application">
-<h2>Partial application<a class="headerlink" href="#partial-application" title="Link to this heading">¶</a></h2>
-<p>Partially apply arguments to a function, left to right.</p>
-<ul class="simple">
-<li><p>type-wise the only thing guaranteed is the return type</p></li>
-<li><p>best practice is to cast the result immediately</p></li>
-</ul>
 </section>
 </dd></dl>
 
@@ -314,17 +301,30 @@ a tuple of the original arguments.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="pythonic_fp.fptools.function.swap">
-<span class="sig-prename descclassname"><span class="pre">pythonic_fp.fptools.function.</span></span><span class="sig-name descname"><span class="pre">swap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">U</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">V</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">R</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">V</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">U</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">R</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.fptools.function.swap" title="Link to this definition">¶</a></dt>
-<dd><section id="swap-args">
-<h2>Swap args<a class="headerlink" href="#swap-args" title="Link to this heading">¶</a></h2>
-<p>Swap arguments of a two argument function.</p>
+<dt class="sig sig-object py" id="pythonic_fp.fptools.function.partial">
+<span class="sig-prename descclassname"><span class="pre">pythonic_fp.fptools.function.</span></span><span class="sig-name descname"><span class="pre">partial</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">P</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">R</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">R</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.fptools.function.partial" title="Link to this definition">¶</a></dt>
+<dd><section id="partial-application">
+<h2>Partial application<a class="headerlink" href="#partial-application" title="Link to this heading">¶</a></h2>
+<p>Partially apply arguments to a function, left to right.</p>
+<ul class="simple">
+<li><p>type-wise the only thing guaranteed is the return type</p></li>
+<li><p>best practice is to cast the result immediately</p></li>
+</ul>
+</section>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pythonic_fp.fptools.function.negate">
+<span class="sig-prename descclassname"><span class="pre">pythonic_fp.fptools.function.</span></span><span class="sig-name descname"><span class="pre">negate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">P</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">P</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.fptools.function.negate" title="Link to this definition">¶</a></dt>
+<dd><section id="negate-predicate">
+<h2>Negate predicate<a class="headerlink" href="#negate-predicate" title="Link to this heading">¶</a></h2>
+<p>Take a predicate and return its negation.</p>
 <dl class="field-list simple">
 <dt class="field-odd">param f<span class="colon">:</span></dt>
-<dd class="field-odd"><p>Two argument function.</p>
+<dd class="field-odd"><p>a function <code class="docutils literal notranslate"><span class="pre">f</span></code> which returns a bool</p>
 </dd>
 <dt class="field-even">returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>A version of <code class="docutils literal notranslate"><span class="pre">f</span></code> with its arguments swapped.</p>
+<dd class="field-even"><p>the function <code class="docutils literal notranslate"><span class="pre">not</span> <span class="pre">f</span></code></p>
 </dd>
 </dl>
 </section>
@@ -389,10 +389,10 @@ a tuple of the original arguments.</p>
             <ul>
 <li><a class="reference internal" href="#">fptools.function</a><ul>
 <li><a class="reference internal" href="#fp-tools-for-functions">FP tools for functions</a></li>
-<li><a class="reference internal" href="#pythonic_fp.fptools.function.negate"><code class="docutils literal notranslate"><span class="pre">negate()</span></code></a></li>
-<li><a class="reference internal" href="#pythonic_fp.fptools.function.partial"><code class="docutils literal notranslate"><span class="pre">partial()</span></code></a></li>
-<li><a class="reference internal" href="#pythonic_fp.fptools.function.sequenced"><code class="docutils literal notranslate"><span class="pre">sequenced()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.fptools.function.swap"><code class="docutils literal notranslate"><span class="pre">swap()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.fptools.function.sequenced"><code class="docutils literal notranslate"><span class="pre">sequenced()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.fptools.function.partial"><code class="docutils literal notranslate"><span class="pre">partial()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.fptools.function.negate"><code class="docutils literal notranslate"><span class="pre">negate()</span></code></a></li>
 </ul>
 </li>
 </ul>

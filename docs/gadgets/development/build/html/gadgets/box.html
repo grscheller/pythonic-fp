@@ -286,34 +286,27 @@ could be <code class="docutils literal notranslate"><span class="pre">None</span
 </dd>
 </dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="pythonic_fp.gadgets.box.Box.bind">
-<span class="sig-name descname"><span class="pre">bind</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#pythonic_fp.gadgets.box.Box" title="pythonic_fp.gadgets.box.Box"><span class="pre">Box</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.gadgets.box.Box" title="pythonic_fp.gadgets.box.Box"><span class="pre">Box</span></a></span></span><a class="headerlink" href="#pythonic_fp.gadgets.box.Box.bind" title="Link to this definition">¶</a></dt>
-<dd><p>Flatmap <code class="docutils literal notranslate"><span class="pre">Box</span></code> with function <code class="docutils literal notranslate"><span class="pre">f</span></code>.</p>
-<dl class="field-list simple">
+<dt class="sig sig-object py" id="pythonic_fp.gadgets.box.Box.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">item</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">T</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pythonic_fp.gadgets.box.Box.__init__" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span></dt>
+<dd><dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>f</strong> – binding function</p>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>a new instance</p>
+<dd class="field-odd"><p><strong>item</strong> – An “optional” initial contained <code class="docutils literal notranslate"><span class="pre">item</span></code> for the <code class="docutils literal notranslate"><span class="pre">Box</span></code>.</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="pythonic_fp.gadgets.box.Box.exchange">
-<span class="sig-name descname"><span class="pre">exchange</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">new_item</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">T</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">T</span></span></span><a class="headerlink" href="#pythonic_fp.gadgets.box.Box.exchange" title="Link to this definition">¶</a></dt>
-<dd><p>Exchange an item with what is in the Box.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>new_item</strong> – New item to exchange for current item.</p>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>Original contents of the <code class="docutils literal notranslate"><span class="pre">Box</span></code>.</p>
-</dd>
-<dt class="field-odd">Raises<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>ValueError</strong> – If Box is empty.</p>
-</dd>
-</dl>
+<dt class="sig sig-object py" id="pythonic_fp.gadgets.box.Box.__repr__">
+<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#pythonic_fp.gadgets.box.Box.__repr__" title="Link to this definition">¶</a></dt>
+<dd><p>Return repr(self).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.gadgets.box.Box.__eq__">
+<span class="sig-name descname"><span class="pre">__eq__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">object</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#pythonic_fp.gadgets.box.Box.__eq__" title="Link to this definition">¶</a></dt>
+<dd><p>Return self==value.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -331,21 +324,6 @@ could be <code class="docutils literal notranslate"><span class="pre">None</span
 </dd>
 <dt class="field-odd">Raises<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>ValueError</strong> – when an <code class="docutils literal notranslate"><span class="pre">alt</span></code> item is not provided but needed</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="pythonic_fp.gadgets.box.Box.map">
-<span class="sig-name descname"><span class="pre">map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">U</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.gadgets.box.Box" title="pythonic_fp.gadgets.box.Box"><span class="pre">Box</span></a></span></span><a class="headerlink" href="#pythonic_fp.gadgets.box.Box.map" title="Link to this definition">¶</a></dt>
-<dd><p>Map function <code class="docutils literal notranslate"><span class="pre">f</span></code> over contents. We need to return a new
-instance since the type of Box can change.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>f</strong> – mapping function</p>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>a new instance</p>
 </dd>
 </dl>
 </dd></dl>
@@ -382,6 +360,52 @@ instance since the type of Box can change.</p>
 <dt class="sig sig-object py" id="pythonic_fp.gadgets.box.Box.put">
 <span class="sig-name descname"><span class="pre">put</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">item</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">T</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pythonic_fp.gadgets.box.Box.put" title="Link to this definition">¶</a></dt>
 <dd><p>Put an item in the Box. Discard any previous contents.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.gadgets.box.Box.exchange">
+<span class="sig-name descname"><span class="pre">exchange</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">new_item</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">T</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">T</span></span></span><a class="headerlink" href="#pythonic_fp.gadgets.box.Box.exchange" title="Link to this definition">¶</a></dt>
+<dd><p>Exchange an item with what is in the Box.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>new_item</strong> – New item to exchange for current item.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Original contents of the <code class="docutils literal notranslate"><span class="pre">Box</span></code>.</p>
+</dd>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>ValueError</strong> – If Box is empty.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.gadgets.box.Box.map">
+<span class="sig-name descname"><span class="pre">map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">U</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.gadgets.box.Box" title="pythonic_fp.gadgets.box.Box"><span class="pre">Box</span></a></span></span><a class="headerlink" href="#pythonic_fp.gadgets.box.Box.map" title="Link to this definition">¶</a></dt>
+<dd><p>Map function <code class="docutils literal notranslate"><span class="pre">f</span></code> over contents. We need to return a new
+instance since the type of Box can change.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>f</strong> – mapping function</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>a new instance</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.gadgets.box.Box.bind">
+<span class="sig-name descname"><span class="pre">bind</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#pythonic_fp.gadgets.box.Box" title="pythonic_fp.gadgets.box.Box"><span class="pre">Box</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.gadgets.box.Box" title="pythonic_fp.gadgets.box.Box"><span class="pre">Box</span></a></span></span><a class="headerlink" href="#pythonic_fp.gadgets.box.Box.bind" title="Link to this definition">¶</a></dt>
+<dd><p>Flatmap <code class="docutils literal notranslate"><span class="pre">Box</span></code> with function <code class="docutils literal notranslate"><span class="pre">f</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>f</strong> – binding function</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>a new instance</p>
+</dd>
+</dl>
 </dd></dl>
 
 </dd></dl>
@@ -445,13 +469,16 @@ instance since the type of Box can change.</p>
             <ul>
 <li><a class="reference internal" href="#">box</a><ul>
 <li><a class="reference internal" href="#pythonic_fp.gadgets.box.Box"><code class="docutils literal notranslate"><span class="pre">Box</span></code></a><ul>
-<li><a class="reference internal" href="#pythonic_fp.gadgets.box.Box.bind"><code class="docutils literal notranslate"><span class="pre">Box.bind()</span></code></a></li>
-<li><a class="reference internal" href="#pythonic_fp.gadgets.box.Box.exchange"><code class="docutils literal notranslate"><span class="pre">Box.exchange()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.gadgets.box.Box.__init__"><code class="docutils literal notranslate"><span class="pre">Box.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.gadgets.box.Box.__repr__"><code class="docutils literal notranslate"><span class="pre">Box.__repr__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.gadgets.box.Box.__eq__"><code class="docutils literal notranslate"><span class="pre">Box.__eq__()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.gadgets.box.Box.get"><code class="docutils literal notranslate"><span class="pre">Box.get()</span></code></a></li>
-<li><a class="reference internal" href="#pythonic_fp.gadgets.box.Box.map"><code class="docutils literal notranslate"><span class="pre">Box.map()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.gadgets.box.Box.pop"><code class="docutils literal notranslate"><span class="pre">Box.pop()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.gadgets.box.Box.push"><code class="docutils literal notranslate"><span class="pre">Box.push()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.gadgets.box.Box.put"><code class="docutils literal notranslate"><span class="pre">Box.put()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.gadgets.box.Box.exchange"><code class="docutils literal notranslate"><span class="pre">Box.exchange()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.gadgets.box.Box.map"><code class="docutils literal notranslate"><span class="pre">Box.map()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.gadgets.box.Box.bind"><code class="docutils literal notranslate"><span class="pre">Box.bind()</span></code></a></li>
 </ul>
 </li>
 </ul>

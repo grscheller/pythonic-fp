@@ -282,6 +282,75 @@ with bitwise operators will just result in an <code class="docutils literal notr
 </dd>
 </dl>
 <dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.booleans.flavored.FBool.__new__">
+<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">__new__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cls</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">witness</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flavor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Hashable</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.booleans.flavored.FBool" title="pythonic_fp.booleans.flavored.FBool"><span class="pre">FBool</span></a></span></span><a class="headerlink" href="#pythonic_fp.booleans.flavored.FBool.__new__" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>witness</strong> – Determines truthiness of the <code class="docutils literal notranslate"><span class="pre">FBool</span></code> instance returned.</p></li>
+<li><p><strong>flavor</strong> – The <code class="docutils literal notranslate"><span class="pre">flavor</span></code> of <code class="docutils literal notranslate"><span class="pre">FBool</span></code> to created.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The truthy or falsy <code class="docutils literal notranslate"><span class="pre">FBool</span></code> instance of a particular <code class="docutils literal notranslate"><span class="pre">flavor</span></code>.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.booleans.flavored.FBool.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">witness</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flavor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Hashable</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pythonic_fp.booleans.flavored.FBool.__init__" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.booleans.flavored.FBool.__repr__">
+<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#pythonic_fp.booleans.flavored.FBool.__repr__" title="Link to this definition">¶</a></dt>
+<dd><p>Return repr(self).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.booleans.flavored.FBool.__invert__">
+<span class="sig-name descname"><span class="pre">__invert__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.booleans.flavored.FBool" title="pythonic_fp.booleans.flavored.FBool"><span class="pre">FBool</span></a></span></span><a class="headerlink" href="#pythonic_fp.booleans.flavored.FBool.__invert__" title="Link to this definition">¶</a></dt>
+<dd><p>~self</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.booleans.flavored.FBool.__and__">
+<span class="sig-name descname"><span class="pre">__and__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="subtypable.html#pythonic_fp.booleans.subtypable.SBool" title="pythonic_fp.booleans.subtypable.SBool"><span class="pre">SBool</span></a></span></span><a class="headerlink" href="#pythonic_fp.booleans.flavored.FBool.__and__" title="Link to this definition">¶</a></dt>
+<dd><p>Return self&amp;value.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.booleans.flavored.FBool.__rand__">
+<span class="sig-name descname"><span class="pre">__rand__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="subtypable.html#pythonic_fp.booleans.subtypable.SBool" title="pythonic_fp.booleans.subtypable.SBool"><span class="pre">SBool</span></a></span></span><a class="headerlink" href="#pythonic_fp.booleans.flavored.FBool.__rand__" title="Link to this definition">¶</a></dt>
+<dd><p>Return value&amp;self.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.booleans.flavored.FBool.__or__">
+<span class="sig-name descname"><span class="pre">__or__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="subtypable.html#pythonic_fp.booleans.subtypable.SBool" title="pythonic_fp.booleans.subtypable.SBool"><span class="pre">SBool</span></a></span></span><a class="headerlink" href="#pythonic_fp.booleans.flavored.FBool.__or__" title="Link to this definition">¶</a></dt>
+<dd><p>Return self|value.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.booleans.flavored.FBool.__ror__">
+<span class="sig-name descname"><span class="pre">__ror__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="subtypable.html#pythonic_fp.booleans.subtypable.SBool" title="pythonic_fp.booleans.subtypable.SBool"><span class="pre">SBool</span></a></span></span><a class="headerlink" href="#pythonic_fp.booleans.flavored.FBool.__ror__" title="Link to this definition">¶</a></dt>
+<dd><p>Return value|self.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.booleans.flavored.FBool.__xor__">
+<span class="sig-name descname"><span class="pre">__xor__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="subtypable.html#pythonic_fp.booleans.subtypable.SBool" title="pythonic_fp.booleans.subtypable.SBool"><span class="pre">SBool</span></a></span></span><a class="headerlink" href="#pythonic_fp.booleans.flavored.FBool.__xor__" title="Link to this definition">¶</a></dt>
+<dd><p>Return self^value.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.booleans.flavored.FBool.__rxor__">
+<span class="sig-name descname"><span class="pre">__rxor__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="subtypable.html#pythonic_fp.booleans.subtypable.SBool" title="pythonic_fp.booleans.subtypable.SBool"><span class="pre">SBool</span></a></span></span><a class="headerlink" href="#pythonic_fp.booleans.flavored.FBool.__rxor__" title="Link to this definition">¶</a></dt>
+<dd><p>Return value^self.</p>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.booleans.flavored.FBool.flavor">
 <span class="sig-name descname"><span class="pre">flavor</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Hashable</span></span></span><a class="headerlink" href="#pythonic_fp.booleans.flavored.FBool.flavor" title="Link to this definition">¶</a></dt>
 <dd><dl class="field-list simple">
@@ -378,6 +447,16 @@ with bitwise operators will just result in an <code class="docutils literal notr
             <ul>
 <li><a class="reference internal" href="#">module flavored</a><ul>
 <li><a class="reference internal" href="#pythonic_fp.booleans.flavored.FBool"><code class="docutils literal notranslate"><span class="pre">FBool</span></code></a><ul>
+<li><a class="reference internal" href="#pythonic_fp.booleans.flavored.FBool.__new__"><code class="docutils literal notranslate"><span class="pre">FBool.__new__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.booleans.flavored.FBool.__init__"><code class="docutils literal notranslate"><span class="pre">FBool.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.booleans.flavored.FBool.__repr__"><code class="docutils literal notranslate"><span class="pre">FBool.__repr__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.booleans.flavored.FBool.__invert__"><code class="docutils literal notranslate"><span class="pre">FBool.__invert__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.booleans.flavored.FBool.__and__"><code class="docutils literal notranslate"><span class="pre">FBool.__and__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.booleans.flavored.FBool.__rand__"><code class="docutils literal notranslate"><span class="pre">FBool.__rand__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.booleans.flavored.FBool.__or__"><code class="docutils literal notranslate"><span class="pre">FBool.__or__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.booleans.flavored.FBool.__ror__"><code class="docutils literal notranslate"><span class="pre">FBool.__ror__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.booleans.flavored.FBool.__xor__"><code class="docutils literal notranslate"><span class="pre">FBool.__xor__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.booleans.flavored.FBool.__rxor__"><code class="docutils literal notranslate"><span class="pre">FBool.__rxor__()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.booleans.flavored.FBool.flavor"><code class="docutils literal notranslate"><span class="pre">FBool.flavor()</span></code></a></li>
 </ul>
 </li>

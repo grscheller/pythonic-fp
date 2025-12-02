@@ -294,6 +294,36 @@
 </dd>
 </dl>
 <dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.splitends.splitend_node.SENode.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data:</span> <span class="pre">D</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prev:</span> <span class="pre">~typing.Self</span> <span class="pre">|</span> <span class="pre">_Sentinel</span> <span class="pre">=</span> <span class="pre">Sentinel(''_split_end_node_private_str'')</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pythonic_fp.splitends.splitend_node.SENode.__init__" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> – Nodes always contain data of type <code class="docutils literal notranslate"><span class="pre">D</span></code>.</p></li>
+<li><p><strong>prev</strong> – Link to previous node. Points to <code class="docutils literal notranslate"><span class="pre">self</span></code> if a root node.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.splitends.splitend_node.SENode.__bool__">
+<span class="sig-name descname"><span class="pre">__bool__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#pythonic_fp.splitends.splitend_node.SENode.__bool__" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">True</span></code> if <code class="docutils literal notranslate"><span class="pre">SENode</span></code> is not a root node.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.splitends.splitend_node.SENode.__eq__">
+<span class="sig-name descname"><span class="pre">__eq__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">object</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#pythonic_fp.splitends.splitend_node.SENode.__eq__" title="Link to this definition">¶</a></dt>
+<dd><p>Two <code class="docutils literal notranslate"><span class="pre">SENodes</span></code> nodes are equal if their previous nodes are the
+same object and their data compare as equal.</p>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.splitends.splitend_node.SENode.both">
 <span class="sig-name descname"><span class="pre">both</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">D</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Self</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.splitends.splitend_node.SENode.both" title="Link to this definition">¶</a></dt>
 <dd><p>Peak at data and previous node, if a root then data and self.</p>
@@ -311,25 +341,6 @@
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>The data stored in the <code class="docutils literal notranslate"><span class="pre">SENode</span></code>.</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="pythonic_fp.splitends.splitend_node.SENode.fold">
-<span class="sig-name descname"><span class="pre">fold</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">D</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">D</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">D</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">D</span></span></span><a class="headerlink" href="#pythonic_fp.splitends.splitend_node.SENode.fold" title="Link to this definition">¶</a></dt>
-<dt class="sig sig-object py">
-<span class="sig-name descname"><span class="pre">fold</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">D</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">T</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">init</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">T</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">T</span></span></span></dt>
-<dd><p>Fold data across linked nodes with a function..</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>f</strong> – Folding function, first argument is for accumulated value.`</p></li>
-<li><p><strong>init</strong> – Optional initial starting value for the fold.</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>Reduced value folded from end to root in natural LIFO order.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -355,6 +366,25 @@
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>New <code class="docutils literal notranslate"><span class="pre">SENode</span></code> whose previous node is the current node.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pythonic_fp.splitends.splitend_node.SENode.fold">
+<span class="sig-name descname"><span class="pre">fold</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">D</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">D</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">D</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">D</span></span></span><a class="headerlink" href="#pythonic_fp.splitends.splitend_node.SENode.fold" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">fold</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">D</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">T</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">init</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">T</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">T</span></span></span></dt>
+<dd><p>Fold data across linked nodes with a function..</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>f</strong> – Folding function, first argument is for accumulated value.`</p></li>
+<li><p><strong>init</strong> – Optional initial starting value for the fold.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Reduced value folded from end to root in natural LIFO order.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -413,11 +443,14 @@
 <li><a class="reference internal" href="#">module splitend_node</a><ul>
 <li><a class="reference internal" href="#class-senode">Class SENode</a></li>
 <li><a class="reference internal" href="#pythonic_fp.splitends.splitend_node.SENode"><code class="docutils literal notranslate"><span class="pre">SENode</span></code></a><ul>
+<li><a class="reference internal" href="#pythonic_fp.splitends.splitend_node.SENode.__init__"><code class="docutils literal notranslate"><span class="pre">SENode.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.splitends.splitend_node.SENode.__bool__"><code class="docutils literal notranslate"><span class="pre">SENode.__bool__()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.splitends.splitend_node.SENode.__eq__"><code class="docutils literal notranslate"><span class="pre">SENode.__eq__()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.splitends.splitend_node.SENode.both"><code class="docutils literal notranslate"><span class="pre">SENode.both()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.splitends.splitend_node.SENode.data"><code class="docutils literal notranslate"><span class="pre">SENode.data()</span></code></a></li>
-<li><a class="reference internal" href="#pythonic_fp.splitends.splitend_node.SENode.fold"><code class="docutils literal notranslate"><span class="pre">SENode.fold()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.splitends.splitend_node.SENode.prev"><code class="docutils literal notranslate"><span class="pre">SENode.prev()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.splitends.splitend_node.SENode.push"><code class="docutils literal notranslate"><span class="pre">SENode.push()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.splitends.splitend_node.SENode.fold"><code class="docutils literal notranslate"><span class="pre">SENode.fold()</span></code></a></li>
 </ul>
 </li>
 </ul>

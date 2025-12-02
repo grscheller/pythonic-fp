@@ -305,6 +305,27 @@
 </dd></dl>
 
 <dl class="py function">
+<dt class="sig sig-object py" id="pythonic_fp.iterables.drop_take.take_while">
+<span class="sig-prename descclassname"><span class="pre">pythonic_fp.iterables.drop_take.</span></span><span class="sig-name descname"><span class="pre">take_while</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pred</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">D</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Iterator</span></span></span><a class="headerlink" href="#pythonic_fp.iterables.drop_take.take_while" title="Link to this definition">¶</a></dt>
+<dd><p>Yield values from iterable while predicate is true.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Risk of value loss if iterable is multiple referenced iterator.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>iterable</strong> – Iterable providing the values to be taken.</p></li>
+<li><p><strong>pred</strong> – Single argument Boolean valued function, the “predicate”.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>An Iterator of of values from iterable until predicate false.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
 <dt class="sig sig-object py" id="pythonic_fp.iterables.drop_take.take_split">
 <span class="sig-prename descclassname"><span class="pre">pythonic_fp.iterables.drop_take.</span></span><span class="sig-name descname"><span class="pre">take_split</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Iterator</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Iterator</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.iterables.drop_take.take_split" title="Link to this definition">¶</a></dt>
 <dd><p>Same as take except also return iterator of remaining values.</p>
@@ -322,27 +343,6 @@ first one is exhausted.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>An iterator of values taken and an iterator of remaining values.</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="pythonic_fp.iterables.drop_take.take_while">
-<span class="sig-prename descclassname"><span class="pre">pythonic_fp.iterables.drop_take.</span></span><span class="sig-name descname"><span class="pre">take_while</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pred</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">D</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Iterator</span></span></span><a class="headerlink" href="#pythonic_fp.iterables.drop_take.take_while" title="Link to this definition">¶</a></dt>
-<dd><p>Yield values from iterable while predicate is true.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Risk of value loss if iterable is multiple referenced iterator.</p>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>iterable</strong> – Iterable providing the values to be taken.</p></li>
-<li><p><strong>pred</strong> – Single argument Boolean valued function, the “predicate”.</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>An Iterator of of values from iterable until predicate false.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -430,8 +430,8 @@ the first one is exhausted.</p>
 <li><a class="reference internal" href="#pythonic_fp.iterables.drop_take.drop"><code class="docutils literal notranslate"><span class="pre">drop()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.iterables.drop_take.drop_while"><code class="docutils literal notranslate"><span class="pre">drop_while()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.iterables.drop_take.take"><code class="docutils literal notranslate"><span class="pre">take()</span></code></a></li>
-<li><a class="reference internal" href="#pythonic_fp.iterables.drop_take.take_split"><code class="docutils literal notranslate"><span class="pre">take_split()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.iterables.drop_take.take_while"><code class="docutils literal notranslate"><span class="pre">take_while()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.iterables.drop_take.take_split"><code class="docutils literal notranslate"><span class="pre">take_split()</span></code></a></li>
 <li><a class="reference internal" href="#pythonic_fp.iterables.drop_take.take_while_split"><code class="docutils literal notranslate"><span class="pre">take_while_split()</span></code></a></li>
 </ul>
 </li>
