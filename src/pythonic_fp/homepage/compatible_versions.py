@@ -4,7 +4,7 @@ Known Boring Math compatible versions.
 Coordinated releases
 ====================
 
-2025-12-02 - 3.3.1
+2025-12-02 - 3.3.2
 ------------------
 
 ============== ========================= =======
@@ -14,7 +14,7 @@ Booleans       pythonic-fp-booleans      2.0.0
 Circular Array pythonic-fp-circulararray 6.0.0
 Containers     pythonic-fp-containers    4.0.0
 FP Tools       pythonic-fp-fptools       5.1.2
-Gadgets        pythonic-fp-gadgets       3.1.0
+Gadgets        pythonic-fp-gadgets       4.0.1
 Iterables      pythonic-fp-iterables     5.1.2
 Numpy          pythonic-fp-numpy         0.1.1
 Queues         pythonic-fp-queues        5.1.0

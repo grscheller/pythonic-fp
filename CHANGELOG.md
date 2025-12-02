@@ -19,7 +19,13 @@ relative release. The release string changes when
 
 ## Important Milestones
 
-### 2025-11-30 - PyPI release v3.3.1
+### 2025-12-02 - PyPI release v3.3.2
+
+I never pushed pythonic-fp-gadgets 4.0.0 to PyPI! Pushed version 4.0.1.
+
+Discovered when tests failed off of installed libraries.
+
+### 2025-12-02 - PyPI release v3.3.1
 
 PyPI pythonic-fp-numpy 0.1.1 was released. The test dependencies for
 boring-math-abstract-algebra was missing.
