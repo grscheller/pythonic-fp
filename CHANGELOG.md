@@ -24,6 +24,7 @@ relative release. The release string changes when
 I never pushed pythonic-fp-gadgets 4.0.0 to PyPI! Pushed version 4.0.1.
 
 Discovered when tests failed off of installed libraries.
+Also had to update pythonic-fp-booleans to 2.0.0 -> 2.1.0 as a result.
 
 ### 2025-12-02 - PyPI release v3.3.1
 
