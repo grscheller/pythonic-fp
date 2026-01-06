@@ -1,15 +1,17 @@
 pythonic-fp-circulararray
 =========================
 
-**Efficient full featured double ended lists.**
-
-|RELEASE_STRING| |VERSION_RELEASED| release.
-
 Project
 `pythonic-fp-circulararray <https://pypi.org/project/pythonic-fp-circulararray/>`_
-one of the PyPI
+one of the
 `Pythonic FP <https://grscheller.github.io/pythonic-fp/homepage/build/html/index.html>`_
-projects.
+PyPI projects.
+
+**Proposed PyPI 6.0.1 release**
+
+.. automodule:: pythonic_fp.circulararray
+    :synopsis:
+    :no-index:
 
 .. toctree::
    :caption: Overview
@@ -18,7 +20,7 @@ projects.
    self
 
 .. toctree::
-   :caption: Getting Started
+   :caption: User Guide
 
    usage
    releases
@@ -27,4 +29,5 @@ projects.
 .. toctree::
    :caption: Documentation
 
-   circulararray/index
+   docs/auto
+   docs/fixed

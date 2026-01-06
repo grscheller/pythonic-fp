@@ -19,6 +19,22 @@ relative release. The release string changes when
 
 ## Important Milestones
 
+### 2026-01-04 - PyPI Pythonic FP 4.0.0 release
+
+Preparing for the boring-math-abstract-algebra PyPI 2.1.0 release,
+decided it was time for Boring Math 3.0.0 and Pythonic FP 4.0.0
+coordinated Released.
+
+pythonic-fp-booleans 2.1.0 -> 2.1.1
+pythonic-fp-circulararray 6.0.0 -> 6.0.1
+pythonic-fp-containers 4.0.0 -> 4.0.1
+pythonic-fp-fptools 5.1.2 -> 5.2.0
+pythonic-fp-gadgets 4.0.1 -> 4.0.2
+pythonic-fp-iterables 5.1.2 -> 5.1.3
+pythonic-fp-numpy 0.1.1 -> 0.1.2
+pythonic-fp-queues 5.1.0 -> 5.1.1
+pythonic-fp-splitends 2.0.0 -> 2.0.1
+
 ### 2025-12-02 - PyPI release v3.3.2
 
 I never pushed pythonic-fp-gadgets 4.0.0 to PyPI! Pushed version 4.0.1.

@@ -5,10 +5,10 @@
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="index" title="Index" href="../genindex.html"><link rel="search" title="Search" href="../search.html"><link rel="next" title="wrap" href="wrap.html"><link rel="prev" title="iterate_over_arguments" href="functions/iterate_over_arguments.html">
 
-    <!-- Generated with Sphinx 8.2.3 and Furo 2025.09.25 -->
+    <!-- Generated with Sphinx 8.2.3 and Furo 2025.12.19 -->
         <title>box - Pythonic FP - Gadgets 4.0.1 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=d111a655" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=580074bf" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=7bdb33bb" />
     <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=8dab3a3b" />
     
@@ -282,7 +282,8 @@ could be <code class="docutils literal notranslate"><span class="pre">None</span
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>item</strong> – An “optional” initial contained <code class="docutils literal notranslate"><span class="pre">item</span></code> for the <code class="docutils literal notranslate"><span class="pre">Box</span></code>.</p>
+<dd class="field-odd"><p><strong>item</strong> – An optional initial contained <code class="docutils literal notranslate"><span class="pre">item</span></code>
+for the <code class="docutils literal notranslate"><span class="pre">Box</span></code>.</p>
 </dd>
 </dl>
 <dl class="py method">
@@ -292,7 +293,8 @@ could be <code class="docutils literal notranslate"><span class="pre">None</span
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>item</strong> – An “optional” initial contained <code class="docutils literal notranslate"><span class="pre">item</span></code> for the <code class="docutils literal notranslate"><span class="pre">Box</span></code>.</p>
+<dd class="field-odd"><p><strong>item</strong> – An optional initial contained <code class="docutils literal notranslate"><span class="pre">item</span></code>
+for the <code class="docutils literal notranslate"><span class="pre">Box</span></code>.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -306,7 +308,17 @@ could be <code class="docutils literal notranslate"><span class="pre">None</span
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.gadgets.box.Box.__eq__">
 <span class="sig-name descname"><span class="pre">__eq__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">object</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#pythonic_fp.gadgets.box.Box.__eq__" title="Link to this definition">¶</a></dt>
-<dd><p>Return self==value.</p>
+<dd><p>Efficiently compare to another object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>other</strong> – The object to be compared with,</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">True</span></code> if <code class="docutils literal notranslate"><span class="pre">other</span></code> is of type Box and contains
+an object which compares as equal to the object
+contained in the <code class="docutils literal notranslate"><span class="pre">Box</span></code>, otherwise <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
@@ -314,16 +326,20 @@ could be <code class="docutils literal notranslate"><span class="pre">None</span
 <span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">T</span></span></span><a class="headerlink" href="#pythonic_fp.gadgets.box.Box.get" title="Link to this definition">¶</a></dt>
 <dt class="sig sig-object py">
 <span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">alt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">T</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">T</span></span></span></dt>
-<dd><p>Return the contained item if it exists, otherwise an alternate item.</p>
+<dd><p>Return the contained item, if it exists, otherwise
+an alternate item, if given.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>alt</strong> – an “optional” item of type <code class="docutils literal notranslate"><span class="pre">T</span></code> to return if <code class="docutils literal notranslate"><span class="pre">Box</span></code> is empty</p>
+<dd class="field-odd"><p><strong>alt</strong> – An optional item of type <code class="docutils literal notranslate"><span class="pre">T</span></code> to return 
+if the <code class="docutils literal notranslate"><span class="pre">Box</span></code> is empty.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>contents of <code class="docutils literal notranslate"><span class="pre">Box</span></code>, or an alternate item if given and <code class="docutils literal notranslate"><span class="pre">Box</span></code> empty</p>
+<dd class="field-even"><p>Contents of <code class="docutils literal notranslate"><span class="pre">Box</span></code> or an alternate item, if given,
+when the <code class="docutils literal notranslate"><span class="pre">Box</span></code> is empty.</p>
 </dd>
 <dt class="field-odd">Raises<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>ValueError</strong> – when an <code class="docutils literal notranslate"><span class="pre">alt</span></code> item is not provided but needed</p>
+<dd class="field-odd"><p><strong>ValueError</strong> – When the <code class="docutils literal notranslate"><span class="pre">alt</span></code> item is not provided
+but needed.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -386,10 +402,10 @@ could be <code class="docutils literal notranslate"><span class="pre">None</span
 instance since the type of Box can change.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>f</strong> – mapping function</p>
+<dd class="field-odd"><p><strong>f</strong> – Mapping function.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>a new instance</p>
+<dd class="field-even"><p>A new instance.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -400,10 +416,10 @@ instance since the type of Box can change.</p>
 <dd><p>Flatmap <code class="docutils literal notranslate"><span class="pre">Box</span></code> with function <code class="docutils literal notranslate"><span class="pre">f</span></code>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>f</strong> – binding function</p>
+<dd class="field-odd"><p><strong>f</strong> – Binding function.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>a new instance</p>
+<dd class="field-even"><p>A new instance.</p>
 </dd>
 </dl>
 </dd></dl>

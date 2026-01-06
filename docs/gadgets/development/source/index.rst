@@ -1,19 +1,21 @@
 pythonic-fp-gadgets
 ===================
 
-**Simple standalone classes and functions.**
-
-|RELEASE_STRING| |VERSION_RELEASED| release.
-
 Project
 `pythonic-fp-gadhets <https://pypi.org/project/pythonic-fp-gadgets/>`_
 one of the
 `Pythonic FP <https://grscheller.github.io/pythonic-fp/>`_
 PyPI projects.
 
+**Proposed PyPI 4.0.2 release**
+
 Library of simple, but useful, functions and classes with no external
 dependencies besides those from the Python standard Library. This also
 includes other Pythonic FP projects.
+
+.. automodule:: pythonic_fp.gadgets
+    :synopsis:
+    :no-index:
 
 .. toctree::
    :caption: Overview
@@ -22,7 +24,7 @@ includes other Pythonic FP projects.
    self
 
 .. toctree::
-   :caption: Getting Started
+   :caption: User Guide
 
    usage
    releases
@@ -31,4 +33,7 @@ includes other Pythonic FP projects.
 .. toctree::
    :caption: Documentation
 
-   gadgets/index
+   docs/functions/index
+   docs/box
+   docs/wrap
+   docs/sentinels/index

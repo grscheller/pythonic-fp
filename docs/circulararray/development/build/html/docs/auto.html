@@ -3,12 +3,12 @@
   <head><meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../genindex.html"><link rel="search" title="Search" href="../search.html"><link rel="next" title="module.fixed" href="fixed.html"><link rel="prev" title="pythonic_fp.circulararray" href="index.html">
+<link rel="index" title="Index" href="../genindex.html"><link rel="search" title="Search" href="../search.html"><link rel="next" title="module.fixed" href="fixed.html"><link rel="prev" title="changelog" href="../changelog.html">
 
-    <!-- Generated with Sphinx 8.2.3 and Furo 2025.09.25 -->
+    <!-- Generated with Sphinx 8.2.3 and Furo 2025.12.19 -->
         <title>module auto - Pythonic FP - Circular Array 6.0.1 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=d111a655" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=580074bf" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=7bdb33bb" />
     <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=8dab3a3b" />
     
@@ -198,7 +198,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../index.html">pythonic-fp-circulararray</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<p class="caption" role="heading"><span class="caption-text">User Guide</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../usage.html">usage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../releases.html">PyPI releases</a></li>
@@ -206,11 +206,8 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
 <ul class="current">
-<li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">pythonic_fp.circulararray</a><input aria-label="Toggle navigation of pythonic_fp.circulararray" checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
-<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">module auto</a></li>
-<li class="toctree-l2"><a class="reference internal" href="fixed.html">module.fixed</a></li>
-</ul>
-</li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">module auto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fixed.html">module.fixed</a></li>
 </ul>
 
 </div>
@@ -231,7 +228,7 @@
         </a>
         <div class="content-icon-container">
           <div class="view-this-page">
-  <a class="muted-link" href="../_sources/circulararray/auto.rst.txt" title="View this page">
+  <a class="muted-link" href="../_sources/docs/auto.rst.txt" title="View this page">
     <svg><use href="#svg-eye"></use></svg>
     <span class="visually-hidden">View this page</span>
   </a>
@@ -251,7 +248,8 @@
         <article role="main" id="furo-main-content">
           <section id="module-pythonic_fp.circulararray.auto">
 <span id="module-auto"></span><h1>module auto<a class="headerlink" href="#module-pythonic_fp.circulararray.auto" title="Link to this heading">¶</a></h1>
-<p><strong>Circular array with variable storage capacity.</strong></p>
+<div class="admonition-variable-storage-capacity-circular-array admonition">
+<p class="admonition-title">Variable storage capacity circular array.**</p>
 <ul class="simple">
 <li><p>O(1) pops either end</p></li>
 <li><p>O(1) amortized pushes either end</p></li>
@@ -262,26 +260,17 @@
 <li><p>in boolean context, falsy when empty, otherwise truthy</p></li>
 <li><p>function <code class="docutils literal notranslate"><span class="pre">ca</span></code> produces auto-resizing circular array from arguments</p></li>
 </ul>
+</div>
 <dl class="py class">
 <dt class="sig sig-object py" id="pythonic_fp.circulararray.auto.CA">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.circulararray.auto.</span></span><span class="sig-name descname"><span class="pre">CA</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">items</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.circulararray.auto.CA" title="Link to this definition">¶</a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>items</strong> – “Optionally” takes a single iterable to populate circular array.</p>
-</dd>
-<dt class="field-even">Raises<span class="colon">:</span></dt>
-<dd class="field-even"><ul class="simple">
-<li><p><strong>TypeError</strong> – When <code class="docutils literal notranslate"><span class="pre">items[0]</span></code> not iterable.</p></li>
-<li><p><strong>ValueError</strong> – If more than 1 iterable is given.</p></li>
-</ul>
-</dd>
-</dl>
-<dl class="py method">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.circulararray.auto.</span></span><span class="sig-name descname"><span class="pre">CA</span></span><a class="headerlink" href="#pythonic_fp.circulararray.auto.CA" title="Link to this definition">¶</a></dt>
+<dd><dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.circulararray.auto.CA.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">items</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pythonic_fp.circulararray.auto.CA.__init__" title="Link to this definition">¶</a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>items</strong> – “Optionally” takes a single iterable to populate circular array.</p>
+<dd class="field-odd"><p><strong>items</strong> – Optionally takes a single iterable to
+initially populate the circular array.</p>
 </dd>
 <dt class="field-even">Raises<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
@@ -307,7 +296,16 @@
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.circulararray.auto.CA.__eq__">
 <span class="sig-name descname"><span class="pre">__eq__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">object</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#pythonic_fp.circulararray.auto.CA.__eq__" title="Link to this definition">¶</a></dt>
-<dd><p>Return self==value.</p>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>other</strong> – The object to be compared to.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">True</span></code> if object is another CA whose items compare
+as equal to the corresponding items in the CA,
+otherwise <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
@@ -396,7 +394,8 @@ a mandatory default value. “Safe” version of <code class="docutils literal n
 <dd><p>Pop multiple items from left side of circular array.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>maximum</strong> – Maximum number of items to pop, may pop less if not enough items.</p>
+<dd class="field-odd"><p><strong>maximum</strong> – Maximum number of items to pop, may pop less
+if not enough items.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Tuple of items in the order popped, left to right.</p>
@@ -410,7 +409,8 @@ a mandatory default value. “Safe” version of <code class="docutils literal n
 <dd><p>Pop multiple items from right side of circular array.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>maximum</strong> – Maximum number of items to pop, may pop less if not enough items.</p>
+<dd class="field-odd"><p><strong>maximum</strong> – Maximum number of items to pop, may pop less
+if not enough items.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Tuple of items in the order popped, right to left.</p>
@@ -463,7 +463,8 @@ a mandatory default value. “Safe” version of <code class="docutils literal n
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>f</strong> – Folding function, first argument to <code class="docutils literal notranslate"><span class="pre">f</span></code> is for the accumulator.</p></li>
+<li><p><strong>f</strong> – Folding function, first argument to <code class="docutils literal notranslate"><span class="pre">f</span></code> is for
+the accumulator.</p></li>
 <li><p><strong>start</strong> – “Optional” starting item.</p></li>
 </ul>
 </dd>
@@ -471,7 +472,8 @@ a mandatory default value. “Safe” version of <code class="docutils literal n
 <dd class="field-even"><p>Reduced value produced by the left fold.</p>
 </dd>
 <dt class="field-odd">Raises<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>ValueError</strong> – When circular array empty and no starting item given.</p>
+<dd class="field-odd"><p><strong>ValueError</strong> – When circular array empty and no starting
+item given.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -485,15 +487,17 @@ a mandatory default value. “Safe” version of <code class="docutils literal n
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>f</strong> – Folding function, second argument to <code class="docutils literal notranslate"><span class="pre">f</span></code> is for the accumulator.</p></li>
-<li><p><strong>start</strong> – “Optional” starting item.</p></li>
+<li><p><strong>f</strong> – Folding function, second argument to <code class="docutils literal notranslate"><span class="pre">f</span></code> is for
+the accumulator.</p></li>
+<li><p><strong>start</strong> – Optional starting item.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Reduced value produced by the right fold.</p>
 </dd>
 <dt class="field-odd">Raises<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>ValueError</strong> – When circular array empty and no starting item given.</p>
+<dd class="field-odd"><p><strong>ValueError</strong> – When circular array empty and no starting
+item given.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -534,7 +538,8 @@ storage capacity. To just compact the circular array, do not
 provide <code class="docutils literal notranslate"><span class="pre">minimum_capacity</span></code>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>minimum_capacity</strong> – Minimum storage capacity to compact the circular array.</p>
+<dd class="field-odd"><p><strong>minimum_capacity</strong> – Minimum storage capacity to compact
+the circular array.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -571,14 +576,14 @@ provide <code class="docutils literal notranslate"><span class="pre">minimum_cap
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="index.html">
+          <a class="prev-page" href="../changelog.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">pythonic_fp.circulararray</div>
+                <div class="title">changelog</div>
                 
               </div>
             </a>
@@ -586,7 +591,7 @@ provide <code class="docutils literal notranslate"><span class="pre">minimum_cap
         <div class="bottom-of-page">
           <div class="left-details">
             <div class="copyright">
-                Copyright &#169; 2023-2025, Geoffrey R. Scheller
+                Copyright &#169; 2023-2026, Geoffrey R. Scheller
             </div>
             Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
             
