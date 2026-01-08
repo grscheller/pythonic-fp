@@ -19,7 +19,12 @@ relative release. The release string changes when
 
 ## Important Milestones
 
-### 2026-01-04 - PyPI Pythonic FP 4.0.0 release
+### 2026-01-08 - PyPI Circulararray and Gadgets releases
+
+pythonic-fp-circulararray 6.0.1
+pythonic-fp-gadgets 4.0.2
+
+### 2026-01-04 - PyPI Pythonic FP 4.0.0 release preparations
 
 Preparing for the boring-math-abstract-algebra PyPI 2.1.0 release,
 decided it was time for Boring Math 3.0.0 and Pythonic FP 4.0.0

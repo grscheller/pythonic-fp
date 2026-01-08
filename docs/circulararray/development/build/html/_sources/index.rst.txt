@@ -7,7 +7,7 @@ one of the
 `Pythonic FP <https://grscheller.github.io/pythonic-fp/homepage/build/html/index.html>`_
 PyPI projects.
 
-**Proposed PyPI 6.0.1 release**
+**PyPI 6.0.1 release**
 
 .. automodule:: pythonic_fp.circulararray
     :synopsis:

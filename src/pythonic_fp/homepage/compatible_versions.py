@@ -4,20 +4,20 @@ Known Boring Math compatible versions.
 Coordinated releases
 ====================
 
-2026-01-03 - 3.3.4
+2026-01-?? - TBA
 ------------------
 
 ============== ========================= =======
 Name           PyPI Project              Version
 ============== ========================= =======
-Booleans       pythonic-fp-booleans      2.1.0
-Circular Array pythonic-fp-circulararray 6.0.0
-Containers     pythonic-fp-containers    4.0.0
+Booleans       pythonic-fp-booleans      2.1.1
+Circular Array pythonic-fp-circulararray 6.0.1
+Containers     pythonic-fp-containers    4.0.1
 FP Tools       pythonic-fp-fptools       5.2.0
-Gadgets        pythonic-fp-gadgets       4.0.1
-Iterables      pythonic-fp-iterables     5.1.2
-Numpy          pythonic-fp-numpy         0.1.1
-Queues         pythonic-fp-queues        5.1.0
+Gadgets        pythonic-fp-gadgets       4.0.2
+Iterables      pythonic-fp-iterables     5.1.3
+Numpy          pythonic-fp-numpy         0.1.2
+Queues         pythonic-fp-queues        5.1.1
 Splitends      pythonic-fp-splitends     2.0.1
 ============== ========================= =======
 

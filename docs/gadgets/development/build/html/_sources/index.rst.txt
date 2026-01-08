@@ -7,7 +7,7 @@ one of the
 `Pythonic FP <https://grscheller.github.io/pythonic-fp/>`_
 PyPI projects.
 
-**Proposed PyPI 4.0.2 release**
+**PyPI 4.0.2 release**
 
 Library of simple, but useful, functions and classes with no external
 dependencies besides those from the Python standard Library. This also
