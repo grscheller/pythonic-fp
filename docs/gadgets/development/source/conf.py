@@ -44,9 +44,3 @@ html_theme_options = {
 }
 html_theme = 'furo'
 html_static_path = ['_static']
-
-rst_epilog = f"""
-.. |VERSION_RELEASED| replace:: version {release}
-
-.. |RELEASE_STRING| replace:: {release_string}
-"""
