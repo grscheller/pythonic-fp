@@ -5,10 +5,10 @@
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="index" title="Index" href="genindex.html"><link rel="search" title="Search" href="search.html"><link rel="next" title="Usage" href="usage.html">
 
-    <!-- Generated with Sphinx 8.2.3 and Furo 2025.09.25 -->
-        <title>Pythonic FP - Booleans 2.1.0 documentation</title>
+    <!-- Generated with Sphinx 8.2.3 and Furo 2025.12.19 -->
+        <title>Pythonic FP - Booleans 2.2.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d111a655" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=580074bf" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=7bdb33bb" />
     <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=4ae1632d" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=8dab3a3b" />
     
@@ -165,7 +165,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="#"><div class="brand">Pythonic FP - Booleans 2.1.0 documentation</div></a>
+      <a href="#"><div class="brand">Pythonic FP - Booleans 2.2.0 documentation</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -176,7 +176,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
       </label>
     </div>
@@ -186,7 +186,7 @@
       
       <div class="sidebar-sticky"><a class="sidebar-brand" href="#">
   
-  <span class="sidebar-brand-text">Pythonic FP - Booleans 2.1.0 documentation</span>
+  <span class="sidebar-brand-text">Pythonic FP - Booleans 2.2.0 documentation</span>
   
 </a><form class="sidebar-search-container" method="get" action="search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -198,7 +198,7 @@
 <ul class="current">
 <li class="toctree-l1 current current-page"><a class="current reference internal" href="#">pythonic-fp-booleans</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<p class="caption" role="heading"><span class="caption-text">User Guide</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="releases.html">PyPI releases</a></li>
@@ -206,10 +206,10 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
 <ul>
-<li class="toctree-l1 has-children"><a class="reference internal" href="booleans/index.html">pythonic_fp.booleans</a><input aria-label="Toggle navigation of pythonic_fp.booleans" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="booleans/subtypable.html">module subtypable</a></li>
-<li class="toctree-l2"><a class="reference internal" href="booleans/flavored.html">module flavored</a></li>
-<li class="toctree-l2"><a class="reference internal" href="booleans/truthy_falsy.html">module truthy_falsy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs/subtypable.html">module subtypable</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="docs/subtypes/index.html">SBool subtypes</a><input aria-label="Toggle navigation of SBool subtypes" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="docs/subtypes/flavored.html">module flavored</a></li>
+<li class="toctree-l2"><a class="reference internal" href="docs/subtypes/truthy_falsy.html">module truthy_falsy</a></li>
 </ul>
 </li>
 </ul>
@@ -245,26 +245,54 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
           </label>
         </div>
         <article role="main" id="furo-main-content">
           <section id="pythonic-fp-booleans">
 <h1>pythonic-fp-booleans<a class="headerlink" href="#pythonic-fp-booleans" title="Link to this heading">¶</a></h1>
-<p><strong>Subtypable Boolean with sub-typed examples.</strong></p>
-<p>PyPI version 2.1.0 release.</p>
 <p>Project
 <a class="reference external" href="https://pypi.org/project/pythonic-fp-booleans/">pythonic-fp-booleans</a>
 one of the PyPI
 <a class="reference external" href="https://grscheller.github.io/pythonic-fp/homepage/build/html/index.html">Pythonic FP</a>
 projects.</p>
+<p><strong>PyPI 2.2.0 release</strong></p>
+<section id="subtypable-boolean-class-hierarchy">
+<h2>Subtypable Boolean Class Hierarchy<a class="headerlink" href="#subtypable-boolean-class-hierarchy" title="Link to this heading">¶</a></h2>
+<div class="graphviz"><img src="_images/graphviz-516624b6edc89fbbbbdb1e20c68ef2c17c759587.png" alt="digraph Booleans {
+    bgcolor=&quot;#957fb8&quot;;
+    node [style=filled, fillcolor=&quot;#181616&quot;, fontcolor=&quot;#dcd7ba&quot;];
+    edge [color=&quot;#181616&quot;, fontcolor=&quot;#dcd7ba&quot;];
+    int -&gt; bool;
+    int -&gt; SBool;
+    SBool -&gt; &quot;FBool(h1)&quot;;
+    SBool -&gt; &quot;FBool(h2)&quot;;
+    SBool -&gt; &quot;FBool(h3)&quot;;
+    SBool -&gt; TF_Bool;
+    TF_Bool -&gt; T_Bool;
+    TF_Bool -&gt; F_Bool;
+}" class="graphviz" /></div>
+<p>While still compatible with Python shortcut logic, <code class="docutils literal notranslate"><span class="pre">SBool</span></code> and its
+subclasses can be non-shortcut logically composed with Python’s bitwise
+operators.</p>
+</section>
 <div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<p class="caption" role="heading"><span class="caption-text">User Guide</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#how-to-installing-the-package">How to installing the package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#importing-the-module">Importing the module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#best-practices">Best practices</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="usage.html#subtypable-booleans">Subtypable Booleans</a></li>
+<li class="toctree-l3"><a class="reference internal" href="usage.html#flavored-booleans">Flavored Booleans</a></li>
+<li class="toctree-l3"><a class="reference internal" href="usage.html#truthy-falsy-booleans">Truthy_Falsy Booleans</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="releases.html">PyPI releases</a></li>
 <li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
 </ul>
@@ -272,29 +300,66 @@ projects.</p>
 <div class="toctree-wrapper compound">
 <p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="booleans/index.html">pythonic_fp.booleans</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="booleans/subtypable.html">module subtypable</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="booleans/subtypable.html#pythonic_fp.booleans.subtypable.SBool"><code class="docutils literal notranslate"><span class="pre">SBool</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="booleans/subtypable.html#pythonic_fp.booleans.subtypable.TRUTH"><code class="docutils literal notranslate"><span class="pre">TRUTH</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="booleans/subtypable.html#pythonic_fp.booleans.subtypable.LIE"><code class="docutils literal notranslate"><span class="pre">LIE</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs/subtypable.html">module subtypable</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="docs/subtypable.html#pythonic_fp.booleans.subtypable.SBool"><code class="docutils literal notranslate"><span class="pre">SBool</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="docs/subtypable.html#pythonic_fp.booleans.subtypable.SBool.__new__"><code class="docutils literal notranslate"><span class="pre">SBool.__new__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="docs/subtypable.html#pythonic_fp.booleans.subtypable.SBool.__init__"><code class="docutils literal notranslate"><span class="pre">SBool.__init__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="docs/subtypable.html#pythonic_fp.booleans.subtypable.SBool.__repr__"><code class="docutils literal notranslate"><span class="pre">SBool.__repr__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="docs/subtypable.html#pythonic_fp.booleans.subtypable.SBool.__invert__"><code class="docutils literal notranslate"><span class="pre">SBool.__invert__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="docs/subtypable.html#pythonic_fp.booleans.subtypable.SBool.__and__"><code class="docutils literal notranslate"><span class="pre">SBool.__and__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="docs/subtypable.html#pythonic_fp.booleans.subtypable.SBool.__or__"><code class="docutils literal notranslate"><span class="pre">SBool.__or__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="docs/subtypable.html#pythonic_fp.booleans.subtypable.SBool.__xor__"><code class="docutils literal notranslate"><span class="pre">SBool.__xor__()</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="booleans/flavored.html">module flavored</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="booleans/flavored.html#pythonic_fp.booleans.flavored.FBool"><code class="docutils literal notranslate"><span class="pre">FBool</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="booleans/flavored.html#pythonic_fp.booleans.flavored.truthy"><code class="docutils literal notranslate"><span class="pre">truthy()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="booleans/flavored.html#pythonic_fp.booleans.flavored.falsy"><code class="docutils literal notranslate"><span class="pre">falsy()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="docs/subtypable.html#pythonic_fp.booleans.subtypable.TRUTH"><code class="docutils literal notranslate"><span class="pre">TRUTH</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="docs/subtypable.html#pythonic_fp.booleans.subtypable.LIE"><code class="docutils literal notranslate"><span class="pre">LIE</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="booleans/truthy_falsy.html">module truthy_falsy</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="booleans/truthy_falsy.html#pythonic_fp.booleans.truthy_falsy.TF_Bool"><code class="docutils literal notranslate"><span class="pre">TF_Bool</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="booleans/truthy_falsy.html#pythonic_fp.booleans.truthy_falsy.T_Bool"><code class="docutils literal notranslate"><span class="pre">T_Bool</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="booleans/truthy_falsy.html#pythonic_fp.booleans.truthy_falsy.F_Bool"><code class="docutils literal notranslate"><span class="pre">F_Bool</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="booleans/truthy_falsy.html#pythonic_fp.booleans.truthy_falsy.ALWAYS"><code class="docutils literal notranslate"><span class="pre">ALWAYS</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="booleans/truthy_falsy.html#pythonic_fp.booleans.truthy_falsy.NEVER"><code class="docutils literal notranslate"><span class="pre">NEVER</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="booleans/truthy_falsy.html#pythonic_fp.booleans.truthy_falsy.TF_Boolean"><code class="docutils literal notranslate"><span class="pre">TF_Boolean</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs/subtypes/index.html">SBool subtypes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="docs/subtypes/flavored.html">module flavored</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="docs/subtypes/flavored.html#pythonic_fp.booleans.flavored.FBool"><code class="docutils literal notranslate"><span class="pre">FBool</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="docs/subtypes/flavored.html#pythonic_fp.booleans.flavored.FBool.__new__"><code class="docutils literal notranslate"><span class="pre">FBool.__new__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs/subtypes/flavored.html#pythonic_fp.booleans.flavored.FBool.__init__"><code class="docutils literal notranslate"><span class="pre">FBool.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs/subtypes/flavored.html#pythonic_fp.booleans.flavored.FBool.__repr__"><code class="docutils literal notranslate"><span class="pre">FBool.__repr__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs/subtypes/flavored.html#pythonic_fp.booleans.flavored.FBool.__invert__"><code class="docutils literal notranslate"><span class="pre">FBool.__invert__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs/subtypes/flavored.html#pythonic_fp.booleans.flavored.FBool.__and__"><code class="docutils literal notranslate"><span class="pre">FBool.__and__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs/subtypes/flavored.html#pythonic_fp.booleans.flavored.FBool.__rand__"><code class="docutils literal notranslate"><span class="pre">FBool.__rand__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs/subtypes/flavored.html#pythonic_fp.booleans.flavored.FBool.__or__"><code class="docutils literal notranslate"><span class="pre">FBool.__or__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs/subtypes/flavored.html#pythonic_fp.booleans.flavored.FBool.__ror__"><code class="docutils literal notranslate"><span class="pre">FBool.__ror__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs/subtypes/flavored.html#pythonic_fp.booleans.flavored.FBool.__xor__"><code class="docutils literal notranslate"><span class="pre">FBool.__xor__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs/subtypes/flavored.html#pythonic_fp.booleans.flavored.FBool.__rxor__"><code class="docutils literal notranslate"><span class="pre">FBool.__rxor__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs/subtypes/flavored.html#pythonic_fp.booleans.flavored.FBool.flavor"><code class="docutils literal notranslate"><span class="pre">FBool.flavor()</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="booleans/index.html#subtypable-boolean-class-hierarchy">Subtypable Boolean Class Hierarchy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="docs/subtypes/flavored.html#pythonic_fp.booleans.flavored.truthy"><code class="docutils literal notranslate"><span class="pre">truthy()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="docs/subtypes/flavored.html#pythonic_fp.booleans.flavored.falsy"><code class="docutils literal notranslate"><span class="pre">falsy()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="docs/subtypes/truthy_falsy.html">module truthy_falsy</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="docs/subtypes/truthy_falsy.html#pythonic_fp.booleans.truthy_falsy.TF_Bool"><code class="docutils literal notranslate"><span class="pre">TF_Bool</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="docs/subtypes/truthy_falsy.html#pythonic_fp.booleans.truthy_falsy.TF_Bool.__new__"><code class="docutils literal notranslate"><span class="pre">TF_Bool.__new__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs/subtypes/truthy_falsy.html#pythonic_fp.booleans.truthy_falsy.TF_Bool.__repr__"><code class="docutils literal notranslate"><span class="pre">TF_Bool.__repr__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs/subtypes/truthy_falsy.html#pythonic_fp.booleans.truthy_falsy.TF_Bool.__invert__"><code class="docutils literal notranslate"><span class="pre">TF_Bool.__invert__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs/subtypes/truthy_falsy.html#pythonic_fp.booleans.truthy_falsy.TF_Bool.__and__"><code class="docutils literal notranslate"><span class="pre">TF_Bool.__and__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs/subtypes/truthy_falsy.html#pythonic_fp.booleans.truthy_falsy.TF_Bool.__or__"><code class="docutils literal notranslate"><span class="pre">TF_Bool.__or__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs/subtypes/truthy_falsy.html#pythonic_fp.booleans.truthy_falsy.TF_Bool.__xor__"><code class="docutils literal notranslate"><span class="pre">TF_Bool.__xor__()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="docs/subtypes/truthy_falsy.html#pythonic_fp.booleans.truthy_falsy.T_Bool"><code class="docutils literal notranslate"><span class="pre">T_Bool</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="docs/subtypes/truthy_falsy.html#pythonic_fp.booleans.truthy_falsy.T_Bool.__new__"><code class="docutils literal notranslate"><span class="pre">T_Bool.__new__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs/subtypes/truthy_falsy.html#pythonic_fp.booleans.truthy_falsy.T_Bool.__repr__"><code class="docutils literal notranslate"><span class="pre">T_Bool.__repr__()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="docs/subtypes/truthy_falsy.html#pythonic_fp.booleans.truthy_falsy.F_Bool"><code class="docutils literal notranslate"><span class="pre">F_Bool</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="docs/subtypes/truthy_falsy.html#pythonic_fp.booleans.truthy_falsy.F_Bool.__new__"><code class="docutils literal notranslate"><span class="pre">F_Bool.__new__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="docs/subtypes/truthy_falsy.html#pythonic_fp.booleans.truthy_falsy.F_Bool.__repr__"><code class="docutils literal notranslate"><span class="pre">F_Bool.__repr__()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="docs/subtypes/truthy_falsy.html#pythonic_fp.booleans.truthy_falsy.ALWAYS"><code class="docutils literal notranslate"><span class="pre">ALWAYS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="docs/subtypes/truthy_falsy.html#pythonic_fp.booleans.truthy_falsy.NEVER"><code class="docutils literal notranslate"><span class="pre">NEVER</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="docs/subtypes/truthy_falsy.html#pythonic_fp.booleans.truthy_falsy.TF_Boolean"><code class="docutils literal notranslate"><span class="pre">TF_Boolean</span></code></a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -334,13 +399,32 @@ projects.</p>
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">pythonic-fp-booleans</a><ul>
+<li><a class="reference internal" href="#subtypable-boolean-class-hierarchy">Subtypable Boolean Class Hierarchy</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>
   </div>
-</div><script src="_static/documentation_options.js?v=20623aea"></script>
+</div><script src="_static/documentation_options.js?v=b21de401"></script>
     <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/scripts/furo.js?v=46bd48cc"></script>

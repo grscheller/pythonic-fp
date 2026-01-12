@@ -13,9 +13,7 @@
 project = 'Pythonic FP - Booleans'
 copyright = '2023-2025, Geoffrey R. Scheller'
 author = 'Geoffrey R. Scheller'
-release = '2.1.0'
-# release_string = 'Proposed PyPI'
-release_string = 'PyPI'
+release = '2.2.0'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -44,9 +42,3 @@ html_theme_options = {
 }
 html_theme = 'furo'
 html_static_path = ['_static']
-
-rst_epilog = f"""
-.. |VERSION_RELEASED| replace:: version {release}
-
-.. |RELEASE_STRING| replace:: {release_string}
-"""
