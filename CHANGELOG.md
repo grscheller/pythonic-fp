@@ -30,7 +30,7 @@ Preparing for the boring-math-abstract-algebra PyPI 2.1.0 release,
 decided it was time for Boring Math 3.0.0 and Pythonic FP 4.0.0
 coordinated Released.
 
-pythonic-fp-booleans 2.1.0 -> 2.2.0
+pythonic-fp-booleans 2.1.0 -> 3.0.0
 pythonic-fp-circulararray 6.0.0 -> 6.0.1
 pythonic-fp-containers 4.0.0 -> 4.0.1
 pythonic-fp-fptools 5.1.2 -> 5.2.0

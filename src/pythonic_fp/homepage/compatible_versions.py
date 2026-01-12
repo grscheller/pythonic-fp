@@ -10,7 +10,7 @@ Coordinated releases
 ============== ========================= =======
 Name           PyPI Project              Version
 ============== ========================= =======
-Booleans       pythonic-fp-booleans      2.2.0
+Booleans       pythonic-fp-booleans      3.0.0
 Circular Array pythonic-fp-circulararray 6.0.1
 Containers     pythonic-fp-containers    4.0.1
 FP Tools       pythonic-fp-fptools       5.2.0
