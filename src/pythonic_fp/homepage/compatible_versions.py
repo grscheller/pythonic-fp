@@ -4,8 +4,8 @@ Known Boring Math compatible versions.
 Coordinated releases
 ====================
 
-2026-01-?? - TBA
-------------------
+2026-01-TBD - 3.4.0
+-----------------=-
 
 ============== ========================= =======
 Name           PyPI Project              Version

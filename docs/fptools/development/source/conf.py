@@ -6,16 +6,13 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 #
-# Must match what is in pyproject.toml, also update proposed_release accordingly
-# when generating the docs for an actual, not proposed, release.
+# Must match what is in pyproject.toml and top level index.rst.
 #
 
 project = 'Pythonic FP - Functional Programming Tools'
-copyright = '2023-2025, Geoffrey R. Scheller'
+copyright = '2023-2026, Geoffrey R. Scheller'
 author = 'Geoffrey R. Scheller'
 release = '5.2.0'
-release_string = 'Proposed PyPI'
-# release_string = 'PyPI'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -44,9 +41,3 @@ html_theme_options = {
 }
 html_theme = 'furo'
 html_static_path = ['_static']
-
-rst_epilog = f"""
-.. |VERSION_RELEASED| replace:: version {release}
-
-.. |RELEASE_STRING| replace:: {release_string}
-"""

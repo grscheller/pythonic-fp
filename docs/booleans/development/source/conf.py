@@ -6,12 +6,11 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 #
-# Must match what is in pyproject.toml, also update proposed_release accordingly
-# when generating the docs for an actual, not proposed, release.
+# Must match what is in pyproject.toml and top level index.rst.
 #
 
 project = 'Pythonic FP - Booleans'
-copyright = '2023-2025, Geoffrey R. Scheller'
+copyright = '2023-2026, Geoffrey R. Scheller'
 author = 'Geoffrey R. Scheller'
 release = '3.0.0'
 
