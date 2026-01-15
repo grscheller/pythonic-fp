@@ -1,15 +1,17 @@
 pythonic-fp-queues
 ==================
 
-**Data structures implementing various types of queues.**
-
-|RELEASE_STRING| |VERSION_RELEASED| release.
-
 Project
 `pythonic-fp-queues <https://pypi.org/project/pythonic-fp-queues/>`_
 one of the PyPI
 `Pythonic FP <https://grscheller.github.io/pythonic-fp/homepage/build/html/index.html>`_
 projects.
+
+**PyPI 5.1.1 release**
+
+.. automodule:: pythonic_fp.queues
+    :synopsis:
+    :no-index:
 
 .. toctree::
     :caption: Overview
@@ -27,4 +29,7 @@ projects.
 .. toctree::
     :caption: Documentation
 
-    queues/index
+    docs/fifo
+    docs/lifo
+    docs/de
+

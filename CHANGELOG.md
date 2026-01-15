@@ -19,6 +19,18 @@ relative release. The release string changes when
 
 ## Important Milestones
 
+### 2026-01-15 - PyPI Queues release
+
+pythonic-fp-queues 5.1.1
+
+### 2026-01-13 - PyPI FPTools release
+
+pythonic-fp-fptools 5.2.0
+
+### 2026-01-12 - PyPI Booleans release
+
+pythonic-fp-booleans 3.0.0
+
 ### 2026-01-08 - PyPI Circulararray and Gadgets releases
 
 pythonic-fp-circulararray 6.0.1

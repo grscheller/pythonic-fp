@@ -258,27 +258,40 @@ PyPI projects.</p>
 <h2>Circular Array<a class="headerlink" href="#circular-array" title="Link to this heading">¶</a></h2>
 <div class="admonition-stateful-circular-array-data-structures admonition">
 <p class="admonition-title">Stateful circular array data structures.</p>
+<ul class="simple">
+<li><p>O(1) pops and pushes either end</p></li>
+<li><p>O(1) size determination</p></li>
+<li><p>O(1) indexing</p></li>
+</ul>
+</div>
 <div class="table-wrapper docutils container">
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Module</p></th>
+<th class="head"><p>Class</p></th>
+<th class="head"><p>Factory</p></th>
 <th class="head"><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p><strong>pythonic_fp.circulararray.auto</strong></p></td>
+<td><p><strong>CA</strong></p></td>
+<td><p><strong>ca</strong></p></td>
 <td><p>Variable storage capacity circular array.</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>pythonic_fp.circulararray.fixed</strong></p></td>
+<td><p><strong>CAF</strong></p></td>
+<td><p><strong>caf</strong></p></td>
 <td><p>Fixed storage capacity circular array.</p></td>
 </tr>
 </tbody>
 </table>
 </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <ul class="simple">
-<li><p>O(1) pops and pushes either end</p></li>
-<li><p>O(1) size determination</p></li>
-<li><p>O(1) indexing</p></li>
+<li><p>Class constructors <code class="docutils literal notranslate"><span class="pre">CA</span></code> and <code class="docutils literal notranslate"><span class="pre">CAF</span></code> take an optional iterator to populate the circular array.</p></li>
+<li><p>Factory Functions <code class="docutils literal notranslate"><span class="pre">ca</span></code> and <code class="docutils literal notranslate"><span class="pre">caf</span></code> take a variable number of parameters for the circular array.</p></li>
 </ul>
 </div>
 </section>

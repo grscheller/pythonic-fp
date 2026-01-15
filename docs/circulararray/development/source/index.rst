@@ -7,27 +7,27 @@ one of the
 `Pythonic FP <https://grscheller.github.io/pythonic-fp/homepage/build/html/index.html>`_
 PyPI projects.
 
-**Proposed PyPI 6.0.2 release**
+**proposed PyPI 6.0.2 release**
 
 .. automodule:: pythonic_fp.circulararray
     :synopsis:
     :no-index:
 
 .. toctree::
-   :caption: Overview
-   :hidden:
+    :caption: Overview
+    :hidden:
 
-   self
-
-.. toctree::
-   :caption: User Guide
-
-   usage
-   releases
-   changelog
+    self
 
 .. toctree::
-   :caption: Documentation
+    :caption: User Guide
 
-   docs/auto
-   docs/fixed
+    usage
+    releases
+    changelog
+
+.. toctree::
+    :caption: Documentation
+
+    docs/auto
+    docs/fixed

@@ -18,22 +18,22 @@ includes other Pythonic FP projects.
     :no-index:
 
 .. toctree::
-   :caption: Overview
-   :hidden:
+    :caption: Overview
+    :hidden:
 
-   self
-
-.. toctree::
-   :caption: User Guide
-
-   usage
-   releases
-   changelog
+    self
 
 .. toctree::
-   :caption: Documentation
+    :caption: User Guide
 
-   docs/functions/index
-   docs/box
-   docs/wrap
-   docs/sentinels/index
+    usage
+    releases
+    changelog
+
+.. toctree::
+    :caption: Documentation
+
+    docs/functions/index
+    docs/box
+    docs/wrap
+    docs/sentinels/index
