@@ -11,11 +11,9 @@
 #
 
 project = 'Pythonic FP - NumPy'
-copyright = '2025, Geoffrey R. Scheller'
+copyright = '2025-2026, Geoffrey R. Scheller'
 author = 'Geoffrey R. Scheller'
-release = '0.1.1'
-# release_string = 'Proposed PyPI'
-release_string = 'PyPI'
+release = '0.1.2'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -24,9 +22,19 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.graphviz',
 ]
-
+autodoc_default_options = {
+    'members': True,
+    'private-members': True,
+    'special-members': True,
+}
 autodoc_member_order = 'bysource'
-autoclass_content = 'both'
+autoclass_content = 'class'
+autodoc_class_signature = 'separated'
+autodoc_typehints_format = 'short'
+autodoc_use_type_comments = True
+autodoc_docstring_signature = False
+autodoc_preserve_defaults = True
+autodoc_warningiserror = False
 
 templates_path = ['_templates']
 exclude_patterns: list[str] = []
@@ -44,9 +52,3 @@ html_theme_options = {
 }
 html_theme = 'furo'
 html_static_path = ['_static']
-
-rst_epilog = f"""
-.. |VERSION_RELEASED| replace:: version {release}
-
-.. |RELEASE_STRING| replace:: {release_string}
-"""

@@ -4,7 +4,7 @@ Known Boring Math compatible versions.
 Coordinated releases
 ====================
 
-2026-01-TBD - 3.4.0
+2026-02-TBD - 3.4.0
 -----------------=-
 
 ============== ========================= =======

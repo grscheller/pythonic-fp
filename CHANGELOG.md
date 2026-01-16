@@ -19,6 +19,10 @@ relative release. The release string changes when
 
 ## Important Milestones
 
+### 2026-01-16 - PyPI Queues release
+
+pythonic-fp-numpy 0.1.2
+
 ### 2026-01-15 - PyPI Queues release
 
 pythonic-fp-queues 5.1.1
