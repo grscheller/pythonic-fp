@@ -3,12 +3,12 @@
   <head><meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../genindex.html"><link rel="search" title="Search" href="../search.html"><link rel="next" title="iterables.folding" href="folding.html"><link rel="prev" title="iterables.merging" href="merging.html">
+<link rel="index" title="Index" href="../genindex.html"><link rel="search" title="Search" href="../search.html"><link rel="prev" title="iterables.folding" href="folding.html">
 
-    <!-- Generated with Sphinx 8.2.3 and Furo 2025.09.25 -->
-        <title>iterables.drop_take - Pythonic FP - Iterables 5.1.3 documentation</title>
+    <!-- Generated with Sphinx 8.2.3 and Furo 2025.12.19 -->
+        <title>iterables.merging - Pythonic FP - Iterables 5.1.3 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=d111a655" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=580074bf" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=7bdb33bb" />
     <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=8dab3a3b" />
     
@@ -198,7 +198,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../index.html">pythonic-fp-iterables</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<p class="caption" role="heading"><span class="caption-text">User Guide</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../usage.html">Usage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../releases.html">PyPI releases</a></li>
@@ -206,12 +206,9 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
 <ul class="current">
-<li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">pythonic_fp.iterables</a><input aria-label="Toggle navigation of pythonic_fp.iterables" checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="merging.html">iterables.merging</a></li>
-<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">iterables.drop_take</a></li>
-<li class="toctree-l2"><a class="reference internal" href="folding.html">iterables.folding</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="drop_take.html">iterables.drop_take</a></li>
+<li class="toctree-l1"><a class="reference internal" href="folding.html">iterables.folding</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">iterables.merging</a></li>
 </ul>
 
 </div>
@@ -232,7 +229,7 @@
         </a>
         <div class="content-icon-container">
           <div class="view-this-page">
-  <a class="muted-link" href="../_sources/iterables/drop_take.rst.txt" title="View this page">
+  <a class="muted-link" href="../_sources/docs/merging.rst.txt" title="View this page">
     <svg><use href="#svg-eye"></use></svg>
     <span class="visually-hidden">View this page</span>
   </a>
@@ -250,121 +247,103 @@
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          <section id="module-pythonic_fp.iterables.drop_take">
-<span id="iterables-drop-take"></span><h1>iterables.drop_take<a class="headerlink" href="#module-pythonic_fp.iterables.drop_take" title="Link to this heading">¶</a></h1>
-<p>Module pythonic_fp.iterables.drop_take</p>
-<dl class="py function">
-<dt class="sig sig-object py" id="pythonic_fp.iterables.drop_take.drop">
-<span class="sig-prename descclassname"><span class="pre">pythonic_fp.iterables.drop_take.</span></span><span class="sig-name descname"><span class="pre">drop</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Iterator</span></span></span><a class="headerlink" href="#pythonic_fp.iterables.drop_take.drop" title="Link to this definition">¶</a></dt>
-<dd><p>Drop the next n values from iterable.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>iterable</strong> – Iterable whose values are to be dropped.</p></li>
-<li><p><strong>n</strong> – Number of values to be dropped.</p></li>
+          <section id="module-pythonic_fp.iterables.merging">
+<span id="iterables-merging"></span><h1>iterables.merging<a class="headerlink" href="#module-pythonic_fp.iterables.merging" title="Link to this heading">¶</a></h1>
+<section id="merging-iterables">
+<h2>Merging Iterables<a class="headerlink" href="#merging-iterables" title="Link to this heading">¶</a></h2>
+<div class="admonition-module-pythonic-fp-iterables-merging admonition">
+<p class="admonition-title">module pythonic_fp.iterables.merging</p>
+<p>Functions to merge multiple iterables together into one.</p>
+</div>
+</section>
+<dl class="py class">
+<dt class="sig sig-object py" id="pythonic_fp.iterables.merging.MergeEnum">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.iterables.merging.</span></span><span class="sig-name descname"><span class="pre">MergeEnum</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">values</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.iterables.merging.MergeEnum" title="Link to this definition">¶</a></dt>
+<dd><p>Iterable Blending Enums.</p>
+<ul class="simple">
+<li><p><strong>MergeEnum.Concat:</strong> Concatenate first to last</p></li>
+<li><p><strong>MergeEnum.Merge:</strong> Merge until one is exhausted</p></li>
+<li><p><strong>MergeEnum.Exhaust:</strong> Merge until all are exhausted</p></li>
 </ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>An iterator of the remaining values.</p>
-</dd>
-</dl>
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="pythonic_fp.iterables.drop_take.drop_while">
-<span class="sig-prename descclassname"><span class="pre">pythonic_fp.iterables.drop_take.</span></span><span class="sig-name descname"><span class="pre">drop_while</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pred</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">D</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Iterator</span></span></span><a class="headerlink" href="#pythonic_fp.iterables.drop_take.drop_while" title="Link to this definition">¶</a></dt>
-<dd><p>Drop initial values from iterable while predicate is true.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>iterable</strong> – Iterable whose values are to be dropped.</p></li>
-<li><p><strong>pred</strong> – Single argument Boolean valued function, the “predicate”.</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>An iterator beginning where pred returned false.</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="pythonic_fp.iterables.drop_take.take">
-<span class="sig-prename descclassname"><span class="pre">pythonic_fp.iterables.drop_take.</span></span><span class="sig-name descname"><span class="pre">take</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Iterator</span></span></span><a class="headerlink" href="#pythonic_fp.iterables.drop_take.take" title="Link to this definition">¶</a></dt>
-<dd><p>Return an iterator of up to n initial values of an iterable.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>Iterable</strong> – iterable providing the values to be taken.</p></li>
-<li><p><strong>n</strong> – Number of values to be dropped.</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>An iterator of up to n initial values from iterable.</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="pythonic_fp.iterables.drop_take.take_while">
-<span class="sig-prename descclassname"><span class="pre">pythonic_fp.iterables.drop_take.</span></span><span class="sig-name descname"><span class="pre">take_while</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pred</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">D</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Iterator</span></span></span><a class="headerlink" href="#pythonic_fp.iterables.drop_take.take_while" title="Link to this definition">¶</a></dt>
-<dd><p>Yield values from iterable while predicate is true.</p>
+<dt class="sig sig-object py" id="pythonic_fp.iterables.merging.concat">
+<span class="sig-prename descclassname"><span class="pre">pythonic_fp.iterables.merging.</span></span><span class="sig-name descname"><span class="pre">concat</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">iterables</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Iterator</span></span></span><a class="headerlink" href="#pythonic_fp.iterables.merging.concat" title="Link to this definition">¶</a></dt>
+<dd><p>Sequentially concatenate multiple iterables together.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Risk of value loss if iterable is multiple referenced iterator.</p>
+<p>An infinite iterable will prevent subsequent iterables from
+yielding any values.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Performant to the standard library’s <code class="docutils literal notranslate"><span class="pre">itertools.chain</span></code>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>iterables</strong> – Iterables to concatenate.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Iterator of concatenated values from the iterables.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pythonic_fp.iterables.merging.merge">
+<span class="sig-prename descclassname"><span class="pre">pythonic_fp.iterables.merging.</span></span><span class="sig-name descname"><span class="pre">merge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">iterables</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">yield_partials</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Iterator</span></span></span><a class="headerlink" href="#pythonic_fp.iterables.merging.merge" title="Link to this definition">¶</a></dt>
+<dd><p>Merge together <code class="docutils literal notranslate"><span class="pre">iterables</span></code> until one is exhausted.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When <code class="docutils literal notranslate"><span class="pre">yield_partials</span></code> is true, then any unmatched values from other iterables
+already yielded when the first iterable is exhausted are yielded. This prevents
+data lose if any of the iterables are iterators with external references.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>iterable</strong> – Iterable providing the values to be taken.</p></li>
-<li><p><strong>pred</strong> – Single argument Boolean valued function, the “predicate”.</p></li>
+<li><p><strong>iterables</strong> – Iterables to merge until one gets exhausted.</p></li>
+<li><p><strong>yield_partials</strong> – Yield any unpaired yielded values from other iterables.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>An Iterator of of values from iterable until predicate false.</p>
+<dd class="field-even"><p>Iterator of merged values from the iterables until one is exhausted.</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="pythonic_fp.iterables.drop_take.take_split">
-<span class="sig-prename descclassname"><span class="pre">pythonic_fp.iterables.drop_take.</span></span><span class="sig-name descname"><span class="pre">take_split</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Iterator</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Iterator</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.iterables.drop_take.take_split" title="Link to this definition">¶</a></dt>
-<dd><p>Same as take except also return iterator of remaining values.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p><strong>CONTRACT:</strong> Do not access the second returned iterator until the
-first one is exhausted.</p>
-</div>
+<dt class="sig sig-object py" id="pythonic_fp.iterables.merging.exhaust">
+<span class="sig-prename descclassname"><span class="pre">pythonic_fp.iterables.merging.</span></span><span class="sig-name descname"><span class="pre">exhaust</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">iterables</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Iterator</span></span></span><a class="headerlink" href="#pythonic_fp.iterables.merging.exhaust" title="Link to this definition">¶</a></dt>
+<dd><p>Merge together multiple iterables until all are exhausted.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>iterable</strong> – Iterable providing the values to be taken.</p></li>
-<li><p><strong>n</strong> – maximum Number of values to be taken.</p></li>
-</ul>
+<dd class="field-odd"><p><strong>iterables</strong> – Iterables to exhaustively merge.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>An iterator of values taken and an iterator of remaining values.</p>
+<dd class="field-even"><p>Iterator of merged values from the iterables until all are exhausted.</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="pythonic_fp.iterables.drop_take.take_while_split">
-<span class="sig-prename descclassname"><span class="pre">pythonic_fp.iterables.drop_take.</span></span><span class="sig-name descname"><span class="pre">take_while_split</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pred</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">D</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Iterator</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Iterator</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pythonic_fp.iterables.drop_take.take_while_split" title="Link to this definition">¶</a></dt>
-<dd><p>Yield values from iterable while predicate is true.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p><strong>CONTRACT:</strong> Do not access the second returned iterator until
-the first one is exhausted.</p>
-</div>
+<dt class="sig sig-object py" id="pythonic_fp.iterables.merging.blend">
+<span class="sig-prename descclassname"><span class="pre">pythonic_fp.iterables.merging.</span></span><span class="sig-name descname"><span class="pre">blend</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">iterables</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">merge_enum</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#pythonic_fp.iterables.merging.MergeEnum" title="pythonic_fp.iterables.merging.MergeEnum"><span class="pre">MergeEnum</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">MergeEnum.Concat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">yield_partials</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Iterator</span></span></span><a class="headerlink" href="#pythonic_fp.iterables.merging.blend" title="Link to this definition">¶</a></dt>
+<dd><p>Merge behavior based on value of merge_enum parameter.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>iterable</strong> – Iterable providing the values to be taken.</p></li>
-<li><p><strong>pred</strong> – Single argument Boolean valued function.</p></li>
+<li><p><strong>iterables</strong> – Iterables to blend together.</p></li>
+<li><p><strong>merge_enum</strong> – <code class="docutils literal notranslate"><span class="pre">MergeEnum</span></code> to determine merging behavior.</p></li>
+<li><p><strong>yield_partials</strong> – Yield unpaired values from other iterables.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>Tuple of iterator of values taken and an iterator of remaining values.</p>
+<dd class="field-even"><p>An iterator of type <code class="docutils literal notranslate"><span class="pre">D</span></code>.</p>
+</dd>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>ValueError</strong> – When an unknown <code class="docutils literal notranslate"><span class="pre">MergeEnum</span></code> is given.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -376,23 +355,15 @@ the first one is exhausted.</p>
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="folding.html">
-              <div class="page-info">
-                <div class="context">
-                  <span>Next</span>
-                </div>
-                <div class="title">iterables.folding</div>
-              </div>
-              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
-            </a>
-          <a class="prev-page" href="merging.html">
+          
+          <a class="prev-page" href="folding.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">iterables.merging</div>
+                <div class="title">iterables.folding</div>
                 
               </div>
             </a>
@@ -426,13 +397,13 @@ the first one is exhausted.</p>
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">iterables.drop_take</a><ul>
-<li><a class="reference internal" href="#pythonic_fp.iterables.drop_take.drop"><code class="docutils literal notranslate"><span class="pre">drop()</span></code></a></li>
-<li><a class="reference internal" href="#pythonic_fp.iterables.drop_take.drop_while"><code class="docutils literal notranslate"><span class="pre">drop_while()</span></code></a></li>
-<li><a class="reference internal" href="#pythonic_fp.iterables.drop_take.take"><code class="docutils literal notranslate"><span class="pre">take()</span></code></a></li>
-<li><a class="reference internal" href="#pythonic_fp.iterables.drop_take.take_while"><code class="docutils literal notranslate"><span class="pre">take_while()</span></code></a></li>
-<li><a class="reference internal" href="#pythonic_fp.iterables.drop_take.take_split"><code class="docutils literal notranslate"><span class="pre">take_split()</span></code></a></li>
-<li><a class="reference internal" href="#pythonic_fp.iterables.drop_take.take_while_split"><code class="docutils literal notranslate"><span class="pre">take_while_split()</span></code></a></li>
+<li><a class="reference internal" href="#">iterables.merging</a><ul>
+<li><a class="reference internal" href="#merging-iterables">Merging Iterables</a></li>
+<li><a class="reference internal" href="#pythonic_fp.iterables.merging.MergeEnum"><code class="docutils literal notranslate"><span class="pre">MergeEnum</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.iterables.merging.concat"><code class="docutils literal notranslate"><span class="pre">concat()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.iterables.merging.merge"><code class="docutils literal notranslate"><span class="pre">merge()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.iterables.merging.exhaust"><code class="docutils literal notranslate"><span class="pre">exhaust()</span></code></a></li>
+<li><a class="reference internal" href="#pythonic_fp.iterables.merging.blend"><code class="docutils literal notranslate"><span class="pre">blend()</span></code></a></li>
 </ul>
 </li>
 </ul>

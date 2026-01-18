@@ -15,27 +15,31 @@ relative release. The release string changes when
 
 - **MAJOR:** a consistent, coordinated release of Pythonic FP PyPI projects happens
 - **MINOR:** breaking API changes are made to a Pythonic FP PyPI project or new project released
-- **PATCH:** minor code improvements and homepage updates are made
+- **PATCH:** minor code improvements and major homepage updates are made
 
 ## Important Milestones
 
-### 2026-01-16 - PyPI Queues release
+### 2026-01-18 - PyPI iterables release
+
+pythonic-fp-iterables 5.1.3
+
+### 2026-01-16 - PyPI numpy release
 
 pythonic-fp-numpy 0.1.2
 
-### 2026-01-15 - PyPI Queues release
+### 2026-01-15 - PyPI queues release
 
 pythonic-fp-queues 5.1.1
 
-### 2026-01-13 - PyPI FPTools release
+### 2026-01-13 - PyPI fptools release
 
 pythonic-fp-fptools 5.2.0
 
-### 2026-01-12 - PyPI Booleans release
+### 2026-01-12 - PyPI booleans release
 
 pythonic-fp-booleans 3.0.0
 
-### 2026-01-08 - PyPI Circulararray and Gadgets releases
+### 2026-01-08 - PyPI circulararray and gadgets releases
 
 pythonic-fp-circulararray 6.0.1
 pythonic-fp-gadgets 4.0.2
