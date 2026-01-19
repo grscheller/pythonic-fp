@@ -11,14 +11,9 @@
 #
 
 project = 'Pythonic FP - Containers'
-copyright = '2023-2025, Geoffrey R. Scheller'
+copyright = '2023-2026, Geoffrey R. Scheller'
 author = 'Geoffrey R. Scheller'
 release = '4.0.1'
-release_string = 'Proposed PyPI'
-# release_string = 'PyPI'
-
-# -- General configuration ---------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
     'sphinx.ext.autodoc',
@@ -44,9 +39,3 @@ html_theme_options = {
 }
 html_theme = 'furo'
 html_static_path = ['_static']
-
-rst_epilog = f"""
-.. |VERSION_RELEASED| replace:: version {release}
-
-.. |RELEASE_STRING| replace:: {release_string}
-"""

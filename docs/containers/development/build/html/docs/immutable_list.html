@@ -5,10 +5,10 @@
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="index" title="Index" href="../genindex.html"><link rel="search" title="Search" href="../search.html"><link rel="prev" title="module functional_tuple" href="functional_tuple.html">
 
-    <!-- Generated with Sphinx 8.2.3 and Furo 2025.09.25 -->
+    <!-- Generated with Sphinx 8.2.3 and Furo 2025.12.19 -->
         <title>module immutable_list - Pythonic FP - Containers 4.0.1 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=d111a655" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=580074bf" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=7bdb33bb" />
     <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=8dab3a3b" />
     
@@ -206,11 +206,8 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
 <ul class="current">
-<li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">pythonic_fp.containers</a><input aria-label="Toggle navigation of pythonic_fp.containers" checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="functional_tuple.html">module functional_tuple</a></li>
-<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">module immutable_list</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="functional_tuple.html">module functional_tuple</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">module immutable_list</a></li>
 </ul>
 
 </div>
@@ -231,7 +228,7 @@
         </a>
         <div class="content-icon-container">
           <div class="view-this-page">
-  <a class="muted-link" href="../_sources/containers/immutable_list.rst.txt" title="View this page">
+  <a class="muted-link" href="../_sources/docs/immutable_list.rst.txt" title="View this page">
     <svg><use href="#svg-eye"></use></svg>
     <span class="visually-hidden">View this page</span>
   </a>
@@ -255,7 +252,8 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="pythonic_fp.containers.immutable_list.IList">
 <em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.containers.immutable_list.</span></span><span class="sig-name descname"><span class="pre">IList</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">dss</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.containers.immutable_list.IList" title="Link to this definition">¶</a></dt>
-<dd><p>Immutable List like data structure.</p>
+<dd><div class="admonition-immutable-list-like-data-structure admonition">
+<p class="admonition-title">Immutable List like data structure.</p>
 <ul class="simple">
 <li><p>hashability should be enforced by LSP tooling</p></li>
 <li><p>hashability will be enforced at runtime</p></li>
@@ -267,6 +265,7 @@
 </ul>
 </li>
 </ul>
+</div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>dss</strong> – 0 or 1 iterables</p>
@@ -370,16 +369,20 @@ results in an <code class="docutils literal notranslate"><span class="pre">IList
 <dl class="py method">
 <dt class="sig sig-object py" id="pythonic_fp.containers.immutable_list.IList.bind">
 <span class="sig-name descname"><span class="pre">bind</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">D</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#pythonic_fp.containers.immutable_list.IList" title="pythonic_fp.containers.immutable_list.IList"><span class="pre">IList</span></a><span class="p"><span class="pre">[</span></span><span class="pre">U</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">merge_enum</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">MergeEnum</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">MergeEnum.Concat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">yield_partials</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#pythonic_fp.containers.immutable_list.IList" title="pythonic_fp.containers.immutable_list.IList"><span class="pre">IList</span></a><span class="p"><span class="pre">[</span></span><span class="pre">U</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Never</span></span></span><a class="headerlink" href="#pythonic_fp.containers.immutable_list.IList.bind" title="Link to this definition">¶</a></dt>
-<dd><p>Bind function <cite>f</cite> to the <cite>IList</cite>.</p>
+<dd><p>Bind function <code class="docutils literal notranslate"><span class="pre">f</span></code> to the <code class="docutils literal notranslate"><span class="pre">IList</span></code>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>ds</strong> – values to instantiate IList</p>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>f</strong> – Function <code class="docutils literal notranslate"><span class="pre">D</span> <span class="pre">-&gt;</span> <span class="pre">IList[U]</span></code></p></li>
+<li><p><strong>merge_type</strong> – <code class="docutils literal notranslate"><span class="pre">MergeEnum</span></code> to determine how to merge the result.</p></li>
+<li><p><strong>yield_partials</strong> – Yield unmatched values if <code class="docutils literal notranslate"><span class="pre">MergeEnum</span></code> given as merge type.</p></li>
+</ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>resulting IList</p>
+<dd class="field-even"><p>Resulting <code class="docutils literal notranslate"><span class="pre">IList</span></code>.</p>
 </dd>
 <dt class="field-odd">Raises<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>ValueError</strong> – if given unknown merge_type</p>
+<dd class="field-odd"><p><strong>ValueError</strong> – If given an unknown merge enumeration.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -409,7 +412,7 @@ results in an <code class="docutils literal notranslate"><span class="pre">IList
         <div class="bottom-of-page">
           <div class="left-details">
             <div class="copyright">
-                Copyright &#169; 2023-2025, Geoffrey R. Scheller
+                Copyright &#169; 2023-2026, Geoffrey R. Scheller
             </div>
             Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
             
