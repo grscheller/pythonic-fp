@@ -10,6 +10,7 @@ projects.
 **PyPI 3.0.0 release**
 
 .. automodule:: pythonic_fp.booleans
+
     :synopsis:
     :no-index:
 

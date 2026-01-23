@@ -4,8 +4,8 @@ Known Boring Math compatible versions.
 Coordinated releases
 ====================
 
-2026-02-TBD - 3.4.0
--------------------
+2026-01-22 - 3.4.0
+------------------
 
 ============== ========================= =======
 Name           PyPI Project              Version
@@ -18,7 +18,7 @@ Gadgets        pythonic-fp-gadgets       4.0.2
 Iterables      pythonic-fp-iterables     5.1.3
 Numpy          pythonic-fp-numpy         0.1.2
 Queues         pythonic-fp-queues        5.1.1
-Splitends      pythonic-fp-splitends     2.0.1
+Splitends      pythonic-fp-splitends     2.0.2
 ============== ========================= =======
 
 ----
