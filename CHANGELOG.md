@@ -19,6 +19,10 @@ relative release. The release string changes when
 
 ## Important Milestones
 
+### 2026-01-19 - PyPI containers release
+
+pythonic-fp-iterables 5.1.3
+
 ### 2026-01-18 - PyPI iterables release
 
 pythonic-fp-iterables 5.1.3
