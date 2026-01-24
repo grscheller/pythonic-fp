@@ -18,9 +18,11 @@ other than the Python standard library.
 
 .. code:: python
 
-    from pythonic_fp.gadgets.box import Box
     from pythonic_fp.gadgets.iterate_arguments import ita
     from pythonic_fp.gadgets.latest_common_ancestor import lca
+    from pythonic_fp.gadgets.box import Box
+    from pythonic_fp.gadgets.wrap import Wrap
+    from pythonic_fp.gadgets.wrap import HWrap
     from pythonic_fp.gadgets.sentinels.flavored import Sentinel
     from pythonic_fp.gadgets.sentinels.novalue import NoValue
 

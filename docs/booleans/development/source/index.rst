@@ -1,5 +1,5 @@
 pythonic-fp-booleans
-====================
+--------------------
 
 Project
 `pythonic-fp-booleans <https://pypi.org/project/pythonic-fp-booleans/>`_
@@ -7,7 +7,7 @@ one of the PyPI
 `Pythonic FP <https://grscheller.github.io/pythonic-fp/homepage/build/html/index.html>`_
 projects.
 
-**PyPI 3.0.0 release**
+**Proposed PyPI 3.0.1+ release**
 
 .. automodule:: pythonic_fp.booleans
 

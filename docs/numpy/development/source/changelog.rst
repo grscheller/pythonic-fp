@@ -1,5 +1,5 @@
 changelog
-=========
+---------
 
 Changelog for the
 `pythonic-fp-numpy

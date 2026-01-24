@@ -1,6 +1,8 @@
 SBool subtypes
 --------------
 
+**Examples of ``SBool`` subtypes.**
+
 .. toctree::
 
     flavored

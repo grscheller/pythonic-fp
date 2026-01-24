@@ -1,5 +1,5 @@
 pythonic-fp-fptools
-===================
+-------------------
 
 Project
 `pythonic-fp-fptools <https://pypi.org/project/pythonic-fp-fptools/>`_
@@ -7,7 +7,7 @@ one of the PyPI
 `Pythonic FP <https://grscheller.github.io/pythonic-fp/homepage/build/html/index.html>`_
 projects.
 
-**PyPI 5.2.0 release**
+**Proposed PyPI 5.2.1+ release**
 
 .. automodule:: pythonic_fp.fptools
     :synopsis:

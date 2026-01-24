@@ -7,6 +7,8 @@ one of the PyPI
 `Pythonic FP <https://grscheller.github.io/pythonic-fp/homepage/build/html/index.html>`_
 projects.
 
+**Proposed PyPI 5.1.4+ release**
+
 .. automodule:: pythonic_fp.iterables
     :synopsis:
     :no-index:

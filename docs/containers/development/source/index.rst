@@ -7,7 +7,7 @@ one of the PyPI
 `Pythonic FP <https://grscheller.github.io/pythonic-fp/homepage/build/html/index.html>`_
 projects.
 
-**PyPI 4.0.1 release**
+**Proposed PyPI 4.0.2+ release**
 
 .. automodule:: pythonic_fp.containers
     :synopsis:

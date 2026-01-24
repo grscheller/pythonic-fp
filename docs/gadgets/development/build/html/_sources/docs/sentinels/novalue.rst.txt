@@ -1,6 +1,8 @@
 novalue
 =======
 
+**Sentinel value representing a missing value.**
+
 .. automodule:: pythonic_fp.gadgets.sentinels.novalue
     :members:
     :exclude-members: NoValue

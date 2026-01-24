@@ -2,7 +2,7 @@ sentinels
 =========
 
 .. automodule:: pythonic_fp.gadgets.sentinels
-   :synopsis:
+    :synopsis:
 
 .. toctree::
     :caption: Sentinel Values

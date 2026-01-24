@@ -1,5 +1,5 @@
 pythonic-fp-numpy
-=================
+-----------------
 
 Project
 `pythonic-fp-numpy <https://pypi.org/project/pythonic-fp-numpy/>`_
@@ -7,7 +7,7 @@ one of the
 `Pythonic FP <https://grscheller.github.io/pythonic-fp/>`_
 PyPI projects.
 
-**PyPI 0.1.2 release**
+**Proposed PyPI 0.1.3+ release**
 
 .. automodule:: pythonic_fp.numpy
     :synopsis:

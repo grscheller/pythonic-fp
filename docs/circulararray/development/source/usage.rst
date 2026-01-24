@@ -22,7 +22,7 @@ Import the circulararray classes and "factory functions" into your code.
 
 .. note::
 
-    The behaviors of the ``CA`` and ``CAF`` classes were modeled after the Python builtin ``list``.
+    The behaviors of the ``CA`` and ``CAF`` classes were modeled after the Python ``list`` builtin.
 
     - they can be instantiated with data by supplying an iterable
     - with no unnamed arguments they are instantiated empty

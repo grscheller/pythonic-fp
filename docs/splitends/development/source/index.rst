@@ -7,7 +7,7 @@ one of the PyPI
 `Pythonic FP <https://grscheller.github.io/pythonic-fp/homepage/build/html/index.html>`_
 projects.
 
-**PyPI 2.0.2 release**
+**Proposed PyPI 2.0.3+ release**
 
 .. automodule:: pythonic_fp.splitends
     :synopsis:

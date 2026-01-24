@@ -250,19 +250,28 @@
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          <section id="module-pythonic_fp.booleans.truthy_falsy">
-<span id="module-truthy-falsy"></span><h1>module truthy_falsy<a class="headerlink" href="#module-pythonic_fp.booleans.truthy_falsy" title="Link to this heading">¶</a></h1>
-<p><strong>Class TF_Bool</strong></p>
-<p>Subclass of <code class="docutils literal notranslate"><span class="pre">SBool</span></code> whose truthy values and falsy values are
-different distinct singleton subtypes.</p>
-<p>This type can also do (non-shortcut) Boolean logic using Python
-bitwise operators.</p>
-<hr class="docutils" />
-<p><strong>Class T_Bool</strong></p>
-<p>The subtype of <code class="docutils literal notranslate"><span class="pre">TF_Bool</span></code> which is always truthy.</p>
-<hr class="docutils" />
-<p><strong>Class F_Bool</strong></p>
-<p>The subtype of <code class="docutils literal notranslate"><span class="pre">TF_Bool</span></code> which is always falsy.</p>
+          <section id="module-truthy-falsy">
+<h1>module truthy_falsy<a class="headerlink" href="#module-truthy-falsy" title="Link to this heading">¶</a></h1>
+<p><strong>A Boolean whose true and false values are distinct subtypes.</strong></p>
+<div class="admonition-truthy-falsy-booleans admonition" id="module-pythonic_fp.booleans.truthy_falsy">
+<p class="admonition-title">Truthy-Falsy Booleans</p>
+<p>A Boolean implementation whose distinct truthy and falsy
+values are distinct singleton subclasses, not just
+distinct singleton values.</p>
+<p>A subtype of <code class="docutils literal notranslate"><span class="pre">SBool</span></code>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Logically combine using Python’s bitwise operators.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Logically combining using Pythons’s shortcut <code class="docutils literal notranslate"><span class="pre">and</span></code>,
+<code class="docutils literal notranslate"><span class="pre">or</span></code>, and <code class="docutils literal notranslate"><span class="pre">not</span></code> builtins will just result in a
+value of type <code class="docutils literal notranslate"><span class="pre">bool</span></code>.</p>
+</div>
+<p>Otherwise, these datastructures are completely compatible
+with Python lazy evaluation.</p>
+</div>
+</div>
 <dl class="py class">
 <dt class="sig sig-object py" id="pythonic_fp.booleans.truthy_falsy.TF_Bool">
 <em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.booleans.truthy_falsy.</span></span><span class="sig-name descname"><span class="pre">TF_Bool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">witness</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flavor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Hashable</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">NoValue()</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.booleans.truthy_falsy.TF_Bool" title="Link to this definition">¶</a></dt>
@@ -328,7 +337,11 @@ bitwise operators.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="pythonic_fp.booleans.truthy_falsy.T_Bool">
 <em class="property"><span class="k"><span class="pre">final</span></span><span class="w"> </span><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.booleans.truthy_falsy.</span></span><span class="sig-name descname"><span class="pre">T_Bool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">witness</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">object</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">NoValue()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flavor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Hashable</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">NoValue()</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.booleans.truthy_falsy.T_Bool" title="Link to this definition">¶</a></dt>
-<dd><dl class="field-list simple">
+<dd><div class="admonition-the-subtype-of-tf-bool-which-is-always-truthy admonition">
+<p class="admonition-title">The subtype of <code class="docutils literal notranslate"><span class="pre">TF_Bool</span></code> which is always truthy</p>
+<p>A distinct type from F_Bool. A singleton value.</p>
+</div>
+<dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>witness</strong> – Ignored parameter, a T_Bool is always truthy.</p></li>
@@ -366,7 +379,11 @@ bitwise operators.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="pythonic_fp.booleans.truthy_falsy.F_Bool">
 <em class="property"><span class="k"><span class="pre">final</span></span><span class="w"> </span><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pythonic_fp.booleans.truthy_falsy.</span></span><span class="sig-name descname"><span class="pre">F_Bool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">witness</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">object</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">NoValue()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flavor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Hashable</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">NoValue()</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pythonic_fp.booleans.truthy_falsy.F_Bool" title="Link to this definition">¶</a></dt>
-<dd><dl class="field-list simple">
+<dd><div class="admonition-the-subtype-of-tf-bool-which-is-always-falsy admonition">
+<p class="admonition-title">The subtype of <code class="docutils literal notranslate"><span class="pre">TF_Bool</span></code> which is always falsy.</p>
+<p>A distinct type from T_Bool. A singleton value.</p>
+</div>
+<dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>witness</strong> – Parameter ignored, an <code class="docutils literal notranslate"><span class="pre">F_Bool</span></code> is always falsy.</p></li>
