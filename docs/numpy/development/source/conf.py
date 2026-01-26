@@ -13,7 +13,7 @@
 project = 'Pythonic FP - NumPy'
 copyright = '2025-2026, Geoffrey R. Scheller'
 author = 'Geoffrey R. Scheller'
-release = '0.1.2'
+release = '0.1.3+'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
