@@ -13,7 +13,7 @@
 project = 'Pythonic FP - SplitEnds'
 copyright = '2023-2026, Geoffrey R. Scheller'
 author = 'Geoffrey R. Scheller'
-release = '2.0.2'
+release = '2.0.3+'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration

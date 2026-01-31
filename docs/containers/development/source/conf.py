@@ -13,7 +13,7 @@
 project = 'Pythonic FP - Containers'
 copyright = '2023-2026, Geoffrey R. Scheller'
 author = 'Geoffrey R. Scheller'
-release = '4.0.1'
+release = '4.0.2+'
 
 extensions = [
     'sphinx.ext.autodoc',
