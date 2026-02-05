@@ -5,7 +5,7 @@
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="index" title="Index" href="genindex.html"><link rel="search" title="Search" href="search.html"><link rel="next" title="usage" href="usage.html">
 
-    <!-- Generated with Sphinx 8.2.3 and Furo 2025.12.19 -->
+    <!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 -->
         <title>Pythonic FP - SplitEnds 2.0.3+ documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d111a655" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=7bdb33bb" />
@@ -254,7 +254,8 @@ one of the PyPI
 <a class="reference external" href="https://grscheller.github.io/pythonic-fp/homepage/build/html/index.html">Pythonic FP</a>
 projects.</p>
 <p><strong>Proposed PyPI 2.0.3+ release</strong></p>
-<p>Mutable stack objects that can safely share data.</p>
+<div class="admonition-mutable-stack-objects-that-can-safely-share-data admonition">
+<p class="admonition-title">Mutable stack objects that can safely share data</p>
 <p>Python package implementing a singularly linked stack of nodes called a <code class="docutils literal notranslate"><span class="pre">SplitEnd</span></code>.
 While mutable, these data structures can safely share immutable data nodes between
 themselves. These nodes, of type <code class="docutils literal notranslate"><span class="pre">SENode</span></code>, always contain data. A root node is
@@ -264,10 +265,14 @@ shorter or “extended” further from its “end” node at the top of the stac
 node is at the bottom of the stack and can not be “snipped” or “cut” off.</p>
 <p>A <code class="docutils literal notranslate"><span class="pre">SplitEnd</span></code> can be duplicated onto a compatible root node. By compatible, the
 new root must contain data that compares as equal to the old root node.</p>
-<p><strong>TODO:</strong> A <code class="docutils literal notranslate"><span class="pre">scalp</span></code> is a container of root nodes all of whose contained data must
+</div>
+<div class="admonition-future-directions admonition">
+<p class="admonition-title">Future directions</p>
+<p>A <code class="docutils literal notranslate"><span class="pre">scalp</span></code> is a container of root nodes all of whose contained data must
 be hashable. The <code class="docutils literal notranslate"><span class="pre">scalp.add(d)</span></code> method will return the unique root node with data
 that compares as equal to <code class="docutils literal notranslate"><span class="pre">d</span></code>, or create a new root node if such a contained node
 does not exist.</p>
+</div>
 <div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">
@@ -365,8 +370,8 @@ does not exist.</p>
     </aside>
   </div>
 </div><script src="_static/documentation_options.js?v=d71ab2ac"></script>
-    <script src="_static/doctools.js?v=9bcbadda"></script>
-    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="_static/scripts/furo.js?v=46bd48cc"></script>
     </body>
 </html>
