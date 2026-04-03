@@ -1,8 +1,8 @@
 usage
 =====
 
-How to installing the module
-----------------------------
+How to installing the package
+-----------------------------
 
 Install the project into your Python environment:
 
@@ -10,8 +10,8 @@ Install the project into your Python environment:
 
    $ pip install pythonic-fp.circulararray
 
-Importing the module
---------------------
+Importing the package
+---------------------
 
 Import the circulararray classes and "factory functions" into your code.
 

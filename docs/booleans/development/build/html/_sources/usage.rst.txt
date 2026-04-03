@@ -10,8 +10,8 @@ Install the project into your Python environment:
 
     $ pip install pythonic-fp.booleans
 
-Importing the module
---------------------
+Importing the package
+---------------------
 
 Import package booleans classes, functions and constants into your code.
 

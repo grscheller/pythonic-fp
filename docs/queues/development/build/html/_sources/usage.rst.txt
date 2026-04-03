@@ -1,8 +1,8 @@
 Usage
 =====
 
-How to installing the package
------------------------------
+How to install the package
+--------------------------
 
 Install the project into your Python environment:
 
@@ -10,8 +10,8 @@ Install the project into your Python environment:
 
    $ pip install pythonic-fp.queues
 
-Importing the module
---------------------
+Importing the package
+---------------------
 
 Import the queue classes and "factory functions" into your code.
 

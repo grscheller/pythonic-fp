@@ -1,8 +1,8 @@
 usage
 =====
 
-How to installing the module
-----------------------------
+How to install the package
+--------------------------
 
 Install the project into your Python environment:
 
@@ -10,8 +10,8 @@ Install the project into your Python environment:
 
     $ pip install pythonic-fp.splitends
 
-Importing the module
---------------------
+Importing the package
+---------------------
 
 Import the Splitend class and its supporting infrastructure (TODO)
 into your code.

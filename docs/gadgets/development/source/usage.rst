@@ -1,8 +1,8 @@
 Usage
 =====
 
-How to installing the package
------------------------------
+How to install the package
+--------------------------
 
 Install the project into your Python environment:
 
@@ -10,7 +10,7 @@ Install the project into your Python environment:
 
     $ pip install pythonic-fp.gadgets
 
-Importing the modules
+Importing the package
 ---------------------
 
 Import the gadgets where "gadgets" are simple objects with no external dependencies
