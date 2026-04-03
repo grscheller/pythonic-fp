@@ -3,7 +3,7 @@
   <head><meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="genindex.html"><link rel="search" title="Search" href="search.html"><link rel="next" title="Usage" href="usage.html">
+<link rel="index" title="Index" href="genindex.html"><link rel="search" title="Search" href="search.html"><link rel="next" title="Description" href="description.html">
 
     <!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 -->
         <title>Pythonic FP - Functional Programming Tools 5.2.1+ documentation</title>
@@ -176,7 +176,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
         <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
       </label>
     </div>
@@ -198,8 +198,9 @@
 <ul class="current">
 <li class="toctree-l1 current current-page"><a class="current reference internal" href="#">pythonic-fp-fptools</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">User Guide</span></p>
+<p class="caption" role="heading"><span class="caption-text">User Documentation</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="description.html">Description</a></li>
 <li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="releases.html">PyPI releases</a></li>
 <li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
@@ -250,7 +251,7 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
             <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
           </label>
         </div>
@@ -259,49 +260,19 @@
 <h1>pythonic-fp-fptools<a class="headerlink" href="#pythonic-fp-fptools" title="Link to this heading">¶</a></h1>
 <p>Project
 <a class="reference external" href="https://pypi.org/project/pythonic-fp-fptools/">pythonic-fp-fptools</a>
-one of the PyPI
-<a class="reference external" href="https://grscheller.github.io/pythonic-fp/homepage/build/html/index.html">Pythonic FP</a>
-projects.</p>
-<p><strong>Proposed PyPI 5.2.1+ release</strong></p>
-<section id="functional-programming-tools">
-<h2>Functional Programming Tools<a class="headerlink" href="#functional-programming-tools" title="Link to this heading">¶</a></h2>
-<div class="admonition-functional-programming-tools-for-python admonition">
-<p class="admonition-title">Functional programming tools for Python.</p>
-<p>Functions as first class objects, Lazy (non-strict) function evaluation,
-and classical Functional Programming data structures.</p>
-<div class="table-wrapper docutils container">
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head"><p>Description</p></th>
-<th class="head"><p>Module</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>Function manipulation</p></td>
-<td><p>pythonic_fp.fptools.function</p></td>
-</tr>
-<tr class="row-odd"><td><p>Lazy function evaluation</p></td>
-<td><p>pythonic_fp.fptools.lazy</p></td>
-</tr>
-<tr class="row-even"><td><p>Maybe monad</p></td>
-<td><p>pythonic_fp.fptools.maybe</p></td>
-</tr>
-<tr class="row-odd"><td><p>Either monad</p></td>
-<td><p>pythonic_fp.fptools.either</p></td>
-</tr>
-<tr class="row-even"><td><p>State monad</p></td>
-<td><p>pythonic_fp.fptools.state</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</section>
+one of the
+<a class="reference external" href="https://grscheller.github.io/pythonic-fp/">Pythonic FP</a>
+PyPI projects.</p>
+<p><strong>Proposed PyPI 5.2.1 release</strong></p>
 <div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">User Guide</span></p>
+<p class="caption" role="heading"><span class="caption-text">User Documentation</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="description.html">Description</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="description.html#functional-programming-tools">Functional Programming Tools</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="usage.html#how-to-installing-the-module">How to installing the module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="usage.html#importing-the-module">Importing the module</a></li>
@@ -328,16 +299,7 @@ and classical Functional Programming data structures.</p>
 <p class="caption" role="heading"><span class="caption-text">Lazy Evaluation Docs</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="docs/lazy.html">fptools.lazy</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="docs/lazy.html#pythonic_fp.fptools.lazy.Lazy"><code class="docutils literal notranslate"><span class="pre">Lazy</span></code></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="docs/lazy.html#pythonic_fp.fptools.lazy.Lazy.__init__"><code class="docutils literal notranslate"><span class="pre">Lazy.__init__()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/lazy.html#pythonic_fp.fptools.lazy.Lazy.eval"><code class="docutils literal notranslate"><span class="pre">Lazy.eval()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/lazy.html#pythonic_fp.fptools.lazy.Lazy.got_result"><code class="docutils literal notranslate"><span class="pre">Lazy.got_result()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/lazy.html#pythonic_fp.fptools.lazy.Lazy.got_exception"><code class="docutils literal notranslate"><span class="pre">Lazy.got_exception()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/lazy.html#pythonic_fp.fptools.lazy.Lazy.get"><code class="docutils literal notranslate"><span class="pre">Lazy.get()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/lazy.html#pythonic_fp.fptools.lazy.Lazy.get_result"><code class="docutils literal notranslate"><span class="pre">Lazy.get_result()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/lazy.html#pythonic_fp.fptools.lazy.Lazy.get_exception"><code class="docutils literal notranslate"><span class="pre">Lazy.get_exception()</span></code></a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="docs/lazy.html#pythonic_fp.fptools.lazy.Lazy"><code class="docutils literal notranslate"><span class="pre">Lazy</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="docs/lazy.html#pythonic_fp.fptools.lazy.lazy"><code class="docutils literal notranslate"><span class="pre">lazy()</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="docs/lazy.html#pythonic_fp.fptools.lazy.real_lazy"><code class="docutils literal notranslate"><span class="pre">real_lazy()</span></code></a></li>
 </ul>
@@ -348,61 +310,18 @@ and classical Functional Programming data structures.</p>
 <p class="caption" role="heading"><span class="caption-text">Monad Docs</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="docs/maybe.html">fptools.maybe</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="docs/maybe.html#pythonic_fp.fptools.maybe.MayBe"><code class="docutils literal notranslate"><span class="pre">MayBe</span></code></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="docs/maybe.html#pythonic_fp.fptools.maybe.MayBe.__init__"><code class="docutils literal notranslate"><span class="pre">MayBe.__init__()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/maybe.html#pythonic_fp.fptools.maybe.MayBe.__hash__"><code class="docutils literal notranslate"><span class="pre">MayBe.__hash__()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/maybe.html#pythonic_fp.fptools.maybe.MayBe.__repr__"><code class="docutils literal notranslate"><span class="pre">MayBe.__repr__()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/maybe.html#pythonic_fp.fptools.maybe.MayBe.__eq__"><code class="docutils literal notranslate"><span class="pre">MayBe.__eq__()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/maybe.html#pythonic_fp.fptools.maybe.MayBe.get"><code class="docutils literal notranslate"><span class="pre">MayBe.get()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/maybe.html#pythonic_fp.fptools.maybe.MayBe.map"><code class="docutils literal notranslate"><span class="pre">MayBe.map()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/maybe.html#pythonic_fp.fptools.maybe.MayBe.bind"><code class="docutils literal notranslate"><span class="pre">MayBe.bind()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/maybe.html#pythonic_fp.fptools.maybe.MayBe.sequence"><code class="docutils literal notranslate"><span class="pre">MayBe.sequence()</span></code></a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="docs/maybe.html#pythonic_fp.fptools.maybe.MayBe"><code class="docutils literal notranslate"><span class="pre">MayBe</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="docs/either.html">fptools.either</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="docs/either.html#pythonic_fp.fptools.either.Either"><code class="docutils literal notranslate"><span class="pre">Either</span></code></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="docs/either.html#pythonic_fp.fptools.either.Either.__init__"><code class="docutils literal notranslate"><span class="pre">Either.__init__()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/either.html#pythonic_fp.fptools.either.Either.__hash__"><code class="docutils literal notranslate"><span class="pre">Either.__hash__()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/either.html#pythonic_fp.fptools.either.Either.__repr__"><code class="docutils literal notranslate"><span class="pre">Either.__repr__()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/either.html#pythonic_fp.fptools.either.Either.__str__"><code class="docutils literal notranslate"><span class="pre">Either.__str__()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/either.html#pythonic_fp.fptools.either.Either.__len__"><code class="docutils literal notranslate"><span class="pre">Either.__len__()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/either.html#pythonic_fp.fptools.either.Either.__eq__"><code class="docutils literal notranslate"><span class="pre">Either.__eq__()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/either.html#pythonic_fp.fptools.either.Either.get"><code class="docutils literal notranslate"><span class="pre">Either.get()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/either.html#pythonic_fp.fptools.either.Either.get_left"><code class="docutils literal notranslate"><span class="pre">Either.get_left()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/either.html#pythonic_fp.fptools.either.Either.get_right"><code class="docutils literal notranslate"><span class="pre">Either.get_right()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/either.html#pythonic_fp.fptools.either.Either.map_right"><code class="docutils literal notranslate"><span class="pre">Either.map_right()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/either.html#pythonic_fp.fptools.either.Either.map"><code class="docutils literal notranslate"><span class="pre">Either.map()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/either.html#pythonic_fp.fptools.either.Either.bind"><code class="docutils literal notranslate"><span class="pre">Either.bind()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/either.html#pythonic_fp.fptools.either.Either.map_except"><code class="docutils literal notranslate"><span class="pre">Either.map_except()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/either.html#pythonic_fp.fptools.either.Either.bind_except"><code class="docutils literal notranslate"><span class="pre">Either.bind_except()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/either.html#pythonic_fp.fptools.either.Either.sequence"><code class="docutils literal notranslate"><span class="pre">Either.sequence()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="docs/either.html#pythonic_fp.fptools.either.EitherBool"><code class="docutils literal notranslate"><span class="pre">EitherBool</span></code></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="docs/either.html#pythonic_fp.fptools.either.EitherBool.__repr__"><code class="docutils literal notranslate"><span class="pre">EitherBool.__repr__()</span></code></a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="docs/either.html#pythonic_fp.fptools.either.Either"><code class="docutils literal notranslate"><span class="pre">Either</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="docs/either.html#pythonic_fp.fptools.either.EitherBool"><code class="docutils literal notranslate"><span class="pre">EitherBool</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="docs/either.html#pythonic_fp.fptools.either.LEFT"><code class="docutils literal notranslate"><span class="pre">LEFT</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="docs/either.html#pythonic_fp.fptools.either.RIGHT"><code class="docutils literal notranslate"><span class="pre">RIGHT</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="docs/state.html">fptools.state</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="docs/state.html#pythonic_fp.fptools.state.State"><code class="docutils literal notranslate"><span class="pre">State</span></code></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="docs/state.html#pythonic_fp.fptools.state.State.__init__"><code class="docutils literal notranslate"><span class="pre">State.__init__()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/state.html#pythonic_fp.fptools.state.State.bind"><code class="docutils literal notranslate"><span class="pre">State.bind()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/state.html#pythonic_fp.fptools.state.State.eval"><code class="docutils literal notranslate"><span class="pre">State.eval()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/state.html#pythonic_fp.fptools.state.State.map"><code class="docutils literal notranslate"><span class="pre">State.map()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/state.html#pythonic_fp.fptools.state.State.map2"><code class="docutils literal notranslate"><span class="pre">State.map2()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/state.html#pythonic_fp.fptools.state.State.both"><code class="docutils literal notranslate"><span class="pre">State.both()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/state.html#pythonic_fp.fptools.state.State.unit"><code class="docutils literal notranslate"><span class="pre">State.unit()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/state.html#pythonic_fp.fptools.state.State.get"><code class="docutils literal notranslate"><span class="pre">State.get()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/state.html#pythonic_fp.fptools.state.State.put"><code class="docutils literal notranslate"><span class="pre">State.put()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/state.html#pythonic_fp.fptools.state.State.modify"><code class="docutils literal notranslate"><span class="pre">State.modify()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/state.html#pythonic_fp.fptools.state.State.sequence"><code class="docutils literal notranslate"><span class="pre">State.sequence()</span></code></a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="docs/state.html#pythonic_fp.fptools.state.State"><code class="docutils literal notranslate"><span class="pre">State</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -414,12 +333,12 @@ and classical Functional Programming data structures.</p>
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="usage.html">
+          <a class="next-page" href="description.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Usage</div>
+                <div class="title">Description</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
@@ -442,27 +361,8 @@ and classical Functional Programming data structures.</p>
         
       </footer>
     </div>
-    <aside class="toc-drawer">
+    <aside class="toc-drawer no-toc">
       
-      
-      <div class="toc-sticky toc-scroll">
-        <div class="toc-title-container">
-          <span class="toc-title">
-            On this page
-          </span>
-        </div>
-        <div class="toc-tree-container">
-          <div class="toc-tree">
-            <ul>
-<li><a class="reference internal" href="#">pythonic-fp-fptools</a><ul>
-<li><a class="reference internal" href="#functional-programming-tools">Functional Programming Tools</a></li>
-</ul>
-</li>
-</ul>
-
-          </div>
-        </div>
-      </div>
       
       
     </aside>

@@ -3,7 +3,7 @@
   <head><meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="genindex.html"><link rel="search" title="Search" href="search.html"><link rel="next" title="Usage" href="usage.html">
+<link rel="index" title="Index" href="genindex.html"><link rel="search" title="Search" href="search.html"><link rel="next" title="Description" href="description.html">
 
     <!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 -->
         <title>Pythonic FP - Containers 4.0.2+ documentation</title>
@@ -176,7 +176,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
         <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
       </label>
     </div>
@@ -198,13 +198,14 @@
 <ul class="current">
 <li class="toctree-l1 current current-page"><a class="current reference internal" href="#">pythonic-fp-containers</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<p class="caption" role="heading"><span class="caption-text">User Documentation</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="description.html">Description</a></li>
 <li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="releases.html">PyPI releases</a></li>
 <li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
+<p class="caption" role="heading"><span class="caption-text">API Documentation</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="docs/functional_tuple.html">module functional_tuple</a></li>
 <li class="toctree-l1"><a class="reference internal" href="docs/immutable_list.html">module immutable_list</a></li>
@@ -241,7 +242,7 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
             <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
           </label>
         </div>
@@ -250,25 +251,19 @@
 <h1>pythonic-fp-containers<a class="headerlink" href="#pythonic-fp-containers" title="Link to this heading">¶</a></h1>
 <p>Project
 <a class="reference external" href="https://pypi.org/project/pythonic-fp-containers/">pythonic-fp-containers</a>
-one of the PyPI
-<a class="reference external" href="https://grscheller.github.io/pythonic-fp/homepage/build/html/index.html">Pythonic FP</a>
-projects.</p>
-<p><strong>Proposed PyPI 4.0.2+ release</strong></p>
-<section id="containers-with-fp-interfaces">
-<h2>Containers with FP interfaces<a class="headerlink" href="#containers-with-fp-interfaces" title="Link to this heading">¶</a></h2>
-<div class="admonition-functional-variants-of-python-builtins admonition">
-<p class="admonition-title">Functional variants of Python builtins</p>
-<ul class="simple">
-<li><p>class <strong>FTuple:</strong> A tuple-like object with a functional interface.</p></li>
-<li><p>class <strong>IList:</strong> An immutable, hashable list-like object.</p></li>
-</ul>
-</div>
-</section>
+one of the
+<a class="reference external" href="https://grscheller.github.io/pythonic-fp/">Pythonic FP</a>
+PyPI projects.</p>
+<p><strong>Proposed PyPI 4.0.2 release</strong></p>
 <div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<p class="caption" role="heading"><span class="caption-text">User Documentation</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="description.html">Description</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="description.html#containers-with-fp-interfaces">Containers with FP interfaces</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="usage.html#how-to-installing-the-package">How to installing the package</a></li>
 <li class="toctree-l2"><a class="reference internal" href="usage.html#importing-the-module">Importing the module</a></li>
@@ -279,38 +274,14 @@ projects.</p>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
+<p class="caption" role="heading"><span class="caption-text">API Documentation</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="docs/functional_tuple.html">module functional_tuple</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="docs/functional_tuple.html#pythonic_fp.containers.functional_tuple.FTuple"><code class="docutils literal notranslate"><span class="pre">FTuple</span></code></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="docs/functional_tuple.html#pythonic_fp.containers.functional_tuple.FTuple.__repr__"><code class="docutils literal notranslate"><span class="pre">FTuple.__repr__()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/functional_tuple.html#pythonic_fp.containers.functional_tuple.FTuple.__eq__"><code class="docutils literal notranslate"><span class="pre">FTuple.__eq__()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/functional_tuple.html#pythonic_fp.containers.functional_tuple.FTuple.__getitem__"><code class="docutils literal notranslate"><span class="pre">FTuple.__getitem__()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/functional_tuple.html#pythonic_fp.containers.functional_tuple.FTuple.foldl"><code class="docutils literal notranslate"><span class="pre">FTuple.foldl()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/functional_tuple.html#pythonic_fp.containers.functional_tuple.FTuple.foldr"><code class="docutils literal notranslate"><span class="pre">FTuple.foldr()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/functional_tuple.html#pythonic_fp.containers.functional_tuple.FTuple.copy"><code class="docutils literal notranslate"><span class="pre">FTuple.copy()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/functional_tuple.html#pythonic_fp.containers.functional_tuple.FTuple.__add__"><code class="docutils literal notranslate"><span class="pre">FTuple.__add__()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/functional_tuple.html#pythonic_fp.containers.functional_tuple.FTuple.__mul__"><code class="docutils literal notranslate"><span class="pre">FTuple.__mul__()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/functional_tuple.html#pythonic_fp.containers.functional_tuple.FTuple.__rmul__"><code class="docutils literal notranslate"><span class="pre">FTuple.__rmul__()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/functional_tuple.html#pythonic_fp.containers.functional_tuple.FTuple.accummulate"><code class="docutils literal notranslate"><span class="pre">FTuple.accummulate()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/functional_tuple.html#pythonic_fp.containers.functional_tuple.FTuple.bind"><code class="docutils literal notranslate"><span class="pre">FTuple.bind()</span></code></a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="docs/functional_tuple.html#pythonic_fp.containers.functional_tuple.FTuple"><code class="docutils literal notranslate"><span class="pre">FTuple</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="docs/immutable_list.html">module immutable_list</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="docs/immutable_list.html#pythonic_fp.containers.immutable_list.IList"><code class="docutils literal notranslate"><span class="pre">IList</span></code></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="docs/immutable_list.html#pythonic_fp.containers.immutable_list.IList.__init__"><code class="docutils literal notranslate"><span class="pre">IList.__init__()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/immutable_list.html#pythonic_fp.containers.immutable_list.IList.__hash__"><code class="docutils literal notranslate"><span class="pre">IList.__hash__()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/immutable_list.html#pythonic_fp.containers.immutable_list.IList.__repr__"><code class="docutils literal notranslate"><span class="pre">IList.__repr__()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/immutable_list.html#pythonic_fp.containers.immutable_list.IList.__str__"><code class="docutils literal notranslate"><span class="pre">IList.__str__()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/immutable_list.html#pythonic_fp.containers.immutable_list.IList.__eq__"><code class="docutils literal notranslate"><span class="pre">IList.__eq__()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/immutable_list.html#pythonic_fp.containers.immutable_list.IList.foldl"><code class="docutils literal notranslate"><span class="pre">IList.foldl()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/immutable_list.html#pythonic_fp.containers.immutable_list.IList.foldr"><code class="docutils literal notranslate"><span class="pre">IList.foldr()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/immutable_list.html#pythonic_fp.containers.immutable_list.IList.accummulate"><code class="docutils literal notranslate"><span class="pre">IList.accummulate()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="docs/immutable_list.html#pythonic_fp.containers.immutable_list.IList.bind"><code class="docutils literal notranslate"><span class="pre">IList.bind()</span></code></a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="docs/immutable_list.html#pythonic_fp.containers.immutable_list.IList"><code class="docutils literal notranslate"><span class="pre">IList</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -322,12 +293,12 @@ projects.</p>
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="usage.html">
+          <a class="next-page" href="description.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Usage</div>
+                <div class="title">Description</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
@@ -350,27 +321,8 @@ projects.</p>
         
       </footer>
     </div>
-    <aside class="toc-drawer">
+    <aside class="toc-drawer no-toc">
       
-      
-      <div class="toc-sticky toc-scroll">
-        <div class="toc-title-container">
-          <span class="toc-title">
-            On this page
-          </span>
-        </div>
-        <div class="toc-tree-container">
-          <div class="toc-tree">
-            <ul>
-<li><a class="reference internal" href="#">pythonic-fp-containers</a><ul>
-<li><a class="reference internal" href="#containers-with-fp-interfaces">Containers with FP interfaces</a></li>
-</ul>
-</li>
-</ul>
-
-          </div>
-        </div>
-      </div>
       
       
     </aside>

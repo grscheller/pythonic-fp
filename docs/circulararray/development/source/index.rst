@@ -4,14 +4,10 @@ pythonic-fp-circulararray
 Project
 `pythonic-fp-circulararray <https://pypi.org/project/pythonic-fp-circulararray/>`_
 one of the
-`Pythonic FP <https://grscheller.github.io/pythonic-fp/homepage/build/html/index.html>`_
+`Pythonic FP <https://grscheller.github.io/pythonic-fp/>`_
 PyPI projects.
 
-**Proposed PyPI 6.0.2+ release**
-
-.. automodule:: pythonic_fp.circulararray
-    :synopsis:
-    :no-index:
+**Proposed PyPI 6.0.2 release**
 
 .. toctree::
     :caption: Overview
@@ -20,14 +16,16 @@ PyPI projects.
     self
 
 .. toctree::
-    :caption: User Guide
+    :caption: User Documentation
 
+    description
     usage
     releases
     changelog
 
 .. toctree::
-    :caption: Documentation
+    :caption: API Documentation
+    :maxdepth: 2
 
     docs/auto
     docs/fixed

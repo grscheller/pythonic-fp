@@ -3,15 +3,11 @@ pythonic-fp-booleans
 
 Project
 `pythonic-fp-booleans <https://pypi.org/project/pythonic-fp-booleans/>`_
-one of the PyPI
-`Pythonic FP <https://grscheller.github.io/pythonic-fp/homepage/build/html/index.html>`_
-projects.
+one of the
+`Pythonic FP <https://grscheller.github.io/pythonic-fp/>`_
+PyPI projects.
 
-**Proposed PyPI 3.0.1+ release**
-
-.. automodule:: pythonic_fp.booleans
-    :synopsis:
-    :no-index:
+**Proposed PyPI 3.0.1 release**
 
 .. toctree::
     :caption: Overview
@@ -20,14 +16,16 @@ projects.
     self
 
 .. toctree::
-    :caption: User Guide
+    :caption: User Documentation
 
+    description
     usage
     releases
     changelog
 
 .. toctree::
-    :caption: Documentation
+    :caption: API Documentation
+    :maxdepth: 2
 
     docs/subtypable
     docs/subtypes/index

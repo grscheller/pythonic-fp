@@ -3,7 +3,7 @@
   <head><meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="genindex.html"><link rel="search" title="Search" href="search.html"><link rel="next" title="Usage" href="usage.html">
+<link rel="index" title="Index" href="genindex.html"><link rel="search" title="Search" href="search.html"><link rel="next" title="Description" href="description.html">
 
     <!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 -->
         <title>Pythonic FP - Iterables 5.1.4+ documentation</title>
@@ -176,7 +176,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
         <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
       </label>
     </div>
@@ -198,13 +198,14 @@
 <ul class="current">
 <li class="toctree-l1 current current-page"><a class="current reference internal" href="#">pythonic-fp-iterables</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">User Guide</span></p>
+<p class="caption" role="heading"><span class="caption-text">User Documentation</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="description.html">Description</a></li>
 <li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="releases.html">PyPI releases</a></li>
 <li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
+<p class="caption" role="heading"><span class="caption-text">API Documentation</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="docs/drop_take.html">iterables.drop_take</a></li>
 <li class="toctree-l1"><a class="reference internal" href="docs/folding.html">iterables.folding</a></li>
@@ -242,7 +243,7 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
             <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
           </label>
         </div>
@@ -251,39 +252,19 @@
 <h1>pythonic-fp-iterables<a class="headerlink" href="#pythonic-fp-iterables" title="Link to this heading">¶</a></h1>
 <p>Project
 <a class="reference external" href="https://pypi.org/project/pythonic-fp-iterables/">pythonic-fp-iterabless</a>
-one of the PyPI
-<a class="reference external" href="https://grscheller.github.io/pythonic-fp/homepage/build/html/index.html">Pythonic FP</a>
-projects.</p>
-<p><strong>Proposed PyPI 5.1.4+ release</strong></p>
-<section id="tools-for-iterables">
-<h2>Tools for iterables<a class="headerlink" href="#tools-for-iterables" title="Link to this heading">¶</a></h2>
-<div class="admonition-library-of-functions-for-iterating-iterables admonition">
-<p class="admonition-title">Library of functions for iterating iterables</p>
-<ul class="simple">
-<li><p>module <strong>merging:</strong> Concatenating and merging iterables.</p></li>
-<li><p>module <strong>drop_take:</strong> Dropping and taking values from iterables.</p></li>
-<li><p>module <strong>folding:</strong>  Reducing and accumulating iterables.</p></li>
-</ul>
+one of the
+<a class="reference external" href="https://grscheller.github.io/pythonic-fp/">Pythonic FP</a>
+PyPI projects.</p>
+<p><strong>Proposed PyPI 5.1.4 release</strong></p>
+<div class="toctree-wrapper compound">
 </div>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p><strong>Assumptions:</strong></p>
-<ul class="simple">
-<li><p>iterables are not necessarily iterators</p></li>
-<li><p>at all times iterator protocol is assumed to be followed</p>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">User Documentation</span></p>
 <ul>
-<li><p>all iterators are assumed to be iterable</p></li>
-<li><p>for all iterators <code class="docutils literal notranslate"><span class="pre">foobar</span></code> we assume <code class="docutils literal notranslate"><span class="pre">iter(foobar)</span> <span class="pre">is</span> <span class="pre">foobar</span></code></p></li>
+<li class="toctree-l1"><a class="reference internal" href="description.html">Description</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="description.html#tools-for-iterables">Tools for iterables</a></li>
 </ul>
 </li>
-</ul>
-</div>
-</section>
-<div class="toctree-wrapper compound">
-</div>
-<div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">User Guide</span></p>
-<ul>
 <li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="usage.html#how-to-installing-the-module">How to installing the module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="usage.html#importing-the-module">Importing the module</a></li>
@@ -294,7 +275,7 @@ projects.</p>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">Documentation</span></p>
+<p class="caption" role="heading"><span class="caption-text">API Documentation</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="docs/drop_take.html">iterables.drop_take</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="docs/drop_take.html#drop-and-take">Drop and Take</a></li>
@@ -334,12 +315,12 @@ projects.</p>
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="usage.html">
+          <a class="next-page" href="description.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Usage</div>
+                <div class="title">Description</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
@@ -362,27 +343,8 @@ projects.</p>
         
       </footer>
     </div>
-    <aside class="toc-drawer">
+    <aside class="toc-drawer no-toc">
       
-      
-      <div class="toc-sticky toc-scroll">
-        <div class="toc-title-container">
-          <span class="toc-title">
-            On this page
-          </span>
-        </div>
-        <div class="toc-tree-container">
-          <div class="toc-tree">
-            <ul>
-<li><a class="reference internal" href="#">pythonic-fp-iterables</a><ul>
-<li><a class="reference internal" href="#tools-for-iterables">Tools for iterables</a></li>
-</ul>
-</li>
-</ul>
-
-          </div>
-        </div>
-      </div>
       
       
     </aside>

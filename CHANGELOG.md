@@ -19,6 +19,10 @@ relative release. The release string changes when
 
 ## Important Milestones
 
+### 2026-04-03 - Homogenized documentation across pythonic-fp projects
+
+Based on what I did for my boring-math effort.
+
 ### 2026-01-22 - PyPI Pythonic FP 3.4.0 coordinated release
 
 Preparing for the boring-math-abstract-algebra PyPI 2.1.0 release,

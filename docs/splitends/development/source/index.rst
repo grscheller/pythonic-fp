@@ -3,15 +3,11 @@ pythonic-fp-splitends
 
 Project
 `pythonic-fp-splitends <https://pypi.org/project/pythonic-fp-splitends/>`_
-one of the PyPI
-`Pythonic FP <https://grscheller.github.io/pythonic-fp/homepage/build/html/index.html>`_
-projects.
+one of the
+`Pythonic FP <https://grscheller.github.io/pythonic-fp/>`_
+PyPI projects.
 
-**Proposed PyPI 2.0.3+ release**
-
-.. automodule:: pythonic_fp.splitends
-    :synopsis:
-    :no-index:
+**Proposed PyPI 2.0.3 release**
 
 .. toctree::
     :caption: Overview
@@ -20,14 +16,16 @@ projects.
     self
 
 .. toctree::
-    :caption: User Guide
+    :caption: User Documentation
 
+    description
     usage
     releases
     changelog
 
 .. toctree::
-    :caption: Documentation
+    :caption: API Documentation
+    :maxdepth: 2
 
     docs/splitend
     docs/splitend_node

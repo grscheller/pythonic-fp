@@ -7,15 +7,7 @@ one of the
 `Pythonic FP <https://grscheller.github.io/pythonic-fp/>`_
 PyPI projects.
 
-**Proposed PyPI 4.0.3+ release**
-
-Library of simple, but useful, functions and classes with no external
-dependencies besides those from the Python standard Library. This also
-includes other Pythonic FP projects.
-
-.. automodule:: pythonic_fp.gadgets
-    :synopsis:
-    :no-index:
+**Proposed PyPI 4.0.3 release**
 
 .. toctree::
     :caption: Overview
@@ -24,14 +16,16 @@ includes other Pythonic FP projects.
     self
 
 .. toctree::
-    :caption: User Guide
+    :caption: User Documentation
 
+    description
     usage
     releases
     changelog
 
 .. toctree::
-    :caption: Documentation
+    :caption: API Documentation
+    :maxdepth: 2
 
     docs/functions/index
     docs/box

@@ -7,11 +7,7 @@ one of the
 `Pythonic FP <https://grscheller.github.io/pythonic-fp/>`_
 PyPI projects.
 
-**Proposed PyPI 0.1.3+ release**
-
-.. automodule:: pythonic_fp.numpy
-    :synopsis:
-    :no-index:
+**Proposed PyPI 0.1.3 release**
 
 .. toctree::
     :caption: Overview
@@ -20,13 +16,15 @@ PyPI projects.
     self
 
 .. toctree::
-    :caption: Getting Started
+    :caption: User Documentation
 
+    description
     usage
     releases
     changelog
 
 .. toctree::
-    :caption: Documentation
+    :caption: API Documentation
+    :maxdepth: 2
 
     docs/hashable_wrapped_ndarray
