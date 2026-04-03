@@ -27,5 +27,4 @@ PyPI projects.
     :caption: API Documentation
     :maxdepth: 2
 
-    docs/auto
-    docs/fixed
+    docs/index
