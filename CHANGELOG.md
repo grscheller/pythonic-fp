@@ -19,6 +19,10 @@ relative release. The release string changes when
 
 ## Important Milestones
 
+### 2026-04-21 - Milestone for pythonic-fp-circulararray docs
+
+Sphinx docs more or less in their final form.
+
 ### 2026-04-03 - Homogenized documentation across pythonic-fp projects
 
 Based on what I did for my boring-math effort.

@@ -8,7 +8,7 @@ These are the most resent *Pythonic FP* project PyPI releases.
 PyPI and GitHub Name         Python Module               Version Date Released
 ============================ =========================== ======= =============
 pythonic-fp-booleans         pythonic_fp.booleans        3.0.0   2026-01-12
-pythonic-fp-circulararray    pythonic_fp.circulararray   6.0.1   2026-01-08
+pythonic-fp-circulararray    pythonic_fp.circulararray   6.0.2   2026-04-21
 pythonic-fp-containers       pythonic_fp.containers      4.0.1   2026-01-19
 pythonic-fp-fptools          pythonic_fp.fptools         5.2.0   2026-01-03
 pythonic-fp-gadgets          pythonic_fp.gadgets         4.0.2   2026-01-08
