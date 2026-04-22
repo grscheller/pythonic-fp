@@ -1,5 +1,0 @@
-Top Level Releases
-==================
-
-.. automodule:: pythonic_fp.homepage.top_level_releases
-    :synopsis:

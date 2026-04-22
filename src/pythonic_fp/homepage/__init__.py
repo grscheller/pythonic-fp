@@ -21,7 +21,7 @@ is a central component of the Pythonic FP libraries.
 
 - It is the PyPI project for the ``pythonic_fp.homepage`` module.
 - Claims the pythonic-fp name on PyPI for the overall effort.
-- Hosts on *GitHub Pages*
+- Links to project *GitHub Pages*
 
   - The Python FP homepage.
   - Sphinx API & documentation for each Pythonic FP project.

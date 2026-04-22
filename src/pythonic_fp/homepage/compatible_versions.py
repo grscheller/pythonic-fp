@@ -1,8 +1,10 @@
 """
-Known Boring Math compatible versions.
+Known Pythonic FP compatible versions. The maintainers tries to
+keep all top level compatible with each other as much as reasonably
+possible.
 
-Coordinated releases
-====================
+Compatible versions
+===================
 
 2026-01-22 - 3.4.0
 ------------------

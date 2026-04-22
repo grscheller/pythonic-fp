@@ -4,24 +4,32 @@
 
 Developer Tools supporting a functional style of programming yet
 endeavoring to remain Pythonic. All project names begin ``pythonic-fp-``
-on PyPI and are Python namespace packages under the ``pythonic_fp``
-name.
+on PyPI and GitHub. They are Python namespace packages under
+the ``pythonic_fp`` name.
 
 ## Release based versioning
 
 Unlike the PyPI projects that make up Pythonic FP, which use strict
-semantic versioning, the overall version number is based on consistent
-relative release. The release string changes when
+semantic versioning, the release string changes when
 
-- **MAJOR:** a consistent, coordinated release of Pythonic FP PyPI projects happens
-- **MINOR:** breaking API changes are made to a Pythonic FP PyPI project or new project released
-- **PATCH:** minor code improvements and major homepage updates are made
+- **MAJOR:** a major paradigm shift happens
+- **MINOR:** breaking API and dependency changes are made to Pythonic FP projects
+- **PATCH:** homepage changes and information updates are made
 
 ## Important Milestones
 
+### 2026-04-22 - PyPI Pythonic FP 4.0.0 release
+
+Major paradigm shift. Each Pythonic FP project will be automatically
+building the current release documentation and the latest development
+documentation on GitHub.
+
+So far, only pythonic-fp-circulararray does this.
+
 ### 2026-04-21 - Milestone for pythonic-fp-circulararray docs
 
-Sphinx docs more or less in their final form.
+Sphinx docs more or less in their final form for the Circular Array
+project.
 
 ### 2026-04-03 - Homogenized documentation across pythonic-fp projects
 
