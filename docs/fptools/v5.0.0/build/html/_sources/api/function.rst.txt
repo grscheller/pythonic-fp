@@ -1,5 +1,0 @@
-fptools.function
-====================
-
-.. automodule:: pythonic_fp.fptools.function
-   :members:
