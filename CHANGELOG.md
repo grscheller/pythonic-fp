@@ -18,13 +18,18 @@ semantic versioning, the release string changes when
 
 ## Important Milestones
 
-### 2026-04-22 - PyPI Pythonic FP 4.0.0 release
+### 2026-04-25 - PyPI Pythonic FP 4.0.0 release
 
 Major paradigm shift. Each Pythonic FP project will be automatically
 building the current release documentation and the latest development
 documentation on GitHub.
 
-So far, only pythonic-fp-circulararray does this.
+So far,
+
+- pythonic-fp-circulararray
+- pythonic-fp-booleans
+
+THe rest may be broken for the next week or so.
 
 ### 2026-04-21 - Milestone for pythonic-fp-circulararray docs
 

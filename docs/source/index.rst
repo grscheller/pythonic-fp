@@ -5,16 +5,15 @@ Pythonic FP
     :synopsis:
 
 .. toctree::
-    :caption: Pythonic FP
+    :caption: Overview
     :hidden:
 
     self
 
 .. toctree::
-    :caption: Overview
+    :caption: Pythonic FP
     :maxdepth: 1
 
-    overview
-    development
+    description
     links
-    compatible_versions
+    development
