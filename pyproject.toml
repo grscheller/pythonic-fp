@@ -4,7 +4,7 @@ build-backend = "flit_core.buildapi"
 
 [project]
 name = "pythonic-fp"
-version = "4.0.0"
+version = "4.0.1"
 readme = "README.md"
 requires-python = ">=3.13"
 license = { file = "LICENSE" }
@@ -26,7 +26,7 @@ dynamic = ["description"]
 
 [project.urls]
 Changelog = "https://github.com/grscheller/pythonic-fp/blob/main/CHANGELOG.md"
-Homepage = "https://grscheller.github.io/pythonic-fp"
+Homepage = "https://grscheller.github.io/pythonic-fp/homepage/html/index.html"
 Source = "https://github.com/grscheller/pythonic-fp"
 
 [tool.flit.sdist]
