@@ -1,16 +1,9 @@
 Queues: pythonic-fp-queues
 ==========================
 
-A short description.
+Stateful Queues based on a circular array.
 
-Project links
--------------
-
-============ =========================================================================================
-Name         Link
-============ =========================================================================================
-PyPI         `pythonic-fp-queues <https://pypi.org/project/pythonic-fp-queues/>`_
-GitHub       `pythonic-fp-queues <https://github.com/grscheller/pythonic-fp-queues>`_
-Release Docs `pythonic-fp-queues <https://grscheller.github.io/pythonic-fp-queues/release/html/>`_
-Devel Docs   `pythonic-fp-queues <https://grscheller.github.io/pythonic-fp-queues/development/html/>`_
-============ =========================================================================================
+- PyPI project `pythonic-fp-queues <https://pypi.org/project/pythonic-fp-queues/>`_.
+- GitHub source code repo `grscheller/pythonic-fp-queues <https://github.com/grscheller/pythonic-fp-queues>`_.
+- Latest `release documentation <https://grscheller.github.io/pythonic-fp-queues/release/html/>`_.
+- Current `development documentation <https://grscheller.github.io/pythonic-fp-queues/development/html/>`_.

@@ -1,16 +1,9 @@
-Circular Array: pythonic-fp-circulararray
-=========================================
+pythonic-fp-circulararray
+=========================
 
-A short description.
+Circular array datastructures.
 
-Project links
--------------
-
-============ =======================================================================================================
-Name         Link
-============ =======================================================================================================
-PyPI         `pythonic-fp-circulararray <https://pypi.org/project/pythonic-fp-circulararray/>`_
-GitHub       `pythonic-fp-circulararray <https://github.com/grscheller/pythonic-fp-circulararray>`_
-Release Docs `pythonic-fp-circulararray <https://grscheller.github.io/pythonic-fp-circulararray/release/html/>`_
-Devel Docs   `pythonic-fp-circulararray <https://grscheller.github.io/pythonic-fp-circulararray/development/html/>`_
-============ =======================================================================================================
+- PyPI project `pythonic-fp-circulararray <https://pypi.org/project/pythonic-fp-circulararray/>`_.
+- GitHub source code repo `grscheller/pythonic-fp-circulararray <https://github.com/grscheller/pythonic-fp-circulararray>`_.
+- Latest `release documentation <https://grscheller.github.io/pythonic-fp-circulararray/release/html/>`_.
+- Current `development documentation <https://grscheller.github.io/pythonic-fp-circulararray/development/html/>`_.

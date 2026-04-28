@@ -1,16 +1,9 @@
 Gadgets: pythonic-fp-gadgets
 ==============================
 
-A short description.
+A collection of self-contained functions and classes with minimal dependencies.
 
-Project links
--------------
-
-============ =============================================================================================
-Name         Link
-============ =============================================================================================
-PyPI         `pythonic-fp-gadgets <https://pypi.org/project/pythonic-fp-gadgets/>`_
-GitHub       `pythonic-fp-gadgets <https://github.com/grscheller/pythonic-fp-gadgets>`_
-Release Docs `pythonic-fp-gadgets <https://grscheller.github.io/pythonic-fp-gadgets/release/html/>`_
-Devel Docs   `pythonic-fp-gadgets <https://grscheller.github.io/pythonic-fp-gadgets/development/html/>`_
-============ =============================================================================================
+- PyPI project `pythonic-fp-gadgets <https://pypi.org/project/pythonic-fp-gadgets/>`_.
+- GitHub source code repo `grscheller/pythonic-fp-gadgets <https://github.com/grscheller/pythonic-fp-gadgets>`_.
+- Latest `release documentation <https://grscheller.github.io/pythonic-fp-gadgets/release/html/>`_.
+- Current `development documentation <https://grscheller.github.io/pythonic-fp-gadgets/development/html/>`_.

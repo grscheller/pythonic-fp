@@ -1,16 +1,9 @@
 Iterables: pythonic-fp-iterables
 ================================
 
-A short description.
+A library of functions for composing and iterating iterables.
 
-Project links
--------------
-
-============ ===============================================================================================
-Name         Link
-============ ===============================================================================================
-PyPI         `pythonic-fp-iterables <https://pypi.org/project/pythonic-fp-iterables/>`_
-GitHub       `pythonic-fp-iterables <https://github.com/grscheller/pythonic-fp-iterables>`_
-Release Docs `pythonic-fp-iterables <https://grscheller.github.io/pythonic-fp-iterables/release/html/>`_
-Devel Docs   `pythonic-fp-iterables <https://grscheller.github.io/pythonic-fp-iterables/development/html/>`_
-============ ===============================================================================================
+- PyPI project `pythonic-fp-iterables <https://pypi.org/project/pythonic-fp-iterables/>`_.
+- GitHub source code repo `grscheller/pythonic-fp-iterables <https://github.com/grscheller/pythonic-fp-iterables>`_.
+- Latest `release documentation <https://grscheller.github.io/pythonic-fp-iterables/release/html/>`_.
+- Current `development documentation <https://grscheller.github.io/pythonic-fp-iterables/development/html/>`_.

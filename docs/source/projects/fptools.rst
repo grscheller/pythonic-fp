@@ -1,16 +1,12 @@
 FP Tools: pythonic-fp-fptools
 ==============================
 
-A short description.
+Functional programming tools.
 
-Project links
--------------
+Functions as first class objects, Lazy (non-strict) function evaluation,
+and classical Functional Programming data structures.
 
-============ ===========================================================================================
-Name         Link
-============ ===========================================================================================
-PyPI         `pythonic-fp-fptools <https://pypi.org/project/pythonic-fp-fptools/>`_
-GitHub       `pythonic-fp-fptools <https://github.com/grscheller/pythonic-fp-fptools>`_
-Release Docs `pythonic-fp-fptools <https://grscheller.github.io/pythonic-fp-fptools/release/html/>`_
-Devel Docs   `pythonic-fp-fptools <https://grscheller.github.io/pythonic-fp-fptools/development/html/>`_
-============ ===========================================================================================
+- PyPI project `pythonic-fp-fptools <https://pypi.org/project/pythonic-fp-fptools/>`_.
+- GitHub source code repo `grscheller/pythonic-fp-fptools <https://github.com/grscheller/pythonic-fp-fptools>`_.
+- Latest `release documentation <https://grscheller.github.io/pythonic-fp-fptools/release/html/>`_.
+- Current `development documentation <https://grscheller.github.io/pythonic-fp-fptools/development/html/>`_.

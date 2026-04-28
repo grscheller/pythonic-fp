@@ -1,16 +1,9 @@
 Containers: pythonic-fp-containrs
 =================================
 
-A short description.
+Containers with FP interfaces.
 
-Project links
--------------
-
-============ ===============================================================================================
-Name         Link
-============ ===============================================================================================
-PyPI         `pythonic-fp-containrs <https://pypi.org/project/pythonic-fp-containrs/>`_
-GitHub       `pythonic-fp-containrs <https://github.com/grscheller/pythonic-fp-containrs>`_
-Release Docs `pythonic-fp-containrs <https://grscheller.github.io/pythonic-fp-containrs/release/html/>`_
-Devel Docs   `pythonic-fp-containrs <https://grscheller.github.io/pythonic-fp-containrs/development/html/>`_
-============ ===============================================================================================
+- PyPI project `pythonic-fp-containrs <https://pypi.org/project/pythonic-fp-containrs/>`_.
+- GitHub source code repo `grscheller/pythonic-fp-containrs <https://github.com/grscheller/pythonic-fp-containrs>`_.
+- Latest `release documentation <https://grscheller.github.io/pythonic-fp-containrs/release/html/>`_.
+- Current `development documentation <https://grscheller.github.io/pythonic-fp-containrs/development/html/>`_.
