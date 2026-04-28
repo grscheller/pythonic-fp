@@ -18,5 +18,6 @@
 
     - pythonic-fp-booleans
     - pythonic-fp-circulararray
+    - pythonic-fp-gadgets
 
 """

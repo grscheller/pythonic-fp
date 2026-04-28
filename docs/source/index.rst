@@ -2,7 +2,9 @@ Pythonic FP
 ===========
 
 .. automodule:: pythonic_fp.homepage.intro
-    :synopsis:
+    :no-members:
+    :ignore-module-all:
+    :no-index:
 
 .. toctree::
     :caption: Overview

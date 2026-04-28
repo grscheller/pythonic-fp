@@ -7,8 +7,9 @@ name = "pythonic-fp"
 version = "4.0.1"
 readme = "README.md"
 requires-python = ">=3.13"
-license = { file = "LICENSE" }
-authors = [{ name = "Geoffrey R. Scheller", email = "geoffrey@scheller.com" }]
+authors = [
+  { name = "Geoffrey R. Scheller", email = "geoffrey@scheller.com" },
+]
 keywords = [
   "functional",
   "pythonic",
@@ -26,7 +27,7 @@ dynamic = ["description"]
 
 [project.urls]
 Changelog = "https://github.com/grscheller/pythonic-fp/blob/main/CHANGELOG.md"
-Homepage = "https://grscheller.github.io/pythonic-fp/homepage/html/index.html"
+Homepage = "https://grscheller.github.io/pythonic-fp/homepage/html/"
 Source = "https://github.com/grscheller/pythonic-fp"
 
 [tool.flit.sdist]
@@ -53,7 +54,7 @@ strict = true
 report_progress = true
 
 [tool.ruff]
-target-version = "py313"
+target-version = "py314"
 
 [tool.ruff.lint.flake8-quotes]
 docstring-quotes = "double"
