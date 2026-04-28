@@ -1,8 +1,12 @@
 Development
 ===========
 
-.. automodule:: pythonic_fp.homepage.development
-    :synopsis:
-
 .. automodule:: pythonic_fp.homepage
-    :synopsis:
+    :no-members:
+    :ignore-module-all:
+    :no-index:
+
+.. automodule:: pythonic_fp.homepage.development
+    :no-members:
+    :ignore-module-all:
+    :no-index:

@@ -17,7 +17,6 @@ Pythonic FP
     :maxdepth: 1
 
     description
-    links
     development
 
 .. toctree::
