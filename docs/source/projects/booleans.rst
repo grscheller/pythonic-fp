@@ -1,5 +1,5 @@
-Booleans: pythonic-fp-booleans
-==============================
+Booleans
+========
 
 Subtypable Booleans. Like Python's built in bool, these classes are
 singleton subclasses of int. Unlike bool, they can be further subclassed.

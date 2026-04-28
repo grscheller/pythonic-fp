@@ -1,5 +1,5 @@
-pythonic-fp-circulararray
-=========================
+Circular Arrays
+===============
 
 Circular array datastructures.
 

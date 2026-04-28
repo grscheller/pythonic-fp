@@ -1,5 +1,5 @@
-Numpy: pythonic-fp-numpy
-========================
+FP NumPy
+========
 
 Functional programming tools for NumPy.
 

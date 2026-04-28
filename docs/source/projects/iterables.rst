@@ -1,5 +1,5 @@
-Iterables: pythonic-fp-iterables
-================================
+Iterables
+=========
 
 A library of functions for composing and iterating iterables.
 

@@ -1,5 +1,5 @@
-Containers: pythonic-fp-containrs
-=================================
+Containers
+==========
 
 Containers with FP interfaces.
 

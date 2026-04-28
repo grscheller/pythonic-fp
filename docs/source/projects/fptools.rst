@@ -1,5 +1,5 @@
-FP Tools: pythonic-fp-fptools
-==============================
+FP Tools
+========
 
 Functional programming tools.
 
