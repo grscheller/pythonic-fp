@@ -24,4 +24,4 @@ Pythonic FP
     :caption: Pythonic FP Projects
     :maxdepth: 2
 
-    docs/index
+    projects/index

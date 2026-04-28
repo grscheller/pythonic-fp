@@ -15,14 +15,11 @@ TEMPLATEDIR   = source/_templates
 help:
 	@$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS)
 
-clean: Makefile
+clean:
 	rm -rf "$(BUILDDIR)"
 
-setup: clean
-	mkdir -p $(STATICDIR) $(TEMPLATEDIR)
-
-.PHONY: help clean setup Makefile
+.PHONY: help clean Makefile
 
 # Catch-all target: route all unknown targets to Sphinx
-%: setup
-	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS)
+%: Makefile
+	@"$(SPHINXBUILD)" -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS)
