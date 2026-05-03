@@ -18,6 +18,19 @@ semantic versioning, the release string changes when
 
 ## Important Milestones
 
+### 2026-05-02 - All Pythonic FP projects build docs on GitHub pages.
+
+GitHub Actions builds only the last release and whatever is in
+development for all repos.
+
+At this point only the pythonic-fp-queues docs are in excellent
+shape. Redid build process. Can build docs locally or on GitHub
+pages via GitHub Actions.
+
+The homepage links work but the PyPI repos have broken links for
+everything except pythonic-fp-queues. The PyPI links will gradually
+be fixed as I do releases.
+
 ### 2026-04-25 - PyPI Pythonic FP 4.0.0 release
 
 Major paradigm shift. Each Pythonic FP project will be automatically
@@ -29,12 +42,12 @@ So far,
 - pythonic-fp-circulararray
 - pythonic-fp-booleans
 
-THe rest may be broken for the next week or so.
+The rest may be broken for the next few week or so.
 
 ### 2026-04-21 - Milestone for pythonic-fp-circulararray docs
 
-Sphinx docs more or less in their final form for the Circular Array
-project.
+At this time I thoughrt Sphinx docs more or less in their final form
+for the Circular Array project.
 
 ### 2026-04-03 - Homogenized documentation across pythonic-fp projects
 
