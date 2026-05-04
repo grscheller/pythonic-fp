@@ -6,17 +6,15 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 # 
-# Must match what is in pyproject.toml, also update proposed_release accordingly
-# when generating the docs for an actual, not proposed, release.
+# Update Release string to agree with pythonic-fp/pyproject.toml before
+# a PyPI release.
+#
 #
 
 project = 'Pythonic FP'
 copyright = '2023-2026, Geoffrey R. Scheller'
 author = 'Geoffrey R. Scheller'
-release = '4.0.0' 
-
-# -- General configuration ---------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
+release = '4.0.1' 
 
 extensions = [
     'sphinx.ext.autodoc',
@@ -28,9 +26,6 @@ autoclass_content = 'both'
 
 templates_path = ['_templates']
 exclude_patterns: list[str] = []
-
-# -- Options for HTML output -------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_theme_options = {
     "light_css_variables": {

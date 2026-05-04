@@ -31,13 +31,25 @@ The homepage links work but the PyPI repos have broken links for
 everything except pythonic-fp-queues. The PyPI links will gradually
 be fixed as I do releases.
 
+### 2026-05-03 - PyPI Pythonic FP 4.0.1 release
+
+Homepage updates. Also preparing for a minor PyPI release
+when all documentation building are fixed for all projects.
+
+Four projects have been released to PyPI.
+
+- pythonic-fp-circulararray v6.1.0 - 2026-05-03
+- pythonic-fp-queues v5.1.2 - 2026-05-02
+- pythonic-fp-gadgets v6.1.0 - 2026-04-26 (doc build needs updating)
+- pythonic-fp-booleans v3.0.2 - 2026-04-25 (doc build needs updating)
+
 ### 2026-04-25 - PyPI Pythonic FP 4.0.0 release
 
 Major paradigm shift. Each Pythonic FP project will be automatically
 building the current release documentation and the latest development
 documentation on GitHub.
 
-So far,
+So far,9`
 
 - pythonic-fp-circulararray
 - pythonic-fp-booleans

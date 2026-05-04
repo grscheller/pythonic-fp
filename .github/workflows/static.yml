@@ -5,6 +5,10 @@ on:
     branches: ["main"]
   workflow_dispatch:
 
+env:
+  RELEASE: '4.0.0'
+  PYTHON: '3.14'
+
 permissions:
   contents: read
   pages: write
@@ -27,7 +31,7 @@ jobs:
       - name: Select Python
         uses: actions/setup-python@v6
         with:
-          python-version: '3.14'
+          python-version: ${{ env.PYTHON }}
 
       - name: Install Sphinx Dependencies
         run: |
