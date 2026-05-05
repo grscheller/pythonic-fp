@@ -43,13 +43,35 @@ Four projects have been released to PyPI.
 - pythonic-fp-gadgets v6.1.0 - 2026-04-26 (doc build needs updating)
 - pythonic-fp-booleans v3.0.2 - 2026-04-25 (doc build needs updating)
 
+### 2026-05-05 - Milestones
+
+Got all Pythonic FP projects to build documentation through
+GitHub Actions and display the results on GH-Pages. The last
+release and the current state of development are built.
+
+What gets built still needs to be cleaned up. At this point in
+time only the documentation foe circulararray and queues are
+in their final form. Documentation for gadgets is close.
+
+Maintainer reappraised the Development Status of each project.
+
+- pythonic-fp-booleans:      4 - Beta
+- pythonic-fp-circulararray: 5 - Production/Stable
+- pythonic-fp-containers:    3 - Alpha
+- pythonic-fp-fptools:       5 - Production/Stable
+- pythonic-fp-gadgets:       3 - Alpha
+- pythonic-fp-iterables:     5 - Production/Stable
+- pythonic-fp-numpy:         3 - Alpha
+- pythonic-fp-queues:        5 - Production/Stable
+- pythonic-fp-splitends:     3 - Alpha
+
 ### 2026-04-25 - PyPI Pythonic FP 4.0.0 release
 
 Major paradigm shift. Each Pythonic FP project will be automatically
 building the current release documentation and the latest development
 documentation on GitHub.
 
-So far,9`
+So far,
 
 - pythonic-fp-circulararray
 - pythonic-fp-booleans
