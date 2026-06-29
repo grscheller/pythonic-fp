@@ -18,6 +18,25 @@ semantic versioning, the release string changes when
 
 ## Important Milestones
 
+### 2026-06-29 - Coordinated release version 4.1.0
+
+| PyPI Project              | Version |
+|:------------------------- |:-------:|
+| pythonic-fp-booleans      | 4.0.0   |
+| pythonic-fp-circulararray | 6.1.1   |
+| pythonic-fp-containers    | 4.1.0   |
+| pythonic-fp-fptools       | 5.4.0   |
+| pythonic-fp-gadgets       | 4.1.0   |
+| pythonic-fp-iterables     | 5.1.4   |
+| pythonic-fp-numpy         | 1.0.0   |
+| pythonic-fp-queues        | 5.1.3   |
+| pythonic-fp-splitends     | 2.0.3   |
+
+First attempt at a "coordinated release" of Pythonic FP projects. This
+is a known set of projects known to work together. All projects are
+pinned dependencies of pythonic-fp repo. These are the versions which
+will be installed as dependencies of pythonic-fp version 4.1.0.
+
 ### 2026-05-02 - All Pythonic FP projects build docs on GitHub pages.
 
 GitHub Actions builds only the last release and whatever is in

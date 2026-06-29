@@ -31,10 +31,20 @@ is a central component of the Pythonic FP libraries.
 
   - Each Pythonic FP project has its on CHANGELOG and README files.
 
+- Provides a mechanism for periodic coordinated releases.
+
+  - Example: `pip install pythonic-fp==4.1.0`
+
 .. tip::
 
-    There is no reason to install pythonic-fp itself, but does not hurt
-    anything if it is installed.
+    There is no reason to install pythonic-fp itself unless you
+    wish to pin all versions of the pythonic-fp projects to a set
+    of known consistent releases.
+
+    .. warning::
+
+        Using `pip install pythonic-fp` without a release tag will
+        pin versions to the current latest coordinated release.
 
 """
 

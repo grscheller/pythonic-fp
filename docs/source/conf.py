@@ -7,7 +7,7 @@
 project = 'Pythonic FP'
 copyright = '2023-2026, Geoffrey R. Scheller'
 author = 'Geoffrey R. Scheller'
-release = '4.0.1' 
+release = '4.1.0' 
 
 extensions = [
     'sphinx.ext.autodoc',

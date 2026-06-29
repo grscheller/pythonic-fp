@@ -18,6 +18,7 @@ Pythonic FP
 
     description
     development
+    coordinated_releases
 
 .. toctree::
     :caption: Pythonic FP Projects

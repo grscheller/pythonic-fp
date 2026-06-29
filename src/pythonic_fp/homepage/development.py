@@ -1,4 +1,26 @@
 """
+Semantic versioning
+===================
+
+Pythonic FP Projects
+--------------------
+
+For each individual project the maintainer has adopted strict 3 digit
+`semantic versioning <https://semver.org>`_
+for library modules and does not put `caps on dependencies
+<https://iscinumpy.dev/post/bound-version-constraints>`_.
+
+This allows for more package management flexibility for software
+developers using these libraries, and provides easier access to the
+latest features.
+
+Pythonic FP Overall Effort
+--------------------------
+
+- major: For paradigm shifts.
+- minor: Coordinated releases.
+- patch: Homepage changes.
+
 Module Dependencies
 ===================
 
@@ -50,28 +72,6 @@ library dependencies.
         "pythonic_fp.iterables" -> enum;
         "pythonic_fp.numpy" -> numpy;
     }
-
-Semantic versioning
-===================
-
-Pythonic FP Projects
---------------------
-
-For each individual project the maintainer has adopted strict 3 digit
-`semantic versioning <https://semver.org>`_
-for library modules and does not put `caps on dependencies
-<https://iscinumpy.dev/post/bound-version-constraints>`_.
-
-This allows for more package management flexibility for software
-developers using these libraries, and provides easier access to the
-latest features.
-
-Pythonic FP Overall Effort
---------------------------
-
-- major: For paradigm shifts.
-- minor: Coordinated releases.
-- patch: Homepage changes.
 
 Changelog
 =========
