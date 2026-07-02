@@ -40,6 +40,11 @@ Changelog = "https://github.com/grscheller/pythonic-fp/blob/main/CHANGELOG.md"
 Homepage = "https://grscheller.github.io/pythonic-fp/"
 Source = "https://github.com/grscheller/pythonic-fp"
 
+[project.optional-dependencies]
+test = [
+  "pytest>=8.4.1",
+]
+
 [tool.flit.sdist]
 exclude = [
   "docs/",
