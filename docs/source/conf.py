@@ -1,7 +1,7 @@
 # Configuration file for the Sphinx documentation builder.
 #
-# Update Release string to agree with pythonic-fp/pyproject.toml before
-# a PyPI release.
+# Update Release string to agree with pythonic-fp/pyproject.toml
+# before a PyPI release.
 #
 
 project = 'Pythonic FP'
@@ -21,11 +21,11 @@ templates_path = ['_templates']
 exclude_patterns: list[str] = []
 
 html_theme_options = {
-    "light_css_variables": {
-        "color-link--visited": "var(--color-link)",
+    'light_css_variables': {
+        'color-link--visited': 'var(--color-link)',
     },
-    "dark_css_variables": {
-        "color-link--visited": "var(--color-link)",
+    'dark_css_variables': {
+        'color-link--visited': 'var(--color-link)',
     },
 }
 html_theme = 'furo'
