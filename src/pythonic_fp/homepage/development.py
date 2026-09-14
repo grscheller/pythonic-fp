@@ -5,7 +5,7 @@ Module Dependencies
 All non-typing related dependencies.
 Arrows point from modules to their dependencies.
 
-Internal to pythonic-fp
+Internal to Pythonic FP
 -----------------------
 
 Dependencies between the Pythonic FP projects.
@@ -33,7 +33,7 @@ Dependencies between the Pythonic FP projects.
         iterables -> fptools;
     }
 
-External to pythonic-fp
+External to Pythonic FP
 -----------------------
 
 All Python external dependencies, except for typing related standard
@@ -52,7 +52,7 @@ library dependencies.
         "pythonic_fp.numpy" -> numpy;
     }
 
-Semantic versioning
+Semantic Versioning
 ===================
 
 Pythonic FP Projects
@@ -68,14 +68,14 @@ This allows for more package management flexibility for software
 developers using these libraries, and provides easier access
 to the latest features.
 
-Pythonic FP Homepage
---------------------
+Homepage & Integrated Testing (pythonic-fp)
+-------------------------------------------
 
 The meanings for version numbers can change with paradigm shifts.
 Currently they are
 
 - major: for paradigm shifts
-- minor: homepage changes
+- minor: homepage changes, additional tests
 - patch: typos, git/pypi thrashing, pure eye-candy
 
 Changelog
