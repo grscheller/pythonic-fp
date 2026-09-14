@@ -13,38 +13,28 @@
 # limitations under the License.
 
 """
-Purpose pythonic-fp PyPI Project
-================================
+Pythonic Functional Programming Libraries
+=========================================
 
-The `pythonic-fp PyPI project <https://pypi.org/project/pythonic-fp/>`_
-is a central component of the Pythonic FP libraries.
+The `pythonic-fp PyPI project
+<https://pypi.org/project/pythonic-fp/>`_
+itself is a support component of the Pythonic FP libraries.
 
-- Claims the pythonic-fp name on PyPI for the overall effort.
-- PyPI project for the ``pythonic_fp.homepage`` module.
+- Claims the pythonic-fp name on PyPI for the overall effort
+- PyPI project for the pythonic-fp homepage on GitHub pages
 - Homepage provides links to the
 
   - PyPI projects making up the Pythonic FP effort
   - GitHub Repos for each project
-  - Documentation for each project
 
 - Provides locations for overarching CHANGELOG and README files.
 
   - Each Pythonic FP project has its on CHANGELOG and README files.
 
-- Provides a mechanism for periodic coordinated releases.
-
-  - Example: `pip install pythonic-fp==4.1.0`
-
 .. tip::
 
-    There is no reason to install pythonic-fp itself unless you
-    wish to pin all versions of the pythonic-fp projects to a set
-    of known consistent releases.
-
-    .. warning::
-
-        Using `pip install pythonic-fp` without a release tag will
-        pin versions to the current latest coordinated release.
+    There is no reason to install pythonic-fp itself, but does not
+    hurt anything if just the base package is installed.
 
 """
 

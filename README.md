@@ -24,16 +24,11 @@ For more information visit the project's
 | Queues | [pythonic-fp-queues][108] |  pythonic_fp.queues |
 | Splitends | [pythonic-fp-splitends][109] | pythonic_fp.splitends |
 
-## Coordinated Releases
+These started out as an effort to support a functional style of
+programming in Python. Also for me to learn Python 3.12+ type hints.
 
-Since the maintainer does not put caps on the dependencies for the PyPI
-Pythonic FP projects, coordinated releases of known compatible versions
-of the libraries are periodically provided. To use a coordinated
-release, import the corresponding version of the  pythonic-fp PyPI
-project.
-
-For more information on coordinated releases,
-See the [coordinated releases][200] page.
+**Note:** There is no need for an end user to install the
+`pythonic-fp` project itself.
 
 ## Copyright and License
 
@@ -50,4 +45,3 @@ License, Version 2.0. See the LICENSE file for details.
 [107]: https://grscheller.github.io/pythonic-fp/projects/numpy.html
 [108]: https://grscheller.github.io/pythonic-fp/projects/queues.html
 [109]: https://grscheller.github.io/pythonic-fp/projects/splitends.html
-[200]: https://grscheller.github.io/pythonic-fp/coordinated_releases

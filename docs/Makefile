@@ -3,8 +3,6 @@
 
 # You can set these variables from the command line, and also
 # from the environment for the first two.
-VERSION = 4.0.1
-
 SPHINXOPTS    ?=
 SPHINXBUILD   ?= sphinx-build
 SOURCEDIR     = source
@@ -15,7 +13,7 @@ TEMPLATEDIR   = source/_templates
 
 # Put it first so that "make" without argument is like "make help".
 help:
-	@$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS)
+	@"$(SPHINXBUILD)" -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS)
 
 clean:
 	rm -rf "$(BUILDDIR)"

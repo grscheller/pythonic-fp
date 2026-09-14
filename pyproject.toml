@@ -4,7 +4,8 @@ build-backend = "flit_core.buildapi"
 
 [project]
 name = "pythonic-fp"
-version = "4.1.0"
+version = "5.0.0"
+description = "Pythonic FP homepage - for packagers/forkers."
 readme = "README.md"
 requires-python = ">=3.13"
 authors = [
@@ -19,28 +20,21 @@ classifiers = [
   "Intended Audience :: Developers",
   "License :: OSI Approved :: Apache Software License",
   "Operating System :: OS Independent",
-  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
   "Typing :: Typed",
 ]
-dependencies = [
-  "pythonic-fp-booleans==4.0.0",
-  "pythonic-fp-circulararray==6.1.1",
-  "pythonic-fp-containers==4.1.0",
-  "pythonic-fp-fptools==5.4.0",
-  "pythonic-fp-gadgets==4.1.0",
-  "pythonic-fp-iterables==5.1.4",
-  "pythonic-fp-numpy==1.0.0",
-  "pythonic-fp-queues==5.1.3",
-  "pythonic-fp-splitends==2.0.3",
-]
-description = "Pythonic FP homepage and coordinated releases."
+dependencies = []
 
 [project.urls]
 Changelog = "https://github.com/grscheller/pythonic-fp/blob/main/CHANGELOG.md"
-Homepage = "https://grscheller.github.io/pythonic-fp/"
+Homepage = "https://grscheller.github.io/pythonic-fp"
 Source = "https://github.com/grscheller/pythonic-fp"
 
-[project.optional-dependencies]
+[dependency-groups]
+docs = [
+  "furo>=2025.12.19",
+  "sphinx>=9.1",
+]
 test = [
   "pytest>=8.4.1",
 ]
@@ -53,6 +47,11 @@ exclude = [
 [tool.flit.module]
 name = "pythonic_fp.homepage"
 
+[tool.pytest]
+addopts = ["-ra"]
+consider_namespace_packages = true
+testpaths = ["tests/"]
+
 [tool.mypy]
 explicit_package_bases = true
 local_partial_types = true
@@ -60,11 +59,6 @@ namespace_packages = true
 warn_redundant_casts = true
 warn_return_any = true
 warn_unused_configs = true
-
-[tool.pytest]
-addopts = ["-ra"]
-consider_namespace_packages = true
-testpaths = ["tests/"]
 
 [tool.ruff]
 target-version = "py314"

@@ -1,22 +1,30 @@
 # CHANGELOG
 
-## pythonic-fp projects
+## Pythonic FP projects
 
 Developer Tools supporting a functional style of programming yet
-endeavoring to remain Pythonic. All project names begin ``pythonic-fp-``
-on PyPI and GitHub. They are Python namespace packages under
-the ``pythonic_fp`` name.
+endeavoring to remain Pythonic. All done under the Python boring_math
+namespace.
 
-## Release based versioning
+## Release versioning
 
 Unlike the PyPI projects that make up Pythonic FP, which use strict
-semantic versioning, the release string changes when
+semantic versioning, the release string for boring-math changes when
 
-- **MAJOR:** a major paradigm shift happens
-- **MINOR:** breaking API and dependency changes are made to Pythonic FP projects
-- **PATCH:** homepage changes and information updates are made
+- **major:** for paradigm shifts
+- **minor:** homepage changes
+- **patch:** typos, git/pypi thrashing, pure eye-candy
 
 ## Important Milestones
+
+### 2026-09-13 - Major Paradigm shift, PyPI release 5.0.0
+
+Transitioned the management of my virtual environments from pyenv to uv.
+Unlike pyenv, which is shell based, uv is project based. I can treat the
+individual projects making up the Pythonic FP effort as independent
+projects with regards to calculating their dependencies. With uv there
+is no need to have coordinated releases of known consistent versions of
+the projects.
 
 ### 2026-06-29 - Coordinated release version 4.1.0
 
