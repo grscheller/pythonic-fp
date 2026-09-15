@@ -1,10 +1,8 @@
 # CHANGELOG
 
-## Pythonic FP projects
-
-Developer Tools supporting a functional style of programming yet
-endeavoring to remain Pythonic. All done under the Python boring_math
-namespace.
+Pythonic Functional Programming (FP) projects. Developer Tools
+supporting a functional style of programming yet endeavoring to remain
+Pythonic. All done under the Python boring_math namespace.
 
 ## Release versioning
 
@@ -12,7 +10,7 @@ Unlike the PyPI projects that make up Pythonic FP, which use strict
 semantic versioning, the release string for boring-math changes when
 
 - **major:** for paradigm shifts
-- **minor:** homepage changes, additional tests
+- **minor:** homepage changes, additional integration tests
 - **patch:** typos, git/pypi thrashing, pure eye-candy
 
 ## Important Milestones
