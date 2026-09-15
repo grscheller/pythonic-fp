@@ -5,7 +5,7 @@ Pythonic Functional Programming Libraries
 **Goals:**
 
 - Support both stateful and functional programming styles
-- Be efficient, extensible and fulling embrace Python 3.12+ typing
+- Be efficient, extensible and fully embrace Python 3.12+ typing
 - Threadsafe when practical, thread tolerant otherwise
 - Be pythonic
 
