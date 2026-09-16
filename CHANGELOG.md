@@ -1,5 +1,7 @@
 # CHANGELOG
 
+PyPI **pythonic-fp** project.
+
 Pythonic Functional Programming (FP) projects. Developer Tools
 supporting a functional style of programming yet endeavoring to remain
 Pythonic. All done under the Python boring_math namespace.
