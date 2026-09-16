@@ -446,8 +446,8 @@ TODO:
 
 - Building pythonic-fp.circulararray docs with Sphinx
   - ended up using the Sphinx autodoc extension
-  - using the `piccolo-theme <https://pypi.org/project/piccolo-theme>`_ as the html_theme
-- Not yet "publishing" them on gh-pages, looking into ``sphinx.ext.githubpages``
+  - using the [piccolo-theme](https://pypi.org/project/piccolo-theme) as the html_theme
+- Not yet "publishing" them on gh-pages, looking into `sphinx.ext.githubpages`
   - realized I will need to move docs over to pythonic-fp repo for PyPI releases
   - the gh-pages for the namespace repos will host the current devel env docs
 
