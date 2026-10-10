@@ -4,18 +4,39 @@ PyPI **pythonic-fp** project.
 
 Pythonic Functional Programming (FP) projects. Developer Tools
 supporting a functional style of programming yet endeavoring to remain
-Pythonic. All done under the Python boring_math namespace.
+Pythonic. All done under the Python pythonic_fp namespace.
 
 ## Release versioning
 
-Unlike the PyPI projects that make up Pythonic FP, which use strict
-semantic versioning, the release string for boring-math changes when
+Unlike the PyPI projects that make up Pythonic FP, which use a strict
+semantic versioning, the release string for pythonic-fp changes when
 
-- **major:** for paradigm shifts
-- **minor:** homepage changes, additional integration tests
-- **patch:** typos, git/pypi thrashing, pure eye-candy
+- **MAJOR:** for paradigm shifts
+- **MINOR:** homepage changes, additional integration tests
+- **PATCH:** typos, git/pypi thrashing, pure eye-candy
 
 ## Important Milestones
+
+### 2026-10-TBA - Major Paradigm shift, PyPI release 6.0.0
+
+The top level major release will be uncapped. Going forward, previous
+major releases will be capped. This applies to both pythonic-fp itself
+and all the PyPI projects that make up the Pythonic FP effort.
+
+**Warning:** Releases before 6.0.0 are unsupported and may resolve
+inconsistently.
+
+### 2026-10-10 - Preparing for a Major Paradigm shift, PyPI release 5.1.0
+
+The only supported version of the Pythonic FP projects will be the
+latest top level releases of the PyPI projects making up the effort. For
+each individual PyPI project, the release strings will be of the form
+
+- **MAJOR:** incompatible API changes across all Pythonic FP projects
+- **MINOR:** added API compatible functionality
+- **PATCH:** incremented for backward compatible bug fixes and doc improvements
+
+Going forward, only the latest major releases will be uncapped.
 
 ### 2026-09-13 - Major Paradigm shift, PyPI release 5.0.0
 

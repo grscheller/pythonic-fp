@@ -21,11 +21,13 @@ The `pythonic-fp PyPI project
 itself is a support component of the Pythonic FP libraries.
 
 - Claims the pythonic-fp name on PyPI for the overall effort
+- Provides integration tests for the Pythonic FP projects
 - PyPI project for the pythonic-fp homepage on GitHub pages
-- Homepage provides links to the
 
-  - PyPI projects making up the Pythonic FP effort
-  - GitHub Repos for each project
+  - Homepage provides links to the
+
+    - PyPI projects making up the Pythonic FP effort
+    - GitHub Repos for each project
 
 - Provides locations for overarching CHANGELOG and README files.
 
@@ -33,8 +35,7 @@ itself is a support component of the Pythonic FP libraries.
 
 .. tip::
 
-    There is no reason to install pythonic-fp itself, but does not
-    hurt anything if just the base package is installed.
+    There is no reason to install pythonic-fp itself.
 
 """
 

@@ -7,7 +7,7 @@ name = "pythonic-fp"
 version = "5.1.0"
 description = "Pythonic FP homepage - for packagers/forkers."
 readme = "README.md"
-requires-python = ">=3.13"  # syntactic floor: known to SyntaxError below this
+requires-python = ">=3.14"  # floor: PEP 649/749 deferred annotations — class-level self-reference NameErrors on <3.14
 authors = [
   { name = "Geoffrey R. Scheller", email = "geoffrey@scheller.com" },
 ]
@@ -21,7 +21,8 @@ classifiers = [
   "Intended Audience :: Developers",
   "License :: OSI Approved :: Apache Software License",
   "Operating System :: OS Independent",
-  "Programming Language :: Python :: 3.14",  # tested: pytest test suite successful
+  "Programming Language :: Python :: 3.14",
+  "Programming Language :: Python :: 3.15",
   "Typing :: Typed",
 ]
 dependencies = []
@@ -36,20 +37,17 @@ docs = [
   "furo>=2025.12.19",
   "sphinx>=9.1",
 ]
-pub = [
-  "flit",
-]
 test = [
   "pytest>=8.4.1",
-  "pythonic-fp-booleans",
-  "pythonic-fp-circulararray",
-  "pythonic-fp-containers",
-  "pythonic-fp-fptools",
-  "pythonic-fp-gadgets",
-  "pythonic-fp-iterables",
-  "pythonic-fp-numpy",
-  "pythonic-fp-queues",
-  "pythonic-fp-splitends",
+  "pythonic-fp-booleans<6",
+  "pythonic-fp-circulararray<6.4",
+  "pythonic-fp-containers<6",
+  "pythonic-fp-fptools<6.2",
+  "pythonic-fp-gadgets<6",
+  "pythonic-fp-iterables<6",
+  "pythonic-fp-numpy<6",
+  "pythonic-fp-queues<6",
+  "pythonic-fp-splitends<6",
 ]
 
 [tool.flit.module]
