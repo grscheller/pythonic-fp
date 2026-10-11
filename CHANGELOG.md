@@ -1,6 +1,6 @@
 # CHANGELOG
 
-PyPI **pythonic-fp** project.
+PyPI **pythonic-fp** projects.
 
 Pythonic Functional Programming (FP) projects. Developer Tools
 supporting a functional style of programming yet endeavoring to remain
@@ -8,46 +8,58 @@ Pythonic. All done under the Python pythonic_fp namespace.
 
 ## Release versioning
 
-Unlike the PyPI projects that make up Pythonic FP, which use a strict
-semantic versioning, the release string for pythonic-fp changes when
+Unlike the PyPI projects that make up Pythonic FP, which now use
+a tiered strict semantic versioning, the release string for
+`pythonic-fp` changes when
 
-- **MAJOR:** for paradigm shifts
+- **MAJOR:** for major release number bumps (formally paradigm shifts)
 - **MINOR:** homepage changes, additional integration tests
-- **PATCH:** typos, git/pypi thrashing, pure eye-candy
+- **PATCH:** typos, git/pypi thrashing, pure eye-candy/wordsmithing
 
 ## Important Milestones
 
-### 2026-10-TBA - Major Paradigm shift, PyPI release 6.0.0
+### PyPI release 6.0.0 - 2026-10-TBA
 
-The top level major release will be uncapped. Going forward, previous
-major releases will be capped. This applies to both pythonic-fp itself
-and all the PyPI projects that make up the Pythonic FP effort.
+**Major Paradigm Shift**
 
-**Warning:** Releases before 6.0.0 are unsupported and may resolve
-inconsistently.
+The only supported version of the Pythonic FP projects will be the ones
+with the top level major release numbers.
 
-### 2026-10-10 - Preparing for a Major Paradigm shift, PyPI release 5.1.0
+A tiered strict 3 digit semantic versioning will be used
 
-The only supported version of the Pythonic FP projects will be the
-latest top level releases of the PyPI projects making up the effort. For
-each individual PyPI project, the release strings will be of the form
+- **MAJOR** incremented for incompatible API changes across Pythonic FP libraries
+- **MINOR** incremented for backward compatible added functionality
+- **PATCH** incremented for backward compatible bug fixes
 
-- **MAJOR:** incompatible API changes across all Pythonic FP projects
-- **MINOR:** added API compatible functionality
-- **PATCH:** incremented for backward compatible bug fixes and doc improvements
+After the release of pythonic-fp version `6.0.0`, all Pythonic FP
+projects with the same major release numbers will be attempted to be
+kept consistent with each other.
 
-Going forward, only the latest major releases will be uncapped.
+**Warning:** Releases before `6.0.0` are unsupported and are not
+guaranteed to resolve consistently.
 
-### 2026-09-13 - Major Paradigm shift, PyPI release 5.0.0
+TODO: list major changes made for this release.
+
+### PyPI release 5.1.0 - 2026-10-10
+
+Preparing for another major paradigm shift.
+
+Releases will now be capped to the next upcoming major release.
+
+### PyPI release 5.0.0 - 2026-09-13
+
+**Major Paradigm Shift**
 
 Transitioned the management of my virtual environments from pyenv to uv.
 Unlike pyenv, which is shell based, uv is project based. I can treat the
 individual projects making up the Pythonic FP effort as independent
 projects with regards to calculating their dependencies. With uv there
-is no need to have coordinated releases of known consistent versions of
-the projects.
+will be no need to have coordinated releases of known consistent
+versions of the projects.
 
-### 2026-06-29 - Coordinated release version 4.1.0
+### PyPI release 4.1.0 - 2026-06-29
+
+**Coordinated Release**
 
 | PyPI Project              | Version |
 |:------------------------- |:-------:|
@@ -61,15 +73,12 @@ the projects.
 | pythonic-fp-queues        | 5.1.3   |
 | pythonic-fp-splitends     | 2.0.3   |
 
-First attempt at a "coordinated release" of Pythonic FP projects. This
-is a known set of projects known to work together. All projects are
-pinned dependencies of pythonic-fp repo. These are the versions which
-will be installed as dependencies of pythonic-fp version 4.1.0.
+### Feat - 2026-05-02
 
-### 2026-05-02 - All Pythonic FP projects build docs on GitHub pages.
+All Pythonic FP projects automatically build their docs on GitHub pages.
 
 GitHub Actions builds only the last release and whatever is in
-development for all repos.
+development for all pythonic-fp project repos.
 
 At this point only the pythonic-fp-queues docs are in excellent
 shape. Redid build process. Can build docs locally or on GitHub
@@ -79,7 +88,7 @@ The homepage links work but the PyPI repos have broken links for
 everything except pythonic-fp-queues. The PyPI links will gradually
 be fixed as I do releases.
 
-### 2026-05-03 - PyPI Pythonic FP 4.0.1 release
+### PyPI release 4.0.1 - 2026-05-03
 
 Homepage updates. Also preparing for a minor PyPI release
 when all documentation building are fixed for all projects.
@@ -91,7 +100,7 @@ Four projects have been released to PyPI.
 - pythonic-fp-gadgets v6.1.0 - 2026-04-26 (doc build needs updating)
 - pythonic-fp-booleans v3.0.2 - 2026-04-25 (doc build needs updating)
 
-### 2026-05-05 - Milestones
+### Milestones - 2026-05-05
 
 Got all Pythonic FP projects to build documentation through
 GitHub Actions and display the results on GH-Pages. The last
@@ -101,21 +110,23 @@ What gets built still needs to be cleaned up. At this point in
 time only the documentation foe circulararray and queues are
 in their final form. Documentation for gadgets is close.
 
-Maintainer reappraised the Development Status of each project.
+### PyPI release 4.0.0 - 2026-04-25
 
-- pythonic-fp-booleans:      4 - Beta
-- pythonic-fp-circulararray: 5 - Production/Stable
-- pythonic-fp-containers:    3 - Alpha
-- pythonic-fp-fptools:       5 - Production/Stable
-- pythonic-fp-gadgets:       3 - Alpha
-- pythonic-fp-iterables:     5 - Production/Stable
-- pythonic-fp-numpy:         3 - Alpha
-- pythonic-fp-queues:        5 - Production/Stable
-- pythonic-fp-splitends:     3 - Alpha
+**Coordinated Release**
 
-### 2026-04-25 - PyPI Pythonic FP 4.0.0 release
+| PyPI Project | Version |
+|:------------ |:-------:|
+| pythonic-fp-booleans | 3.0.0 |
+| pythonic-fp-circulararray | 6.0.1 |
+| pythonic-fp-containers | 4.0.1 |
+| pythonic-fp-fptools | 5.2.0 |
+| pythonic-fp-gadgets | 4.0.2 |
+| pythonic-fp-iterables | 5.1.3 |
+| pythonic-fp-numpy | 0.1.2 |
+| pythonic-fp-queues | 5.1.1 |
+| pythonic-fp-splitends | 2.0.1 |
 
-Major paradigm shift. Each Pythonic FP project will be automatically
+Major change. Each Pythonic FP project will be automatically
 building the current release documentation and the latest development
 documentation on GitHub.
 
@@ -126,48 +137,19 @@ So far,
 
 The rest may be broken for the next few week or so.
 
-### 2026-04-21 - Milestone for pythonic-fp-circulararray docs
+### Milestone - 2026-04-21
 
-At this time I thoughrt Sphinx docs more or less in their final form
-for the Circular Array project.
+At this time I thought Sphinx docs were more or less in their final
+form for the pythonic-fp-circulararray library.
 
-### 2026-04-03 - Homogenized documentation across pythonic-fp projects
+### Milestone - 2026-04-03
 
-Based on what I did for my boring-math effort.
+Homogenized documentation across pythonic-fp projects. Based on what
+I did for my boring-math effort.
 
-### 2026-01-22 - PyPI Pythonic FP 3.4.0 coordinated release
+### PyPI release 3.4.0 - 2026-01-22
 
-Preparing for the boring-math-abstract-algebra PyPI 2.1.0 release,
-decided it was time for Boring Math 3.0.0 and Pythonic FP 4.0.0
-coordinated Released.
-
-pythonic-fp-booleans 2.1.0 -> 3.0.0
-pythonic-fp-circulararray 6.0.0 -> 6.0.1
-pythonic-fp-containers 4.0.0 -> 4.0.1
-pythonic-fp-fptools 5.1.2 -> 5.2.0
-pythonic-fp-gadgets 4.0.1 -> 4.0.2
-pythonic-fp-iterables 5.1.2 -> 5.1.3
-pythonic-fp-numpy 0.1.1 -> 0.1.2
-pythonic-fp-queues 5.1.0 -> 5.1.1
-pythonic-fp-splitends 2.0.0 -> 2.0.1
-
-### 2025-12-02 - PyPI Pythonic FP 3.3.3 coordinated release
-
-| PyPI Project | Version |
-|:------------ |:-------:|
-| pythonic-fp-booleans | 2.1.0 |
-| pythonic-fp-circulararray | 6.0.0 |
-| pythonic-fp-containers | 4.0.0 |
-| pythonic-fp-fptools | 5.1.2 |
-| pythonic-fp-gadgets | 4.0.1 |
-| pythonic-fp-iterables | 5.1.2 |
-| pythonic-fp-numpy | 0.1.1 |
-| pythonic-fp-queues | 5.1.0 |
-| pythonic-fp-splitends | 2.0.0 |
-
-### 2025-09-28 - PyPI coordinated release v3.4.0
-
-Consistent set of Pythonic FP projects:
+**Coordinated Release**
 
 | PyPI Project | Version |
 |:------------ |:-------:|
@@ -181,57 +163,13 @@ Consistent set of Pythonic FP projects:
 | pythonic-fp-queues | 5.1.1 |
 | pythonic-fp-splitends | 2.0.2 |
 
-### 2026-01-19 - PyPI containers release
+### PyPI release v3.3.3 - 2025-12-02
 
-pythonic-fp-iterables 5.1.3
-
-### 2026-01-18 - PyPI iterables release
-
-pythonic-fp-iterables 5.1.3
-
-### 2026-01-16 - PyPI numpy release
-
-pythonic-fp-numpy 0.1.2
-
-### 2026-01-15 - PyPI queues release
-
-pythonic-fp-queues 5.1.1
-
-### 2026-01-13 - PyPI fptools release
-
-pythonic-fp-fptools 5.2.0
-
-### 2026-01-12 - PyPI booleans release
-
-pythonic-fp-booleans 3.0.0
-
-### 2026-01-08 - PyPI circulararray and gadgets releases
-
-pythonic-fp-circulararray 6.0.1
-pythonic-fp-gadgets 4.0.2
-
-### 2026-01-04 - PyPI Pythonic FP 3.3.4+ release preparations
-
-Preparing for the boring-math-abstract-algebra PyPI 2.1.0 release,
-decided it was time for Boring Math 2.2.0+ and Pythonic FP 3.3.4+
-coordinated Releases.
-
-pythonic-fp-booleans 2.1.0 -> 3.0.0
-pythonic-fp-circulararray 6.0.0 -> 6.0.1
-pythonic-fp-containers 4.0.0 -> 4.0.1
-pythonic-fp-fptools 5.1.2 -> 5.2.0
-pythonic-fp-gadgets 4.0.1 -> 4.0.2
-pythonic-fp-iterables 5.1.2 -> 5.1.3
-pythonic-fp-numpy 0.1.1 -> 0.1.2
-pythonic-fp-queues 5.1.0 -> 5.1.1
-pythonic-fp-splitends 2.0.0 -> 2.0.1
-
-### 2025-12-02 - PyPI coordinated release v3.3.3
-
-I never pushed pythonic-fp-gadgets 4.0.0 to PyPI! Pushed version 4.0.1.
+I never pushed pythonic-fp-gadgets `4.0.0` to PyPI!
+Pushed version `4.0.1`.
 
 Discovered when tests failed off of installed libraries.
-Also had to update pythonic-fp-booleans to 2.0.0 -> 2.1.0 as a result.
+Also had to update pythonic-fp-booleans to `2.0.0 -> 2.1.0` as a result.
 
 Consistent set of Pythonic FP projects:
 
@@ -247,34 +185,50 @@ Consistent set of Pythonic FP projects:
 | pythonic-fp-queues | 5.1.0 |
 | pythonic-fp-splitends | 2.0.0 |
 
-### 2025-12-02 - PyPI release v3.3.1
+### PyPI release 3.3.2 - 2025-12-02
 
-PyPI pythonic-fp-numpy 0.1.1 was released. The test dependencies for
+**Coordinated Release**
+
+| PyPI Project | Version |
+|:------------ |:-------:|
+| pythonic-fp-booleans | 2.1.0 |
+| pythonic-fp-circulararray | 6.0.0 |
+| pythonic-fp-containers | 4.0.0 |
+| pythonic-fp-fptools | 5.1.2 |
+| pythonic-fp-gadgets | 4.0.0 |
+| pythonic-fp-iterables | 5.1.2 |
+| pythonic-fp-numpy | 0.1.1 |
+| pythonic-fp-queues | 5.1.0 |
+| pythonic-fp-splitends | 2.0.0 |
+
+### PyPI release v3.3.1 - 2025-12-02
+
+PyPI pythonic-fp-numpy `0.1.1` was released. The test dependencies for
 boring-math-abstract-algebra was missing.
 
 All development docs regenerated with :special-members: enabled.
 
-### 2025-11-30 - PyPI release v3.3.0
+### PyPI release v3.3.0 - 2025-11-30
 
-PyPI pythonic-fp-numpy version 0.1.0 was released. Ability to
+PyPI pythonic-fp-numpy version `0.1.0` was released. Ability to
 wrap a non-writable NumPy NDArray with a hashable container.
 
-### 2025-10-12 - PyPI release v3.2.2
+### PyPI release v3.2.2 - 2025-10-12
 
 Incorporated lessons learned from Boring Math project into homepage.
 
-### 2025-10-06 - Update
+### Milestone - 2025-10-06
 
 Rebuilt homepage (development) and all Pythonic FP projects docs with
 furo theme.
 
-### 2025-09-30 - PyPI release v3.2.1
+### PyPI release v3.2.1 - 2025-09-30
 
 Spent a lot of effort to make the homepage smooth and concise.
 
 TODO: Incorporate ideas into the docs for the individual PyPI projects.
 
-### 2025-09-28 - PyPI release v3.2.0
+### PyPI release v3.2.0 - 2025-09-28
 
 Consistent set of Pythonic FP projects:
 
@@ -289,47 +243,44 @@ Consistent set of Pythonic FP projects:
 | pythonic-fp-queues | 5.1.0 |
 | pythonic-fp-splitends | 1.0.2 |
 
-### 2025-09-28 - PyPI release v3.1.1
+### PyPI release v3.1.1 - 2025-09-28
 
-Got home page to a finished state.
+Got homepage to a finished state.
 
-### 2025-09-26 - PyPI release v3.0.1
+### PyPI release v3.0.1 - 2025-09-26
 
-- modified 3 digit release string (Changed! see above)
-
+- modified 3 digit release string (Changed! See above)
   - major release will remain 3 for this homepage module paradigm
   - minor release will increase for coordinated release points
   - patch release will increase when src/ gets updated
-
 - released with or after this version and before next
-
   - circulararray 6.0.0
   - queues 5.1.0
   - gadgets 3.1.0
 
-### 2025-09-26 - PyPI release v3.0.0
+### PyPI release v3.0.0 - 2025-09-26
 
 Project's homepage taking shape. Provides overarching documentation
 for the entire Pythonic FP project.
 
-### 2025-09-22 - Update
+### Update - 2025-09-22
 
 Started effort to host the project's "homepage" with Sphinx.
 
 Development is somewhat ahead of what is on PyPI. I need to do
 a new coordinated release soon.
 
-### 2025-09-21 - Update
+### Update - 2025-09-21
 
-Deprecate the pythonic-fp-sentinels PyPI project.
+Deprecated the pythonic-fp-sentinels PyPI project.
 
 - code moved to pythonic-fp-gadgets
   - wanted to make gadgets independent of all external code
   - except the Python standard library
 - moved rest of pythonic-fp development off sentinels and onto gadgets
-- with some difficulty, final release version is 2.1.3
+- with some difficulty, final release version is `2.1.3`
 
-### 2025-09-15 - Update
+### Update - 2025-09-15
 
 Consistent set of Pythonic FP projects:
 
@@ -344,29 +295,31 @@ Consistent set of Pythonic FP projects:
 | pythonic-fp-sentinels | 2.1.0 |
 | pythonic-fp-splitends | 1.0.2 |
 
-### 2025-09-11 - PyPI release v2.0.1
+### PyPI release v2.0.1 - 2025-09-11
 
 - Removed Documentation link in pyproject.toml
   - decided for now not to provide overarching Sphinx docs for entire effort
 - Changes to better describe overall the Pythonic FP project
   - Updated README.md & CHANGELOG.md
 
-### 2025-08-13 - Update
+### Update - 2025-08-13
 
 Generated docs for pythonic-fp-booleans PyPI project. First development
 (prerelease) generation of of docs for booleans.sbool
 
-### 2025-08-11 - Update
+### Update - 2025-08-11
 
 The next gadget's release will be v1.2.0. Added module
 pythonic_fp.gadgets.lca for function latest common ancestor.
 
-### 2025-08-09 - Preparing for upcoming PyPI release for gadgets
+### Update - 2025-08-09
+
+Preparing for upcoming PyPI release for gadgets.
 
 - decided to make gadget's pyproject.toml the exemplar for rest of pythonic-fp namespace
 - pythonic_fp.gadget works with previous and next release of singletons
 
-### 2025-08-02 - PyPI release 1.1.0
+### PyPI release 1.1.0 - 2025-08-02
 
 Completed a coordinated, consistent release of pythonic-fp namespace projects
 
@@ -374,11 +327,10 @@ Completed a coordinated, consistent release of pythonic-fp namespace projects
 - released pythonic-fp-circulararray v5.3.0 immediately followed by v5.3.1
   - had to fix a link in README.rst, changed
     - pythonic-fp.circulararray to pythonic-fp-circulararray 
-      - linked still worked since PyPI maps ``.`` and ``_`` to ``-``
+      - linked still worked since PyPI maps `.` and `_` to `-`
     - had to update development/source/conf.py
     - had to update development/source/releases.py
     - had to copy generated html to release directories
-
 - released pythonic-fp-containers v3.0.0
 - released pythonic-fp-fptools v5.0.0
 - released pythonic-fp-iterables v5.0.0
@@ -388,7 +340,7 @@ Completed a coordinated, consistent release of pythonic-fp namespace projects
   - bumped all version numbers by one patch level
   - redid Sphinx development docs for entire namespace project
 
-### 2025-08-01 - Added pythonic_fp.gadgets to pythonic-fp
+### Milestone - 2025-08-01
 
 Added package pythonic_fp.gadgets to PyPI project pythonic-fp. Now
 this "name-claim" package is installable.
@@ -396,30 +348,34 @@ this "name-claim" package is installable.
 The gadgets library is for simple, but useful, data structures with
 minimal dependencies.
 
-### 2025-07-30 - Updated all Sphinx docs
+### Milestone - 2025-07-30
 
-Updated Sphinx docs for all pythonic_fp namespace projects to the latest
-format. Still need to do consistency checks.
+Updated Sphinx docs for all pythonic_fp namespace projects to
+the latest format. Still need to do consistency checks.
 
-### 2025-07-30 - Updated Sphinx docs for pythonic_fp.queues
+### Update - 2025-07-30
 
-Which has been deprecated. Use pythonic_fp.containers.queues instead.
+Updated Sphinx docs for the pythonic_fp.queues module.
 
-### 2025-07-30 - Added Sphinx docs for gadgets
+### Update - 2025-07-30
 
-Fairly easy copy and edit from circulararray.
+Added Sphinx docs for gadgets. Fairly easy copy and edit
+from circulararray.
 
 ### 2025-07-29 - Complete redo of circulararray docs
 
 Now PyPI project pythonic-fp.circulararray will be the exemplar for
 Sphinx documentation. The toctrees are no longer hidden.
 
-### 2025-07-27 - Finished Sphinx documentation for two PyPI projects
+### Update - 2025-07-27
 
-Satisfied with the development versions of Sphinx documentation for
-pythonic-fp.circulararray and pythonic-fp.queues.
+Finished Sphinx documentation for two PyPI projects, the development
+versions of Sphinx documentation for `pythonic-fp.circulararray`
+and `pythonic-fp.queues`.
 
-### 2025-07-21 - Unified coordinated upgrade all pytonic-fp projects
+### Update - 2025-07-21
+
+Unified coordinated upgrade all pythonic-fp projects
 
 Updated all pyproject.toml files and corresponding Sphinx documentation
 for an upcoming coordinated release of all packages. From a flowchart of
@@ -430,7 +386,7 @@ a hack to support a future feature that will never happen. This future
 import will be deprecated in Python 3.14.
 
 - rename GH-Pages mount point from pypi-release-docs/ to just docs/
-- removed ``/API/`` from ``docs/*/API/*``
+- removed `/API/` from `docs/*/API/*`
 - move maybe and (xor -> either) modules back to fptools
 - broke out module fptools/singletons to its own repo
 - moved fptools.bool -> singletons.sbool
@@ -443,7 +399,9 @@ TODO:
     - grscheller/pythonic-fp/README.md will point to the new docs
 - next PyPI release will happen when "everything is ready"
 
-### 2025-07-13 - All document generation brought back to this repo
+### Feat - 2025-07-13
+
+All document generation brought back to this repo.
 
 - Sphinx now used
   - looks much more professional
@@ -454,49 +412,56 @@ TODO:
 - the docs links on the README.md pythonic-fp homepage updated
   - now points to docs development's release page instead of docs development itself
 
-### 2025-07-04 - Beginning dtools deprecation
+### Update - 2025-07-04
 
-- Published version 5.1.0 pythonic-fp.circulararray to PyPI
+Beginning the dtools deprecation process.
+
+- Published version v5.1.0 pythonic-fp.circulararray to PyPI
 - Updated pyproject.toml files for all pythonic-fp namespace repos
 - Updated all README.md files to use GitHub, not GH-Pages, for Pythonic FP Homepage
 - Updated all repo root CHANGELOG.rst files
   - preparing to rename them docs/source/changelog.rst for Sphinx build
   - all except this one
 
-### 2025-06-29 - Switching from pdoc to Sphinx
+### Update - 2025-06-29
 
-- Building pythonic-fp.circulararray docs with Sphinx
-  - ended up using the Sphinx autodoc extension
-  - using the [piccolo-theme](https://pypi.org/project/piccolo-theme) as the html_theme
-- Not yet "publishing" them on gh-pages, looking into `sphinx.ext.githubpages`
-  - realized I will need to move docs over to pythonic-fp repo for PyPI releases
-  - the gh-pages for the namespace repos will host the current devel env docs
+Building pythonic-fp.circulararray docs with Sphinx. Ended up using the
+Sphinx autodoc extension with the
+[piccolo-theme](https://pypi.org/project/piccolo-theme) html_theme.
 
-### 2025-05-29 - Beginning transition pdoc -> Sphinx
+Not yet publishing them on gh-pages. Realized I will need to move docs
+over to pythonic-fp repo for PyPI releases. The gh-pages for the
+namespace repos will host the current devel env docs.
 
-- Stumble on PyPI project python-sphinx-doc
-- Supposedly will parse Python type annotations
-  - uninstall ``pdoc``, install ``python-sphinx-doc``
-  - when I get these packages with "sphinx" in their names
+### Update - 2025-05-29
+
+Beginning transition pdoc -> Sphinx.
+
+Stumble on PyPI project python-sphinx-doc. Supposedly it will
+parse Python type annotations.
+
+Uninstall pdoc, install python-sphinx-doc. I then got these packages
+with "sphinx" in their names:
 
 | PyPI Project | Version |
 |:------------ |:-------:|
-| ``python-sphinx-doc`` | 0.1 |
-| ``Sphinx`` | 8.2.3 |
-| ``sphinxcontrib-applehelp`` | 2.0.0 |
-| ``sphinxcontrib-devhelp`` | 2.0.0 |
-| ``sphinxcontrib-htmlhelp`` | 2.1.0 |
-| ``sphinxcontrib-jsmath`` | 1.0.1 |
-| ``sphinxcontrib-qthelp`` | 2.0.0 |
-| ``sphinxcontrib-serializinghtml`` | 2.0.0 |
-| ``sphinx_design`` | 0.6.1 |
+| python-sphinx-doc | 0.1 |
+| Sphinx | 8.2.3 |
+| sphinxcontrib-applehelp | 2.0.0 |
+| sphinxcontrib-devhelp | 2.0.0 |
+| sphinxcontrib-htmlhelp | 2.1.0 |
+| sphinxcontrib-jsmath | 1.0.1 |
+| sphinxcontrib-qthelp | 2.0.0 |
+| sphinxcontrib-serializinghtml | 2.0.0 |
+| sphinx_design | 0.6.1 |
 
-Only ``sphinx_design`` is a ``python-sphinx-doc`` dependency
-that is not also a ``Sphinx`` dependency.
+Only sphinx_design is a python-sphinx-doc dependency
+that is not also a Sphinx dependency.
 
-### 2025-05-24 - More work "biting-the-bullet"
+### Update - 2025-05-24
 
-- Decided on the pythonic-fp namespace name instead of fpythonic 
+Decided on the pythonic-fp namespace name instead of the fpythonic name.
+
 - Brought over source code from all dtools namespace projects
   - pythonic-fp.circulararray 5.0.0
   - pythonic-fp.containers 2.0.0
@@ -506,7 +471,9 @@ that is not also a ``Sphinx`` dependency.
   - pythonic-fp.splitends 0.30.0
   - pythonic-fp (name_claim) 1.0.0 - DO NOT INSTALL
 
-### 2025-05-23 - Decided to "bite-the-bullet" and drop dtools name
+### Update - 2025-05-23
+
+Decided to "bite-the-bullet" and drop dtools name.
 
 - Decided on the unclaimed name fpythonic
   - for fp + pythonic
@@ -528,7 +495,9 @@ that is not also a ``Sphinx`` dependency.
     - serves as a homepage for the fpythonic namespace modules
     - hosts the generated documentation on gh-pages
 
-### 2025-05-22 - Rebuilt docs for all projects for next PyPI releases
+### Update - 2025-05-22
+
+Rebuilt docs for all projects for next PyPI releases.
 
 - dtools.circular-array 3.15.0
 - dtools.containers 1.0.0
@@ -537,23 +506,27 @@ that is not also a ``Sphinx`` dependency.
 - dtools.queues 2.0.0
 - dtools.splitends 0.29.0
 
-### 2025-05-20 - Broke out dtools.fp.iterables to its own repo
+### Milestone - 2025-05-20
+
+Broke out dtools.fp.iterables to its own repo
 
 - dtools.fp.iterables -> dtools.iterables
 - GitHub repo: https://github.com/grscheller/dtools-iterables/
 
-### 2025-05-12 - MayBe and Xor moved
+### Update - 2025-05-12
 
-- From dtools.fp
-- To dtools.containers
+MayBe and Xor moved from dtools.fp to dtools.containers repo.
 
-### 2025-05-10 - Changed GitHub name of this repo
+### Update - 2025-05-10
+
+Changed GitHub name of this repo
     
-- GitHub repo name change
-  - grscheller/dtools-docs -> grscheller/dtools-namespace-projects
-  - will double as a project homepage as well as the document repo
+- grscheller/dtools-docs -> grscheller/dtools-namespace-projects
+- will double as a project homepage as well as the document repo
 
-### 2025-05-05 - Added dtools.containers project
+### Milestone - 2025-05-05
+
+Added dtools.containers project.
 
 - Added dtools.containers project and deprecated dtools.tuples
 - dtools.tuples content moved to dtools.containers
@@ -561,30 +534,38 @@ that is not also a ``Sphinx`` dependency.
     - this allows older PyPI source code links to keep working
     - thought necessary since my Boring Math Library not updated yet
 
-### 2025-04-24 -: Decided to change name back to dtools-docs
+### Update - 2025-04-24
+
+Decided to change name back to dtools-docs.
     
 A PyPI project named dtools already exists. Unfortunately, I missed this
 back in January.
 
-### 2025-04-24 - Renamed repo from dtools-docs to just dtools
-    
+### Update - 2025-04-24
+
+Renamed repo from dtools-docs to just dtools
+
 - Morphing README.md into a project-wide Homepage
 - Created CHANGELOG.md file
 - Removed README.md links to deprecated dtools.datastructures project
 
-### 2025-03-31 - Updates for new dtools project
+### Update - 2025-03-31
 
 Adding infrastructure for dtools.tuples.
 
-### 2025-03-28 - Updated docs for all dtools projects
+### Milestone - 2025-03-28
+
+Updated docs for all dtools projects.
 
 Ran linters and against all dtools namespace repos.
 
-### 2025-02-06 - Standardized dtools and bm docs
+### Milestone - 2025-02-06
 
-Standardized Developer Tools and Boring Math project documentation.
+Attempt to standardized dtools and bm documentation.
 
-### 2025-01-17 - Created this repo (dtools-docs)
+### Milestone - 2025-01-17
+
+Created this repo under the dtools-docs name.
 
 - Created this repo for pdoc generated dtools project documentation
   - purpose to keep actual source code repos smaller
