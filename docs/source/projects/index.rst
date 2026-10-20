@@ -3,7 +3,7 @@ Pythonic FP Projects
 
 .. toctree::
     :caption: Pythonic FP Projects
-    :maxdepth: 1
+    :maxdepth: 2
 
     booleans
     circulararray
