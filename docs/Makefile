@@ -18,8 +18,8 @@ help:
 clean:
 	rm -rf "$(BUILDDIR)"
 
-.PHONY: help clean Makefile
+# Build homepage
+homepage: clean
+	@$(SPHINXBUILD) -b html "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS)
 
-# Catch-all target: route all unknown targets to Sphinx
-%: Makefile
-	@"$(SPHINXBUILD)" -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS)
+.PHONY: help clean Makefile

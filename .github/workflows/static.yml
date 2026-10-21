@@ -25,22 +25,25 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
-      - name: Select Python
-        uses: actions/setup-python@v6
+      - name: Install uv
+        uses: astral-sh/setup-uv@bec219d24cd3e171d82865faccec33120bb574f4 # v10.1.0
         with:
           python-version: ${{ env.PYTHON }}
+          enable-cache: true
+          cache-dependency-glob: "pyproject.toml"
 
-      - name: Install Sphinx Dependencies
+      - name: Install Graphviz
         run: |
-          pip install -r docs/requirements.txt
+          sudo apt-get update
           sudo apt-get install -y graphviz
 
       - name: Build Homepage
+        env:
+          UV_PROJECT_ENVIRONMENT: .venv-home
         run: |
-          pip install .
-          sphinx-build -M html docs/source docs/build
+          uv run --no-default-groups --group docs -- make -C docs homepage
 
       - name: Setup Pages
         uses: actions/configure-pages@v6

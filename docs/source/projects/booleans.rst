@@ -1,9 +1,0 @@
-Booleans
-========
-
-Boolean like classes. Like Python's built in bool, these classes are
-singleton subclasses of int. Unlike bool, they can be further subclassed.
-
-- PyPI project `pythonic-fp-booleans <https://pypi.org/project/pythonic-fp-booleans/>`_.
-- GitHub source code repo `grscheller/pythonic-fp-booleans <https://github.com/grscheller/pythonic-fp-booleans>`_.
-- Documentation `release documentation <https://grscheller.github.io/pythonic-fp-booleans>`_.

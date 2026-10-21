@@ -18,9 +18,4 @@ Pythonic FP
 
     description
     development
-
-.. toctree::
-    :caption: Pythonic FP Projects
-    :maxdepth: 2
-
-    projects/index
+    projects

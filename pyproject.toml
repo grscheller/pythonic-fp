@@ -4,7 +4,7 @@ build-backend = "flit_core.buildapi"
 
 [project]
 name = "pythonic-fp"
-version = "6.0.0"
+version = "5.1.0"
 description = "Pythonic FP homepage and integration testing - for packagers/forkers."
 readme = "README.md"
 requires-python = ">=3.14"  # floor: PEP 649/749 deferred annotations — class-level self-reference NameErrors on <3.14

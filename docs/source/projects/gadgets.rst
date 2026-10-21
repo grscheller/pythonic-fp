@@ -1,8 +1,0 @@
-Gadgets
-=======
-
-A collection of miscellaneous self-contained functions and classes with minimal dependencies.
-
-- PyPI project `pythonic-fp-gadgets <https://pypi.org/project/pythonic-fp-gadgets/>`_.
-- GitHub source code repo `grscheller/pythonic-fp-gadgets <https://github.com/grscheller/pythonic-fp-gadgets>`_.
-- Documentation `release documentation <https://grscheller.github.io/pythonic-fp-gadgets>`_.
