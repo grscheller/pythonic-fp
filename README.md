@@ -18,9 +18,9 @@ For more information visit the project's
 | Circular Array | [pythonic-fp-circulararray][102] | pythonic_fp.circulararray |
 | Containers | [pythonic-fp-containers][103] | pythonic_fp.containers |
 | FP Tools | [pythonic-fp-fptools][104] | pythonic_fp.fptools |
-| Gadgets | [pythonic-fp-gadgets][105] | pythonic_fp.gadgets |
-| Iterables | [pythonic-fp-iterables][106] | pythonic_fp.iterables |
-| NumPy | [pythonic-fp-numpy][107] | pythonic_fp.numpy |
+| NumPy | [pythonic-fp-numpy][105] | pythonic_fp.numpy |
+| Gadgets | [pythonic-fp-gadgets][106] | pythonic_fp.gadgets |
+| Iterables | [pythonic-fp-iterables][107] | pythonic_fp.iterables |
 | Queues | [pythonic-fp-queues][108] |  pythonic_fp.queues |
 | Splitends | [pythonic-fp-splitends][109] | pythonic_fp.splitends |
 
@@ -36,12 +36,12 @@ Copyright (c) 2023-2026 Geoffrey R. Scheller. Licensed under the Apache
 License, Version 2.0. See the LICENSE file for details.
 
 
-[101]: https://grscheller.github.io/pythonic-fp/projects/booleans.html
-[102]: https://grscheller.github.io/pythonic-fp/projects/circulararray.html
-[103]: https://grscheller.github.io/pythonic-fp/projects/containers.html
-[104]: https://grscheller.github.io/pythonic-fp/projects/fptools.html
-[105]: https://grscheller.github.io/pythonic-fp/projects/gadgets.html
-[106]: https://grscheller.github.io/pythonic-fp/projects/iterables.html
-[107]: https://grscheller.github.io/pythonic-fp/projects/numpy.html
-[108]: https://grscheller.github.io/pythonic-fp/projects/queues.html
-[109]: https://grscheller.github.io/pythonic-fp/projects/splitends.html
+[101]: https://grscheller.github.io/pythonic-fp-booleans
+[102]: https://grscheller.github.io/pythonic-fp-circulararray
+[103]: https://grscheller.github.io/pythonic-fp-containers
+[104]: https://grscheller.github.io/pythonic-fp-fptools
+[105]: https://grscheller.github.io/pythonic-fp-numpy
+[106]: https://grscheller.github.io/pythonic-fp-gadgets
+[107]: https://grscheller.github.io/pythonic-fp-iterables
+[108]: https://grscheller.github.io/pythonic-fp-queues
+[109]: https://grscheller.github.io/pythonic-fp-splitends
