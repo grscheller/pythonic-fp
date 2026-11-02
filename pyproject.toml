@@ -39,15 +39,15 @@ docs = [
 ]
 test = [
   "pytest>=8.4.1",
-  "pythonic-fp-booleans",
-  "pythonic-fp-circulararray",
-  "pythonic-fp-containers",
-  "pythonic-fp-fptools",
-  "pythonic-fp-gadgets",
-  "pythonic-fp-iterables",
-  "pythonic-fp-numpy",
-  "pythonic-fp-queues",
-  "pythonic-fp-splitends",
+  "pythonic-fp-booleans>=6,<7",
+  "pythonic-fp-circulararray>=6,<7",
+  "pythonic-fp-containers>=6,<7",
+  "pythonic-fp-fptools>=6,<7",
+  "pythonic-fp-gadgets>=6,<7",
+  "pythonic-fp-iterables>=6,<7",
+  "pythonic-fp-numpy>=6,<7",
+  "pythonic-fp-queues>=6,<7",
+  "pythonic-fp-splitends>=6,<7",
 ]
 
 [tool.flit.module]
@@ -95,3 +95,14 @@ docstring-quotes = "double"
 [tool.ruff.format]
 quote-style = "single"
 docstring-code-line-length = 72
+
+[tool.uv.sources]
+pythonic-fp-booleans = { path = "../pythonic-fp-booleans", editable = true }
+pythonic-fp-circulararray = { path = "../pythonic-fp-circulararray", editable = true }
+pythonic-fp-containers = { path = "../pythonic-fp-containers", editable = true }
+pythonic-fp-fptools = { path = "../pythonic-fp-fptools", editable = true }
+pythonic-fp-gadgets = { path = "../pythonic-fp-gadgets", editable = true }
+pythonic-fp-iterables = { path = "../pythonic-fp-iterables", editable = true }
+pythonic-fp-numpy = { path = "../pythonic-fp-numpy", editable = true }
+pythonic-fp-queues = { path = "../pythonic-fp-queues", editable = true }
+pythonic-fp-splitends = { path = "../pythonic-fp-splitends/", editable = true }

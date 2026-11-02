@@ -8,34 +8,39 @@ Pythonic. All done under the Python pythonic_fp namespace.
 
 ## Release versioning
 
-Unlike the PyPI projects that make up Pythonic FP, which now use
-a tiered strict semantic versioning, the release string for
-`pythonic-fp` changes when
+Unlike the PyPI projects that make up Pythonic FP, which continues to
+use strict semantic versioning, the release string for `pythonic-fp`
+itself changes when
 
-- **MAJOR:** for major release number bumps (formally paradigm shifts)
-- **MINOR:** homepage changes, additional integration tests
+- **MAJOR:** a new rolling release series starts (formally paradigm shifts)
+- **MINOR:** api additions, homepage changes, additional integration tests
 - **PATCH:** typos, git/pypi thrashing, pure eye-candy/wordsmithing
 
 ## Important Milestones
 
-### PyPI release 6.0.0 - 2026-10-TBA
+### PyPI release 6.0.0 - 2026-11-TBA
 
 **Major Paradigm Shift**
 
 The only supported version of the Pythonic FP projects will be the ones
-with the top level major release numbers.
+with the same top level major release numbers. Documentation for the
+Pythonic FP projects will be generated on GH-Pages for the current top
+level PyPI release, the last top level PyPi release of the previous
+rolling release series, and proposed development documentation from the
+main GitHub branch.
 
-A tiered strict 3 digit semantic versioning will be used
+Each pythonic-fp project will use 3 digit semantic versioning where
 
-- **MAJOR** incremented for incompatible API changes across Pythonic FP libraries
-- **MINOR** incremented for backward compatible added functionality
+- **MAJOR** for incompatible API changes across the projects
+- **MINOR** for backward compatible added functionality
 - **PATCH** incremented for backward compatible bug fixes
 
-After the release of pythonic-fp version `6.0.0`, all Pythonic FP
-projects with the same major release numbers will be attempted to be
-kept consistent with each other.
+The pythonic-fp version `6.0.0` coordinated release will mark the first
+rolling release in a series of rolling releases. The projects will
+use `>=6.x` lower caps and will be capped at `<7`. Major releases will
+be opportunities for API changes. External dependencies will be uncapped. 
 
-**Warning:** Releases before `6.0.0` are unsupported and are not
+**Warning:** Releases before `5.1.0` are unsupported and are not
 guaranteed to resolve consistently.
 
 TODO: list major changes made for this release.
