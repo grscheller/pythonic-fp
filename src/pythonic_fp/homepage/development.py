@@ -173,6 +173,12 @@ Docs are built in ``docs/build/html``.
 Build homepage locally
 ~~~~~~~~~~~~~~~~~~~~~~
 
+Documentation builds use Sphinx from the docs dependency group. The
+simplest way to build locally is ``uv run make -C docs homepage``,
+which creates the environment for you. Any environment with the docs
+group installed will work; ``make`` will warn you if sphinx-build
+is not on your PATH.
+
 Clone ``grscheller/pythonic-fp``. Release information needs to be
 updated in the ``docs/source/conf.py`` and be consistent with the last
 PyPI pythonic-fp release.
