@@ -21,8 +21,8 @@ print(f'''# Generated conf.py Sphinx configuration executable
 project = '{project}'
 author = '{author}'
 copyright = '{copyright}'
-release = f'{release}'
-release_string = f'{release_string}'
+release = '{release}'
+release_string = '{release_string}'
 
 extensions = [
     'sphinx.ext.autodoc',
