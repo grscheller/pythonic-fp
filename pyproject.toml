@@ -39,15 +39,15 @@ docs = [
 ]
 test = [
   "pytest>=8.4.1",
-  "pythonic-fp-booleans>=6,<7",
-  "pythonic-fp-circulararray>=6,<7",
-  "pythonic-fp-containers>=6,<7",
-  "pythonic-fp-fptools>=6,<7",
-  "pythonic-fp-gadgets>=6,<7",
-  "pythonic-fp-iterables>=6,<7",
-  "pythonic-fp-numpy>=6,<7",
-  "pythonic-fp-queues>=6,<7",
-  "pythonic-fp-splitends>=6,<7",
+  "pythonic-fp-booleans<7",
+  "pythonic-fp-circulararray<7",
+  "pythonic-fp-containers<7",
+  "pythonic-fp-fptools<7",
+  "pythonic-fp-gadgets<7",
+  "pythonic-fp-iterables<7",
+  "pythonic-fp-numpy<7",
+  "pythonic-fp-queues<7",
+  "pythonic-fp-splitends<7",
 ]
 
 [tool.flit.module]
