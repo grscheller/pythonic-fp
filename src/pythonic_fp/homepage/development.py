@@ -42,7 +42,7 @@ Dependencies between the Pythonic FP projects.
         booleans -> gadgets;
         iterables -> gadgets;
         iterables -> fptools;
-        numpy
+        numpy;
     }
 
 External to Pythonic FP
@@ -69,7 +69,7 @@ Semantic Versioning and Rolling Releases
 
 For the individual projects strict 3 digit semantic versioning
 has been adopted, see `semantic versioning <https://semver.org>`_
-and tries t avoid putting
+and to avoid putting
 `caps on dependencies <https://iscinumpy.dev/post/bound-version-constraints>`_
 for library modules. Sometimes caps are necessary to prevent API
 changes from leaking back to prior releases. No caps are used for
@@ -85,8 +85,8 @@ will also use the same three digit semantic versioning.
 
 All projects libraries and the overall effort will share the same
 ``MAJOR`` release number to indicate a rolling release series.
-Changes in``MAJOR`` will be opportunities breaking API changes based
-on lessons learned from library use.
+Changes in ``MAJOR`` will provide opportunities for breaking API changes
+based on lessons learned from library use.
 
 This allows for more package management flexibility for software
 developers using these libraries, and provides easier access
@@ -173,12 +173,6 @@ Docs are built in ``docs/build/html``.
 Build homepage locally
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Documentation builds use Sphinx from the docs dependency group. The
-simplest way to build locally is ``uv run make -C docs homepage``,
-which creates the environment for you. Any environment with the docs
-group installed will work; ``make`` will warn you if sphinx-build
-is not on your PATH.
-
 Clone ``grscheller/pythonic-fp``. Release information needs to be
 updated in the ``docs/source/conf.py`` and be consistent with the last
 PyPI pythonic-fp release.
@@ -192,6 +186,12 @@ PyPI pythonic-fp release.
    $ uv run make homepage
 
 Docs are built in ``docs/build/``.
+
+Documentation builds use Sphinx from the docs dependency group. The
+simplest way to build locally is ``uv run make -C docs homepage``,
+which creates the environment for you. Any environment with the docs
+group installed will work; ``make`` will error out if sphinx-build
+is not on the PATH.
 
 View docs locally
 ~~~~~~~~~~~~~~~~~
