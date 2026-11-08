@@ -7,7 +7,7 @@ CURR_ROLLING_RELEASE = 6.0.0
 
 SPHINXBUILD = sphinx-build
 
-# Put first so that "make" without argument is like "make help".
+# Give build info if "make" without arguments is given
 help:
 	@echo To build homepage: uv run make homepage
 
@@ -16,7 +16,7 @@ clean:
 
 source/conf.py: gen_conf.py Makefile
 	@./gen_conf.py $(CURR_ROLLING_RELEASE) > source/conf.py
-	@echo Generated source/conf.py for current rolling release.
+@echo Generated sour:qce/conf.py for current rolling release.
 
 homepage: source/conf.py
 	@command -v $(SPHINXBUILD) >/dev/null 2>&1 || { \

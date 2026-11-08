@@ -18,7 +18,7 @@ itself changes when
 
 ## Important Milestones
 
-### PyPI release 6.0.0 - 2026-11-TBA
+### PyPI release 6.0.0 - 2026-11-08
 
 **Major Paradigm Shift**
 

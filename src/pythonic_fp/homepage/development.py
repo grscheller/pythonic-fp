@@ -86,7 +86,8 @@ will also use the same three digit semantic versioning.
 All projects libraries and the overall effort will share the same
 ``MAJOR`` release number to indicate a rolling release series.
 Changes in ``MAJOR`` will provide opportunities for breaking API changes
-based on lessons learned from library use.
+based on lessons learned from library use. The current rolling release
+is ``6.0.0``.
 
 This allows for more package management flexibility for software
 developers using these libraries, and provides easier access

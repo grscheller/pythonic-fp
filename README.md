@@ -7,6 +7,8 @@ The overall project's name is **Pythonic FP** and consists of PyPI
 projects with PyPI and GitHub names beginning "pythonic-fp-". All
 projects are all under the Python `pythonic_fp` namespace.
 
+Currently the 6.0.0 series of rolling releases.
+
 For more information visit the project's
 [homepage](https://grscheller.github.io/pythonic-fp/).
 
@@ -25,7 +27,7 @@ For more information visit the project's
 | Splitends | [pythonic-fp-splitends][109] | pythonic_fp.splitends |
 
 These started out as an effort to support a functional style of
-programming in Python. Also for me to learn Python 3.12+ type hints.
+programming in Python.
 
 **Note:** There is no need for an end user to install the
 `pythonic-fp` project itself.
