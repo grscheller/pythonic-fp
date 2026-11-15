@@ -18,6 +18,12 @@ itself changes when
 
 ## Important Milestones
 
+### PyPI release 6.1.0 - 2026-11-15
+
+Deprecating pythonic_fp.numpy.HWrapNDArrayObject because object arrays
+cannot be hashed consistently with equality. Will be removed in
+pythonic.fp version 7.0.0.
+
 ### PyPI release 6.0.0 - 2026-11-14
 
 **Major Paradigm Shift**

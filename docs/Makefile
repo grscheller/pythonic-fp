@@ -3,7 +3,7 @@
 # Source of truth - what is in pyproject.toml should agree
 # with with this. Also floors need to be added to pyproject.toml
 # after a top level release starting the next rolling release.
-CURR_ROLLING_RELEASE = 6.0.0
+CURR_ROLLING_RELEASE = 6.1.0
 
 SPHINXBUILD = sphinx-build
 

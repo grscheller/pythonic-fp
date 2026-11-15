@@ -4,7 +4,7 @@ build-backend = "flit_core.buildapi"
 
 [project]
 name = "pythonic-fp"
-version = "6.0.0"
+version = "6.1.0"
 description = "Pythonic FP homepage and integration testing - for packagers/forkers."
 readme = "README.md"
 requires-python = ">=3.14"  # floor: PEP 649/749 deferred annotations — class-level self-reference NameErrors on <3.14
@@ -45,7 +45,7 @@ test = [
   "pythonic-fp-fptools>=6.2.0,<7",
   "pythonic-fp-gadgets>=6.0.0,<7",
   "pythonic-fp-iterables>=6.0.0,<7",
-  "pythonic-fp-numpy>=6.0.0,<7",
+  "pythonic-fp-numpy>=6.1.0,<7",
   "pythonic-fp-queues>=6.0.0,<7",
   "pythonic-fp-splitends>=6.0.0,<7",
 ]
@@ -64,11 +64,6 @@ exclude = [
   "**/.dmypy.json",
 ]
 
-[tool.pytest]
-addopts = ["-ra"]
-consider_namespace_packages = true
-testpaths = ["tests/"]
-
 [tool.mypy]
 explicit_package_bases = true
 local_partial_types = true
@@ -76,6 +71,15 @@ namespace_packages = true
 warn_redundant_casts = true
 warn_return_any = true
 warn_unused_configs = true
+
+[[tool.mypy.overrides]]
+module = ["tests.*"]
+strict_equality = false
+
+[tool.pytest]
+addopts = ["-ra"]
+consider_namespace_packages = true
+testpaths = ["tests/"]
 
 [tool.ruff]
 target-version = "py314"
