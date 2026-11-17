@@ -6,9 +6,7 @@ The only supported version of the Pythonic FP projects will be the ones
 with the same top level major release numbers.
 
 Documentation for each Pythonic FP project will be generated on GH-Pages
-for the current top level PyPI release, the last top level PyPi release
-of the previous rolling release series, and proposed documentation for
-the next PyPI release from the main GitHub branch.
+for the current and previous top level PyPI releases.
 
 Module Dependencies
 -------------------
@@ -76,7 +74,7 @@ changes from leaking back to prior releases. No caps are used for
 external dependencies.
 
 To accomplish this, a series of rolling releases ``>=X.0.0,<X+1`` for
-each Pythonic FP project will be used. The over all effort, pythonic-fp,
+each Pythonic FP project will be used. The overall effort, pythonic-fp,
 will also use the same three digit semantic versioning.
 
 - **MAJOR** for incompatible API changes across the projects
@@ -87,7 +85,7 @@ All projects libraries and the overall effort will share the same
 ``MAJOR`` release number to indicate a rolling release series.
 Changes in ``MAJOR`` will provide opportunities for breaking API changes
 based on lessons learned from library use. The current rolling release
-is ``6.0.0``.
+started at ``6.0.0``.
 
 This allows for more package management flexibility for software
 developers using these libraries, and provides easier access
@@ -174,9 +172,12 @@ Docs are built in ``docs/build/html``.
 Build homepage locally
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Clone ``grscheller/pythonic-fp``. Release information needs to be
-updated in the ``docs/source/conf.py`` and be consistent with the last
-PyPI pythonic-fp release.
+Documentation builds use Sphinx from the docs dependency group. The
+simplest way to build locally is using uv to manage your python
+environments. Any environment with the docs group installed will
+work; ``make`` will error out if sphinx-build is not on the PATH.
+
+Clone ``grscheller/pythonic-fp``.
 
 .. code-block:: console
 
@@ -186,13 +187,7 @@ PyPI pythonic-fp release.
    $ cd docs/
    $ uv run make homepage
 
-Docs are built in ``docs/build/``.
-
-Documentation builds use Sphinx from the docs dependency group. The
-simplest way to build locally is ``uv run make -C docs homepage``,
-which creates the environment for you. Any environment with the docs
-group installed will work; ``make`` will error out if sphinx-build
-is not on the PATH.
+The homepage is built in ``docs/build/``.
 
 View docs locally
 ~~~~~~~~~~~~~~~~~

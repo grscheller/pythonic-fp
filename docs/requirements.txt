@@ -1,3 +1,0 @@
-# Used by `pip install` for github workflows
-sphinx>=9.1
-furo

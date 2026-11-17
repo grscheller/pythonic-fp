@@ -11,9 +11,6 @@ SPHINXBUILD = sphinx-build
 help:
 	@echo To build homepage: uv run make homepage
 
-clean:
-	rm -rf build/ source/conf.py
-
 source/conf.py: gen_conf.py Makefile
 	@./gen_conf.py $(CURR_ROLLING_RELEASE) > source/conf.py
 @echo Generated sour:qce/conf.py for current rolling release.
@@ -24,5 +21,9 @@ homepage: source/conf.py
 	    $(MAKE) --no-print-directory help; exit 1; }
 	@$(SPHINXBUILD) -b html source build
 	@echo Generated homepage for current rolling release.
+
+clean:
+	@rm -rf build
+	@echo Removed all doc build artifacts.
 
 .PHONY: help clean homepage

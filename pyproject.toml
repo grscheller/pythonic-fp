@@ -68,6 +68,7 @@ exclude = [
 explicit_package_bases = true
 local_partial_types = true
 namespace_packages = true
+strict = true
 warn_redundant_casts = true
 warn_return_any = true
 warn_unused_configs = true
