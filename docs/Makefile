@@ -5,22 +5,19 @@
 # after a top level release starting the next rolling release.
 CURR_ROLLING_RELEASE = 6.1.0
 
+SPHINXOPTS ?=
 SPHINXBUILD = sphinx-build
 
 # Give build info if "make" without arguments is given
 help:
 	@echo To build homepage: uv run make homepage
 
-source/conf.py: gen_conf.py Makefile
-	@./gen_conf.py $(CURR_ROLLING_RELEASE) > source/conf.py
-@echo Generated sour:qce/conf.py for current rolling release.
-
-homepage: source/conf.py
+homepage: source/conf.py Makefile 
+	@rm -rf build
 	@command -v $(SPHINXBUILD) >/dev/null 2>&1 || { \
 	    echo 'Error: $(SPHINXBUILD) not found.'; echo; \
 	    $(MAKE) --no-print-directory help; exit 1; }
-	@$(SPHINXBUILD) -b html source build
-	@echo Generated homepage for current rolling release.
+	@$(SPHINXBUILD) -b html source build $(SPHINXOPTS)
 
 clean:
 	@rm -rf build
