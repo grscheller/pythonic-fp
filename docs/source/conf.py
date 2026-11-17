@@ -12,12 +12,6 @@ author = 'Geoffrey R. Scheller'
 copyright = f'2023-2026, {author}'
 release = installed_version('pythonic-fp')
 
-project = 'Pythonic FP'
-author = 'Geoffrey R. Scheller'
-copyright = '2023-2026, Geoffrey R. Scheller'
-release = '6.1.0'
-release_string = '**Current Pythonic FP rolling release**'
-
 # -- General configuration ---------------------------------------------------
 
 extensions = [
