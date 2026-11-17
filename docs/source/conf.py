@@ -52,5 +52,3 @@ html_theme_options = {
     'dark_css_variables': {'color-link--visited': 'var(--color-link)'},
 }
 html_static_path = ['_static']
-html_css_files = ['custom.css']
-
