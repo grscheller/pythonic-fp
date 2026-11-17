@@ -14,6 +14,8 @@ release = installed_version('pythonic-fp')
 
 # -- General configuration ---------------------------------------------------
 
+html_title = f'{project} {release}'
+
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.intersphinx',
