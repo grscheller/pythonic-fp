@@ -3,16 +3,15 @@
 # Source of truth - what is in pyproject.toml should agree
 # with with this. Also floors need to be added to pyproject.toml
 # after a top level release starting the next rolling release.
-CURR_ROLLING_RELEASE = 6.1.0
 
-SPHINXOPTS ?=
-SPHINXBUILD = sphinx-build
+SPHINXOPTS ?= -W
+SPHINXBUILD ?= sphinx-build
 
 # Give build info if "make" without arguments is given
 help:
 	@echo To build homepage: uv run make homepage
 
-homepage: source/conf.py Makefile 
+homepage:
 	@rm -rf build
 	@command -v $(SPHINXBUILD) >/dev/null 2>&1 || { \
 	    echo 'Error: $(SPHINXBUILD) not found.'; echo; \

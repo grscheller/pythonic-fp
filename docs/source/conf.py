@@ -1,34 +1,24 @@
-# Generated conf.py Sphinx configuration executable
+# Sphinx conf.py configuration file
 
 from importlib.metadata import version as installed_version
 
-# from sphinx.application import Sphinx
-# from sphinx.errors import ConfigError
-
-# -- Project information -----------------------------------------------------
+# -- Project information -----------------------------------------------
 
 project = 'Pythonic FP - homepage'
 author = 'Geoffrey R. Scheller'
 copyright = f'2023-2026, {author}'
 release = installed_version('pythonic-fp')
 
-# -- General configuration ---------------------------------------------------
-
-html_title = f'{project} {release}'
+# -- General configuration ---------------------------------------------
 
 extensions = [
     'sphinx.ext.autodoc',
-    'sphinx.ext.intersphinx',
     'sphinx.ext.graphviz',
 ]
 
 templates_path = ['_templates']
 
-intersphinx_mapping = {
-    'python': ('https://docs.python.org/3', None),
-}
-
-# -- Autodoc -----------------------------------------------------------------
+# -- Autodoc -----------------------------------------------------------
 
 autodoc_default_options = {
     'members': True,
@@ -40,8 +30,9 @@ autodoc_class_signature = 'separated'
 autodoc_docstring_signature = False
 autodoc_preserve_defaults = True
 
-# -- HTML output -------------------------------------------------------------
+# -- HTML output -------------------------------------------------------
 
+html_title = f'{project} {release}'
 html_theme = 'furo'
 html_theme_options = {
     'light_css_variables': {'color-link--visited': 'var(--color-link)'},
