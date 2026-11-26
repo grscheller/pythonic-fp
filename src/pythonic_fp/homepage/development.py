@@ -19,13 +19,12 @@ it whenever those change.
 Semantic Versioning and Rolling Releases
 ----------------------------------------
 
-For the individual projects strict 3 digit semantic versioning
-has been adopted, see `semantic versioning <https://semver.org>`_
-and to avoid putting
-`caps on dependencies <https://iscinumpy.dev/post/bound-version-constraints>`_
-for library modules. Sometimes caps are necessary to prevent API
-changes from leaking back to prior releases. No caps are used for
-external dependencies.
+For the individual projects strict 3 digit semantic versioning has been
+adopted, see `semantic versioning <https://semver.org>`_. Even though
+the author is not a fan on putting `caps on dependencies
+<https://iscinumpy.dev/post/bound-version-constraints>`_ for library
+modules, he has found caps to be necessary to prevent API changes from leaking
+back to prior releases.
 
 To accomplish this, a series of rolling releases ``>=X.0.0,<X+1`` for
 each Pythonic FP project will be used. The overall effort, pythonic-fp,
@@ -102,8 +101,8 @@ Building documentation
 
 Both the Pythonic FP homepage and documentation for each project are
 automatically built with GitHub actions on pushing to GitHub.
-Documentation for the latest release and the next release currently in
-development is built.
+Documentation for the latest release and previous release are on GitHub
+Pages.
 
 The Sphinx based documentation can also be built locally.
 
@@ -120,8 +119,8 @@ Clone say the ``grscheller/pythonic-fp-fptools`` repo.
    $ cd docs/
    $ uv run make devel
 
-Docs are built in ``docs/devel``. Development documentation is never
-published on GH-Pages.
+Docs are built in the ``docs/devel`` directory. Development
+documentation is not published on GH-Pages.
 
 Build homepage locally
 ~~~~~~~~~~~~~~~~~~~~~~
