@@ -1,10 +1,14 @@
 """
 Pythonic FP is a collection of Python libraries to enable functional
-programming paradigms in Python in a Pythonic way. 
-These libraries work alongside ordinary Python code, its iterables and your type checkers, rather than replacing them.
+programming paradigms in Python in a Pythonic way.
 
-..
-Install only the libraries you need. Each one brings along just the
+- These libraries work alongside
+
+  - ordinary Python code
+  - Python iterables
+  - your type checkers
+
+Install only the libraries you need. Each one brings along only the
 Pythonic FP libraries it depends on.
 
 Projects
@@ -96,7 +100,7 @@ need from PyPI, for example:
 
     $ pip install pythonic-fp-fptools
 
-or, in a uv-managed project:
+Or, in a uv-managed project:
 
 .. code-block:: console
 
