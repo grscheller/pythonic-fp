@@ -18,6 +18,8 @@ extensions = [
 
 templates_path = ['_templates']
 
+graphviz_output_format = 'svg'
+
 # -- Autodoc -----------------------------------------------------------
 
 autodoc_default_options = {

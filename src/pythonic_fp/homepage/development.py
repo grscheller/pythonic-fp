@@ -8,59 +8,13 @@ with the same top level major release numbers.
 Documentation for each Pythonic FP project will be generated on GH-Pages
 for the current and previous top level PyPI releases.
 
-Module Dependencies
--------------------
+Project Dependencies
+--------------------
 
-All non-typing related dependencies.
-Arrows point from modules to their dependencies.
-
-Internal to Pythonic FP
-~~~~~~~~~~~~~~~~~~~~~~~
-
-Dependencies between the Pythonic FP projects.
-
-.. graphviz::
-
-    digraph Modules {
-        bgcolor="#957fb8";
-        node [style=filled, fillcolor="#181616", fontcolor="#dcd7ba"];
-        edge [color="#181616", fontcolor="#dcd7ba"];
-        containers -> fptools;
-        containers -> iterables;
-        containers -> circulararray;
-        splitends -> fptools;
-        splitends -> iterables;
-        splitends -> queues;
-        queues -> fptools;
-        queues -> circulararray;
-        circulararray -> gadgets;
-        fptools -> circulararray;
-        fptools -> gadgets;
-        fptools -> booleans;
-        booleans -> gadgets;
-        iterables -> gadgets;
-        iterables -> fptools;
-        numpy;
-    }
-
-External to Pythonic FP
-~~~~~~~~~~~~~~~~~~~~~~~
-
-All Python external dependencies, except for typing related standard
-library dependencies.
-
-.. graphviz::
-
-    digraph Modules {
-        bgcolor="#957fb8";
-        node [style=filled, fillcolor="#181616", fontcolor="#dcd7ba"];
-        edge [color="#181616", fontcolor="#dcd7ba"];
-        "pythonic_fp.booleans" -> threading;
-        "pythonic_fp.gadgets" -> inspect;
-        "pythonic_fp.gadgets" -> threading;
-        "pythonic_fp.iterables" -> enum;
-        "pythonic_fp.numpy" -> numpy;
-    }
+The dependency graph on the :doc:`landing page <index>` shows which
+Pythonic FP projects each project installs. It is drawn by hand from
+the ``dependencies`` in each project's ``pyproject.toml``, so update
+it whenever those change.
 
 Semantic Versioning and Rolling Releases
 ----------------------------------------

@@ -14,8 +14,6 @@ Pythonic FP
 
 .. toctree::
     :caption: Pythonic FP
-    :maxdepth: 1
+    :hidden:
 
-    description
     development
-    projects
