@@ -2,8 +2,7 @@
 Development Practices
 =====================
 
-The only supported version of the Pythonic FP projects will be the ones
-with the same top level major release numbers.
+Only the latest major release series is supported."
 
 Documentation for each Pythonic FP project will be generated on GH-Pages
 for the current and previous top level PyPI releases.
@@ -21,10 +20,10 @@ Semantic Versioning and Rolling Releases
 
 For the individual projects strict 3 digit semantic versioning has been
 adopted, see `semantic versioning <https://semver.org>`_. Even though
-the author is not a fan on putting `caps on dependencies
+the author does not like putting `caps on dependencies
 <https://iscinumpy.dev/post/bound-version-constraints>`_ for library
-modules, he has found caps to be necessary to prevent API changes from leaking
-back to prior releases.
+modules, caps have been font to be necessary to prevent Pythonic FP API
+changes from leaking back to prior releases.
 
 To accomplish this, a series of rolling releases ``>=X.0.0,<X+1`` for
 each Pythonic FP project will be used. The overall effort, pythonic-fp,
@@ -34,7 +33,7 @@ will also use the same three digit semantic versioning.
 - **MINOR** for backward compatible added functionality
 - **PATCH** incremented for backward compatible bug fixes
 
-All projects libraries and the overall effort will share the same
+All project libraries and the overall effort will share the same
 ``MAJOR`` release number to indicate a rolling release series.
 Changes in ``MAJOR`` will provide opportunities for breaking API changes
 based on lessons learned from library use. The current rolling release
@@ -109,7 +108,7 @@ The Sphinx based documentation can also be built locally.
 Build prerelease development docs locally
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Clone say the ``grscheller/pythonic-fp-fptools`` repo.
+Clone, say the ``grscheller/pythonic-fp-fptools`` repo.
 
 .. code-block:: console
 
@@ -145,7 +144,7 @@ The homepage is built in ``docs/build/``.
 View homepage locally
 ~~~~~~~~~~~~~~~~~~~~~
 
-To view either the development docs or Pythonic FP homepage.
+To view either the Pythonic FP homepage.
 
   - from docs/ directory: ``$ python -m http.server 8080 -d build``
   - go to in browser: ``http://localhost:8080/``
