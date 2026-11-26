@@ -30,8 +30,7 @@ itself is a support component of the Pythonic FP libraries.
     - GitHub Repos for each project
     - Used for Pythonic FP library integration tests.
     - Provides locations for overarching CHANGELOG and README files.
-
-        - Each Pythonic FP project has its on CHANGELOG and README files.
+    - Each Pythonic FP project has its on CHANGELOG and README files.
 
 .. tip::
 

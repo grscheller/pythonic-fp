@@ -107,11 +107,10 @@ development is built.
 
 The Sphinx based documentation can also be built locally.
 
-Build development docs locally
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Build prerelease development docs locally
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Clone say the ``grscheller/pythonic-fp-fptools`` repo. Release
-information needs to be updated in ``docs/Makefile``.
+Clone say the ``grscheller/pythonic-fp-fptools`` repo.
 
 .. code-block:: console
 
@@ -121,7 +120,8 @@ information needs to be updated in ``docs/Makefile``.
    $ cd docs/
    $ uv run make devel
 
-Docs are built in ``docs/build/html``.
+Docs are built in ``docs/devel``. Development documentation is never
+published on GH-Pages.
 
 Build homepage locally
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -143,8 +143,8 @@ Clone ``grscheller/pythonic-fp``.
 
 The homepage is built in ``docs/build/``.
 
-View docs locally
-~~~~~~~~~~~~~~~~~
+View homepage locally
+~~~~~~~~~~~~~~~~~~~~~
 
 To view either the development docs or Pythonic FP homepage.
 
